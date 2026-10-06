@@ -6,10 +6,10 @@
     "parameters": {},
     "result": {
       "status": "completed",
-      "duration": 0.47,
+      "duration": 0.6,
       "summary": {
-        "total": 4,
-        "passed": 4,
+        "total": 5,
+        "passed": 5,
         "failed": 0,
         "skipped": 0,
         "inconclusive": 0
@@ -18,28 +18,35 @@
         {
           "FullName": "WordDeduction.Tests.GroupScreenTests.AddingAPlayerScrollsTheNewRowIntoViewAfterLayout",
           "Status": "Passed",
-          "Duration": 0.2046145,
+          "Duration": 0.2356716,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.EditingTheLastPlayerKeepsAllActionsVisibleAfterTheViewportShrinks",
+          "Status": "Passed",
+          "Duration": 0.1028502,
           "Message": null,
           "StackTrace": null
         },
         {
           "FullName": "WordDeduction.Tests.GroupScreenTests.FailedRenameKeepsTheTypedNameForRetry",
           "Status": "Passed",
-          "Duration": 0.0657153,
+          "Duration": 0.0594239,
           "Message": null,
           "StackTrace": null
         },
         {
           "FullName": "WordDeduction.Tests.GroupScreenTests.GroupActionsThroughRenderedControlsSurviveReopening",
           "Status": "Passed",
-          "Duration": 0.1408094,
+          "Duration": 0.1571358,
           "Message": null,
           "StackTrace": null
         },
         {
           "FullName": "WordDeduction.Tests.GroupScreenTests.GroupScreenExposesTheNameEntryAndBothModes",
           "Status": "Passed",
-          "Duration": 0.015773,
+          "Duration": 0.0136218,
           "Message": null,
           "StackTrace": null
         }

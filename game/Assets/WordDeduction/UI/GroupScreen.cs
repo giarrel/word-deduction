@@ -19,6 +19,7 @@ namespace WordDeduction.UI
         Rect lastSafeArea;
         float keyboardHeight;
         float nextViewportCheck;
+        TouchScreenKeyboard editKeyboard;
         public void Initialize(Session value) { session = value; if (root != null) Render(); }
         void OnEnable()
         {
@@ -35,6 +36,13 @@ namespace WordDeduction.UI
             root.Q<Button>("classicMode").clicked += () => Apply(session.SetMode(GameMode.Classic));
             root.Q<Button>("undo").clicked += () => Apply(session.UndoRemove());
             root.Q<Button>("resetDamaged").clicked += () => Apply(session.StartFreshAfterDamage());
+            var players = root.Q<ScrollView>("players");
+            players.contentViewport.RegisterCallback<GeometryChangedEvent>(_ =>
+            {
+                if (root == null || editingId == null) return;
+                var row = root.Q<VisualElement>("player-" + editingId);
+                row?.schedule.Execute(() => { if (row.panel != null) players.ScrollTo(row); });
+            });
             Render(); UpdateSafeArea();
             root.RegisterCallback<GeometryChangedEvent>(_ => UpdateSafeArea());
         }
@@ -42,6 +50,8 @@ namespace WordDeduction.UI
         void Update()
         {
             if (root == null) return;
+            var keyboard = root.Q<TextField>("renameInput")?.textEdition.touchScreenKeyboard;
+            if (keyboard != null && keyboard.status == TouchScreenKeyboard.Status.Visible) editKeyboard = keyboard;
             // Android reports Status.Done for both IME Done and Back. Only an explicit
             // visible action or real Return event confirms a name; hiding the IME never does.
             if (Time.unscaledTime >= nextViewportCheck)
@@ -96,7 +106,11 @@ namespace WordDeduction.UI
         {
             var scroll = root.Q<ScrollView>("players");
             if (scroll.childCount == 0) return;
-            var row = scroll.ElementAt(scroll.childCount - 1);
+            RevealAfterLayout(scroll,scroll.ElementAt(scroll.childCount - 1));
+        }
+        static void RevealAfterLayout(ScrollView scroll, VisualElement row)
+        {
+            if (row == null) return;
             EventCallback<GeometryChangedEvent> laidOut = null;
             laidOut = e =>
             {
@@ -117,9 +131,12 @@ namespace WordDeduction.UI
         void CloseEditKeyboard()
         {
             var field = root.Q<TextField>("renameInput");
-            var keyboard = field?.textEdition.touchScreenKeyboard;
+            // The field may already have lost focus by the time Button.clicked runs.
+            // Retain the visible native handle only to close it, never to infer a submit.
+            var keyboard = editKeyboard ?? field?.textEdition.touchScreenKeyboard;
             if (keyboard != null) keyboard.active = false;
             field?.Blur();
+            editKeyboard = null;
         }
         void CancelEdit() { CloseEditKeyboard(); editingId = null; renameDraft = null; Render(); }
         void Render()
@@ -129,6 +146,7 @@ namespace WordDeduction.UI
             root.Q<Label>("title").text = T("title"); root.Q<Label>("subtitle").text = T("subtitle");
             root.Q<Label>("groupTitle").text = T("group"); root.Q<Label>("count").text = T(view.ActiveCount == 1 ? "countOne" : "count", view.ActiveCount);
             root.Q<VisualElement>("safeRoot").EnableInClassList("has-players",view.Players.Count > 0);
+            root.Q<VisualElement>("safeRoot").EnableInClassList("editing",editingId != null);
             root.Q<Label>("emptyTitle").text = T("emptyTitle"); root.Q<Label>("emptyHint").text = T("emptyHint");
             root.Q<Label>("editHint").text = T("editHint");
             nameInput.textEdition.placeholder = T("name"); nameInput.tooltip = T("name");
@@ -147,6 +165,7 @@ namespace WordDeduction.UI
             var list = root.Q<ScrollView>("players"); var oldOffset = list.scrollOffset; list.Clear();
             foreach (var player in view.Players) list.Add(PlayerRow(player));
             list.scrollOffset = oldOffset;
+            if (editingId != null) RevealAfterLayout(list,root.Q<VisualElement>("player-" + editingId));
             list.EnableInClassList("hidden", view.Players.Count == 0);
             root.Q<VisualElement>("emptyState").EnableInClassList("hidden",view.Players.Count > 0);
             var message = view.StorageBlocked ? view.StorageNotice : noticeCode ?? view.StorageNotice;

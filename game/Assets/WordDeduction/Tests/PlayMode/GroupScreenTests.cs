@@ -88,6 +88,28 @@ namespace WordDeduction.Tests
             UnityEngine.Object.Destroy(host); UnityEngine.Object.Destroy(panel); Directory.Delete(directory,true);
         }
         [UnityTest]
+        public IEnumerator EditingTheLastPlayerKeepsAllActionsVisibleAfterTheViewportShrinks()
+        {
+            string directory = Path.Combine(Application.temporaryCachePath,"group-edit-scroll-" + Guid.NewGuid().ToString("N"));
+            var session = Session.Open(directory,Language.English);
+            for (int i = 1; i <= 4; i++) session.AddPlayer("Player " + i);
+            var host = new GameObject("Group edit scroll test"); host.SetActive(false);
+            var document = host.AddComponent<UIDocument>();
+            var panel = ScriptableObject.CreateInstance<PanelSettings>(); document.panelSettings = panel;
+            host.AddComponent<GroupScreen>().Initialize(session); host.SetActive(true);
+            var root = document.rootVisualElement; root.style.width = 390; root.style.height = 640;
+            var scroll = root.Q<ScrollView>("players"); scroll.style.flexGrow = 0; scroll.style.flexShrink = 0; scroll.style.height = 296;
+            yield return null; yield return null;
+            Submit(root.Q<Button>("edit-" + session.View.Players[3].Id));
+            yield return null; yield return null;
+            scroll.style.height = 200;
+            for (int frame = 0; frame < 5; frame++) yield return null;
+            var row = root.Q<VisualElement>("player-" + session.View.Players[3].Id);
+            Assert.That(row.worldBound.yMin,Is.GreaterThanOrEqualTo(scroll.contentViewport.worldBound.yMin - 1));
+            Assert.That(row.worldBound.yMax,Is.LessThanOrEqualTo(scroll.contentViewport.worldBound.yMax + 1),"Saving and cancelling must remain visible when the keyboard shrinks the viewport.");
+            UnityEngine.Object.Destroy(host); UnityEngine.Object.Destroy(panel); Directory.Delete(directory,true);
+        }
+        [UnityTest]
         public IEnumerator FailedRenameKeepsTheTypedNameForRetry()
         {
             string directory = Path.Combine(Application.temporaryCachePath,"group-failure-" + Guid.NewGuid().ToString("N"));

@@ -9,6 +9,7 @@ game/*.csproj
 game/*.sln
 game/*.slnx
 game/.vscode/
+game/.utmp/
 artifacts/
 **/bin/
 **/obj/
