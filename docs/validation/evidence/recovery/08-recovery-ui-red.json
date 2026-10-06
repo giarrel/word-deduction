@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.52,
+      "summary": {
+        "total": 2,
+        "passed": 0,
+        "failed": 2,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.AdditionalContactsCannotRevealUntilEveryFingerHasLifted",
+          "Status": "Failed",
+          "Duration": 0.427865,
+          "Message": "  Next is enabled after the single-contact reveal ends.\r\n  Expected: True\r\n  But was:  False\r\n",
+          "StackTrace": "at WordDeduction.Tests.RecoveryScreenTests+<AdditionalContactsCannotRevealUntilEveryFingerHasLifted>d__1.MoveNext () [0x001a9] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\RecoveryScreenTests.cs:33\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.FailedFreshStartShowsTheWriteFailureAndAllowsExplicitRetry",
+          "Status": "Failed",
+          "Duration": 0.0687265,
+          "Message": "  Expected: String containing \"Couldn't save\"\r\n  But was:  \"The saved group couldn't be recovered. Keep the damaged files and start a new group?\"\r\n",
+          "StackTrace": "at WordDeduction.Tests.RecoveryScreenTests+<FailedFreshStartShowsTheWriteFailureAndAllowsExplicitRetry>d__2.MoveNext () [0x00138] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\RecoveryScreenTests.cs:51\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

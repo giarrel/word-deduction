@@ -1,0 +1,112 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 5.78,
+      "summary": {
+        "total": 12,
+        "passed": 7,
+        "failed": 5,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.AddingAPlayerScrollsTheNewRowIntoViewAfterLayout",
+          "Status": "Passed",
+          "Duration": 0.2130522,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.EditingTheLastPlayerKeepsAllActionsVisibleAfterTheViewportShrinks",
+          "Status": "Passed",
+          "Duration": 0.0932408,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.FailedRenameKeepsTheTypedNameForRetry",
+          "Status": "Passed",
+          "Duration": 0.0468697,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.GroupActionsThroughRenderedControlsSurviveReopening",
+          "Status": "Passed",
+          "Duration": 0.1382501,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.GroupScreenExposesTheNameEntryAndBothModes",
+          "Status": "Passed",
+          "Duration": 0.0111297,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.BothLanguagesCompleteTheActualQuickFlowAndKeepTheGroup",
+          "Status": "Failed",
+          "Duration": 0.8460757,
+          "Message": "System.NullReferenceException : Object reference not set to an instance of an object",
+          "StackTrace": "  at WordDeduction.Tests.QuickScreenTests+<BothLanguagesCompleteTheActualQuickFlowAndKeepTheGroup>d__3.MoveNext () [0x00183] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\QuickScreenTests.cs:90 \r\n  at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44 "
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.HoldCancelCaptureLossSecondFingerAndLifecycleEraseSecretsSynchronously",
+          "Status": "Passed",
+          "Duration": 0.0649058,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.QuickStartsAtANamedCoveredCardAndRequiresIntentionalReveal",
+          "Status": "Failed",
+          "Duration": 0.3039689,
+          "Message": "  Expected: True\r\n  But was:  False\r\n",
+          "StackTrace": "at WordDeduction.Tests.QuickScreenTests+<QuickStartsAtANamedCoveredCardAndRequiresIntentionalReveal>d__1.MoveNext () [0x0029c] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\QuickScreenTests.cs:38\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.SaveFailuresKeepUnconfirmedScreensAndSecretsCoveredForRetry",
+          "Status": "Failed",
+          "Duration": 0.3204261,
+          "Message": "  Expected: String containing \"Speichern\"\r\n  But was:  <string.Empty>\r\n",
+          "StackTrace": "at WordDeduction.Tests.QuickScreenTests+<SaveFailuresKeepUnconfirmedScreensAndSecretsCoveredForRetry>d__4.MoveNext () [0x00242] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\QuickScreenTests.cs:123\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.TwentyPlayersCanReachTheLastSuspectAndResolveARepeatedTieOnAShortScreen",
+          "Status": "Failed",
+          "Duration": 3.3195247,
+          "Message": "  Expected: not null\r\n  But was:  null\r\n",
+          "StackTrace": "at WordDeduction.Tests.QuickScreenTests.Submit (UnityEngine.UIElements.VisualElement element) [0x00000] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\QuickScreenTests.cs:177\r\nat WordDeduction.Tests.QuickScreenTests+<TwentyPlayersCanReachTheLastSuspectAndResolveARepeatedTieOnAShortScreen>d__5.MoveNext () [0x001b8] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\QuickScreenTests.cs:153\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.AdditionalContactsCannotRevealUntilEveryFingerHasLifted",
+          "Status": "Failed",
+          "Duration": 0.2536811,
+          "Message": "  Next is enabled after the single-contact reveal ends; Session=True; down 1, down 2, up 2, down 2, up 2, up 1, down 1\r\n  Expected: True\r\n  But was:  False\r\n",
+          "StackTrace": "at WordDeduction.Tests.RecoveryScreenTests+<AdditionalContactsCannotRevealUntilEveryFingerHasLifted>d__1.MoveNext () [0x00208] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\RecoveryScreenTests.cs:36\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.FailedFreshStartShowsTheWriteFailureAndAllowsExplicitRetry",
+          "Status": "Passed",
+          "Duration": 0.1284829,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

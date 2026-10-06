@@ -57,6 +57,7 @@ namespace WordDeduction.Tests
             Down(hold,1,300); Down(root.Q<VisualElement>("safeRoot"),2,400);
             Assert.That(root.Q<Label>("secretWord").text,Is.Empty,"A second finger clears the secret before doing anything else.");
             Move(hold,1,200); Up(hold,1,200);
+            Up(root.Q<VisualElement>("safeRoot"),2,400);
             Assert.That(root.Q<Label>("secretWord").text,Is.Empty,"Old pointer events cannot reopen.");
             Down(hold,1,300); var oldLabel = root.Q<Label>("secretWord");
             fixture.Host.SendMessage("OnApplicationFocus",false);

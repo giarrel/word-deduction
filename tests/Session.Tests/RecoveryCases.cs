@@ -93,6 +93,26 @@ static class RecoveryCases
             File.WriteAllText(primary, envelope.ToString());
             session = Session.Open(directory, Language.German);
             Check(session.View.StorageNotice == "RecoveredBackup" && session.View.Players.Single().Name == "A", "missing fields recover the validated previous generation");
+        }),
+        ("denied reads never fall back past an inaccessible confirmed generation", directory => {
+            var session = Quick(directory); DealCards(session); session.BeginVote();
+            using (var locked = new FileStream(Path.Combine(directory, "session.json"), FileMode.Open, FileAccess.Read, FileShare.None)) {
+                var blocked = Session.Open(directory, Language.German, NoDraw);
+                Check(blocked.View.StorageBlocked && blocked.View.StorageNotice == "ReadFailed", "read denial is explicit rather than restoring an older phase");
+                Check(!blocked.AddPlayer("Overwrite").Success && !blocked.StartFreshAfterDamage().Success, "inaccessible state cannot be overwritten");
+            }
+            ReopenUnchanged(directory, session);
+        }),
+        ("failed cancel and abandonment keep the selected vote and saved group", directory => {
+            var session = Quick(directory); DealCards(session); session.BeginVote();
+            var matchId = session.Match.Id; var suspect = session.Match.Participants[1].Id;
+            session.SelectSuspect(suspect);
+            var pending = Path.Combine(directory, "session.pending.json"); Directory.CreateDirectory(pending);
+            Check(session.CancelSuspect().Error == "SaveFailed" && session.Match.SelectedSuspect.Id == suspect, "failed correction retains the selected suspect");
+            Check(session.AbandonMatch(matchId).Error == "SaveFailed" && session.Match.Id == matchId && session.View.ActiveCount == 3, "failed abandonment retains match and group");
+            ReopenUnchanged(directory, session); Directory.Delete(pending);
+            Check(session.CancelSuspect().Success && session.Match.SelectedSuspect == null, "correction retry succeeds");
+            Check(session.AbandonMatch(matchId).Success && Session.Open(directory, Language.English).Match == null && session.View.ActiveCount == 3, "explicit abandonment retry keeps group durable");
         })
     };
     static void Check(bool actual, string expected) { if (!actual) throw new Exception(expected); }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,6 +10,8 @@ namespace WordDeduction.UI
         readonly Session session;
         readonly VisualElement screen, body, actions;
         readonly Action renderApp;
+        readonly VisualElement inputRoot;
+        readonly HashSet<int> contacts = new HashSet<int>();
         SecretCard card;
         bool paused, help, abandon;
         string notice;
@@ -16,6 +19,10 @@ namespace WordDeduction.UI
         public MatchSurface(Session session, VisualElement parent, Action renderApp)
         {
             this.session = session; this.renderApp = renderApp;
+            inputRoot = parent;
+            inputRoot.RegisterCallback<PointerDownEvent>(ContactDown, TrickleDown.TrickleDown);
+            inputRoot.RegisterCallback<PointerUpEvent>(ContactUp, TrickleDown.TrickleDown);
+            inputRoot.RegisterCallback<PointerCancelEvent>(ContactCancel, TrickleDown.TrickleDown);
             Resources.Load<VisualTreeAsset>("Match").CloneTree(parent);
             screen = parent.Q<VisualElement>("matchScreen"); body = screen.Q<VisualElement>("matchBody"); actions = screen.Q<VisualElement>("matchActions");
             paused = session.Match != null && session.Match.Phase != MatchPhase.Result;
@@ -55,9 +62,21 @@ namespace WordDeduction.UI
             if (result.Success && session.Match == null) paused = help = abandon = false;
             renderApp();
         }
-        public void Pause()
+        void ContactDown(PointerDownEvent e)
+        {
+            contacts.Add(e.pointerId);
+            if (contacts.Count <= 1) return;
+            card?.Hide(false);
+            e.StopImmediatePropagation(); e.PreventDefault();
+        }
+        void ContactUp(PointerUpEvent e) { contacts.Remove(e.pointerId); }
+        void ContactCancel(PointerCancelEvent e) { contacts.Remove(e.pointerId); }
+        public void Pause(bool interrupted = false)
         {
             card?.Hide(true);
+            // Android/Unity cancel their pointer stream on window interruption.
+            // Navigation retains contacts until release; a new window starts fresh.
+            if (interrupted) contacts.Clear();
             if (session.Match == null || session.Match.Phase == MatchPhase.Result) return;
             paused = true; help = false; abandon = false; Render();
         }
@@ -71,7 +90,14 @@ namespace WordDeduction.UI
             else Pause();
         }
         public void Tick() { card?.Tick(); }
-        public void Dispose() { card?.Dispose(); card = null; screen.RemoveFromHierarchy(); }
+        public void Dispose()
+        {
+            card?.Dispose(); card = null;
+            inputRoot.UnregisterCallback<PointerDownEvent>(ContactDown, TrickleDown.TrickleDown);
+            inputRoot.UnregisterCallback<PointerUpEvent>(ContactUp, TrickleDown.TrickleDown);
+            inputRoot.UnregisterCallback<PointerCancelEvent>(ContactCancel, TrickleDown.TrickleDown);
+            contacts.Clear(); screen.RemoveFromHierarchy();
+        }
         static Label Label(VisualElement parent, string name, string text, string css)
         {
             var label = new Label(text) { name = name }; label.AddToClassList(css); parent.Add(label); return label;
@@ -102,7 +128,7 @@ namespace WordDeduction.UI
                 if (card == null || !card.CanAdvance) return;
                 card.Hide(true); Act(session.AdvanceHandoff(match.Owner.Id));
             });
-            card = new SecretCard(session,match.Owner.Id,screen.parent,slot,hold,face,word,symbol,caption,next);
+            card = new SecretCard(session,match.Owner.Id,contacts,screen.parent,slot,hold,face,word,symbol,caption,next);
         }
         void Clues(MatchView match)
         {
