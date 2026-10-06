@@ -35,3 +35,9 @@ After capturing both images, force-stopped the app, restored the original primar
 Using the actual `Group.uss` colors and WCAG sRGB relative luminance: ink/paper14.62:1; muted/paper5.82:1; white/action-purple6.22:1; dark-purple/lilac7.88:1; count-text/mint8.31:1; removal-text/white7.00:1; notice-text/background7.50:1. These base pairs exceed4.5:1. This is a source-color calculation, not a measurement of every rendered state; opacity, disabled controls, focus, overlays and animation remain outside this check.
 
 Next: implement explicit working font fallback/shaping as needed and correct dp-equivalent targets in issue8, then rerun the same actual Android fixtures and native entry. Keep the original group and future running matches intact across APK updates.
+
+## Separate native accent entry
+
+After restoring the ordinary group, tested an actual Gboard input path: tapped the app name field, entered Zo, held the visible e key, moved to its visible ë choice and released. [Native choices](04-native-accent-choices.png), [resulting app input](05-native-accent-entered.png). Tapped the app's Plus, hid the empty keyboard and force-stopped/relaunched. The [saved envelope](native-accent-saved.json) contains exactly Zoë with stable new ID d20baa08d8414e1a91ea817905f7a7e9; all previous players remained. The ongoing synthetic group now has eight active people, still DE/Classic. This proves this accented native-entry/commit/restart path; it does not establish CJK/Arabic/Indic/emoji rendering, paste, TalkBack or all keyboard behaviors.
+
+The supported Android input command `input touchscreen motionevent DOWN/MOVE/UP x y` retained an active pointer between separate calls in this probe, allowing a screenshot while the native long-press popup was open. This provides a practical mechanism for inspecting the forthcoming hold/drag card during actual Android input. Exact coordinates are screenshot-derived and must be recalculated for each later layout.
