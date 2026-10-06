@@ -1,6 +1,6 @@
 # Android v1: Abnahmematrix
 
-Referenz: [kanonische Spezifikation](https://github.com/giarrel/word-deduction/issues/2), [lokale Lesekopie](../specs/android-release-v1.md). Diese Matrix trennt einen implementierten Mechanismus von seinem tatsächlich ausgeführten Nachweis. Stand bei Anlage: Der erste Implementierungszweig ist noch nicht integriert; keine Gesamtanforderung gilt allein aufgrund von Zwischenmeldungen als bestanden.
+Referenz: [kanonische Spezifikation](https://github.com/giarrel/word-deduction/issues/2), [lokale Lesekopie](../specs/android-release-v1.md). Diese Matrix trennt einen implementierten Mechanismus von seinem tatsächlich ausgeführten Nachweis. Stand nach Foundation-Integration: Implementer `44473f1`, Merge `318af96`, separate Integrationsprüfung `ac0dcca`. [Foundation-Nachweise](group-foundation.md), [Android-Bedienung](android-group-runtime/report.md) und [Merger-Prüfung](group-foundation-merge.md). Keine Gesamtanforderung gilt allein aufgrund eines Teilnachweises als bestanden.
 
 Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable**. Bei Passed sind geprüfter Commit, Plattform, konkreter Bericht und Umfang zu verlinken. Ein Teilnachweis lässt den Gesamteintrag offen. Blocked beschreibt hier ein einzelnes Prüfkriterium, nicht automatisch das aktive Codex-Ziel.
 
@@ -8,8 +8,8 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 
 | ID | Anforderung / Abnahmeumfang | Erforderliche Evidenz | Status |
 |---|---|---|---|
-| G01 | Namen hinzufügen, in derselben Ansicht weitere Namen eingeben, stabile IDs nach Neustart | Session-Test mit realer Ablage; tatsächlich bediente Gruppenansicht | Not run |
-| G02 | Umbenennen, Pause/Aktivieren, Entfernen/Undo ohne Verlust anderer Namen oder Einstellungen | Öffentliche Tests mit Schließen/Öffnen; gerenderter Bedienweg | Not run |
+| G01 | Namen hinzufügen, in derselben Ansicht weitere Namen eingeben, stabile IDs nach Neustart | Foundation: echte Dateien, Unity-UI und Android API36 mit ARM64-Übersetzung; mehrere APK-Updates und Force-stop | Passed |
+| G02 | Umbenennen, Pause/Aktivieren, Entfernen/Undo ohne Verlust anderer Namen oder Einstellungen | Foundation: 13 Session-Fälle und Android-Iterationen 2–5; sieben Personen, DE/Classic, ursprüngliche IDs und Undo geprüft | Passed |
 | G03 | Doppelte Namen bleiben eindeutig, auch bei bereits eingegebenen Suffixen und nach Bearbeitung | Konkrete kollidierende Namensfixtures; sichtbare Anzeige | Not run |
 | G04 | Unicode-Grenzen, Leer-/Steuerzeichen, 20 aktive und 40 gespeicherte Personen | Grenzfalltests; verständliche DE/EN-Rückmeldungen | Not run |
 | G05 | Jede bestätigte Änderung übersteht Prozessende; laufende Partie wird nicht neu ausgelost | Dateitests jeder Spielphase und Android-Neustart | Not run |
@@ -38,7 +38,7 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | U03 | Pointer-Abbruch/Capture-Verlust/zweiter Finger/Doppeltipp überspringen keine Person | Reproduzierbare UI-Szenarien; Besitzerwechsel bleibt verdeckt | Not run |
 | U04 | Fokus/Pause/Resume/Prozessende verbergen Geheimnisse; Taskvorschau bleibt geschützt | Editor-Lifecycle plus installierte Android-App und Taskvorschau | Not run |
 | U05 | Tastatur mit Umlauten, Einfügen, Rücktaste und Done; Fokusverlust verliert keinen Entwurf | Android-Namenseingabe; dokumentierte Tastatur/OS-Version | Not run |
-| U06 | Lesbarkeit, Kontrast, Touchflächen und Systemleisten bei kleinen/hohen Displays und langen Texten | Tatsächliche Bilder, Messwerte und kritische Sichtprüfung | Not run |
+| U06 | Lesbarkeit, Kontrast, Touchflächen und Systemleisten bei kleinen/hohen Displays und langen Texten | Kleine Android-Ansicht passt; 48 Unity-Referenzeinheiten ergeben bei 360 dp Breite nur ca. 44 dp. Anpassung und vollständiger Nachtest in Ticket 8 | Failed |
 | U07 | Konsistente runde Gestaltung, klare Hauptaktionen, angenehme Rückbewegung, reduzierte Bewegung | Betrachtete Bilder/Sequenzen und dokumentierte Korrekturschleife | Not run |
 | U08 | Kein unnötiger Bildschirm zwischen Ergebnis und neuer Verteilung; Warmstart-Ziel geprüft | Gezählte Aktionen und Zeitmessung auf benannter Laufzeit | Not run |
 | U09 | Barrierearme Alternativbedienung und keine automatisch offengelegten Geheimlabels | Gerenderte Semantik; TalkBack nur bei tatsächlich ausgeführtem Gerätetest behaupten | Not run |
@@ -70,4 +70,4 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 
 Automatisierte Abläufe, eigene UI-Bedienung und visuelle Kritik werden getrennt von Rückmeldungen einer realen Spielgruppe ausgewiesen. Physische Handhabung, Haptik und soziale Balance sind ohne echte Nutzung nicht bewiesen. Dies ist keine Erlaubnis, nicht getestete Kernfunktionen als fertig zu melden.
 
-Bei Anlage war kein Android-Gerät von ADB erkannt. Inzwischen ist ein [eigener Android-16-Emulator vollständig gestartet](../development/android-test-device.md), jedoch noch ohne geprüfte Word-Deduction-App. Ein physisches Handy mit USB-Debugging wurde über die Chat-Rückfrage angefragt; die Rückfrage selbst ist noch kein erteilter Gerätezugang.
+Der [eigene Android-16-Emulator](../development/android-test-device.md) hat die installierte Gruppenbasis tatsächlich geprüft. Seine Host-GPU rendert lesbaren Text; die ARM64-App läuft über native Übersetzung auf x86_64. Ein physisches Handy mit USB-Debugging wurde über die Chat-Rückfrage angefragt; die Rückfrage selbst ist noch kein erteilter Gerätezugang. Doppelte Namen, Kapazität, Namenvalidierung und Recovery besitzen bereits Foundation-Teilnachweise; die jeweiligen breiteren Kriterien bleiben offen, bis ihre vollständige Darstellung beziehungsweise der laufende Matchzustand geprüft sind.
