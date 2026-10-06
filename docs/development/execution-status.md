@@ -15,8 +15,8 @@ Ziel und Arbeitsweise: [Engineering-Ablauf](autonomous-workflow.md). Kanonische 
 |---|---|---|---|
 | [Gespeicherte Gruppe](https://github.com/giarrel/word-deduction/issues/3) | Ausführbare Unity-App, dauerhafte Gruppe, Test-/Buildbasis | Keine | Abgenommen und integriert: `318af96`, Testpfad/Doku `ac0dcca` |
 | [Schnellmodus](https://github.com/giarrel/word-deduction/issues/4) | Karte → Gespräch → Vote → Ergebnis → Folgepartie | Gruppe | Abgenommen und integriert: `496d446`, Integrationsprüfung `013087f` |
-| [Klassischer Modus](https://github.com/giarrel/word-deduction/issues/5) | Mehrere Runden und Mr. White | Schnellmodus | In eigenem Worktree in Umsetzung |
-| [Großer DE/EN-Wortbestand](https://github.com/giarrel/word-deduction/issues/6) | Redaktionelle Inhalte, Wiederholungsvermeidung, Übersetzungen | Schnellmodus | In eigenem Worktree in Umsetzung |
+| [Klassischer Modus](https://github.com/giarrel/word-deduction/issues/5) | Mehrere Runden und Mr. White | Schnellmodus | Abgenommen: `256678d` plus drei native Android-Partien |
+| [Großer DE/EN-Wortbestand](https://github.com/giarrel/word-deduction/issues/6) | Redaktionelle Inhalte, Wiederholungsvermeidung, Übersetzungen | Schnellmodus | Integriert: `029ed64`; gemeinsame Android-Abnahme mit Recovery ausstehend |
 | [Unterbrechung und Recovery](https://github.com/giarrel/word-deduction/issues/7) | Speicherschäden, Lebenszyklus, Geheimnisschutz | Schnellmodus | In eigenem Worktree in Umsetzung |
 | [Bedienung und visuelle Playtests](https://github.com/giarrel/word-deduction/issues/8) | Belegte Verbesserung der vollständigen App | Klassisch, Inhalte, Recovery | Wartet |
 | [Release-Kandidat](https://github.com/giarrel/word-deduction/issues/9) | Review, APK/AAB, Verpackungsnachweise, Storeunterlagen | Playtests | Wartet |
@@ -49,4 +49,10 @@ Die Implementation läuft auf `integration/android-v1`. Je Ticket eine eigene Br
 
 ## Schnellmodus abgenommen
 
-21/21 Session-Tests, 10/10 Unity-PlayMode-Tests und drei vollständig bediente Android-Partien (richtiger Verdacht, falscher Verdacht, wiederholter Gleichstand). V1-Gruppe unverändert übernommen, V2 bei bewusster Aktion geschrieben; nach Folgepartien und bestätigtem Abbruch sind alle acht Spieleridentitäten erhalten. Native Zwei-Finger-Eingabe und Android-Aufnahmeschutz geprüft. [Android-Nachweise](../validation/android-quick-runtime/report.md), [separate Integration](../validation/quick-mode-merge.md). Die nächste Arbeitsfront umfasst Tickets 5, 6 und 7.
+21/21 Session-Tests, 10/10 Unity-PlayMode-Tests und drei vollständig bediente Android-Partien (richtiger Verdacht, falscher Verdacht, wiederholter Gleichstand). V1-Gruppe unverändert übernommen, V2 bei bewusster Aktion geschrieben; nach Folgepartien und bestätigtem Abbruch sind alle acht Spieleridentitäten erhalten. Native Zwei-Finger-Eingabe und Android-Aufnahmeschutz geprüft. [Android-Nachweise](../validation/android-quick-runtime/report.md), [separate Integration](../validation/quick-mode-merge.md). Der nachfolgend abgenommene Classic-Modus ist unten dokumentiert.
+
+## Classic abgenommen, großer Wortbestand integriert
+
+Classic: 29/29 Session-Szenarien, 14/14 gerenderte Tests und drei vollständig bediente Android-Partien in EN/DE. White-Sieg, Bürgersieg nach falschem Tipp des letzten Gegners, beide überlebenden Gegnerrollen, Gleichstand ohne Eliminierung, 4↔5-White-Präferenz und Wiederaufnahme nach Prozessende geprüft. [Android-Abnahme](../validation/android-classic-runtime/report.md), [separate Integration](../validation/classic-mode-merge.md). Kein offener Classic-Regelfehler in diesem Umfang.
+
+Der große Wortbestand ist separat integriert: 520 Paare, 20 Themen, 1.038 Begriffe pro Sprache; V4 übernimmt bestehende Classic-/Quick-Partien und verbrauchte Wortpaare. 36 Session-Szenarien beim Implementer sowie separate Migration und 1.040 persistierte Ziehungen beim Merger bestanden. [Content-Integration](../validation/bilingual-content-merge.md). Ticket 6 bleibt bis zur gemeinsamen gerenderten und Android-Abnahme mit Recovery offen. Ticket 7 korrigiert unter anderem die nativ reproduzierten Mehrfinger- und Systemgestenfälle; danach beginnt der vollständige UI-/Playtest-Feinschliff in Ticket 8.

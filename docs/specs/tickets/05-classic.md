@@ -12,10 +12,10 @@ Dieselbe gespeicherte Gruppe wechselt in Classic und spielt wiederholte Hinweisr
 
 ## Acceptance criteria
 
-- [ ] Automatische Rollenformel und optionale White-Präferenz gemäß Spec für 4–20 Personen umsetzen; Quick bleibt unverändert.
-- [ ] Runden mit Überlebenden, zufällige Startperson einschließlich White, mündliche Abstimmung, Rollenanzeige ohne Geheimwort; erneuter Gleichstand führt ohne Eliminierung weiter.
-- [ ] White rät laut; Gruppe bewertet die Bedeutung; Zielwort bleibt bis Ergebnis verborgen. Ausstehender Rateversuch hat Vorrang vor anderen Endbedingungen und ist wiederaufnehmbar.
-- [ ] Alle Siegpfade, Grenzfälle und erneute Auswahl ausgeschiedener Personen über das öffentliche Interface testen. DE/EN-Spieloberfläche; Folgepartie schließt alle aktiven Gruppenmitglieder wieder ein.
+- [x] Automatische Rollenformel und optionale White-Präferenz gemäß Spec für 4–20 Personen umsetzen; Quick bleibt unverändert.
+- [x] Runden mit Überlebenden, zufällige Startperson einschließlich White, mündliche Abstimmung, Rollenanzeige ohne Geheimwort; erneuter Gleichstand führt ohne Eliminierung weiter.
+- [x] White rät laut; Gruppe bewertet die Bedeutung; Zielwort bleibt bis Ergebnis verborgen. Ausstehender Rateversuch hat Vorrang vor anderen Endbedingungen und ist wiederaufnehmbar.
+- [x] Alle Siegpfade, Grenzfälle und erneute Auswahl ausgeschiedener Personen über das öffentliche Interface testen. DE/EN-Spieloberfläche; Folgepartie schließt alle aktiven Gruppenmitglieder wieder ein.
 
 ## Blocked by
 
@@ -29,3 +29,8 @@ Use `implement-spec` and `tdd` at the Session and rendered-app seams defined in 
 ## Klarstellung der vorhandenen Siegbedingung
 
 Beim Ende mit nur einem verbleibenden Bürger nennt das Ergebnis die abweichenden Rollen, von denen noch mindestens jemand lebt: Undercover, Mr. White oder beide gemeinsam. Ein richtiger White-Tipp benennt stets ausschließlich Mr. White als Sieger. Das präzisiert „surviving adversary side“ aus der kanonischen Spec, ohne die festgelegten Endbedingungen zu verändern. Die Rollenmenge für das Ergebnis in den Grenzfalltests ausdrücklich prüfen; dies ist unsere erklärte Spielvariante.
+
+
+## Abnahme
+
+Implementer 9187444, separate Integration 256678d; 29 Session-Szenarien, 14 gerenderte Tests und drei tatsächlich durchgespielte Android-Partien in DE/EN. [Android-Bericht](../../validation/android-classic-runtime/report.md). Classic fachlich abgenommen; übergreifende Recovery-/Layoutkorrekturen bleiben Tickets 7 und 8.
