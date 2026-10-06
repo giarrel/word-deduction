@@ -1,0 +1,10 @@
+10-06 23:05:48.278   882   967 V WindowManagerShell:  try firstHandler com.android.wm.shell.back.BackAnimationController$BackTransitionHandler@3d1a8a9
+10-06 23:05:48.284   882   967 D ShellBackPreview: BackAnimationController: startAnimation()
+10-06 23:05:48.329   882   967 D ShellBackPreview: BackAnimationController: startPostCommitAnimation()
+10-06 23:05:48.344   982   982 D StateManager: 	at com.android.quickstep.LauncherBackAnimationController.startTransition(go/retraceme 43e00d9cd0eb17b3d9dd30fc1741b1c71445c4c0f7c8c9b81300265c86c5b873:110)
+10-06 23:05:48.344   882   967 V WindowManagerShell: Transition (#19): request handled by BackAnimationController$BackTransitionHandler
+10-06 23:05:48.384   635   664 D CoreBackPreview: onTransactionReady, opening: [Task{65b89c5 #1 type=home}], closing: [Task{a687519 #27 type=standard A=10216:com.giarrel.worddeduction minWidth=400 minHeight=300}], animating: AnimationTargets{ openTarget= {Task{65b89c5 #1 type=home}} closeTarget= Task{a687519 #27 type=standard A=10216:com.giarrel.worddeduction minWidth=400 minHeight=300} mSwitchType= 1 mComposed= true mWaitTransition= false}, match: true
+10-06 23:05:48.398   635   660 V WindowManager:         {WCT{RemoteToken{cd788bb Task{a687519 #27 type=standard A=10216:com.giarrel.worddeduction minWidth=400 minHeight=300}}} m=CLOSE f=FLAG_BACK_GESTURE_ANIMATED leash=Surface(name=Task=27)/@0x323719f sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}
+10-06 23:05:49.451   882   967 D ShellBackPreview: BackAnimationController: onBackAnimationFinished()
+10-06 23:05:49.452   882   967 D ShellBackPreview: BackAnimationController: finishBackNavigation()
+10-06 23:05:49.452   635  1026 D CoreBackPreview: onBackNavigationDone backType=1, triggerBack=true
