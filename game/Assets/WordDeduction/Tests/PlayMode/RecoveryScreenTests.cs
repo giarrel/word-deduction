@@ -107,6 +107,39 @@ namespace WordDeduction.Tests
                 fixture.Dispose(); yield return null;
             }
         }
+        [UnityTest]
+        public IEnumerator ColdRestoredPauseAcceptsAbandonAndRepeatedTouchNavigation()
+        {
+            foreach (var phase in new[] { "classicHandoff", "classicClues" })
+            {
+                var fixture = new Fixture(Language.English, phase); yield return null; yield return null;
+                var matchId = fixture.Session.Match.Id;
+                Assert.That(fixture.Root.Q<Button>("resumeMatch"), Is.Not.Null);
+                // Each independent single-finger gesture starts with the primary Touch pointer.
+                var abandon = fixture.Root.Q<Button>("abandonMatch");
+                Down(abandon, 1); yield return null; Up(abandon, 1); yield return null;
+                Assert.That(fixture.Root.Q<Button>("confirmAbandon"), Is.Not.Null, "First touch after restoring a paused match opens the confirmation.");
+                var keep = fixture.Root.Q<Button>("keepMatch");
+                Down(keep, 1); yield return null; Up(keep, 1); yield return null;
+                Assert.That(fixture.Root.Q<Button>("resumeMatch"), Is.Not.Null);
+                abandon = fixture.Root.Q<Button>("abandonMatch");
+                Down(abandon, 1); yield return null; Up(abandon, 1); yield return null;
+                Assert.That(fixture.Root.Q<Button>("confirmAbandon"), Is.Not.Null, "A later single-finger tap is not blocked by a released captured button.");
+                var back = fixture.Root.Q<Button>("matchBack");
+                Down(back, 1); yield return null; Up(back, 1); yield return null;
+                var help = fixture.Root.Q<Button>("matchHelp");
+                Down(help, 1); yield return null; Up(help, 1); yield return null;
+                Assert.That(fixture.Root.Q<Button>("closeHelp"), Is.Not.Null);
+                back = fixture.Root.Q<Button>("matchBack");
+                Down(back, 1); yield return null; Up(back, 1); yield return null;
+                var resume = fixture.Root.Q<Button>("resumeMatch");
+                Assert.That(resume, Is.Not.Null);
+                Down(resume, 1); yield return null; Up(resume, 1); yield return null;
+                Assert.That(fixture.Root.Q<Button>("resumeMatch"), Is.Null);
+                Assert.That(fixture.Session.Match.Id, Is.EqualTo(matchId));
+                fixture.Dispose(); yield return null;
+            }
+        }
         static void Down(VisualElement element, int id)
         {
             using (var e = PointerDownEvent.GetPooled(new Touch { fingerId = id - 1, position = element.worldBound.center, phase = TouchPhase.Began })) { e.target = element; element.SendEvent(e); }
@@ -140,6 +173,15 @@ namespace WordDeduction.Tests
                 else if (fault == "backup") File.WriteAllText(Path.Combine(DirectoryPath, "session.json"), "damaged primary");
                 else if (fault == "newer") File.WriteAllText(Path.Combine(DirectoryPath, "session.json"), "{\"Version\":999}");
                 else if (fault == "unreadable") { File.Delete(Path.Combine(DirectoryPath, "session.json")); Directory.CreateDirectory(Path.Combine(DirectoryPath, "session.json")); }
+                else if (fault == "classicHandoff" || fault == "classicClues")
+                {
+                    Session.AddPlayer("Dana"); Session.AddPlayer("Eli"); Session.SetMode(GameMode.Classic); Session.StartMatch();
+                    if (fault == "classicClues")
+                        while (Session.Match.Phase == MatchPhase.Handoff)
+                        {
+                            var owner = Session.Match.Owner.Id; Session.RevealWord(owner); Session.HideWord(); Session.AdvanceHandoff(owner);
+                        }
+                }
                 if (fault != null) Session = Session.Open(DirectoryPath, language, maximum => 0);
                 Host = new GameObject("Recovery interaction test"); Host.SetActive(false);
                 var document = Host.AddComponent<UIDocument>();
