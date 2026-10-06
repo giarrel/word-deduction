@@ -1,0 +1,10 @@
+10-06 23:56:28.786 D/AndroidRuntime( 5331): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-06 23:56:28.795 I/AndroidRuntime( 5331): Using default boot image
+10-06 23:56:28.795 I/AndroidRuntime( 5331): Leaving lock profiling enabled
+10-06 23:56:28.926 D/AndroidRuntime( 5331): Calling main entry WordDeductionInput
+10-06 23:56:29.354 D/CoreBackPreview(  635): startBackNavigation currentTask=Task{6d27146 #33 type=standard A=10216:com.giarrel.worddeduction minWidth=400 minHeight=300}, topRunningActivity=ActivityRecord{108436267 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t33}, callbackInfo=OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d5d5b31, mPriority=1, mIsAnimationCallback=false, mOverrideBehavior=0}, currentFocus=Window{93d6b4a u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-06 23:56:29.354 D/ShellBackPreview(  882): Received backNavigationInfo:BackNavigationInfo{mType=TYPE_CALLBACK (4), mOnBackNavigationDone=android.os.RemoteCallback@6d63484, mOnBackInvokedCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f4cc46d, mPrepareRemoteAnimation=false, mAnimationCallback=false, mCustomizeAnimationInfo=null}
+10-06 23:56:29.418 I/InputDispatcher(  635): Channel [Gesture Monitor] edge-swipe is stealing input gesture for device -1 from [93d6b4a com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity, [Gesture Monitor] swipe-up]
+10-06 23:56:30.045 D/ShellBackPreview(  882): BackAnimationController: finishBackNavigation()
+10-06 23:56:30.045 D/CoreBackPreview(  635): onBackNavigationDone backType=4, triggerBack=false
+10-06 23:56:30.214 D/AndroidRuntime( 5331): Shutting down VM

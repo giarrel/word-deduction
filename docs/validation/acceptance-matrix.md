@@ -12,9 +12,9 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | G02 | Umbenennen, Pause/Aktivieren, Entfernen/Undo ohne Verlust anderer Namen oder Einstellungen | Foundation: 13 Session-Fälle und Android-Iterationen 2–5; sieben Personen, DE/Classic, ursprüngliche IDs und Undo geprüft | Passed |
 | G03 | Doppelte Namen bleiben eindeutig, auch bei bereits eingegebenen Suffixen und nach Bearbeitung | Konkrete kollidierende Namensfixtures; sichtbare Anzeige | Not run |
 | G04 | Unicode-Grenzen, Leer-/Steuerzeichen, 20 aktive und 40 gespeicherte Personen | Session-Grenzfälle bestanden; [Android-Schriftprobe](group-layout-probes/report.md) zeigt akzeptierte CJK-/arabische/indische Namen und Emoji leer. Darstellung vor Release korrigieren | Failed |
-| G05 | Jede bestätigte Änderung übersteht Prozessende; laufende Partie wird nicht neu ausgelost | Dateitests jeder Spielphase und Android-Neustart | Not run |
-| G06 | Abgebrochene/fehlgeschlagene Speicherung meldet keinen Erfolg und behält gültigen Zustand | Reproduzierbarer Schreibfehler und unterbrochener Schreibvorgang | Not run |
-| G07 | Hauptdatei beschädigt, Sicherung beschädigt, neues unbekanntes Schema | Öffentliche Recovery-Szenarien; keine stillen Überschreibungen; UI-Nachweis | Not run |
+| G05 | Jede bestätigte Änderung übersteht Prozessende; laufende Partie wird nicht neu ausgelost | Recovery:46 Session-Szenarien plus Classic-Dateimatrix jeder Phase; [AndroidV3→V4 und Neustart](android-recovery-combined/report.md) behalten exakte bestätigte Dateien | Passed |
+| G06 | Abgebrochene/fehlgeschlagene Speicherung meldet keinen Erfolg und behält gültigen Zustand | Echte Windows-Replace-Sperren und unterbrochene Dateien; [native White-Urteils-Schreibsperre](android-recovery-combined/report.md) bewahrt Datei bytegenau und bestätigt erst nach Retry | Passed |
+| G07 | Hauptdatei beschädigt, Sicherung beschädigt, neues unbekanntes Schema | [Recovery](recovery.md): beide Dateigenerationen, ReadFailed, Zukunftsschema und explizite Archive/Reset-Antworten in echten Dateien und gerendertem UI | Passed |
 | G08 | Folgepartie enthält alle aktiven Gruppenmitglieder einschließlich zuvor Eliminierter | Quick und Classic: direkte Folgepartien in [Quick](android-quick-runtime/report.md) und [Classic](android-classic-runtime/report.md), einschließlich vorheriger Eliminierter | Passed |
 
 ## Spielregeln
@@ -26,7 +26,7 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | R03 | Quick: richtige/falsche Beschuldigung, Stichwahl, wiederholter Gleichstand, Ergebnis | Implementer74e7825, Integration496d446/013087f: 21 Session-/10 PlayMode-Fälle und drei [tatsächliche Android-Partien](android-quick-runtime/report.md), DE/EN | Passed |
 | R04 | Classic: fortlaufende Runden, alle Siege, keine erneute Auswahl Eliminierter | 29 Session-Szenarien, 14 gerenderte Tests, [drei tatsächliche Android-Classic-Partien](android-classic-runtime/report.md) mit fortlaufenden Runden und ausgeschlossenen Eliminierten | Passed |
 | R05 | White: semantischer Tipp, richtig/falsch, Priorität des Tipps, Wiederaufnahme, kein Wortleck | White korrekt/falsch und Priorität: Session/Editor plus [Android-Neustart im Rateversuch und White als letzter Gegner](android-classic-runtime/report.md), Zielwort erst im Ergebnis | Passed |
-| R06 | Back, Hilfe, korrigierbare Vorauswahl, bestätigter Abbruch und Fortsetzen | Taste funktioniert; [echte Android-Randgeste](android-interruptions-baseline/report.md) schließt die Activity zum Launcher statt In-App-Pause. Korrektur und Nachtest in Ticket 7 | Failed |
+| R06 | Back, Hilfe, korrigierbare Vorauswahl, bestätigter Abbruch und Fortsetzen | Native Randgeste korrigiert; [Kaltstart-Gegencheck](android-recovery-combined/report.md) zeigt zeitweise ignorierte Abbruchaktion, Ticket7 untersucht | Failed |
 | R07 | Ergebnis nennt Sieger/Grund/Wörter; direkte Folgepartie ohne Neueingabe | Beide Modi in DE/EN nativ gespielt; [Quick](android-quick-runtime/report.md) und [Classic](android-classic-runtime/report.md) mit Wörtern/Rollen und einer Aktion zur Folgepartie | Passed |
 
 ## Wortkarte und Bedienung
@@ -35,7 +35,7 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 |---|---|---|---|
 | U01 | Name vor Geheimnis; bewusstes Hochziehen; Text beim Loslassen sofort verdeckt | Quick74e7825: synchroner UITK-Test vor nächstem Frame; [native Android-Geste und betrachtete Bilder](android-quick-runtime/report.md) mit benanntem Besitzer und verborgenem Wort | Passed |
 | U02 | Haltealternative, kurzer Tipp, langsamer Drag, frühes Loslassen, außerhalb der Karte | Reale Pointer-Ereignisse; kein Screenshot-Only-Nachweis | Not run |
-| U03 | Pointer-Abbruch/Capture-Verlust/zweiter Finger/Doppeltipp überspringen keine Person | Einfacher Zwei-Finger-Abbruch bestanden; vertiefter [Android-Gegencheck](android-interruptions-baseline/report.md) reproduziert erneutes Aufdecken durch Finger 2, während Finger 1 weiter gehalten wird. Korrektur und Nachtest in Ticket 7 | Failed |
+| U03 | Pointer-Abbruch/Capture-Verlust/zweiter Finger/Doppeltipp überspringen keine Person | Recovery89b7b386: gerenderte Multi-Kontakt-/Navigationstests plus [nativer Reentry-Gegencheck und gewöhnliches Next](android-recovery-combined/report.md); keine vorzeitige Freigabe oder übersprungene Karte | Passed |
 | U04 | Fokus/Pause/Resume/Prozessende verbergen Geheimnisse; Taskvorschau bleibt geschützt | Editor-Lifecycle plus installierte Android-App und Taskvorschau | Not run |
 | U05 | Tastatur mit Umlauten, Einfügen, Rücktaste und Done; Fokusverlust verliert keinen Entwurf | Android-Namenseingabe; dokumentierte Tastatur/OS-Version | Not run |
 | U06 | Lesbarkeit, Kontrast, Touchflächen und Systemleisten bei kleinen/hohen Displays und langen Texten | [Kleine Android-Ansicht und Schriftprobe](group-layout-probes/report.md): 48 Unity-Referenzeinheiten ergeben bei 360 dp Breite nur ca. 44 dp; mehrere Schriftsysteme bleiben leer. Anpassung und Nachtest in Ticket 8 | Failed |
@@ -47,10 +47,10 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 
 | ID | Anforderung / Abnahmeumfang | Erforderliche Evidenz | Status |
 |---|---|---|---|
-| C01 | Mindestens 500 eigene bilinguale Paare, 700 verschiedene Wörter je Sprache, zwölf Themen | Gemessene Katalogstatistik und eigene Herkunft | Not run |
-| C02 | Vertraute, verschiedene, sinnvoll verwandte Begriffe; keine Übersetzungs-/Synonym-/Duplikatfüllung | Datenvalidierung und dokumentierte redaktionelle Durchsicht | Not run |
-| C03 | Vollständiger Ziehzyklus ohne Paarwiederholung, Neustart/Sprachwechsel, Zyklusübergang | Tests mit tatsächlichem Katalog und persistiertem Verlauf | Not run |
-| C04 | Letzte zehn Wortverwendungen bevorzugt vermeiden; Auswahl terminiert bei Restbeständen | Passende knappe Restdeck-Fixtures und vollständiger Zyklus | Not run |
+| C01 | Mindestens 500 eigene bilinguale Paare, 700 verschiedene Wörter je Sprache, zwölf Themen | [Content](bilingual-content.md):520 eigene bilinguale Paare,1038 normalisierte Begriffe je Sprache,20 Themen; exakter kompilierter Katalog | Passed |
+| C02 | Vertraute, verschiedene, sinnvoll verwandte Begriffe; keine Übersetzungs-/Synonym-/Duplikatfüllung | [Redaktion und Katalogprüfung](bilingual-content.md): alle Paare durchgesehen, keine doppelten IDs/umgekehrten Paare/fehlenden Übersetzungen; regionale menschliche Review-Kandidaten dokumentiert | Passed |
+| C03 | Vollständiger Ziehzyklus ohne Paarwiederholung, Neustart/Sprachwechsel, Zyklusübergang | 1040 reale persistierte Ziehungen mit Sprachwechsel/Neustart plus [native Migration und DE→EN-Partien](android-recovery-combined/report.md) | Passed |
+| C04 | Letzte zehn Wortverwendungen bevorzugt vermeiden; Auswahl terminiert bei Restbeständen | Öffentliche Session-Tests mit tatsächlichem Katalog und absichtlich knappem Restbestand; voller Zwei-Zyklen-Test in [Content-Integration](bilingual-content-merge.md) | Passed |
 | C05 | UI, Fehler, Regeln und Zugänglichkeitslabels vollständig in DE/EN; Sprache gespeichert | Schlüsselprüfung plus jede reale Ansicht in beiden Sprachen | Not run |
 
 ## Android und Release

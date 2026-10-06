@@ -1,0 +1,8 @@
+READY source=TOUCHSCREEN tool=FINGER
+OK down 0 2 1250 injected=true
+OK move 0 120 1250 injected=true
+OK move 0 350 1250 injected=true
+OK move 0 120 1250 injected=true
+OK move 0 2 1250 injected=true
+OK up 0 injected=true
+

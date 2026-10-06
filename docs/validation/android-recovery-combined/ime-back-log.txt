@@ -1,0 +1,11 @@
+10-06 23:59:56.173 D/CoreBackPreview(  635): startBackNavigation currentTask=Task{ea310e5 #34 type=standard A=10216:com.giarrel.worddeduction minWidth=400 minHeight=300}, topRunningActivity=ActivityRecord{183157341 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t34}, callbackInfo=OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@33f1e72, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}, currentFocus=Window{e5cfa88 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-06 23:59:56.174 D/ShellBackPreview(  882): Received backNavigationInfo:BackNavigationInfo{mType=TYPE_CALLBACK (4), mOnBackNavigationDone=android.os.RemoteCallback@96200aa, mOnBackInvokedCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@86a449b, mPrepareRemoteAnimation=false, mAnimationCallback=true, mCustomizeAnimationInfo=null}
+10-06 23:59:56.187 I/InputDispatcher(  635): Channel [Gesture Monitor] edge-swipe is stealing input gesture for device -1 from [e5cfa88 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity, [Gesture Monitor] swipe-up]
+10-06 23:59:56.282 D/CoreBackPreview(  635): Window{e5cfa88 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@42ed693, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+10-06 23:59:56.295 I/Unity   ( 5408): Handle cmd APP_CMD_SOFTWARE_KB_VIS_CHANGED(6)
+10-06 23:59:56.295 I/Unity   ( 5408):     Keyboard Visible = False
+10-06 23:59:56.326 I/Unity   ( 5408): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+10-06 23:59:56.440 D/ShellBackPreview(  882): BackAnimationController: finishBackNavigation()
+10-06 23:59:56.442 D/CoreBackPreview(  635): onBackNavigationDone backType=4, triggerBack=true
+10-06 23:59:56.443 W/WindowOnBackDispatcher( 5408): ProgressAnimator was not in progress, skip onBackInvoked().
+10-06 23:59:56.557 I/Unity   ( 5408): Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)

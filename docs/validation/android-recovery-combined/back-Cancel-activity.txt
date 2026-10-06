@@ -1,0 +1,2 @@
+    topResumedActivity=ActivityRecord{108436267 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t33}
+  ResumedActivity: ActivityRecord{108436267 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t33}
