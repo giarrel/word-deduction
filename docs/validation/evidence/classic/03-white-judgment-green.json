@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "duration": 2.9,
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "WordDeduction.Tests.ClassicScreenTests.ClassicCanStartFromTheSavedGroupInBothLanguages",
+      "Status": "Passed",
+      "Duration": 0.3161441,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.ClassicScreenTests.WhitePrivateCardAndSpokenGuessRemainPrivateAcrossResumeInBothLanguages",
+      "Status": "Passed",
+      "Duration": 2.5490912,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

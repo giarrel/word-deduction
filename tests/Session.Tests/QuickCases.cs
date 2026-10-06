@@ -99,12 +99,12 @@ static class QuickCases
             foreach (var name in new[] { "Alex", "Alex", "Chris", "Dana" }) session.AddPlayer(name);
             session.SetMode(GameMode.Classic); session.RemovePlayer(session.View.Players[3].Id);
             var path = Path.Combine(directory,"session.json");
-            var legacy = File.ReadAllText(path).Replace("\"Version\":2","\"Version\":1"); File.WriteAllText(path,legacy);
+            var legacy = File.ReadAllText(path).Replace("\"Version\":3","\"Version\":1"); File.WriteAllText(path,legacy);
             var ids = session.View.Players.Select(p => p.Id).ToArray();
             session = Session.Open(directory,Language.English);
             Check(session.View.Players.Select(p => p.Id).SequenceEqual(ids) && session.View.CanUndo && session.View.Mode == GameMode.Classic && session.View.Language == Language.German, "V1 state imported intact");
             Check(File.ReadAllText(path) == legacy, "opening does not rewrite legacy file");
-            Check(session.StartMatch().Error == "ModeUnavailable", "Classic cannot silently start Quick");
+            Check(session.StartMatch().Error == "NotEnoughPlayers", "Classic cannot silently start Quick");
             session.UndoRemove(); session.SetMode(GameMode.Quick); Check(session.StartMatch().Success, "migrated group can start Quick");
             Check(Session.Open(directory,Language.English).Match.Participants.Count == 4, "new format reopens full deal");
         }),
@@ -127,7 +127,7 @@ static class QuickCases
             session.SetParticipation(session.View.Players[0].Id,false);
             Check(!session.Rematch(id).Success && session.Match.Phase == MatchPhase.Result, "insufficient group cannot start a rematch");
             session.SetParticipation(session.View.Players[0].Id,true); session.SetMode(GameMode.Classic);
-            Check(session.Rematch(id).Error == "ModeUnavailable" && session.Match.Phase == MatchPhase.Result, "Classic cannot start Quick rules from results");
+            Check(session.Rematch(id).Error == "NotEnoughPlayers" && session.Match.Phase == MatchPhase.Result, "Classic cannot start Quick rules from results");
             session.SetMode(GameMode.Quick); Check(session.Rematch(id).Success, "valid group rematches");
         }),
         ("all seats can be Undercover and start without leaking secret fields through safe views", directory => {

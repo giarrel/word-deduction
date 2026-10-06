@@ -56,7 +56,10 @@ namespace WordDeduction.UI
             if (!MobilePrivacy.Ready) return;
             var text = session.RevealWord(owner);
             if (text == null) return;
-            word.text = text; symbol.EnableInClassList("hidden",true); caption.EnableInClassList("hidden",true); face.AddToClassList("revealed");
+            bool white = text == "Mr. White";
+            word.text = white ? Copy.Get(session.Match.Language,"whitePrivate") : text;
+            word.EnableInClassList("white-private",white);
+            symbol.EnableInClassList("hidden",true); caption.EnableInClassList("hidden",true); face.AddToClassList("revealed");
         }
         void Conceal()
         {

@@ -1,0 +1,9 @@
+{
+  "file": "WordDeduction-classic-accepted.apk",
+  "bytes": 37583470,
+  "sha256": "abc6e923f0fc7ad124d8984475923c402a9cadb22b3bb9c4c5e1bb92ff99ef8c",
+  "builtSource": "9c05948",
+  "unity": "6000.3.25f1",
+  "target": "Android ARM64 IL2CPP",
+  "originalApplicationId": "com.giarrel.worddeduction"
+}
