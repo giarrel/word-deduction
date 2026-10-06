@@ -1,0 +1,7 @@
+FAIL Classic deals the automatic mix and retains the optional White preference: default Classic mix has no White at every supported size
+PASS Classic eliminates survivors only and continues until all adversaries are found
+PASS Classic names exactly the surviving adversary roles at one Civilian left
+FAIL Classic has one runoff then a new clue round with no elimination and any survivor may start: Index was outside the bounds of the array.
+PASS invalid Classic progress is rejected even with a valid checksum
+PASS Classic failed elimination and White judgment preserve both memory and saved progress
+4/6 passed

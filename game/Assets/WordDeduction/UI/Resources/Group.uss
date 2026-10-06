@@ -41,6 +41,8 @@ Button:disabled { opacity: 0.65; }
 .mode-button { flex-grow: 1; flex-basis: 0; border-radius: 16px; min-height: 48px; }
 .mode-button.selected { background-color: white; color: #5734a6; }
 .mode-description { font-size: 13px; color: var(--muted); white-space: normal; min-height: 38px; margin: 8px 4px 10px; -unity-text-align: upper-center; flex-shrink: 0; }
+.white-preference { background-color: var(--lilac); color: #503093; min-height: 48px; white-space: normal; margin-bottom: 10px; flex-shrink: 0; }
+.typing .white-preference { display: none; }
 .play-button { min-height: 58px; border-radius: 20px; background-color: var(--purple); color: white; font-size: 19px; flex-shrink: 0; }
 .start-hint { font-size: 12px; color: var(--muted); -unity-text-align: middle-center; white-space: normal; margin-top: 9px; flex-shrink: 0; }
 .notice-panel { background-color: #f7e3d4; border-radius: 16px; padding: 8px 12px; margin-bottom: 12px; flex-shrink: 0; }

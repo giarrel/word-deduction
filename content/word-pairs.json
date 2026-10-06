@@ -1,0 +1,6242 @@
+[
+  {
+    "id": "fruit-vegetables-001",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Apfel",
+      "Birne"
+    ],
+    "en": [
+      "Apple",
+      "Pear"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-002",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Pfirsich",
+      "Aprikose"
+    ],
+    "en": [
+      "Peach",
+      "Apricot"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-003",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Pflaume",
+      "Kirsche"
+    ],
+    "en": [
+      "Plum",
+      "Cherry"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-004",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Erdbeere",
+      "Himbeere"
+    ],
+    "en": [
+      "Strawberry",
+      "Raspberry"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-005",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Blaubeere",
+      "Brombeere"
+    ],
+    "en": [
+      "Blueberry",
+      "Blackberry"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-006",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Zitrone",
+      "Limette"
+    ],
+    "en": [
+      "Lemon",
+      "Lime"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-007",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Orange",
+      "Mandarine"
+    ],
+    "en": [
+      "Orange",
+      "Mandarin"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-008",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Ananas",
+      "Melone"
+    ],
+    "en": [
+      "Pineapple",
+      "Melon"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-009",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Banane",
+      "Mango"
+    ],
+    "en": [
+      "Banana",
+      "Mango"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-010",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Kiwi",
+      "Passionsfrucht"
+    ],
+    "en": [
+      "Kiwi",
+      "Passion fruit"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-011",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Wassermelone",
+      "Honigmelone"
+    ],
+    "en": [
+      "Watermelon",
+      "Honeydew melon"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-012",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Traube",
+      "Rote Johannisbeere"
+    ],
+    "en": [
+      "Grape",
+      "Redcurrant"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-013",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Feige",
+      "Dattel"
+    ],
+    "en": [
+      "Fig",
+      "Date"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-014",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Kokosnuss",
+      "Avocado"
+    ],
+    "en": [
+      "Coconut",
+      "Avocado"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-015",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Rosine",
+      "Trockenpflaume"
+    ],
+    "en": [
+      "Raisin",
+      "Prune"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-016",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Karotte",
+      "Radieschen"
+    ],
+    "en": [
+      "Carrot",
+      "Radish"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-017",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Kartoffel",
+      "Süßkartoffel"
+    ],
+    "en": [
+      "Potato",
+      "Sweet potato"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-018",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Tomate",
+      "Paprika"
+    ],
+    "en": [
+      "Tomato",
+      "Bell pepper"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-019",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Gurke",
+      "Zucchini"
+    ],
+    "en": [
+      "Cucumber",
+      "Courgette"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-020",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Brokkoli",
+      "Blumenkohl"
+    ],
+    "en": [
+      "Broccoli",
+      "Cauliflower"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-021",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Zwiebel",
+      "Knoblauch"
+    ],
+    "en": [
+      "Onion",
+      "Garlic"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-022",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Erbse",
+      "Bohne"
+    ],
+    "en": [
+      "Pea",
+      "Bean"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-023",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Lauch",
+      "Frühlingszwiebel"
+    ],
+    "en": [
+      "Leek",
+      "Spring onion"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-024",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Rotkohl",
+      "Weißkohl"
+    ],
+    "en": [
+      "Red cabbage",
+      "White cabbage"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-025",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Kürbis",
+      "Aubergine"
+    ],
+    "en": [
+      "Pumpkin",
+      "Aubergine"
+    ]
+  },
+  {
+    "id": "fruit-vegetables-026",
+    "theme": "fruit-vegetables",
+    "de": [
+      "Mais",
+      "Spargel"
+    ],
+    "en": [
+      "Sweetcorn",
+      "Asparagus"
+    ]
+  },
+  {
+    "id": "meals-001",
+    "theme": "meals",
+    "de": [
+      "Pizza",
+      "Quiche"
+    ],
+    "en": [
+      "Pizza",
+      "Quiche"
+    ]
+  },
+  {
+    "id": "meals-002",
+    "theme": "meals",
+    "de": [
+      "Hamburger",
+      "Hotdog"
+    ],
+    "en": [
+      "Hamburger",
+      "Hot dog"
+    ]
+  },
+  {
+    "id": "meals-003",
+    "theme": "meals",
+    "de": [
+      "Sandwich",
+      "Wrap"
+    ],
+    "en": [
+      "Sandwich",
+      "Wrap"
+    ]
+  },
+  {
+    "id": "meals-004",
+    "theme": "meals",
+    "de": [
+      "Spaghetti",
+      "Lasagne"
+    ],
+    "en": [
+      "Spaghetti",
+      "Lasagne"
+    ]
+  },
+  {
+    "id": "meals-005",
+    "theme": "meals",
+    "de": [
+      "Reis",
+      "Couscous"
+    ],
+    "en": [
+      "Rice",
+      "Couscous"
+    ]
+  },
+  {
+    "id": "meals-006",
+    "theme": "meals",
+    "de": [
+      "Pommes",
+      "Kroketten"
+    ],
+    "en": [
+      "Chips",
+      "Croquettes"
+    ]
+  },
+  {
+    "id": "meals-007",
+    "theme": "meals",
+    "de": [
+      "Kartoffelpüree",
+      "Kartoffelsalat"
+    ],
+    "en": [
+      "Mashed potatoes",
+      "Potato salad"
+    ]
+  },
+  {
+    "id": "meals-008",
+    "theme": "meals",
+    "de": [
+      "Suppe",
+      "Eintopf"
+    ],
+    "en": [
+      "Soup",
+      "Stew"
+    ]
+  },
+  {
+    "id": "meals-009",
+    "theme": "meals",
+    "de": [
+      "Rührei",
+      "Spiegelei"
+    ],
+    "en": [
+      "Scrambled egg",
+      "Fried egg"
+    ]
+  },
+  {
+    "id": "meals-010",
+    "theme": "meals",
+    "de": [
+      "Omelett",
+      "Pfannkuchen"
+    ],
+    "en": [
+      "Omelette",
+      "Pancake"
+    ]
+  },
+  {
+    "id": "meals-011",
+    "theme": "meals",
+    "de": [
+      "Sushi",
+      "Frühlingsrolle"
+    ],
+    "en": [
+      "Sushi",
+      "Spring roll"
+    ]
+  },
+  {
+    "id": "meals-012",
+    "theme": "meals",
+    "de": [
+      "Döner",
+      "Falafel"
+    ],
+    "en": [
+      "Doner kebab",
+      "Falafel"
+    ]
+  },
+  {
+    "id": "meals-013",
+    "theme": "meals",
+    "de": [
+      "Taco",
+      "Burrito"
+    ],
+    "en": [
+      "Taco",
+      "Burrito"
+    ]
+  },
+  {
+    "id": "meals-014",
+    "theme": "meals",
+    "de": [
+      "Schnitzel",
+      "Bratwurst"
+    ],
+    "en": [
+      "Breaded cutlet",
+      "Grilled sausage"
+    ]
+  },
+  {
+    "id": "meals-015",
+    "theme": "meals",
+    "de": [
+      "Steak",
+      "Kotelett"
+    ],
+    "en": [
+      "Steak",
+      "Chop"
+    ]
+  },
+  {
+    "id": "meals-016",
+    "theme": "meals",
+    "de": [
+      "Hähnchenflügel",
+      "Hähnchenschenkel"
+    ],
+    "en": [
+      "Chicken wing",
+      "Chicken leg"
+    ]
+  },
+  {
+    "id": "meals-017",
+    "theme": "meals",
+    "de": [
+      "Fischstäbchen",
+      "Hähnchennugget"
+    ],
+    "en": [
+      "Fish finger",
+      "Chicken nugget"
+    ]
+  },
+  {
+    "id": "meals-018",
+    "theme": "meals",
+    "de": [
+      "Ravioli",
+      "Tortellini"
+    ],
+    "en": [
+      "Ravioli",
+      "Tortellini"
+    ]
+  },
+  {
+    "id": "meals-019",
+    "theme": "meals",
+    "de": [
+      "Nudel",
+      "Kloß"
+    ],
+    "en": [
+      "Noodle",
+      "Dumpling"
+    ]
+  },
+  {
+    "id": "meals-020",
+    "theme": "meals",
+    "de": [
+      "Risotto",
+      "Paella"
+    ],
+    "en": [
+      "Risotto",
+      "Paella"
+    ]
+  },
+  {
+    "id": "meals-021",
+    "theme": "meals",
+    "de": [
+      "Gemüsespieß",
+      "Fleischspieß"
+    ],
+    "en": [
+      "Vegetable skewer",
+      "Meat skewer"
+    ]
+  },
+  {
+    "id": "meals-022",
+    "theme": "meals",
+    "de": [
+      "Nudelauflauf",
+      "Kartoffelgratin"
+    ],
+    "en": [
+      "Pasta bake",
+      "Potato gratin"
+    ]
+  },
+  {
+    "id": "meals-023",
+    "theme": "meals",
+    "de": [
+      "Linsensuppe",
+      "Tomatensuppe"
+    ],
+    "en": [
+      "Lentil soup",
+      "Tomato soup"
+    ]
+  },
+  {
+    "id": "meals-024",
+    "theme": "meals",
+    "de": [
+      "Caesarsalat",
+      "Griechischer Salat"
+    ],
+    "en": [
+      "Caesar salad",
+      "Greek salad"
+    ]
+  },
+  {
+    "id": "meals-025",
+    "theme": "meals",
+    "de": [
+      "Toast",
+      "Zwieback"
+    ],
+    "en": [
+      "Toast",
+      "Rusk"
+    ]
+  },
+  {
+    "id": "meals-026",
+    "theme": "meals",
+    "de": [
+      "Müsli",
+      "Haferbrei"
+    ],
+    "en": [
+      "Muesli",
+      "Porridge"
+    ]
+  },
+  {
+    "id": "bakery-sweets-001",
+    "theme": "bakery-sweets",
+    "de": [
+      "Baguette",
+      "Brötchen"
+    ],
+    "en": [
+      "Baguette",
+      "Bread roll"
+    ]
+  },
+  {
+    "id": "bakery-sweets-002",
+    "theme": "bakery-sweets",
+    "de": [
+      "Croissant",
+      "Brezel"
+    ],
+    "en": [
+      "Croissant",
+      "Pretzel"
+    ]
+  },
+  {
+    "id": "bakery-sweets-003",
+    "theme": "bakery-sweets",
+    "de": [
+      "Vollkornbrot",
+      "Weißbrot"
+    ],
+    "en": [
+      "Wholemeal bread",
+      "White bread"
+    ]
+  },
+  {
+    "id": "bakery-sweets-004",
+    "theme": "bakery-sweets",
+    "de": [
+      "Bagel",
+      "Fladenbrot"
+    ],
+    "en": [
+      "Bagel",
+      "Flatbread"
+    ]
+  },
+  {
+    "id": "bakery-sweets-005",
+    "theme": "bakery-sweets",
+    "de": [
+      "Keks",
+      "Waffel"
+    ],
+    "en": [
+      "Biscuit",
+      "Waffle"
+    ]
+  },
+  {
+    "id": "bakery-sweets-006",
+    "theme": "bakery-sweets",
+    "de": [
+      "Muffin",
+      "Cupcake"
+    ],
+    "en": [
+      "Muffin",
+      "Cupcake"
+    ]
+  },
+  {
+    "id": "bakery-sweets-007",
+    "theme": "bakery-sweets",
+    "de": [
+      "Brownie",
+      "Donut"
+    ],
+    "en": [
+      "Brownie",
+      "Doughnut"
+    ]
+  },
+  {
+    "id": "bakery-sweets-008",
+    "theme": "bakery-sweets",
+    "de": [
+      "Käsekuchen",
+      "Apfelkuchen"
+    ],
+    "en": [
+      "Cheesecake",
+      "Apple cake"
+    ]
+  },
+  {
+    "id": "bakery-sweets-009",
+    "theme": "bakery-sweets",
+    "de": [
+      "Schokoladenkuchen",
+      "Zitronenkuchen"
+    ],
+    "en": [
+      "Chocolate cake",
+      "Lemon cake"
+    ]
+  },
+  {
+    "id": "bakery-sweets-010",
+    "theme": "bakery-sweets",
+    "de": [
+      "Apfelstrudel",
+      "Zimtschnecke"
+    ],
+    "en": [
+      "Apple strudel",
+      "Cinnamon roll"
+    ]
+  },
+  {
+    "id": "bakery-sweets-011",
+    "theme": "bakery-sweets",
+    "de": [
+      "Lebkuchen",
+      "Baiser"
+    ],
+    "en": [
+      "Gingerbread",
+      "Meringue"
+    ]
+  },
+  {
+    "id": "bakery-sweets-012",
+    "theme": "bakery-sweets",
+    "de": [
+      "Marzipan",
+      "Krokant"
+    ],
+    "en": [
+      "Marzipan",
+      "Nut brittle"
+    ]
+  },
+  {
+    "id": "bakery-sweets-013",
+    "theme": "bakery-sweets",
+    "de": [
+      "Schokolade",
+      "Karamell"
+    ],
+    "en": [
+      "Chocolate",
+      "Caramel"
+    ]
+  },
+  {
+    "id": "bakery-sweets-014",
+    "theme": "bakery-sweets",
+    "de": [
+      "Gummibärchen",
+      "Lakritz"
+    ],
+    "en": [
+      "Gummy bear",
+      "Liquorice"
+    ]
+  },
+  {
+    "id": "bakery-sweets-015",
+    "theme": "bakery-sweets",
+    "de": [
+      "Bonbon",
+      "Lutscher"
+    ],
+    "en": [
+      "Boiled sweet",
+      "Lollipop"
+    ]
+  },
+  {
+    "id": "bakery-sweets-016",
+    "theme": "bakery-sweets",
+    "de": [
+      "Kaugummi",
+      "Zuckerwatte"
+    ],
+    "en": [
+      "Chewing gum",
+      "Candyfloss"
+    ]
+  },
+  {
+    "id": "bakery-sweets-017",
+    "theme": "bakery-sweets",
+    "de": [
+      "Vanilleeis",
+      "Schokoladeneis"
+    ],
+    "en": [
+      "Vanilla ice cream",
+      "Chocolate ice cream"
+    ]
+  },
+  {
+    "id": "bakery-sweets-018",
+    "theme": "bakery-sweets",
+    "de": [
+      "Eis am Stiel",
+      "Eiswaffel"
+    ],
+    "en": [
+      "Ice lolly",
+      "Ice cream cone"
+    ]
+  },
+  {
+    "id": "bakery-sweets-019",
+    "theme": "bakery-sweets",
+    "de": [
+      "Sorbet",
+      "Frozen Yogurt"
+    ],
+    "en": [
+      "Sorbet",
+      "Frozen yoghurt"
+    ]
+  },
+  {
+    "id": "bakery-sweets-020",
+    "theme": "bakery-sweets",
+    "de": [
+      "Vanillepudding",
+      "Wackelpudding"
+    ],
+    "en": [
+      "Vanilla pudding",
+      "Jelly"
+    ]
+  },
+  {
+    "id": "bakery-sweets-021",
+    "theme": "bakery-sweets",
+    "de": [
+      "Milchreis",
+      "Grießbrei"
+    ],
+    "en": [
+      "Rice pudding",
+      "Semolina pudding"
+    ]
+  },
+  {
+    "id": "bakery-sweets-022",
+    "theme": "bakery-sweets",
+    "de": [
+      "Obstsalat",
+      "Fruchtjoghurt"
+    ],
+    "en": [
+      "Fruit salad",
+      "Fruit yoghurt"
+    ]
+  },
+  {
+    "id": "bakery-sweets-023",
+    "theme": "bakery-sweets",
+    "de": [
+      "Honig",
+      "Marmelade"
+    ],
+    "en": [
+      "Honey",
+      "Jam"
+    ]
+  },
+  {
+    "id": "bakery-sweets-024",
+    "theme": "bakery-sweets",
+    "de": [
+      "Erdnussbutter",
+      "Nuss-Nougat-Creme"
+    ],
+    "en": [
+      "Peanut butter",
+      "Chocolate hazelnut spread"
+    ]
+  },
+  {
+    "id": "bakery-sweets-025",
+    "theme": "bakery-sweets",
+    "de": [
+      "Popcorn",
+      "Kartoffelchips"
+    ],
+    "en": [
+      "Popcorn",
+      "Crisps"
+    ]
+  },
+  {
+    "id": "bakery-sweets-026",
+    "theme": "bakery-sweets",
+    "de": [
+      "Salzstange",
+      "Cracker"
+    ],
+    "en": [
+      "Pretzel stick",
+      "Cracker"
+    ]
+  },
+  {
+    "id": "drinks-pantry-001",
+    "theme": "drinks-pantry",
+    "de": [
+      "Kaffee",
+      "Tee"
+    ],
+    "en": [
+      "Coffee",
+      "Tea"
+    ]
+  },
+  {
+    "id": "drinks-pantry-002",
+    "theme": "drinks-pantry",
+    "de": [
+      "Espresso",
+      "Cappuccino"
+    ],
+    "en": [
+      "Espresso",
+      "Cappuccino"
+    ]
+  },
+  {
+    "id": "drinks-pantry-003",
+    "theme": "drinks-pantry",
+    "de": [
+      "Apfelschorle",
+      "Traubensaft"
+    ],
+    "en": [
+      "Apple juice spritzer",
+      "Grape juice"
+    ]
+  },
+  {
+    "id": "drinks-pantry-004",
+    "theme": "drinks-pantry",
+    "de": [
+      "Eistee",
+      "Eiskaffee"
+    ],
+    "en": [
+      "Iced tea",
+      "Iced coffee"
+    ]
+  },
+  {
+    "id": "drinks-pantry-005",
+    "theme": "drinks-pantry",
+    "de": [
+      "Apfelsaft",
+      "Orangensaft"
+    ],
+    "en": [
+      "Apple juice",
+      "Orange juice"
+    ]
+  },
+  {
+    "id": "drinks-pantry-006",
+    "theme": "drinks-pantry",
+    "de": [
+      "Limonade",
+      "Fruchtpunsch"
+    ],
+    "en": [
+      "Lemonade",
+      "Fruit punch"
+    ]
+  },
+  {
+    "id": "drinks-pantry-007",
+    "theme": "drinks-pantry",
+    "de": [
+      "Mineralwasser",
+      "Leitungswasser"
+    ],
+    "en": [
+      "Mineral water",
+      "Tap water"
+    ]
+  },
+  {
+    "id": "drinks-pantry-008",
+    "theme": "drinks-pantry",
+    "de": [
+      "Milchshake",
+      "Smoothie"
+    ],
+    "en": [
+      "Milkshake",
+      "Smoothie"
+    ]
+  },
+  {
+    "id": "drinks-pantry-009",
+    "theme": "drinks-pantry",
+    "de": [
+      "Frischkäse",
+      "Hüttenkäse"
+    ],
+    "en": [
+      "Cream cheese",
+      "Cottage cheese"
+    ]
+  },
+  {
+    "id": "drinks-pantry-010",
+    "theme": "drinks-pantry",
+    "de": [
+      "Kokosmilch",
+      "Hafermilch"
+    ],
+    "en": [
+      "Coconut milk",
+      "Oat milk"
+    ]
+  },
+  {
+    "id": "drinks-pantry-011",
+    "theme": "drinks-pantry",
+    "de": [
+      "Milch",
+      "Sahne"
+    ],
+    "en": [
+      "Milk",
+      "Cream"
+    ]
+  },
+  {
+    "id": "drinks-pantry-012",
+    "theme": "drinks-pantry",
+    "de": [
+      "Pfefferminztee",
+      "Kamillentee"
+    ],
+    "en": [
+      "Peppermint tea",
+      "Camomile tea"
+    ]
+  },
+  {
+    "id": "drinks-pantry-013",
+    "theme": "drinks-pantry",
+    "de": [
+      "Schwarzer Tee",
+      "Grüner Tee"
+    ],
+    "en": [
+      "Black tea",
+      "Green tea"
+    ]
+  },
+  {
+    "id": "drinks-pantry-014",
+    "theme": "drinks-pantry",
+    "de": [
+      "Zucker",
+      "Salz"
+    ],
+    "en": [
+      "Sugar",
+      "Salt"
+    ]
+  },
+  {
+    "id": "drinks-pantry-015",
+    "theme": "drinks-pantry",
+    "de": [
+      "Mehl",
+      "Speisestärke"
+    ],
+    "en": [
+      "Flour",
+      "Cornflour"
+    ]
+  },
+  {
+    "id": "drinks-pantry-016",
+    "theme": "drinks-pantry",
+    "de": [
+      "Backpulver",
+      "Hefe"
+    ],
+    "en": [
+      "Baking powder",
+      "Yeast"
+    ]
+  },
+  {
+    "id": "drinks-pantry-017",
+    "theme": "drinks-pantry",
+    "de": [
+      "Butter",
+      "Margarine"
+    ],
+    "en": [
+      "Butter",
+      "Margarine"
+    ]
+  },
+  {
+    "id": "drinks-pantry-018",
+    "theme": "drinks-pantry",
+    "de": [
+      "Olivenöl",
+      "Sonnenblumenöl"
+    ],
+    "en": [
+      "Olive oil",
+      "Sunflower oil"
+    ]
+  },
+  {
+    "id": "drinks-pantry-019",
+    "theme": "drinks-pantry",
+    "de": [
+      "Essig",
+      "Zitronensaft"
+    ],
+    "en": [
+      "Vinegar",
+      "Lemon juice"
+    ]
+  },
+  {
+    "id": "drinks-pantry-020",
+    "theme": "drinks-pantry",
+    "de": [
+      "Ketchup",
+      "Senf"
+    ],
+    "en": [
+      "Ketchup",
+      "Mustard"
+    ]
+  },
+  {
+    "id": "drinks-pantry-021",
+    "theme": "drinks-pantry",
+    "de": [
+      "Mayonnaise",
+      "Salatsoße"
+    ],
+    "en": [
+      "Mayonnaise",
+      "Salad dressing"
+    ]
+  },
+  {
+    "id": "drinks-pantry-022",
+    "theme": "drinks-pantry",
+    "de": [
+      "Pesto",
+      "Tomatensoße"
+    ],
+    "en": [
+      "Pesto",
+      "Tomato sauce"
+    ]
+  },
+  {
+    "id": "drinks-pantry-023",
+    "theme": "drinks-pantry",
+    "de": [
+      "Zimt",
+      "Vanille"
+    ],
+    "en": [
+      "Cinnamon",
+      "Vanilla"
+    ]
+  },
+  {
+    "id": "drinks-pantry-024",
+    "theme": "drinks-pantry",
+    "de": [
+      "Pfeffer",
+      "Chilipulver"
+    ],
+    "en": [
+      "Pepper",
+      "Chilli powder"
+    ]
+  },
+  {
+    "id": "drinks-pantry-025",
+    "theme": "drinks-pantry",
+    "de": [
+      "Walnuss",
+      "Haselnuss"
+    ],
+    "en": [
+      "Walnut",
+      "Hazelnut"
+    ]
+  },
+  {
+    "id": "drinks-pantry-026",
+    "theme": "drinks-pantry",
+    "de": [
+      "Mandel",
+      "Cashewkern"
+    ],
+    "en": [
+      "Almond",
+      "Cashew nut"
+    ]
+  },
+  {
+    "id": "kitchen-001",
+    "theme": "kitchen",
+    "de": [
+      "Teller",
+      "Schüssel"
+    ],
+    "en": [
+      "Plate",
+      "Bowl"
+    ]
+  },
+  {
+    "id": "kitchen-002",
+    "theme": "kitchen",
+    "de": [
+      "Tasse",
+      "Trinkglas"
+    ],
+    "en": [
+      "Cup",
+      "Drinking glass"
+    ]
+  },
+  {
+    "id": "kitchen-003",
+    "theme": "kitchen",
+    "de": [
+      "Thermoskanne",
+      "Wasserkrug"
+    ],
+    "en": [
+      "Vacuum flask",
+      "Water jug"
+    ]
+  },
+  {
+    "id": "kitchen-004",
+    "theme": "kitchen",
+    "de": [
+      "Gabel",
+      "Löffel"
+    ],
+    "en": [
+      "Fork",
+      "Spoon"
+    ]
+  },
+  {
+    "id": "kitchen-005",
+    "theme": "kitchen",
+    "de": [
+      "Küchenmesser",
+      "Schere"
+    ],
+    "en": [
+      "Kitchen knife",
+      "Scissors"
+    ]
+  },
+  {
+    "id": "kitchen-006",
+    "theme": "kitchen",
+    "de": [
+      "Topf",
+      "Pfanne"
+    ],
+    "en": [
+      "Saucepan",
+      "Frying pan"
+    ]
+  },
+  {
+    "id": "kitchen-007",
+    "theme": "kitchen",
+    "de": [
+      "Wok",
+      "Bräter"
+    ],
+    "en": [
+      "Wok",
+      "Roasting tin"
+    ]
+  },
+  {
+    "id": "kitchen-008",
+    "theme": "kitchen",
+    "de": [
+      "Wasserkocher",
+      "Kaffeemaschine"
+    ],
+    "en": [
+      "Kettle",
+      "Coffee machine"
+    ]
+  },
+  {
+    "id": "kitchen-009",
+    "theme": "kitchen",
+    "de": [
+      "Toaster",
+      "Sandwichtoaster"
+    ],
+    "en": [
+      "Toaster",
+      "Sandwich toaster"
+    ]
+  },
+  {
+    "id": "kitchen-010",
+    "theme": "kitchen",
+    "de": [
+      "Backofen",
+      "Mikrowelle"
+    ],
+    "en": [
+      "Oven",
+      "Microwave"
+    ]
+  },
+  {
+    "id": "kitchen-011",
+    "theme": "kitchen",
+    "de": [
+      "Kühlschrank",
+      "Gefrierschrank"
+    ],
+    "en": [
+      "Fridge",
+      "Freezer"
+    ]
+  },
+  {
+    "id": "kitchen-012",
+    "theme": "kitchen",
+    "de": [
+      "Spülmaschine",
+      "Spülbecken"
+    ],
+    "en": [
+      "Dishwasher",
+      "Kitchen sink"
+    ]
+  },
+  {
+    "id": "kitchen-013",
+    "theme": "kitchen",
+    "de": [
+      "Schneidebrett",
+      "Backblech"
+    ],
+    "en": [
+      "Chopping board",
+      "Baking tray"
+    ]
+  },
+  {
+    "id": "kitchen-014",
+    "theme": "kitchen",
+    "de": [
+      "Sieb",
+      "Trichter"
+    ],
+    "en": [
+      "Sieve",
+      "Funnel"
+    ]
+  },
+  {
+    "id": "kitchen-015",
+    "theme": "kitchen",
+    "de": [
+      "Schneebesen",
+      "Handmixer"
+    ],
+    "en": [
+      "Whisk",
+      "Hand mixer"
+    ]
+  },
+  {
+    "id": "kitchen-016",
+    "theme": "kitchen",
+    "de": [
+      "Standmixer",
+      "Entsafter"
+    ],
+    "en": [
+      "Blender",
+      "Juicer"
+    ]
+  },
+  {
+    "id": "kitchen-017",
+    "theme": "kitchen",
+    "de": [
+      "Pfannenwender",
+      "Suppenkelle"
+    ],
+    "en": [
+      "Spatula",
+      "Ladle"
+    ]
+  },
+  {
+    "id": "kitchen-018",
+    "theme": "kitchen",
+    "de": [
+      "Salatbesteck",
+      "Grillzange"
+    ],
+    "en": [
+      "Salad servers",
+      "Barbecue tongs"
+    ]
+  },
+  {
+    "id": "kitchen-019",
+    "theme": "kitchen",
+    "de": [
+      "Reibe",
+      "Sparschäler"
+    ],
+    "en": [
+      "Grater",
+      "Vegetable peeler"
+    ]
+  },
+  {
+    "id": "kitchen-020",
+    "theme": "kitchen",
+    "de": [
+      "Nudelholz",
+      "Kartoffelstampfer"
+    ],
+    "en": [
+      "Rolling pin",
+      "Potato masher"
+    ]
+  },
+  {
+    "id": "kitchen-021",
+    "theme": "kitchen",
+    "de": [
+      "Dosenöffner",
+      "Korkenzieher"
+    ],
+    "en": [
+      "Tin opener",
+      "Corkscrew"
+    ]
+  },
+  {
+    "id": "kitchen-022",
+    "theme": "kitchen",
+    "de": [
+      "Küchenwaage",
+      "Messbecher"
+    ],
+    "en": [
+      "Kitchen scales",
+      "Measuring jug"
+    ]
+  },
+  {
+    "id": "kitchen-023",
+    "theme": "kitchen",
+    "de": [
+      "Brotdose",
+      "Vorratsglas"
+    ],
+    "en": [
+      "Lunch box",
+      "Storage jar"
+    ]
+  },
+  {
+    "id": "kitchen-024",
+    "theme": "kitchen",
+    "de": [
+      "Alufolie",
+      "Frischhaltefolie"
+    ],
+    "en": [
+      "Kitchen foil",
+      "Cling film"
+    ]
+  },
+  {
+    "id": "kitchen-025",
+    "theme": "kitchen",
+    "de": [
+      "Serviette",
+      "Küchenpapier"
+    ],
+    "en": [
+      "Napkin",
+      "Kitchen roll"
+    ]
+  },
+  {
+    "id": "kitchen-026",
+    "theme": "kitchen",
+    "de": [
+      "Geschirrtuch",
+      "Topflappen"
+    ],
+    "en": [
+      "Tea towel",
+      "Pot holder"
+    ]
+  },
+  {
+    "id": "home-001",
+    "theme": "home",
+    "de": [
+      "Stuhl",
+      "Hocker"
+    ],
+    "en": [
+      "Chair",
+      "Stool"
+    ]
+  },
+  {
+    "id": "home-002",
+    "theme": "home",
+    "de": [
+      "Sofa",
+      "Sessel"
+    ],
+    "en": [
+      "Sofa",
+      "Armchair"
+    ]
+  },
+  {
+    "id": "home-003",
+    "theme": "home",
+    "de": [
+      "Bett",
+      "Hängematte"
+    ],
+    "en": [
+      "Bed",
+      "Hammock"
+    ]
+  },
+  {
+    "id": "home-004",
+    "theme": "home",
+    "de": [
+      "Matratze",
+      "Luftmatratze"
+    ],
+    "en": [
+      "Mattress",
+      "Air mattress"
+    ]
+  },
+  {
+    "id": "home-005",
+    "theme": "home",
+    "de": [
+      "Kissen",
+      "Decke"
+    ],
+    "en": [
+      "Pillow",
+      "Blanket"
+    ]
+  },
+  {
+    "id": "home-006",
+    "theme": "home",
+    "de": [
+      "Bettlaken",
+      "Bettbezug"
+    ],
+    "en": [
+      "Bedsheet",
+      "Duvet cover"
+    ]
+  },
+  {
+    "id": "home-007",
+    "theme": "home",
+    "de": [
+      "Tisch",
+      "Schreibtisch"
+    ],
+    "en": [
+      "Table",
+      "Desk"
+    ]
+  },
+  {
+    "id": "home-008",
+    "theme": "home",
+    "de": [
+      "Schrank",
+      "Regal"
+    ],
+    "en": [
+      "Cupboard",
+      "Shelving unit"
+    ]
+  },
+  {
+    "id": "home-009",
+    "theme": "home",
+    "de": [
+      "Kommode",
+      "Nachttisch"
+    ],
+    "en": [
+      "Chest of drawers",
+      "Bedside table"
+    ]
+  },
+  {
+    "id": "home-010",
+    "theme": "home",
+    "de": [
+      "Kleiderständer",
+      "Garderobenhaken"
+    ],
+    "en": [
+      "Clothes rail",
+      "Coat hook"
+    ]
+  },
+  {
+    "id": "home-011",
+    "theme": "home",
+    "de": [
+      "Spiegel",
+      "Bilderrahmen"
+    ],
+    "en": [
+      "Mirror",
+      "Picture frame"
+    ]
+  },
+  {
+    "id": "home-012",
+    "theme": "home",
+    "de": [
+      "Teppich",
+      "Fußmatte"
+    ],
+    "en": [
+      "Carpet",
+      "Doormat"
+    ]
+  },
+  {
+    "id": "home-013",
+    "theme": "home",
+    "de": [
+      "Vorhang",
+      "Rollo"
+    ],
+    "en": [
+      "Curtain",
+      "Roller blind"
+    ]
+  },
+  {
+    "id": "home-014",
+    "theme": "home",
+    "de": [
+      "Stehlampe",
+      "Tischlampe"
+    ],
+    "en": [
+      "Floor lamp",
+      "Table lamp"
+    ]
+  },
+  {
+    "id": "home-015",
+    "theme": "home",
+    "de": [
+      "Kronleuchter",
+      "Lichterkette"
+    ],
+    "en": [
+      "Chandelier",
+      "Fairy lights"
+    ]
+  },
+  {
+    "id": "home-016",
+    "theme": "home",
+    "de": [
+      "Kamin",
+      "Heizkörper"
+    ],
+    "en": [
+      "Fireplace",
+      "Radiator"
+    ]
+  },
+  {
+    "id": "home-017",
+    "theme": "home",
+    "de": [
+      "Ventilator",
+      "Klimaanlage"
+    ],
+    "en": [
+      "Fan",
+      "Air conditioner"
+    ]
+  },
+  {
+    "id": "home-018",
+    "theme": "home",
+    "de": [
+      "Tür",
+      "Fenster"
+    ],
+    "en": [
+      "Door",
+      "Window"
+    ]
+  },
+  {
+    "id": "home-019",
+    "theme": "home",
+    "de": [
+      "Treppe",
+      "Leiter"
+    ],
+    "en": [
+      "Stairs",
+      "Ladder"
+    ]
+  },
+  {
+    "id": "home-020",
+    "theme": "home",
+    "de": [
+      "Balkon",
+      "Terrasse"
+    ],
+    "en": [
+      "Balcony",
+      "Patio"
+    ]
+  },
+  {
+    "id": "home-021",
+    "theme": "home",
+    "de": [
+      "Dachboden",
+      "Keller"
+    ],
+    "en": [
+      "Attic",
+      "Cellar"
+    ]
+  },
+  {
+    "id": "home-022",
+    "theme": "home",
+    "de": [
+      "Tapete",
+      "Wandfarbe"
+    ],
+    "en": [
+      "Wallpaper",
+      "Wall paint"
+    ]
+  },
+  {
+    "id": "home-023",
+    "theme": "home",
+    "de": [
+      "Parkett",
+      "Fliesen"
+    ],
+    "en": [
+      "Parquet flooring",
+      "Tiles"
+    ]
+  },
+  {
+    "id": "home-024",
+    "theme": "home",
+    "de": [
+      "Besen",
+      "Staubsauger"
+    ],
+    "en": [
+      "Broom",
+      "Vacuum cleaner"
+    ]
+  },
+  {
+    "id": "home-025",
+    "theme": "home",
+    "de": [
+      "Wischmopp",
+      "Bürste"
+    ],
+    "en": [
+      "Mop",
+      "Brush"
+    ]
+  },
+  {
+    "id": "home-026",
+    "theme": "home",
+    "de": [
+      "Wäschekorb",
+      "Mülltonne"
+    ],
+    "en": [
+      "Laundry basket",
+      "Dustbin"
+    ]
+  },
+  {
+    "id": "clothing-001",
+    "theme": "clothing",
+    "de": [
+      "T-Shirt",
+      "Hemd"
+    ],
+    "en": [
+      "T-shirt",
+      "Shirt"
+    ]
+  },
+  {
+    "id": "clothing-002",
+    "theme": "clothing",
+    "de": [
+      "Bluse",
+      "Tunika"
+    ],
+    "en": [
+      "Blouse",
+      "Tunic"
+    ]
+  },
+  {
+    "id": "clothing-003",
+    "theme": "clothing",
+    "de": [
+      "Pullover",
+      "Strickjacke"
+    ],
+    "en": [
+      "Jumper",
+      "Cardigan"
+    ]
+  },
+  {
+    "id": "clothing-004",
+    "theme": "clothing",
+    "de": [
+      "Kapuzenpullover",
+      "Rollkragenpullover"
+    ],
+    "en": [
+      "Hoodie",
+      "Turtleneck jumper"
+    ]
+  },
+  {
+    "id": "clothing-005",
+    "theme": "clothing",
+    "de": [
+      "Jeans",
+      "Cordhose"
+    ],
+    "en": [
+      "Jeans",
+      "Corduroy trousers"
+    ]
+  },
+  {
+    "id": "clothing-006",
+    "theme": "clothing",
+    "de": [
+      "Shorts",
+      "Badehose"
+    ],
+    "en": [
+      "Shorts",
+      "Swimming trunks"
+    ]
+  },
+  {
+    "id": "clothing-007",
+    "theme": "clothing",
+    "de": [
+      "Rock",
+      "Kleid"
+    ],
+    "en": [
+      "Skirt",
+      "Dress"
+    ]
+  },
+  {
+    "id": "clothing-008",
+    "theme": "clothing",
+    "de": [
+      "Anzug",
+      "Smoking"
+    ],
+    "en": [
+      "Suit",
+      "Dinner suit"
+    ]
+  },
+  {
+    "id": "clothing-009",
+    "theme": "clothing",
+    "de": [
+      "Mantel",
+      "Jacke"
+    ],
+    "en": [
+      "Coat",
+      "Jacket"
+    ]
+  },
+  {
+    "id": "clothing-010",
+    "theme": "clothing",
+    "de": [
+      "Regenjacke",
+      "Skijacke"
+    ],
+    "en": [
+      "Raincoat",
+      "Ski jacket"
+    ]
+  },
+  {
+    "id": "clothing-011",
+    "theme": "clothing",
+    "de": [
+      "Schal",
+      "Halstuch"
+    ],
+    "en": [
+      "Scarf",
+      "Neckerchief"
+    ]
+  },
+  {
+    "id": "clothing-012",
+    "theme": "clothing",
+    "de": [
+      "Strickmütze",
+      "Baseballkappe"
+    ],
+    "en": [
+      "Beanie",
+      "Baseball cap"
+    ]
+  },
+  {
+    "id": "clothing-013",
+    "theme": "clothing",
+    "de": [
+      "Handschuh",
+      "Fäustling"
+    ],
+    "en": [
+      "Glove",
+      "Mitten"
+    ]
+  },
+  {
+    "id": "clothing-014",
+    "theme": "clothing",
+    "de": [
+      "Socke",
+      "Strumpfhose"
+    ],
+    "en": [
+      "Sock",
+      "Tights"
+    ]
+  },
+  {
+    "id": "clothing-015",
+    "theme": "clothing",
+    "de": [
+      "Unterhemd",
+      "Unterhose"
+    ],
+    "en": [
+      "Undershirt",
+      "Underpants"
+    ]
+  },
+  {
+    "id": "clothing-016",
+    "theme": "clothing",
+    "de": [
+      "Schlafanzug",
+      "Nachthemd"
+    ],
+    "en": [
+      "Pyjamas",
+      "Nightdress"
+    ]
+  },
+  {
+    "id": "clothing-017",
+    "theme": "clothing",
+    "de": [
+      "Bademantel",
+      "Schürze"
+    ],
+    "en": [
+      "Bathrobe",
+      "Apron"
+    ]
+  },
+  {
+    "id": "clothing-018",
+    "theme": "clothing",
+    "de": [
+      "Turnschuh",
+      "Wanderschuh"
+    ],
+    "en": [
+      "Trainer",
+      "Hiking boot"
+    ]
+  },
+  {
+    "id": "clothing-019",
+    "theme": "clothing",
+    "de": [
+      "Stiefel",
+      "Sandale"
+    ],
+    "en": [
+      "Boot",
+      "Sandal"
+    ]
+  },
+  {
+    "id": "clothing-020",
+    "theme": "clothing",
+    "de": [
+      "Hausschuh",
+      "Flipflop"
+    ],
+    "en": [
+      "Slipper",
+      "Flip-flop"
+    ]
+  },
+  {
+    "id": "clothing-021",
+    "theme": "clothing",
+    "de": [
+      "Gürtel",
+      "Hosenträger"
+    ],
+    "en": [
+      "Belt",
+      "Braces"
+    ]
+  },
+  {
+    "id": "clothing-022",
+    "theme": "clothing",
+    "de": [
+      "Krawatte",
+      "Fliege"
+    ],
+    "en": [
+      "Tie",
+      "Bow tie"
+    ]
+  },
+  {
+    "id": "clothing-023",
+    "theme": "clothing",
+    "de": [
+      "Knopf",
+      "Reißverschluss"
+    ],
+    "en": [
+      "Button",
+      "Zip"
+    ]
+  },
+  {
+    "id": "clothing-024",
+    "theme": "clothing",
+    "de": [
+      "Handtasche",
+      "Rucksack"
+    ],
+    "en": [
+      "Handbag",
+      "Backpack"
+    ]
+  },
+  {
+    "id": "clothing-025",
+    "theme": "clothing",
+    "de": [
+      "Ohrring",
+      "Halskette"
+    ],
+    "en": [
+      "Earring",
+      "Necklace"
+    ]
+  },
+  {
+    "id": "clothing-026",
+    "theme": "clothing",
+    "de": [
+      "Armband",
+      "Fingerring"
+    ],
+    "en": [
+      "Bracelet",
+      "Ring"
+    ]
+  },
+  {
+    "id": "care-health-001",
+    "theme": "care-health",
+    "de": [
+      "Zahnbürste",
+      "Zahnseide"
+    ],
+    "en": [
+      "Toothbrush",
+      "Dental floss"
+    ]
+  },
+  {
+    "id": "care-health-002",
+    "theme": "care-health",
+    "de": [
+      "Zahnpasta",
+      "Mundspülung"
+    ],
+    "en": [
+      "Toothpaste",
+      "Mouthwash"
+    ]
+  },
+  {
+    "id": "care-health-003",
+    "theme": "care-health",
+    "de": [
+      "Seife",
+      "Duschgel"
+    ],
+    "en": [
+      "Soap",
+      "Shower gel"
+    ]
+  },
+  {
+    "id": "care-health-004",
+    "theme": "care-health",
+    "de": [
+      "Shampoo",
+      "Spülung"
+    ],
+    "en": [
+      "Shampoo",
+      "Hair conditioner"
+    ]
+  },
+  {
+    "id": "care-health-005",
+    "theme": "care-health",
+    "de": [
+      "Kamm",
+      "Haarbürste"
+    ],
+    "en": [
+      "Comb",
+      "Hairbrush"
+    ]
+  },
+  {
+    "id": "care-health-006",
+    "theme": "care-health",
+    "de": [
+      "Föhn",
+      "Glätteisen"
+    ],
+    "en": [
+      "Hairdryer",
+      "Hair straightener"
+    ]
+  },
+  {
+    "id": "care-health-007",
+    "theme": "care-health",
+    "de": [
+      "Rasierer",
+      "Haarschneider"
+    ],
+    "en": [
+      "Razor",
+      "Hair clippers"
+    ]
+  },
+  {
+    "id": "care-health-008",
+    "theme": "care-health",
+    "de": [
+      "Nagelschere",
+      "Nagelfeile"
+    ],
+    "en": [
+      "Nail scissors",
+      "Nail file"
+    ]
+  },
+  {
+    "id": "care-health-009",
+    "theme": "care-health",
+    "de": [
+      "Deodorant",
+      "Parfüm"
+    ],
+    "en": [
+      "Deodorant",
+      "Perfume"
+    ]
+  },
+  {
+    "id": "care-health-010",
+    "theme": "care-health",
+    "de": [
+      "Handcreme",
+      "Sonnencreme"
+    ],
+    "en": [
+      "Hand cream",
+      "Sunscreen"
+    ]
+  },
+  {
+    "id": "care-health-011",
+    "theme": "care-health",
+    "de": [
+      "Lippenbalsam",
+      "Lippenstift"
+    ],
+    "en": [
+      "Lip balm",
+      "Lipstick"
+    ]
+  },
+  {
+    "id": "care-health-012",
+    "theme": "care-health",
+    "de": [
+      "Wimperntusche",
+      "Lidschatten"
+    ],
+    "en": [
+      "Mascara",
+      "Eyeshadow"
+    ]
+  },
+  {
+    "id": "care-health-013",
+    "theme": "care-health",
+    "de": [
+      "Wattepad",
+      "Wattestäbchen"
+    ],
+    "en": [
+      "Cotton pad",
+      "Cotton bud"
+    ]
+  },
+  {
+    "id": "care-health-014",
+    "theme": "care-health",
+    "de": [
+      "Handtuch",
+      "Waschlappen"
+    ],
+    "en": [
+      "Towel",
+      "Washcloth"
+    ]
+  },
+  {
+    "id": "care-health-015",
+    "theme": "care-health",
+    "de": [
+      "Dusche",
+      "Badewanne"
+    ],
+    "en": [
+      "Shower",
+      "Bathtub"
+    ]
+  },
+  {
+    "id": "care-health-016",
+    "theme": "care-health",
+    "de": [
+      "Waschbecken",
+      "Bidet"
+    ],
+    "en": [
+      "Washbasin",
+      "Bidet"
+    ]
+  },
+  {
+    "id": "care-health-017",
+    "theme": "care-health",
+    "de": [
+      "Sauna",
+      "Dampfbad"
+    ],
+    "en": [
+      "Sauna",
+      "Steam room"
+    ]
+  },
+  {
+    "id": "care-health-018",
+    "theme": "care-health",
+    "de": [
+      "Pflaster",
+      "Verband"
+    ],
+    "en": [
+      "Sticking plaster",
+      "Bandage"
+    ]
+  },
+  {
+    "id": "care-health-019",
+    "theme": "care-health",
+    "de": [
+      "Krücke",
+      "Gehstock"
+    ],
+    "en": [
+      "Crutch",
+      "Walking stick"
+    ]
+  },
+  {
+    "id": "care-health-020",
+    "theme": "care-health",
+    "de": [
+      "Sonnenbrille",
+      "Kontaktlinse"
+    ],
+    "en": [
+      "Sunglasses",
+      "Contact lens"
+    ]
+  },
+  {
+    "id": "care-health-021",
+    "theme": "care-health",
+    "de": [
+      "Fieberthermometer",
+      "Blutdruckmessgerät"
+    ],
+    "en": [
+      "Medical thermometer",
+      "Blood pressure monitor"
+    ]
+  },
+  {
+    "id": "care-health-022",
+    "theme": "care-health",
+    "de": [
+      "Wärmflasche",
+      "Kühlpack"
+    ],
+    "en": [
+      "Hot-water bottle",
+      "Ice pack"
+    ]
+  },
+  {
+    "id": "care-health-023",
+    "theme": "care-health",
+    "de": [
+      "Tablette",
+      "Hustensaft"
+    ],
+    "en": [
+      "Pill",
+      "Cough syrup"
+    ]
+  },
+  {
+    "id": "care-health-024",
+    "theme": "care-health",
+    "de": [
+      "Spritze",
+      "Pipette"
+    ],
+    "en": [
+      "Syringe",
+      "Dropper"
+    ]
+  },
+  {
+    "id": "care-health-025",
+    "theme": "care-health",
+    "de": [
+      "Augenklappe",
+      "Schlafmaske"
+    ],
+    "en": [
+      "Eye patch",
+      "Sleep mask"
+    ]
+  },
+  {
+    "id": "care-health-026",
+    "theme": "care-health",
+    "de": [
+      "Massage",
+      "Gymnastik"
+    ],
+    "en": [
+      "Massage",
+      "Keep-fit exercises"
+    ]
+  },
+  {
+    "id": "mammals-001",
+    "theme": "mammals",
+    "de": [
+      "Hund",
+      "Katze"
+    ],
+    "en": [
+      "Dog",
+      "Cat"
+    ]
+  },
+  {
+    "id": "mammals-002",
+    "theme": "mammals",
+    "de": [
+      "Wolf",
+      "Fuchs"
+    ],
+    "en": [
+      "Wolf",
+      "Fox"
+    ]
+  },
+  {
+    "id": "mammals-003",
+    "theme": "mammals",
+    "de": [
+      "Löwe",
+      "Tiger"
+    ],
+    "en": [
+      "Lion",
+      "Tiger"
+    ]
+  },
+  {
+    "id": "mammals-004",
+    "theme": "mammals",
+    "de": [
+      "Leopard",
+      "Gepard"
+    ],
+    "en": [
+      "Leopard",
+      "Cheetah"
+    ]
+  },
+  {
+    "id": "mammals-005",
+    "theme": "mammals",
+    "de": [
+      "Jaguar",
+      "Puma"
+    ],
+    "en": [
+      "Jaguar",
+      "Cougar"
+    ]
+  },
+  {
+    "id": "mammals-006",
+    "theme": "mammals",
+    "de": [
+      "Bär",
+      "Gorilla"
+    ],
+    "en": [
+      "Bear",
+      "Gorilla"
+    ]
+  },
+  {
+    "id": "mammals-007",
+    "theme": "mammals",
+    "de": [
+      "Eisbär",
+      "Panda"
+    ],
+    "en": [
+      "Polar bear",
+      "Panda"
+    ]
+  },
+  {
+    "id": "mammals-008",
+    "theme": "mammals",
+    "de": [
+      "Schimpanse",
+      "Orang-Utan"
+    ],
+    "en": [
+      "Chimpanzee",
+      "Orangutan"
+    ]
+  },
+  {
+    "id": "mammals-009",
+    "theme": "mammals",
+    "de": [
+      "Pavian",
+      "Lemur"
+    ],
+    "en": [
+      "Baboon",
+      "Lemur"
+    ]
+  },
+  {
+    "id": "mammals-010",
+    "theme": "mammals",
+    "de": [
+      "Elefant",
+      "Nashorn"
+    ],
+    "en": [
+      "Elephant",
+      "Rhinoceros"
+    ]
+  },
+  {
+    "id": "mammals-011",
+    "theme": "mammals",
+    "de": [
+      "Nilpferd",
+      "Nashorn"
+    ],
+    "en": [
+      "Hippopotamus",
+      "Rhinoceros"
+    ]
+  },
+  {
+    "id": "mammals-012",
+    "theme": "mammals",
+    "de": [
+      "Giraffe",
+      "Zebra"
+    ],
+    "en": [
+      "Giraffe",
+      "Zebra"
+    ]
+  },
+  {
+    "id": "mammals-013",
+    "theme": "mammals",
+    "de": [
+      "Pferd",
+      "Esel"
+    ],
+    "en": [
+      "Horse",
+      "Donkey"
+    ]
+  },
+  {
+    "id": "mammals-014",
+    "theme": "mammals",
+    "de": [
+      "Kuh",
+      "Büffel"
+    ],
+    "en": [
+      "Cow",
+      "Buffalo"
+    ]
+  },
+  {
+    "id": "mammals-015",
+    "theme": "mammals",
+    "de": [
+      "Schaf",
+      "Ziege"
+    ],
+    "en": [
+      "Sheep",
+      "Goat"
+    ]
+  },
+  {
+    "id": "mammals-016",
+    "theme": "mammals",
+    "de": [
+      "Schwein",
+      "Wildschwein"
+    ],
+    "en": [
+      "Pig",
+      "Wild boar"
+    ]
+  },
+  {
+    "id": "mammals-017",
+    "theme": "mammals",
+    "de": [
+      "Hirsch",
+      "Wildschwein"
+    ],
+    "en": [
+      "Deer",
+      "Wild boar"
+    ]
+  },
+  {
+    "id": "mammals-018",
+    "theme": "mammals",
+    "de": [
+      "Rentier",
+      "Elch"
+    ],
+    "en": [
+      "Reindeer",
+      "Moose"
+    ]
+  },
+  {
+    "id": "mammals-019",
+    "theme": "mammals",
+    "de": [
+      "Kamel",
+      "Lama"
+    ],
+    "en": [
+      "Camel",
+      "Llama"
+    ]
+  },
+  {
+    "id": "mammals-020",
+    "theme": "mammals",
+    "de": [
+      "Känguru",
+      "Koala"
+    ],
+    "en": [
+      "Kangaroo",
+      "Koala"
+    ]
+  },
+  {
+    "id": "mammals-021",
+    "theme": "mammals",
+    "de": [
+      "Hase",
+      "Kaninchen"
+    ],
+    "en": [
+      "Hare",
+      "Rabbit"
+    ]
+  },
+  {
+    "id": "mammals-022",
+    "theme": "mammals",
+    "de": [
+      "Hamster",
+      "Meerschweinchen"
+    ],
+    "en": [
+      "Hamster",
+      "Guinea pig"
+    ]
+  },
+  {
+    "id": "mammals-023",
+    "theme": "mammals",
+    "de": [
+      "Maus",
+      "Ratte"
+    ],
+    "en": [
+      "Mouse",
+      "Rat"
+    ]
+  },
+  {
+    "id": "mammals-024",
+    "theme": "mammals",
+    "de": [
+      "Eichhörnchen",
+      "Streifenhörnchen"
+    ],
+    "en": [
+      "Squirrel",
+      "Chipmunk"
+    ]
+  },
+  {
+    "id": "mammals-025",
+    "theme": "mammals",
+    "de": [
+      "Igel",
+      "Maulwurf"
+    ],
+    "en": [
+      "Hedgehog",
+      "Mole"
+    ]
+  },
+  {
+    "id": "mammals-026",
+    "theme": "mammals",
+    "de": [
+      "Biber",
+      "Otter"
+    ],
+    "en": [
+      "Beaver",
+      "Otter"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-001",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Ente",
+      "Gans"
+    ],
+    "en": [
+      "Duck",
+      "Goose"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-002",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Huhn",
+      "Truthahn"
+    ],
+    "en": [
+      "Chicken",
+      "Turkey"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-003",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Taube",
+      "Möwe"
+    ],
+    "en": [
+      "Pigeon",
+      "Seagull"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-004",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Spatz",
+      "Rotkehlchen"
+    ],
+    "en": [
+      "Sparrow",
+      "Robin"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-005",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Amsel",
+      "Kanarienvogel"
+    ],
+    "en": [
+      "Blackbird",
+      "Canary"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-006",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Adler",
+      "Falke"
+    ],
+    "en": [
+      "Eagle",
+      "Falcon"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-007",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Eule",
+      "Fledermaus"
+    ],
+    "en": [
+      "Owl",
+      "Bat"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-008",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Kakadu",
+      "Wellensittich"
+    ],
+    "en": [
+      "Cockatoo",
+      "Budgerigar"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-009",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Pfau",
+      "Flamingo"
+    ],
+    "en": [
+      "Peacock",
+      "Flamingo"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-010",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Strauß",
+      "Pinguin"
+    ],
+    "en": [
+      "Ostrich",
+      "Penguin"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-011",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Schwan",
+      "Pelikan"
+    ],
+    "en": [
+      "Swan",
+      "Pelican"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-012",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Storch",
+      "Reiher"
+    ],
+    "en": [
+      "Stork",
+      "Heron"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-013",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Specht",
+      "Eisvogel"
+    ],
+    "en": [
+      "Woodpecker",
+      "Kingfisher"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-014",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Rabe",
+      "Elster"
+    ],
+    "en": [
+      "Raven",
+      "Magpie"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-015",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Delfin",
+      "Wal"
+    ],
+    "en": [
+      "Dolphin",
+      "Whale"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-016",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Robbe",
+      "Walross"
+    ],
+    "en": [
+      "Seal",
+      "Walrus"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-017",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Hai",
+      "Rochen"
+    ],
+    "en": [
+      "Shark",
+      "Ray"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-018",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Lachs",
+      "Forelle"
+    ],
+    "en": [
+      "Salmon",
+      "Trout"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-019",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Thunfisch",
+      "Schwertfisch"
+    ],
+    "en": [
+      "Tuna",
+      "Swordfish"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-020",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Goldfisch",
+      "Karpfen"
+    ],
+    "en": [
+      "Goldfish",
+      "Carp"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-021",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Seepferdchen",
+      "Seestern"
+    ],
+    "en": [
+      "Seahorse",
+      "Starfish"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-022",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Qualle",
+      "Krake"
+    ],
+    "en": [
+      "Jellyfish",
+      "Octopus"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-023",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Krabbe",
+      "Hummer"
+    ],
+    "en": [
+      "Crab",
+      "Lobster"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-024",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Auster",
+      "Garnele"
+    ],
+    "en": [
+      "Oyster",
+      "Prawn"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-025",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Schildkröte",
+      "Krokodil"
+    ],
+    "en": [
+      "Turtle",
+      "Crocodile"
+    ]
+  },
+  {
+    "id": "birds-water-creatures-026",
+    "theme": "birds-water-creatures",
+    "de": [
+      "Schwertwal",
+      "Narwal"
+    ],
+    "en": [
+      "Killer whale",
+      "Narwhal"
+    ]
+  },
+  {
+    "id": "garden-nature-001",
+    "theme": "garden-nature",
+    "de": [
+      "Rose",
+      "Tulpe"
+    ],
+    "en": [
+      "Rose",
+      "Tulip"
+    ]
+  },
+  {
+    "id": "garden-nature-002",
+    "theme": "garden-nature",
+    "de": [
+      "Sonnenblume",
+      "Gänseblümchen"
+    ],
+    "en": [
+      "Sunflower",
+      "Daisy"
+    ]
+  },
+  {
+    "id": "garden-nature-003",
+    "theme": "garden-nature",
+    "de": [
+      "Orchidee",
+      "Lilie"
+    ],
+    "en": [
+      "Orchid",
+      "Lily"
+    ]
+  },
+  {
+    "id": "garden-nature-004",
+    "theme": "garden-nature",
+    "de": [
+      "Kaktus",
+      "Palme"
+    ],
+    "en": [
+      "Cactus",
+      "Palm tree"
+    ]
+  },
+  {
+    "id": "garden-nature-005",
+    "theme": "garden-nature",
+    "de": [
+      "Farn",
+      "Moos"
+    ],
+    "en": [
+      "Fern",
+      "Moss"
+    ]
+  },
+  {
+    "id": "garden-nature-006",
+    "theme": "garden-nature",
+    "de": [
+      "Eiche",
+      "Buche"
+    ],
+    "en": [
+      "Oak",
+      "Beech"
+    ]
+  },
+  {
+    "id": "garden-nature-007",
+    "theme": "garden-nature",
+    "de": [
+      "Ahorn",
+      "Kastanie"
+    ],
+    "en": [
+      "Maple",
+      "Chestnut tree"
+    ]
+  },
+  {
+    "id": "garden-nature-008",
+    "theme": "garden-nature",
+    "de": [
+      "Tanne",
+      "Kiefer"
+    ],
+    "en": [
+      "Fir tree",
+      "Pine tree"
+    ]
+  },
+  {
+    "id": "garden-nature-009",
+    "theme": "garden-nature",
+    "de": [
+      "Birke",
+      "Weide"
+    ],
+    "en": [
+      "Birch",
+      "Willow"
+    ]
+  },
+  {
+    "id": "garden-nature-010",
+    "theme": "garden-nature",
+    "de": [
+      "Bambus",
+      "Schilf"
+    ],
+    "en": [
+      "Bamboo",
+      "Reed"
+    ]
+  },
+  {
+    "id": "garden-nature-011",
+    "theme": "garden-nature",
+    "de": [
+      "Klee",
+      "Löwenzahn"
+    ],
+    "en": [
+      "Clover",
+      "Dandelion"
+    ]
+  },
+  {
+    "id": "garden-nature-012",
+    "theme": "garden-nature",
+    "de": [
+      "Lavendel",
+      "Rosmarin"
+    ],
+    "en": [
+      "Lavender",
+      "Rosemary"
+    ]
+  },
+  {
+    "id": "garden-nature-013",
+    "theme": "garden-nature",
+    "de": [
+      "Basilikum",
+      "Petersilie"
+    ],
+    "en": [
+      "Basil",
+      "Parsley"
+    ]
+  },
+  {
+    "id": "garden-nature-014",
+    "theme": "garden-nature",
+    "de": [
+      "Minze",
+      "Salbei"
+    ],
+    "en": [
+      "Mint",
+      "Sage"
+    ]
+  },
+  {
+    "id": "garden-nature-015",
+    "theme": "garden-nature",
+    "de": [
+      "Wurzel",
+      "Ast"
+    ],
+    "en": [
+      "Root",
+      "Branch"
+    ]
+  },
+  {
+    "id": "garden-nature-016",
+    "theme": "garden-nature",
+    "de": [
+      "Blatt",
+      "Blüte"
+    ],
+    "en": [
+      "Leaf",
+      "Blossom"
+    ]
+  },
+  {
+    "id": "garden-nature-017",
+    "theme": "garden-nature",
+    "de": [
+      "Kiefernzapfen",
+      "Eichel"
+    ],
+    "en": [
+      "Pine cone",
+      "Acorn"
+    ]
+  },
+  {
+    "id": "garden-nature-018",
+    "theme": "garden-nature",
+    "de": [
+      "Biene",
+      "Wespe"
+    ],
+    "en": [
+      "Bee",
+      "Wasp"
+    ]
+  },
+  {
+    "id": "garden-nature-019",
+    "theme": "garden-nature",
+    "de": [
+      "Hummel",
+      "Hornisse"
+    ],
+    "en": [
+      "Bumblebee",
+      "Hornet"
+    ]
+  },
+  {
+    "id": "garden-nature-020",
+    "theme": "garden-nature",
+    "de": [
+      "Schmetterling",
+      "Libelle"
+    ],
+    "en": [
+      "Butterfly",
+      "Dragonfly"
+    ]
+  },
+  {
+    "id": "garden-nature-021",
+    "theme": "garden-nature",
+    "de": [
+      "Ameise",
+      "Termite"
+    ],
+    "en": [
+      "Ant",
+      "Termite"
+    ]
+  },
+  {
+    "id": "garden-nature-022",
+    "theme": "garden-nature",
+    "de": [
+      "Käfer",
+      "Grashüpfer"
+    ],
+    "en": [
+      "Beetle",
+      "Grasshopper"
+    ]
+  },
+  {
+    "id": "garden-nature-023",
+    "theme": "garden-nature",
+    "de": [
+      "Schnecke",
+      "Regenwurm"
+    ],
+    "en": [
+      "Snail",
+      "Earthworm"
+    ]
+  },
+  {
+    "id": "garden-nature-024",
+    "theme": "garden-nature",
+    "de": [
+      "Spinne",
+      "Skorpion"
+    ],
+    "en": [
+      "Spider",
+      "Scorpion"
+    ]
+  },
+  {
+    "id": "garden-nature-025",
+    "theme": "garden-nature",
+    "de": [
+      "Frosch",
+      "Kröte"
+    ],
+    "en": [
+      "Frog",
+      "Toad"
+    ]
+  },
+  {
+    "id": "garden-nature-026",
+    "theme": "garden-nature",
+    "de": [
+      "Eidechse",
+      "Salamander"
+    ],
+    "en": [
+      "Lizard",
+      "Salamander"
+    ]
+  },
+  {
+    "id": "landscape-weather-001",
+    "theme": "landscape-weather",
+    "de": [
+      "Berg",
+      "Hügel"
+    ],
+    "en": [
+      "Mountain",
+      "Hill"
+    ]
+  },
+  {
+    "id": "landscape-weather-002",
+    "theme": "landscape-weather",
+    "de": [
+      "Tal",
+      "Schlucht"
+    ],
+    "en": [
+      "Valley",
+      "Gorge"
+    ]
+  },
+  {
+    "id": "landscape-weather-003",
+    "theme": "landscape-weather",
+    "de": [
+      "Wald",
+      "Dschungel"
+    ],
+    "en": [
+      "Forest",
+      "Jungle"
+    ]
+  },
+  {
+    "id": "landscape-weather-004",
+    "theme": "landscape-weather",
+    "de": [
+      "Wiese",
+      "Feld"
+    ],
+    "en": [
+      "Meadow",
+      "Field"
+    ]
+  },
+  {
+    "id": "landscape-weather-005",
+    "theme": "landscape-weather",
+    "de": [
+      "Wüste",
+      "Savanne"
+    ],
+    "en": [
+      "Desert",
+      "Savannah"
+    ]
+  },
+  {
+    "id": "landscape-weather-006",
+    "theme": "landscape-weather",
+    "de": [
+      "Insel",
+      "Halbinsel"
+    ],
+    "en": [
+      "Island",
+      "Peninsula"
+    ]
+  },
+  {
+    "id": "landscape-weather-007",
+    "theme": "landscape-weather",
+    "de": [
+      "Strand",
+      "Küste"
+    ],
+    "en": [
+      "Beach",
+      "Coast"
+    ]
+  },
+  {
+    "id": "landscape-weather-008",
+    "theme": "landscape-weather",
+    "de": [
+      "See",
+      "Teich"
+    ],
+    "en": [
+      "Lake",
+      "Pond"
+    ]
+  },
+  {
+    "id": "landscape-weather-009",
+    "theme": "landscape-weather",
+    "de": [
+      "Fluss",
+      "Bach"
+    ],
+    "en": [
+      "River",
+      "Stream"
+    ]
+  },
+  {
+    "id": "landscape-weather-010",
+    "theme": "landscape-weather",
+    "de": [
+      "Wasserfall",
+      "Stromschnelle"
+    ],
+    "en": [
+      "Waterfall",
+      "Rapids"
+    ]
+  },
+  {
+    "id": "landscape-weather-011",
+    "theme": "landscape-weather",
+    "de": [
+      "Höhle",
+      "Tunnel"
+    ],
+    "en": [
+      "Cave",
+      "Tunnel"
+    ]
+  },
+  {
+    "id": "landscape-weather-012",
+    "theme": "landscape-weather",
+    "de": [
+      "Vulkan",
+      "Geysir"
+    ],
+    "en": [
+      "Volcano",
+      "Geyser"
+    ]
+  },
+  {
+    "id": "landscape-weather-013",
+    "theme": "landscape-weather",
+    "de": [
+      "Gletscher",
+      "Eisberg"
+    ],
+    "en": [
+      "Glacier",
+      "Iceberg"
+    ]
+  },
+  {
+    "id": "landscape-weather-014",
+    "theme": "landscape-weather",
+    "de": [
+      "Korallenriff",
+      "Sandbank"
+    ],
+    "en": [
+      "Coral reef",
+      "Sandbank"
+    ]
+  },
+  {
+    "id": "landscape-weather-015",
+    "theme": "landscape-weather",
+    "de": [
+      "Sumpf",
+      "Moor"
+    ],
+    "en": [
+      "Swamp",
+      "Bog"
+    ]
+  },
+  {
+    "id": "landscape-weather-016",
+    "theme": "landscape-weather",
+    "de": [
+      "Düne",
+      "Klippe"
+    ],
+    "en": [
+      "Sand dune",
+      "Cliff"
+    ]
+  },
+  {
+    "id": "landscape-weather-017",
+    "theme": "landscape-weather",
+    "de": [
+      "Regen",
+      "Schnee"
+    ],
+    "en": [
+      "Rain",
+      "Snow"
+    ]
+  },
+  {
+    "id": "landscape-weather-018",
+    "theme": "landscape-weather",
+    "de": [
+      "Hagel",
+      "Schneeregen"
+    ],
+    "en": [
+      "Hail",
+      "Sleet"
+    ]
+  },
+  {
+    "id": "landscape-weather-019",
+    "theme": "landscape-weather",
+    "de": [
+      "Nebel",
+      "Wolke"
+    ],
+    "en": [
+      "Fog",
+      "Cloud"
+    ]
+  },
+  {
+    "id": "landscape-weather-020",
+    "theme": "landscape-weather",
+    "de": [
+      "Blitz",
+      "Donner"
+    ],
+    "en": [
+      "Lightning",
+      "Thunder"
+    ]
+  },
+  {
+    "id": "landscape-weather-021",
+    "theme": "landscape-weather",
+    "de": [
+      "Sturm",
+      "Tornado"
+    ],
+    "en": [
+      "Storm",
+      "Tornado"
+    ]
+  },
+  {
+    "id": "landscape-weather-022",
+    "theme": "landscape-weather",
+    "de": [
+      "Regenbogen",
+      "Polarlicht"
+    ],
+    "en": [
+      "Rainbow",
+      "Northern lights"
+    ]
+  },
+  {
+    "id": "landscape-weather-023",
+    "theme": "landscape-weather",
+    "de": [
+      "Sonnenaufgang",
+      "Sonnenuntergang"
+    ],
+    "en": [
+      "Sunrise",
+      "Sunset"
+    ]
+  },
+  {
+    "id": "landscape-weather-024",
+    "theme": "landscape-weather",
+    "de": [
+      "Tau",
+      "Reif"
+    ],
+    "en": [
+      "Dew",
+      "Frost"
+    ]
+  },
+  {
+    "id": "landscape-weather-025",
+    "theme": "landscape-weather",
+    "de": [
+      "Flut",
+      "Ebbe"
+    ],
+    "en": [
+      "High tide",
+      "Low tide"
+    ]
+  },
+  {
+    "id": "landscape-weather-026",
+    "theme": "landscape-weather",
+    "de": [
+      "Lawine",
+      "Erdrutsch"
+    ],
+    "en": [
+      "Avalanche",
+      "Landslide"
+    ]
+  },
+  {
+    "id": "transport-travel-001",
+    "theme": "transport-travel",
+    "de": [
+      "Auto",
+      "Motorrad"
+    ],
+    "en": [
+      "Car",
+      "Motorcycle"
+    ]
+  },
+  {
+    "id": "transport-travel-002",
+    "theme": "transport-travel",
+    "de": [
+      "Fahrrad",
+      "Tretroller"
+    ],
+    "en": [
+      "Bicycle",
+      "Kick scooter"
+    ]
+  },
+  {
+    "id": "transport-travel-003",
+    "theme": "transport-travel",
+    "de": [
+      "Bus",
+      "Straßenbahn"
+    ],
+    "en": [
+      "Bus",
+      "Tram"
+    ]
+  },
+  {
+    "id": "transport-travel-004",
+    "theme": "transport-travel",
+    "de": [
+      "Regionalzug",
+      "U-Bahn"
+    ],
+    "en": [
+      "Regional train",
+      "Underground train"
+    ]
+  },
+  {
+    "id": "transport-travel-005",
+    "theme": "transport-travel",
+    "de": [
+      "Taxi",
+      "Mietwagen"
+    ],
+    "en": [
+      "Taxi",
+      "Hire car"
+    ]
+  },
+  {
+    "id": "transport-travel-006",
+    "theme": "transport-travel",
+    "de": [
+      "Lastwagen",
+      "Lieferwagen"
+    ],
+    "en": [
+      "Lorry",
+      "Delivery van"
+    ]
+  },
+  {
+    "id": "transport-travel-007",
+    "theme": "transport-travel",
+    "de": [
+      "Traktor",
+      "Mähdrescher"
+    ],
+    "en": [
+      "Tractor",
+      "Combine harvester"
+    ]
+  },
+  {
+    "id": "transport-travel-008",
+    "theme": "transport-travel",
+    "de": [
+      "Wohnmobil",
+      "Wohnwagen"
+    ],
+    "en": [
+      "Motorhome",
+      "Caravan"
+    ]
+  },
+  {
+    "id": "transport-travel-009",
+    "theme": "transport-travel",
+    "de": [
+      "Krankenwagen",
+      "Feuerwehrauto"
+    ],
+    "en": [
+      "Ambulance",
+      "Fire engine"
+    ]
+  },
+  {
+    "id": "transport-travel-010",
+    "theme": "transport-travel",
+    "de": [
+      "Rennwagen",
+      "Kart"
+    ],
+    "en": [
+      "Racing car",
+      "Go-kart"
+    ]
+  },
+  {
+    "id": "transport-travel-011",
+    "theme": "transport-travel",
+    "de": [
+      "Limousine",
+      "Geländewagen"
+    ],
+    "en": [
+      "Limousine",
+      "Off-road vehicle"
+    ]
+  },
+  {
+    "id": "transport-travel-012",
+    "theme": "transport-travel",
+    "de": [
+      "Roller",
+      "Moped"
+    ],
+    "en": [
+      "Motor scooter",
+      "Moped"
+    ]
+  },
+  {
+    "id": "transport-travel-013",
+    "theme": "transport-travel",
+    "de": [
+      "Flugzeug",
+      "Hubschrauber"
+    ],
+    "en": [
+      "Aeroplane",
+      "Helicopter"
+    ]
+  },
+  {
+    "id": "transport-travel-014",
+    "theme": "transport-travel",
+    "de": [
+      "Heißluftballon",
+      "Luftschiff"
+    ],
+    "en": [
+      "Hot-air balloon",
+      "Airship"
+    ]
+  },
+  {
+    "id": "transport-travel-015",
+    "theme": "transport-travel",
+    "de": [
+      "Segelflugzeug",
+      "Drachenflieger"
+    ],
+    "en": [
+      "Glider",
+      "Hang glider"
+    ]
+  },
+  {
+    "id": "transport-travel-016",
+    "theme": "transport-travel",
+    "de": [
+      "Segelboot",
+      "Motorboot"
+    ],
+    "en": [
+      "Sailing boat",
+      "Motorboat"
+    ]
+  },
+  {
+    "id": "transport-travel-017",
+    "theme": "transport-travel",
+    "de": [
+      "Kanu",
+      "Ruderboot"
+    ],
+    "en": [
+      "Canoe",
+      "Rowing boat"
+    ]
+  },
+  {
+    "id": "transport-travel-018",
+    "theme": "transport-travel",
+    "de": [
+      "Fähre",
+      "Kreuzfahrtschiff"
+    ],
+    "en": [
+      "Ferry",
+      "Cruise ship"
+    ]
+  },
+  {
+    "id": "transport-travel-019",
+    "theme": "transport-travel",
+    "de": [
+      "U-Boot",
+      "Containerschiff"
+    ],
+    "en": [
+      "Submarine",
+      "Container ship"
+    ]
+  },
+  {
+    "id": "transport-travel-020",
+    "theme": "transport-travel",
+    "de": [
+      "Seilbahn",
+      "Sessellift"
+    ],
+    "en": [
+      "Cable car",
+      "Chairlift"
+    ]
+  },
+  {
+    "id": "transport-travel-021",
+    "theme": "transport-travel",
+    "de": [
+      "Rolltreppe",
+      "Aufzug"
+    ],
+    "en": [
+      "Escalator",
+      "Lift"
+    ]
+  },
+  {
+    "id": "transport-travel-022",
+    "theme": "transport-travel",
+    "de": [
+      "Koffer",
+      "Reisetasche"
+    ],
+    "en": [
+      "Suitcase",
+      "Travel bag"
+    ]
+  },
+  {
+    "id": "transport-travel-023",
+    "theme": "transport-travel",
+    "de": [
+      "Reisepass",
+      "Personalausweis"
+    ],
+    "en": [
+      "Passport",
+      "Identity card"
+    ]
+  },
+  {
+    "id": "transport-travel-024",
+    "theme": "transport-travel",
+    "de": [
+      "Fahrkarte",
+      "Bordkarte"
+    ],
+    "en": [
+      "Travel ticket",
+      "Boarding pass"
+    ]
+  },
+  {
+    "id": "transport-travel-025",
+    "theme": "transport-travel",
+    "de": [
+      "Landkarte",
+      "Globus"
+    ],
+    "en": [
+      "Map",
+      "Globe"
+    ]
+  },
+  {
+    "id": "transport-travel-026",
+    "theme": "transport-travel",
+    "de": [
+      "Kompass",
+      "Navigationsgerät"
+    ],
+    "en": [
+      "Compass",
+      "Satnav"
+    ]
+  },
+  {
+    "id": "places-001",
+    "theme": "places",
+    "de": [
+      "Bahnhof",
+      "Flughafen"
+    ],
+    "en": [
+      "Railway station",
+      "Airport"
+    ]
+  },
+  {
+    "id": "places-002",
+    "theme": "places",
+    "de": [
+      "Bushaltestelle",
+      "Taxistand"
+    ],
+    "en": [
+      "Bus stop",
+      "Taxi rank"
+    ]
+  },
+  {
+    "id": "places-003",
+    "theme": "places",
+    "de": [
+      "Hafen",
+      "Yachthafen"
+    ],
+    "en": [
+      "Port",
+      "Marina"
+    ]
+  },
+  {
+    "id": "places-004",
+    "theme": "places",
+    "de": [
+      "Parkhaus",
+      "Parkplatz"
+    ],
+    "en": [
+      "Multi-storey car park",
+      "Car park"
+    ]
+  },
+  {
+    "id": "places-005",
+    "theme": "places",
+    "de": [
+      "Hängebrücke",
+      "Zugbrücke"
+    ],
+    "en": [
+      "Suspension bridge",
+      "Drawbridge"
+    ]
+  },
+  {
+    "id": "places-006",
+    "theme": "places",
+    "de": [
+      "Kreuzung",
+      "Kreisverkehr"
+    ],
+    "en": [
+      "Crossroads",
+      "Roundabout"
+    ]
+  },
+  {
+    "id": "places-007",
+    "theme": "places",
+    "de": [
+      "Gehweg",
+      "Radweg"
+    ],
+    "en": [
+      "Pavement",
+      "Cycle path"
+    ]
+  },
+  {
+    "id": "places-008",
+    "theme": "places",
+    "de": [
+      "Zebrastreifen",
+      "Fußgängerampel"
+    ],
+    "en": [
+      "Zebra crossing",
+      "Pedestrian traffic light"
+    ]
+  },
+  {
+    "id": "places-009",
+    "theme": "places",
+    "de": [
+      "Bäckerei",
+      "Metzgerei"
+    ],
+    "en": [
+      "Bakery",
+      "Butcher's shop"
+    ]
+  },
+  {
+    "id": "places-010",
+    "theme": "places",
+    "de": [
+      "Supermarkt",
+      "Wochenmarkt"
+    ],
+    "en": [
+      "Supermarket",
+      "Street market"
+    ]
+  },
+  {
+    "id": "places-011",
+    "theme": "places",
+    "de": [
+      "Restaurant",
+      "Café"
+    ],
+    "en": [
+      "Restaurant",
+      "Café"
+    ]
+  },
+  {
+    "id": "places-012",
+    "theme": "places",
+    "de": [
+      "Hotel",
+      "Jugendherberge"
+    ],
+    "en": [
+      "Hotel",
+      "Youth hostel"
+    ]
+  },
+  {
+    "id": "places-013",
+    "theme": "places",
+    "de": [
+      "Campingplatz",
+      "Ferienwohnung"
+    ],
+    "en": [
+      "Campsite",
+      "Holiday apartment"
+    ]
+  },
+  {
+    "id": "places-014",
+    "theme": "places",
+    "de": [
+      "Museum",
+      "Kunstgalerie"
+    ],
+    "en": [
+      "Museum",
+      "Art gallery"
+    ]
+  },
+  {
+    "id": "places-015",
+    "theme": "places",
+    "de": [
+      "Kino",
+      "Theater"
+    ],
+    "en": [
+      "Cinema",
+      "Theatre"
+    ]
+  },
+  {
+    "id": "places-016",
+    "theme": "places",
+    "de": [
+      "Bibliothek",
+      "Buchhandlung"
+    ],
+    "en": [
+      "Library",
+      "Bookshop"
+    ]
+  },
+  {
+    "id": "places-017",
+    "theme": "places",
+    "de": [
+      "Schule",
+      "Kindergarten"
+    ],
+    "en": [
+      "School",
+      "Nursery school"
+    ]
+  },
+  {
+    "id": "places-018",
+    "theme": "places",
+    "de": [
+      "Krankenhaus",
+      "Arztpraxis"
+    ],
+    "en": [
+      "Hospital",
+      "Doctor's surgery"
+    ]
+  },
+  {
+    "id": "places-019",
+    "theme": "places",
+    "de": [
+      "Apotheke",
+      "Parfümerie"
+    ],
+    "en": [
+      "Pharmacy",
+      "Perfume shop"
+    ]
+  },
+  {
+    "id": "places-020",
+    "theme": "places",
+    "de": [
+      "Rathaus",
+      "Gerichtsgebäude"
+    ],
+    "en": [
+      "Town hall",
+      "Courthouse"
+    ]
+  },
+  {
+    "id": "places-021",
+    "theme": "places",
+    "de": [
+      "Polizeiwache",
+      "Feuerwache"
+    ],
+    "en": [
+      "Police station",
+      "Fire station"
+    ]
+  },
+  {
+    "id": "places-022",
+    "theme": "places",
+    "de": [
+      "Postamt",
+      "Bankfiliale"
+    ],
+    "en": [
+      "Post office",
+      "Bank branch"
+    ]
+  },
+  {
+    "id": "places-023",
+    "theme": "places",
+    "de": [
+      "Zoo",
+      "Aquarium"
+    ],
+    "en": [
+      "Zoo",
+      "Aquarium"
+    ]
+  },
+  {
+    "id": "places-024",
+    "theme": "places",
+    "de": [
+      "Spielplatz",
+      "Freizeitpark"
+    ],
+    "en": [
+      "Playground",
+      "Theme park"
+    ]
+  },
+  {
+    "id": "places-025",
+    "theme": "places",
+    "de": [
+      "Schloss",
+      "Burg"
+    ],
+    "en": [
+      "Palace",
+      "Castle"
+    ]
+  },
+  {
+    "id": "places-026",
+    "theme": "places",
+    "de": [
+      "Leuchtturm",
+      "Aussichtsturm"
+    ],
+    "en": [
+      "Lighthouse",
+      "Observation tower"
+    ]
+  },
+  {
+    "id": "school-office-001",
+    "theme": "school-office",
+    "de": [
+      "Bleistift",
+      "Kugelschreiber"
+    ],
+    "en": [
+      "Pencil",
+      "Ballpoint pen"
+    ]
+  },
+  {
+    "id": "school-office-002",
+    "theme": "school-office",
+    "de": [
+      "Füller",
+      "Filzstift"
+    ],
+    "en": [
+      "Fountain pen",
+      "Felt-tip pen"
+    ]
+  },
+  {
+    "id": "school-office-003",
+    "theme": "school-office",
+    "de": [
+      "Buntstift",
+      "Wachsmalstift"
+    ],
+    "en": [
+      "Coloured pencil",
+      "Wax crayon"
+    ]
+  },
+  {
+    "id": "school-office-004",
+    "theme": "school-office",
+    "de": [
+      "Radiergummi",
+      "Spitzer"
+    ],
+    "en": [
+      "Eraser",
+      "Pencil sharpener"
+    ]
+  },
+  {
+    "id": "school-office-005",
+    "theme": "school-office",
+    "de": [
+      "Lineal",
+      "Geodreieck"
+    ],
+    "en": [
+      "Ruler",
+      "Set square"
+    ]
+  },
+  {
+    "id": "school-office-006",
+    "theme": "school-office",
+    "de": [
+      "Zirkel",
+      "Winkelmesser"
+    ],
+    "en": [
+      "Drawing compass",
+      "Protractor"
+    ]
+  },
+  {
+    "id": "school-office-007",
+    "theme": "school-office",
+    "de": [
+      "Heft",
+      "Notizblock"
+    ],
+    "en": [
+      "Exercise book",
+      "Notepad"
+    ]
+  },
+  {
+    "id": "school-office-008",
+    "theme": "school-office",
+    "de": [
+      "Ordner",
+      "Schnellhefter"
+    ],
+    "en": [
+      "Ring binder",
+      "Document folder"
+    ]
+  },
+  {
+    "id": "school-office-009",
+    "theme": "school-office",
+    "de": [
+      "Briefumschlag",
+      "Postkarte"
+    ],
+    "en": [
+      "Envelope",
+      "Postcard"
+    ]
+  },
+  {
+    "id": "school-office-010",
+    "theme": "school-office",
+    "de": [
+      "Büroklammer",
+      "Heftklammer"
+    ],
+    "en": [
+      "Paper clip",
+      "Staple"
+    ]
+  },
+  {
+    "id": "school-office-011",
+    "theme": "school-office",
+    "de": [
+      "Tacker",
+      "Locher"
+    ],
+    "en": [
+      "Stapler",
+      "Hole punch"
+    ]
+  },
+  {
+    "id": "school-office-012",
+    "theme": "school-office",
+    "de": [
+      "Klebeband",
+      "Klebestift"
+    ],
+    "en": [
+      "Sticky tape",
+      "Glue stick"
+    ]
+  },
+  {
+    "id": "school-office-013",
+    "theme": "school-office",
+    "de": [
+      "Korrekturroller",
+      "Textmarker"
+    ],
+    "en": [
+      "Correction tape",
+      "Highlighter"
+    ]
+  },
+  {
+    "id": "school-office-014",
+    "theme": "school-office",
+    "de": [
+      "Schultafel",
+      "Whiteboard"
+    ],
+    "en": [
+      "Blackboard",
+      "Whiteboard"
+    ]
+  },
+  {
+    "id": "school-office-015",
+    "theme": "school-office",
+    "de": [
+      "Kreide",
+      "Schwamm"
+    ],
+    "en": [
+      "Chalk",
+      "Sponge"
+    ]
+  },
+  {
+    "id": "school-office-016",
+    "theme": "school-office",
+    "de": [
+      "Schulranzen",
+      "Federmäppchen"
+    ],
+    "en": [
+      "School bag",
+      "Pencil case"
+    ]
+  },
+  {
+    "id": "school-office-017",
+    "theme": "school-office",
+    "de": [
+      "Taschenrechner",
+      "Abakus"
+    ],
+    "en": [
+      "Calculator",
+      "Abacus"
+    ]
+  },
+  {
+    "id": "school-office-018",
+    "theme": "school-office",
+    "de": [
+      "Wörterbuch",
+      "Lexikon"
+    ],
+    "en": [
+      "Dictionary",
+      "Encyclopaedia"
+    ]
+  },
+  {
+    "id": "school-office-019",
+    "theme": "school-office",
+    "de": [
+      "Atlas",
+      "Stadtplan"
+    ],
+    "en": [
+      "Atlas",
+      "City map"
+    ]
+  },
+  {
+    "id": "school-office-020",
+    "theme": "school-office",
+    "de": [
+      "Stundenplan",
+      "Kalender"
+    ],
+    "en": [
+      "Timetable",
+      "Calendar"
+    ]
+  },
+  {
+    "id": "school-office-021",
+    "theme": "school-office",
+    "de": [
+      "Hausaufgabe",
+      "Klassenarbeit"
+    ],
+    "en": [
+      "Homework",
+      "Class test"
+    ]
+  },
+  {
+    "id": "school-office-022",
+    "theme": "school-office",
+    "de": [
+      "Zeugnis",
+      "Urkunde"
+    ],
+    "en": [
+      "School report",
+      "Certificate"
+    ]
+  },
+  {
+    "id": "school-office-023",
+    "theme": "school-office",
+    "de": [
+      "Referat",
+      "Aufsatz"
+    ],
+    "en": [
+      "Oral presentation",
+      "Essay"
+    ]
+  },
+  {
+    "id": "school-office-024",
+    "theme": "school-office",
+    "de": [
+      "Lesebrille",
+      "Lupe"
+    ],
+    "en": [
+      "Reading glasses",
+      "Magnifying glass"
+    ]
+  },
+  {
+    "id": "school-office-025",
+    "theme": "school-office",
+    "de": [
+      "Aktenschrank",
+      "Schließfach"
+    ],
+    "en": [
+      "Filing cabinet",
+      "Locker"
+    ]
+  },
+  {
+    "id": "school-office-026",
+    "theme": "school-office",
+    "de": [
+      "Stempel",
+      "Wachssiegel"
+    ],
+    "en": [
+      "Rubber stamp",
+      "Wax seal"
+    ]
+  },
+  {
+    "id": "tools-materials-001",
+    "theme": "tools-materials",
+    "de": [
+      "Hammer",
+      "Schraubendreher"
+    ],
+    "en": [
+      "Hammer",
+      "Screwdriver"
+    ]
+  },
+  {
+    "id": "tools-materials-002",
+    "theme": "tools-materials",
+    "de": [
+      "Nagel",
+      "Schraube"
+    ],
+    "en": [
+      "Nail",
+      "Screw"
+    ]
+  },
+  {
+    "id": "tools-materials-003",
+    "theme": "tools-materials",
+    "de": [
+      "Dübel",
+      "Haken"
+    ],
+    "en": [
+      "Wall plug",
+      "Hook"
+    ]
+  },
+  {
+    "id": "tools-materials-004",
+    "theme": "tools-materials",
+    "de": [
+      "Zange",
+      "Schraubenschlüssel"
+    ],
+    "en": [
+      "Pliers",
+      "Spanner"
+    ]
+  },
+  {
+    "id": "tools-materials-005",
+    "theme": "tools-materials",
+    "de": [
+      "Säge",
+      "Axt"
+    ],
+    "en": [
+      "Saw",
+      "Axe"
+    ]
+  },
+  {
+    "id": "tools-materials-006",
+    "theme": "tools-materials",
+    "de": [
+      "Bohrmaschine",
+      "Akkuschrauber"
+    ],
+    "en": [
+      "Drill",
+      "Electric screwdriver"
+    ]
+  },
+  {
+    "id": "tools-materials-007",
+    "theme": "tools-materials",
+    "de": [
+      "Schleifpapier",
+      "Feile"
+    ],
+    "en": [
+      "Sandpaper",
+      "File"
+    ]
+  },
+  {
+    "id": "tools-materials-008",
+    "theme": "tools-materials",
+    "de": [
+      "Pinsel",
+      "Farbrolle"
+    ],
+    "en": [
+      "Paintbrush",
+      "Paint roller"
+    ]
+  },
+  {
+    "id": "tools-materials-009",
+    "theme": "tools-materials",
+    "de": [
+      "Wasserwaage",
+      "Maßband"
+    ],
+    "en": [
+      "Spirit level",
+      "Tape measure"
+    ]
+  },
+  {
+    "id": "tools-materials-010",
+    "theme": "tools-materials",
+    "de": [
+      "Schraubstock",
+      "Schraubzwinge"
+    ],
+    "en": [
+      "Vice",
+      "Clamp"
+    ]
+  },
+  {
+    "id": "tools-materials-011",
+    "theme": "tools-materials",
+    "de": [
+      "Werkbank",
+      "Staffelei"
+    ],
+    "en": [
+      "Workbench",
+      "Easel"
+    ]
+  },
+  {
+    "id": "tools-materials-012",
+    "theme": "tools-materials",
+    "de": [
+      "Schubkarre",
+      "Bollerwagen"
+    ],
+    "en": [
+      "Wheelbarrow",
+      "Handcart"
+    ]
+  },
+  {
+    "id": "tools-materials-013",
+    "theme": "tools-materials",
+    "de": [
+      "Schaufel",
+      "Spaten"
+    ],
+    "en": [
+      "Shovel",
+      "Spade"
+    ]
+  },
+  {
+    "id": "tools-materials-014",
+    "theme": "tools-materials",
+    "de": [
+      "Rechen",
+      "Mistgabel"
+    ],
+    "en": [
+      "Rake",
+      "Pitchfork"
+    ]
+  },
+  {
+    "id": "tools-materials-015",
+    "theme": "tools-materials",
+    "de": [
+      "Gartenschlauch",
+      "Gießkanne"
+    ],
+    "en": [
+      "Garden hose",
+      "Watering can"
+    ]
+  },
+  {
+    "id": "tools-materials-016",
+    "theme": "tools-materials",
+    "de": [
+      "Rasenmäher",
+      "Heckenschere"
+    ],
+    "en": [
+      "Lawnmower",
+      "Hedge trimmer"
+    ]
+  },
+  {
+    "id": "tools-materials-017",
+    "theme": "tools-materials",
+    "de": [
+      "Laubbläser",
+      "Hochdruckreiniger"
+    ],
+    "en": [
+      "Leaf blower",
+      "Pressure washer"
+    ]
+  },
+  {
+    "id": "tools-materials-018",
+    "theme": "tools-materials",
+    "de": [
+      "Arbeitshandschuh",
+      "Schutzbrille"
+    ],
+    "en": [
+      "Work glove",
+      "Safety goggles"
+    ]
+  },
+  {
+    "id": "tools-materials-019",
+    "theme": "tools-materials",
+    "de": [
+      "Schutzhelm",
+      "Sonnenhut"
+    ],
+    "en": [
+      "Hard hat",
+      "Sun hat"
+    ]
+  },
+  {
+    "id": "tools-materials-020",
+    "theme": "tools-materials",
+    "de": [
+      "Seil",
+      "Kette"
+    ],
+    "en": [
+      "Rope",
+      "Chain"
+    ]
+  },
+  {
+    "id": "tools-materials-021",
+    "theme": "tools-materials",
+    "de": [
+      "Klebstoff",
+      "Silikon"
+    ],
+    "en": [
+      "Glue",
+      "Silicone sealant"
+    ]
+  },
+  {
+    "id": "tools-materials-022",
+    "theme": "tools-materials",
+    "de": [
+      "Beton",
+      "Gips"
+    ],
+    "en": [
+      "Concrete",
+      "Plaster of Paris"
+    ]
+  },
+  {
+    "id": "tools-materials-023",
+    "theme": "tools-materials",
+    "de": [
+      "Ziegel",
+      "Pflasterstein"
+    ],
+    "en": [
+      "Brick",
+      "Paving stone"
+    ]
+  },
+  {
+    "id": "tools-materials-024",
+    "theme": "tools-materials",
+    "de": [
+      "Holz",
+      "Metall"
+    ],
+    "en": [
+      "Wood",
+      "Metal"
+    ]
+  },
+  {
+    "id": "tools-materials-025",
+    "theme": "tools-materials",
+    "de": [
+      "Glas",
+      "Kunststoff"
+    ],
+    "en": [
+      "Glass",
+      "Plastic"
+    ]
+  },
+  {
+    "id": "tools-materials-026",
+    "theme": "tools-materials",
+    "de": [
+      "Kran",
+      "Bagger"
+    ],
+    "en": [
+      "Crane",
+      "Excavator"
+    ]
+  },
+  {
+    "id": "sports-001",
+    "theme": "sports",
+    "de": [
+      "Fußball",
+      "Basketball"
+    ],
+    "en": [
+      "Football",
+      "Basketball"
+    ]
+  },
+  {
+    "id": "sports-002",
+    "theme": "sports",
+    "de": [
+      "Handball",
+      "Volleyball"
+    ],
+    "en": [
+      "Team handball",
+      "Volleyball"
+    ]
+  },
+  {
+    "id": "sports-003",
+    "theme": "sports",
+    "de": [
+      "Tennis",
+      "Badminton"
+    ],
+    "en": [
+      "Tennis",
+      "Badminton"
+    ]
+  },
+  {
+    "id": "sports-004",
+    "theme": "sports",
+    "de": [
+      "Tischtennis",
+      "Squash"
+    ],
+    "en": [
+      "Table tennis",
+      "Squash"
+    ]
+  },
+  {
+    "id": "sports-005",
+    "theme": "sports",
+    "de": [
+      "Golf",
+      "Minigolf"
+    ],
+    "en": [
+      "Golf",
+      "Miniature golf"
+    ]
+  },
+  {
+    "id": "sports-006",
+    "theme": "sports",
+    "de": [
+      "Rugby",
+      "American Football"
+    ],
+    "en": [
+      "Rugby",
+      "American football"
+    ]
+  },
+  {
+    "id": "sports-007",
+    "theme": "sports",
+    "de": [
+      "Baseball",
+      "Cricket"
+    ],
+    "en": [
+      "Baseball",
+      "Cricket"
+    ]
+  },
+  {
+    "id": "sports-008",
+    "theme": "sports",
+    "de": [
+      "Hockey",
+      "Eishockey"
+    ],
+    "en": [
+      "Field hockey",
+      "Ice hockey"
+    ]
+  },
+  {
+    "id": "sports-009",
+    "theme": "sports",
+    "de": [
+      "Skifahren",
+      "Snowboarden"
+    ],
+    "en": [
+      "Skiing",
+      "Snowboarding"
+    ]
+  },
+  {
+    "id": "sports-010",
+    "theme": "sports",
+    "de": [
+      "Schlittschuhlaufen",
+      "Inlineskaten"
+    ],
+    "en": [
+      "Ice skating",
+      "Inline skating"
+    ]
+  },
+  {
+    "id": "sports-011",
+    "theme": "sports",
+    "de": [
+      "Surfen",
+      "Windsurfen"
+    ],
+    "en": [
+      "Surfing",
+      "Windsurfing"
+    ]
+  },
+  {
+    "id": "sports-012",
+    "theme": "sports",
+    "de": [
+      "Schwimmen",
+      "Schnorcheln"
+    ],
+    "en": [
+      "Swimming",
+      "Snorkelling"
+    ]
+  },
+  {
+    "id": "sports-013",
+    "theme": "sports",
+    "de": [
+      "Rudern",
+      "Paddeln"
+    ],
+    "en": [
+      "Rowing",
+      "Paddling"
+    ]
+  },
+  {
+    "id": "sports-014",
+    "theme": "sports",
+    "de": [
+      "Segeln",
+      "Wasserski"
+    ],
+    "en": [
+      "Sailing",
+      "Water skiing"
+    ]
+  },
+  {
+    "id": "sports-015",
+    "theme": "sports",
+    "de": [
+      "Joggen",
+      "Wandern"
+    ],
+    "en": [
+      "Jogging",
+      "Hiking"
+    ]
+  },
+  {
+    "id": "sports-016",
+    "theme": "sports",
+    "de": [
+      "Sprint",
+      "Marathon"
+    ],
+    "en": [
+      "Sprint",
+      "Marathon"
+    ]
+  },
+  {
+    "id": "sports-017",
+    "theme": "sports",
+    "de": [
+      "Hochsprung",
+      "Weitsprung"
+    ],
+    "en": [
+      "High jump",
+      "Long jump"
+    ]
+  },
+  {
+    "id": "sports-018",
+    "theme": "sports",
+    "de": [
+      "Speerwurf",
+      "Diskuswurf"
+    ],
+    "en": [
+      "Javelin throw",
+      "Discus throw"
+    ]
+  },
+  {
+    "id": "sports-019",
+    "theme": "sports",
+    "de": [
+      "Boxen",
+      "Ringen"
+    ],
+    "en": [
+      "Boxing",
+      "Wrestling"
+    ]
+  },
+  {
+    "id": "sports-020",
+    "theme": "sports",
+    "de": [
+      "Judo",
+      "Karate"
+    ],
+    "en": [
+      "Judo",
+      "Karate"
+    ]
+  },
+  {
+    "id": "sports-021",
+    "theme": "sports",
+    "de": [
+      "Fechten",
+      "Bogenschießen"
+    ],
+    "en": [
+      "Fencing",
+      "Archery"
+    ]
+  },
+  {
+    "id": "sports-022",
+    "theme": "sports",
+    "de": [
+      "Reiten",
+      "Radfahren"
+    ],
+    "en": [
+      "Horse riding",
+      "Cycling"
+    ]
+  },
+  {
+    "id": "sports-023",
+    "theme": "sports",
+    "de": [
+      "Kletterwand",
+      "Trampolin"
+    ],
+    "en": [
+      "Climbing wall",
+      "Trampoline"
+    ]
+  },
+  {
+    "id": "sports-024",
+    "theme": "sports",
+    "de": [
+      "Yoga",
+      "Pilates"
+    ],
+    "en": [
+      "Yoga",
+      "Pilates"
+    ]
+  },
+  {
+    "id": "sports-025",
+    "theme": "sports",
+    "de": [
+      "Liegestütz",
+      "Kniebeuge"
+    ],
+    "en": [
+      "Push-up",
+      "Squat"
+    ]
+  },
+  {
+    "id": "sports-026",
+    "theme": "sports",
+    "de": [
+      "Hantel",
+      "Medizinball"
+    ],
+    "en": [
+      "Dumbbell",
+      "Medicine ball"
+    ]
+  },
+  {
+    "id": "arts-media-001",
+    "theme": "arts-media",
+    "de": [
+      "Gitarre",
+      "Geige"
+    ],
+    "en": [
+      "Guitar",
+      "Violin"
+    ]
+  },
+  {
+    "id": "arts-media-002",
+    "theme": "arts-media",
+    "de": [
+      "Klavier",
+      "Orgel"
+    ],
+    "en": [
+      "Piano",
+      "Organ"
+    ]
+  },
+  {
+    "id": "arts-media-003",
+    "theme": "arts-media",
+    "de": [
+      "Trompete",
+      "Posaune"
+    ],
+    "en": [
+      "Trumpet",
+      "Trombone"
+    ]
+  },
+  {
+    "id": "arts-media-004",
+    "theme": "arts-media",
+    "de": [
+      "Flöte",
+      "Klarinette"
+    ],
+    "en": [
+      "Flute",
+      "Clarinet"
+    ]
+  },
+  {
+    "id": "arts-media-005",
+    "theme": "arts-media",
+    "de": [
+      "Saxophon",
+      "Akkordeon"
+    ],
+    "en": [
+      "Saxophone",
+      "Accordion"
+    ]
+  },
+  {
+    "id": "arts-media-006",
+    "theme": "arts-media",
+    "de": [
+      "Trommel",
+      "Xylophon"
+    ],
+    "en": [
+      "Drum",
+      "Xylophone"
+    ]
+  },
+  {
+    "id": "arts-media-007",
+    "theme": "arts-media",
+    "de": [
+      "Harfe",
+      "Kontrabass"
+    ],
+    "en": [
+      "Harp",
+      "Double bass"
+    ]
+  },
+  {
+    "id": "arts-media-008",
+    "theme": "arts-media",
+    "de": [
+      "Schlagzeug",
+      "Tamburin"
+    ],
+    "en": [
+      "Drum kit",
+      "Tambourine"
+    ]
+  },
+  {
+    "id": "arts-media-009",
+    "theme": "arts-media",
+    "de": [
+      "Mikrofon",
+      "Megafon"
+    ],
+    "en": [
+      "Microphone",
+      "Megaphone"
+    ]
+  },
+  {
+    "id": "arts-media-010",
+    "theme": "arts-media",
+    "de": [
+      "Lautsprecher",
+      "Kopfhörer"
+    ],
+    "en": [
+      "Loudspeaker",
+      "Headphones"
+    ]
+  },
+  {
+    "id": "arts-media-011",
+    "theme": "arts-media",
+    "de": [
+      "Notenblatt",
+      "Liedtext"
+    ],
+    "en": [
+      "Sheet music",
+      "Song lyrics"
+    ]
+  },
+  {
+    "id": "arts-media-012",
+    "theme": "arts-media",
+    "de": [
+      "Dirigent",
+      "Komponist"
+    ],
+    "en": [
+      "Conductor",
+      "Composer"
+    ]
+  },
+  {
+    "id": "arts-media-013",
+    "theme": "arts-media",
+    "de": [
+      "Sänger",
+      "Tänzer"
+    ],
+    "en": [
+      "Singer",
+      "Dancer"
+    ]
+  },
+  {
+    "id": "arts-media-014",
+    "theme": "arts-media",
+    "de": [
+      "Schauspieler",
+      "Zauberer"
+    ],
+    "en": [
+      "Actor",
+      "Magician"
+    ]
+  },
+  {
+    "id": "arts-media-015",
+    "theme": "arts-media",
+    "de": [
+      "Chor",
+      "Orchester"
+    ],
+    "en": [
+      "Choir",
+      "Orchestra"
+    ]
+  },
+  {
+    "id": "arts-media-016",
+    "theme": "arts-media",
+    "de": [
+      "Konzert",
+      "Musical"
+    ],
+    "en": [
+      "Concert",
+      "Musical"
+    ]
+  },
+  {
+    "id": "arts-media-017",
+    "theme": "arts-media",
+    "de": [
+      "Oper",
+      "Ballett"
+    ],
+    "en": [
+      "Opera",
+      "Ballet"
+    ]
+  },
+  {
+    "id": "arts-media-018",
+    "theme": "arts-media",
+    "de": [
+      "Film",
+      "Serie"
+    ],
+    "en": [
+      "Film",
+      "TV series"
+    ]
+  },
+  {
+    "id": "arts-media-019",
+    "theme": "arts-media",
+    "de": [
+      "Dokumentarfilm",
+      "Zeichentrickfilm"
+    ],
+    "en": [
+      "Documentary",
+      "Animated film"
+    ]
+  },
+  {
+    "id": "arts-media-020",
+    "theme": "arts-media",
+    "de": [
+      "Roman",
+      "Comic"
+    ],
+    "en": [
+      "Novel",
+      "Comic"
+    ]
+  },
+  {
+    "id": "arts-media-021",
+    "theme": "arts-media",
+    "de": [
+      "Gedicht",
+      "Märchen"
+    ],
+    "en": [
+      "Poem",
+      "Fairy tale"
+    ]
+  },
+  {
+    "id": "arts-media-022",
+    "theme": "arts-media",
+    "de": [
+      "Zeitung",
+      "Zeitschrift"
+    ],
+    "en": [
+      "Newspaper",
+      "Magazine"
+    ]
+  },
+  {
+    "id": "arts-media-023",
+    "theme": "arts-media",
+    "de": [
+      "Hörbuch",
+      "Podcast"
+    ],
+    "en": [
+      "Audiobook",
+      "Podcast"
+    ]
+  },
+  {
+    "id": "arts-media-024",
+    "theme": "arts-media",
+    "de": [
+      "Radio",
+      "Fernsehen"
+    ],
+    "en": [
+      "Radio",
+      "Television"
+    ]
+  },
+  {
+    "id": "arts-media-025",
+    "theme": "arts-media",
+    "de": [
+      "Ölgemälde",
+      "Aquarell"
+    ],
+    "en": [
+      "Oil painting",
+      "Watercolour painting"
+    ]
+  },
+  {
+    "id": "arts-media-026",
+    "theme": "arts-media",
+    "de": [
+      "Skulptur",
+      "Mosaik"
+    ],
+    "en": [
+      "Sculpture",
+      "Mosaic"
+    ]
+  },
+  {
+    "id": "games-leisure-001",
+    "theme": "games-leisure",
+    "de": [
+      "Schach",
+      "Dame"
+    ],
+    "en": [
+      "Chess",
+      "Draughts"
+    ]
+  },
+  {
+    "id": "games-leisure-002",
+    "theme": "games-leisure",
+    "de": [
+      "Domino",
+      "Mahjong"
+    ],
+    "en": [
+      "Dominoes",
+      "Mahjong"
+    ]
+  },
+  {
+    "id": "games-leisure-003",
+    "theme": "games-leisure",
+    "de": [
+      "Puzzle",
+      "Bauklötze"
+    ],
+    "en": [
+      "Jigsaw puzzle",
+      "Building blocks"
+    ]
+  },
+  {
+    "id": "games-leisure-004",
+    "theme": "games-leisure",
+    "de": [
+      "Kartenspiel",
+      "Brettspiel"
+    ],
+    "en": [
+      "Card game",
+      "Board game"
+    ]
+  },
+  {
+    "id": "games-leisure-005",
+    "theme": "games-leisure",
+    "de": [
+      "Würfel",
+      "Münze"
+    ],
+    "en": [
+      "Die",
+      "Coin"
+    ]
+  },
+  {
+    "id": "games-leisure-006",
+    "theme": "games-leisure",
+    "de": [
+      "Murmel",
+      "Flummi"
+    ],
+    "en": [
+      "Marble",
+      "Bouncy ball"
+    ]
+  },
+  {
+    "id": "games-leisure-007",
+    "theme": "games-leisure",
+    "de": [
+      "Jojo",
+      "Kreisel"
+    ],
+    "en": [
+      "Yo-yo",
+      "Spinning top"
+    ]
+  },
+  {
+    "id": "games-leisure-008",
+    "theme": "games-leisure",
+    "de": [
+      "Seifenblasen",
+      "Luftballon"
+    ],
+    "en": [
+      "Soap bubbles",
+      "Balloon"
+    ]
+  },
+  {
+    "id": "games-leisure-009",
+    "theme": "games-leisure",
+    "de": [
+      "Drachen",
+      "Papierflieger"
+    ],
+    "en": [
+      "Toy kite",
+      "Paper aeroplane"
+    ]
+  },
+  {
+    "id": "games-leisure-010",
+    "theme": "games-leisure",
+    "de": [
+      "Schaukel",
+      "Wippe"
+    ],
+    "en": [
+      "Swing",
+      "Seesaw"
+    ]
+  },
+  {
+    "id": "games-leisure-011",
+    "theme": "games-leisure",
+    "de": [
+      "Rutsche",
+      "Karussell"
+    ],
+    "en": [
+      "Slide",
+      "Merry-go-round"
+    ]
+  },
+  {
+    "id": "games-leisure-012",
+    "theme": "games-leisure",
+    "de": [
+      "Sandburg",
+      "Schneemann"
+    ],
+    "en": [
+      "Sandcastle",
+      "Snowman"
+    ]
+  },
+  {
+    "id": "games-leisure-013",
+    "theme": "games-leisure",
+    "de": [
+      "Verstecken",
+      "Fangen"
+    ],
+    "en": [
+      "Hide-and-seek",
+      "Tag"
+    ]
+  },
+  {
+    "id": "games-leisure-014",
+    "theme": "games-leisure",
+    "de": [
+      "Seilziehen",
+      "Sackhüpfen"
+    ],
+    "en": [
+      "Tug of war",
+      "Sack race"
+    ]
+  },
+  {
+    "id": "games-leisure-015",
+    "theme": "games-leisure",
+    "de": [
+      "Hüpfkästchen",
+      "Eierlauf"
+    ],
+    "en": [
+      "Hopscotch",
+      "Egg-and-spoon race"
+    ]
+  },
+  {
+    "id": "games-leisure-016",
+    "theme": "games-leisure",
+    "de": [
+      "Hula-Hoop-Reifen",
+      "Springseil"
+    ],
+    "en": [
+      "Hula hoop",
+      "Skipping rope"
+    ]
+  },
+  {
+    "id": "games-leisure-017",
+    "theme": "games-leisure",
+    "de": [
+      "Stricken",
+      "Häkeln"
+    ],
+    "en": [
+      "Knitting",
+      "Crochet"
+    ]
+  },
+  {
+    "id": "games-leisure-018",
+    "theme": "games-leisure",
+    "de": [
+      "Nähen",
+      "Sticken"
+    ],
+    "en": [
+      "Sewing",
+      "Embroidery"
+    ]
+  },
+  {
+    "id": "games-leisure-019",
+    "theme": "games-leisure",
+    "de": [
+      "Töpfern",
+      "Schnitzen"
+    ],
+    "en": [
+      "Pottery",
+      "Woodcarving"
+    ]
+  },
+  {
+    "id": "games-leisure-020",
+    "theme": "games-leisure",
+    "de": [
+      "Origami",
+      "Papiermaché"
+    ],
+    "en": [
+      "Origami",
+      "Papier-mâché"
+    ]
+  },
+  {
+    "id": "games-leisure-021",
+    "theme": "games-leisure",
+    "de": [
+      "Basteln",
+      "Malen"
+    ],
+    "en": [
+      "Crafting",
+      "Painting"
+    ]
+  },
+  {
+    "id": "games-leisure-022",
+    "theme": "games-leisure",
+    "de": [
+      "Fotografieren",
+      "Filmen"
+    ],
+    "en": [
+      "Taking photos",
+      "Filming"
+    ]
+  },
+  {
+    "id": "games-leisure-023",
+    "theme": "games-leisure",
+    "de": [
+      "Angeln",
+      "Pilze sammeln"
+    ],
+    "en": [
+      "Fishing",
+      "Mushroom picking"
+    ]
+  },
+  {
+    "id": "games-leisure-024",
+    "theme": "games-leisure",
+    "de": [
+      "Picknick",
+      "Grillen"
+    ],
+    "en": [
+      "Picnic",
+      "Barbecue"
+    ]
+  },
+  {
+    "id": "games-leisure-025",
+    "theme": "games-leisure",
+    "de": [
+      "Zelt",
+      "Schlafsack"
+    ],
+    "en": [
+      "Tent",
+      "Sleeping bag"
+    ]
+  },
+  {
+    "id": "games-leisure-026",
+    "theme": "games-leisure",
+    "de": [
+      "Fernglas",
+      "Teleskop"
+    ],
+    "en": [
+      "Binoculars",
+      "Telescope"
+    ]
+  },
+  {
+    "id": "technology-001",
+    "theme": "technology",
+    "de": [
+      "Smartphone",
+      "Tablet"
+    ],
+    "en": [
+      "Smartphone",
+      "Tablet"
+    ]
+  },
+  {
+    "id": "technology-002",
+    "theme": "technology",
+    "de": [
+      "Laptop",
+      "Desktop-PC"
+    ],
+    "en": [
+      "Laptop",
+      "Desktop PC"
+    ]
+  },
+  {
+    "id": "technology-003",
+    "theme": "technology",
+    "de": [
+      "Tastatur",
+      "Computermaus"
+    ],
+    "en": [
+      "Keyboard",
+      "Computer mouse"
+    ]
+  },
+  {
+    "id": "technology-004",
+    "theme": "technology",
+    "de": [
+      "Bildschirm",
+      "Projektor"
+    ],
+    "en": [
+      "Monitor",
+      "Projector"
+    ]
+  },
+  {
+    "id": "technology-005",
+    "theme": "technology",
+    "de": [
+      "Drucker",
+      "Scanner"
+    ],
+    "en": [
+      "Printer",
+      "Scanner"
+    ]
+  },
+  {
+    "id": "technology-006",
+    "theme": "technology",
+    "de": [
+      "USB-Stick",
+      "Speicherkarte"
+    ],
+    "en": [
+      "USB flash drive",
+      "Memory card"
+    ]
+  },
+  {
+    "id": "technology-007",
+    "theme": "technology",
+    "de": [
+      "Festplatte",
+      "DVD"
+    ],
+    "en": [
+      "Hard drive",
+      "DVD"
+    ]
+  },
+  {
+    "id": "technology-008",
+    "theme": "technology",
+    "de": [
+      "Ladekabel",
+      "Steckdose"
+    ],
+    "en": [
+      "Charging cable",
+      "Power socket"
+    ]
+  },
+  {
+    "id": "technology-009",
+    "theme": "technology",
+    "de": [
+      "Batterie",
+      "Akku"
+    ],
+    "en": [
+      "Disposable battery",
+      "Rechargeable battery"
+    ]
+  },
+  {
+    "id": "technology-010",
+    "theme": "technology",
+    "de": [
+      "Powerbank",
+      "Ladestation"
+    ],
+    "en": [
+      "Power bank",
+      "Charging dock"
+    ]
+  },
+  {
+    "id": "technology-011",
+    "theme": "technology",
+    "de": [
+      "Fernbedienung",
+      "Controller"
+    ],
+    "en": [
+      "Remote control",
+      "Game controller"
+    ]
+  },
+  {
+    "id": "technology-012",
+    "theme": "technology",
+    "de": [
+      "Spielkonsole",
+      "Spielautomat"
+    ],
+    "en": [
+      "Games console",
+      "Arcade machine"
+    ]
+  },
+  {
+    "id": "technology-013",
+    "theme": "technology",
+    "de": [
+      "Smartwatch",
+      "Schrittzähler"
+    ],
+    "en": [
+      "Smartwatch",
+      "Pedometer"
+    ]
+  },
+  {
+    "id": "technology-014",
+    "theme": "technology",
+    "de": [
+      "Digitalkamera",
+      "Sofortbildkamera"
+    ],
+    "en": [
+      "Digital camera",
+      "Instant camera"
+    ]
+  },
+  {
+    "id": "technology-015",
+    "theme": "technology",
+    "de": [
+      "Videokamera",
+      "Webcam"
+    ],
+    "en": [
+      "Camcorder",
+      "Webcam"
+    ]
+  },
+  {
+    "id": "technology-016",
+    "theme": "technology",
+    "de": [
+      "Stativ",
+      "Selfiestick"
+    ],
+    "en": [
+      "Tripod",
+      "Selfie stick"
+    ]
+  },
+  {
+    "id": "technology-017",
+    "theme": "technology",
+    "de": [
+      "Wecker",
+      "Stoppuhr"
+    ],
+    "en": [
+      "Alarm clock",
+      "Stopwatch"
+    ]
+  },
+  {
+    "id": "technology-018",
+    "theme": "technology",
+    "de": [
+      "Sanduhr",
+      "Sonnenuhr"
+    ],
+    "en": [
+      "Hourglass",
+      "Sundial"
+    ]
+  },
+  {
+    "id": "technology-019",
+    "theme": "technology",
+    "de": [
+      "Türklingel",
+      "Alarmanlage"
+    ],
+    "en": [
+      "Doorbell",
+      "Burglar alarm"
+    ]
+  },
+  {
+    "id": "technology-020",
+    "theme": "technology",
+    "de": [
+      "Rauchmelder",
+      "Bewegungsmelder"
+    ],
+    "en": [
+      "Smoke detector",
+      "Motion sensor"
+    ]
+  },
+  {
+    "id": "technology-021",
+    "theme": "technology",
+    "de": [
+      "Taschenlampe",
+      "Laterne"
+    ],
+    "en": [
+      "Torch",
+      "Lantern"
+    ]
+  },
+  {
+    "id": "technology-022",
+    "theme": "technology",
+    "de": [
+      "E-Mail",
+      "SMS"
+    ],
+    "en": [
+      "Email",
+      "Text message"
+    ]
+  },
+  {
+    "id": "technology-023",
+    "theme": "technology",
+    "de": [
+      "Sprachnachricht",
+      "Videoanruf"
+    ],
+    "en": [
+      "Voice message",
+      "Video call"
+    ]
+  },
+  {
+    "id": "technology-024",
+    "theme": "technology",
+    "de": [
+      "Passwort",
+      "PIN"
+    ],
+    "en": [
+      "Password",
+      "PIN"
+    ]
+  },
+  {
+    "id": "technology-025",
+    "theme": "technology",
+    "de": [
+      "Suchmaschine",
+      "Webbrowser"
+    ],
+    "en": [
+      "Search engine",
+      "Web browser"
+    ]
+  },
+  {
+    "id": "technology-026",
+    "theme": "technology",
+    "de": [
+      "Roboter",
+      "Drohne"
+    ],
+    "en": [
+      "Robot",
+      "Drone"
+    ]
+  }
+]

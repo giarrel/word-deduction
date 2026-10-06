@@ -1,0 +1,3 @@
+# The frozen catalog hash and generated-source check are byte-for-byte contracts.
+/content/word-pairs.json text eol=lf
+/game/Assets/WordDeduction/Session/WordCatalog.cs text eol=lf

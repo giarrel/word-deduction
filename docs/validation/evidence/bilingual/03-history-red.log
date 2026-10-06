@@ -1,0 +1,2 @@
+FAIL a V4 deal without its consumed pair is rejected before revealing a word: inconsistent deal/history recovers the last committed group
+0/1 passed

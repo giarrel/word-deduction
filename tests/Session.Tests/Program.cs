@@ -119,7 +119,8 @@ var cases = new (string name, Action<string> run)[] {
         var session = Session.Open(directory, Language.English);
         session.AddPlayer("Alex"); session.AddPlayer("Bea");
         var path = Path.Combine(directory,"session.json");
-        var future = File.ReadAllText(path).Replace("\"Version\":2", "\"Version\":99");
+        var futureEnvelope = Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path)); futureEnvelope["Version"] = 99;
+        var future = futureEnvelope.ToString();
         File.WriteAllText(path,future);
         session = Session.Open(directory,Language.German);
         Check(session.View.StorageNotice == "NewerVersion" && session.View.StorageBlocked, "newer version gets explicit block");
@@ -162,6 +163,9 @@ var cases = new (string name, Action<string> run)[] {
 };
 cases = cases.Concat(QuickCases.All).ToArray();
 cases = cases.Concat(RecoveryCases.All).ToArray();
+cases = cases.Concat(ClassicCases.All).ToArray();
+cases = cases.Concat(ContentCases.All).ToArray();
+if (args.Length > 0) cases = cases.Where(test => test.name.Contains(args[0],StringComparison.OrdinalIgnoreCase)).ToArray();
 int failures = 0;
 foreach (var test in cases) {
     var directory = Path.Combine(Path.GetTempPath(), "WordDeduction-tests", Guid.NewGuid().ToString("N"));

@@ -38,6 +38,7 @@
         <ui:Button name="classicMode" class="mode-button" />
       </ui:VisualElement>
       <ui:Label name="modeDescription" class="mode-description" />
+      <ui:Button name="whitePreference" class="white-preference hidden" />
       <ui:Button name="playButton" class="play-button" />
       <ui:Label name="startHint" class="start-hint" />
     </ui:VisualElement>
