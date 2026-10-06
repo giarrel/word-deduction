@@ -1,0 +1,174 @@
+{
+  "status": "completed",
+  "duration": 95.45,
+  "summary": {
+    "total": 23,
+    "passed": 21,
+    "failed": 2,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "WordDeduction.Tests.ClassicScreenTests.ClassicCanStartFromTheSavedGroupInBothLanguages",
+      "Status": "Passed",
+      "Duration": 0.4501804,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.ClassicScreenTests.EliminationsAndRepeatedTiesKeepOnlySurvivorsOnAShortScreen",
+      "Status": "Passed",
+      "Duration": 0.6982006,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.ClassicScreenTests.WhiteAloneAndBothSurvivingAdversaryRolesAreNamedInTheResult",
+      "Status": "Passed",
+      "Duration": 0.5074218,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.ClassicScreenTests.WhitePrivateCardAndSpokenGuessRemainPrivateAcrossResumeInBothLanguages",
+      "Status": "Passed",
+      "Duration": 2.6641838,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.ContentScreenTests.LongBilingualWordsFitTheRealSmallCardAndDisappearOnRelease",
+      "Status": "Passed",
+      "Duration": 81.3321728,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.GroupScreenTests.AddingAPlayerScrollsTheNewRowIntoViewAfterLayout",
+      "Status": "Passed",
+      "Duration": 0.0826492,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.GroupScreenTests.EditingTheLastPlayerKeepsAllActionsVisibleAfterTheViewportShrinks",
+      "Status": "Passed",
+      "Duration": 0.0928901,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.GroupScreenTests.FailedRenameKeepsTheTypedNameForRetry",
+      "Status": "Passed",
+      "Duration": 0.0497026,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.GroupScreenTests.GroupActionsThroughRenderedControlsSurviveReopening",
+      "Status": "Passed",
+      "Duration": 0.1650721,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.GroupScreenTests.GroupScreenExposesTheNameEntryAndBothModes",
+      "Status": "Passed",
+      "Duration": 0.0161314,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.InvisibleNamesAreRejectedAndExtendedNamesSurviveTheUnityRuntime",
+      "Status": "Passed",
+      "Duration": 0.1648512,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.PublicMenuSemanticsFollowNavigationAndNeverContainThePrivateWord",
+      "Status": "Passed",
+      "Duration": 0.1384767,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.SmallGroupHasFingerSizedLanguageAndParticipationControls",
+      "Status": "Passed",
+      "Duration": 0.1085541,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.QuickScreenTests.BothLanguagesCompleteTheActualQuickFlowAndKeepTheGroup",
+      "Status": "Passed",
+      "Duration": 3.5206616,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.QuickScreenTests.HoldCancelCaptureLossSecondFingerAndLifecycleEraseSecretsSynchronously",
+      "Status": "Passed",
+      "Duration": 0.0672441,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.QuickScreenTests.QuickStartsAtANamedCoveredCardAndRequiresIntentionalReveal",
+      "Status": "Passed",
+      "Duration": 0.3224564,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.QuickScreenTests.SaveFailuresKeepUnconfirmedScreensAndSecretsCoveredForRetry",
+      "Status": "Failed",
+      "Duration": 0.0488161,
+      "Message": "  Expected: String containing \"Speichern\"\r\n  But was:  \"Diese Aktion konnte nicht gespeichert werden. Nichts wurde geändert. Versuche es erneut. Falls es weiter passiert, prüfe den freien Speicherplatz.\"\r\n",
+      "StackTrace": "at WordDeduction.Tests.QuickScreenTests+<SaveFailuresKeepUnconfirmedScreensAndSecretsCoveredForRetry>d__4.MoveNext () [0x000e1] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\ui-polish\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\QuickScreenTests.cs:117\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+    },
+    {
+      "FullName": "WordDeduction.Tests.QuickScreenTests.TwentyPlayersCanReachTheLastSuspectAndResolveARepeatedTieOnAShortScreen",
+      "Status": "Passed",
+      "Duration": 3.766594,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.AdditionalContactsCannotRevealUntilEveryFingerHasLifted",
+      "Status": "Passed",
+      "Duration": 0.2812485,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.ColdRestoredPauseAcceptsAbandonAndRepeatedTouchNavigation",
+      "Status": "Passed",
+      "Duration": 0.3077466,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.FailedFreshStartShowsTheWriteFailureAndAllowsExplicitRetry",
+      "Status": "Failed",
+      "Duration": 0.1076014,
+      "Message": "  Expected: String containing \"Speichern nicht möglich\"\r\n  But was:  \"Diese Aktion konnte nicht gespeichert werden. Nichts wurde geändert. Versuche es erneut. Falls es weiter passiert, prüfe den freien Speicherplatz.\"\r\n",
+      "StackTrace": "at WordDeduction.Tests.RecoveryScreenTests+<FailedFreshStartShowsTheWriteFailureAndAllowsExplicitRetry>d__3.MoveNext () [0x00138] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\ui-polish\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\RecoveryScreenTests.cs:78\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.NavigationRetainsHeldContactsAndFreshTouchesWorkAfterReleaseOrInterruption",
+      "Status": "Passed",
+      "Duration": 0.2755097,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.RecoveryExplainsRestoredBlockedAndInaccessibleFilesInBothLanguages",
+      "Status": "Passed",
+      "Duration": 0.2341821,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

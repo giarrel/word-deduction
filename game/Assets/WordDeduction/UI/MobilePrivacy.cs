@@ -8,10 +8,16 @@ namespace WordDeduction.UI
         static volatile bool ready = true;
         public static bool Ready => ready;
         public static bool ReduceMotion { get; private set; }
-        public static void Protect(bool secure)
+        public static void RefreshMotion()
         {
 #if UNITY_ANDROID && !UNITY_EDITOR
             using (var animator = new AndroidJavaClass("android.animation.ValueAnimator")) ReduceMotion = !animator.CallStatic<bool>("areAnimatorsEnabled");
+#endif
+        }
+        public static void Protect(bool secure)
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            RefreshMotion();
             int generation = System.Threading.Interlocked.Increment(ref requestGeneration);
             ready = !secure;
             using (var player = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))

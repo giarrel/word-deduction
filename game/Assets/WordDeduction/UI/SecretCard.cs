@@ -10,7 +10,8 @@ namespace WordDeduction.UI
         readonly Session session;
         readonly string owner;
         readonly VisualElement root, drag, hold, face;
-        readonly Label word, symbol, caption;
+        readonly Label word, caption;
+        readonly VisualElement symbol;
         readonly Button next;
         readonly HashSet<int> contacts;
         int pointer = -1;
@@ -20,7 +21,7 @@ namespace WordDeduction.UI
         bool holding, disposed;
         bool CardReady => pointer < 0 && lift <= 0.01f && session.Match != null && session.Match.CanAdvance;
         public bool CanAdvance => contacts.Count == 0 && CardReady;
-        public SecretCard(Session session, string owner, HashSet<int> contacts, VisualElement root, VisualElement drag, VisualElement hold, VisualElement face, Label word, Label symbol, Label caption, Button next)
+        public SecretCard(Session session, string owner, HashSet<int> contacts, VisualElement root, VisualElement drag, VisualElement hold, VisualElement face, Label word, VisualElement symbol, Label caption, Button next)
         {
             this.contacts = contacts;
             this.session = session; this.owner = owner; this.root = root; this.drag = drag; this.hold = hold; this.face = face; this.word = word; this.symbol = symbol; this.caption = caption; this.next = next;

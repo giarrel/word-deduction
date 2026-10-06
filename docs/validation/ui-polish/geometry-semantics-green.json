@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "duration": 0.89,
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.InvisibleNamesAreRejectedAndExtendedNamesSurviveTheUnityRuntime",
+      "Status": "Passed",
+      "Duration": 0.4052883,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.MenuFramesFollowResizingAndScrollWithoutReplacingTheHierarchy",
+      "Status": "Passed",
+      "Duration": 0.161271,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.PublicMenuSemanticsFollowNavigationAndNeverContainThePrivateWord",
+      "Status": "Passed",
+      "Duration": 0.1771059,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.SmallGroupHasFingerSizedLanguageAndParticipationControls",
+      "Status": "Passed",
+      "Duration": 0.1132163,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

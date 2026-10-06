@@ -16,6 +16,7 @@ namespace WordDeduction.UI
         readonly PanelTextSettings text;
         readonly List<FontAsset> fonts = new List<FontAsset>();
         readonly HashSet<string> attempted = new HashSet<string>();
+        readonly HashSet<int> checkedScalars = new HashSet<int>();
         string[] families;
         public RuntimeTypography(UIDocument document)
         {
@@ -24,7 +25,7 @@ namespace WordDeduction.UI
             panel = UnityEngine.Object.Instantiate(original); MobileViewport.Configure(panel);
             text = UnityEngine.Object.Instantiate(original.textSettings); panel.textSettings = text;
             text.fallbackFontAssets = new List<FontAsset>(text.fallbackFontAssets ?? new List<FontAsset>());
-            text.emojiFallbackTextAssets = new List<UnityEngine.TextCore.Text.TextAsset>();
+            text.emojiFallbackTextAssets = new List<UnityEngine.TextCore.Text.TextAsset>(text.emojiFallbackTextAssets ?? new List<UnityEngine.TextCore.Text.TextAsset>());
             document.panelSettings = panel;
             document.rootVisualElement.style.unityFontDefinition = FontDefinition.FromSDFFont(text.defaultFontAsset);
             document.rootVisualElement.style.unityTextGenerator = TextGeneratorType.Advanced;
@@ -43,8 +44,26 @@ namespace WordDeduction.UI
                     else if (scalar >= 0x0e00 && scalar <= 0x0e7f) Load("Noto Sans Thai", "Leelawadee UI");
                     else if (scalar >= 0x0590 && scalar <= 0x05ff) Load("Noto Sans Hebrew", "Arial");
                     else if (scalar >= 0x2e80 && scalar <= 0xd7ff || scalar >= 0x20000 && scalar <= 0x323af) Load("Noto Sans CJK SC", "Microsoft YaHei");
-                    else if (scalar >= 0x1f000 && scalar <= 0x1faff || scalar >= 0x2600 && scalar <= 0x27bf) Load("Noto Color Emoji", "Segoe UI Emoji",true);
+                    else if (scalar >= 0x1f000 && scalar <= 0x1faff || scalar >= 0x2600 && scalar <= 0x27bf) { if (text.emojiFallbackTextAssets.Count == 0) Load("Noto Color Emoji", "Segoe UI Emoji",true); }
+                    else if (scalar > 0x02ff) FindInstalledFallback(scalar);
                 }
+        }
+        void FindInstalledFallback(int scalar)
+        {
+            if (!checkedScalars.Add(scalar) || scalar >= 0xd800 && scalar <= 0xdfff) return;
+            var category = System.Globalization.CharUnicodeInfo.GetUnicodeCategory(char.ConvertFromUtf32(scalar),0);
+            if (category == System.Globalization.UnicodeCategory.Format || category == System.Globalization.UnicodeCategory.NonSpacingMark || category == System.Globalization.UnicodeCategory.EnclosingMark) return;
+            if (text.defaultFontAsset.HasCharacter((uint)scalar,false,true) || fonts.Any(f => f.HasCharacter((uint)scalar,false,true))) return;
+            if (families == null) families = FontEngine.GetSystemFontNames();
+            foreach (var entry in families)
+            {
+                int separator = entry.LastIndexOf(" - ",StringComparison.Ordinal);
+                string family = separator < 0 ? entry : entry.Substring(0,separator);
+                string style = separator < 0 ? "Regular" : entry.Substring(separator + 3);
+                if (style != "Regular" || family.Contains("Emoji")) continue;
+                if (FontEngine.LoadFontFace(family,style,90) != FontEngineError.Success || !FontEngine.TryGetGlyphIndex((uint)scalar,out uint glyph) || glyph == 0) continue;
+                Load(family,family); return;
+            }
         }
         void Load(string family,string desktopAlternative,bool color = false)
         {

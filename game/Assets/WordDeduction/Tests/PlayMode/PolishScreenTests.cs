@@ -108,6 +108,34 @@ namespace WordDeduction.Tests
             Assert.That(screen.Accessibility.rootNodes.Any(n => n.label == "Got it"),Is.True);
             Assert.That(screen.Accessibility.rootNodes.Any(n => n.label == "Hide & pass on"),Is.False,"Help contains only its own current actions.");
         }
+        [UnityTest]
+        public IEnumerator MenuFramesFollowResizingAndScrollWithoutReplacingTheHierarchy()
+        {
+            var root = Create(Language.English); yield return null; yield return null;
+            foreach (var name in new[]{"Alex","Bea","Chris","Dana","Eli"})
+            {
+                root.Q<TextField>("nameInput").value = name; Submit(root.Q<Button>("addPlayer")); yield return null;
+            }
+            Submit(root.Q<Button>("classicMode")); yield return null; yield return null;
+            var screen = host.GetComponent<GroupScreen>(); var hierarchy = screen.Accessibility;
+            var scroll = root.Q<ScrollView>("players");
+            var menu = hierarchy.rootNodes.First(n => n.role == UnityEngine.Accessibility.AccessibilityRole.ScrollView);
+            float originalHeight = menu.frame.height;
+            root.style.height = 560; yield return null; yield return null; yield return null;
+            Assert.That(screen.Accessibility,Is.SameAs(hierarchy),"Viewport changes preserve native node identity and focus.");
+            Assert.That(menu.frame.height,Is.LessThan(originalHeight));
+            Assert.That(menu.children.Any(n => !n.isActive),Is.True,"Offscreen rows are excluded from exploration.");
+            scroll.scrollOffset = new Vector2(0,scroll.verticalScroller.highValue);
+            yield return null; yield return null; yield return null;
+            Assert.That(screen.Accessibility,Is.SameAs(hierarchy),"Scrolling must not announce a replacement screen.");
+            foreach (var node in menu.children.Where(n => n.isActive))
+            {
+                Assert.That(node.frame.width,Is.GreaterThan(0));
+                Assert.That(node.frame.yMin,Is.GreaterThanOrEqualTo(menu.frame.yMin-1));
+                Assert.That(node.frame.yMax,Is.LessThanOrEqualTo(menu.frame.yMax+1));
+            }
+            Assert.That(menu.children.Any(n => n.isActive && n.label.Contains("Eli")),Is.True,"The last row becomes reachable after scroll.");
+        }
         static void Submit(VisualElement target)
         {
             Assert.That(target,Is.Not.Null);

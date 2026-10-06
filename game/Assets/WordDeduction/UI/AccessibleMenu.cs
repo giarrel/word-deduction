@@ -6,13 +6,12 @@ using UnityEngine.UIElements;
 
 namespace WordDeduction.UI
 {
-    // The public menu tree deliberately never traverses a private card.
+    // Public menus only: private card text never enters the native hierarchy.
     internal sealed class AccessibleMenu : IDisposable
     {
         readonly VisualElement root;
         readonly Func<Language> language;
         readonly List<(VisualElement element, AccessibilityNode node)> nodes = new List<(VisualElement, AccessibilityNode)>();
-        readonly List<(ScrollView scroll, Action<float> changed)> scrollers = new List<(ScrollView, Action<float>)>();
         bool queued, disposed;
         string focusName;
         public AccessibilityHierarchy Hierarchy { get; private set; }
@@ -20,9 +19,7 @@ namespace WordDeduction.UI
         {
             this.root = root; this.language = language;
             AssistiveSupport.screenReaderStatusChanged += ReaderChanged;
-            root.RegisterCallback<GeometryChangedEvent>(GeometryChanged);
         }
-        void GeometryChanged(GeometryChangedEvent e) { Refresh(); }
         void ReaderChanged(bool enabled) { if (enabled) Refresh(); }
         public void Refresh()
         {
@@ -32,29 +29,29 @@ namespace WordDeduction.UI
         }
         void Build()
         {
-            foreach (var item in scrollers) item.scroll.verticalScroller.valueChanged -= item.changed;
-            scrollers.Clear(); nodes.Clear(); Hierarchy = new AccessibilityHierarchy();
+            nodes.Clear(); Hierarchy = new AccessibilityHierarchy();
             Visit(root,null);
-            if (AssistiveSupport.isScreenReaderEnabled)
-            {
-                AssistiveSupport.activeHierarchy = Hierarchy;
+            if (!AssistiveSupport.isScreenReaderEnabled) return;
+            AssistiveSupport.activeHierarchy = Hierarchy;
+            var current = Hierarchy;
+            root.schedule.Execute(() => {
+                if (disposed || Hierarchy != current) return;
+                Tick();
                 foreach (var pair in nodes)
-                    if (!string.IsNullOrEmpty(focusName) && pair.element.name == focusName)
+                    if (pair.node.isActive && !string.IsNullOrEmpty(focusName) && pair.element.name == focusName)
                     { AssistiveSupport.notificationDispatcher.SendLayoutChanged(pair.node); break; }
-            }
+            });
         }
         void Visit(VisualElement element, AccessibilityNode parent)
         {
             if (element.resolvedStyle.display == DisplayStyle.None || element.ClassListContains("hidden")) return;
             if (element.name == "cardDrag" || element.name == "secretWord" || element.ClassListContains("player-initial") ||
                 element.ClassListContains("empty-symbol") || element.ClassListContains("wordmark")) return;
-            var scrollParent = element.GetFirstAncestorOfType<ScrollView>();
-            if (scrollParent != null && !element.worldBound.Overlaps(scrollParent.contentViewport.worldBound)) return;
             if (element is Button button)
             {
                 var node = Add(element,string.IsNullOrEmpty(button.tooltip) ? button.text : button.tooltip,parent,AccessibilityRole.Button);
                 node.invoked += () => {
-                    if (!button.enabledInHierarchy || button.panel == null) return false;
+                    if (!node.isActive || !button.enabledInHierarchy || button.panel == null) return false;
                     using (var e = NavigationSubmitEvent.GetPooled()) { e.target = button; button.SendEvent(e); }
                     return true;
                 };
@@ -64,20 +61,19 @@ namespace WordDeduction.UI
             {
                 var node = Add(field,field.tooltip,parent,AccessibilityRole.TextField);
                 node.value = field.value;
-                node.invoked += () => { if (!field.enabledInHierarchy) return false; field.Focus(); return true; };
+                node.invoked += () => { if (!node.isActive || !field.enabledInHierarchy) return false; field.Focus(); return true; };
                 return;
             }
             if (element is ScrollView scroll)
             {
-                Action<float> changed = _ => Refresh(); scroll.verticalScroller.valueChanged += changed; scrollers.Add((scroll,changed));
                 string key = scroll.name == "players" ? "scrollPlayers" : "scrollContent";
                 var node = Add(scroll.contentViewport,Copy.Get(language(),key),parent,AccessibilityRole.ScrollView);
                 node.scrolled += direction => {
+                    if (!node.isActive) return false;
                     float sign = direction == AccessibilityScrollDirection.Up || direction == AccessibilityScrollDirection.Backward || direction == AccessibilityScrollDirection.Left ? -1 : 1;
                     float before = scroll.scrollOffset.y;
                     scroll.scrollOffset = new Vector2(0,Mathf.Clamp(before + sign * scroll.contentViewport.layout.height * 0.75f,0,scroll.verticalScroller.highValue));
-                    if (Mathf.Approximately(before,scroll.scrollOffset.y)) return false;
-                    focusName = scroll.contentViewport.name; Refresh(); return true;
+                    return !Mathf.Approximately(before,scroll.scrollOffset.y);
                 };
                 foreach (var child in scroll.Children()) Visit(child,node);
                 return;
@@ -97,31 +93,47 @@ namespace WordDeduction.UI
         AccessibilityNode Add(VisualElement element,string label,AccessibilityNode parent,AccessibilityRole role)
         {
             var node = Hierarchy.AddNode(label ?? "",parent); node.role = role;
-            node.frameGetter = () => Frame(element);
+            node.frame = Frame(element);
             node.focusChanged += (_,focused) => { if (focused) focusName = element.name; };
             nodes.Add((element,node)); Update(element,node); return node;
         }
         Rect Frame(VisualElement element)
         {
             var bounds = element.worldBound;
+            var scroller = element.GetFirstAncestorOfType<ScrollView>();
+            if (scroller != null) bounds = Intersection(bounds,scroller.contentViewport.worldBound);
             float scale = root.resolvedStyle.width > 0 ? Screen.width / root.resolvedStyle.width : 1;
             return new Rect(bounds.x * scale,bounds.y * scale,bounds.width * scale,bounds.height * scale);
         }
+        static Rect Intersection(Rect a,Rect b)
+        {
+            float x = Mathf.Max(a.xMin,b.xMin), y = Mathf.Max(a.yMin,b.yMin);
+            return Rect.MinMaxRect(x,y,Mathf.Max(x,Mathf.Min(a.xMax,b.xMax)),Mathf.Max(y,Mathf.Min(a.yMax,b.yMax)));
+        }
         static void Update(VisualElement element,AccessibilityNode node)
         {
+            bool visible = element.worldBound.width > 0 && element.worldBound.height > 0;
+            for (var ancestor = element; ancestor != null && visible; ancestor = ancestor.parent) visible = ancestor.resolvedStyle.display != DisplayStyle.None;
+            var scroll = element.GetFirstAncestorOfType<ScrollView>();
+            if (scroll != null) visible &= element.worldBound.Overlaps(scroll.contentViewport.worldBound);
+            node.isActive = visible;
             node.state = !element.enabledInHierarchy ? AccessibilityState.Disabled : element.ClassListContains("selected") ? AccessibilityState.Selected : AccessibilityState.None;
             if (element is TextField field) node.value = field.value;
         }
         public void Tick()
         {
-            foreach (var pair in nodes) Update(pair.element,pair.node);
+            foreach (var pair in nodes)
+            {
+                // Unity's Android native frames otherwise retain pre-layout zero bounds.
+                // Mutate the frame without replacing the hierarchy or screen-reader focus.
+                var frame = Frame(pair.element);
+                if (pair.node.frame != frame) pair.node.frame = frame;
+                Update(pair.element,pair.node);
+            }
         }
         public void Dispose()
         {
             disposed = true; AssistiveSupport.screenReaderStatusChanged -= ReaderChanged;
-            root.UnregisterCallback<GeometryChangedEvent>(GeometryChanged);
-            foreach (var item in scrollers) item.scroll.verticalScroller.valueChanged -= item.changed;
-            scrollers.Clear();
             if (AssistiveSupport.activeHierarchy == Hierarchy) AssistiveSupport.activeHierarchy = null;
             nodes.Clear();
         }
