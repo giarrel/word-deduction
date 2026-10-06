@@ -6,6 +6,7 @@ An offline, pass-one-phone party game for Android, in German and English. This b
 - Open `game/` once in Unity to resolve the pinned packages and import assets.
 - Open `Assets/WordDeduction/Scenes/App.unity` and enter Play mode.
 - Run behavior checks: `dotnet run --project tests/Session.Tests` (.NET 9).
+- If this checkout has no Unity package cache, add `-p:NewtonsoftJsonAssembly="<absolute path to an already resolved Unity Runtime/Newtonsoft.Json.dll>"`; the runner still compiles this checkout's production Session sources.
 - Run the Unity PlayMode suite `WordDeduction.Tests` through Test Runner or the existing CLI/Pipeline.
 - With the Editor closed: `./tools/build-android.ps1 -Build DevelopmentApk`.
 - Build output: ignored `artifacts/android/`. A development APK is not a store release.
