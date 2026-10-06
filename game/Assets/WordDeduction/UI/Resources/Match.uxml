@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <ui:Style src="Match.uss" />
+  <ui:VisualElement name="matchScreen" class="match-screen hidden">
+    <ui:VisualElement class="match-toolbar">
+      <ui:Button name="matchBack" class="match-small" />
+      <ui:Label name="matchMode" class="match-kicker" />
+      <ui:Button name="matchHelp" class="match-small" />
+    </ui:VisualElement>
+    <ui:VisualElement name="matchBody" class="match-body" />
+    <ui:Label name="matchNotice" class="notice-panel notice-text hidden" />
+    <ui:VisualElement name="matchActions" class="match-actions" />
+  </ui:VisualElement>
+</ui:UXML>

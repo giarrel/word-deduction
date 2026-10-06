@@ -20,7 +20,8 @@ namespace WordDeduction.UI
         float keyboardHeight;
         float nextViewportCheck;
         TouchScreenKeyboard editKeyboard;
-        public void Initialize(Session value) { session = value; if (root != null) Render(); }
+        MatchSurface matchSurface;
+        public void Initialize(Session value) { matchSurface?.Dispose(); matchSurface = null; session = value; if (root != null) { CreateMatchSurface(); Render(); } }
         void OnEnable()
         {
             if (session == null) session = Session.Open(StorageDirectory(), Application.systemLanguage == SystemLanguage.German ? Language.German : Language.English);
@@ -36,6 +37,8 @@ namespace WordDeduction.UI
             root.Q<Button>("classicMode").clicked += () => Apply(session.SetMode(GameMode.Classic));
             root.Q<Button>("undo").clicked += () => Apply(session.UndoRemove());
             root.Q<Button>("resetDamaged").clicked += () => Apply(session.StartFreshAfterDamage());
+            root.Q<Button>("playButton").clicked += () => { var keyboard = nameInput.textEdition.touchScreenKeyboard; if (keyboard != null) keyboard.active = false; nameInput.Blur(); Apply(session.StartMatch()); };
+            CreateMatchSurface();
             var players = root.Q<ScrollView>("players");
             players.contentViewport.RegisterCallback<GeometryChangedEvent>(_ =>
             {
@@ -46,10 +49,14 @@ namespace WordDeduction.UI
             Render(); UpdateSafeArea();
             root.RegisterCallback<GeometryChangedEvent>(_ => UpdateSafeArea());
         }
-        void OnDisable() { root = null; }
+        void CreateMatchSurface() { matchSurface = new MatchSurface(session,root.Q<VisualElement>("safeRoot"),Render); }
+        void OnDisable() { matchSurface?.Dispose(); matchSurface = null; root = null; }
+        void OnApplicationFocus(bool focus) { if (!focus) matchSurface?.Pause(); }
+        void OnApplicationPause(bool paused) { if (paused) matchSurface?.Pause(); }
         void Update()
         {
             if (root == null) return;
+            matchSurface?.Tick();
             var keyboard = root.Q<TextField>("renameInput")?.textEdition.touchScreenKeyboard;
             if (keyboard != null && keyboard.status == TouchScreenKeyboard.Status.Visible) editKeyboard = keyboard;
             // Android reports Status.Done for both IME Done and Back. Only an explicit
@@ -61,7 +68,12 @@ namespace WordDeduction.UI
                 if (!Mathf.Approximately(height,keyboardHeight)) { keyboardHeight = height; UpdateSafeArea(); }
             }
             if (Screen.safeArea != lastSafeArea) UpdateSafeArea();
-            if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame && editingId != null) CancelEdit();
+            if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+            {
+                if (editingId != null) CancelEdit();
+                else if (session.Match != null) matchSurface.Back();
+                else { var nameKeyboard = nameInput.textEdition.touchScreenKeyboard; if (nameKeyboard != null) nameKeyboard.active = false; nameInput.Blur(); }
+            }
         }
         void UpdateSafeArea()
         {
@@ -143,6 +155,8 @@ namespace WordDeduction.UI
         {
             if (root == null) return;
             var view = session.View;
+            root.Q<VisualElement>("screen").EnableInClassList("hidden",session.Match != null);
+            matchSurface?.Render();
             root.Q<Label>("title").text = T("title"); root.Q<Label>("subtitle").text = T("subtitle");
             root.Q<Label>("groupTitle").text = T("group"); root.Q<Label>("count").text = T(view.ActiveCount == 1 ? "countOne" : "count", view.ActiveCount);
             root.Q<VisualElement>("safeRoot").EnableInClassList("has-players",view.Players.Count > 0);
@@ -159,9 +173,8 @@ namespace WordDeduction.UI
             root.Q<Button>("german").tooltip = T("german"); root.Q<Button>("english").tooltip = T("english");
             root.Q<Label>("modeDescription").text = T(view.Mode == GameMode.Quick ? "quickDescription" : "classicDescription");
             root.Q<Button>("playButton").text = T("play");
-            // The complete start/deal path is issue 4; this foundation does not claim gameplay.
-            root.Q<Button>("playButton").SetEnabled(false);
-            root.Q<Label>("startHint").text = T(view.ReadyToStart ? "ready" : view.NeededPlayers == 1 ? "neededOne" : "needed",view.NeededPlayers);
+            root.Q<Button>("playButton").SetEnabled(view.ReadyToStart && !view.StorageBlocked && view.Mode == GameMode.Quick);
+            root.Q<Label>("startHint").text = T(view.Mode == GameMode.Classic ? "ModeUnavailable" : view.ReadyToStart ? "ready" : view.NeededPlayers == 1 ? "neededOne" : "needed",view.NeededPlayers);
             var list = root.Q<ScrollView>("players"); var oldOffset = list.scrollOffset; list.Clear();
             foreach (var player in view.Players) list.Add(PlayerRow(player));
             list.scrollOffset = oldOffset;
