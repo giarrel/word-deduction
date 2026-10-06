@@ -1,0 +1,9 @@
+{
+    "result": "Succeeded",
+    "errors": 1,
+    "warnings": 2,
+    "reportedBytes": 638963585,
+    "fileBytes": 37651751,
+    "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\artifacts\\android\\WordDeduction-development.apk",
+    "unity": "6000.3.25f1"
+}

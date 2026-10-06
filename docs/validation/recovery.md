@@ -43,4 +43,22 @@ The native baseline's second consecutive edge swipe committed a real system Back
 
 The Android-only code branch compiled against the installed Unity/Input System/Newtonsoft assemblies with no errors. This is a source compatibility check, not native acceptance. Actual committed/canceled gesture, Home/resume and IME interactions require the combined APK below.
 
-Pending in this worktree: actual rebuilt APK/merged-manifest inspection and recovery coverage after Classic/White and persistent catalog-history integration. Native predictive gesture navigation and TalkBack operation must not be claimed from source inspection or injected Back key events.
+## Combined Classic/content gate
+
+Classic and bilingual content were merged from integration `20f6d3b`, retaining V1–V3 migration into V4. Both primary and backup envelope guards now reject versions above 4. Integration documentation through `7d6af6b` is included in build source commit `9ba4374`.
+
+The integrated Session suite passed **46/46** (`13-v4-integrated-session.log`). An additional Classic matrix then passed **1/1** (`14-classic-phase-files.log`): initial/next handoff, clues, vote, selected suspect, runoff, repeated tie, elimination, continued round, pending White and both final judgments. Every checkpoint reopens without drawing or rewriting the exact primary bytes (including history/checksum), tolerates an interrupted pending write, and rejects an uncommitted abandonment. Real Windows sharing locks deny replacement after flush for round continuation and White judgment; neither advances until retry. The strengthened Quick byte-preservation check also passed (`16-quick-phase-bytes.log`). A premature second runner invocation briefly hit the first runner's executable lock; it was rerun only after the original finished. That harness failure is not counted as application red/green evidence.
+
+The combined rendered suite passed **19/19** (`15-combined-playmode.json`): 5 group, 5 Quick, 4 Classic, 4 Recovery and the production-panel content fixture. Six long DE/EN terms were measured within the real card at 360×640 and erased on release; the latter case took 111 seconds of the 124-second run. Classic covered White judgment, covered resumption, elimination/survivors, results and rematch. No Editor test substitutes for a native OS callback.
+
+Source inspection found no runtime logging calls in Session/UI and no secret-word tooltip/accessibility assignment. Covered card and private White explanation labels are synchronously emptied, including detached labels checked by PlayMode tests. TalkBack operation has not been proved.
+
+## Combined Android artifact
+
+Exactly one development APK build was dispatched from `9ba4374`. It completed successfully: **37,651,751 bytes**, SHA-256 `6284ef8a413638feb75182462c256103d3ee4a6bccede2a47d4a1abe830c0a92`, ARM64/IL2CPP, Unity 6000.3.25f1, SDK 26/36. The worktree artifact is `artifacts/android/WordDeduction-development.apk`; root received its exact path/hash for update testing.
+
+The [build summary](evidence/recovery/17-build-summary.json) reports Succeeded with 1 error and 2 warnings. The [actual build-step diagnostics](evidence/recovery/17-build-diagnostics.json) identify the sole error as the Pipeline request's 5-second main-thread timeout; the Editor continued the same build, with no second dispatch. The warnings are disabled runtime Pipeline due to the intentionally absent runtime configuration, and the obsolete UITK `PreventDefault` API. No compiler or Gradle error is present in that build report. Repeated Editor-only SearchDatabase startup exceptions occurred outside the test runs; the complete PlayMode result remains 19/19.
+
+Both the generated [merged manifest](evidence/recovery/17-merged-manifest.xml) and [APK's compiled manifest](evidence/recovery/17-apk-manifest.txt) were inspected. `allowBackup=false`, `enableOnBackInvokedCallback=true`, `fullBackupContent` and `dataExtractionRules` are present. `aapt` decoded the APK's actual [legacy rules](evidence/recovery/17-apk-backup-rules.txt) and [cloud/device-transfer rules](evidence/recovery/17-apk-extraction-rules.txt), each excluding the entire internal `file/word-deduction` directory. This development APK still declares INTERNET for development tooling; release packaging belongs to ticket 9.
+
+Pending: root's native update, multi-contact, gesture, IME and lifecycle acceptance. Native predictive gesture navigation and TalkBack operation must not be claimed from source inspection or injected Back key events.
