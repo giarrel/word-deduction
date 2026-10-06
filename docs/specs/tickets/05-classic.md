@@ -25,3 +25,7 @@ Dieselbe gespeicherte Gruppe wechselt in Classic und spielt wiederholte Hinweisr
 
 Use `implement-spec` and `tdd` at the Session and rendered-app seams defined in the spec. Separate ticket worktree based on the integration branch. Read GLOSSARY and ADRs. Preserve red/green and runtime evidence; don't claim checks that didn't run. Source conventions and exact paths belong in repository docs. Dependencies are explicit here because this connector does not expose native dependency mutations.
 
+
+## Klarstellung der vorhandenen Siegbedingung
+
+Beim Ende mit nur einem verbleibenden Bürger nennt das Ergebnis die abweichenden Rollen, von denen noch mindestens jemand lebt: Undercover, Mr. White oder beide gemeinsam. Ein richtiger White-Tipp benennt stets ausschließlich Mr. White als Sieger. Das präzisiert „surviving adversary side“ aus der kanonischen Spec, ohne die festgelegten Endbedingungen zu verändern. Die Rollenmenge für das Ergebnis in den Grenzfalltests ausdrücklich prüfen; dies ist unsere erklärte Spielvariante.
