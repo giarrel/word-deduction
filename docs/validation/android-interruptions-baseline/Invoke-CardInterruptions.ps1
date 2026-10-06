@@ -1,4 +1,4 @@
-param([ValidateSet('Card','System','Sleep')][string]$Scenario = 'Card')
+param([ValidateSet('Card','System','Sleep','Reentry')][string]$Scenario = 'Card')
 $ErrorActionPreference = 'Stop'
 $adb = 'C:/Users/lucac/AppData/Local/Android/Sdk/platform-tools/adb.exe'
 $probeDir = $PSScriptRoot
@@ -19,6 +19,7 @@ function Contact([string]$command) {
     Start-Sleep -Milliseconds 350
 }
 function Capture([string]$name) {
+    Start-Sleep -Milliseconds 800
     & $adb -s emulator-5580 emu screenrecord screenshot $probeDir | Out-Null
     if ($LASTEXITCODE -ne 0) { throw 'Screenshot failed' }
     $latest = Get-ChildItem -LiteralPath $probeDir -Filter 'Screenshot_*.png' | Sort-Object LastWriteTime -Descending | Select-Object -First 1
@@ -64,6 +65,16 @@ try {
         & $adb -s emulator-5580 shell input touchscreen swipe 2 1250 400 1250 400
         Start-Sleep -Milliseconds 650
         Capture '10-system-edge-back'
+    } elseif ($Scenario -eq 'Reentry') {
+        Contact 'down 0 540 2010'
+        Capture '16-reentry-first-open'
+        Contact 'down 1 980 900'
+        Capture '17-reentry-second-covers'
+        Contact 'up 1'
+        Contact 'down 1 540 2010'
+        Capture '18-reentry-while-first-remains'
+        Contact 'cancel'
+        Capture '19-reentry-all-cancelled'
     } else {
         Contact 'down 0 540 2010'
         Capture '11-open-before-sleep'

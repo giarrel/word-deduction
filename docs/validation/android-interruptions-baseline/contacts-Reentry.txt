@@ -1,0 +1,7 @@
+READY source=TOUCHSCREEN tool=FINGER
+OK down 0 540 2010 injected=true
+OK down 1 980 900 injected=true
+OK up 1 injected=true
+OK down 1 540 2010 injected=true
+OK cancel injected=true
+
