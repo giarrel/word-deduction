@@ -1,5 +1,5 @@
 :root { --ink: #242134; --muted: #635e71; --paper: #faf7f0; --purple: #6a48c8; --lilac: #ece5ff; }
-.safe-root { flex-grow: 1; background-color: var(--paper); color: var(--ink); font-size: 16px; }
+.safe-root { flex-grow: 1; background-color: var(--paper); color: var(--ink); font-size: 16px; -unity-text-generator: advanced; }
 .screen { flex-grow: 1; padding: 20px 22px 16px; max-width: 600px; width: 100%; align-self: center; }
 .topbar { flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-shrink: 0; }
 .wordmark { font-size: 16px; -unity-font-style: bold; letter-spacing: -0.3px; }
@@ -8,7 +8,7 @@ Button { border-width: 0; border-radius: 16px; color: var(--ink); margin: 0; pad
 Button:focus { border-width: 2px; border-color: var(--purple); }
 Button:active { background-color: #d9d0ef; }
 Button:disabled { opacity: 0.65; }
-.language-button { border-radius: 16px; min-width: 44px; padding: 0 8px; }
+.language-button { border-radius: 16px; min-width: 48px; padding: 0 8px; }
 .language-button.selected { background-color: white; }
 .heading { margin-bottom: 20px; flex-shrink: 0; }
 .title { font-size: 34px; -unity-font-style: bold; letter-spacing: -1px; white-space: normal; }

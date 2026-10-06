@@ -1,9 +1,24 @@
 using System;
 using UnityEngine;
+using UnityEngine.UIElements;
 namespace WordDeduction.UI
 {
     internal static class MobileViewport
     {
+        public static void Configure(PanelSettings panel)
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            using (var unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+            using (var activity = unity.GetStatic<AndroidJavaObject>("currentActivity"))
+            using (var resources = activity.Call<AndroidJavaObject>("getResources"))
+            using (var metrics = resources.Call<AndroidJavaObject>("getDisplayMetrics"))
+            {
+                // Android density, unlike hardware DPI, defines actual 48dp targets.
+                panel.scaleMode = PanelScaleMode.ConstantPixelSize;
+                panel.scale = metrics.Get<float>("density");
+            }
+#endif
+        }
         public static float KeyboardHeight()
         {
 #if UNITY_ANDROID && !UNITY_EDITOR

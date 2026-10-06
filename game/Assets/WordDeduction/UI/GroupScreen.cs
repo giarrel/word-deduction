@@ -86,12 +86,13 @@ namespace WordDeduction.UI
             lastSafeArea = Screen.safeArea;
             var safe = root.Q<VisualElement>("safeRoot");
             // Runtime insets depend on the device, unlike static visual styling in USS.
-            float scale = GetComponent<UIDocument>().panelSettings.scaleMode == PanelScaleMode.ScaleWithScreenSize ? 390f / Screen.width : 1;
+            float scale = root.resolvedStyle.width / Screen.width;
+            if (float.IsNaN(scale) || scale <= 0) return;
             safe.style.paddingTop = (Screen.height - lastSafeArea.yMax) * scale;
             safe.style.paddingBottom = Mathf.Max(lastSafeArea.yMin,keyboardHeight) * scale;
             safe.style.paddingLeft = lastSafeArea.xMin * scale;
             safe.style.paddingRight = (Screen.width - lastSafeArea.xMax) * scale;
-            safe.EnableInClassList("compact", Screen.height * scale < 740);
+            safe.EnableInClassList("compact", root.resolvedStyle.height < 740);
             safe.EnableInClassList("typing", keyboardHeight > 0);
         }
         static string StorageDirectory()

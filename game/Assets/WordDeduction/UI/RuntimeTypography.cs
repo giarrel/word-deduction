@@ -22,15 +22,21 @@ namespace WordDeduction.UI
             original = document.panelSettings;
             if (original == null || original.textSettings == null) return;
             panel = UnityEngine.Object.Instantiate(original);
+            MobileViewport.Configure(panel);
             text = UnityEngine.Object.Instantiate(original.textSettings);
             panel.textSettings = text;
             var fallback = new List<FontAsset>(text.fallbackFontAssets ?? new List<FontAsset>());
             var emoji = new List<UnityEngine.TextCore.Text.TextAsset>();
             var families = FontEngine.GetSystemFontNames();
-            foreach (var family in families.Where(IsScriptFamily).Distinct())
+            foreach (var entry in families.Where(IsScriptFamily).Distinct())
             {
+                // FontEngine exposes "family - style" on Android and Windows.
+                int separator = entry.LastIndexOf(" - ",StringComparison.Ordinal);
+                string family = separator < 0 ? entry : entry.Substring(0,separator);
+                string style = separator < 0 ? "Regular" : entry.Substring(separator + 3);
+                if (style != "Regular") continue;
                 bool color = family.IndexOf("Emoji", StringComparison.OrdinalIgnoreCase) >= 0;
-                var font = FontAsset.CreateFontAsset(family, "Regular", 90, color ? 0 : 9,
+                var font = FontAsset.CreateFontAsset(family, style, 90, color ? 0 : 9,
                     color ? GlyphRenderMode.COLOR : GlyphRenderMode.SDFAA);
                 if (font == null) continue;
                 fonts.Add(font);

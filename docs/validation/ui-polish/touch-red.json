@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "duration": 0.32,
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.SmallGroupHasFingerSizedLanguageAndParticipationControls",
+      "Status": "Failed",
+      "Duration": 0.2887864,
+      "Message": "  german finger target width at 360dp\r\n  Expected: greater than or equal to 48\r\n  But was:  44.0f\r\n",
+      "StackTrace": "at WordDeduction.Tests.PolishScreenTests+<SmallGroupHasFingerSizedLanguageAndParticipationControls>d__4.MoveNext () [0x001ca] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\ui-polish\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\PolishScreenTests.cs:38\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+    }
+  ]
+}
