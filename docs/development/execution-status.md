@@ -35,11 +35,11 @@ flowchart LR
 
 ## Prüfzugang und verbleibende externe Voraussetzungen
 
-Unity, Android-Compiler und Paketprüfwerkzeuge sind vorhanden. Inzwischen ist ein eigener Android-16-Emulator installiert und vollständig gestartet: `emulator-5580`, API 36, 1080×2400 bei 420 dpi, Google-APIs-x86_64-Image Revision 7 mit angebotener ARM64-Übersetzung. Siehe [Prüfumgebung und Bootnachweis](android-test-device.md). Die App selbst ist darin noch nicht geprüft.
+Unity, Android-Compiler und Paketprüfwerkzeuge sind vorhanden. Der eigene Android-16-Emulator `emulator-5580` läuft mit API 36, 1080×2400 bei 420 dpi, Google-APIs-x86_64-Image Revision 7 und ARM64-Übersetzung. Die erste ARM64-App wurde erfolgreich gebaut, installiert und gestartet. Sprache und ein Testspieler bleiben nach Force-stop und APK-Updates erhalten; die komplette Gruppenabnahme läuft noch. Der anfängliche Schriftfehler wurde per A/B-Vergleich auf den Emulator-Grafikpfad eingegrenzt: vorhandene NVIDIA-Hostgrafik rendert beide geprüften APKs korrekt, SwiftShader nicht. Der echte Befund einer überdeckenden Android-Tastatur wird vor Abnahme korrigiert. Siehe [wiederverwendbare Prüfumgebung](android-test-device.md).
 
 Die frühere Ableitung aus `HypervisorPlatform InstallState: 2` war zu stark: Der direkte Emulatorcheck bestätigt nutzbares WHPX, und der tatsächliche Boot gelang. Keine Windows-Funktion wurde geändert und kein Rechnerneustart veranlasst. Ebenso ist die Unity-Dokumentation zum eingeschränkten Magic-Leap-x86_64-Ziel kein Beweis einer allgemeinen technischen x86_64-Buildsperre; die [6.3-Release-Notes](https://unity.com/releases/editor/whats-new/6000.3.0f1) und lokal vorhandenen Playerdateien stützen einen späteren Vergleichsbuild, falls erforderlich.
 
-Ein physisches Telefon wurde über die Chat-Rückfrage angefragt; noch keines ist bestätigt. Emulator-, übersetzte ARM64- und physische ARM64-Nachweise bleiben getrennt. Produktionssignierung, Play-Kontostatus und Publisherkontakt sind nicht geprüft; sie werden am konkreten Release-Artefakt geklärt. Die erste App-Strecke wird gerade implementiert; noch kein erfolgreicher Word-Deduction-Build.
+Ein physisches Telefon wurde über die Chat-Rückfrage angefragt; noch keines ist bestätigt. Emulator-, übersetzte ARM64- und physische ARM64-Nachweise bleiben getrennt. Produktionssignierung, Play-Kontostatus und Publisherkontakt sind nicht geprüft; sie werden am konkreten Release-Artefakt geklärt. Noch kein Ticket ist integriert oder abgenommen; erfolgreicher Foundation-Build bedeutet noch keine fertige Spielfunktion.
 
 ## Integrationskonvention
 
