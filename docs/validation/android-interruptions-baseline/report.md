@@ -27,3 +27,18 @@ Die Testpartie blieb bei Alexandra, Handoff 0, mit Pair-ID `bakery-sweets-001`. 
 Native **Randgeste** ist nicht mit der erfolgreichen Zurück-Taste gleichzusetzen: zwei ADB-Touch-Wischversuche vom linken Rand blendeten lediglich die Systemleisten ein. Android meldet Navigationsmodus 2, aktivierten EdgeBackGestureHandler und keine Ausschlussregion. Das ist ein offener Prüfpunkt, kein belegter Appfehler. Die vollständige Recovery-Implementierung sowie Classic- und White-Phasen folgen mit Ticket 7; Unicode, Touchgrößen und Accessibility mit Ticket 8.
 
 Die ruhende Android-Appvorschau darf die sichere Pause zeigen. Der separate Aufnahmeschutz bei tatsächlich offenem Wort wurde bereits in der [Quick-Abnahme](../android-quick-runtime/report.md) nachgewiesen. Keine Aussage über OEM-Vorschauen, physische Haptik oder reale Gruppendynamik wird aus diesem Emulatorlauf abgeleitet.
+
+## Vertiefung: Mehrfinger-Wiedereintritt fehlgeschlagen
+
+Auf Anregung des Recovery-Implementierers wurde dieselbe APK mit einer längeren Kontaktfolge geprüft:
+
+1. Finger 0 hält die Alternative gedrückt: [Wort offen](16-reentry-first-open.png).
+2. Finger 1 berührt eine freie Stelle: [Karte verdeckt](17-reentry-second-covers.png).
+3. Nur Finger 1 wird losgelassen. Finger 0 bleibt durchgehend auf dem Display.
+4. Finger 1 wird erneut auf die Haltealternative gesetzt: [Wort erneut sichtbar](18-reentry-while-first-remains.png).
+
+Das widerspricht der Ein-Pointer-Regel: nach konkurrierender Berührung muss die Karte bis zum Ende sämtlicher Kontakte gesperrt bleiben. Zweimal reproduziert, zuletzt mit zusätzlicher 800-ms-Wartezeit vor jedem Screenshot; [native Befehle](contacts-Reentry.txt), Hostablauf `-Scenario Reentry`. Anschließend wurden alle Kontakte mit ACTION_CANCEL beendet. Kein Personenwechsel trat ein, aber das unbeabsichtigte Wiederöffnen bleibt ein Release-Hindernis. U03 wurde deshalb von Passed auf Failed gesetzt; der frühere einfache Zwei-Finger-Abbruch bleibt als engerer Teilnachweis erhalten. Korrektur und erneuter nativer Gegencheck folgen in Ticket 7.
+
+## Laufzeit des Prüfstands
+
+Nach den Schlaf-/Aufwecktests wurden systemweite Verzögerungen sichtbar. Auch die native Android-Einstellungs-App lieferte einen Kaltstart-Timeout und einen Warmstart von 12.472 ms. Die App-Rückkehrmessungen werden daher nicht als isolierte App-Geschwindigkeit oder bestandener U08-Test gewertet. Der eigene Emulator wurde ohne Datenlöschung neu gestartet; danach stimmen gespeicherter Payload und Checksum weiterhin exakt mit der Ausgangsgruppe überein. Rohlogs und Timingversuche bleiben unter `work/android-recovery-playtest/` erhalten. Die Release-Latenzprüfung bleibt offen.
