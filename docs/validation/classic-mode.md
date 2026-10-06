@@ -43,6 +43,10 @@ Known wide scrollbars and general font/touch polish remain issue 8. These screen
 
 ## Android handoff
 
-The development APK uses the existing AppBuild entry and original application identity. Android runtime acceptance belongs to root, which owns ADB/emulator operations. This ticket does not claim native lifecycle, predictive Back or multi-contact regression fixes assigned to issue 7. Build identity and result will be appended after the completed build.
+The development APK uses the existing AppBuild entry, ARM64/IL2CPP, min API 26, target API 36, CleanBuildCache and the original application identity. Source commit `a022b43` merged integration `79e4a7c` into `9c05948` before building; integration changes were documentation only. The build succeeded with **0 errors and 2 warnings**. [Build summary](evidence/classic/build-summary.json), [APK identity](evidence/classic/apk-identity.json). The accepted APK is **37,583,470 bytes**, SHA-256 `abc6e923f0fc7ad124d8984475923c402a9cadb22b3bb9c4c5e1bb92ff99ef8c`. Root copied and installed that exact artifact for its native Classic acceptance. The worktree preserves it as `artifacts/android/WordDeduction-classic-accepted.apk`.
+
+An initially scheduled build callback did not execute promptly; after a direct detached build was dispatched, the delayed callback caused a second sequential build of unchanged sources. The accepted APK was preserved before that redundant build could replace the default output. This is tooling overhead, not additional test evidence. The Editor was instructed to close normally once building had ended.
+
+Android runtime acceptance belongs to root, which owns ADB/emulator operations. This ticket does not claim native lifecycle, predictive Back or multi-contact regression fixes assigned to issue 7.
 
 The initial sandbox Editor launch had no usable license channel. Only the verified Classic-owned stalled Editor processes were terminated; relaunching in normal user context recovered the editor and Pipeline. No Unity installation or other project was modified.
