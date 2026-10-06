@@ -11,6 +11,13 @@ $serial = 'emulator-5580'
 $package = 'com.giarrel.worddeduction'
 $component = "$package/com.unity3d.player.UnityPlayerGameActivity"
 $outputDirectory = $PSScriptRoot
+$ready = $false
+for ($attempt = 0; $attempt -lt 6; $attempt++) {
+    & $adb -s $serial get-state 2>$null | Out-Null
+    if ($LASTEXITCODE -eq 0) { $ready = $true; break }
+    Start-Sleep -Milliseconds 750
+}
+if (-not $ready) { throw 'Test emulator is not connected; no action dispatched.' }
 function Invoke-Adb([string[]]$Arguments) {
     $result = & $adb -s $serial @Arguments
     if ($LASTEXITCODE -ne 0) { throw "ADB failed: $Arguments" }
@@ -19,7 +26,7 @@ function Invoke-Adb([string[]]$Arguments) {
 switch ($Action) {
     'Tap' { Invoke-Adb @('shell','input','touchscreen','swipe',"$X","$Y","$X","$Y",'120') }
     'Swipe' { Invoke-Adb @('shell','input','touchscreen','swipe',"$X","$Y","$ToX","$ToY","$Duration") }
-    'Back' { Invoke-Adb @('shell','input','keyevent','4') }
+    'Back' { Invoke-Adb @('shell','input','keyevent','--duration','120','4') }
     'Home' { Invoke-Adb @('shell','input','keyevent','3') }
     'Start' { Invoke-Adb @('shell','am','start','-W','-n',$component) }
     'Restart' {
