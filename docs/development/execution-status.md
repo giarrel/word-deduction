@@ -13,7 +13,7 @@ Ziel und Arbeitsweise: [Engineering-Ablauf](autonomous-workflow.md). Kanonische 
 
 | Ticket | Ergebnis | Voraussetzung | Stand |
 |---|---|---|---|
-| [Gespeicherte Gruppe](https://github.com/giarrel/word-deduction/issues/3) | Ausführbare Unity-App, dauerhafte Gruppe, Test-/Buildbasis | Keine | Bereit |
+| [Gespeicherte Gruppe](https://github.com/giarrel/word-deduction/issues/3) | Ausführbare Unity-App, dauerhafte Gruppe, Test-/Buildbasis | Keine | In Umsetzung: `ticket/3-group-foundation` |
 | [Schnellmodus](https://github.com/giarrel/word-deduction/issues/4) | Karte → Gespräch → Vote → Ergebnis → Folgepartie | Gruppe | Wartet |
 | [Klassischer Modus](https://github.com/giarrel/word-deduction/issues/5) | Mehrere Runden und Mr. White | Schnellmodus | Wartet |
 | [Großer DE/EN-Wortbestand](https://github.com/giarrel/word-deduction/issues/6) | Redaktionelle Inhalte, Wiederholungsvermeidung, Übersetzungen | Schnellmodus | Wartet |
@@ -35,8 +35,12 @@ flowchart LR
 
 ## Prüfzugang und verbleibende externe Voraussetzungen
 
-Unity, Android-Compiler und Paketprüfwerkzeuge sind vorhanden. Kein Android-Gerät ist von ADB erkannt, kein Emulator in den geprüften Standardpfaden. Das verhindert keine weitere Entwicklung, erlaubt aber noch keinen behaupteten Gerätetest. Produktionssignierung, Play-Kontostatus und Publisherkontakt sind nicht geprüft; sie werden am konkreten Release-Artefakt geklärt. Es wurde noch keine Word-Deduction-App implementiert oder gebaut.
+Unity, Android-Compiler und Paketprüfwerkzeuge sind vorhanden. Der eigene Android-16-Emulator `emulator-5580` läuft mit API 36, 1080×2400 bei 420 dpi, Google-APIs-x86_64-Image Revision 7 und ARM64-Übersetzung. Die erste ARM64-App wurde erfolgreich gebaut, installiert und gestartet. Sprache und ein Testspieler bleiben nach Force-stop und APK-Updates erhalten; die komplette Gruppenabnahme läuft noch. Der anfängliche Schriftfehler wurde per A/B-Vergleich auf den Emulator-Grafikpfad eingegrenzt: vorhandene NVIDIA-Hostgrafik rendert beide geprüften APKs korrekt, SwiftShader nicht. Der echte Befund einer überdeckenden Android-Tastatur wird vor Abnahme korrigiert. Siehe [wiederverwendbare Prüfumgebung](android-test-device.md).
+
+Die frühere Ableitung aus `HypervisorPlatform InstallState: 2` war zu stark: Der direkte Emulatorcheck bestätigt nutzbares WHPX, und der tatsächliche Boot gelang. Keine Windows-Funktion wurde geändert und kein Rechnerneustart veranlasst. Ebenso ist die Unity-Dokumentation zum eingeschränkten Magic-Leap-x86_64-Ziel kein Beweis einer allgemeinen technischen x86_64-Buildsperre; die [6.3-Release-Notes](https://unity.com/releases/editor/whats-new/6000.3.0f1) und lokal vorhandenen Playerdateien stützen einen späteren Vergleichsbuild, falls erforderlich.
+
+Ein physisches Telefon wurde über die Chat-Rückfrage angefragt; noch keines ist bestätigt. Emulator-, übersetzte ARM64- und physische ARM64-Nachweise bleiben getrennt. Produktionssignierung, Play-Kontostatus und Publisherkontakt sind nicht geprüft; sie werden am konkreten Release-Artefakt geklärt. Noch kein Ticket ist integriert oder abgenommen; erfolgreicher Foundation-Build bedeutet noch keine fertige Spielfunktion.
 
 ## Integrationskonvention
 
-Die Implementation läuft auf `integration/android-v1`. Je Ticket eine eigene Branch und ein eigener Worktree; ein Merger-Agent übernimmt Integration. GitHub-Tickets werden nach tatsächlicher Abnahme mit Ergebnisnachweis geschlossen. Der Planungscommit unmittelbar vor dieser Branch ist die feste Basis des abschließenden Reviews.
+Die Implementation läuft auf `integration/android-v1`. Je Ticket eine eigene Branch und ein eigener Worktree; ein Merger-Agent übernimmt Integration. GitHub-Tickets werden nach tatsächlicher Abnahme mit Ergebnisnachweis geschlossen. Feste Basis des abschließenden Reviews: Planungscommit `ab25c325e02040d30755ae448c07789357730f38`.

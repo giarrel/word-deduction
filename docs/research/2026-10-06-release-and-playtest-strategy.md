@@ -1,5 +1,7 @@
 # Android-Release und eigener Playtest: belastbarer Prüfpfad
 
+Nachtrag aus der Umsetzung: Ein separater Android-16-Testemulator wurde inzwischen erfolgreich installiert und mit nutzbarem WHPX gestartet. [Aktueller Prüfzugang](../development/android-test-device.md). Die nachfolgende Bestandsaufnahme dokumentiert den vorherigen Recherchezeitpunkt; Aussagen über damals fehlenden Emulator sind keine aktuelle Blockade.
+
 Stand: 6. Oktober 2026. Recherche für die Unity-Version von Word Deduction: ein herumgereichtes Telefon, Englisch/Deutsch, Schnellspiel und mehrstufiges Spiel. Herstellerquellen und lesende lokale Prüfung; kein Editor, Emulator oder Build wurde für diese Recherche gestartet. `adb devices` startete seinen üblichen Hintergrunddienst und meldete keine Geräte. Empfehlungen sind als solche gekennzeichnet und noch kein Nachweis, dass die neue App diese Prüfungen bestanden hat.
 
 ## Entscheidungsvorschlag
