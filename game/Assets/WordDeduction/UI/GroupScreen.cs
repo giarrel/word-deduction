@@ -22,9 +22,11 @@ namespace WordDeduction.UI
         TouchScreenKeyboard editKeyboard;
         MatchSurface matchSurface;
         MobileBack mobileBack;
+        RuntimeTypography typography;
         public void Initialize(Session value) { matchSurface?.Dispose(); matchSurface = null; session = value; if (root != null) { CreateMatchSurface(); Render(); } }
         void OnEnable()
         {
+            typography = new RuntimeTypography(GetComponent<UIDocument>());
             mobileBack = new MobileBack();
             if (session == null) session = Session.Open(StorageDirectory(), Application.systemLanguage == SystemLanguage.German ? Language.German : Language.English);
             root = GetComponent<UIDocument>().rootVisualElement;
@@ -53,7 +55,7 @@ namespace WordDeduction.UI
             root.RegisterCallback<GeometryChangedEvent>(_ => UpdateSafeArea());
         }
         void CreateMatchSurface() { matchSurface = new MatchSurface(session,root.Q<VisualElement>("safeRoot"),Render); }
-        void OnDisable() { mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; }
+        void OnDisable() { mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; typography?.Dispose(); typography = null; }
         void OnApplicationFocus(bool focus) { if (!focus) matchSurface?.Pause(true); }
         void OnApplicationPause(bool paused) { if (paused) matchSurface?.Pause(true); }
         void Update()
