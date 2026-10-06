@@ -63,7 +63,7 @@ Button:disabled { opacity: 0.65; }
 .has-players .heading { display: none; }
 .editing .add-row, .editing .edit-hint { display: none; }
 
-.recovery .empty-state { display: none; }
+.recovery .empty-state, .recovery .heading { display: none; }
 .recovery .name-input { margin-top: 8px; }
 .recovery .players { min-height: 60px; }
 
@@ -71,3 +71,20 @@ Button:disabled { opacity: 0.65; }
 .large-type .topbar { margin-bottom: 8px; }
 .large-type .add-row { margin-bottom: 8px; }
 .large-type .mode-description { min-height: 0; }
+
+.large-type.at-capacity .edit-hint { display: flex; }
+.large-type.at-capacity.editing .edit-hint { display: none; }
+
+.recovery .add-row, .recovery .edit-hint, .recovery .mode-picker, .recovery .mode-description, .recovery .white-preference, .recovery .play-button, .recovery .start-hint, .recovery #count { display: none; }
+.recovery .notice-panel { margin-top: 16px; }
+
+.ready .start-hint { display: none; }
+.compact .screen { padding-top: 12px; }
+.compact .mode-description { min-height: 0; margin: 6px 4px 8px; }
+.compact .edit-hint { margin-top: 5px; margin-bottom: 8px; }
+
+.section-title { flex-shrink: 1; min-width: 0; white-space: normal; margin-right: 8px; }
+.typing.editing .group-header { display: none; }
+.large-type .edit-actions { flex-wrap: wrap; justify-content: flex-start; }
+.large-type .edit-actions > Button { flex-grow: 1; flex-basis: 0; min-width: 0; white-space: normal; padding: 0 8px; }
+.large-type .edit-actions > .remove-button { flex-basis: 100%; -unity-text-align: middle-left; }

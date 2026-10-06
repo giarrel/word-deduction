@@ -64,13 +64,15 @@ namespace WordDeduction.UI
             var text = session.RevealWord(owner);
             if (text == null) return;
             bool white = text == "Mr. White";
+            root.AddToClassList("reading-card");
             word.text = white ? Copy.Get(session.Match.Language,"whitePrivate") : text;
-            word.EnableInClassList("white-private",white);
+            word.EnableInClassList("white-private",white); word.EnableInClassList("hidden",false);
             symbol.EnableInClassList("hidden",true); caption.EnableInClassList("hidden",true); face.AddToClassList("revealed");
         }
         void Conceal()
         {
-            word.text = ""; session.HideWord();
+            word.text = ""; session.HideWord(); word.EnableInClassList("hidden",true);
+            root.RemoveFromClassList("reading-card");
             symbol.EnableInClassList("hidden",false); caption.EnableInClassList("hidden",false); face.RemoveFromClassList("revealed");
         }
         // Captured UITK events can dispatch directly to this target without

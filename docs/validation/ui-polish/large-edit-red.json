@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 1.29,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard",
+          "Status": "Failed",
+          "Duration": 1.2560329,
+          "Message": "  saveRename has a complete visible label\r\n  Expected: less than or equal to 328.0f\r\n  But was:  449.0f\r\n",
+          "StackTrace": "at WordDeduction.Tests.PolishScreenTests+<LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard>d__10.MoveNext () [0x00386] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\ui-polish\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\PolishScreenTests.cs:181\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\ui-polish\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

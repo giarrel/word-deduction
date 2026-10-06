@@ -53,7 +53,15 @@
 
 .large-type .card-slot { min-height: 150px; max-height: 230px; padding-top: 26px; }
 .large-type .secret-card { min-height: 130px; height: 165px; padding: 12px; }
-.large-type .card-symbol { height: 64px; margin-bottom: 4px; }
+.large-type .card-symbol { width: 72px; height: 56px; flex-shrink: 0; margin-bottom: 8px; }
 .large-type .card-owner { font-size: 23px; margin-bottom: 2px; }
 .large-type .card-instruction { margin: 5px 0; }
 .large-type .match-text { margin-bottom: 10px; }
+
+.reading-card #handoffHint { visibility: hidden; }
+
+.mark-back, .mark-front { flex-shrink: 0; }
+.large-type .mark-back, .large-type .mark-front { width: 34px; height: 42px; border-radius: 10px; }
+.large-type .mark-back { left: 10px; top: 2px; }
+.large-type .mark-front { margin-left: 16px; margin-top: 8px; }
+.large-type .mark-question { font-size: 28px; }

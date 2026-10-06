@@ -113,7 +113,7 @@ namespace WordDeduction.UI
         static void Update(VisualElement element,AccessibilityNode node)
         {
             bool visible = element.worldBound.width > 0 && element.worldBound.height > 0;
-            for (var ancestor = element; ancestor != null && visible; ancestor = ancestor.parent) visible = ancestor.resolvedStyle.display != DisplayStyle.None;
+            for (var ancestor = element; ancestor != null && visible; ancestor = ancestor.parent) visible = ancestor.resolvedStyle.display != DisplayStyle.None && ancestor.resolvedStyle.visibility == Visibility.Visible;
             var scroll = element.GetFirstAncestorOfType<ScrollView>();
             if (scroll != null) visible &= element.worldBound.Overlaps(scroll.contentViewport.worldBound);
             node.isActive = visible;

@@ -19,6 +19,20 @@ namespace WordDeduction.Editor
             session.SetMode(classic ? GameMode.Classic : GameMode.Quick); session.SetWhitePreference(true);
             UnityEngine.Object.FindFirstObjectByType<GroupScreen>().Initialize(session);
         }
+        public static string SetupCollisions(Language language)
+        {
+            var directory = Path.Combine(Application.temporaryCachePath,"polish-collisions-"+Guid.NewGuid().ToString("N"));
+            session = Session.Open(directory,language,maximum=>0);
+            foreach (var name in new[]{"Alex","Alex","Alex · 1","Alex · 2","Alex · 1 · 1","Alex · 2 · 1","Alexandra Maximiliane","Alexandra Maximiliane"})
+            {
+                var result = session.AddPlayer(name);
+                if (!result.Success) throw new InvalidOperationException(result.Error);
+            }
+            session.SetMode(GameMode.Classic); session.SetWhitePreference(true);
+            UnityEngine.Object.FindFirstObjectByType<GroupScreen>().Initialize(session);
+            return directory;
+        }
+        public static string[] PublicNames() => System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Select(session.View.Players,p=>p.DisplayName));
         public static void Click(string name)
         {
             var target=Root.Q<Button>(name);

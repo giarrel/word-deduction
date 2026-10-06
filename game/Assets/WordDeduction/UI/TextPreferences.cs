@@ -33,7 +33,7 @@ namespace WordDeduction.UI
                 queued = false; if (disposed) return;
                 var active = new Dictionary<VisualElement,float>();
                 foreach (var element in root.Query<TextElement>().ToList())
-                    if (element.name != "secretWord" && element.GetFirstAncestorOfType<TextField>() == null) Apply(element,active);
+                    if (element.name != "secretWord" && element.name != "markQuestion" && element.GetFirstAncestorOfType<TextField>() == null) Apply(element,active);
                 foreach (var field in root.Query<TextField>().ToList()) Apply(field,active);
                 sizes = active;
             });

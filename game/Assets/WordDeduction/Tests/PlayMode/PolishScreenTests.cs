@@ -136,6 +136,56 @@ namespace WordDeduction.Tests
             }
             Assert.That(menu.children.Any(n => n.isActive && n.label.Contains("Eli")),Is.True,"The last row becomes reachable after scroll.");
         }
+        [UnityTest]
+        public IEnumerator LargeTextCardKeepsDecorativeMarkClearOfItsCaption()
+        {
+            var root = Create(Language.English); yield return null; yield return null;
+            foreach (var name in new[]{"Alex","Bea","Chris","Dana","Eli"})
+            {
+                root.Q<TextField>("nameInput").value = name; Submit(root.Q<Button>("addPlayer")); yield return null;
+            }
+            Submit(root.Q<Button>("classicMode")); Submit(root.Q<Button>("playButton"));
+            yield return null; yield return null;
+            // Reproduce the native 1.5x caption geometry inside the small-phone card.
+            // Android itself remains the test of the OS preference event.
+            root.AddToClassList("large-type");
+            var caption = root.Q<Label>("cardCaption"); caption.style.fontSize = 24;
+            yield return null; yield return null;
+            var back = root.Q<VisualElement>(className:"mark-back");
+            var front = root.Q<VisualElement>(className:"mark-front");
+            Assert.That(Mathf.Max(back.worldBound.yMax,front.worldBound.yMax),Is.LessThanOrEqualTo(caption.worldBound.yMin),"Decorative cards must not collide with enlarged public text.");
+            Assert.That(caption.worldBound.yMax,Is.LessThanOrEqualTo(root.Q<VisualElement>("cardFace").worldBound.yMax));
+        }
+        [UnityTest]
+        public IEnumerator LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard()
+        {
+            var root = Create(Language.German); yield return null; yield return null;
+            for(int i=0;i<40;i++)
+            {
+                root.Q<TextField>("nameInput").value = "Alexandria-Maximilian-"+i.ToString("D2");
+                Submit(root.Q<Button>("addPlayer")); yield return null;
+            }
+            var last = Session.Open(directory,Language.German).View.Players.Last();
+            Submit(root.Q<Button>("edit-"+last.Id)); yield return null; yield return null;
+            root.style.height = 380; yield return null; yield return null;
+            root.AddToClassList("large-type"); root.Q<VisualElement>("safeRoot").AddToClassList("typing");
+            foreach(var name in new[]{"removePlayer","cancelRename","saveRename"}) root.Q<Button>(name).style.fontSize=22.5f;
+            root.Q<TextField>("renameInput").style.fontSize=25.5f;
+            yield return null; yield return null;
+            var list=root.Q<ScrollView>("players"); list.ScrollTo(root.Q<VisualElement>("player-"+last.Id));
+            yield return null; yield return null;
+            foreach(var name in new[]{"removePlayer","cancelRename","saveRename"})
+            {
+                var bounds=root.Q<Button>(name).worldBound;
+                Assert.That(bounds.xMin,Is.GreaterThanOrEqualTo(list.contentViewport.worldBound.xMin),name);
+                Assert.That(bounds.xMax,Is.LessThanOrEqualTo(list.contentViewport.worldBound.xMax),name+" has a complete visible label");
+                Assert.That(bounds.yMin,Is.GreaterThanOrEqualTo(list.contentViewport.worldBound.yMin),name);
+                Assert.That(bounds.yMax,Is.LessThanOrEqualTo(list.contentViewport.worldBound.yMax),name+" remains above the keyboard");
+                Assert.That(bounds.height,Is.GreaterThanOrEqualTo(48),name);
+            }
+            root.Q<TextField>("renameInput").value="Mina"; Submit(root.Q<Button>("saveRename")); yield return null;
+            Assert.That(Session.Open(directory,Language.German).View.Players.Last().Name,Is.EqualTo("Mina"));
+        }
         static void Submit(VisualElement target)
         {
             Assert.That(target,Is.Not.Null);

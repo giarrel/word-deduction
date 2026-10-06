@@ -26,7 +26,15 @@ namespace WordDeduction.UI
         AccessibleMenu accessibility;
         TextPreferences textPreferences;
         public UnityEngine.Accessibility.AccessibilityHierarchy Accessibility => accessibility?.Hierarchy;
-        public void Initialize(Session value) { matchSurface?.Dispose(); matchSurface = null; session = value; if (root != null) { CreateMatchSurface(); Render(); } }
+        public void Initialize(Session value)
+        {
+            matchSurface?.Dispose(); matchSurface = null;
+            if (root != null) CloseEditKeyboard();
+            editingId = null; renameDraft = null; noticeCode = null;
+            nameInput?.SetValueWithoutNotify("");
+            session = value;
+            if (root != null) { CreateMatchSurface(); Render(); }
+        }
         void OnEnable()
         {
             typography = new RuntimeTypography(GetComponent<UIDocument>());
@@ -167,6 +175,7 @@ namespace WordDeduction.UI
         {
             if (root == null) return;
             var view = session.View;
+            root.Q<VisualElement>("safeRoot").EnableInClassList("ready",view.ReadyToStart && !view.StorageBlocked);
             root.Q<VisualElement>("safeRoot").EnableInClassList("recovery",view.StorageBlocked);
             typography?.IncludeNames(view.Players.Select(p => p.Name));
             root.Q<VisualElement>("screen").EnableInClassList("hidden",session.Match != null);
@@ -176,7 +185,8 @@ namespace WordDeduction.UI
             root.Q<VisualElement>("safeRoot").EnableInClassList("has-players",view.Players.Count > 0);
             root.Q<VisualElement>("safeRoot").EnableInClassList("editing",editingId != null);
             root.Q<Label>("emptyTitle").text = T("emptyTitle"); root.Q<Label>("emptyHint").text = T("emptyHint");
-            root.Q<Label>("editHint").text = T("editHint");
+            root.Q<Label>("editHint").text = T(view.Players.Count >= 40 ? "GroupFull" : "editHint");
+            root.Q<VisualElement>("safeRoot").EnableInClassList("at-capacity",view.Players.Count >= 40);
             nameInput.textEdition.placeholder = T("name"); nameInput.tooltip = T("name");
             root.Q<Button>("addPlayer").tooltip = T("add");
             root.Q<Button>("quickMode").text = T("quick"); root.Q<Button>("classicMode").text = T("classic");
