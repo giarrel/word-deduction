@@ -18,6 +18,7 @@
 .card-symbol { font-size: 66px; -unity-font-style: bold; color: #6a48c8; }
 .card-caption { color: #503093; font-size: 16px; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; }
 .secret-word { font-size: 32px; color: #38215e; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; }
+.secret-word.white-private { font-size: 20px; }
 .secret-card.revealed { background-color: #e0ecdf; border-color: #b5cdb3; }
 .card-instruction { font-size: 14px; white-space: normal; color: var(--muted); -unity-text-align: middle-center; margin: 8px 0; }
 .hold-reveal { min-height: 54px; border-radius: 18px; border-width: 2px; border-color: #c7b8e8; color: #503093; justify-content: center; margin-top: 8px; padding: 8px 12px; flex-shrink: 0; }

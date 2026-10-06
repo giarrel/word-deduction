@@ -42,8 +42,8 @@ namespace WordDeduction
         private static SessionState ReadFile(string path)
         {
             var envelope = JsonConvert.DeserializeObject<Envelope>(File.ReadAllText(path));
-            if (envelope != null && envelope.Version > 2) throw new NewerVersionException();
-            if (envelope == null || (envelope.Version != 1 && envelope.Version != 2) || envelope.Payload == null || envelope.Checksum != Hash(envelope.Payload))
+            if (envelope != null && envelope.Version > 3) throw new NewerVersionException();
+            if (envelope == null || envelope.Version < 1 || envelope.Version > 3 || envelope.Payload == null || envelope.Checksum != Hash(envelope.Payload))
                 throw new InvalidDataException("Invalid saved session.");
             var state = JsonConvert.DeserializeObject<SessionState>(envelope.Payload);
             if (envelope.Version == 1 && state?.Match != null) throw new InvalidDataException("Invalid legacy session.");
@@ -54,7 +54,7 @@ namespace WordDeduction
         {
             Directory.CreateDirectory(directory);
             var payload = JsonConvert.SerializeObject(state);
-            var bytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(new Envelope { Version = 2, Payload = payload, Checksum = Hash(payload) }));
+            var bytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(new Envelope { Version = 3, Payload = payload, Checksum = Hash(payload) }));
             var temporary = Path.Combine(directory, "session.pending.json");
             using (var stream = new FileStream(temporary, FileMode.Create, FileAccess.Write, FileShare.None))
             {
