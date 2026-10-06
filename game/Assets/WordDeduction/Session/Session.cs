@@ -22,6 +22,10 @@ namespace WordDeduction
         public IReadOnlyList<PlayerView> Players { get; internal set; } = Array.Empty<PlayerView>();
         public Language Language { get; internal set; }
         public GameMode Mode { get; internal set; }
+        public bool WhitePreferred { get; internal set; }
+        public int UndercoverCount => Mode == GameMode.Quick || ActiveCount <= 7 ? 1 : ActiveCount <= 12 ? 2 : 3;
+        public int WhiteCount => Mode == GameMode.Classic && WhitePreferred && ActiveCount >= 5 ? 1 : 0;
+        public int CivilianCount => Math.Max(0,ActiveCount - UndercoverCount - WhiteCount);
         public bool CanUndo { get; internal set; }
         public int ActiveCount => Players.Count(p => p.Active);
         public int NeededPlayers => Math.Max(0, (Mode == GameMode.Quick ? 3 : 4) - ActiveCount);
@@ -42,7 +46,7 @@ namespace WordDeduction
         private SessionState state;
         private readonly Func<int, int> random;
         private Session(string directory, SessionState state, SnapshotStore store, Func<int, int> random) { this.directory = directory; this.state = state; this.store = store; this.random = random; }
-        public SessionView View => new SessionView { Language = state.Language, Mode = state.Mode, CanUndo = state.Removed != null, StorageNotice = store.Notice, StorageBlocked = store.Blocked,
+        public SessionView View => new SessionView { Language = state.Language, Mode = state.Mode, WhitePreferred = state.WhitePreferred, CanUndo = state.Removed != null, StorageNotice = store.Notice, StorageBlocked = store.Blocked,
             Players = state.Players.Select(p => new PlayerView { Id = p.Id, Name = p.Name, DisplayName = p.Distinguished ? p.Name + " · " + p.Number : p.Name, Active = p.Active }).ToArray() };
         public static Session Open(string directory, Language initialLanguage, Func<int, int> random = null)
         {
@@ -95,6 +99,7 @@ namespace WordDeduction
         }
         public CommandResult SetLanguage(Language language) => LiveMatch ? new CommandResult { Error = "MatchInProgress" } : Enum.IsDefined(typeof(Language), language) ? Change(next => next.Language = language) : new CommandResult { Error = "InvalidSetting" };
         public CommandResult SetMode(GameMode mode) => LiveMatch ? new CommandResult { Error = "MatchInProgress" } : Enum.IsDefined(typeof(GameMode), mode) ? Change(next => next.Mode = mode) : new CommandResult { Error = "InvalidSetting" };
+        public CommandResult SetWhitePreference(bool enabled) => LiveMatch ? new CommandResult { Error = "MatchInProgress" } : Change(next => next.WhitePreferred = enabled);
         public CommandResult StartFreshAfterDamage()
         {
             if (store.Notice != "DamagedData") return new CommandResult { Error = "StorageBlocked" };
@@ -152,6 +157,7 @@ namespace WordDeduction
         public List<PlayerState> Players = new List<PlayerState>();
         public Language Language;
         public GameMode Mode;
+        public bool WhitePreferred;
         public PlayerState Removed;
         public int RemovedIndex;
         public int NextNumber = 1;

@@ -26,7 +26,7 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | R03 | Quick: richtige/falsche Beschuldigung, Stichwahl, wiederholter Gleichstand, Ergebnis | Implementer74e7825, Integration496d446/013087f: 21 Session-/10 PlayMode-Fälle und drei [tatsächliche Android-Partien](android-quick-runtime/report.md), DE/EN | Passed |
 | R04 | Classic: fortlaufende Runden, alle Siege, keine erneute Auswahl Eliminierter | Öffentliche Tests und gerenderter Mehr-Runden-Ablauf | Not run |
 | R05 | White: semantischer Tipp, richtig/falsch, Priorität des Tipps, Wiederaufnahme, kein Wortleck | Grenzfalltests und tatsächlich bediente White-Ansicht | Not run |
-| R06 | Back, Hilfe, korrigierbare Vorauswahl, bestätigter Abbruch und Fortsetzen | Gerenderte Eingaben und Android-Zurück-Geste/-Taste | Not run |
+| R06 | Back, Hilfe, korrigierbare Vorauswahl, bestätigter Abbruch und Fortsetzen | Taste funktioniert; [echte Android-Randgeste](android-interruptions-baseline/report.md) schließt die Activity zum Launcher statt In-App-Pause. Korrektur und Nachtest in Ticket 7 | Failed |
 | R07 | Ergebnis nennt Sieger/Grund/Wörter; direkte Folgepartie ohne Neueingabe | Beide Sprachen und Modi über UI gespielt | Not run |
 
 ## Wortkarte und Bedienung
@@ -35,7 +35,7 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 |---|---|---|---|
 | U01 | Name vor Geheimnis; bewusstes Hochziehen; Text beim Loslassen sofort verdeckt | Quick74e7825: synchroner UITK-Test vor nächstem Frame; [native Android-Geste und betrachtete Bilder](android-quick-runtime/report.md) mit benanntem Besitzer und verborgenem Wort | Passed |
 | U02 | Haltealternative, kurzer Tipp, langsamer Drag, frühes Loslassen, außerhalb der Karte | Reale Pointer-Ereignisse; kein Screenshot-Only-Nachweis | Not run |
-| U03 | Pointer-Abbruch/Capture-Verlust/zweiter Finger/Doppeltipp überspringen keine Person | [Quick-UI-Tests](quick-mode.md) mit synthetischen UITK-Ereignissen; [Android-Zwei-Finger-Test](android-quick-runtime/report.md) und genau ein anschließender Besitzerwechsel. Native Cancel-/Capture-Vertiefung folgt in Ticket7 | Passed |
+| U03 | Pointer-Abbruch/Capture-Verlust/zweiter Finger/Doppeltipp überspringen keine Person | Einfacher Zwei-Finger-Abbruch bestanden; vertiefter [Android-Gegencheck](android-interruptions-baseline/report.md) reproduziert erneutes Aufdecken durch Finger 2, während Finger 1 weiter gehalten wird. Korrektur und Nachtest in Ticket 7 | Failed |
 | U04 | Fokus/Pause/Resume/Prozessende verbergen Geheimnisse; Taskvorschau bleibt geschützt | Editor-Lifecycle plus installierte Android-App und Taskvorschau | Not run |
 | U05 | Tastatur mit Umlauten, Einfügen, Rücktaste und Done; Fokusverlust verliert keinen Entwurf | Android-Namenseingabe; dokumentierte Tastatur/OS-Version | Not run |
 | U06 | Lesbarkeit, Kontrast, Touchflächen und Systemleisten bei kleinen/hohen Displays und langen Texten | [Kleine Android-Ansicht und Schriftprobe](group-layout-probes/report.md): 48 Unity-Referenzeinheiten ergeben bei 360 dp Breite nur ca. 44 dp; mehrere Schriftsysteme bleiben leer. Anpassung und Nachtest in Ticket 8 | Failed |

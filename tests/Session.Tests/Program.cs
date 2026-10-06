@@ -162,6 +162,7 @@ var cases = new (string name, Action<string> run)[] {
     })
 };
 cases = cases.Concat(QuickCases.All).ToArray();
+cases = cases.Concat(ClassicCases.All).ToArray();
 cases = cases.Concat(ContentCases.All).ToArray();
 if (args.Length > 0) cases = cases.Where(test => test.name.Contains(args[0],StringComparison.OrdinalIgnoreCase)).ToArray();
 int failures = 0;

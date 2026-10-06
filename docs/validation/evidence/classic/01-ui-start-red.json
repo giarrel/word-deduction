@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "duration": 0.26,
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "WordDeduction.Tests.ClassicScreenTests.ClassicCanStartFromTheSavedGroupInBothLanguages",
+      "Status": "Failed",
+      "Duration": 0.2218354,
+      "Message": "  Four or more people can start Classic.\r\n  Expected: True\r\n  But was:  False\r\n",
+      "StackTrace": "at WordDeduction.Tests.ClassicScreenTests+<ClassicCanStartFromTheSavedGroupInBothLanguages>d__2.MoveNext () [0x000c7] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\classic-mode\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\ClassicScreenTests.cs:23\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+    }
+  ]
+}

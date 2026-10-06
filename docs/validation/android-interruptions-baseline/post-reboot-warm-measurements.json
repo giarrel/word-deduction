@@ -1,0 +1,12 @@
+[
+  {
+    "Trial": 1,
+    "MillisecondsToCapturedFrame": 856,
+    "ActivityOutput": "Starting: Intent { cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity }\nWarning: Activity not started, its current task has been brought to the front\nStatus: ok\nLaunchState: HOT\nActivity: com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity\nTotalTime: 126\nWaitTime: 129\nComplete"
+  },
+  {
+    "Trial": 2,
+    "MillisecondsToCapturedFrame": 811,
+    "ActivityOutput": "Starting: Intent { cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity }\nWarning: Activity not started, its current task has been brought to the front\nStatus: ok\nLaunchState: HOT\nActivity: com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity\nTotalTime: 118\nWaitTime: 119\nComplete"
+  }
+]

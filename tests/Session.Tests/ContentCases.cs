@@ -57,6 +57,30 @@ static class ContentCases
                 Check(Draw(session)!="fruit-vegetables-001","legacy current pair is already consumed in the new cycle");
             }
         }),
+        ("V3 Classic pending White guesses retain progress and seed history without rewriting on open", directory => {
+            var session=Group(directory); session.AddPlayer("D"); session.AddPlayer("E");
+            session.SetMode(GameMode.Classic); session.SetWhitePreference(true); session.StartMatch();
+            var words=new HashSet<string>(); string white=null;
+            while(session.Match.Phase==MatchPhase.Handoff) {
+                string owner=session.Match.Owner.Id, word=session.RevealWord(owner);
+                if(word=="Mr. White") white=owner; else words.Add(word);
+                session.HideWord(); session.AdvanceHandoff(owner);
+            }
+            string pair=(string)Catalog.Single(p=>words.SetEquals(p["en"].Values<string>()))["id"];
+            session.BeginVote(); session.SelectSuspect(white); session.ConfirmSuspect(white);
+            Check(session.Match.Phase==MatchPhase.WhiteGuess,"fixture is a durable pending Classic guess");
+            string expected=Newtonsoft.Json.JsonConvert.SerializeObject(session.Match);
+            string path=Path.Combine(directory,"session.json"); Rewrite(path,3,payload=>payload.Remove("History"));
+            string previous=File.ReadAllText(path);
+            session=Session.Open(directory,Language.German,maximum=>maximum-1);
+            Check(session.View.StorageNotice==null && session.View.WhitePreferred && Newtonsoft.Json.JsonConvert.SerializeObject(session.Match)==expected,"V3 Classic preferences, survivors, round, roles and pending guess all remain frozen");
+            Check(File.ReadAllText(path)==previous,"V3 Classic opens without any rewrite");
+            Check(session.ResolveWhiteGuess(white,false).Success && session.Match.Round==2 && session.Match.Survivors.Count==4,"migrated spoken judgment commits and continues");
+            session=Session.Open(directory,Language.German,maximum=>maximum-1);
+            Check(session.Match.Round==2 && session.Match.Survivors.Count==4,"first V4 save retains Classic progress");
+            session.AbandonMatch(session.Match.Id); session.SetMode(GameMode.Quick);
+            Check(Draw(session)!=pair,"migrated Classic pair stays consumed when switching to Quick");
+        }),
         ("failed deals consume no pair in memory or after restart", directory => {
             string actual=Path.Combine(directory,"actual"), control=Path.Combine(directory,"control");
             var session=Group(actual); var comparison=Group(control);
