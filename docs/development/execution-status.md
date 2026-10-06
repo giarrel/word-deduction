@@ -35,9 +35,11 @@ flowchart LR
 
 ## Prüfzugang und verbleibende externe Voraussetzungen
 
-Unity, Android-Compiler und Paketprüfwerkzeuge sind vorhanden. Kein Android-Gerät ist von ADB erkannt, kein Emulator in den geprüften Standardpfaden. Die zusätzliche lokale Prüfung meldet vorhandenen Hypervisor, aber `HypervisorPlatform` mit `InstallState: 2` (deaktiviert); die CPU-WMI-Flags unter einem aktiven Hypervisor sind kein hinreichender Gegenbeweis für Hardwareunterstützung. Etwa 180 GB sind frei. Ein beschleunigter Emulator ist somit noch nicht nachgewiesen. Außerdem begrenzt [Unity 6.3 den X86_64-Android-Zielpfad auf bestehende Projekte](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/AndroidArchitecture.X86_64.html). Ein Emulatoraufbau ist vorerst kein Ersatz für einen verifizierten ARM64-Gerätetest; Windows-Funktionen oder Neustarts wurden nicht veranlasst.
+Unity, Android-Compiler und Paketprüfwerkzeuge sind vorhanden. Inzwischen ist ein eigener Android-16-Emulator installiert und vollständig gestartet: `emulator-5580`, API 36, 1080×2400 bei 420 dpi, Google-APIs-x86_64-Image Revision 7 mit angebotener ARM64-Übersetzung. Siehe [Prüfumgebung und Bootnachweis](android-test-device.md). Die App selbst ist darin noch nicht geprüft.
 
-Das verhindert keine weitere Entwicklung, erlaubt aber noch keinen behaupteten Gerätetest. Produktionssignierung, Play-Kontostatus und Publisherkontakt sind nicht geprüft; sie werden am konkreten Release-Artefakt geklärt. Die erste App-Strecke wird gerade implementiert; noch kein erfolgreicher Word-Deduction-Build.
+Die frühere Ableitung aus `HypervisorPlatform InstallState: 2` war zu stark: Der direkte Emulatorcheck bestätigt nutzbares WHPX, und der tatsächliche Boot gelang. Keine Windows-Funktion wurde geändert und kein Rechnerneustart veranlasst. Ebenso ist die Unity-Dokumentation zum eingeschränkten Magic-Leap-x86_64-Ziel kein Beweis einer allgemeinen technischen x86_64-Buildsperre; die [6.3-Release-Notes](https://unity.com/releases/editor/whats-new/6000.3.0f1) und lokal vorhandenen Playerdateien stützen einen späteren Vergleichsbuild, falls erforderlich.
+
+Ein physisches Telefon wurde über die Chat-Rückfrage angefragt; noch keines ist bestätigt. Emulator-, übersetzte ARM64- und physische ARM64-Nachweise bleiben getrennt. Produktionssignierung, Play-Kontostatus und Publisherkontakt sind nicht geprüft; sie werden am konkreten Release-Artefakt geklärt. Die erste App-Strecke wird gerade implementiert; noch kein erfolgreicher Word-Deduction-Build.
 
 ## Integrationskonvention
 

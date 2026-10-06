@@ -70,4 +70,4 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 
 Automatisierte Abläufe, eigene UI-Bedienung und visuelle Kritik werden getrennt von Rückmeldungen einer realen Spielgruppe ausgewiesen. Physische Handhabung, Haptik und soziale Balance sind ohne echte Nutzung nicht bewiesen. Dies ist keine Erlaubnis, nicht getestete Kernfunktionen als fertig zu melden.
 
-Zum Zeitpunkt der Anlage ist kein Android-Gerät von ADB erkannt. Ein Handy mit USB-Debugging wurde über die Chat-Rückfrage angefragt; die Implementierung bleibt davon unabhängig aktiv. Die Rückfrage selbst ist noch kein erteilter Gerätezugang.
+Bei Anlage war kein Android-Gerät von ADB erkannt. Inzwischen ist ein [eigener Android-16-Emulator vollständig gestartet](../development/android-test-device.md), jedoch noch ohne geprüfte Word-Deduction-App. Ein physisches Handy mit USB-Debugging wurde über die Chat-Rückfrage angefragt; die Rückfrage selbst ist noch kein erteilter Gerätezugang.
