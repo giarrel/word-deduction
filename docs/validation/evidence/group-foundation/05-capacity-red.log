@@ -1,0 +1,7 @@
+C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\worktrees\group-foundation\game\Assets\WordDeduction\Session\Session.cs(88,25): warning CS0649: Field 'SessionState.Mode' is never assigned to, and will always have its default value [C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\worktrees\group-foundation\tests\Session.Tests\Session.Tests.csproj]
+PASS confirmed player survives reopening with stable identity
+PASS rename pause resume remove and undo preserve the group across restarts
+PASS duplicate names remain distinguishable after remove undo and restart
+PASS names accept Unicode text elements and reject invalid edits without saving
+FAIL capacity keeps overflow players paused and allows a waiting player to join: only 20 people active
+4/5 passed

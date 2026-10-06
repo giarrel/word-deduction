@@ -1,0 +1,1 @@
+{"name":"WordDeduction.PlayTests","references":["WordDeduction.Session","WordDeduction.UI"],"optionalUnityReferences":["TestAssemblies"]}

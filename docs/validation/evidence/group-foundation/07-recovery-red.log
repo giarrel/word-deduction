@@ -1,0 +1,8 @@
+PASS confirmed player survives reopening with stable identity
+PASS rename pause resume remove and undo preserve the group across restarts
+PASS duplicate names remain distinguishable after remove undo and restart
+PASS names accept Unicode text elements and reject invalid edits without saving
+PASS capacity keeps overflow players paused and allows a waiting player to join
+PASS language and mode are durable and expose valid group readiness
+FAIL a damaged primary restores a validated previous generation: Unexpected end while parsing unquoted property name. Path '', line 1, position 12.
+6/7 passed

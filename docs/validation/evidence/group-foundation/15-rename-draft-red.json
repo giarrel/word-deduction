@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.3,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.FailedRenameKeepsTheTypedNameForRetry",
+          "Status": "Failed",
+          "Duration": 0.2401808,
+          "Message": "  A save failure must not discard the typed name.\r\n  Expected string length 9 but was 4. Strings differ at index 4.\r\n  Expected: \"Alexandra\"\r\n  But was:  \"Alex\"\r\n  ---------------^\r\n",
+          "StackTrace": "at WordDeduction.Tests.GroupScreenTests+<FailedRenameKeepsTheTypedNameForRetry>d__3.MoveNext () [0x001b7] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\group-foundation\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\GroupScreenTests.cs:82\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\group-foundation\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
