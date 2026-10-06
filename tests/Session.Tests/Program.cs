@@ -119,7 +119,7 @@ var cases = new (string name, Action<string> run)[] {
         var session = Session.Open(directory, Language.English);
         session.AddPlayer("Alex"); session.AddPlayer("Bea");
         var path = Path.Combine(directory,"session.json");
-        var future = File.ReadAllText(path).Replace("\"Version\":1", "\"Version\":99");
+        var future = File.ReadAllText(path).Replace("\"Version\":2", "\"Version\":99");
         File.WriteAllText(path,future);
         session = Session.Open(directory,Language.German);
         Check(session.View.StorageNotice == "NewerVersion" && session.View.StorageBlocked, "newer version gets explicit block");
@@ -160,6 +160,7 @@ var cases = new (string name, Action<string> run)[] {
         Check(session.UndoRemove().Success && session.View.Players.Single().Name == "Alex", "failed actions preserve undo");
     })
 };
+cases = cases.Concat(QuickCases.All).ToArray();
 int failures = 0;
 foreach (var test in cases) {
     var directory = Path.Combine(Path.GetTempPath(), "WordDeduction-tests", Guid.NewGuid().ToString("N"));

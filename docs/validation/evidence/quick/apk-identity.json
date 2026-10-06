@@ -1,0 +1,11 @@
+{
+  "sha256": "32cfb05e08d82686ae5b643ed8d6ba86e79bc641b3a074c44cdf9cc73b09cfce",
+  "bytes": 37552110,
+  "sourceCommit": "5de9b4d",
+  "integrationMerge": "e5eec73",
+  "buildSeconds": 258.903,
+  "targetApi": 36,
+  "minimumApi": 26,
+  "architecture": "ARM64",
+  "scriptingBackend": "IL2CPP"
+}
