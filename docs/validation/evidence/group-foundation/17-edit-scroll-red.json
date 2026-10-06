@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.27,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.EditingTheLastPlayerKeepsAllActionsVisibleAfterTheViewportShrinks",
+          "Status": "Failed",
+          "Duration": 0.2410718,
+          "Message": "  Saving and cancelling must remain visible when the keyboard shrinks the viewport.\r\n  Expected: less than or equal to 269.0f\r\n  But was:  344.0f\r\n",
+          "StackTrace": "at WordDeduction.Tests.GroupScreenTests+<EditingTheLastPlayerKeepsAllActionsVisibleAfterTheViewportShrinks>d__4.MoveNext () [0x002f0] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\group-foundation\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\GroupScreenTests.cs:109\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\group-foundation\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

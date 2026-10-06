@@ -1,0 +1,13 @@
+# Session interface
+
+`game/Assets/WordDeduction/Session` is the deep, Unity-independent module for the saved group. Callers open `Session.Open(directory, initialLanguage)`, issue a user action, then obtain `Session.View`. UI code never changes persistent DTOs. View instances are detached copies. The initial locale applies only when no saved state exists.
+
+Actions: add, rename, set participation, remove, undo the last removal, select language/mode, and explicitly start fresh after unrecoverable damage. `CommandResult.Success` means the complete state was saved before the in-memory state changed. `Error` and `Notice` are stable localization keys, not text for direct display. A failed save leaves previous memory and disk intact and can be retried. Invalid/stale player IDs are rejected.
+
+Names are trimmed and NFC-normalized, 1–24 Unicode text elements, without control characters. Stable IDs are independent of names. Duplicate names retain durable numeric disambiguators; entering a name equal to a generated label is also disambiguated. Twenty people may be active; additional saved people begin paused, with `AddedPaused`. Forty people may be saved. Undo restores identity, order and participation unless a current capacity limit prevents it.
+
+The JSON envelope has `Version`, `Payload` and SHA-256 `Checksum`. Both checksum and group invariants are validated. Each write flushes a pending file, then atomically replaces primary and previous generation. Pending files are never treated as confirmed actions. A damaged primary may recover a valid previous generation; the view exposes `RecoveredBackup`. Both invalid generations block mutation and expose `DamagedData`; explicit fresh start first archives the damaged files. A newer schema exposes `NewerVersion` and cannot be reset by this app. Read permission/IO errors expose `ReadFailed` without overwriting files.
+
+Android uses the application's internal files directory; the Editor uses a dedicated subdirectory of Unity's `persistentDataPath`. `link.xml` preserves the JSON DTOs for IL2CPP. The serializer is Unity's `com.unity.nuget.newtonsoft-json` package. The .NET behavior runner compiles the same source and references that exact resolved Newtonsoft DLL (run Unity's initial import first).
+
+This ticket intentionally stops at the group. `ReadyToStart` describes group-size validity, not implemented gameplay. The visible Play action is disabled until issue 4 provides Quick start/deal. Match lifecycle and content extend this Session seam in the dependent tickets.

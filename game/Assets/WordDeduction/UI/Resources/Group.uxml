@@ -1,0 +1,45 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+  <ui:Style src="Group.uss" />
+  <ui:VisualElement name="safeRoot" class="safe-root">
+    <ui:VisualElement name="screen" class="screen">
+      <ui:VisualElement class="topbar">
+        <ui:Label text="word deduction" class="wordmark" />
+        <ui:VisualElement class="language-switch">
+          <ui:Button name="german" text="DE" class="language-button" />
+          <ui:Button name="english" text="EN" class="language-button" />
+        </ui:VisualElement>
+      </ui:VisualElement>
+      <ui:VisualElement class="heading">
+        <ui:Label name="title" class="title" />
+        <ui:Label name="subtitle" class="subtitle" />
+      </ui:VisualElement>
+      <ui:VisualElement class="group-header">
+        <ui:Label name="groupTitle" class="section-title" />
+        <ui:Label name="count" class="count-badge" />
+      </ui:VisualElement>
+      <ui:ScrollView name="players" class="players" vertical-scroller-visibility="Auto" horizontal-scroller-visibility="Hidden" />
+      <ui:VisualElement name="emptyState" class="empty-state">
+        <ui:Label text="?" class="empty-symbol" />
+        <ui:Label name="emptyTitle" class="empty-title" />
+        <ui:Label name="emptyHint" class="hint" />
+      </ui:VisualElement>
+      <ui:VisualElement class="add-row">
+        <ui:TextField name="nameInput" class="name-input" />
+        <ui:Button name="addPlayer" text="+" class="add-button" />
+      </ui:VisualElement>
+      <ui:Label name="editHint" class="hint edit-hint" />
+      <ui:VisualElement name="noticePanel" class="notice-panel hidden">
+        <ui:Label name="notice" class="notice-text" />
+        <ui:Button name="undo" class="text-button hidden" />
+        <ui:Button name="resetDamaged" class="text-button hidden" />
+      </ui:VisualElement>
+      <ui:VisualElement class="mode-picker">
+        <ui:Button name="quickMode" class="mode-button" />
+        <ui:Button name="classicMode" class="mode-button" />
+      </ui:VisualElement>
+      <ui:Label name="modeDescription" class="mode-description" />
+      <ui:Button name="playButton" class="play-button" />
+      <ui:Label name="startHint" class="start-hint" />
+    </ui:VisualElement>
+  </ui:VisualElement>
+</ui:UXML>

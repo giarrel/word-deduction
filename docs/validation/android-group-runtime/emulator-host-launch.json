@@ -1,0 +1,28 @@
+{
+  "started": "2026-10-06T20:41:06.7797804+02:00",
+  "avd": "word_deduction_api36",
+  "pid": 180604,
+  "serial": "emulator-5580",
+  "args": [
+    "-avd",
+    "word_deduction_api36",
+    "-accel",
+    "on",
+    "-gpu",
+    "host",
+    "-cores",
+    "2",
+    "-memory",
+    "2048",
+    "-no-snapshot",
+    "-no-window",
+    "-noaudio",
+    "-no-boot-anim",
+    "-camera-back",
+    "none",
+    "-camera-front",
+    "none",
+    "-port",
+    "5580"
+  ]
+}
