@@ -1,6 +1,6 @@
 # Word Deduction: Android release v1
 
-Status: implementation specification, 6 October 2026. Parent: [Autonomous Android release effort](https://github.com/giarrel/word-deduction/issues/1). The GitHub spec issue is canonical; this file mirrors its substantive requirements.
+Status: implementation specification, 6 October 2026. Canonical: [Android v1 specification](https://github.com/giarrel/word-deduction/issues/2). Parent: [Autonomous Android release effort](https://github.com/giarrel/word-deduction/issues/1). This file mirrors the spec's substantive requirements.
 
 ## Problem Statement
 
@@ -64,7 +64,7 @@ No account, network, ads, purchases, forced timer, content downloads or mandator
 
 These are delegated product choices, not claims of universal Undercover rules. They may change only with an updated spec and regression tests.
 
-- Group capacity: 3–20 active players for Quick; 4–20 for Classic. Up to 40 saved people can be paused for later. Trim names; require 1–24 Unicode text elements; reject blank/control-only input. Duplicate visible names get stable, visible disambiguators without changing the entered name or ID.
+- Group capacity: 3–20 active players for Quick; 4–20 for Classic. Up to 40 saved people can be paused for later. A newly added person starts paused if 20 are already active, with a clear notice; trying to activate a twenty-first person explains that someone must pause first. Trim names; require 1–24 Unicode text elements; reject blank/control-only input. Duplicate visible names get stable, visible disambiguators without changing the entered name or ID.
 - Quick is the first-run default. Exactly one Undercover, everyone else Civilian, no White. Each person receives a word, one clue round and discussion occur, then the group votes aloud. Correctly accusing the Undercover wins for the Civilians; accusing a Civilian wins for the Undercover. Result is immediate after confirmation.
 - Classic chooses 1 Undercover for 4–7 active players, 2 for 8–12, and 3 for 13–20. White is a single optional additional role, off initially, requiring at least 5 active players. The rest are Civilians. The group screen describes the automatic mix. At four players a saved White preference is shown as unavailable; the effective mix omits White without deleting the preference. Quick never uses the saved Classic White preference.
 - Classic ends when all adversaries are eliminated (Civilian win), or only one Civilian remains and at least one adversary survives (surviving adversary side wins), or an eliminated White guesses correctly (White wins immediately). Check White's pending guess before any other terminal condition resulting from that elimination. Wrong White guess removes White and evaluates the remaining match. Survivors continue to the next clue round otherwise.
