@@ -27,3 +27,11 @@ Full `git diff --check 7d6af6b HEAD` reports only six empty-value trailing space
 The exact combined development APK, build summary and identity are preserved in ignored `artifacts/recovery-baseline/`. The copied APK is **37,651,751 bytes**, SHA-256 `6284ef8a413638feb75182462c256103d3ee4a6bccede2a47d4a1abe830c0a92`; size and hash were verified. The original summary and documented diagnostics retain the Pipeline timeout/error count; this report does not relabel it as a zero-error build.
 
 Root's combined Android gate was still in progress during this integration check. This report makes no additional native acceptance claim. No ADB/Unity operation, issue closure or worktree cleanup was performed by the merger. The checked integration branch is authorized for push; root records the separate Android evidence and final issue decisions.
+
+## Supplementary navigation coverage, 7 October 2026
+
+Approved supplement `e6f64c65b21437378126398e78f0f65371d3cdd8` was merged without conflicts through `f1484e4c53f2a60d84aba0bb760ef21bcdceb52c`, preserving integration base `fb5f2f5eb99ce3fca91dedfb4d5689f48403d85b`. Inspection confirmed exactly the expected five changed files: the additional restored-match PlayMode test, three captured test results and the updated Recovery validation document.
+
+The test adds Handoff/Clues restoration with independent primary-finger taps for Abandon, Keep, repeated Abandon, Back, Help and Resume, preserving match identity. The inspected evidence records its corrected **1/1** targeted pass and the complete **5/5** Recovery PlayMode group. The initial synthetic-contact fixture failure remains documented separately. No production fix was made or implied by that fixture correction.
+
+The entire native [combined Android acceptance directory](android-recovery-combined/report.md) remains unchanged from `fb5f2f5`, including its accepted gate outcome. Runtime sources, settings and .NET tests also remain unchanged; only the identified PlayMode test differs under `game/`. Full `git diff --check fb5f2f5 HEAD` passed. The preserved APK was rehashed and still matches `6284ef8a413638feb75182462c256103d3ee4a6bccede2a47d4a1abe830c0a92`. The merger did not launch an Editor, rebuild the APK, rerun unrelated tests or change issue status.
