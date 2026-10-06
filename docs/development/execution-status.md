@@ -14,10 +14,10 @@ Ziel und Arbeitsweise: [Engineering-Ablauf](autonomous-workflow.md). Kanonische 
 | Ticket | Ergebnis | Voraussetzung | Stand |
 |---|---|---|---|
 | [Gespeicherte Gruppe](https://github.com/giarrel/word-deduction/issues/3) | Ausführbare Unity-App, dauerhafte Gruppe, Test-/Buildbasis | Keine | Abgenommen und integriert: `318af96`, Testpfad/Doku `ac0dcca` |
-| [Schnellmodus](https://github.com/giarrel/word-deduction/issues/4) | Karte → Gespräch → Vote → Ergebnis → Folgepartie | Gruppe | In Umsetzung: `ticket/4-quick-mode` |
-| [Klassischer Modus](https://github.com/giarrel/word-deduction/issues/5) | Mehrere Runden und Mr. White | Schnellmodus | Wartet |
-| [Großer DE/EN-Wortbestand](https://github.com/giarrel/word-deduction/issues/6) | Redaktionelle Inhalte, Wiederholungsvermeidung, Übersetzungen | Schnellmodus | Wartet |
-| [Unterbrechung und Recovery](https://github.com/giarrel/word-deduction/issues/7) | Speicherschäden, Lebenszyklus, Geheimnisschutz | Schnellmodus | Wartet |
+| [Schnellmodus](https://github.com/giarrel/word-deduction/issues/4) | Karte → Gespräch → Vote → Ergebnis → Folgepartie | Gruppe | Abgenommen und integriert: `496d446`, Integrationsprüfung `013087f` |
+| [Klassischer Modus](https://github.com/giarrel/word-deduction/issues/5) | Mehrere Runden und Mr. White | Schnellmodus | Bereit zur parallelen Umsetzung |
+| [Großer DE/EN-Wortbestand](https://github.com/giarrel/word-deduction/issues/6) | Redaktionelle Inhalte, Wiederholungsvermeidung, Übersetzungen | Schnellmodus | Bereit zur parallelen Umsetzung |
+| [Unterbrechung und Recovery](https://github.com/giarrel/word-deduction/issues/7) | Speicherschäden, Lebenszyklus, Geheimnisschutz | Schnellmodus | Bereit zur parallelen Umsetzung |
 | [Bedienung und visuelle Playtests](https://github.com/giarrel/word-deduction/issues/8) | Belegte Verbesserung der vollständigen App | Klassisch, Inhalte, Recovery | Wartet |
 | [Release-Kandidat](https://github.com/giarrel/word-deduction/issues/9) | Review, APK/AAB, Verpackungsnachweise, Storeunterlagen | Playtests | Wartet |
 
@@ -46,3 +46,7 @@ Ein physisches Telefon wurde über die Chat-Rückfrage angefragt; noch keines is
 ## Integrationskonvention
 
 Die Implementation läuft auf `integration/android-v1`. Je Ticket eine eigene Branch und ein eigener Worktree; ein Merger-Agent übernimmt Integration. GitHub-Tickets werden nach tatsächlicher Abnahme mit Ergebnisnachweis geschlossen. Feste Basis des abschließenden Reviews: Planungscommit `ab25c325e02040d30755ae448c07789357730f38`.
+
+## Schnellmodus abgenommen
+
+21/21 Session-Tests, 10/10 Unity-PlayMode-Tests und drei vollständig bediente Android-Partien (richtiger Verdacht, falscher Verdacht, wiederholter Gleichstand). V1-Gruppe unverändert übernommen, V2 bei bewusster Aktion geschrieben; nach Folgepartien und bestätigtem Abbruch sind alle acht Spieleridentitäten erhalten. Native Zwei-Finger-Eingabe und Android-Aufnahmeschutz geprüft. [Android-Nachweise](../validation/android-quick-runtime/report.md), [separate Integration](../validation/quick-mode-merge.md). Die nächste Arbeitsfront umfasst Tickets 5, 6 und 7.
