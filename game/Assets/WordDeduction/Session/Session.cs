@@ -154,6 +154,7 @@ namespace WordDeduction
     {
         public WordHistoryState History = new WordHistoryState();
         public MatchState Match;
+        [JsonProperty(Required = Required.Always)]
         public List<PlayerState> Players = new List<PlayerState>();
         public Language Language;
         public GameMode Mode;

@@ -1,0 +1,32 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var report=UnityEditor.Build.Reporting.BuildReport.GetLatestReport(); var diagnostics=new System.Collections.Generic.List<string>(); foreach(var step in report.steps) foreach(var message in step.messages) if(message.type==UnityEngine.LogType.Error || message.type==UnityEngine.LogType.Exception || message.type==UnityEngine.LogType.Warning) diagnostics.Add(message.type+\": \"+message.content); return new {result=report.summary.result.ToString(),errors=report.summary.totalErrors,warnings=report.summary.totalWarnings,diagnostics};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "result": "Succeeded",
+        "errors": 1,
+        "warnings": 2,
+        "diagnostics": [
+          "Warning: Pipeline: No RuntimePipelineConfig asset found (Project Settings > Pipeline > Runtime). Pipeline will be disabled in Player builds.",
+          "Error: Failed to handle /api/exec request: Main thread operation timed out after 5000ms",
+          "Warning: Assets\\WordDeduction\\UI\\MatchSurface.cs(72,43): warning CS0618: 'EventBase.PreventDefault()' is obsolete: 'Use StopPropagation and/or FocusController.IgnoreEvent. Before proceeding, make sure you understand the latest changes to UIToolkit event propagation rules by visiting Unity's manual page https://docs.unity3d.com/Manual/UIE-Events-Dispatching.html'"
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\recovery\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

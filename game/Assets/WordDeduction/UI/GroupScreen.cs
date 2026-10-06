@@ -21,9 +21,11 @@ namespace WordDeduction.UI
         float nextViewportCheck;
         TouchScreenKeyboard editKeyboard;
         MatchSurface matchSurface;
+        MobileBack mobileBack;
         public void Initialize(Session value) { matchSurface?.Dispose(); matchSurface = null; session = value; if (root != null) { CreateMatchSurface(); Render(); } }
         void OnEnable()
         {
+            mobileBack = new MobileBack();
             if (session == null) session = Session.Open(StorageDirectory(), Application.systemLanguage == SystemLanguage.German ? Language.German : Language.English);
             root = GetComponent<UIDocument>().rootVisualElement;
             root.Clear();
@@ -51,9 +53,9 @@ namespace WordDeduction.UI
             root.RegisterCallback<GeometryChangedEvent>(_ => UpdateSafeArea());
         }
         void CreateMatchSurface() { matchSurface = new MatchSurface(session,root.Q<VisualElement>("safeRoot"),Render); }
-        void OnDisable() { matchSurface?.Dispose(); matchSurface = null; root = null; }
-        void OnApplicationFocus(bool focus) { if (!focus) matchSurface?.Pause(); }
-        void OnApplicationPause(bool paused) { if (paused) matchSurface?.Pause(); }
+        void OnDisable() { mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; }
+        void OnApplicationFocus(bool focus) { if (!focus) matchSurface?.Pause(true); }
+        void OnApplicationPause(bool paused) { if (paused) matchSurface?.Pause(true); }
         void Update()
         {
             if (root == null) return;
@@ -69,7 +71,7 @@ namespace WordDeduction.UI
                 if (!Mathf.Approximately(height,keyboardHeight)) { keyboardHeight = height; UpdateSafeArea(); }
             }
             if (Screen.safeArea != lastSafeArea) UpdateSafeArea();
-            if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+            if ((mobileBack?.Consume() ?? false) || (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame))
             {
                 if (editingId != null) CancelEdit();
                 else if (session.Match != null) matchSurface.Back();
@@ -186,7 +188,7 @@ namespace WordDeduction.UI
             if (editingId != null) RevealAfterLayout(list,root.Q<VisualElement>("player-" + editingId));
             list.EnableInClassList("hidden", view.Players.Count == 0);
             root.Q<VisualElement>("emptyState").EnableInClassList("hidden",view.Players.Count > 0);
-            var message = view.StorageBlocked ? view.StorageNotice : noticeCode ?? view.StorageNotice;
+            var message = noticeCode ?? view.StorageNotice;
             root.Q<VisualElement>("noticePanel").EnableInClassList("hidden", message == null && !view.CanUndo);
             root.Q<Label>("notice").text = message == null ? "" : T(message);
             var undo = root.Q<Button>("undo"); undo.text = T("undo"); undo.EnableInClassList("hidden",!view.CanUndo);
