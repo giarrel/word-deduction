@@ -9,16 +9,16 @@ namespace WordDeduction.UI
     {
         readonly Session session;
         readonly VisualElement screen, body, actions;
-        readonly Action renderApp;
+        readonly Action renderApp, screenChanged;
         readonly VisualElement inputRoot;
         readonly HashSet<int> contacts = new HashSet<int>();
         SecretCard card;
         bool paused, help, abandon;
         string notice;
         Language language;
-        public MatchSurface(Session session, VisualElement parent, Action renderApp)
+        public MatchSurface(Session session, VisualElement parent, Action renderApp, Action screenChanged)
         {
-            this.session = session; this.renderApp = renderApp;
+            this.session = session; this.renderApp = renderApp; this.screenChanged = screenChanged;
             inputRoot = parent;
             inputRoot.RegisterCallback<PointerDownEvent>(ContactDown, TrickleDown.TrickleDown);
             inputRoot.RegisterCallback<PointerUpEvent>(ContactUp, TrickleDown.TrickleDown);
@@ -30,7 +30,8 @@ namespace WordDeduction.UI
             screen.Q<Button>("matchHelp").clicked += () => { card?.Hide(true); help = true; Render(); };
         }
         string T(string key, params object[] args) => Copy.Get(language,key,args);
-        public void Render()
+        public void Render() { RenderContents(); screenChanged(); }
+        void RenderContents()
         {
             card?.Dispose(); card = null; body.Clear(); actions.Clear();
             var match = session.Match;

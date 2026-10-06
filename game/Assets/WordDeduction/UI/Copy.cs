@@ -6,6 +6,11 @@ namespace WordDeduction.UI
     public static class Copy
     {
         static readonly Dictionary<string, string[]> Text = new Dictionary<string, string[]> {
+            {"scrollPlayers", new[]{"Saved players. Scroll for more.","Gespeicherte Personen. Für weitere scrollen."}},
+            {"scrollContent", new[]{"More information. Scroll to continue reading.","Weitere Informationen. Zum Weiterlesen scrollen."}},
+            {"privateCardAccessibility", new[]{"Private card. Words are never spoken. To read it visually, use TalkBack's pass-through gesture, then hold here. Release to hide.","Private Karte. Wörter werden nie vorgelesen. Zum visuellen Lesen TalkBack kurz durchreichen lassen und dieses Feld halten. Loslassen verdeckt die Karte."}},
+            {"pausePlayer", new[]{"Pause {0}","{0} pausieren"}},
+            {"joinPlayer", new[]{"Let {0} join","{0} mitspielen lassen"}},
             {"back", new[]{"Back","Zurück"}},
             {"help", new[]{"Help","Hilfe"}},
             {"ModeUnavailable", new[]{"Classic is being prepared. Choose Quick to play.","Klassisch wird vorbereitet. Wähle Schnell zum Spielen."}},

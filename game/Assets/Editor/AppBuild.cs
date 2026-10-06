@@ -92,7 +92,7 @@ namespace WordDeduction.Editor
                 EditorUserBuildSettings.buildAppBundle = bundle;
                 var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
                     scenes = new[] { "Assets/WordDeduction/Scenes/App.unity" }, locationPathName = path, target = BuildTarget.Android,
-                    options = BuildOptions.CleanBuildCache | BuildOptions.DetailedBuildReport | (development ? BuildOptions.Development : BuildOptions.None)
+                    options = BuildOptions.DetailedBuildReport | (development ? BuildOptions.Development : BuildOptions.CleanBuildCache)
                 });
                 File.WriteAllText(Path.Combine(output,"build-summary.json"), JsonUtility.ToJson(new BuildSummaryData {
                     result = report.summary.result.ToString(), errors = report.summary.totalErrors, warnings = report.summary.totalWarnings,

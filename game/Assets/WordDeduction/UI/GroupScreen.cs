@@ -1,6 +1,7 @@
 using System;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
@@ -23,6 +24,8 @@ namespace WordDeduction.UI
         MatchSurface matchSurface;
         MobileBack mobileBack;
         RuntimeTypography typography;
+        AccessibleMenu accessibility;
+        public UnityEngine.Accessibility.AccessibilityHierarchy Accessibility => accessibility?.Hierarchy;
         public void Initialize(Session value) { matchSurface?.Dispose(); matchSurface = null; session = value; if (root != null) { CreateMatchSurface(); Render(); } }
         void OnEnable()
         {
@@ -31,8 +34,10 @@ namespace WordDeduction.UI
             if (session == null) session = Session.Open(StorageDirectory(), Application.systemLanguage == SystemLanguage.German ? Language.German : Language.English);
             root = GetComponent<UIDocument>().rootVisualElement;
             root.Clear();
+            accessibility = new AccessibleMenu(root,() => session.Match?.Language ?? session.View.Language);
             Resources.Load<VisualTreeAsset>("Group").CloneTree(root);
             nameInput = root.Q<TextField>("nameInput");
+            nameInput.RegisterValueChangedCallback(e => typography?.IncludeNames(new[] { e.newValue }));
             root.Q<Button>("addPlayer").clicked += Add;
             nameInput.RegisterCallback<KeyDownEvent>(e => { if (e.keyCode == KeyCode.Return || e.keyCode == KeyCode.KeypadEnter) { Add(); e.StopPropagation(); } });
             root.Q<Button>("german").clicked += () => Apply(session.SetLanguage(Language.German));
@@ -54,14 +59,14 @@ namespace WordDeduction.UI
             Render(); UpdateSafeArea();
             root.RegisterCallback<GeometryChangedEvent>(_ => UpdateSafeArea());
         }
-        void CreateMatchSurface() { matchSurface = new MatchSurface(session,root.Q<VisualElement>("safeRoot"),Render); }
-        void OnDisable() { mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; typography?.Dispose(); typography = null; }
+        void CreateMatchSurface() { matchSurface = new MatchSurface(session,root.Q<VisualElement>("safeRoot"),Render,() => accessibility?.Refresh()); }
+        void OnDisable() { accessibility?.Dispose(); accessibility = null; mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; typography?.Dispose(); typography = null; }
         void OnApplicationFocus(bool focus) { if (!focus) matchSurface?.Pause(true); }
         void OnApplicationPause(bool paused) { if (paused) matchSurface?.Pause(true); }
         void Update()
         {
             if (root == null) return;
-            matchSurface?.Tick();
+            matchSurface?.Tick(); accessibility?.Tick();
             var keyboard = root.Q<TextField>("renameInput")?.textEdition.touchScreenKeyboard;
             if (keyboard != null && keyboard.status == TouchScreenKeyboard.Status.Visible) editKeyboard = keyboard;
             // Android reports Status.Done for both IME Done and Back. Only an explicit
@@ -161,6 +166,7 @@ namespace WordDeduction.UI
         {
             if (root == null) return;
             var view = session.View;
+            typography?.IncludeNames(view.Players.Select(p => p.Name));
             root.Q<VisualElement>("screen").EnableInClassList("hidden",session.Match != null);
             matchSurface?.Render();
             root.Q<Label>("title").text = T("title"); root.Q<Label>("subtitle").text = T("subtitle");
@@ -198,6 +204,7 @@ namespace WordDeduction.UI
             var reset = root.Q<Button>("resetDamaged"); reset.text = T("startFresh"); reset.EnableInClassList("hidden",view.StorageNotice != "DamagedData");
             nameInput.SetEnabled(!view.StorageBlocked && view.Players.Count < 40);
             root.Q<Button>("addPlayer").SetEnabled(!view.StorageBlocked && view.Players.Count < 40);
+            accessibility?.Refresh();
         }
         VisualElement PlayerRow(PlayerView player)
         {
@@ -207,7 +214,7 @@ namespace WordDeduction.UI
             {
                 row.AddToClassList("editing-row");
                 var edit = new TextField { name = "renameInput", value = renameDraft ?? player.Name, tooltip = T("edit",player.DisplayName) }; edit.AddToClassList("name-input"); row.Add(edit);
-                edit.RegisterValueChangedCallback(e => renameDraft = e.newValue);
+                edit.RegisterValueChangedCallback(e => { renameDraft = e.newValue; typography?.IncludeNames(new[] { e.newValue }); });
                 var actions = new VisualElement(); actions.AddToClassList("edit-actions"); row.Add(actions);
                 actions.Add(ActionButton("removePlayer",T("remove"),"remove-button", () => Apply(session.RemovePlayer(player.Id), "Removed")));
                 actions.Add(ActionButton("cancelRename",T("cancel"),"text-button", CancelEdit));
@@ -219,7 +226,8 @@ namespace WordDeduction.UI
             {
                 var initial = new Label(StringInfo.GetNextTextElement(player.Name).ToUpperInvariant()); initial.AddToClassList("player-initial"); row.Add(initial);
                 var name = ActionButton("edit-" + player.Id,player.DisplayName,"player-name", () => { editingId = player.Id; renameDraft = player.Name; Render(); }); name.tooltip = T("edit",player.DisplayName); row.Add(name);
-                row.Add(ActionButton("participation-" + player.Id,T(player.Active ? "pause" : "join"),"participation", () => Apply(session.SetParticipation(player.Id,!player.Active))));
+                var participation = ActionButton("participation-" + player.Id,T(player.Active ? "pause" : "join"),"participation", () => Apply(session.SetParticipation(player.Id,!player.Active)));
+                participation.tooltip = T(player.Active ? "pausePlayer" : "joinPlayer",player.DisplayName); row.Add(participation);
             }
             return row;
         }

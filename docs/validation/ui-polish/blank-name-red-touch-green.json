@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "duration": 0.48,
+  "summary": {
+    "total": 2,
+    "passed": 1,
+    "failed": 1,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.InvisibleNamesAreRejectedAndExtendedNamesSurviveTheUnityRuntime",
+      "Status": "Failed",
+      "Duration": 0.2808676,
+      "Message": "  Invisible-only input must not create a blank identity.\r\n  Expected: 0\r\n  But was:  1\r\n",
+      "StackTrace": "at WordDeduction.Tests.PolishScreenTests+<InvisibleNamesAreRejectedAndExtendedNamesSurviveTheUnityRuntime>d__6.MoveNext () [0x000df] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\ui-polish\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\PolishScreenTests.cs:72\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+    },
+    {
+      "FullName": "WordDeduction.Tests.PolishScreenTests.SmallGroupHasFingerSizedLanguageAndParticipationControls",
+      "Status": "Passed",
+      "Duration": 0.1648399,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

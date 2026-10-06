@@ -8,56 +8,62 @@ using UnityEngine.UIElements;
 
 namespace WordDeduction.UI
 {
-    // One panel owns its runtime OS fonts; no device-specific references are saved.
+    // Font discovery belongs to this panel and runs only for scripts in its names.
     internal sealed class RuntimeTypography : IDisposable
     {
         readonly UIDocument document;
         readonly PanelSettings original, panel;
         readonly PanelTextSettings text;
         readonly List<FontAsset> fonts = new List<FontAsset>();
-
+        readonly HashSet<string> attempted = new HashSet<string>();
+        string[] families;
         public RuntimeTypography(UIDocument document)
         {
-            this.document = document;
-            original = document.panelSettings;
+            this.document = document; original = document.panelSettings;
             if (original == null || original.textSettings == null) return;
-            panel = UnityEngine.Object.Instantiate(original);
-            MobileViewport.Configure(panel);
-            text = UnityEngine.Object.Instantiate(original.textSettings);
-            panel.textSettings = text;
-            var fallback = new List<FontAsset>(text.fallbackFontAssets ?? new List<FontAsset>());
-            var emoji = new List<UnityEngine.TextCore.Text.TextAsset>();
-            var families = FontEngine.GetSystemFontNames();
-            foreach (var entry in families.Where(IsScriptFamily).Distinct())
-            {
-                // FontEngine exposes "family - style" on Android and Windows.
-                int separator = entry.LastIndexOf(" - ",StringComparison.Ordinal);
-                string family = separator < 0 ? entry : entry.Substring(0,separator);
-                string style = separator < 0 ? "Regular" : entry.Substring(separator + 3);
-                if (style != "Regular") continue;
-                bool color = family.IndexOf("Emoji", StringComparison.OrdinalIgnoreCase) >= 0;
-                var font = FontAsset.CreateFontAsset(family, style, 90, color ? 0 : 9,
-                    color ? GlyphRenderMode.COLOR : GlyphRenderMode.SDFAA);
-                if (font == null) continue;
-                fonts.Add(font);
-                if (color) emoji.Add(font); else fallback.Add(font);
-#if DEVELOPMENT_BUILD
-                Debug.Log("Typography face: " + font.faceInfo.familyName + " / " + font.faceInfo.styleName + " / " + font.atlasPopulationMode);
-#endif
-            }
-            text.fallbackFontAssets = fallback;
-            text.emojiFallbackTextAssets = emoji;
+            panel = UnityEngine.Object.Instantiate(original); MobileViewport.Configure(panel);
+            text = UnityEngine.Object.Instantiate(original.textSettings); panel.textSettings = text;
+            text.fallbackFontAssets = new List<FontAsset>(text.fallbackFontAssets ?? new List<FontAsset>());
+            text.emojiFallbackTextAssets = new List<UnityEngine.TextCore.Text.TextAsset>();
             document.panelSettings = panel;
             document.rootVisualElement.style.unityFontDefinition = FontDefinition.FromSDFFont(text.defaultFontAsset);
-#if DEVELOPMENT_BUILD
-            Debug.Log("Typography system families: " + families.Length + "; candidate families: " + string.Join(", ",families.Where(IsScriptFamily)));
-#endif
+            document.rootVisualElement.style.unityTextGenerator = TextGeneratorType.Advanced;
         }
-        static bool IsScriptFamily(string family)
+        public void IncludeNames(IEnumerable<string> names)
         {
-            return family.IndexOf("Noto",StringComparison.OrdinalIgnoreCase) >= 0 &&
-                new[] { "Arabic", "Devanagari", "CJK", "Emoji", "Hebrew", "Thai", "Bengali", "Tamil" }.Any(s => family.IndexOf(s,StringComparison.OrdinalIgnoreCase) >= 0)
-                || family == "Segoe UI Emoji" || family == "Microsoft YaHei" || family == "Nirmala UI";
+            if (text == null) return;
+            foreach (var name in names)
+                for (int i = 0; i < name.Length; i++)
+                {
+                    int scalar = char.IsHighSurrogate(name[i]) && i + 1 < name.Length && char.IsLowSurrogate(name[i + 1]) ? char.ConvertToUtf32(name,i) : name[i]; if (scalar > 0xffff) i++;
+                    if (scalar >= 0x0600 && scalar <= 0x08ff || scalar >= 0xfb50 && scalar <= 0xfeff) Load("Noto Naskh Arabic", "Arial");
+                    else if (scalar >= 0x0900 && scalar <= 0x097f) Load("Noto Sans Devanagari", "Nirmala UI");
+                    else if (scalar >= 0x0980 && scalar <= 0x09ff) Load("Noto Sans Bengali", "Nirmala UI");
+                    else if (scalar >= 0x0b80 && scalar <= 0x0bff) Load("Noto Sans Tamil", "Nirmala UI");
+                    else if (scalar >= 0x0e00 && scalar <= 0x0e7f) Load("Noto Sans Thai", "Leelawadee UI");
+                    else if (scalar >= 0x0590 && scalar <= 0x05ff) Load("Noto Sans Hebrew", "Arial");
+                    else if (scalar >= 0x2e80 && scalar <= 0xd7ff || scalar >= 0x20000 && scalar <= 0x323af) Load("Noto Sans CJK SC", "Microsoft YaHei");
+                    else if (scalar >= 0x1f000 && scalar <= 0x1faff || scalar >= 0x2600 && scalar <= 0x27bf) Load("Noto Color Emoji", "Segoe UI Emoji",true);
+                }
+        }
+        void Load(string family,string desktopAlternative,bool color = false)
+        {
+            if (!attempted.Add(family)) return;
+            if (families == null) families = FontEngine.GetSystemFontNames();
+            string entry = families.FirstOrDefault(f => f == family + " - Regular" || f == family) ??
+                families.FirstOrDefault(f => f == desktopAlternative + " - Regular" || f == desktopAlternative);
+            if (entry == null) return;
+            int separator = entry.LastIndexOf(" - ",StringComparison.Ordinal);
+            string selected = separator < 0 ? entry : entry.Substring(0,separator);
+            string style = separator < 0 ? "Regular" : entry.Substring(separator + 3);
+            var font = FontAsset.CreateFontAsset(selected,style,90,color ? 0 : 9,color ? GlyphRenderMode.COLOR : GlyphRenderMode.SDFAA);
+            if (font == null) return;
+            fonts.Add(font);
+            if (color) text.emojiFallbackTextAssets = new List<UnityEngine.TextCore.Text.TextAsset>(text.emojiFallbackTextAssets) { font };
+            else text.fallbackFontAssets = new List<FontAsset>(text.fallbackFontAssets) { font };
+#if DEVELOPMENT_BUILD
+            Debug.Log("Typography face: " + font.faceInfo.familyName + " / " + font.faceInfo.styleName);
+#endif
         }
         public void Dispose()
         {
