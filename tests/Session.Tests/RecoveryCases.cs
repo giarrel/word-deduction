@@ -113,6 +113,34 @@ static class RecoveryCases
             ReopenUnchanged(directory, session); Directory.Delete(pending);
             Check(session.CancelSuspect().Success && session.Match.SelectedSuspect == null, "correction retry succeeds");
             Check(session.AbandonMatch(matchId).Success && Session.Open(directory, Language.English).Match == null && session.View.ActiveCount == 3, "explicit abandonment retry keeps group durable");
+        }),
+        ("every Classic phase including both White judgments preserves its deal and history across interrupted saves", directory => {
+            foreach (bool correct in new[] { false, true }) {
+                var folder = Path.Combine(directory, correct.ToString());
+                var session = Session.Open(folder, Language.German, maximum => 0);
+                foreach (var name in new[] { "A", "B", "C", "D", "E" }) Check(session.AddPlayer(name).Success, "Classic fixture person saves");
+                session.SetMode(GameMode.Classic); session.SetWhitePreference(true); Check(session.StartMatch().Success, "Classic fixture starts");
+                ClassicCheckpoint(folder, session);
+                var owner = session.Match.Owner.Id; var privateWord = session.RevealWord(owner);
+                var reopened = Session.Open(folder, Language.English, NoDraw);
+                Check(!reopened.Match.CanAdvance && reopened.RevealWord(owner) == privateWord, "Classic handoff reopens covered with its original word");
+                session.HideWord(); session.AdvanceHandoff(owner); ClassicCheckpoint(folder, session);
+                DealCards(session); ClassicCheckpoint(folder, session);
+                var people = session.Match.Participants;
+                session.BeginVote(); ClassicCheckpoint(folder, session);
+                session.SelectSuspect(people[2].Id); ClassicCheckpoint(folder, session);
+                session.CancelSuspect(); session.RecordTie(false); ClassicCheckpoint(folder, session);
+                session.RecordTie(true); ClassicCheckpoint(folder, session);
+                session.BeginVote(); session.SelectSuspect(people[0].Id); session.ConfirmSuspect(people[0].Id);
+                Check(session.Match.Phase == MatchPhase.Elimination, "first adversary elimination stays live"); ClassicCheckpoint(folder, session);
+                ReplacementDenied(folder, session, () => session.ContinueRound(session.Match.Round));
+                Check(session.ContinueRound(session.Match.Round).Success, "next-round retry saves"); ClassicCheckpoint(folder, session);
+                session.BeginVote(); session.SelectSuspect(people[1].Id); session.ConfirmSuspect(people[1].Id);
+                Check(session.Match.Phase == MatchPhase.WhiteGuess, "last adversary still receives White judgment"); ClassicCheckpoint(folder, session);
+                ReplacementDenied(folder, session, () => session.ResolveWhiteGuess(people[1].Id, correct));
+                Check(session.ResolveWhiteGuess(people[1].Id, correct).Success, "White judgment retry saves");
+                Check(session.Match.Result.WinningRoles.Single() == (correct ? Role.White : Role.Civilian), "both judgments preserve their correct outcome"); ClassicCheckpoint(folder, session);
+            }
         })
     };
     static void Check(bool actual, string expected) { if (!actual) throw new Exception(expected); }
@@ -133,10 +161,30 @@ static class RecoveryCases
     }
     static void ReopenUnchanged(string directory, Session session)
     {
+        var path = Path.Combine(directory, "session.json");
+        var saved = File.ReadAllText(path);
         var before = Newtonsoft.Json.JsonConvert.SerializeObject(session.Match);
         var group = Newtonsoft.Json.JsonConvert.SerializeObject(session.View.Players);
         var reopened = Session.Open(directory, Language.German, NoDraw);
         Check(Newtonsoft.Json.JsonConvert.SerializeObject(reopened.Match) == before, "same public phase, owners, selection and result reopen");
         Check(Newtonsoft.Json.JsonConvert.SerializeObject(reopened.View.Players) == group, "saved group identities and participation stay unchanged");
+        Check(File.ReadAllText(path) == saved, "opening preserves the exact deal, word history and checksum bytes");
+    }
+    static void ClassicCheckpoint(string directory, Session session)
+    {
+        ReopenUnchanged(directory, session);
+        var pending = Path.Combine(directory, "session.pending.json");
+        File.WriteAllText(pending, "{interrupted write");
+        ReopenUnchanged(directory, session); File.Delete(pending);
+        Directory.CreateDirectory(pending);
+        Check(session.AbandonMatch(session.Match.Id).Error == "SaveFailed", "uncommitted abandonment cannot discard this Classic phase");
+        ReopenUnchanged(directory, session); Directory.Delete(pending);
+    }
+    static void ReplacementDenied(string directory, Session session, Func<CommandResult> action)
+    {
+        using (var locked = new FileStream(Path.Combine(directory, "session.json"), FileMode.Open, FileAccess.Read, FileShare.Read))
+            Check(action().Error == "SaveFailed", "flushed next phase is not acknowledged when replacement is denied");
+        ReopenUnchanged(directory, session);
+        Check(File.Exists(Path.Combine(directory, "session.pending.json")), "real denial occurred after the pending generation was flushed");
     }
 }
