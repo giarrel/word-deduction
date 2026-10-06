@@ -15,6 +15,7 @@ namespace WordDeduction
         public SnapshotStore(string directory) { this.directory = directory; }
         private string Primary => Path.Combine(directory, "session.json");
         private string Backup => Path.Combine(directory, "session.previous.json");
+        private string Pending => Path.Combine(directory, "session.pending.json");
         public SessionState Read()
         {
             try { return ReadGenerations(); }
@@ -24,9 +25,12 @@ namespace WordDeduction
         }
         private SessionState ReadGenerations()
         {
-            if (!File.Exists(Primary) && !File.Exists(Backup)) return null;
+            // A later app may have left its generation in either committed slot.
+            // Never replace a version we cannot interpret on the next save.
+            try { ReadEnvelope(Backup); }
+            catch (Exception error) when (error is JsonException || Missing(error)) { }
             try { return ReadFile(Primary); }
-            catch (Exception error) when (error is JsonException || error is InvalidDataException || error is FileNotFoundException)
+            catch (Exception error) when (error is JsonException || error is InvalidDataException || Missing(error))
             {
                 try
                 {
@@ -35,14 +39,26 @@ namespace WordDeduction
                     preserveBackup = true;
                     return result;
                 }
-                catch (Exception backupError) when (backupError is JsonException || backupError is InvalidDataException || backupError is FileNotFoundException)
-                { Notice = "DamagedData"; Blocked = true; return null; }
+                catch (Exception backupError) when (backupError is JsonException || backupError is InvalidDataException || Missing(backupError))
+                {
+                    if (Missing(error) && Missing(backupError) && !HasPending()) return null;
+                    Notice = "DamagedData"; Blocked = true; return null;
+                }
             }
+        }
+        private static bool Missing(Exception error) => error is FileNotFoundException || error is DirectoryNotFoundException;
+        private bool HasPending()
+        {
+            try
+            {
+                if ((File.GetAttributes(Pending) & FileAttributes.Directory) != 0) throw new IOException("Invalid storage path.");
+                return true;
+            }
+            catch (Exception error) when (Missing(error)) { return false; }
         }
         private static SessionState ReadFile(string path)
         {
-            var envelope = JsonConvert.DeserializeObject<Envelope>(File.ReadAllText(path));
-            if (envelope != null && envelope.Version > 2) throw new NewerVersionException();
+            var envelope = ReadEnvelope(path);
             if (envelope == null || (envelope.Version != 1 && envelope.Version != 2) || envelope.Payload == null || envelope.Checksum != Hash(envelope.Payload))
                 throw new InvalidDataException("Invalid saved session.");
             var state = JsonConvert.DeserializeObject<SessionState>(envelope.Payload);
@@ -50,12 +66,18 @@ namespace WordDeduction
             if (!Session.ValidSnapshot(state)) throw new InvalidDataException("Invalid session snapshot.");
             return state;
         }
+        private static Envelope ReadEnvelope(string path)
+        {
+            var envelope = JsonConvert.DeserializeObject<Envelope>(File.ReadAllText(path));
+            if (envelope != null && envelope.Version > 2) throw new NewerVersionException();
+            return envelope;
+        }
         public void Write(SessionState state)
         {
             Directory.CreateDirectory(directory);
             var payload = JsonConvert.SerializeObject(state);
             var bytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(new Envelope { Version = 2, Payload = payload, Checksum = Hash(payload) }));
-            var temporary = Path.Combine(directory, "session.pending.json");
+            var temporary = Pending;
             using (var stream = new FileStream(temporary, FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 stream.Write(bytes, 0, bytes.Length);
@@ -69,7 +91,7 @@ namespace WordDeduction
         {
             var archive = Path.Combine(directory, "damaged-" + Guid.NewGuid().ToString("N"));
             Directory.CreateDirectory(archive);
-            foreach (var file in new[] { Primary, Backup })
+            foreach (var file in new[] { Primary, Backup, Pending })
                 if (File.Exists(file)) File.Copy(file, Path.Combine(archive, Path.GetFileName(file)));
             preserveBackup = true;
             Write(state);

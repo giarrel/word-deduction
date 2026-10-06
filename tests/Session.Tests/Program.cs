@@ -161,6 +161,7 @@ var cases = new (string name, Action<string> run)[] {
     })
 };
 cases = cases.Concat(QuickCases.All).ToArray();
+cases = cases.Concat(RecoveryCases.All).ToArray();
 int failures = 0;
 foreach (var test in cases) {
     var directory = Path.Combine(Path.GetTempPath(), "WordDeduction-tests", Guid.NewGuid().ToString("N"));

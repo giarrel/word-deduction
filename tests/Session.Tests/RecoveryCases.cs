@@ -1,0 +1,122 @@
+using WordDeduction;
+
+static class RecoveryCases
+{
+    public static (string name, Action<string> run)[] All = {
+        ("unreadable storage paths cannot masquerade as a new group", directory => {
+            Directory.CreateDirectory(Path.Combine(directory, "session.json"));
+            var session = Session.Open(directory, Language.English);
+            Check(session.View.StorageBlocked && session.View.StorageNotice == "ReadFailed", "unreadable generation blocks with a clear read failure");
+            Check(!session.AddPlayer("Overwrite").Success && !session.StartFreshAfterDamage().Success, "read failures cannot reset storage");
+        }),
+        ("an interrupted first save requires acknowledgement and preserves the unfinished file", directory => {
+            Directory.CreateDirectory(directory);
+            var pending = Path.Combine(directory, "session.pending.json");
+            const string unfinished = "{unfinished first save";
+            File.WriteAllText(pending, unfinished);
+            var session = Session.Open(directory, Language.English);
+            Check(session.View.StorageBlocked && session.View.StorageNotice == "DamagedData", "orphan pending is disclosed rather than silently reset");
+            Check(!session.AddPlayer("Silent reset").Success && File.ReadAllText(pending) == unfinished, "unacknowledged data remains untouched");
+            Check(session.StartFreshAfterDamage().Success, "explicit fresh start succeeds");
+            Check(File.ReadAllText(Path.Combine(Directory.GetDirectories(directory, "damaged-*").Single(), "session.pending.json")) == unfinished, "unfinished evidence is archived before reuse");
+            Check(session.AddPlayer("New group").Success && Session.Open(directory, Language.German).View.Players.Single().Name == "New group", "fresh state is durable");
+        }),
+        ("a newer backup cannot be overwritten by an older readable primary", directory => {
+            var session = Session.Open(directory, Language.English);
+            session.AddPlayer("A"); session.AddPlayer("B");
+            var path = Path.Combine(directory, "session.previous.json");
+            var envelope = Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path));
+            envelope["Version"] = 999;
+            var future = envelope.ToString(); File.WriteAllText(path, future);
+            session = Session.Open(directory, Language.German);
+            Check(session.View.StorageBlocked && session.View.StorageNotice == "NewerVersion", "unsupported generation is explicitly blocked");
+            Check(!session.AddPlayer("C").Success && !session.StartFreshAfterDamage().Success && File.ReadAllText(path) == future, "future backup is preserved");
+        }),
+        ("every Quick phase restores the same confirmed deal without drawing or exposing a card", directory => {
+            var session = Quick(directory);
+            ReopenUnchanged(directory, session);
+            var owner = session.Match.Owner.Id; var word = session.RevealWord(owner);
+            session = Session.Open(directory, Language.German, NoDraw);
+            Check(!session.Match.CanAdvance && session.RevealWord(owner) == word, "open card restarts covered with the same private word");
+            session.HideWord(); session.AdvanceHandoff(owner);
+            ReopenUnchanged(directory, session);
+            DealCards(session); ReopenUnchanged(directory, session);
+            session.BeginVote(); ReopenUnchanged(directory, session);
+            session.SelectSuspect(session.Match.Participants[0].Id); ReopenUnchanged(directory, session);
+            session.CancelSuspect(); session.RecordTie(false); ReopenUnchanged(directory, session);
+            session.RecordTie(true); ReopenUnchanged(directory, session);
+        }),
+        ("partial and complete pending writes never become confirmed actions on reopening", directory => {
+            var session = Quick(directory); DealCards(session);
+            var primary = Path.Combine(directory, "session.json");
+            var pending = Path.Combine(directory, "session.pending.json");
+            var confirmed = File.ReadAllText(primary);
+            session.BeginVote();
+            File.Move(primary, pending); File.WriteAllText(primary, confirmed);
+            session = Session.Open(directory, Language.German, NoDraw);
+            Check(session.Match.Phase == MatchPhase.Clues && session.View.StorageNotice == null, "fully flushed but uncommitted vote is ignored");
+            File.WriteAllText(pending, "{partial");
+            ReopenUnchanged(directory, session);
+            Check(session.BeginVote().Success && Session.Open(directory, Language.English, NoDraw).Match.Phase == MatchPhase.Vote, "retry commits the actual action");
+        }),
+        ("a damaged backup leaves a healthy primary usable and a missing primary visibly recovers", directory => {
+            var session = Quick(directory); DealCards(session); session.BeginVote();
+            var primary = Path.Combine(directory, "session.json");
+            var backup = Path.Combine(directory, "session.previous.json");
+            var confirmed = File.ReadAllText(primary);
+            File.WriteAllText(backup, "damaged backup"); ReopenUnchanged(directory, session);
+            Check(Session.Open(directory, Language.English).View.StorageNotice == null, "healthy primary needs no recovery");
+            File.WriteAllText(backup, confirmed); File.Delete(primary);
+            session = Session.Open(directory, Language.German, NoDraw);
+            Check(session.View.StorageNotice == "RecoveredBackup" && session.Match.Phase == MatchPhase.Vote, "missing primary restores the confirmed backup visibly");
+            Check(session.SelectSuspect(session.Match.Participants[1].Id).Success, "recovered state can commit again");
+        }),
+        ("replacement denial after flushing leaves the previous vote intact and retryable", directory => {
+            var session = Quick(directory); DealCards(session); session.BeginVote();
+            var suspect = session.Match.Participants[1].Id; session.SelectSuspect(suspect);
+            var primary = Path.Combine(directory, "session.json");
+            using (var locked = new FileStream(primary, FileMode.Open, FileAccess.Read, FileShare.Read)) {
+                var result = session.ConfirmSuspect(suspect);
+                Check(!result.Success && result.Error == "SaveFailed" && session.Match.Result == null && session.Match.SelectedSuspect.Id == suspect, "denied atomic replace never acknowledges the result");
+            }
+            session = Session.Open(directory, Language.German, NoDraw);
+            Check(session.Match.Result == null && session.Match.SelectedSuspect.Id == suspect, "a flushed pending result is never restored");
+            Check(session.ConfirmSuspect(suspect).Success && Session.Open(directory, Language.English, NoDraw).Match.Result != null, "retry commits once lock is removed");
+        }),
+        ("missing required snapshot fields cannot silently become an empty saved group", directory => {
+            var session = Session.Open(directory, Language.English);
+            session.AddPlayer("A"); session.AddPlayer("B");
+            var primary = Path.Combine(directory, "session.json");
+            var envelope = Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(primary));
+            envelope["Payload"] = "{}";
+            envelope["Checksum"] = Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes("{}")));
+            File.WriteAllText(primary, envelope.ToString());
+            session = Session.Open(directory, Language.German);
+            Check(session.View.StorageNotice == "RecoveredBackup" && session.View.Players.Single().Name == "A", "missing fields recover the validated previous generation");
+        })
+    };
+    static void Check(bool actual, string expected) { if (!actual) throw new Exception(expected); }
+    static int NoDraw(int maximum) => throw new Exception("Restoration must not draw random values.");
+    static Session Quick(string directory)
+    {
+        var session = Session.Open(directory, Language.English, maximum => 0);
+        foreach (var name in new[] { "A", "B", "C" }) Check(session.AddPlayer(name).Success, "fixture person saves");
+        Check(session.StartMatch().Success, "fixture match starts");
+        return session;
+    }
+    static void DealCards(Session session)
+    {
+        while (session.Match.Phase == MatchPhase.Handoff) {
+            var owner = session.Match.Owner.Id; session.RevealWord(owner); session.HideWord();
+            Check(session.AdvanceHandoff(owner).Success, "fixture card advances");
+        }
+    }
+    static void ReopenUnchanged(string directory, Session session)
+    {
+        var before = Newtonsoft.Json.JsonConvert.SerializeObject(session.Match);
+        var group = Newtonsoft.Json.JsonConvert.SerializeObject(session.View.Players);
+        var reopened = Session.Open(directory, Language.German, NoDraw);
+        Check(Newtonsoft.Json.JsonConvert.SerializeObject(reopened.Match) == before, "same public phase, owners, selection and result reopen");
+        Check(Newtonsoft.Json.JsonConvert.SerializeObject(reopened.View.Players) == group, "saved group identities and participation stay unchanged");
+    }
+}
