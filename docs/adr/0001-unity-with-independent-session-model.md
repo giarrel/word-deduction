@@ -1,0 +1,3 @@
+# Unity mit unabhängigem Spielabend-Modell
+
+Wir verwenden Unity 6000.3.25f1 für die Android-App, weil der Nutzer Unity ausdrücklich gewählt hat und die vorhandene, bereits für APKs verwendete Android-Werkzeugkette wiederverwendet werden kann. Trotz der UI-lastigen App bleibt Unity damit die technische Basis statt der zuvor erwogenen nativen Android-Implementierung. Regeln, Gruppenidentitäten und gespeicherte Partien liegen hinter einem eigenständigen C#-Interface, damit Darstellung und Editor-Lebenszyklus die fachliche Persistenz nicht bestimmen und Tests das vollständige Spielverhalten ohne Unity-Szene ausüben können.
