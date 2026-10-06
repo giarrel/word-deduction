@@ -141,11 +141,13 @@ namespace WordDeduction
             if (all.Select(p=>p.Id).Distinct().Count() != all.Length || all.Select(p=>p.Number).Distinct().Count() != all.Length) return false;
             if (value.Removed != null && (value.RemovedIndex < 0 || value.RemovedIndex > 39)) return false;
             if (value.Players.Select(p => p.Distinguished ? p.Name + " · " + p.Number : p.Name).Distinct(StringComparer.OrdinalIgnoreCase).Count() != value.Players.Count) return false;
-            return ValidMatch(value.Match);
+            return ValidMatch(value.Match) && ValidWordHistory(value.History) && (value.Match == null ||
+                (value.History.UsedPairIds.Contains(value.Match.PairId) && value.History.RecentPairIds.LastOrDefault() == value.Match.PairId));
         }
     }
     internal sealed class SessionState
     {
+        public WordHistoryState History = new WordHistoryState();
         public MatchState Match;
         public List<PlayerState> Players = new List<PlayerState>();
         public Language Language;

@@ -99,7 +99,8 @@ static class QuickCases
             foreach (var name in new[] { "Alex", "Alex", "Chris", "Dana" }) session.AddPlayer(name);
             session.SetMode(GameMode.Classic); session.RemovePlayer(session.View.Players[3].Id);
             var path = Path.Combine(directory,"session.json");
-            var legacy = File.ReadAllText(path).Replace("\"Version\":2","\"Version\":1"); File.WriteAllText(path,legacy);
+            var legacyEnvelope = Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path)); legacyEnvelope["Version"] = 1;
+            var legacy = legacyEnvelope.ToString(); File.WriteAllText(path,legacy);
             var ids = session.View.Players.Select(p => p.Id).ToArray();
             session = Session.Open(directory,Language.English);
             Check(session.View.Players.Select(p => p.Id).SequenceEqual(ids) && session.View.CanUndo && session.View.Mode == GameMode.Classic && session.View.Language == Language.German, "V1 state imported intact");

@@ -5,4 +5,5 @@
   </PropertyGroup>
   <ItemGroup><Compile Include="../../game/Assets/WordDeduction/Session/**/*.cs" Link="Session/%(Filename)%(Extension)" /></ItemGroup>
   <ItemGroup><Reference Include="$(NewtonsoftJsonAssembly)" /></ItemGroup>
+  <ItemGroup><Content Include="../../content/word-pairs.json" Link="word-pairs.json" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
 </Project>

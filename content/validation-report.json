@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "pairCount": 520,
+  "themeCount": 20,
+  "themeCounts": {
+    "fruit-vegetables": 26,
+    "meals": 26,
+    "bakery-sweets": 26,
+    "drinks-pantry": 26,
+    "kitchen": 26,
+    "home": 26,
+    "clothing": 26,
+    "care-health": 26,
+    "mammals": 26,
+    "birds-water-creatures": 26,
+    "garden-nature": 26,
+    "landscape-weather": 26,
+    "transport-travel": 26,
+    "places": 26,
+    "school-office": 26,
+    "tools-materials": 26,
+    "sports": 26,
+    "arts-media": 26,
+    "games-leisure": 26,
+    "technology": 26
+  },
+  "languages": {
+    "de": {
+      "distinctNormalizedWords": 1038,
+      "totalWordSlots": 1040,
+      "repeatedWords": [
+        {
+          "word": "Nashorn",
+          "count": 2,
+          "ids": [
+            "mammals-010",
+            "mammals-011"
+          ]
+        },
+        {
+          "word": "Wildschwein",
+          "count": 2,
+          "ids": [
+            "mammals-016",
+            "mammals-017"
+          ]
+        }
+      ],
+      "longestTerms": [
+        {
+          "id": "fruit-vegetables-012",
+          "word": "Rote Johannisbeere",
+          "characters": 18
+        },
+        {
+          "id": "meals-024",
+          "word": "Griechischer Salat",
+          "characters": 18
+        },
+        {
+          "id": "clothing-004",
+          "word": "Rollkragenpullover",
+          "characters": 18
+        },
+        {
+          "id": "care-health-021",
+          "word": "Blutdruckmessgerät",
+          "characters": 18
+        },
+        {
+          "id": "tools-materials-004",
+          "word": "Schraubenschlüssel",
+          "characters": 18
+        },
+        {
+          "id": "sports-010",
+          "word": "Schlittschuhlaufen",
+          "characters": 18
+        },
+        {
+          "id": "bakery-sweets-009",
+          "word": "Schokoladenkuchen",
+          "characters": 17
+        },
+        {
+          "id": "bakery-sweets-024",
+          "word": "Nuss-Nougat-Creme",
+          "characters": 17
+        },
+        {
+          "id": "kitchen-020",
+          "word": "Kartoffelstampfer",
+          "characters": 17
+        },
+        {
+          "id": "care-health-021",
+          "word": "Fieberthermometer",
+          "characters": 17
+        },
+        {
+          "id": "tools-materials-017",
+          "word": "Hochdruckreiniger",
+          "characters": 17
+        },
+        {
+          "id": "sports-006",
+          "word": "American Football",
+          "characters": 17
+        }
+      ]
+    },
+    "en": {
+      "distinctNormalizedWords": 1038,
+      "totalWordSlots": 1040,
+      "repeatedWords": [
+        {
+          "word": "Rhinoceros",
+          "count": 2,
+          "ids": [
+            "mammals-010",
+            "mammals-011"
+          ]
+        },
+        {
+          "word": "Wild boar",
+          "count": 2,
+          "ids": [
+            "mammals-016",
+            "mammals-017"
+          ]
+        }
+      ],
+      "longestTerms": [
+        {
+          "id": "bakery-sweets-024",
+          "word": "Chocolate hazelnut spread",
+          "characters": 25
+        },
+        {
+          "id": "places-008",
+          "word": "Pedestrian traffic light",
+          "characters": 24
+        },
+        {
+          "id": "care-health-021",
+          "word": "Blood pressure monitor",
+          "characters": 22
+        },
+        {
+          "id": "places-004",
+          "word": "Multi-storey car park",
+          "characters": 21
+        },
+        {
+          "id": "drinks-pantry-003",
+          "word": "Apple juice spritzer",
+          "characters": 20
+        },
+        {
+          "id": "tools-materials-006",
+          "word": "Electric screwdriver",
+          "characters": 20
+        },
+        {
+          "id": "arts-media-025",
+          "word": "Watercolour painting",
+          "characters": 20
+        },
+        {
+          "id": "technology-009",
+          "word": "Rechargeable battery",
+          "characters": 20
+        },
+        {
+          "id": "bakery-sweets-017",
+          "word": "Chocolate ice cream",
+          "characters": 19
+        },
+        {
+          "id": "care-health-021",
+          "word": "Medical thermometer",
+          "characters": 19
+        },
+        {
+          "id": "care-health-026",
+          "word": "Keep-fit exercises",
+          "characters": 18
+        },
+        {
+          "id": "games-leisure-015",
+          "word": "Egg-and-spoon race",
+          "characters": 18
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "warnings": [],
+  "normalization": "NFKD; lowercase; ß→ss; remove combining marks, whitespace and punctuation; retain Unicode letters and digits",
+  "catalogSha256": "ee203f520d636fc6df13c8f21e0dd49f66b43cad058dcb1ea9ca8c20febf85c4"
+}

@@ -81,15 +81,16 @@ namespace WordDeduction
             if (!View.ReadyToStart) return new CommandResult { Error = "NotEnoughPlayers" };
             var participants = View.Players.Where(p => p.Active).Select(p => new ParticipantState { Id = p.Id, DisplayName = p.DisplayName }).ToList();
             participants[random(participants.Count)].Role = Role.Undercover;
-            var pair = StarterWords.Pairs[random(StarterWords.Pairs.Length)];
-            var words = state.Language == Language.German ? pair.German : pair.English;
-            int side = random(2);
-            var deal = new MatchState {
-                Id = Guid.NewGuid().ToString("N"), Mode = state.Mode, Language = state.Language,
-                Participants = participants, PairId = pair.Id, CivilianWord = words[side], UndercoverWord = words[1 - side],
-                StartingIndex = random(participants.Count)
-            };
-            var result = Change(next => next.Match = deal);
+            var result = Change(next => {
+                var pair = DrawPair(next.History);
+                var words = next.Language == Language.German ? pair.German : pair.English;
+                int side = random(2);
+                next.Match = new MatchState {
+                    Id = Guid.NewGuid().ToString("N"), Mode = next.Mode, Language = next.Language,
+                    Participants = participants, PairId = pair.Id, CivilianWord = words[side], UndercoverWord = words[1 - side],
+                    StartingIndex = random(participants.Count)
+                };
+            });
             if (result.Success) { HideWord(); readOwner = null; }
             return result;
         }
