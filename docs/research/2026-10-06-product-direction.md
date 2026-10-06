@@ -1,5 +1,7 @@
 # Word Deduction: Produktvorschlag nach der ersten Recherche
 
+Nachtrag vom 6. Oktober 2026: **Unity ist inzwischen gewählt; die Karte soll beim Loslassen wieder zuklappen.** Siehe [aktuelle Projektentscheidungen](../project-direction.md) und [Unity-Setup](../development/unity-setup.md). Die nachfolgende erste Synthese dokumentiert den vorherigen Entscheidungsstand.
+
 Stand: 6. Oktober 2026. Diese Notiz verbindet die beiden getrennten Recherchen zu [Community-Feedback](2026-10-06-community-feedback.md) und [Android-Architektur](2026-10-06-android-architecture.md). Sie ist eine Empfehlung für den ersten Prototyp, keine bereits verabschiedete Spezifikation.
 
 ## Ausgangspunkt und Empfehlung

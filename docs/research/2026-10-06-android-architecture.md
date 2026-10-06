@@ -1,5 +1,7 @@
 # Android-first: Architektur-Recherche für word-deduction
 
+Nachtrag vom 6. Oktober 2026: Der Nutzer hat inzwischen **Unity** gewählt. Maßgeblich sind die [aktuellen Projektentscheidungen](../project-direction.md) und der [erweiterte Setup-Check](../development/unity-setup.md). Letzterer bestätigt eine zweite, vollständige Android-Installation von Unity 6000.3.25f1; die unten stehende erste Installationsprüfung war auf 6000.6.3f1 beschränkt. Die ursprüngliche Technikwertung bleibt als Recherchehistorie erhalten.
+
 Stand und Zugriff auf alle Webquellen: **6. Oktober 2026**. Status: begründeter Vorschlag, **keine beschlossene Architektur und keine Implementierung**. Die Produkt- und Community-Recherche wird separat dokumentiert.
 
 ## Empfehlung
