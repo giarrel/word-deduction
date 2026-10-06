@@ -9,7 +9,7 @@ static class ClassicCases
                 var session = Group(folder,scenario.Item1);
                 Check(!session.View.WhitePreferred,"White begins off");
                 session.StartMatch(); var withoutWhite=ReadCards(session);
-                Check(!withoutWhite.Contains("Mr. White") && withoutWhite.Count(w=>w=="Violin")==scenario.Item2,"default Classic mix has no White at every supported size");
+                Check(!withoutWhite.Contains("Mr. White") && withoutWhite[0]!=withoutWhite[^1] && withoutWhite.Count(w=>w==withoutWhite[0])==scenario.Item2,"default Classic mix has no White at every supported size");
                 session.AbandonMatch(session.Match.Id);
                 Check(session.SetWhitePreference(true).Success,"White preference saves");
                 session = Session.Open(folder,Language.German, maximum => 0);
@@ -17,12 +17,12 @@ static class ClassicCases
                 Check(session.StartMatch().Success,"Classic starts");
                 var cards = ReadCards(session);
                 Check(cards.Count(w => w == "Mr. White") == scenario.Item3,"White has no word");
-                Check(cards.Count(w => w == "Violin") == scenario.Item2,"Undercover count matches mix");
-                Check(cards.Count(w => w == "Guitar") == scenario.Item1-scenario.Item2-scenario.Item3,"remaining people are Civilians");
+                Check(cards[0]!=cards[^1] && cards.Count(w => w == cards[0]) == scenario.Item2,"Undercover count matches mix");
+                Check(cards.Count(w => w == cards[^1]) == scenario.Item1-scenario.Item2-scenario.Item3,"remaining people are Civilians");
                 Check(!session.SetWhitePreference(false).Success,"live deal preferences frozen");
                 session.AbandonMatch(session.Match.Id); session.SetMode(GameMode.Quick); session.StartMatch();
                 var quick = ReadCards(session);
-                Check(quick.Count(w => w == "Violin") == 1 && !quick.Contains("Mr. White"),"Quick ignores retained White preference");
+                Check(quick.Count(w => w == quick[0]) == 1 && !quick.Contains("Mr. White"),"Quick ignores retained White preference");
                 Check(session.View.WhitePreferred,"Quick never deletes Classic preference");
             }
         }),
@@ -57,7 +57,8 @@ static class ClassicCases
         }),
         ("White gets one durable spoken guess before any terminal evaluation", directory => {
             foreach(bool correct in new[]{true,false}) {
-                var folder=Path.Combine(directory,correct.ToString()); var session=Group(folder,5); session.SetWhitePreference(true); session.StartMatch(); ReadCards(session);
+                var folder=Path.Combine(directory,correct.ToString()); var session=Group(folder,5); session.SetWhitePreference(true); session.StartMatch();
+                var privateWords=ReadCards(session).Where(word=>word!="Mr. White").Distinct().ToArray();
                 var people=session.Match.Participants;
                 Eliminate(session,people[0].Id); session.ContinueRound(1);
                 Eliminate(session,people[1].Id);
@@ -65,7 +66,7 @@ static class ClassicCases
                 session=Session.Open(folder,Language.German,maximum=>0);
                 Check(session.Match.Phase==MatchPhase.WhiteGuess && session.Match.Language==Language.English && session.Match.Elimination.Role==Role.White,"pending guess resumes unchanged");
                 string visible=Newtonsoft.Json.JsonConvert.SerializeObject(session.Match);
-                Check(!visible.Contains("Guitar") && !visible.Contains("Violin"),"target remains private");
+                Check(privateWords.All(word=>!visible.Contains(word)),"target remains private");
                 Check(!session.ResolveWhiteGuess(people[0].Id,true).Success,"wrong identity cannot resolve the guess");
                 Check(session.ResolveWhiteGuess(people[1].Id,correct).Success,"spoken judgment saves");
                 Check(session.Match.Result.WinningRoles.SequenceEqual(new[]{correct ? Role.White : Role.Civilian}),"correct White wins alone; wrong final White loses");
@@ -76,7 +77,7 @@ static class ClassicCases
             for(int starter=0;starter<5;starter++) {
                 int draw=0; var folder=Path.Combine(directory,starter.ToString());
                 var session=Group(folder,5); session.SetWhitePreference(true);
-                session=Session.Open(folder,Language.English,maximum => draw++ < 4 ? 0 : starter);
+                session=Session.Open(folder,Language.English,maximum => draw++ < 2 ? 0 : Math.Min(starter,maximum-1));
                 session.StartMatch(); ReadCards(session); var ids=session.Match.Survivors.Select(p=>p.Id).ToArray();
                 Check(session.Match.StartingPlayer.Id==ids[starter],"initial random starter includes White");
                 session.BeginVote(); session.SelectSuspect(ids[2]); session.RecordTie(false);
@@ -128,7 +129,7 @@ static class ClassicCases
             Check(session.Match.Id==id && session.Match.Owner.Id==owner && !session.Match.CanAdvance && session.Match.Round==1 && !session.View.WhitePreferred,"legacy progress imports covered with new defaults");
             Check(session.RevealWord(owner)==word && File.ReadAllText(path)==old,"migration neither redraws nor writes on open");
             session.HideWord(); session.AdvanceHandoff(owner); session=Session.Open(directory,Language.German);
-            Check(session.Match.Id==id && session.Match.HandoffNumber==2,"first V3 write retains legacy deal");
+            Check(session.Match.Id==id && session.Match.HandoffNumber==2,"first current-schema write retains legacy deal");
         })
     };
     static Session Group(string directory,int count)

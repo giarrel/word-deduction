@@ -1,0 +1,23 @@
+PASS confirmed player survives reopening with stable identity
+PASS rename pause resume remove and undo preserve the group across restarts
+PASS duplicate names remain distinguishable after remove undo and restart
+PASS names accept Unicode text elements and reject invalid edits without saving
+PASS capacity keeps overflow players paused and allows a waiting player to join
+PASS language and mode are durable and expose valid group readiness
+PASS a damaged primary restores a validated previous generation
+PASS failed writes retain memory and disk and can be retried
+PASS unrecoverable data stays blocked until an explicit fresh-start acknowledgement
+FAIL newer save schemas are never rolled back or overwritten: newer version gets explicit block
+PASS entered names cannot impersonate generated disambiguators
+PASS valid checksums do not make invalid group snapshots safe
+PASS stale player actions are harmless and report what happened
+PASS Quick deals are durable and private for every supported group size
+PASS Quick spoken vote can be corrected and only confirmation reveals the result
+PASS Quick has one runoff and protects the active group until confirmed abandonment
+PASS failed deal handoff confirmation and rematch never expose uncommitted progress
+PASS legacy group migration keeps identities settings and undo without rewriting on open
+PASS valid checksums do not admit invalid match snapshots
+PASS rematch validates changed group size and mode through the same start rules
+PASS all seats can be Undercover and start without leaking secret fields through safe views
+PASS all 520 bilingual pairs are dealt once per cycle across restarts and language changes
+21/22 passed

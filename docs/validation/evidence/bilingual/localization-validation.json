@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "bilingualKeys": 92,
+  "checkedLiteralAndDomainReferences": 72,
+  "errors": [],
+  "scope": "Nonblank EN/DE copy, placeholder parity, direct UI references, storage/action errors and role/outcome labels. Ternary/dynamic contextual keys, grammar and layout require rendered walkthroughs."
+}
