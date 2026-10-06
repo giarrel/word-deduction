@@ -42,3 +42,19 @@ Das widerspricht der Ein-Pointer-Regel: nach konkurrierender Berührung muss die
 ## Laufzeit des Prüfstands
 
 Nach den Schlaf-/Aufwecktests wurden systemweite Verzögerungen sichtbar. Auch die native Android-Einstellungs-App lieferte einen Kaltstart-Timeout und einen Warmstart von 12.472 ms. Die App-Rückkehrmessungen werden daher nicht als isolierte App-Geschwindigkeit oder bestandener U08-Test gewertet. Der eigene Emulator wurde ohne Datenlöschung neu gestartet; danach stimmen gespeicherter Payload und Checksum weiterhin exakt mit der Ausgangsgruppe überein. Rohlogs und Timingversuche bleiben unter `work/android-recovery-playtest/` erhalten. Die Release-Latenzprüfung bleibt offen.
+
+Nach diesem Neustart reagiert die native Kontroll-App wieder in [779 ms](after-reboot-native-control.txt). Zwei warme Rückkehrvorgänge derselben Quick-APK zeigen die vollständig gerenderte sichere Pause spätestens nach **856 ms** und **811 ms**; diese Obergrenzen enthalten Hostbefehle, Aufnahme und bewusst 500 ms Wartezeit. [Messdaten](post-reboot-warm-measurements.json), [Bild 1](post-reboot-warm-1.png), [Bild 2](post-reboot-warm-2.png). Die Activity-Zeiten allein betragen 126/118 ms und werden nicht mit sichtbarer Bedienbarkeit gleichgesetzt. Die beiden beobachteten Rückkehrvorgänge liegen unter dem 3-Sekunden-Ziel, ersetzen aber den Nachtest des vollständigen Releasepakets nicht.
+
+## Vertiefung: tatsächliche Zurück-Geste fehlgeschlagen
+
+Der oben zunächst offene Gestentest ist jetzt ausführbar: Im immersiven Vollbild blendet der erste Randwisch die Systemleisten ein. Ein **zweiter Wisch innerhalb von 200 ms** löst Androids tatsächlichen Back-Pfad aus. Ausführung auf der verdeckten ersten Karte:
+
+```text
+adb -s emulator-5580 shell input touchscreen swipe 2 1250 400 1250 250
+# 200 ms warten
+adb -s emulator-5580 shell input touchscreen swipe 2 1250 400 1250 250
+```
+
+Androids EdgeBackGestureHandler meldet `mAllowGesture=true`; der [Lognachweis](predictive-back-log.txt) zeigt `triggerBack=true` und `FLAG_BACK_GESTURE_ANIMATED` mit CLOSE der Spiel-Activity. Tatsächlich erscheint der [Launcher](21-consecutive-edge-swipes.png), statt der geforderten Pause in der App. Die anschließende Rückkehr meldet COLD und lädt die persistierte Partie wieder. [Gespeicherte Partie](after-predictive-back-session.json). Kein Datenverlust wurde beobachtet; dennoch ist dies ein reproduzierbarer Fehler im System-Zurück-Verhalten, den der erfolgreiche Keyevent-4-Test nicht abdeckt. R06 ist Failed bis zur Korrektur und Wiederholung in Ticket 7.
+
+Ein vorausgehender Versuch mit dem Console-Hardwarekanal `event send` erzeugte keine passenden Touch-MotionEvents und gilt nicht als Gestentest. Der wirksame Gegencheck verwendet die reguläre ADB-Touch-Eingabe; zusätzliche gRPC-Werkzeuge wurden nicht installiert.

@@ -26,7 +26,7 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | R03 | Quick: richtige/falsche Beschuldigung, Stichwahl, wiederholter Gleichstand, Ergebnis | Implementer74e7825, Integration496d446/013087f: 21 Session-/10 PlayMode-Fälle und drei [tatsächliche Android-Partien](android-quick-runtime/report.md), DE/EN | Passed |
 | R04 | Classic: fortlaufende Runden, alle Siege, keine erneute Auswahl Eliminierter | Öffentliche Tests und gerenderter Mehr-Runden-Ablauf | Not run |
 | R05 | White: semantischer Tipp, richtig/falsch, Priorität des Tipps, Wiederaufnahme, kein Wortleck | Grenzfalltests und tatsächlich bediente White-Ansicht | Not run |
-| R06 | Back, Hilfe, korrigierbare Vorauswahl, bestätigter Abbruch und Fortsetzen | Gerenderte Eingaben und Android-Zurück-Geste/-Taste | Not run |
+| R06 | Back, Hilfe, korrigierbare Vorauswahl, bestätigter Abbruch und Fortsetzen | Taste funktioniert; [echte Android-Randgeste](android-interruptions-baseline/report.md) schließt die Activity zum Launcher statt In-App-Pause. Korrektur und Nachtest in Ticket 7 | Failed |
 | R07 | Ergebnis nennt Sieger/Grund/Wörter; direkte Folgepartie ohne Neueingabe | Beide Sprachen und Modi über UI gespielt | Not run |
 
 ## Wortkarte und Bedienung
