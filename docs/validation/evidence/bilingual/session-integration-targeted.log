@@ -1,0 +1,5 @@
+PASS legacy V2 and V3 deals retain their words and seed the shared cycle without rewriting on open
+PASS V3 Classic pending White guesses retain progress and seed history without rewriting on open
+2/2 passed
+PASS all 520 bilingual pairs are dealt once per cycle across restarts and language changes
+1/1 passed

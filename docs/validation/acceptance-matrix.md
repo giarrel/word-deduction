@@ -15,19 +15,19 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | G05 | Jede bestätigte Änderung übersteht Prozessende; laufende Partie wird nicht neu ausgelost | Dateitests jeder Spielphase und Android-Neustart | Not run |
 | G06 | Abgebrochene/fehlgeschlagene Speicherung meldet keinen Erfolg und behält gültigen Zustand | Reproduzierbarer Schreibfehler und unterbrochener Schreibvorgang | Not run |
 | G07 | Hauptdatei beschädigt, Sicherung beschädigt, neues unbekanntes Schema | Öffentliche Recovery-Szenarien; keine stillen Überschreibungen; UI-Nachweis | Not run |
-| G08 | Folgepartie enthält alle aktiven Gruppenmitglieder einschließlich zuvor Eliminierter | Beide Modi vom Ergebnis bis zur nächsten Verteilung | Not run |
+| G08 | Folgepartie enthält alle aktiven Gruppenmitglieder einschließlich zuvor Eliminierter | Quick und Classic: direkte Folgepartien in [Quick](android-quick-runtime/report.md) und [Classic](android-classic-runtime/report.md), einschließlich vorheriger Eliminierter | Passed |
 
 ## Spielregeln
 
 | ID | Anforderung / Abnahmeumfang | Erforderliche Evidenz | Status |
 |---|---|---|---|
-| R01 | Quick 3–20 und Classic 4–20 mit exakter automatischer Rollenformel und White-Präferenz | Deterministische Fixtures aller Gruppengrößen und Regeln | Not run |
-| R02 | Zuteilung/Startperson ohne feste Sitzrotation; Undercover erfährt seine Rolle nicht | Prüfung des Zufallswegs und öffentlicher Projektionen | Not run |
+| R01 | Quick 3–20 und Classic 4–20 mit exakter automatischer Rollenformel und White-Präferenz | Classic9187444/Integration256678d: 29 Session-Szenarien für alle 4–20-Gruppen, Quick unverändert; Android 8 sowie 4↔5 mit gespeicherter White-Präferenz | Passed |
+| R02 | Zuteilung/Startperson ohne feste Sitzrotation; Undercover erfährt seine Rolle nicht | Öffentliche Session-Fixtures für alle Rollen/Startpersonen und Zufallspfad; [native Classic-Karten](android-classic-runtime/report.md) zeigen Undercover nur das Wort | Passed |
 | R03 | Quick: richtige/falsche Beschuldigung, Stichwahl, wiederholter Gleichstand, Ergebnis | Implementer74e7825, Integration496d446/013087f: 21 Session-/10 PlayMode-Fälle und drei [tatsächliche Android-Partien](android-quick-runtime/report.md), DE/EN | Passed |
-| R04 | Classic: fortlaufende Runden, alle Siege, keine erneute Auswahl Eliminierter | Öffentliche Tests und gerenderter Mehr-Runden-Ablauf | Not run |
-| R05 | White: semantischer Tipp, richtig/falsch, Priorität des Tipps, Wiederaufnahme, kein Wortleck | Grenzfalltests und tatsächlich bediente White-Ansicht | Not run |
+| R04 | Classic: fortlaufende Runden, alle Siege, keine erneute Auswahl Eliminierter | 29 Session-Szenarien, 14 gerenderte Tests, [drei tatsächliche Android-Classic-Partien](android-classic-runtime/report.md) mit fortlaufenden Runden und ausgeschlossenen Eliminierten | Passed |
+| R05 | White: semantischer Tipp, richtig/falsch, Priorität des Tipps, Wiederaufnahme, kein Wortleck | White korrekt/falsch und Priorität: Session/Editor plus [Android-Neustart im Rateversuch und White als letzter Gegner](android-classic-runtime/report.md), Zielwort erst im Ergebnis | Passed |
 | R06 | Back, Hilfe, korrigierbare Vorauswahl, bestätigter Abbruch und Fortsetzen | Taste funktioniert; [echte Android-Randgeste](android-interruptions-baseline/report.md) schließt die Activity zum Launcher statt In-App-Pause. Korrektur und Nachtest in Ticket 7 | Failed |
-| R07 | Ergebnis nennt Sieger/Grund/Wörter; direkte Folgepartie ohne Neueingabe | Beide Sprachen und Modi über UI gespielt | Not run |
+| R07 | Ergebnis nennt Sieger/Grund/Wörter; direkte Folgepartie ohne Neueingabe | Beide Modi in DE/EN nativ gespielt; [Quick](android-quick-runtime/report.md) und [Classic](android-classic-runtime/report.md) mit Wörtern/Rollen und einer Aktion zur Folgepartie | Passed |
 
 ## Wortkarte und Bedienung
 
