@@ -1,0 +1,2 @@
+FAIL legacy V4 names survive stricter new-entry policy in groups and live matches: legacy snapshot opens normally
+0/1 passed

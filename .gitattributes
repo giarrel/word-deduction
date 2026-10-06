@@ -1,3 +1,7 @@
 # The frozen catalog hash and generated-source check are byte-for-byte contracts.
 /content/word-pairs.json text eol=lf
 /game/Assets/WordDeduction/Session/WordCatalog.cs text eol=lf
+third-party/unicode-17.0.0/* text eol=lf
+game/Assets/Resources/Unicode-LICENSE.txt text eol=lf
+# Preserve the official conformance fixture byte-for-byte, including its two trailing spaces.
+third-party/unicode-17.0.0/GraphemeBreakTest.txt -whitespace

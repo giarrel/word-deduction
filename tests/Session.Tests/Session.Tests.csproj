@@ -6,4 +6,6 @@
   <ItemGroup><Compile Include="../../game/Assets/WordDeduction/Session/**/*.cs" Link="Session/%(Filename)%(Extension)" /></ItemGroup>
   <ItemGroup><Reference Include="$(NewtonsoftJsonAssembly)" /></ItemGroup>
   <ItemGroup><Content Include="../../content/word-pairs.json" Link="word-pairs.json" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
+  <ItemGroup><Content Include="../../third-party/unicode-17.0.0/GraphemeBreakTest.txt" Link="GraphemeBreakTest.txt" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
+  <ItemGroup><Content Include="Fixtures/*.json" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
 </Project>
