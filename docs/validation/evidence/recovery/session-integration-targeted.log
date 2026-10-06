@@ -1,0 +1,10 @@
+PASS every Classic phase including both White judgments preserves its deal and history across interrupted saves
+1/1 passed
+PASS every Quick phase restores the same confirmed deal without drawing or exposing a card
+1/1 passed
+PASS legacy V2 and V3 deals retain their words and seed the shared cycle without rewriting on open
+PASS V3 Classic pending White guesses retain progress and seed history without rewriting on open
+2/2 passed
+PASS newer save schemas are never rolled back or overwritten
+PASS a newer backup cannot be overwritten by an older readable primary
+2/2 passed
