@@ -11,7 +11,7 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | G01 | Namen hinzufügen, in derselben Ansicht weitere Namen eingeben, stabile IDs nach Neustart | Foundation: echte Dateien, Unity-UI und Android API36 mit ARM64-Übersetzung; mehrere APK-Updates und Force-stop | Passed |
 | G02 | Umbenennen, Pause/Aktivieren, Entfernen/Undo ohne Verlust anderer Namen oder Einstellungen | Foundation: 13 Session-Fälle und Android-Iterationen 2–5; sieben Personen, DE/Classic, ursprüngliche IDs und Undo geprüft | Passed |
 | G03 | Doppelte Namen bleiben eindeutig, auch bei bereits eingegebenen Suffixen und nach Bearbeitung | Konkrete kollidierende Namensfixtures; sichtbare Anzeige | Not run |
-| G04 | Unicode-Grenzen, Leer-/Steuerzeichen, 20 aktive und 40 gespeicherte Personen | Grenzfalltests; verständliche DE/EN-Rückmeldungen | Not run |
+| G04 | Unicode-Grenzen, Leer-/Steuerzeichen, 20 aktive und 40 gespeicherte Personen | Session-Grenzfälle bestanden; [Android-Schriftprobe](group-layout-probes/report.md) zeigt akzeptierte CJK-/arabische/indische Namen und Emoji leer. Darstellung vor Release korrigieren | Failed |
 | G05 | Jede bestätigte Änderung übersteht Prozessende; laufende Partie wird nicht neu ausgelost | Dateitests jeder Spielphase und Android-Neustart | Not run |
 | G06 | Abgebrochene/fehlgeschlagene Speicherung meldet keinen Erfolg und behält gültigen Zustand | Reproduzierbarer Schreibfehler und unterbrochener Schreibvorgang | Not run |
 | G07 | Hauptdatei beschädigt, Sicherung beschädigt, neues unbekanntes Schema | Öffentliche Recovery-Szenarien; keine stillen Überschreibungen; UI-Nachweis | Not run |
@@ -38,7 +38,7 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | U03 | Pointer-Abbruch/Capture-Verlust/zweiter Finger/Doppeltipp überspringen keine Person | Reproduzierbare UI-Szenarien; Besitzerwechsel bleibt verdeckt | Not run |
 | U04 | Fokus/Pause/Resume/Prozessende verbergen Geheimnisse; Taskvorschau bleibt geschützt | Editor-Lifecycle plus installierte Android-App und Taskvorschau | Not run |
 | U05 | Tastatur mit Umlauten, Einfügen, Rücktaste und Done; Fokusverlust verliert keinen Entwurf | Android-Namenseingabe; dokumentierte Tastatur/OS-Version | Not run |
-| U06 | Lesbarkeit, Kontrast, Touchflächen und Systemleisten bei kleinen/hohen Displays und langen Texten | Kleine Android-Ansicht passt; 48 Unity-Referenzeinheiten ergeben bei 360 dp Breite nur ca. 44 dp. Anpassung und vollständiger Nachtest in Ticket 8 | Failed |
+| U06 | Lesbarkeit, Kontrast, Touchflächen und Systemleisten bei kleinen/hohen Displays und langen Texten | [Kleine Android-Ansicht und Schriftprobe](group-layout-probes/report.md): 48 Unity-Referenzeinheiten ergeben bei 360 dp Breite nur ca. 44 dp; mehrere Schriftsysteme bleiben leer. Anpassung und Nachtest in Ticket 8 | Failed |
 | U07 | Konsistente runde Gestaltung, klare Hauptaktionen, angenehme Rückbewegung, reduzierte Bewegung | Betrachtete Bilder/Sequenzen und dokumentierte Korrekturschleife | Not run |
 | U08 | Kein unnötiger Bildschirm zwischen Ergebnis und neuer Verteilung; Warmstart-Ziel geprüft | Gezählte Aktionen und Zeitmessung auf benannter Laufzeit | Not run |
 | U09 | Barrierearme Alternativbedienung und keine automatisch offengelegten Geheimlabels | Gerenderte Semantik; TalkBack nur bei tatsächlich ausgeführtem Gerätetest behaupten | Not run |
