@@ -20,7 +20,8 @@
 .mark-front { width: 62px; height: 80px; border-radius: 18px; background-color: #6a48c8; rotate: 10deg; align-items: center; justify-content: center; margin-left: 18px; margin-top: 16px; }
 .mark-question { font-size: 48px; color: white; -unity-font-style: bold; -unity-text-align: middle-center; }
 .card-caption { color: #503093; font-size: 16px; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; }
-.secret-word { font-size: 32px; color: #38215e; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; }
+.secret-word { font-size: 32px; width: 100%; max-width: 100%; margin: 0; padding: 0; color: #38215e; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; }
+.secret-word.whole-word { white-space: nowrap; }
 .secret-word.white-private { font-size: 20px; }
 .secret-card.revealed { background-color: #e0ecdf; border-color: #b5cdb3; }
 .card-instruction { font-size: 14px; white-space: normal; color: var(--muted); -unity-text-align: middle-center; margin: 8px 0; }

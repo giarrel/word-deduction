@@ -1,0 +1,109 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var r=UnityEngine.Object.FindFirstObjectByType<WordDeduction.UI.GroupScreen>().GetComponent<UnityEngine.UIElements.UIDocument>().rootVisualElement; var w=UnityEngine.UIElements.UQueryExtensions.Q<UnityEngine.UIElements.Label>(r,\"secretWord\");var data=Newtonsoft.Json.Linq.JArray.Parse(System.IO.File.ReadAllText(\"../content/word-pairs.json\"));var tokens=new System.Collections.Generic.Dictionary<string,float>();foreach(var item in data) foreach(var lang in new[]{\"de\",\"en\"}) foreach(var term in item[lang]) foreach(var token in term.ToString().Split((char)32)) tokens[token]=w.MeasureTextSize(token,0,UnityEngine.UIElements.VisualElement.MeasureMode.Undefined,0,UnityEngine.UIElements.VisualElement.MeasureMode.Undefined).x;var sorted=System.Linq.Enumerable.Take(System.Linq.Enumerable.OrderByDescending(tokens,x=>x.Value),20);return new {font=w.resolvedStyle.fontSize,available=w.parent.contentRect.width,tokens=tokens.Count,widest=sorted};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "font": 22,
+        "available": 248,
+        "tokens": 2127,
+        "widest": [
+          {
+            "Key": "Nuss-Nougat-Creme",
+            "Value": 244
+          },
+          {
+            "Key": "Blutdruckmessgerät",
+            "Value": 237
+          },
+          {
+            "Key": "Schokoladenkuchen",
+            "Value": 236
+          },
+          {
+            "Key": "Schraubenschlüssel",
+            "Value": 236
+          },
+          {
+            "Key": "Fieberthermometer",
+            "Value": 228
+          },
+          {
+            "Key": "Hähnchenschenkel",
+            "Value": 222
+          },
+          {
+            "Key": "Schlittschuhlaufen",
+            "Value": 220
+          },
+          {
+            "Key": "Rollkragenpullover",
+            "Value": 219
+          },
+          {
+            "Key": "Hochdruckreiniger",
+            "Value": 218
+          },
+          {
+            "Key": "Bewegungsmelder",
+            "Value": 217
+          },
+          {
+            "Key": "Arbeitshandschuh",
+            "Value": 214
+          },
+          {
+            "Key": "Meerschweinchen",
+            "Value": 213
+          },
+          {
+            "Key": "Hula-Hoop-Reifen",
+            "Value": 213
+          },
+          {
+            "Key": "Kartoffelstampfer",
+            "Value": 209
+          },
+          {
+            "Key": "Garderobenhaken",
+            "Value": 209
+          },
+          {
+            "Key": "Sonnenuntergang",
+            "Value": 208
+          },
+          {
+            "Key": "Sofortbildkamera",
+            "Value": 205
+          },
+          {
+            "Key": "Streifenhörnchen",
+            "Value": 204
+          },
+          {
+            "Key": "Schraubendreher",
+            "Value": 204
+          },
+          {
+            "Key": "Navigationsgerät",
+            "Value": 202
+          }
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\final-corrections\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

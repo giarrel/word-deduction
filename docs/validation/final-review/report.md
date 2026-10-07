@@ -1,6 +1,6 @@
 # Final independent review and correction evidence
 
-7 October 2026. Independent review axes are preserved separately below; coordinator native findings follow. Corrections use the agreed public Session/Open and rendered-app seams. Native code3 acceptance and artifact inspection remain pending until their actual results are linked.
+7 October 2026. Independent review axes are preserved separately below; coordinator native findings follow. Corrections use the agreed public Session/Open and rendered-app seams. Code3 independently verifies the original corrections; the subsequent native word-fit finding requires code4.
 
 ## Standards
 
@@ -41,4 +41,33 @@ The [full rendered run](full-rendered-green.json) passes **30/30 tests in85.98s*
 
 The implementer personally opened and inspected all **eight360×640 Editor game-view captures** in [images](images): DE/EN empty group, Quick2, Classic3 with White preference off and retained on, all150% text with40/24dp top/bottom insets. Missing-person reasons and complete empty instructions are visible; controls remain separate. The German Classic group uses the scrollable player list at this compact size. These are rendered fixtures built through public Session actions, not Android screenshots or physical-device proof. An earlier offscreen RenderTexture capture attempt produced black images, was discarded from evidence, and is not used as a visual pass.
 
-Build artifacts and exact DEX checks are pending; the packaged DEX rather than a source-config assertion is the privacy gate. Code2 evidence remains historical. Physical-device behavior, real-group enjoyment and production Play/signing acceptance remain separate limitations.
+## Independent verification of the original corrections
+
+The [Standards verifier](standards-verification.md) and [Spec verifier](spec-verification.md) reviewed pinned correction source `b86f19564b1d4c2fa31f02d7872dca7e835d881a` independently. Both reran their unchanged original public-Session reproducers and found the accepted-name defect fixed, with zero remaining scoped findings. [Standards reproduction](standards-reproduction-green.txt) and [Spec reproduction](spec-reproduction-green.txt) preserve their actual results. These reviews precede the later card-fit correction.
+
+## Code3 build and packaged validation
+
+Both artifacts were built from clean source `b86f19564b1d4c2fa31f02d7872dca7e835d881a`, package-lock SHA256 `da98f245e8c511d47699dc883e521eff5176800341117fcfe8f77fe9dcfb342d`, Unity6000.3.25f1, ARM64/IL2CPP, Android26–36, version1.0.0/code3. [APK build](code3-static/apk-build-summary.json) and [AAB build](code3-static/aab-build-summary.json) each succeeded with zero errors and two known warnings: intentionally disabled runtime Pipeline configuration, and the existing obsolete `PreventDefault` call in secret input handling. Their durations were304.89s and261.74s respectively.
+
+| Artifact | Bytes | SHA256 |
+|---|---:|---|
+| Local APK | 37,422,994 | `50e18dadc4764a807f2f4109d6ddda193dd471c7f91ff3cd4f810c1bbff532e3` |
+| Local AAB | 37,779,946 | `4301c5e3be4b44ecde909c5f0c9df133431a68f7d7ba3b8628d97d9b5c1b6bce` |
+
+The [direct APK inspection](code3-static/apk-inspection.json) ran14 commands successfully. The [AAB inspection](code3-static/aab-inspection.json) ran44 commands across four generated packages successfully, including bundle validation, local signing, direct/universal/base DEX checks and native-bearing split inspection. Actual [GameTextInput DEX](code3-static/input-logging.json) retains all eight classes and contains zero affected verbose/debug/info log calls, versus32 in the rejected code2 package. Native real keyboard entry, code2→3 saved-state preservation, and enlarged-text screens subsequently passed in the coordinator's [code3 report](../android-release/native-code3/report.md).
+
+The [stripped managed assemblies](code3-static/managed-stripped.txt) contain no test or Pipeline assemblies. Packaged manifests contain no network permissions and preserve backup exclusions; boot.config contains no PlayerConnection profiler setup or debugger wait. All six ARM64 libraries' LOAD segments align to16KB and no rounded-RELRO writable-byte intersection was found. Scalar RELRO end residues remain explicitly reported: libc++12288, libgame4096, libil2cpp8192, libmain8192, libswappy4096, libunity4096. These scalar results are not relabeled as alignment passes; translated emulator execution and static layout do not establish physical ARM64/16KB-kernel or Play acceptance.
+
+Both packages use the local Android debug certificate, SHA256 `4a0d4929acea4c086bc5534bf462eebcd9d866f31c1bced10b400412117be926`. APK v2 verification passes; AAB self-signed-certificate warnings are expected for this local candidate. A production upload key and Play submission remain owner actions. The artifacts and full raw inspection files are retained under the correction worktree's ignored `artifacts` directory. Code2/code3 evidence remains historical; real-group enjoyment remains unverified.
+
+## Subsequent native card-fit correction
+
+The coordinator's actual code3 capture showed **Sprachnachricht** split into “Sprachnachri” and “cht” at360×640dp and normal text size. The implementer inspected that image and reproduced the defect through an ordinary public Session deal in the real rendered app. This is a new visual finding after the original independent reviews, and requires another candidate.
+
+The secret label now has an explicit usable width. It measures each complete token with the production font and selects a size from22–32dp; single terms stay on one line and phrases wrap between words. No catalog text changes, inserted separators or delayed reveal callbacks are introduced. `Conceal()` still clears the complete secret synchronously before animation/capture callbacks. The white-role instruction retains its existing presentation.
+
+The [initial rendered red](word-fit-red.json) measures Sprachnachricht at282px against227px of label content. A separate [intermediate inset red](word-fit-inset-red.json) preserves the discovered half-pixel mismatch caused by inherited Unity Label spacing; explicit label width and zero decorative label insets resolve it. The [final full rendered suite](full-rendered-word-fit-green.json) passes **30/30 tests in144.16s**, zero skips. The strengthened public-deal regression checks nine real catalog terms at normal and150% text size: Sprachnachricht, Nuss-Nougat-Creme, Chocolate hazelnut spread, Pedestrian traffic light, Blood pressure monitor, Rollkragenpullover, Blutdruckmessgerät, Schlittschuhlaufen and Schraubenschlüssel. It checks whole-token width, minimum22dp readability, card bounds, visible Next action and immediate clearing on release, rather than accepting only outer label bounds.
+
+An additional [actual-font catalog measurement](catalog-token-widths.json) checks all2,127 distinct DE/EN tokens at22dp. The widest, Nuss-Nougat-Creme, measures244px against248px of normal small-card content. This supports the floor for the current built-in catalog; future catalog changes must preserve this constraint or deliberately extend the presentation policy.
+
+The implementer personally opened all **ten actual Editor game-view images** in [word-fit-images](word-fit-images): four long-term fixtures at100/150% plus both Sprachnachricht released states. The German compounds stay whole, the English phrase uses three complete words on separate lines, controls remain visible, and the covered state shows no secret. These are public Session fixtures rendered at360×640 with the production font and UI; enlarged captures include40/24dp insets. Native code4 confirmation remains the coordinator's separate gate.

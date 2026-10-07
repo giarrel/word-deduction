@@ -1,0 +1,7 @@
+long-combining: elements=1; nameUtf16=201; displayUtf16=201; add=True; groupRestores=True; start=True; restoredSameMatch=True; notice=<none>; blocked=False
+long-combining after another confirmed save: advance=True; restoredMatch=True; restoredPlayers=3; notice=; blocked=False
+19-family-emoji: elements=19; nameUtf16=209; displayUtf16=209; add=True; groupRestores=True; start=True; restoredSameMatch=True; notice=<none>; blocked=False
+19-family-emoji after another confirmed save: advance=True; restoredMatch=True; restoredPlayers=3; notice=; blocked=False
+18-family-control: elements=18; nameUtf16=198; displayUtf16=198; add=True; groupRestores=True; start=True; restoredSameMatch=True; notice=<none>; blocked=False
+18-family-duplicate: elements=18; nameUtf16=198; displayUtf16=202; add=True; groupRestores=True; start=True; restoredSameMatch=True; notice=<none>; blocked=False
+18-family-duplicate after another confirmed save: advance=True; restoredMatch=True; restoredPlayers=3; notice=; blocked=False
