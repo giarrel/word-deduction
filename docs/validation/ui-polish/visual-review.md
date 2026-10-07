@@ -2,7 +2,7 @@
 
 The images are real Unity Game view captures after rendered button, card, selection and scrolling input. `PolishEvidence` uses temporary disk Sessions and deterministic fixtures; it does not change the user's saved group. The viewport is one UI unit per pixel at 360×640 and 430×932, corresponding to the logical Android density layout. Native safe areas, OS text settings, keyboard and TalkBack are verified separately on Android.
 
-All 124 images below were opened and visually inspected. The first 76 show source `b4551b2`; follow-ups 20–25 and recovery show the subsequent compact spacing, shorter copy, private-card hint and recovery improvements. They do not claim to depict the later large-text decoration fix. The largest group has 40 saved and 20 active players, with long Latin, emoji, CJK, Arabic and Indic names. Lists were also scrolled to their last entries. Small-screen help and results deliberately scroll; their bottom action stays reachable.
+All 130 images below were opened and visually inspected. The first 76 show source `b4551b2`; follow-ups 20–25 and recovery show the subsequent compact spacing, shorter copy, private-card hint and recovery improvements. They do not claim to depict the later large-text decoration fix. The largest group has 40 saved and 20 active players, with long Latin, emoji, CJK, Arabic and Indic names. Lists were also scrolled to their last entries. Small-screen help and results deliberately scroll; their bottom action stays reachable.
 
 | View | Small DE | Small EN | Tall DE | Tall EN |
 | --- | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ All 124 images below were opened and visually inspected. The first 76 show sourc
 ## Corrections from review
 
 - A lifted small-phone card crossed the pass-phone instruction. Its redundant instruction now hides during a private reveal, while the owner's name stays visible. Secret text still clears synchronously on release.
-- At capacity, disabled Add had no explanation. The existing edit hint now tells the group that 40 names are saved and someone must be removed before adding another.
+- At capacity, disabled Add had no explanation. The edit hint now states that 40 names are saved and the group is full. A final selector correction also keeps that explanation visible at large text.
 - Compact ready-group spacing removes redundant saved/ready copy and excess gaps; controls retain their 48dp minimum.
 - Blocked recovery showed unrelated disabled game controls. It now keeps the message and applicable recovery action visible without those controls. Backup recovery continues to show the recovered group normally.
 - A reused temporary Session fixture retained a previous notice in `Initialize`; explicit reinitialization now clears transient UI state, and all affected views were recaptured.
@@ -66,3 +66,16 @@ All eight additional group/long-owner views were opened and inspected. The long 
 | --- | --- | --- | --- | --- |
 | Collision group | [View](images/small-german-26-collision-group.png) | [View](images/small-english-26-collision-group.png) | [View](images/tall-german-26-collision-group.png) | [View](images/tall-english-26-collision-group.png) |
 | Long owner | [View](images/small-german-27-collision-owner.png) | [View](images/small-english-27-collision-owner.png) | [View](images/tall-german-27-collision-owner.png) | [View](images/tall-english-27-collision-owner.png) |
+## Final enlarged owner correction
+
+The final six views reproduce 150% public text at 360×640 with 40-unit top and 24-unit bottom insets. The first two are red evidence: the long owner pushes content into the toolbar. The four corrected views show source `7404d17`, after reducing redundant large-text instructions, reserving card space and limiting the decorative lift to that space.
+
+Both identical 24-character `MMMMMMMMMMMMMMMMMMMMMMMM` names were added through public Session commands; the actual rendered Start action creates the match and its generated `· 1` discriminator. The full owner wraps above the covered and revealed card. Hold and Next remain separated and reachable; release still clears the secret synchronously. These Editor fixtures reproduce text geometry, while the coordinator separately tests the actual Android OS preference. Both committed V4 generations are exported under ignored `artifacts/ui-polish/final-native-long-owner/` for exact native replay.
+
+All six images were opened and inspected. No additional broad matrix was repeated after this bounded correction.
+
+| View | Small DE | Small EN |
+| --- | --- | --- |
+| Red: enlarged long owner | [View](images/small-german-28-large-owner-probe.png) | [View](images/small-english-28-large-owner-probe.png) |
+| Corrected, covered | [View](images/small-german-29-large-owner-fixed.png) | [View](images/small-english-29-large-owner-fixed.png) |
+| Corrected, actually held | [View](images/small-german-30-large-owner-held.png) | [View](images/small-english-30-large-owner-held.png) |
