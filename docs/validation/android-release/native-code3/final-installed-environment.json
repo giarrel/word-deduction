@@ -1,0 +1,14 @@
+{
+  "versionCode": "3",
+  "minSdk": "26",
+  "targetSdk": "36",
+  "flags": "HAS_CODE ALLOW_CLEAR_USER_DATA",
+  "installed_apk_sha256": "50e18dadc4764a807f2f4109d6ddda193dd471c7f91ff3cd4f810c1bbff532e3",
+  "page_size": "16384",
+  "linker_compat": "false",
+  "pm_compat_disabled": "true",
+  "airplane_mode": "1",
+  "default_network": "Active default network: none",
+  "display": "Physical size: 1080x1920",
+  "density": "Physical density: 480"
+}

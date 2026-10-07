@@ -1,0 +1,32 @@
+{
+  "label": "code3-group-before-word-fix",
+  "files": {
+    "session.json": "ee759c858b5fea35067f20b8c973e8e385c8dad5f2e064a9e168a4fd90ea5274",
+    "session.previous.json": "0a04f17dc55e27f11b225cf6d9eb15206da51d66206ac90fccd11f9cc3ed8bab"
+  },
+  "match": null,
+  "players": [
+    {
+      "Id": "629c2bf4dad049069a586c1b8ba62bdb",
+      "Name": "Nora",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "8f5eaa34a4ea4d1e85e2ab2a146ffb27",
+      "Name": "Luca",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "102486d4b2444276b2a55ae18206484a",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": []
+}
