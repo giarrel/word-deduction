@@ -36,6 +36,8 @@ Release entrypoints force and restore development/debug/profiler/deep-profiling/
 
 The final inspector completed **13 APK commands** and **42 AAB/delivery commands**, each with exit code0. Full argument vectors, file hashes and all ELF program headers are recorded in [APK inspection](inspection.json) and [AAB inspection](aab-inspection.json); adjacent text files retain stdout/stderr. The inspector uses the installed JDK explicitly. `keytool -printcert -jarfile <exact.aab>` additionally records the [public AAB certificate](aab-certificate.txt).
 
+Committed text exports normalize line endings and trim trailing whitespace from tool output; original unmodified captures remain in the ignored artifact inspection directories.
+
 - APK and AAB base/universal manifests have no INTERNET/ACCESS_NETWORK_STATE or camera/microphone/contacts/location/storage runtime permissions. The sole receiver permission is the AndroidX package-specific signature permission. Release `debuggable` is absent. The coordinator independently checks installed nondebuggability.
 - `allowBackup=false`, predictive Back enabled, `extractNativeLibs=true`. Actual renamed compiled backup resources were resolved from the resource table, then read: file-domain `word-deduction` is excluded from legacy backup, modern cloud backup and device transfer. The same backup checks pass in bundle-derived universal/base packages.
 - APK and AAB boot.config contain no PlayerConnection or managed-debugger setting; native debugger wait is0. Build manifests/version/SDK/ABI agree with the stated identity.

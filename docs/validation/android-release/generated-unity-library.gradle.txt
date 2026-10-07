@@ -70,4 +70,3 @@ android.externalNativeBuild {
 android.buildFeatures {
     prefab true
 }
-

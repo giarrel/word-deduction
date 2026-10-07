@@ -3538,7 +3538,7 @@ s      56356 Thu Jan 01 01:01:02 CET 1981 META-INF/MANIFEST.MF
       [Invalid certificate chain: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]
 
 
-  s = signature was verified 
+  s = signature was verified
   m = entry is listed in manifest
   k = at least one certificate was found in keystore
 
@@ -3548,7 +3548,7 @@ s      56356 Thu Jan 01 01:01:02 CET 1981 META-INF/MANIFEST.MF
 
 jar verified.
 
-Warning: 
+Warning:
 This jar contains entries whose certificate chain is invalid. Reason: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
 This jar contains entries whose signer certificate is self-signed.
 This jar contains signatures that do not include a timestamp. Without a timestamp, users may not be able to validate this jar after any of the signer certificates expire (as early as 2056-09-19).
