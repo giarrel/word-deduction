@@ -1,5 +1,5 @@
 param(
-    [ValidateSet('DevelopmentApk','ReleaseApk','ReleaseBundle')]
+    [ValidateSet('DevelopmentApk','ReleaseApk','ReleaseBundle','ProductionApk','ProductionBundle')]
     [string]$Build = 'DevelopmentApk'
 )
 $ErrorActionPreference = 'Stop'
