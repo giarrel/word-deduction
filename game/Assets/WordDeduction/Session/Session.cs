@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json;
-using System.Globalization;
 using System.Text;
 
 namespace WordDeduction
@@ -128,21 +127,25 @@ namespace WordDeduction
             state = next;
             return new CommandResult { Success = true };
         }
-        private static string NormalizeName(string name)
+        private static string NormalizeName(string name, bool existing = false)
         {
             if (string.IsNullOrWhiteSpace(name)) return null;
-            try { name = name.Trim().Normalize(NormalizationForm.FormC); }
+            try { NameText.EnsureWellFormed(name); name = name.Trim().Normalize(NormalizationForm.FormC); }
             catch (ArgumentException) { return null; }
             if (name.Any(char.IsControl)) return null;
-            var elements = StringInfo.ParseCombiningCharacters(name);
-            return elements.Length >= 1 && elements.Length <= 24 ? name : null;
+            // Saved names were accepted under earlier Unicode/visibility policies. Preserve them
+            // structurally; new adds and renames alone use the current visible-name and length rules.
+            if (existing) return name;
+            if (name.Contains("\u2028") || name.Contains("\u2029") || !NameText.HasVisibleBase(name)) return null;
+            int elements = NameText.ElementCount(name);
+            return elements >= 1 && elements <= 24 ? name : null;
         }
         internal static bool ValidSnapshot(SessionState value)
         {
             if (value == null || value.Players == null || value.Players.Count > 40 || value.Players.Count(p => p != null && p.Active) > 20 ||
                 !Enum.IsDefined(typeof(Language),value.Language) || !Enum.IsDefined(typeof(GameMode),value.Mode) || value.NextNumber < 1) return false;
             var all = value.Removed == null ? value.Players.ToArray() : value.Players.Concat(new[] { value.Removed }).ToArray();
-            if (all.Any(p => p == null || !Guid.TryParseExact(p.Id,"N",out _) || string.IsNullOrEmpty(p.Name) || NormalizeName(p.Name) != p.Name || p.Number < 1 || p.Number >= value.NextNumber)) return false;
+            if (all.Any(p => p == null || !Guid.TryParseExact(p.Id,"N",out _) || string.IsNullOrEmpty(p.Name) || NormalizeName(p.Name, existing: true) != p.Name || p.Number < 1 || p.Number >= value.NextNumber)) return false;
             if (all.Select(p=>p.Id).Distinct().Count() != all.Length || all.Select(p=>p.Number).Distinct().Count() != all.Length) return false;
             if (value.Removed != null && (value.RemovedIndex < 0 || value.RemovedIndex > 39)) return false;
             if (value.Players.Select(p => p.Distinguished ? p.Name + " · " + p.Number : p.Name).Distinct(StringComparer.OrdinalIgnoreCase).Count() != value.Players.Count) return false;

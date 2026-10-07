@@ -1,0 +1,2 @@
+PASS legacy V4 names survive stricter new-entry policy in groups and live matches
+1/1 passed

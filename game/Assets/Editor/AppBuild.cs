@@ -24,6 +24,8 @@ namespace WordDeduction.Editor
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevel36;
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
             PlayerSettings.Android.predictiveBackSupport = true;
+            PlayerSettings.Android.startInFullscreen = false;
+            PlayerSettings.SplashScreen.show = false;
             PlayerSettings.SetScriptingBackend(NamedBuildTarget.Android, ScriptingImplementation.IL2CPP);
             PlayerSettings.SetManagedStrippingLevel(NamedBuildTarget.Android, ManagedStrippingLevel.Minimal);
             PlayerSettings.defaultInterfaceOrientation = UIOrientation.Portrait;
@@ -35,6 +37,9 @@ namespace WordDeduction.Editor
             PlayerSettings.SetGraphicsAPIs(BuildTarget.Android, new[] { GraphicsDeviceType.OpenGLES3 });
             PlayerSettings.colorSpace = ColorSpace.Gamma;
             QualitySettings.vSyncCount = 0;
+            var icon = AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/WordDeduction/UI/Artwork/AppIcon.png");
+            if (icon != null) PlayerSettings.SetIcons(NamedBuildTarget.Unknown,new[] { icon },IconKind.Any);
+            EnsureEmojiFont();
             AssetDatabase.SaveAssets();
         }
         public static void CreateScene()
@@ -73,6 +78,28 @@ namespace WordDeduction.Editor
             AssetDatabase.DeleteAsset("Assets/InputSystem_Actions.inputactions");
             AssetDatabase.SaveAssets();
         }
+        public static void EnsureEmojiFont()
+        {
+            const string folder = "Assets/WordDeduction/UI/";
+            var source = AssetDatabase.LoadAssetAtPath<Font>(folder + "Fonts/NotoColorEmoji.ttf");
+            if (source == null) throw new InvalidOperationException("The bundled emoji font is missing.");
+            var emoji = AssetDatabase.LoadAssetAtPath<FontAsset>(folder + "Emoji.asset");
+            if (emoji == null)
+            {
+                emoji = FontAsset.CreateFontAsset(source,109,0,UnityEngine.TextCore.LowLevel.GlyphRenderMode.COLOR,1024,1024,AtlasPopulationMode.Dynamic,true);
+                emoji.name = "Noto Color Emoji";
+                AssetDatabase.CreateAsset(emoji,folder + "Emoji.asset");
+                foreach (var texture in emoji.atlasTextures) AssetDatabase.AddObjectToAsset(texture,emoji);
+                AssetDatabase.AddObjectToAsset(emoji.material,emoji);
+            }
+            var text = AssetDatabase.LoadAssetAtPath<PanelTextSettings>(folder + "Text.asset");
+            if (text != null)
+            {
+                text.emojiFallbackTextAssets = new System.Collections.Generic.List<UnityEngine.TextCore.Text.TextAsset> { emoji };
+                EditorUtility.SetDirty(text);
+            }
+            AssetDatabase.SaveAssets();
+        }
         public static void DevelopmentApk() => Build(false,true);
         public static void ReleaseApk() => Build(false,false);
         public static void ReleaseBundle() => Build(true,false);
@@ -92,7 +119,7 @@ namespace WordDeduction.Editor
                 EditorUserBuildSettings.buildAppBundle = bundle;
                 var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
                     scenes = new[] { "Assets/WordDeduction/Scenes/App.unity" }, locationPathName = path, target = BuildTarget.Android,
-                    options = BuildOptions.CleanBuildCache | BuildOptions.DetailedBuildReport | (development ? BuildOptions.Development : BuildOptions.None)
+                    options = BuildOptions.DetailedBuildReport | (development ? BuildOptions.Development : BuildOptions.CleanBuildCache)
                 });
                 File.WriteAllText(Path.Combine(output,"build-summary.json"), JsonUtility.ToJson(new BuildSummaryData {
                     result = report.summary.result.ToString(), errors = report.summary.totalErrors, warnings = report.summary.totalWarnings,

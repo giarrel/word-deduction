@@ -10,7 +10,8 @@ namespace WordDeduction.UI
         readonly Session session;
         readonly string owner;
         readonly VisualElement root, drag, hold, face;
-        readonly Label word, symbol, caption;
+        readonly Label word, caption;
+        readonly VisualElement symbol;
         readonly Button next;
         readonly HashSet<int> contacts;
         int pointer = -1;
@@ -20,7 +21,7 @@ namespace WordDeduction.UI
         bool holding, disposed;
         bool CardReady => pointer < 0 && lift <= 0.01f && session.Match != null && session.Match.CanAdvance;
         public bool CanAdvance => contacts.Count == 0 && CardReady;
-        public SecretCard(Session session, string owner, HashSet<int> contacts, VisualElement root, VisualElement drag, VisualElement hold, VisualElement face, Label word, Label symbol, Label caption, Button next)
+        public SecretCard(Session session, string owner, HashSet<int> contacts, VisualElement root, VisualElement drag, VisualElement hold, VisualElement face, Label word, VisualElement symbol, Label caption, Button next)
         {
             this.contacts = contacts;
             this.session = session; this.owner = owner; this.root = root; this.drag = drag; this.hold = hold; this.face = face; this.word = word; this.symbol = symbol; this.caption = caption; this.next = next;
@@ -63,13 +64,15 @@ namespace WordDeduction.UI
             var text = session.RevealWord(owner);
             if (text == null) return;
             bool white = text == "Mr. White";
+            root.AddToClassList("reading-card");
             word.text = white ? Copy.Get(session.Match.Language,"whitePrivate") : text;
-            word.EnableInClassList("white-private",white);
+            word.EnableInClassList("white-private",white); word.EnableInClassList("hidden",false);
             symbol.EnableInClassList("hidden",true); caption.EnableInClassList("hidden",true); face.AddToClassList("revealed");
         }
         void Conceal()
         {
-            word.text = ""; session.HideWord();
+            word.text = ""; session.HideWord(); word.EnableInClassList("hidden",true);
+            root.RemoveFromClassList("reading-card");
             symbol.EnableInClassList("hidden",false); caption.EnableInClassList("hidden",false); face.RemoveFromClassList("revealed");
         }
         // Captured UITK events can dispatch directly to this target without
@@ -91,8 +94,11 @@ namespace WordDeduction.UI
         }
         void Pose()
         {
-            face.style.translate = new Translate(0,-lift,0);
-            face.style.rotate = new Rotate(new Angle(MobilePrivacy.ReduceMotion ? 0 : -lift / 45));
+            // The gesture threshold stays unchanged; only decoration is bounded so
+            // a long owner above the slot is never covered by the lifted card.
+            float visualLift = float.IsNaN(face.layout.y) ? 0 : Mathf.Min(lift,Mathf.Max(0,face.layout.y - 6));
+            face.style.translate = new Translate(0,-visualLift,0);
+            face.style.rotate = new Rotate(new Angle(MobilePrivacy.ReduceMotion ? 0 : -visualLift / 45));
         }
         public void Tick()
         {

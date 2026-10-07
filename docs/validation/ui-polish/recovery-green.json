@@ -1,0 +1,48 @@
+{
+  "status": "completed",
+  "duration": 1.73,
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "results": [
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.AdditionalContactsCannotRevealUntilEveryFingerHasLifted",
+      "Status": "Passed",
+      "Duration": 0.5529228,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.ColdRestoredPauseAcceptsAbandonAndRepeatedTouchNavigation",
+      "Status": "Passed",
+      "Duration": 0.4218744,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.FailedFreshStartShowsTheWriteFailureAndAllowsExplicitRetry",
+      "Status": "Passed",
+      "Duration": 0.1624714,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.NavigationRetainsHeldContactsAndFreshTouchesWorkAfterReleaseOrInterruption",
+      "Status": "Passed",
+      "Duration": 0.3042909,
+      "Message": null,
+      "StackTrace": null
+    },
+    {
+      "FullName": "WordDeduction.Tests.RecoveryScreenTests.RecoveryExplainsRestoredBlockedAndInaccessibleFilesInBothLanguages",
+      "Status": "Passed",
+      "Duration": 0.2514627,
+      "Message": null,
+      "StackTrace": null
+    }
+  ]
+}

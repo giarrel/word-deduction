@@ -9,16 +9,16 @@ namespace WordDeduction.UI
     {
         readonly Session session;
         readonly VisualElement screen, body, actions;
-        readonly Action renderApp;
+        readonly Action renderApp, screenChanged;
         readonly VisualElement inputRoot;
         readonly HashSet<int> contacts = new HashSet<int>();
         SecretCard card;
         bool paused, help, abandon;
         string notice;
         Language language;
-        public MatchSurface(Session session, VisualElement parent, Action renderApp)
+        public MatchSurface(Session session, VisualElement parent, Action renderApp, Action screenChanged)
         {
-            this.session = session; this.renderApp = renderApp;
+            this.session = session; this.renderApp = renderApp; this.screenChanged = screenChanged;
             inputRoot = parent;
             inputRoot.RegisterCallback<PointerDownEvent>(ContactDown, TrickleDown.TrickleDown);
             inputRoot.RegisterCallback<PointerUpEvent>(ContactUp, TrickleDown.TrickleDown);
@@ -30,10 +30,12 @@ namespace WordDeduction.UI
             screen.Q<Button>("matchHelp").clicked += () => { card?.Hide(true); help = true; Render(); };
         }
         string T(string key, params object[] args) => Copy.Get(language,key,args);
-        public void Render()
+        public void Render() { RenderContents(); screenChanged(); }
+        void RenderContents()
         {
             card?.Dispose(); card = null; body.Clear(); actions.Clear();
             var match = session.Match;
+            screen.EnableInClassList("handoff",match?.Phase == MatchPhase.Handoff && !paused && !help && !abandon);
             screen.EnableInClassList("hidden",match == null);
             MobilePrivacy.Protect(match != null && match.Phase != MatchPhase.Result);
             if (match == null) { paused = help = abandon = false; return; }
@@ -108,6 +110,14 @@ namespace WordDeduction.UI
         {
             var element = new VisualElement(); element.AddToClassList(css); parent.Add(element); return element;
         }
+        VisualElement Center()
+        {
+            var scroll = new ScrollView { horizontalScrollerVisibility = ScrollerVisibility.Hidden };
+            scroll.AddToClassList("vote-list"); body.Add(scroll);
+            var content = scroll.contentContainer; content.AddToClassList("match-center");
+            scroll.contentViewport.RegisterCallback<GeometryChangedEvent>(e => content.style.minHeight = e.newRect.height);
+            return content;
+        }
         Button Action(string name, string key, Action click, bool primary = true)
         {
             var button = new Button(click) { name = name, text = T(key) };
@@ -120,7 +130,10 @@ namespace WordDeduction.UI
             Label(body,"handoffHint",T("handoffHint"),"card-instruction");
             var slot = Box(body,"card-slot"); slot.name = "cardDrag";
             var face = Box(slot,"secret-card"); face.name = "cardFace"; face.pickingMode = PickingMode.Ignore;
-            var symbol = Label(face,"cardSymbol","?","card-symbol"); symbol.pickingMode = PickingMode.Ignore;
+            var symbol = Box(face,"card-symbol"); symbol.name = "cardSymbol"; symbol.pickingMode = PickingMode.Ignore;
+            Box(symbol,"mark-back").pickingMode = PickingMode.Ignore;
+            var mark = Box(symbol,"mark-front"); mark.pickingMode = PickingMode.Ignore;
+            Label(mark,"markQuestion","?","mark-question").pickingMode = PickingMode.Ignore;
             var caption = Label(face,"cardCaption",T("cardPrivate"),"card-caption"); caption.pickingMode = PickingMode.Ignore;
             var word = Label(face,"secretWord","","secret-word"); word.pickingMode = PickingMode.Ignore;
             Label(body,"dragHint",T("dragHint"),"card-instruction");
@@ -134,7 +147,7 @@ namespace WordDeduction.UI
         }
         void Clues(MatchView match)
         {
-            var center = Box(body,"match-center");
+            var center = Center();
             Label(center,"clueTitle",match.Mode == GameMode.Classic ? T("classicClueTitle",match.Round) : T("clueTitle"),"match-title");
             Label(center,"clueInstructions",match.Mode == GameMode.Classic ? T("classicClueInstructions",match.Survivors.Count) : T("clueInstructions"),"match-text");
             var start = Box(center,"starting-person");
@@ -147,7 +160,7 @@ namespace WordDeduction.UI
         {
             if (match.SelectedSuspect != null)
             {
-                var center = Box(body,"match-center");
+                var center = Center();
                 Label(center,"confirmTitle",T("confirmTitle"),"match-title");
                 Label(center,"confirmName",match.SelectedSuspect.DisplayName,"card-owner");
                 Label(center,"confirmHint",T(match.Mode == GameMode.Classic ? "classicConfirmHint" : "confirmHint"),"match-text");
@@ -170,7 +183,7 @@ namespace WordDeduction.UI
         }
         void Elimination(MatchView match)
         {
-            var center = Box(body,"match-center");
+            var center = Center();
             Label(center,"eliminationTitle",T("eliminationTitle"),"match-title");
             Label(center,"eliminatedName",match.Elimination.Participant.DisplayName,"card-owner");
             Label(center,"eliminatedRole",T(match.Elimination.Role.ToString()),"match-title");
@@ -179,7 +192,7 @@ namespace WordDeduction.UI
         }
         void WhiteGuess(MatchView match)
         {
-            var center = Box(body,"match-center");
+            var center = Center();
             Label(center,"whiteGuessTitle",T("whiteGuessTitle"),"match-title");
             Label(center,"eliminatedName",match.Elimination.Participant.DisplayName,"card-owner");
             Label(center,"whiteGuessText",T("whiteGuessText"),"match-text");
@@ -208,7 +221,7 @@ namespace WordDeduction.UI
         }
         void Paused()
         {
-            var center = Box(body,"match-center");
+            var center = Center();
             Label(center,"pauseTitle",T("pauseTitle"),"match-title");
             Label(center,"pauseText",T("pauseText"),"match-text");
             Action("resumeMatch","resumeMatch",() => { paused = false; Render(); });
@@ -216,7 +229,7 @@ namespace WordDeduction.UI
         }
         void Abandon(MatchView match)
         {
-            var center = Box(body,"match-center");
+            var center = Center();
             Label(center,"abandonTitle",T("abandonTitle"),"match-title");
             Label(center,"abandonText",T("abandonText"),"match-text");
             Action("keepMatch","keepMatch",() => { abandon = false; Render(); });

@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var type=typeof(WordDeduction.UI.GroupScreen).Assembly.GetType(\"WordDeduction.UI.Copy\"); var text=(System.Collections.Generic.Dictionary<string,string[]>)type.GetField(\"Text\",System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static).GetValue(null); var bad=new System.Collections.Generic.List<string>(); foreach(var item in text) if(item.Value.Length!=2 || string.IsNullOrWhiteSpace(item.Value[0]) || string.IsNullOrWhiteSpace(item.Value[1])) bad.Add(item.Key); return new {keys=text.Count,missingOrEmptyTranslations=bad};"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "keys": 126,
+        "missingOrEmptyTranslations": []
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\ui-polish\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -8,7 +8,7 @@ Button { border-width: 0; border-radius: 16px; color: var(--ink); margin: 0; pad
 Button:focus { border-width: 2px; border-color: var(--purple); }
 Button:active { background-color: #d9d0ef; }
 Button:disabled { opacity: 0.65; }
-.language-button { border-radius: 16px; min-width: 44px; padding: 0 8px; }
+.language-button { border-radius: 16px; min-width: 48px; padding: 0 8px; }
 .language-button.selected { background-color: white; }
 .heading { margin-bottom: 20px; flex-shrink: 0; }
 .title { font-size: 34px; -unity-font-style: bold; letter-spacing: -1px; white-space: normal; }
@@ -34,7 +34,7 @@ Button:disabled { opacity: 0.65; }
 .add-button { width: 52px; min-height: 52px; margin-left: 8px; border-radius: 18px; background-color: var(--purple); color: white; font-size: 28px; }
 .hint { white-space: normal; color: var(--muted); font-size: 13px; }
 .edit-hint { margin-top: 7px; margin-bottom: 16px; flex-shrink: 0; }
-.empty-state { flex-grow: 1; justify-content: center; align-items: center; min-height: 125px; }
+.empty-state { flex-grow: 1; flex-shrink: 1; justify-content: center; align-items: center; min-height: 0; }
 .empty-symbol { background-color: var(--lilac); border-radius: 24px; width: 72px; height: 78px; font-size: 42px; -unity-font-style: bold; -unity-text-align: middle-center; color: var(--purple); rotate: -7deg; margin-bottom: 14px; }
 .empty-title { font-size: 19px; -unity-font-style: bold; margin-bottom: 5px; }
 .mode-picker { flex-direction: row; background-color: #eae5df; border-radius: 20px; padding: 4px; flex-shrink: 0; }
@@ -54,10 +54,37 @@ Button:disabled { opacity: 0.65; }
 .compact .edit-hint { margin-bottom: 10px; }
 .typing .heading, .typing .mode-picker, .typing .mode-description, .typing .play-button, .typing .start-hint, .typing .empty-state, .typing .edit-hint { display: none; }
 .typing .topbar { margin-bottom: 10px; }
-.players .unity-scroller--vertical { width: 6px; min-width: 6px; margin-left: 4px; }
-.players .unity-scroller__low-button, .players .unity-scroller__high-button { display: none; }
-.players .unity-base-slider { margin: 0; padding: 0; }
-.players .unity-base-slider__tracker { background-color: #eee9df; border-width: 0; }
-.players .unity-base-slider__dragger { background-color: #b3a4c3; border-width: 0; border-radius: 3px; }
+.unity-scroller--vertical { width: 6px; min-width: 6px; margin-left: 4px; }
+.unity-scroller__low-button, .unity-scroller__high-button { display: none; }
+.unity-scroller--vertical .unity-base-slider { min-width: 6px; width: 6px; margin: 0; padding: 0; }
+.unity-scroller--vertical .unity-base-slider__tracker { background-color: #eee9df; border-width: 0; }
+.unity-scroller--vertical .unity-base-slider__dragger { min-width: 4px; width: 4px; background-color: #b3a4c3; border-width: 0; border-radius: 3px; }
+.unity-scroller--vertical .unity-base-slider__dragger-border { min-width: 4px; width: 4px; border-width: 0; }
 .has-players .heading { display: none; }
 .editing .add-row, .editing .edit-hint { display: none; }
+
+.recovery .empty-state, .recovery .heading { display: none; }
+.recovery .name-input { margin-top: 8px; }
+.recovery .players { min-height: 60px; }
+
+.large-type .edit-hint, .large-type .start-hint { display: none; }
+.large-type .topbar { margin-bottom: 8px; }
+.large-type .add-row { margin-bottom: 8px; }
+.large-type .mode-description { min-height: 0; }
+
+.large-type .at-capacity .edit-hint { display: flex; }
+.large-type .at-capacity.editing .edit-hint { display: none; }
+
+.recovery .add-row, .recovery .edit-hint, .recovery .mode-picker, .recovery .mode-description, .recovery .white-preference, .recovery .play-button, .recovery .start-hint, .recovery #count { display: none; }
+.recovery .notice-panel { margin-top: 16px; }
+
+.ready .start-hint { display: none; }
+.compact .screen { padding-top: 12px; }
+.compact .mode-description { min-height: 0; margin: 6px 4px 8px; }
+.compact .edit-hint { margin-top: 5px; margin-bottom: 8px; }
+
+.section-title { flex-shrink: 1; min-width: 0; white-space: normal; margin-right: 8px; }
+.typing.editing .group-header { display: none; }
+.large-type .edit-actions { flex-wrap: wrap; justify-content: flex-start; }
+.large-type .edit-actions > Button { flex-grow: 1; flex-basis: 0; min-width: 0; white-space: normal; padding: 0 8px; }
+.large-type .edit-actions > .remove-button { flex-basis: 100%; -unity-text-align: middle-left; }

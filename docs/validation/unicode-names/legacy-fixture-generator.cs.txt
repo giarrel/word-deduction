@@ -1,0 +1,11 @@
+using WordDeduction;
+var directory = Path.Combine(Path.GetTempPath(), "WordDeduction-fixture-" + Guid.NewGuid().ToString("N"));
+var session = Session.Open(directory, Language.German, maximum => 0);
+foreach (var name in new[] { "\u200B", "\u0301", string.Concat(Enumerable.Repeat("\u2701\u200D\u2701", 24)), "Alex", "Bea" })
+    if (!session.AddPlayer(name).Success) throw new Exception("Old baseline rejected fixture name");
+if (!session.RemovePlayer(session.View.Players[1].Id).Success || !session.SetMode(GameMode.Classic).Success) throw new Exception("Fixture setup failed");
+File.Copy(Path.Combine(directory, "session.json"), Path.Combine(args[0], "legacy-v4-names-group.json"), true);
+if (!session.StartMatch().Success) throw new Exception("Old baseline failed to start");
+File.Copy(Path.Combine(directory, "session.json"), Path.Combine(args[0], "legacy-v4-names-match.json"), true);
+Console.WriteLine("Created real V4 group and live Classic snapshots with pre-change Session cd19d5f, .NET 9.");
+Console.WriteLine("Group: " + string.Join(",", session.View.Players.Select(player => player.Id)));

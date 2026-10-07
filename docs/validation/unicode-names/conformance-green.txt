@@ -1,0 +1,2 @@
+PASS Unicode 17 conformance keeps every expected extended grapheme intact
+1/1 passed

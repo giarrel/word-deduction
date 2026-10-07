@@ -13,9 +13,12 @@
 .match-center { flex-grow: 1; justify-content: center; }
 .card-progress { color: var(--muted); font-size: 14px; -unity-text-align: middle-center; margin-bottom: 5px; }
 .card-owner { font-size: 30px; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; margin-bottom: 6px; }
-.card-slot { flex-grow: 1; flex-shrink: 1; min-height: 230px; max-height: 390px; justify-content: flex-end; padding: 40px 12px 10px; margin-top: 8px; }
+.card-slot { flex-grow: 1; flex-shrink: 1; min-height: 220px; max-height: 320px; justify-content: center; padding: 40px 12px 10px; margin-top: 8px; }
 .secret-card { height: 220px; flex-shrink: 1; min-height: 180px; border-radius: 32px; background-color: #ece5ff; border-width: 2px; border-color: #d8c9f8; justify-content: center; align-items: center; padding: 20px; }
-.card-symbol { font-size: 66px; -unity-font-style: bold; color: #6a48c8; }
+.card-symbol { width: 94px; height: 104px; margin-bottom: 18px; align-items: center; justify-content: center; }
+.mark-back { position: absolute; width: 62px; height: 80px; border-radius: 18px; background-color: #b5cdb3; rotate: -13deg; left: 6px; top: 5px; }
+.mark-front { width: 62px; height: 80px; border-radius: 18px; background-color: #6a48c8; rotate: 10deg; align-items: center; justify-content: center; margin-left: 18px; margin-top: 16px; }
+.mark-question { font-size: 48px; color: white; -unity-font-style: bold; -unity-text-align: middle-center; }
 .card-caption { color: #503093; font-size: 16px; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; }
 .secret-word { font-size: 32px; color: #38215e; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; }
 .secret-word.white-private { font-size: 20px; }
@@ -27,11 +30,6 @@
 .starting-person { border-radius: 24px; background-color: #e0ecdf; padding: 18px; margin: 12px 0 20px; }
 .starting-person .match-title { margin-bottom: 0; }
 .vote-list { flex-grow: 1; flex-shrink: 1; min-height: 60px; }
-.vote-list .unity-scroller--vertical { width: 6px; min-width: 6px; margin-left: 4px; }
-.vote-list .unity-scroller__low-button, .vote-list .unity-scroller__high-button { display: none; }
-.vote-list .unity-base-slider { min-width: 6px; margin: 0; padding: 0; }
-.vote-list .unity-base-slider__tracker { background-color: #eee9df; border-width: 0; }
-.vote-list .unity-base-slider__dragger { background-color: #b3a4c3; border-width: 0; border-radius: 3px; }
 .suspect-choice { background-color: white; border-radius: 18px; min-height: 58px; margin-bottom: 8px; -unity-text-align: middle-left; padding: 10px 16px; font-size: 18px; white-space: normal; }
 .suspect-choice.selected { background-color: var(--lilac); border-width: 2px; border-color: var(--purple); }
 .result-banner { background-color: #e0ecdf; border-radius: 24px; padding: 18px; margin-bottom: 14px; }
@@ -47,3 +45,27 @@
 .compact .secret-card { height: 180px; min-height: 155px; }
 .compact .card-owner { font-size: 26px; }
 .compact .match-title { font-size: 26px; }
+
+.handoff .match-body { justify-content: center; }
+.compact .card-symbol { height: 80px; margin-bottom: 8px; }
+.compact .mark-back, .compact .mark-front { height: 64px; width: 50px; border-radius: 14px; }
+.compact .mark-question { font-size: 38px; }
+
+.large-type .card-slot { min-height: 150px; max-height: 230px; padding-top: 26px; }
+.large-type .secret-card { min-height: 130px; height: 165px; padding: 12px; }
+.large-type .card-symbol { width: 72px; height: 56px; flex-shrink: 0; margin-bottom: 8px; }
+.large-type .card-owner { font-size: 23px; margin-bottom: 2px; }
+.large-type .card-instruction { margin: 5px 0; }
+.large-type .match-text { margin-bottom: 10px; }
+
+.reading-card #handoffHint { visibility: hidden; }
+
+.mark-back, .mark-front { flex-shrink: 0; }
+.large-type .mark-back, .large-type .mark-front { width: 34px; height: 42px; border-radius: 10px; }
+.large-type .mark-back { left: 10px; top: 2px; }
+.large-type .mark-front { margin-left: 16px; margin-top: 8px; }
+.large-type .mark-question { font-size: 28px; }
+.large-type #handoffHint, .large-type #dragHint { display: none; }
+.large-type .handoff .match-body { justify-content: flex-start; }
+.large-type .card-slot { min-height: 150px; padding-top: 10px; margin-top: 4px; }
+.large-type .handoff .match-actions { margin-top: 8px; }

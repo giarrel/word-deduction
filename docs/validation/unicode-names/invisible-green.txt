@@ -1,0 +1,2 @@
+PASS invisible-only names cannot create or replace a player
+1/1 passed

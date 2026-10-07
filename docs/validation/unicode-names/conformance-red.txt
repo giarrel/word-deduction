@@ -1,0 +1,2 @@
+FAIL Unicode 17 conformance keeps every expected extended grapheme intact: conformance case 745: ÷ 2701 × 200D ÷ 2701 ÷
+0/1 passed
