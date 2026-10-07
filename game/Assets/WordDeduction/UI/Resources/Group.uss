@@ -72,8 +72,8 @@ Button:disabled { opacity: 0.65; }
 .large-type .add-row { margin-bottom: 8px; }
 .large-type .mode-description { min-height: 0; }
 
-.large-type.at-capacity .edit-hint { display: flex; }
-.large-type.at-capacity.editing .edit-hint { display: none; }
+.large-type .at-capacity .edit-hint { display: flex; }
+.large-type .at-capacity.editing .edit-hint { display: none; }
 
 .recovery .add-row, .recovery .edit-hint, .recovery .mode-picker, .recovery .mode-description, .recovery .white-preference, .recovery .play-button, .recovery .start-hint, .recovery #count { display: none; }
 .recovery .notice-panel { margin-top: 16px; }

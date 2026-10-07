@@ -94,8 +94,11 @@ namespace WordDeduction.UI
         }
         void Pose()
         {
-            face.style.translate = new Translate(0,-lift,0);
-            face.style.rotate = new Rotate(new Angle(MobilePrivacy.ReduceMotion ? 0 : -lift / 45));
+            // The gesture threshold stays unchanged; only decoration is bounded so
+            // a long owner above the slot is never covered by the lifted card.
+            float visualLift = float.IsNaN(face.layout.y) ? 0 : Mathf.Min(lift,Mathf.Max(0,face.layout.y - 6));
+            face.style.translate = new Translate(0,-visualLift,0);
+            face.style.rotate = new Rotate(new Angle(MobilePrivacy.ReduceMotion ? 0 : -visualLift / 45));
         }
         public void Tick()
         {

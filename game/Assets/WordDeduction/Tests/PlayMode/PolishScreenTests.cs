@@ -165,6 +165,8 @@ namespace WordDeduction.Tests
                 root.Q<TextField>("nameInput").value = "Alexandria-Maximilian-"+i.ToString("D2");
                 Submit(root.Q<Button>("addPlayer")); yield return null;
             }
+            root.AddToClassList("large-type"); yield return null; yield return null;
+            Assert.That(root.Q<Label>("editHint").resolvedStyle.display,Is.Not.EqualTo(DisplayStyle.None),"Capacity remains explained at enlarged text.");
             var last = Session.Open(directory,Language.German).View.Players.Last();
             Submit(root.Q<Button>("edit-"+last.Id)); yield return null; yield return null;
             root.style.height = 380; yield return null; yield return null;
@@ -185,6 +187,36 @@ namespace WordDeduction.Tests
             }
             root.Q<TextField>("renameInput").value="Mina"; Submit(root.Q<Button>("saveRename")); yield return null;
             Assert.That(Session.Open(directory,Language.German).View.Players.Last().Name,Is.EqualTo("Mina"));
+        }
+        [UnityTest]
+        public IEnumerator LargeLongOwnerKeepsCardAndActionsSeparateInsidePhoneInsets()
+        {
+            var root=Create(Language.German); yield return null; yield return null;
+            string wide=new string('M',24);
+            foreach(var name in new[]{wide,wide,"Bea","Chris","Dana"})
+            {
+                root.Q<TextField>("nameInput").value=name; Submit(root.Q<Button>("addPlayer")); yield return null;
+            }
+            Submit(root.Q<Button>("classicMode")); Submit(root.Q<Button>("playButton")); yield return null; yield return null;
+            root.AddToClassList("large-type"); yield return null;
+            foreach(var element in root.Query<TextElement>().ToList())
+                if(element.name!="secretWord" && element.name!="markQuestion" && element.GetFirstAncestorOfType<TextField>()==null) element.style.fontSize=element.resolvedStyle.fontSize*1.5f;
+            var safe=root.Q<VisualElement>("safeRoot"); safe.style.paddingTop=40; safe.style.paddingBottom=24;
+            yield return null; yield return null;
+            var owner=root.Q<Label>("cardOwner"); var face=root.Q<VisualElement>("cardFace"); var hold=root.Q<VisualElement>("holdReveal");
+            Assert.That(root.Q<Label>("cardProgress").worldBound.yMin,Is.GreaterThanOrEqualTo(root.Q<VisualElement>(className:"match-toolbar").worldBound.yMax));
+            Assert.That(owner.text,Does.Contain("· 1"),"The whole generated discriminator remains visible.");
+            Assert.That(owner.contentRect.height,Is.GreaterThanOrEqualTo(owner.MeasureTextSize(owner.text,owner.contentRect.width,VisualElement.MeasureMode.AtMost,0,VisualElement.MeasureMode.Undefined).y-1),"All wrapped owner lines fit.");
+            Assert.That(owner.worldBound.yMax,Is.LessThan(face.worldBound.yMin));
+            Assert.That(face.worldBound.yMax,Is.LessThanOrEqualTo(hold.worldBound.yMin));
+            Assert.That(hold.worldBound.yMax,Is.LessThanOrEqualTo(root.Q<Button>("nextOwner").worldBound.yMin));
+            Assert.That(root.Q<Button>("nextOwner").worldBound.yMax,Is.LessThanOrEqualTo(616));
+            using(var e=PointerDownEvent.GetPooled(new Touch{fingerId=0,position=hold.worldBound.center,phase=TouchPhase.Began})) {e.target=hold;hold.SendEvent(e);}
+            yield return null;
+            Assert.That(root.Q<Label>("secretWord").text,Is.Not.Empty);
+            Assert.That(face.worldBound.yMin,Is.GreaterThan(owner.worldBound.yMax),"The lifted private card must retain the complete owner above it.");
+            using(var e=PointerUpEvent.GetPooled(new Touch{fingerId=0,position=hold.worldBound.center,phase=TouchPhase.Ended})) {e.target=hold;hold.SendEvent(e);}
+            Assert.That(root.Q<Label>("secretWord").text,Is.Empty);
         }
         static void Submit(VisualElement target)
         {

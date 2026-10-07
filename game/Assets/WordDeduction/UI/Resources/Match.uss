@@ -65,3 +65,7 @@
 .large-type .mark-back { left: 10px; top: 2px; }
 .large-type .mark-front { margin-left: 16px; margin-top: 8px; }
 .large-type .mark-question { font-size: 28px; }
+.large-type #handoffHint, .large-type #dragHint { display: none; }
+.large-type .handoff .match-body { justify-content: flex-start; }
+.large-type .card-slot { min-height: 150px; padding-top: 10px; margin-top: 4px; }
+.large-type .handoff .match-actions { margin-top: 8px; }

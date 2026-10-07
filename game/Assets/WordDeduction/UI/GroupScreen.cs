@@ -185,7 +185,7 @@ namespace WordDeduction.UI
             root.Q<VisualElement>("safeRoot").EnableInClassList("has-players",view.Players.Count > 0);
             root.Q<VisualElement>("safeRoot").EnableInClassList("editing",editingId != null);
             root.Q<Label>("emptyTitle").text = T("emptyTitle"); root.Q<Label>("emptyHint").text = T("emptyHint");
-            root.Q<Label>("editHint").text = T(view.Players.Count >= 40 ? "GroupFull" : "editHint");
+            root.Q<Label>("editHint").text = T(view.Players.Count >= 40 ? "groupCapacity" : "editHint");
             root.Q<VisualElement>("safeRoot").EnableInClassList("at-capacity",view.Players.Count >= 40);
             nameInput.textEdition.placeholder = T("name"); nameInput.tooltip = T("name");
             root.Q<Button>("addPlayer").tooltip = T("add");
