@@ -1,6 +1,6 @@
 # Android release reproduction
 
-Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.0.0/code 2. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
+Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.0.0/code 3. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
 
 ## Build
 
@@ -39,6 +39,8 @@ python ./tools/inspect-android-release.py '<exact.aab>' --android-player '<Unity
 ```
 
 Use an unused output directory for each invocation: generated `.apks` files are not overwritten silently. The inspector records command exit codes and stdout/stderr; verifies APK v2/signature details, zipalign 16KB, ARM64 ELF headers, every LOAD and rounded RELRO writable-byte intersection; and saves boot.config, manifest and backup rules. AAB inspection uses bundletool validate/config/manifest, jarsigner, then default and universal APK generation and inspection of master/native-bearing APKs. Generated APK signing is bundletool's local debug default; verify its certificate before installing as an update.
+
+Code3 additionally enables release R8 and removes debug/info/verbose calls from the bundled GameTextInput Java code. JNI names/members are retained. The inspector disassembles actual APK DEX and refuses input classes that still invoke those logging methods; it also checks that InputConnection still exists. This runs against direct, universal and base-master delivery packages. Historical version2 reproduction can use `--version-code 2`, but its private-input log calls intentionally fail the new privacy gate. Native real keyboard entry and log inspection must follow every relevant release change.
 
 `GNU_RELRO` end residues are reported separately from writable-data collisions. Some Unity/NDK libraries end RELRO on a 4KB boundary but leave the rest of the 16KB protection page unmapped. Do not hide these scalar failures or binary-patch them; assess the full layout and separately run the 16KB application-environment probe. Static checks and translated emulator execution do not prove physical ARM64/16KB-kernel behavior or Play acceptance.
 

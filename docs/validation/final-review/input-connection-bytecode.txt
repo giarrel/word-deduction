@@ -1,0 +1,1368 @@
+Compiled from "InputConnection.java"
+public class com.google.androidgamesdk.gametextinput.InputConnection extends android.view.inputmethod.BaseInputConnection implements android.view.View$OnKeyListener {
+  private static final java.lang.String TAG;
+
+  private final android.view.inputmethod.InputMethodManager imm;
+
+  private final android.view.View targetView;
+
+  private final com.google.androidgamesdk.gametextinput.Settings settings;
+
+  private final android.text.Editable mEditable;
+
+  private com.google.androidgamesdk.gametextinput.Listener listener;
+
+  private boolean mSoftKeyboardActive;
+
+  private static final int MAX_LENGTH_FOR_SINGLE_LINE_EDIT_TEXT;
+
+  private static int INVALID_INDEX;
+
+  public com.google.androidgamesdk.gametextinput.InputConnection(android.content.Context, android.view.View, com.google.androidgamesdk.gametextinput.Settings);
+    Code:
+       0: aload_0
+       1: aload_2
+       2: aload_3
+       3: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+       6: getfield      #9                  // Field android/view/inputmethod/EditorInfo.inputType:I
+       9: ifeq          16
+      12: iconst_1
+      13: goto          17
+      16: iconst_0
+      17: invokespecial #13                 // Method android/view/inputmethod/BaseInputConnection."<init>":(Landroid/view/View;Z)V
+      20: ldc           #21                 // String gti.InputConnection
+      22: ldc           #23                 // String InputConnection created
+      24: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      27: pop
+      28: aload_0
+      29: aload_2
+      30: putfield      #31                 // Field targetView:Landroid/view/View;
+      33: aload_0
+      34: aload_3
+      35: putfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      38: aload_1
+      39: ldc           #41                 // String input_method
+      41: invokevirtual #43                 // Method android/content/Context.getSystemService:(Ljava/lang/String;)Ljava/lang/Object;
+      44: astore        4
+      46: aload         4
+      48: ifnonnull     61
+      51: new           #47                 // class java/lang/RuntimeException
+      54: dup
+      55: ldc           #49                 // String Can\'t get IMM
+      57: invokespecial #51                 // Method java/lang/RuntimeException."<init>":(Ljava/lang/String;)V
+      60: athrow
+      61: aload_0
+      62: aload         4
+      64: checkcast     #54                 // class android/view/inputmethod/InputMethodManager
+      67: putfield      #56                 // Field imm:Landroid/view/inputmethod/InputMethodManager;
+      70: aload_0
+      71: new           #60                 // class android/text/SpannableStringBuilder
+      74: dup
+      75: invokespecial #62                 // Method android/text/SpannableStringBuilder."<init>":()V
+      78: putfield      #65                 // Field mEditable:Landroid/text/Editable;
+      81: aload_2
+      82: invokevirtual #69                 // Method android/view/View.getContext:()Landroid/content/Context;
+      85: checkcast     #75                 // class android/app/Activity
+      88: invokevirtual #77                 // Method android/app/Activity.getWindow:()Landroid/view/Window;
+      91: iconst_0
+      92: invokestatic  #81                 // Method androidx/core/view/WindowCompat.setDecorFitsSystemWindows:(Landroid/view/Window;Z)V
+      95: aload_2
+      96: aload_0
+      97: invokevirtual #87                 // Method android/view/View.setOnKeyListener:(Landroid/view/View$OnKeyListener;)V
+     100: aload_0
+     101: aload_3
+     102: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+     105: invokevirtual #91                 // Method setEditorInfo:(Landroid/view/inputmethod/EditorInfo;)V
+     108: return
+
+  public void restartInput();
+    Code:
+       0: aload_0
+       1: getfield      #56                 // Field imm:Landroid/view/inputmethod/InputMethodManager;
+       4: aload_0
+       5: getfield      #31                 // Field targetView:Landroid/view/View;
+       8: invokevirtual #95                 // Method android/view/inputmethod/InputMethodManager.restartInput:(Landroid/view/View;)V
+      11: return
+
+  public final boolean getSoftKeyboardActive();
+    Code:
+       0: aload_0
+       1: getfield      #99                 // Field mSoftKeyboardActive:Z
+       4: ireturn
+
+  public final void setSoftKeyboardActive(boolean, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc           #106                // String setSoftKeyboardActive, active:
+      11: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      14: iload_1
+      15: invokevirtual #112                // Method java/lang/StringBuilder.append:(Z)Ljava/lang/StringBuilder;
+      18: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      21: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      24: pop
+      25: aload_0
+      26: iload_1
+      27: putfield      #99                 // Field mSoftKeyboardActive:Z
+      30: iload_1
+      31: ifeq          66
+      34: aload_0
+      35: getfield      #31                 // Field targetView:Landroid/view/View;
+      38: iconst_1
+      39: invokevirtual #119                // Method android/view/View.setFocusableInTouchMode:(Z)V
+      42: aload_0
+      43: getfield      #31                 // Field targetView:Landroid/view/View;
+      46: invokevirtual #123                // Method android/view/View.requestFocus:()Z
+      49: pop
+      50: aload_0
+      51: getfield      #56                 // Field imm:Landroid/view/inputmethod/InputMethodManager;
+      54: aload_0
+      55: getfield      #31                 // Field targetView:Landroid/view/View;
+      58: iload_2
+      59: invokevirtual #127                // Method android/view/inputmethod/InputMethodManager.showSoftInput:(Landroid/view/View;I)Z
+      62: pop
+      63: goto          82
+      66: aload_0
+      67: getfield      #56                 // Field imm:Landroid/view/inputmethod/InputMethodManager;
+      70: aload_0
+      71: getfield      #31                 // Field targetView:Landroid/view/View;
+      74: invokevirtual #131                // Method android/view/View.getWindowToken:()Landroid/os/IBinder;
+      77: iload_2
+      78: invokevirtual #135                // Method android/view/inputmethod/InputMethodManager.hideSoftInputFromWindow:(Landroid/os/IBinder;I)Z
+      81: pop
+      82: aload_0
+      83: invokevirtual #139                // Method restartInput:()V
+      86: return
+
+  public final android.view.inputmethod.EditorInfo getEditorInfo();
+    Code:
+       0: aload_0
+       1: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+       4: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+       7: areturn
+
+  public final void setEditorInfo(android.view.inputmethod.EditorInfo);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc           #141                // String setEditorInfo
+       4: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       7: pop
+       8: aload_0
+       9: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      12: aload_1
+      13: putfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+      16: aload_0
+      17: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      20: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+      23: getfield      #9                  // Field android/view/inputmethod/EditorInfo.inputType:I
+      26: ldc           #142                // int 131072
+      28: iand
+      29: ifne          73
+      32: aload_0
+      33: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      36: iconst_2
+      37: anewarray     #143                // class android/text/InputFilter
+      40: dup
+      41: iconst_0
+      42: new           #145                // class android/text/InputFilter$LengthFilter
+      45: dup
+      46: sipush        5000
+      49: invokespecial #147                // Method android/text/InputFilter$LengthFilter."<init>":(I)V
+      52: aastore
+      53: dup
+      54: iconst_1
+      55: new           #150                // class com/google/androidgamesdk/gametextinput/InputConnection$singleLineFilter
+      58: dup
+      59: aload_0
+      60: aconst_null
+      61: invokespecial #152                // Method com/google/androidgamesdk/gametextinput/InputConnection$singleLineFilter."<init>":(Lcom/google/androidgamesdk/gametextinput/InputConnection;Lcom/google/androidgamesdk/gametextinput/InputConnection$1;)V
+      64: aastore
+      65: invokeinterface #155,  2          // InterfaceMethod android/text/Editable.setFilters:([Landroid/text/InputFilter;)V
+      70: goto          86
+      73: aload_0
+      74: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      77: iconst_0
+      78: anewarray     #143                // class android/text/InputFilter
+      81: invokeinterface #155,  2          // InterfaceMethod android/text/Editable.setFilters:([Landroid/text/InputFilter;)V
+      86: return
+
+  public final void setState(com.google.androidgamesdk.gametextinput.State);
+    Code:
+       0: aload_1
+       1: ifnonnull     5
+       4: return
+       5: ldc           #21                 // String gti.InputConnection
+       7: new           #103                // class java/lang/StringBuilder
+      10: dup
+      11: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+      14: ldc           #161                // String setState: \'
+      16: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      19: aload_1
+      20: getfield      #163                // Field com/google/androidgamesdk/gametextinput/State.text:Ljava/lang/String;
+      23: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      26: ldc           #169                // String \', selection=(
+      28: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      31: aload_1
+      32: getfield      #171                // Field com/google/androidgamesdk/gametextinput/State.selectionStart:I
+      35: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      38: ldc           #177                // String ,
+      40: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      43: aload_1
+      44: getfield      #179                // Field com/google/androidgamesdk/gametextinput/State.selectionEnd:I
+      47: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      50: ldc           #182                // String ), composing region=(
+      52: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      55: aload_1
+      56: getfield      #184                // Field com/google/androidgamesdk/gametextinput/State.composingRegionStart:I
+      59: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      62: ldc           #177                // String ,
+      64: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      67: aload_1
+      68: getfield      #187                // Field com/google/androidgamesdk/gametextinput/State.composingRegionEnd:I
+      71: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      74: ldc           #190                // String )
+      76: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      79: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      82: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      85: pop
+      86: aload_0
+      87: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      90: invokeinterface #192,  1          // InterfaceMethod android/text/Editable.clear:()V
+      95: aload_0
+      96: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      99: invokeinterface #195,  1          // InterfaceMethod android/text/Editable.clearSpans:()V
+     104: aload_0
+     105: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     108: iconst_0
+     109: aload_1
+     110: getfield      #163                // Field com/google/androidgamesdk/gametextinput/State.text:Ljava/lang/String;
+     113: invokeinterface #198,  3          // InterfaceMethod android/text/Editable.insert:(ILjava/lang/CharSequence;)Landroid/text/Editable;
+     118: pop
+     119: aload_0
+     120: aload_1
+     121: getfield      #171                // Field com/google/androidgamesdk/gametextinput/State.selectionStart:I
+     124: aload_1
+     125: getfield      #179                // Field com/google/androidgamesdk/gametextinput/State.selectionEnd:I
+     128: invokevirtual #202                // Method setSelection:(II)Z
+     131: pop
+     132: aload_1
+     133: getfield      #184                // Field com/google/androidgamesdk/gametextinput/State.composingRegionStart:I
+     136: aload_1
+     137: getfield      #187                // Field com/google/androidgamesdk/gametextinput/State.composingRegionEnd:I
+     140: if_icmpeq     156
+     143: aload_0
+     144: aload_1
+     145: getfield      #184                // Field com/google/androidgamesdk/gametextinput/State.composingRegionStart:I
+     148: aload_1
+     149: getfield      #187                // Field com/google/androidgamesdk/gametextinput/State.composingRegionEnd:I
+     152: invokevirtual #206                // Method setComposingRegion:(II)Z
+     155: pop
+     156: aload_0
+     157: invokevirtual #139                // Method restartInput:()V
+     160: return
+
+  public final com.google.androidgamesdk.gametextinput.Listener getListener();
+    Code:
+       0: aload_0
+       1: getfield      #209                // Field listener:Lcom/google/androidgamesdk/gametextinput/Listener;
+       4: areturn
+
+  public final com.google.androidgamesdk.gametextinput.InputConnection setListener(com.google.androidgamesdk.gametextinput.Listener);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: putfield      #209                // Field listener:Lcom/google/androidgamesdk/gametextinput/Listener;
+       5: aload_0
+       6: areturn
+
+  public boolean onKey(android.view.View, int, android.view.KeyEvent);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc           #213                // String onKey:
+      11: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      14: aload_3
+      15: invokevirtual #215                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      18: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      21: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      24: pop
+      25: aload_0
+      26: invokevirtual #218                // Method getSoftKeyboardActive:()Z
+      29: ifne          34
+      32: iconst_0
+      33: ireturn
+      34: aload_0
+      35: aload_3
+      36: invokespecial #221                // Method processKeyEvent:(Landroid/view/KeyEvent;)Z
+      39: ifeq          56
+      42: aload_0
+      43: invokespecial #225                // Method stateUpdated:()V
+      46: aload_0
+      47: invokespecial #228                // Method immUpdateSelection:()V
+      50: aload_0
+      51: invokevirtual #139                // Method restartInput:()V
+      54: iconst_1
+      55: ireturn
+      56: iconst_0
+      57: ireturn
+
+  public android.text.Editable getEditable();
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc           #231                // String getEditable
+       4: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       7: pop
+       8: aload_0
+       9: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      12: areturn
+
+  public boolean setSelection(int, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc           #233                // String setSelection:
+      11: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      14: iload_1
+      15: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      18: ldc           #235                // String :
+      20: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      23: iload_2
+      24: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      27: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      30: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      33: pop
+      34: aload_0
+      35: iload_1
+      36: iload_2
+      37: invokespecial #237                // Method android/view/inputmethod/BaseInputConnection.setSelection:(II)Z
+      40: ireturn
+
+  public boolean setComposingText(java.lang.CharSequence, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc           #238                // String setComposingText=\'%s\' newCursorPosition=%d
+       4: iconst_2
+       5: anewarray     #240                // class java/lang/Object
+       8: dup
+       9: iconst_0
+      10: aload_1
+      11: aastore
+      12: dup
+      13: iconst_1
+      14: iload_2
+      15: invokestatic  #242                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      18: aastore
+      19: invokestatic  #248                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      22: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      25: pop
+      26: aload_1
+      27: ifnonnull     32
+      30: iconst_0
+      31: ireturn
+      32: aload_0
+      33: aload_1
+      34: iload_2
+      35: invokespecial #254                // Method android/view/inputmethod/BaseInputConnection.setComposingText:(Ljava/lang/CharSequence;I)Z
+      38: ireturn
+
+  public boolean setComposingRegion(int, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #258                // String setComposingRegion:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: iload_1
+      16: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      19: ldc           #235                // String :
+      21: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      24: iload_2
+      25: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      28: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      31: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      34: pop
+      35: aload_0
+      36: iload_1
+      37: iload_2
+      38: invokespecial #260                // Method android/view/inputmethod/BaseInputConnection.setComposingRegion:(II)Z
+      41: ireturn
+
+  public boolean finishComposingText();
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc_w         #261                // String finishComposingText
+       5: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       8: pop
+       9: aload_0
+      10: invokespecial #263                // Method android/view/inputmethod/BaseInputConnection.finishComposingText:()Z
+      13: ireturn
+
+  public boolean endBatchEdit();
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc_w         #265                // String endBatchEdit
+       5: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       8: pop
+       9: aload_0
+      10: invokespecial #225                // Method stateUpdated:()V
+      13: aload_0
+      14: invokespecial #267                // Method android/view/inputmethod/BaseInputConnection.endBatchEdit:()Z
+      17: ireturn
+
+  public boolean commitCompletion(android.view.inputmethod.CompletionInfo);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc_w         #269                // String commitCompletion
+       5: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       8: pop
+       9: aload_0
+      10: aload_1
+      11: invokespecial #271                // Method android/view/inputmethod/BaseInputConnection.commitCompletion:(Landroid/view/inputmethod/CompletionInfo;)Z
+      14: ireturn
+
+  public boolean commitCorrection(android.view.inputmethod.CorrectionInfo);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc_w         #269                // String commitCompletion
+       5: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       8: pop
+       9: aload_0
+      10: aload_1
+      11: invokespecial #274                // Method android/view/inputmethod/BaseInputConnection.commitCorrection:(Landroid/view/inputmethod/CorrectionInfo;)Z
+      14: ireturn
+
+  public boolean commitText(java.lang.CharSequence, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #278                // String commitText:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: aload_1
+      16: invokevirtual #280                // Method java/lang/StringBuilder.append:(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
+      19: ldc_w         #283                // String , new pos =
+      22: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      25: iload_2
+      26: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      29: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      32: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      35: pop
+      36: aload_0
+      37: aload_1
+      38: iload_2
+      39: invokespecial #285                // Method android/view/inputmethod/BaseInputConnection.commitText:(Ljava/lang/CharSequence;I)Z
+      42: ireturn
+
+  public boolean deleteSurroundingText(int, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #288                // String deleteSurroundingText:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: iload_1
+      16: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      19: ldc           #235                // String :
+      21: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      24: iload_2
+      25: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      28: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      31: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      34: pop
+      35: aload_0
+      36: iload_1
+      37: iload_2
+      38: invokespecial #290                // Method android/view/inputmethod/BaseInputConnection.deleteSurroundingText:(II)Z
+      41: ireturn
+
+  public boolean deleteSurroundingTextInCodePoints(int, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #293                // String deleteSurroundingTextInCodePoints:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: iload_1
+      16: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      19: ldc           #235                // String :
+      21: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      24: iload_2
+      25: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      28: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      31: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      34: pop
+      35: aload_0
+      36: iload_1
+      37: iload_2
+      38: invokespecial #295                // Method android/view/inputmethod/BaseInputConnection.deleteSurroundingTextInCodePoints:(II)Z
+      41: ireturn
+
+  public boolean sendKeyEvent(android.view.KeyEvent);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #298                // String sendKeyEvent:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: aload_1
+      16: invokevirtual #215                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      19: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      22: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      25: pop
+      26: aload_0
+      27: aload_1
+      28: invokespecial #300                // Method android/view/inputmethod/BaseInputConnection.sendKeyEvent:(Landroid/view/KeyEvent;)Z
+      31: ireturn
+
+  public java.lang.CharSequence getSelectedText(int);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: invokespecial #303                // Method android/view/inputmethod/BaseInputConnection.getSelectedText:(I)Ljava/lang/CharSequence;
+       5: astore_2
+       6: aload_2
+       7: ifnonnull     14
+      10: ldc_w         #307                // String
+      13: astore_2
+      14: ldc           #21                 // String gti.InputConnection
+      16: new           #103                // class java/lang/StringBuilder
+      19: dup
+      20: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+      23: ldc_w         #309                // String getSelectedText:
+      26: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      29: iload_1
+      30: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      33: ldc_w         #311                // String , result:
+      36: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      39: aload_2
+      40: invokevirtual #215                // Method java/lang/StringBuilder.append:(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+      43: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      46: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      49: pop
+      50: aload_2
+      51: areturn
+
+  public java.lang.CharSequence getTextAfterCursor(int, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #313                // String getTextAfterCursor:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: iload_1
+      16: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      19: ldc           #235                // String :
+      21: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      24: iload_2
+      25: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      28: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      31: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      34: pop
+      35: iload_1
+      36: ifge          67
+      39: ldc           #21                 // String gti.InputConnection
+      41: new           #103                // class java/lang/StringBuilder
+      44: dup
+      45: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+      48: ldc_w         #315                // String getTextAfterCursor: returning null to due to an invalid length=
+      51: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      54: iload_1
+      55: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      58: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      61: invokestatic  #317                // Method android/util/Log.i:(Ljava/lang/String;Ljava/lang/String;)I
+      64: pop
+      65: aconst_null
+      66: areturn
+      67: aload_0
+      68: iload_1
+      69: iload_2
+      70: invokespecial #320                // Method android/view/inputmethod/BaseInputConnection.getTextAfterCursor:(II)Ljava/lang/CharSequence;
+      73: areturn
+
+  public java.lang.CharSequence getTextBeforeCursor(int, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #324                // String getTextBeforeCursor:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: iload_1
+      16: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      19: ldc_w         #326                // String , flags=
+      22: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      25: iload_2
+      26: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      29: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      32: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      35: pop
+      36: iload_1
+      37: ifge          68
+      40: ldc           #21                 // String gti.InputConnection
+      42: new           #103                // class java/lang/StringBuilder
+      45: dup
+      46: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+      49: ldc_w         #328                // String getTextBeforeCursor: returning null to due to an invalid length=
+      52: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      55: iload_1
+      56: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      59: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      62: invokestatic  #317                // Method android/util/Log.i:(Ljava/lang/String;Ljava/lang/String;)I
+      65: pop
+      66: aconst_null
+      67: areturn
+      68: aload_0
+      69: iload_1
+      70: iload_2
+      71: invokespecial #330                // Method android/view/inputmethod/BaseInputConnection.getTextBeforeCursor:(II)Ljava/lang/CharSequence;
+      74: areturn
+
+  public boolean requestCursorUpdates(int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #333                // String Request cursor updates:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: iload_1
+      16: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      19: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      22: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      25: pop
+      26: aload_0
+      27: iload_1
+      28: invokespecial #335                // Method android/view/inputmethod/BaseInputConnection.requestCursorUpdates:(I)Z
+      31: ireturn
+
+  public void closeConnection();
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc_w         #339                // String closeConnection
+       5: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       8: pop
+       9: aload_0
+      10: invokespecial #341                // Method android/view/inputmethod/BaseInputConnection.closeConnection:()V
+      13: return
+
+  public boolean setImeConsumesInput(boolean);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #343                // String setImeConsumesInput:
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: iload_1
+      16: invokevirtual #112                // Method java/lang/StringBuilder.append:(Z)Ljava/lang/StringBuilder;
+      19: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      22: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      25: pop
+      26: aload_0
+      27: iload_1
+      28: invokespecial #345                // Method android/view/inputmethod/BaseInputConnection.setImeConsumesInput:(Z)Z
+      31: ireturn
+
+  public android.view.inputmethod.ExtractedText getExtractedText(android.view.inputmethod.ExtractedTextRequest, int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc_w         #349                // String getExtractedText
+       5: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       8: pop
+       9: aload_0
+      10: aload_1
+      11: iload_2
+      12: invokespecial #351                // Method android/view/inputmethod/BaseInputConnection.getExtractedText:(Landroid/view/inputmethod/ExtractedTextRequest;I)Landroid/view/inputmethod/ExtractedText;
+      15: areturn
+
+  public boolean performPrivateCommand(java.lang.String, android.os.Bundle);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: ldc_w         #354                // String performPrivateCommand
+       5: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+       8: pop
+       9: aload_0
+      10: aload_1
+      11: aload_2
+      12: invokespecial #356                // Method android/view/inputmethod/BaseInputConnection.performPrivateCommand:(Ljava/lang/String;Landroid/os/Bundle;)Z
+      15: ireturn
+
+  private void immUpdateSelection();
+    Code:
+       0: aload_0
+       1: invokespecial #359                // Method getSelection:()Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;
+       4: astore_1
+       5: aload_0
+       6: invokespecial #363                // Method getComposingRegion:()Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;
+       9: astore_2
+      10: ldc           #21                 // String gti.InputConnection
+      12: new           #103                // class java/lang/StringBuilder
+      15: dup
+      16: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+      19: ldc_w         #366                // String immUpdateSelection:
+      22: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      25: aload_1
+      26: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+      29: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      32: ldc           #177                // String ,
+      34: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      37: aload_1
+      38: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+      41: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      44: ldc_w         #376                // String .
+      47: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      50: aload_2
+      51: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+      54: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      57: ldc           #177                // String ,
+      59: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      62: aload_2
+      63: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+      66: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      69: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      72: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      75: pop
+      76: aload_0
+      77: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      80: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+      83: aload_1
+      84: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+      87: putfield      #378                // Field android/view/inputmethod/EditorInfo.initialSelStart:I
+      90: aload_0
+      91: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      94: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+      97: aload_1
+      98: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     101: putfield      #381                // Field android/view/inputmethod/EditorInfo.initialSelEnd:I
+     104: aload_0
+     105: getfield      #56                 // Field imm:Landroid/view/inputmethod/InputMethodManager;
+     108: aload_0
+     109: getfield      #31                 // Field targetView:Landroid/view/View;
+     112: aload_1
+     113: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     116: aload_1
+     117: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     120: aload_2
+     121: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     124: aload_2
+     125: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     128: invokevirtual #384                // Method android/view/inputmethod/InputMethodManager.updateSelection:(Landroid/view/View;IIII)V
+     131: return
+
+  private com.google.androidgamesdk.gametextinput.GameTextInput$Pair getSelection();
+    Code:
+       0: new           #369                // class com/google/androidgamesdk/gametextinput/GameTextInput$Pair
+       3: dup
+       4: aload_0
+       5: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+       8: invokestatic  #388                // Method android/text/Selection.getSelectionStart:(Ljava/lang/CharSequence;)I
+      11: aload_0
+      12: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      15: invokestatic  #394                // Method android/text/Selection.getSelectionEnd:(Ljava/lang/CharSequence;)I
+      18: invokespecial #397                // Method com/google/androidgamesdk/gametextinput/GameTextInput$Pair."<init>":(II)V
+      21: areturn
+
+  private com.google.androidgamesdk.gametextinput.GameTextInput$Pair getComposingRegion();
+    Code:
+       0: new           #369                // class com/google/androidgamesdk/gametextinput/GameTextInput$Pair
+       3: dup
+       4: aload_0
+       5: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+       8: invokestatic  #400                // Method getComposingSpanStart:(Landroid/text/Spannable;)I
+      11: aload_0
+      12: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      15: invokestatic  #404                // Method getComposingSpanEnd:(Landroid/text/Spannable;)I
+      18: invokespecial #397                // Method com/google/androidgamesdk/gametextinput/GameTextInput$Pair."<init>":(II)V
+      21: areturn
+
+  private boolean processKeyEvent(android.view.KeyEvent);
+    Code:
+       0: aload_1
+       1: ifnonnull     6
+       4: iconst_0
+       5: ireturn
+       6: aload_1
+       7: invokevirtual #407                // Method android/view/KeyEvent.getKeyCode:()I
+      10: istore_2
+      11: ldc           #21                 // String gti.InputConnection
+      13: ldc_w         #413                // String processKeyEvent(key=%d) text=%s
+      16: iconst_2
+      17: anewarray     #240                // class java/lang/Object
+      20: dup
+      21: iconst_0
+      22: iload_2
+      23: invokestatic  #242                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      26: aastore
+      27: dup
+      28: iconst_1
+      29: aload_0
+      30: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      33: invokevirtual #415                // Method java/lang/Object.toString:()Ljava/lang/String;
+      36: aastore
+      37: invokestatic  #248                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      40: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      43: pop
+      44: aload_0
+      45: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      48: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+      51: getfield      #9                  // Field android/view/inputmethod/EditorInfo.inputType:I
+      54: ldc           #142                // int 131072
+      56: iand
+      57: ifne          97
+      60: iload_2
+      61: bipush        66
+      63: if_icmpeq     73
+      66: iload_2
+      67: sipush        160
+      70: if_icmpne     97
+      73: aload_1
+      74: invokevirtual #416                // Method android/view/KeyEvent.hasNoModifiers:()Z
+      77: ifeq          97
+      80: aload_0
+      81: aload_0
+      82: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      85: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+      88: getfield      #419                // Field android/view/inputmethod/EditorInfo.actionId:I
+      91: invokespecial #422                // Method sendEditorAction:(I)Z
+      94: pop
+      95: iconst_1
+      96: ireturn
+      97: aload_1
+      98: invokevirtual #425                // Method android/view/KeyEvent.getAction:()I
+     101: ifeq          106
+     104: iconst_0
+     105: ireturn
+     106: aload_0
+     107: invokespecial #359                // Method getSelection:()Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;
+     110: astore_3
+     111: aload_3
+     112: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     115: iconst_m1
+     116: if_icmpne     145
+     119: aload_3
+     120: aload_0
+     121: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     124: invokeinterface #428,  1          // InterfaceMethod android/text/Editable.length:()I
+     129: putfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     132: aload_3
+     133: aload_0
+     134: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     137: invokeinterface #428,  1          // InterfaceMethod android/text/Editable.length:()I
+     142: putfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     145: iload_2
+     146: bipush        21
+     148: if_icmpne     203
+     151: aload_3
+     152: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     155: aload_3
+     156: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     159: if_icmpne     188
+     162: aload_0
+     163: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     166: aload_3
+     167: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     170: iconst_1
+     171: invokestatic  #431                // Method findIndexBackward:(Ljava/lang/CharSequence;II)I
+     174: istore        4
+     176: aload_0
+     177: iload         4
+     179: iload         4
+     181: invokevirtual #202                // Method setSelection:(II)Z
+     184: pop
+     185: goto          201
+     188: aload_0
+     189: aload_3
+     190: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     193: aload_3
+     194: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     197: invokevirtual #202                // Method setSelection:(II)Z
+     200: pop
+     201: iconst_1
+     202: ireturn
+     203: iload_2
+     204: bipush        22
+     206: if_icmpne     261
+     209: aload_3
+     210: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     213: aload_3
+     214: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     217: if_icmpne     246
+     220: aload_0
+     221: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     224: aload_3
+     225: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     228: iconst_1
+     229: invokestatic  #435                // Method findIndexForward:(Ljava/lang/CharSequence;II)I
+     232: istore        4
+     234: aload_0
+     235: iload         4
+     237: iload         4
+     239: invokevirtual #202                // Method setSelection:(II)Z
+     242: pop
+     243: goto          259
+     246: aload_0
+     247: aload_3
+     248: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     251: aload_3
+     252: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     255: invokevirtual #202                // Method setSelection:(II)Z
+     258: pop
+     259: iconst_1
+     260: ireturn
+     261: iload_2
+     262: bipush        122
+     264: if_icmpne     276
+     267: aload_0
+     268: iconst_0
+     269: iconst_0
+     270: invokevirtual #202                // Method setSelection:(II)Z
+     273: pop
+     274: iconst_1
+     275: ireturn
+     276: iload_2
+     277: bipush        123
+     279: if_icmpne     307
+     282: aload_0
+     283: aload_0
+     284: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     287: invokeinterface #428,  1          // InterfaceMethod android/text/Editable.length:()I
+     292: aload_0
+     293: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     296: invokeinterface #428,  1          // InterfaceMethod android/text/Editable.length:()I
+     301: invokevirtual #202                // Method setSelection:(II)Z
+     304: pop
+     305: iconst_1
+     306: ireturn
+     307: iload_2
+     308: bipush        67
+     310: if_icmpeq     319
+     313: iload_2
+     314: bipush        112
+     316: if_icmpne     415
+     319: aload_3
+     320: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     323: aload_3
+     324: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     327: if_icmpeq     350
+     330: aload_0
+     331: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     334: aload_3
+     335: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     338: aload_3
+     339: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     342: invokeinterface #438,  3          // InterfaceMethod android/text/Editable.delete:(II)Landroid/text/Editable;
+     347: pop
+     348: iconst_1
+     349: ireturn
+     350: iload_2
+     351: bipush        67
+     353: if_icmpne     377
+     356: aload_3
+     357: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     360: ifle          377
+     363: aload_0
+     364: invokevirtual #442                // Method finishComposingText:()Z
+     367: pop
+     368: aload_0
+     369: iconst_1
+     370: iconst_0
+     371: invokevirtual #443                // Method deleteSurroundingTextInCodePoints:(II)Z
+     374: pop
+     375: iconst_1
+     376: ireturn
+     377: iload_2
+     378: bipush        112
+     380: if_icmpne     413
+     383: aload_3
+     384: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     387: aload_0
+     388: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     391: invokeinterface #428,  1          // InterfaceMethod android/text/Editable.length:()I
+     396: if_icmpge     413
+     399: aload_0
+     400: invokevirtual #442                // Method finishComposingText:()Z
+     403: pop
+     404: aload_0
+     405: iconst_0
+     406: iconst_1
+     407: invokevirtual #443                // Method deleteSurroundingTextInCodePoints:(II)Z
+     410: pop
+     411: iconst_1
+     412: ireturn
+     413: iconst_0
+     414: ireturn
+     415: aload_1
+     416: invokevirtual #444                // Method android/view/KeyEvent.getUnicodeChar:()I
+     419: ifne          424
+     422: iconst_0
+     423: ireturn
+     424: aload_3
+     425: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     428: aload_3
+     429: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     432: if_icmpeq     469
+     435: ldc           #21                 // String gti.InputConnection
+     437: ldc_w         #447                // String processKeyEvent: deleting selection
+     440: iconst_0
+     441: anewarray     #240                // class java/lang/Object
+     444: invokestatic  #248                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     447: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+     450: pop
+     451: aload_0
+     452: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     455: aload_3
+     456: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     459: aload_3
+     460: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     463: invokeinterface #438,  3          // InterfaceMethod android/text/Editable.delete:(II)Landroid/text/Editable;
+     468: pop
+     469: aload_1
+     470: invokevirtual #444                // Method android/view/KeyEvent.getUnicodeChar:()I
+     473: i2c
+     474: invokestatic  #449                // Method java/lang/Character.toString:(C)Ljava/lang/String;
+     477: astore        4
+     479: aload_0
+     480: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     483: aload_3
+     484: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     487: aload         4
+     489: invokeinterface #198,  3          // InterfaceMethod android/text/Editable.insert:(ILjava/lang/CharSequence;)Landroid/text/Editable;
+     494: pop
+     495: aload_0
+     496: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     499: invokeinterface #428,  1          // InterfaceMethod android/text/Editable.length:()I
+     504: istore        5
+     506: aload_0
+     507: invokespecial #363                // Method getComposingRegion:()Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;
+     510: astore        6
+     512: aload         6
+     514: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     517: iconst_m1
+     518: if_icmpne     547
+     521: aload_0
+     522: invokespecial #359                // Method getSelection:()Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;
+     525: astore        6
+     527: aload         6
+     529: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     532: iconst_m1
+     533: if_icmpne     547
+     536: new           #369                // class com/google/androidgamesdk/gametextinput/GameTextInput$Pair
+     539: dup
+     540: iconst_0
+     541: iconst_0
+     542: invokespecial #397                // Method com/google/androidgamesdk/gametextinput/GameTextInput$Pair."<init>":(II)V
+     545: astore        6
+     547: aload         6
+     549: aload         6
+     551: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     554: iload         5
+     556: iadd
+     557: putfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     560: aload_0
+     561: aload         6
+     563: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     566: aload         6
+     568: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+     571: invokevirtual #206                // Method setComposingRegion:(II)Z
+     574: pop
+     575: aload_3
+     576: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+     579: aload         4
+     581: invokevirtual #454                // Method java/lang/String.length:()I
+     584: iadd
+     585: istore        7
+     587: aload_0
+     588: iload         7
+     590: iload         7
+     592: invokevirtual #202                // Method setSelection:(II)Z
+     595: pop
+     596: ldc           #21                 // String gti.InputConnection
+     598: ldc_w         #455                // String processKeyEvent: exit, text=%s
+     601: iconst_1
+     602: anewarray     #240                // class java/lang/Object
+     605: dup
+     606: iconst_0
+     607: aload_0
+     608: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+     611: invokevirtual #415                // Method java/lang/Object.toString:()Ljava/lang/String;
+     614: aastore
+     615: invokestatic  #248                // Method java/lang/String.format:(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+     618: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+     621: pop
+     622: iconst_1
+     623: ireturn
+
+  private final void stateUpdated();
+    Code:
+       0: aload_0
+       1: invokespecial #359                // Method getSelection:()Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;
+       4: astore_1
+       5: aload_0
+       6: invokespecial #363                // Method getComposingRegion:()Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;
+       9: astore_2
+      10: new           #164                // class com/google/androidgamesdk/gametextinput/State
+      13: dup
+      14: aload_0
+      15: getfield      #65                 // Field mEditable:Landroid/text/Editable;
+      18: invokevirtual #415                // Method java/lang/Object.toString:()Ljava/lang/String;
+      21: aload_1
+      22: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+      25: aload_1
+      26: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+      29: aload_2
+      30: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+      33: aload_2
+      34: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+      37: invokespecial #457                // Method com/google/androidgamesdk/gametextinput/State."<init>":(Ljava/lang/String;IIII)V
+      40: astore_3
+      41: aload_0
+      42: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      45: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+      48: aload_1
+      49: getfield      #368                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.first:I
+      52: putfield      #378                // Field android/view/inputmethod/EditorInfo.initialSelStart:I
+      55: aload_0
+      56: getfield      #35                 // Field settings:Lcom/google/androidgamesdk/gametextinput/Settings;
+      59: getfield      #3                  // Field com/google/androidgamesdk/gametextinput/Settings.mEditorInfo:Landroid/view/inputmethod/EditorInfo;
+      62: aload_1
+      63: getfield      #373                // Field com/google/androidgamesdk/gametextinput/GameTextInput$Pair.second:I
+      66: putfield      #381                // Field android/view/inputmethod/EditorInfo.initialSelEnd:I
+      69: aload_0
+      70: getfield      #209                // Field listener:Lcom/google/androidgamesdk/gametextinput/Listener;
+      73: astore        4
+      75: aload         4
+      77: ifnull        89
+      80: aload         4
+      82: aload_3
+      83: iconst_0
+      84: invokeinterface #460,  3          // InterfaceMethod com/google/androidgamesdk/gametextinput/Listener.stateChanged:(Lcom/google/androidgamesdk/gametextinput/State;Z)V
+      89: return
+
+  public androidx.core.graphics.Insets getImeInsets();
+    Code:
+       0: aload_0
+       1: getfield      #31                 // Field targetView:Landroid/view/View;
+       4: ifnonnull     11
+       7: getstatic     #466                // Field androidx/core/graphics/Insets.NONE:Landroidx/core/graphics/Insets;
+      10: areturn
+      11: aload_0
+      12: getfield      #31                 // Field targetView:Landroid/view/View;
+      15: invokestatic  #472                // Method androidx/core/view/ViewCompat.getRootWindowInsets:(Landroid/view/View;)Landroidx/core/view/WindowInsetsCompat;
+      18: astore_1
+      19: aload_1
+      20: ifnonnull     27
+      23: getstatic     #466                // Field androidx/core/graphics/Insets.NONE:Landroidx/core/graphics/Insets;
+      26: areturn
+      27: aload_1
+      28: invokestatic  #478                // Method androidx/core/view/WindowInsetsCompat$Type.ime:()I
+      31: invokevirtual #483                // Method androidx/core/view/WindowInsetsCompat.getInsets:(I)Landroidx/core/graphics/Insets;
+      34: areturn
+
+  public boolean isSoftwareKeyboardVisible();
+    Code:
+       0: aload_0
+       1: getfield      #31                 // Field targetView:Landroid/view/View;
+       4: ifnonnull     9
+       7: iconst_0
+       8: ireturn
+       9: aload_0
+      10: getfield      #31                 // Field targetView:Landroid/view/View;
+      13: invokestatic  #472                // Method androidx/core/view/ViewCompat.getRootWindowInsets:(Landroid/view/View;)Landroidx/core/view/WindowInsetsCompat;
+      16: astore_1
+      17: aload_1
+      18: ifnonnull     23
+      21: iconst_0
+      22: ireturn
+      23: aload_1
+      24: invokestatic  #478                // Method androidx/core/view/WindowInsetsCompat$Type.ime:()I
+      27: invokevirtual #489                // Method androidx/core/view/WindowInsetsCompat.isVisible:(I)Z
+      30: ireturn
+
+  public boolean performEditorAction(int);
+    Code:
+       0: ldc           #21                 // String gti.InputConnection
+       2: new           #103                // class java/lang/StringBuilder
+       5: dup
+       6: invokespecial #105                // Method java/lang/StringBuilder."<init>":()V
+       9: ldc_w         #492                // String performEditorAction, action=
+      12: invokevirtual #108                // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+      15: iload_1
+      16: invokevirtual #174                // Method java/lang/StringBuilder.append:(I)Ljava/lang/StringBuilder;
+      19: invokevirtual #115                // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+      22: invokestatic  #25                 // Method android/util/Log.d:(Ljava/lang/String;Ljava/lang/String;)I
+      25: pop
+      26: iload_1
+      27: ifne          36
+      30: aload_0
+      31: iload_1
+      32: invokespecial #494                // Method android/view/inputmethod/BaseInputConnection.performEditorAction:(I)Z
+      35: ireturn
+      36: aload_0
+      37: iload_1
+      38: invokespecial #422                // Method sendEditorAction:(I)Z
+      41: ireturn
+
+  private boolean sendEditorAction(int);
+    Code:
+       0: aload_0
+       1: getfield      #209                // Field listener:Lcom/google/androidgamesdk/gametextinput/Listener;
+       4: astore_2
+       5: aload_2
+       6: ifnull        18
+       9: aload_2
+      10: iload_1
+      11: invokeinterface #497,  2          // InterfaceMethod com/google/androidgamesdk/gametextinput/Listener.onEditorAction:(I)V
+      16: iconst_1
+      17: ireturn
+      18: iconst_0
+      19: ireturn
+
+  private static int findIndexBackward(java.lang.CharSequence, int, int);
+    Code:
+       0: iload_1
+       1: istore_3
+       2: iconst_0
+       3: istore        4
+       5: aload_0
+       6: invokeinterface #500,  1          // InterfaceMethod java/lang/CharSequence.length:()I
+      11: istore        5
+      13: iload_3
+      14: iflt          23
+      17: iload         5
+      19: iload_3
+      20: if_icmpge     27
+      23: getstatic     #503                // Field INVALID_INDEX:I
+      26: ireturn
+      27: iload_2
+      28: ifge          35
+      31: getstatic     #503                // Field INVALID_INDEX:I
+      34: ireturn
+      35: iload_2
+      36: istore        6
+      38: iload         6
+      40: ifne          45
+      43: iload_3
+      44: ireturn
+      45: iinc          3, -1
+      48: iload_3
+      49: ifge          63
+      52: iload         4
+      54: ifeq          61
+      57: getstatic     #503                // Field INVALID_INDEX:I
+      60: ireturn
+      61: iconst_0
+      62: ireturn
+      63: aload_0
+      64: iload_3
+      65: invokeinterface #506,  2          // InterfaceMethod java/lang/CharSequence.charAt:(I)C
+      70: istore        7
+      72: iload         4
+      74: ifeq          98
+      77: iload         7
+      79: invokestatic  #510                // Method java/lang/Character.isHighSurrogate:(C)Z
+      82: ifne          89
+      85: getstatic     #503                // Field INVALID_INDEX:I
+      88: ireturn
+      89: iconst_0
+      90: istore        4
+      92: iinc          6, -1
+      95: goto          38
+      98: iload         7
+     100: invokestatic  #514                // Method java/lang/Character.isSurrogate:(C)Z
+     103: ifne          112
+     106: iinc          6, -1
+     109: goto          38
+     112: iload         7
+     114: invokestatic  #510                // Method java/lang/Character.isHighSurrogate:(C)Z
+     117: ifeq          124
+     120: getstatic     #503                // Field INVALID_INDEX:I
+     123: ireturn
+     124: iconst_1
+     125: istore        4
+     127: goto          38
+
+  private static int findIndexForward(java.lang.CharSequence, int, int);
+    Code:
+       0: iload_1
+       1: istore_3
+       2: iconst_0
+       3: istore        4
+       5: aload_0
+       6: invokeinterface #500,  1          // InterfaceMethod java/lang/CharSequence.length:()I
+      11: istore        5
+      13: iload_3
+      14: iflt          23
+      17: iload         5
+      19: iload_3
+      20: if_icmpge     27
+      23: getstatic     #503                // Field INVALID_INDEX:I
+      26: ireturn
+      27: iload_2
+      28: ifge          35
+      31: getstatic     #503                // Field INVALID_INDEX:I
+      34: ireturn
+      35: iload_2
+      36: istore        6
+      38: iload         6
+      40: ifne          45
+      43: iload_3
+      44: ireturn
+      45: iload_3
+      46: iload         5
+      48: if_icmplt     63
+      51: iload         4
+      53: ifeq          60
+      56: getstatic     #503                // Field INVALID_INDEX:I
+      59: ireturn
+      60: iload         5
+      62: ireturn
+      63: aload_0
+      64: iload_3
+      65: invokeinterface #506,  2          // InterfaceMethod java/lang/CharSequence.charAt:(I)C
+      70: istore        7
+      72: iload         4
+      74: ifeq          101
+      77: iload         7
+      79: invokestatic  #517                // Method java/lang/Character.isLowSurrogate:(C)Z
+      82: ifne          89
+      85: getstatic     #503                // Field INVALID_INDEX:I
+      88: ireturn
+      89: iinc          6, -1
+      92: iconst_0
+      93: istore        4
+      95: iinc          3, 1
+      98: goto          38
+     101: iload         7
+     103: invokestatic  #514                // Method java/lang/Character.isSurrogate:(C)Z
+     106: ifne          118
+     109: iinc          6, -1
+     112: iinc          3, 1
+     115: goto          38
+     118: iload         7
+     120: invokestatic  #517                // Method java/lang/Character.isLowSurrogate:(C)Z
+     123: ifeq          130
+     126: getstatic     #503                // Field INVALID_INDEX:I
+     129: ireturn
+     130: iconst_1
+     131: istore        4
+     133: iinc          3, 1
+     136: goto          38
+
+  static {};
+    Code:
+       0: iconst_m1
+       1: putstatic     #503                // Field INVALID_INDEX:I
+       4: return
+}

@@ -7,6 +7,11 @@ namespace WordDeduction
     public enum MatchPhase { Handoff, Clues, Vote, Result, Elimination, WhiteGuess }
     public enum Role { Civilian, Undercover, White }
     public enum Outcome { CaughtUndercover, AccusedCivilian, RepeatedTie, AllAdversariesEliminated, OneCivilianRemains, WhiteGuessed }
+    internal static class RoleCounts
+    {
+        internal static int Undercover(GameMode mode, int participants) => mode == GameMode.Quick || participants <= 7 ? 1 : participants <= 12 ? 2 : 3;
+        internal static int WhiteLimit(GameMode mode, int participants) => mode == GameMode.Classic && participants >= 5 ? 1 : 0;
+    }
     public sealed class ParticipantView
     {
         public string Id { get; internal set; }
@@ -196,12 +201,14 @@ namespace WordDeduction
                 string.IsNullOrWhiteSpace(match.PairId) || string.IsNullOrWhiteSpace(match.CivilianWord) || string.IsNullOrWhiteSpace(match.UndercoverWord) ||
                 match.CivilianWord == match.UndercoverWord || match.CivilianWord.Length > 100 || match.UndercoverWord.Length > 100 ||
                 match.CivilianWord.Any(char.IsControl) || match.UndercoverWord.Any(char.IsControl)) return false;
-            if (match.Participants.Any(p => p == null || !Guid.TryParseExact(p.Id,"N",out _) || string.IsNullOrWhiteSpace(p.DisplayName) ||
-                p.DisplayName.Length > 200 || p.DisplayName.Any(char.IsControl) || !Enum.IsDefined(typeof(Role),p.Role))) return false;
+            // Frozen labels include durable duplicate suffixes and names accepted by older
+            // versions. Validate their structure by the same saved-name policy as the group.
+            if (match.Participants.Any(p => p == null || !Guid.TryParseExact(p.Id,"N",out _) || string.IsNullOrEmpty(p.DisplayName) ||
+                NormalizeName(p.DisplayName, existing: true) != p.DisplayName || !Enum.IsDefined(typeof(Role),p.Role))) return false;
             if (match.Participants.Select(p => p.Id).Distinct().Count() != match.Participants.Count ||
                 match.Participants.Select(p => p.DisplayName).Distinct(StringComparer.OrdinalIgnoreCase).Count() != match.Participants.Count ||
-                match.Participants.Count(p => p.Role == Role.Undercover) != (match.Mode == GameMode.Quick || match.Participants.Count <= 7 ? 1 : match.Participants.Count <= 12 ? 2 : 3) ||
-                match.Participants.Count(p => p.Role == Role.White) > (match.Mode == GameMode.Classic && match.Participants.Count >= 5 ? 1 : 0) ||
+                match.Participants.Count(p => p.Role == Role.Undercover) != RoleCounts.Undercover(match.Mode, match.Participants.Count) ||
+                match.Participants.Count(p => p.Role == Role.White) > RoleCounts.WhiteLimit(match.Mode, match.Participants.Count) ||
                 match.StartingIndex < 0 || match.StartingIndex >= match.Participants.Count) return false;
             if (match.Handoff < 0 || match.Handoff > match.Participants.Count ||
                 (match.Phase == MatchPhase.Handoff ? match.Handoff == match.Participants.Count : match.Handoff != match.Participants.Count)) return false;

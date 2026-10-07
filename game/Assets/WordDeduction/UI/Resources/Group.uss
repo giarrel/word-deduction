@@ -73,10 +73,14 @@ Button:disabled { opacity: 0.65; }
 .recovery .name-input { margin-top: 8px; }
 .recovery .players { min-height: 60px; }
 
-.large-type .edit-hint, .large-type .start-hint { display: none; }
+.large-type .edit-hint { display: none; }
 .large-type .topbar { margin-bottom: 8px; }
 .large-type .add-row { margin-bottom: 8px; }
 .large-type .mode-description { min-height: 0; }
+.large-type .start-hint { margin-top: 4px; }
+.large-type .screen { padding-bottom: 8px; }
+.large-type .empty-symbol { display: none; }
+.large-type .white-preference { margin-bottom: 4px; }
 
 .large-type .at-capacity .edit-hint { display: flex; }
 .large-type .at-capacity.editing .edit-hint { display: none; }

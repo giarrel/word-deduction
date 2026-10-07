@@ -3,6 +3,54 @@ using WordDeduction;
 internal static class NameCases
 {
     internal static readonly (string name, Action<string> run)[] All = {
+        ("accepted long grapheme names and duplicate labels survive dealt and progressed matches", directory => {
+            var family = "👨‍👩‍👧‍👦";
+            var names = new[] { "a" + new string('\u0301', 201), string.Concat(Enumerable.Repeat(family, 19)), string.Concat(Enumerable.Repeat(family, 24)), string.Concat(Enumerable.Repeat(family, 18)) };
+            for (int i = 0; i < names.Length; i++)
+            {
+                var folder = Path.Combine(directory, i.ToString());
+                var session = Session.Open(folder, Language.English);
+                Check(session.AddPlayer(names[i]).Success, "accepted name is within 24 extended graphemes");
+                Check(session.AddPlayer(i == 3 ? names[i] : "Bea").Success, "second player accepted, including duplicate long name");
+                Check(session.AddPlayer("Chris").Success, "Quick group ready");
+                var labels = session.View.Players.Select(p => p.DisplayName).ToArray();
+                Check(labels[0].Length > 200, "fixture crosses former frozen-name code-unit limit");
+                session = Session.Open(folder, Language.German);
+                Check(session.View.StorageNotice == null && session.View.Players.Select(p => p.DisplayName).SequenceEqual(labels), "group opens unchanged");
+                Check(session.StartMatch().Success, "deal confirmed");
+                var matchId = session.Match.Id;
+                var reopened = Session.Open(folder, Language.German);
+                Check(reopened.View.StorageNotice == null && reopened.Match?.Id == matchId, "confirmed deal restores without recovery or reshuffle");
+                Check(reopened.Match.Participants.Select(p => p.DisplayName).SequenceEqual(labels), "complete frozen labels and duplicate suffixes retained");
+                var owner = session.Match.Owner.Id;
+                var word = session.RevealWord(owner); session.HideWord();
+                Check(session.AdvanceHandoff(owner).Success, "handoff confirmed after reading");
+                reopened = Session.Open(folder, Language.German);
+                Check(reopened.View.StorageNotice == null && !reopened.View.StorageBlocked && reopened.Match?.Id == matchId, "both generations remain valid after progression");
+                Check(reopened.Match.HandoffNumber == 2 && reopened.Match.Participants.Select(p => p.DisplayName).SequenceEqual(labels), "progress and all frozen labels survive restart");
+            }
+        }),
+        ("malformed frozen labels remain blocked despite a valid checksum", directory => {
+            foreach (var invalid in new[] { "", " ", "Alex\nBea", "A\u0000B", " padded ", "e\u0301" })
+            {
+                var folder = Path.Combine(directory, Guid.NewGuid().ToString("N"));
+                var session = Session.Open(folder, Language.English);
+                foreach (var name in new[] { "Alex", "Bea", "Chris" }) session.AddPlayer(name);
+                Check(session.StartMatch().Success, "valid fixture deal");
+                var path = Path.Combine(folder, "session.json");
+                var envelope = Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path));
+                var payload = Newtonsoft.Json.Linq.JObject.Parse((string)envelope["Payload"]);
+                payload["Match"]["Participants"][0]["DisplayName"] = invalid;
+                var json = payload.ToString(Newtonsoft.Json.Formatting.None);
+                envelope["Payload"] = json;
+                envelope["Checksum"] = Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(json)));
+                File.WriteAllText(path, envelope.ToString());
+                File.Copy(path, Path.Combine(folder, "session.previous.json"), true);
+                var reopened = Session.Open(folder, Language.German);
+                Check(reopened.View.StorageBlocked && reopened.View.StorageNotice == "DamagedData", "invalid confirmed labels cannot bypass structural validation");
+                Check(!reopened.AddPlayer("Overwrite").Success, "invalid generations stay protected");
+            }
+        }),
         ("Unicode 17 conformance keeps every expected extended grapheme intact", directory => {
             int cases = 0;
             foreach (var line in File.ReadLines(Path.Combine(AppContext.BaseDirectory, "GraphemeBreakTest.txt")))

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\worktrees\final-corrections\tools\inspect-android-release.py", line 173, in <module>
+    inspect_apk(artifact, "apk")
+  File "C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\worktrees\final-corrections\tools\inspect-android-release.py", line 131, in inspect_apk
+    package["inputLogging"] = inspect_input_logging(path, label)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\worktrees\final-corrections\tools\inspect-android-release.py", line 168, in inspect_input_logging
+    raise RuntimeError("Release GameTextInput DEX is missing or still contains private debug logging")
+RuntimeError: Release GameTextInput DEX is missing or still contains private debug logging

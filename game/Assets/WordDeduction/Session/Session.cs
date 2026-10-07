@@ -22,8 +22,8 @@ namespace WordDeduction
         public Language Language { get; internal set; }
         public GameMode Mode { get; internal set; }
         public bool WhitePreferred { get; internal set; }
-        public int UndercoverCount => Mode == GameMode.Quick || ActiveCount <= 7 ? 1 : ActiveCount <= 12 ? 2 : 3;
-        public int WhiteCount => Mode == GameMode.Classic && WhitePreferred && ActiveCount >= 5 ? 1 : 0;
+        public int UndercoverCount => RoleCounts.Undercover(Mode, ActiveCount);
+        public int WhiteCount => WhitePreferred ? RoleCounts.WhiteLimit(Mode, ActiveCount) : 0;
         public int CivilianCount => Math.Max(0,ActiveCount - UndercoverCount - WhiteCount);
         public bool CanUndo { get; internal set; }
         public int ActiveCount => Players.Count(p => p.Active);
