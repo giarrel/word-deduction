@@ -23,6 +23,64 @@ namespace WordDeduction.Tests
         }
 
         [UnityTest]
+        public IEnumerator LargeTextExplainsWhyQuickAndClassicCannotStart()
+        {
+            foreach (var language in new[] { Language.English, Language.German })
+            foreach (var scenario in new[] { (GameMode.Quick, false), (GameMode.Classic, false), (GameMode.Classic, true) })
+            {
+                var mode = scenario.Item1;
+                var root = Create(language, scenario.Item2); yield return null; yield return null;
+                foreach (var name in mode == GameMode.Quick ? new[] { "Alex", "Bea" } : new[] { "Alex", "Bea", "Cora" })
+                {
+                    root.Q<TextField>("nameInput").value = name; Submit(root.Q<Button>("addPlayer")); yield return null;
+                }
+                Submit(root.Q<Button>(mode == GameMode.Quick ? "quickMode" : "classicMode")); yield return null; yield return null;
+                Enlarge(root); yield return null; yield return null;
+                var hint = root.Q<Label>("startHint"); var play = root.Q<Button>("playButton");
+                Assert.That(play.enabledInHierarchy, Is.False);
+                Assert.That(hint.resolvedStyle.display, Is.Not.EqualTo(DisplayStyle.None), "A disabled Play action must visibly explain the missing person at 150%.");
+                Assert.That(hint.text, Does.Contain(language == Language.English ? "one" : "eine"));
+                AssertReadable(hint, 616);
+                Assert.That(hint.worldBound.yMin, Is.GreaterThanOrEqualTo(play.worldBound.yMax));
+                foreach (var name in new[] { "german", "english", "addPlayer", "quickMode", "classicMode", "playButton" })
+                    Assert.That(root.Q<Button>(name).worldBound.height, Is.GreaterThanOrEqualTo(48), name);
+                Cleanup(); host = null; panel = null; directory = null; yield return null;
+            }
+        }
+        static void Enlarge(VisualElement root)
+        {
+            root.AddToClassList("large-type");
+            foreach (var element in root.Query<TextElement>().ToList())
+                if (element.GetFirstAncestorOfType<TextField>() == null) element.style.fontSize = element.resolvedStyle.fontSize * 1.5f;
+            foreach (var field in root.Query<TextField>().ToList()) field.style.fontSize = field.resolvedStyle.fontSize * 1.5f;
+            root.Q<VisualElement>("safeRoot").style.paddingTop = 40;
+            root.Q<VisualElement>("safeRoot").style.paddingBottom = 24;
+        }
+        [UnityTest]
+        public IEnumerator LargeTextEmptyGroupKeepsTheWholeFirstStepVisible()
+        {
+            foreach (var language in new[] { Language.German, Language.English })
+            {
+                var root = Create(language); yield return null; yield return null;
+                Enlarge(root); yield return null; yield return null;
+                var hint = root.Q<Label>("emptyHint");
+                AssertReadable(hint, 616);
+                Assert.That(hint.worldBound.yMax, Is.LessThanOrEqualTo(root.Q<TextField>("nameInput").worldBound.yMin), "The complete introductory instruction stays above the name field.");
+                Assert.That(hint.worldBound.yMin, Is.GreaterThanOrEqualTo(root.Q<Label>("emptyTitle").worldBound.yMax));
+                var reason = root.Q<Label>("startHint");
+                Assert.That(reason.resolvedStyle.display, Is.Not.EqualTo(DisplayStyle.None));
+                AssertReadable(reason, 616);
+                Cleanup(); host = null; panel = null; directory = null; yield return null;
+            }
+        }
+        static void AssertReadable(Label label, float bottom)
+        {
+            Assert.That(label.worldBound.xMin, Is.GreaterThanOrEqualTo(0));
+            Assert.That(label.worldBound.xMax, Is.LessThanOrEqualTo(360));
+            Assert.That(label.worldBound.yMax, Is.LessThanOrEqualTo(bottom));
+            Assert.That(label.contentRect.height, Is.GreaterThanOrEqualTo(label.MeasureTextSize(label.text, label.contentRect.width, VisualElement.MeasureMode.AtMost, 0, VisualElement.MeasureMode.Undefined).y - 1), "Every line fits in the label.");
+        }
+        [UnityTest]
         public IEnumerator SmallGroupHasFingerSizedLanguageAndParticipationControls()
         {
             var root = Create(Language.German);
@@ -44,7 +102,7 @@ namespace WordDeduction.Tests
                 Assert.That(button.worldBound.height, Is.GreaterThanOrEqualTo(48));
         }
 
-        VisualElement Create(Language language)
+        VisualElement Create(Language language, bool whitePreferred = false)
         {
             directory = Path.Combine(Application.temporaryCachePath,"polish-ui-"+Guid.NewGuid().ToString("N"));
             host = new GameObject("Polish rendered input test"); host.SetActive(false);
@@ -56,7 +114,9 @@ namespace WordDeduction.Tests
             // One logical unit per dp in this rendered 360 x 640 phone fixture.
             panel.scaleMode = PanelScaleMode.ConstantPixelSize; panel.scale = 1;
             var document = host.AddComponent<UIDocument>(); document.panelSettings = panel;
-            host.AddComponent<GroupScreen>().Initialize(Session.Open(directory,language)); host.SetActive(true);
+            var session = Session.Open(directory,language);
+            if (whitePreferred) session.SetWhitePreference(true);
+            host.AddComponent<GroupScreen>().Initialize(session); host.SetActive(true);
             var root = document.rootVisualElement; root.style.width = 360; root.style.height = 640;
             return root;
         }

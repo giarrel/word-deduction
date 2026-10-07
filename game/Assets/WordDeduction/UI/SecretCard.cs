@@ -67,7 +67,23 @@ namespace WordDeduction.UI
             root.AddToClassList("reading-card");
             word.text = white ? Copy.Get(session.Match.Language,"whitePrivate") : text;
             word.EnableInClassList("white-private",white); word.EnableInClassList("hidden",false);
+            word.EnableInClassList("whole-word",!white && !text.Contains(" "));
+            if (white) word.style.fontSize = StyleKeyword.Null;
+            else FitWord(text);
             symbol.EnableInClassList("hidden",true); caption.EnableInClassList("hidden",true); face.AddToClassList("revealed");
+        }
+        void FitWord(string text)
+        {
+            // Keep each token whole; phrases may wrap only between words. The current
+            // bilingual catalog fits the small card without going below readable 22dp.
+            float available = face.contentRect.width - word.resolvedStyle.marginLeft - word.resolvedStyle.marginRight
+                - word.resolvedStyle.paddingLeft - word.resolvedStyle.paddingRight - 2;
+            float measuredSize = word.resolvedStyle.fontSize;
+            float widest = 0;
+            foreach (var token in text.Split(' '))
+                widest = Mathf.Max(widest,word.MeasureTextSize(token,0,VisualElement.MeasureMode.Undefined,0,VisualElement.MeasureMode.Undefined).x);
+            if (available > 0 && measuredSize > 0 && widest > 0)
+                word.style.fontSize = Mathf.Clamp(Mathf.Floor(measuredSize * available / widest),22,32);
         }
         void Conceal()
         {

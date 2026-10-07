@@ -13,6 +13,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("artifact", type=Path)
 parser.add_argument("--android-player", required=True, type=Path)
 parser.add_argument("--output", required=True, type=Path)
+parser.add_argument("--version-code", default=4, type=int)
 args = parser.parse_args()
 artifact, sdk, out = args.artifact.resolve(), args.android_player.resolve(), args.output.resolve()
 out.mkdir(parents=True, exist_ok=True)
@@ -117,7 +118,7 @@ def inspect_apk(path, label, manifest=True):
             save()
             raise RuntimeError("Release has an unexpected network/sensitive permission or is debuggable")
         if label == "apk" or label.startswith("universal-") or label == "default-base-master":
-            expected = ("package: name='com.giarrel.worddeduction'", "versionCode='2'", "versionName='1.0.0'",
+            expected = ("package: name='com.giarrel.worddeduction'", f"versionCode='{args.version_code}'", "versionName='1.0.0'",
                         "minSdkVersion:'26'", "targetSdkVersion:'36'")
             if package["native"]:
                 expected += ("native-code: 'arm64-v8a'",)
@@ -127,6 +128,7 @@ def inspect_apk(path, label, manifest=True):
             if not re.search(r"android:allowBackup\([^)]*\)=false", manifest_text):
                 raise RuntimeError("Release must disable platform backup")
             inspect_backup(path, label)
+            package["inputLogging"] = inspect_input_logging(path, label)
     run(label + "-signature", [buildtools / "apksigner.bat", "verify", "--verbose", "--print-certs", path])
     run(label + "-zipalign", [buildtools / "zipalign.exe", "-v", "-c", "-P", "16", "4", path])
     save()
@@ -142,6 +144,29 @@ def inspect_backup(path, label):
         expected = 2 if name == "session_data_extraction_rules" else 1
         if rules.count('path="word-deduction"') != expected or rules.count('domain="file"') != expected:
             raise RuntimeError(f"Incomplete app-private backup exclusion: {name}")
+
+
+def inspect_input_logging(path, label):
+    classes, logging_calls = [], []
+    with ZipFile(path) as archive:
+        for name in archive.namelist():
+            if not re.fullmatch(r"classes\d*\.dex", name):
+                continue
+            dex = out / (label + "-" + name)
+            dex.write_bytes(archive.read(name))
+            disassembly = run(label + "-" + name + "-disassembly", [buildtools / "dexdump.exe", "-d", dex])
+            for section in re.split(r"(?m)^Class #\d+", disassembly):
+                descriptor = re.search(r"Class descriptor\s*:\s*'(Lcom/google/androidgamesdk/gametextinput/[^']+)'", section)
+                if descriptor:
+                    classes.append(descriptor.group(1))
+                    logging_calls.extend(line.strip() for line in section.splitlines()
+                                         if re.search(r"invoke-\S+.*Landroid/util/Log;\.[vdi]:", line))
+    result = {"classes": classes, "debugVerboseInfoCalls": logging_calls}
+    (out / (label + "-input-logging.json")).write_text(json.dumps(result, indent=2), encoding="utf-8")
+    if "Lcom/google/androidgamesdk/gametextinput/InputConnection;" not in classes or logging_calls:
+        save()
+        raise RuntimeError("Release GameTextInput DEX is missing or still contains private debug logging")
+    return result
 
 
 if artifact.suffix == ".apk":

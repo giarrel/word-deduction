@@ -1,0 +1,10 @@
+Scoped Standards verification of `b86f19564b1d4c2fa31f02d7872dca7e835d881a...71e6f39e599727cd176e2545ee65d1ab692d12de`. Source root: `C:/Users/lucac/Documents/Codex/2026-10-06/sie/work/worktrees/final-corrections`. The inspected runtime/build sources match the pinned tip.
+
+**No findings.** No documented-standard violation or actionable baseline smell was identified in the word-fit change, stylesheet adjustment, or code4 version bump.
+
+- `game/Assets/WordDeduction/UI/SecretCard.cs:61–86` performs fitting synchronously after the existing privacy-readiness and intentional-reveal gates. It changes only presentation, with no persistence, logging, accessibility disclosure, or delayed reveal callback. The White instruction resets its inline font size and retains its separate style.
+- `SecretCard.cs:88–107,128–140` retains synchronous secret clearing before animation/capture work and removes registered callbacks during disposal. The new fitting method does not alter release, cancellation, focus/pause, or multi-contact handling. This remains consistent with the volatile-reveal and safe-projection contracts in `docs/development/session-interface.md:13,19`.
+- `game/Assets/WordDeduction/UI/Resources/Match.uss:23–25` supplies explicit label width and zero insets; single terms remain unwrapped while phrases can wrap. Supplied actual-font evidence measures all 2,127 catalog tokens at 22dp, with maximum width 244 against 248 available. The strengthened rendered regression checks real public deals, whole tokens, readable size, card bounds, visible Next action, and immediate clearing, consistent with `docs/development/autonomous-workflow.md:40–43`. Inspected supplied results show 30/30 passed, zero skipped; these were not rerun by this verifier.
+- Version code4 is consistent in `AppBuild.cs:22`, `ProjectSettings.asset:181`, and `tools/inspect-android-release.py:16`.
+
+No source, Git, Unity, or device mutations were performed. Session and R8 were unchanged and were not re-reviewed. Native code4 validation remains the coordinator's separate gate.

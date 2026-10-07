@@ -15,7 +15,11 @@ static class ClassicCases
                 session = Session.Open(folder,Language.German, maximum => 0);
                 Check(session.View.WhitePreferred && session.View.WhiteCount == scenario.Item3 && session.View.UndercoverCount == scenario.Item2,"effective mix and preference survive reopening");
                 Check(session.StartMatch().Success,"Classic starts");
+                var dealId = session.Match.Id;
+                session = Session.Open(folder,Language.English, maximum => 0);
+                Check(session.View.StorageNotice == null && session.Match?.Id == dealId,"every supported Classic role mix restores without recovery");
                 var cards = ReadCards(session);
+                Check(Session.Open(folder,Language.English).Match?.Phase == MatchPhase.Clues,"every progressed role mix restores");
                 Check(cards.Count(w => w == "Mr. White") == scenario.Item3,"White has no word");
                 Check(cards[0]!=cards[^1] && cards.Count(w => w == cards[0]) == scenario.Item2,"Undercover count matches mix");
                 Check(cards.Count(w => w == cards[^1]) == scenario.Item1-scenario.Item2-scenario.Item3,"remaining people are Civilians");
