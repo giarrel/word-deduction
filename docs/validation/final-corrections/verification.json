@@ -1,0 +1,42 @@
+{
+  "verifiedAtUtc": "2026-10-07T02:40:26.946803+00:00",
+  "integrationMerge": "2d0bc5dc16729e857ae54cf159c0756354355a2b",
+  "buildSource": "71e6f39e599727cd176e2545ee65d1ab692d12de",
+  "differencesFromBuildSource": [
+    "docs/validation/final-review/code4-static/aab-build-summary.json",
+    "docs/validation/final-review/code4-static/aab-inspection.json",
+    "docs/validation/final-review/code4-static/apk-boot.config.txt",
+    "docs/validation/final-review/code4-static/apk-build-summary.json",
+    "docs/validation/final-review/code4-static/apk-inspection.json",
+    "docs/validation/final-review/code4-static/apk-signature.txt",
+    "docs/validation/final-review/code4-static/input-logging.json",
+    "docs/validation/final-review/code4-static/managed-stripped.txt",
+    "docs/validation/final-review/report.md",
+    "docs/validation/final-review/spec-word-fit-verification.md",
+    "docs/validation/final-review/standards-word-fit-verification.md",
+    "docs/validation/final-review/word-fit-settled-images/Chocolate-hazelnut-spread-large.png",
+    "docs/validation/final-review/word-fit-settled-images/Chocolate-hazelnut-spread-normal.png"
+  ],
+  "identicalTrees": {
+    "game": "340c05051d08461c4b085e86342e501c51cd5d89",
+    "content": "fae305a03886bbde4c514b9ab4606b56be478fdd",
+    "tools": "ab394b693cf6d5fa8bbbdf9a268e3db11f4c8059",
+    "tests": "e0e64817255754c21422a23040bc04db11a46c10",
+    "third-party": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+  },
+  "sessionScenariosPassed": 55,
+  "sessionScenariosFailed": 0,
+  "newtonsoftJsonSha256": "7292d3eb508652d14726749dd27094f2d481aeccf2db6427b62f68a71460897e",
+  "artifacts": [
+    {
+      "path": "artifacts/final-release-corrections/android/71e6f39e5997/20261007T022033606Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37422486,
+      "sha256": "2f4523b0cbfe87379997bbaecfd4a78e21e9ae4afc09c79fc9baf3b20b1a9a97"
+    },
+    {
+      "path": "artifacts/final-release-corrections/android/71e6f39e5997/20261007T022558040Z-aab/WordDeduction-local-release.aab",
+      "bytes": 37779435,
+      "sha256": "ae6ba0061f53fb7e0ba2da538569105ad32e991cbeaaf344c629012fb0865ae7"
+    }
+  ]
+}

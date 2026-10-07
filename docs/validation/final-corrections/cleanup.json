@@ -1,0 +1,11 @@
+{
+  "removedAtUtc": "2026-10-07T02:42:10.9033253Z",
+  "removedWorktree": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\final-corrections",
+  "retainedBranch": "implement/final-corrections",
+  "mergedHead": "1d4a758e144dc6206927b0d75f30770d3ec8ef22",
+  "preservedFileCount": 303,
+  "preservedBytes": 1476113904,
+  "preservationManifest": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\final-release-corrections\\preservation-manifest.json",
+  "unityProcessesAtCheck": 1,
+  "cleanup": "Git unregistered the worktree but encountered Windows long paths. The exact contained residual directory was removed with native PowerShell after rechecking preserved hashes and retained merged history."
+}
