@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "try { WordDeduction.Editor.AppBuild.ProductionBundle(); return \"ERROR: unexpectedly built\"; } catch (System.InvalidOperationException e) { return e.Message; }"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "Production signing requires WD_ANDROID_KEYSTORE. No artifact was built."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\release\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

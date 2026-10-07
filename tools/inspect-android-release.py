@@ -2,6 +2,8 @@
 import argparse
 import hashlib
 import json
+import os
+import re
 import struct
 import subprocess
 from pathlib import Path
@@ -22,7 +24,8 @@ commands = []
 
 
 def run(name, command):
-    result = subprocess.run([str(x) for x in command], capture_output=True, text=True, encoding="utf-8", errors="replace")
+    result = subprocess.run([str(x) for x in command], capture_output=True, text=True, encoding="utf-8", errors="replace",
+                            env={**os.environ, "JAVA_HOME": str(sdk / "OpenJDK")})
     (out / (name + ".txt")).write_text(result.stdout + result.stderr, encoding="utf-8")
     commands.append({"name": name, "command": [str(x) for x in command], "exitCode": result.returncode})
     if result.returncode:
@@ -32,7 +35,9 @@ def run(name, command):
 
 
 def identity(path):
-    return {"path": str(path), "bytes": path.stat().st_size, "sha256": hashlib.file_digest(path.open("rb"), "sha256").hexdigest()}
+    with path.open("rb") as stream:
+        digest = hashlib.file_digest(stream, "sha256").hexdigest()
+    return {"path": str(path), "bytes": path.stat().st_size, "sha256": digest}
 
 
 report = {"artifact": identity(artifact), "commands": commands, "packages": []}
@@ -103,27 +108,44 @@ def inspect_apk(path, label, manifest=True):
     if manifest:
         badging = run(label + "-badging", [buildtools / "aapt2.exe", "dump", "badging", path])
         manifest_text = run(label + "-manifest", [buildtools / "aapt2.exe", "dump", "xmltree", path, "--file", "AndroidManifest.xml"])
-        forbidden = ("android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "application-debuggable",
+        forbidden = ("android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE",
                      "android.permission.CAMERA", "android.permission.RECORD_AUDIO", "android.permission.READ_CONTACTS",
                      "android.permission.ACCESS_FINE_LOCATION", "android.permission.WRITE_EXTERNAL_STORAGE")
-        if any(value in badging for value in forbidden):
+        # Isolated ABI splits inherit uses-sdk from base. aapt badging otherwise
+        # invents legacy implied permissions; inspect actual XML declarations.
+        if any(value in manifest_text for value in forbidden) or "application-debuggable" in badging:
             save()
             raise RuntimeError("Release has an unexpected network/sensitive permission or is debuggable")
-        if label == "apk" or label.startswith("universal-"):
+        if label == "apk" or label.startswith("universal-") or label == "default-base-master":
             expected = ("package: name='com.giarrel.worddeduction'", "versionCode='2'", "versionName='1.0.0'",
-                        "minSdkVersion:'26'", "targetSdkVersion:'36'", "native-code: 'arm64-v8a'")
+                        "minSdkVersion:'26'", "targetSdkVersion:'36'")
+            if package["native"]:
+                expected += ("native-code: 'arm64-v8a'",)
             if not all(value in badging for value in expected):
                 save()
                 raise RuntimeError("Unexpected package identity, version, SDK or ABI")
+            if not re.search(r"android:allowBackup\([^)]*\)=false", manifest_text):
+                raise RuntimeError("Release must disable platform backup")
+            inspect_backup(path, label)
     run(label + "-signature", [buildtools / "apksigner.bat", "verify", "--verbose", "--print-certs", path])
     run(label + "-zipalign", [buildtools / "zipalign.exe", "-v", "-c", "-P", "16", "4", path])
     save()
 
 
+def inspect_backup(path, label):
+    resources = run(label + "-resources", [buildtools / "aapt2.exe", "dump", "resources", path])
+    for name in ("session_backup_rules", "session_data_extraction_rules"):
+        match = re.search(r"resource \S+ xml/" + re.escape(name) + r"\s+\(\) \(file\) (\S+)", resources)
+        if not match:
+            raise RuntimeError(f"Backup resource not found: {name}")
+        rules = run(label + "-" + name, [buildtools / "aapt2.exe", "dump", "xmltree", path, "--file", match.group(1)])
+        expected = 2 if name == "session_data_extraction_rules" else 1
+        if rules.count('path="word-deduction"') != expected or rules.count('domain="file"') != expected:
+            raise RuntimeError(f"Incomplete app-private backup exclusion: {name}")
+
+
 if artifact.suffix == ".apk":
     inspect_apk(artifact, "apk")
-    for name in ("session_backup_rules", "session_data_extraction_rules"):
-        run(name, [buildtools / "aapt2.exe", "dump", "xmltree", artifact, "--file", f"res/xml/{name}.xml"])
 elif artifact.suffix == ".aab":
     run("bundle-validate", [java, "-jar", bundletool, "validate", "--bundle=" + str(artifact)])
     config = run("bundle-config", [java, "-jar", bundletool, "dump", "config", "--bundle=" + str(artifact)])

@@ -1,6 +1,6 @@
 # Android v1: Abnahmematrix
 
-Referenz: [kanonische Spezifikation](https://github.com/giarrel/word-deduction/issues/2), [lokale Lesekopie](../specs/android-release-v1.md). Diese Matrix trennt einen implementierten Mechanismus von seinem tatsächlich ausgeführten Nachweis. Die UI-/Android-Nachweise aus Ticket 8 ergänzen unten die bisherige Abnahme; der letzte Großschrift-Gegencheck ist auf `7404d17` nativ bestanden; alle Releasekriterien bleiben ausdrücklich offen. Foundation-Historie: Implementer `44473f1`, Merge `318af96`, separate Integrationsprüfung `ac0dcca`. [Foundation-Nachweise](group-foundation.md), [Android-Bedienung](android-group-runtime/report.md) und [Merger-Prüfung](group-foundation-merge.md). Keine Gesamtanforderung gilt allein aufgrund eines Teilnachweises als bestanden.
+Referenz: [kanonische Spezifikation](https://github.com/giarrel/word-deduction/issues/2), [lokale Lesekopie](../specs/android-release-v1.md). Diese Matrix trennt einen implementierten Mechanismus von seinem tatsächlich ausgeführten Nachweis. Die UI-/Android-Nachweise aus Ticket 8 ergänzen unten die bisherige Abnahme; der letzte Großschrift-Gegencheck ist auf `7404d17` nativ bestanden. Ticket 9 ergänzt [Build- und Paketnachweise](android-release/report.md) auf `ef261b0`; finale native Abnahme und unabhängige Reviews bleiben offen. Foundation-Historie: Implementer `44473f1`, Merge `318af96`, separate Integrationsprüfung `ac0dcca`. [Foundation-Nachweise](group-foundation.md), [Android-Bedienung](android-group-runtime/report.md) und [Merger-Prüfung](group-foundation-merge.md). Keine Gesamtanforderung gilt allein aufgrund eines Teilnachweises als bestanden.
 
 Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable**. Bei Passed sind geprüfter Commit, Plattform, konkreter Bericht und Umfang zu verlinken. Ein Teilnachweis lässt den Gesamteintrag offen. Blocked beschreibt hier ein einzelnes Prüfkriterium, nicht automatisch das aktive Codex-Ziel.
 
@@ -58,13 +58,13 @@ Statuswerte: **Not run**, **Passed**, **Failed**, **Blocked**, **Not applicable*
 | ID | Anforderung / Abnahmeumfang | Erforderliche Evidenz | Status |
 |---|---|---|---|
 | A01 | Erster Start und vollständige Spiele ohne Internet/Account/Download/Monetarisierung | Installierter Offline-Lauf; tatsächliches Manifest und Abhängigkeiten | Not run |
-| A02 | APK/AAB ohne Development-Flags, ARM64/IL2CPP, min26/target36, reproduzierbar | Buildreport, Commit, genaue Befehle, Versions- und Hashdaten | Not run |
-| A03 | APK-ZIP-Alignment, alle nativen ELF-Segmente und Bundle-Seitenausrichtung | Ergebnisse von zipalign, ELF-Prüfung und bundletool | Not run |
-| A04 | Produktionssignierung und Update behalten vorhandene Gruppe/Partie | Signaturprüfung und Update einer bestehenden Installation | Not run |
-| A05 | Keine Geheimnisse in Release-Logs/Backups/Taskvorschau; korrekte Berechtigungen | Paketprüfung und beobachtete Android-Laufzeit | Not run |
+| A02 | APK/AAB ohne Development-Flags, ARM64/IL2CPP, min26/target36, reproduzierbar | [Beide Artefakte](android-release/report.md) von sauberem `ef261b0`, eigene Buildreports, Befehle, Version1.0.0/code2, SHA256; 0 Fehler/2 dokumentierte Warnungen. Wiederholbares Verfahren, keine Behauptung byteidentischer Builds | Passed |
+| A03 | APK-ZIP-Alignment, alle nativen ELF-Segmente und Bundle-Seitenausrichtung | [APK/AAB plus Universal-/Delivery-Splits](android-release/report.md): zipalign, alle sechs ELF-LOADs, keine Schreibdatenkollision mit 16KB-RELRO, PAGE_ALIGNMENT_16K. Nichtnull-RELRO-Endreste und komprimierte Bibliotheken ausdrücklich ausgewiesen; physischer 16KB-Kernel/Play-Akzeptanz nicht abgeleitet | Passed |
+| A04 | Produktionssignierung und Update behalten vorhandene Gruppe/Partie | [Lokale Debug-Signatur verifiziert](android-release/report.md); Produktionspfad verweigert ohne dedizierten Eigentümerschlüssel. Koordinator ergänzt tatsächlichen Update-Nachweis. Produktionsidentität bleibt Eigentümervoraussetzung | Blocked |
+| A05 | Keine Geheimnisse in Release-Logs/Backups/Taskvorschau; korrekte Berechtigungen | [Paketprüfung bestanden](android-release/report.md): Logging aus, Backup-Ausschlüsse, keine Netzwerk-/sensiblen Berechtigungen, keine Runtime-Pipeline. Vollständiger nativer Lifecycle-/Lognachweis folgt separat | Not run |
 | A06 | Standards- und Spec-Review, erhebliche Befunde behoben | Zwei getrennte Reviewberichte gegen festgehaltene Basis und Retests | Not run |
-| A07 | Icon, echte App-Bilder, DE/EN-Storetexte, Datenschutz-/Data-Safety-Grundlage | Sichtprüfung finaler Dateien und Abgleich mit tatsächlichem Releasepaket | Not run |
-| A08 | Signierung, Publisherkontakt, Storekonto/Testvoraussetzungen abschließend geklärt | Konkreter Freigabeentscheid bzw. explizit benannte externe Voraussetzung | Not run |
+| A07 | Icon, echte App-Bilder, DE/EN-Storetexte, Datenschutz-/Data-Safety-Grundlage | [Originalicon, zwei Featuregrafiken, DE/EN-Texte und Datenschutzgrundlage](../release/data-safety.md) vorbereitet und visuell geprüft. Echte finale Android-Screenshots ergänzt der Koordinator; daher noch Teilnachweis | Not run |
+| A08 | Signierung, Publisherkontakt, Storekonto/Testvoraussetzungen abschließend geklärt | [Konkrete Eigentümervoraussetzungen](../release/data-safety.md#owner-prerequisites-after-local-acceptance): öffentlicher Name/Kontakt/Policy-URL, Play-Konto/Testvorgaben, dedizierter Uploadschlüssel und ausdrückliche Veröffentlichung. Kein Upload erfolgt | Blocked |
 
 ## Grenzen der eigenen Prüfung
 

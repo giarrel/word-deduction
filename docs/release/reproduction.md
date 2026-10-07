@@ -1,10 +1,10 @@
 # Android release reproduction
 
-Unity 6000.3.25f1; Android ARM64/IL2CPP, min API26, target API36; version1.0.0/code2. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
+Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.0.0/code 2. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
 
 ## Build
 
-Use the existing Android module, JDK17, SDK/build-tools36, NDK27.2.12479018. First open `game` with the required Editor and let import finish. Run `WordDeduction.Editor.AppBuild.Configure()` in that Editor once; review and commit intentional configuration changes before a release build. Never regenerate `App.unity` just to build.
+Use the existing Android module, JDK 17, SDK/build-tools 36, NDK 27.2.12479018. First open `game` with the required Editor and let import finish. Run `WordDeduction.Editor.AppBuild.Configure()` in that Editor once; review and commit intentional configuration changes before a release build. Never regenerate `App.unity` just to build.
 
 With this project's Editor closed:
 
@@ -38,9 +38,9 @@ python ./tools/inspect-android-release.py '<exact.apk>' --android-player '<Unity
 python ./tools/inspect-android-release.py '<exact.aab>' --android-player '<Unity Editor>/Data/PlaybackEngines/AndroidPlayer' --output ./artifacts/inspection-aab
 ```
 
-Use an unused output directory for each invocation: generated `.apks` files are not overwritten silently. The inspector records command exit codes and stdout/stderr; verifies APK v2/signature details, zipalign16KB, ARM64 ELF headers, every LOAD and rounded RELRO writable-byte intersection; and saves boot.config, manifest and backup rules. AAB inspection uses bundletool validate/config/manifest, jarsigner, then default and universal APK generation and inspection of master/native-bearing APKs. Generated APK signing is bundletool's local debug default; verify its certificate before installing as an update.
+Use an unused output directory for each invocation: generated `.apks` files are not overwritten silently. The inspector records command exit codes and stdout/stderr; verifies APK v2/signature details, zipalign 16KB, ARM64 ELF headers, every LOAD and rounded RELRO writable-byte intersection; and saves boot.config, manifest and backup rules. AAB inspection uses bundletool validate/config/manifest, jarsigner, then default and universal APK generation and inspection of master/native-bearing APKs. Generated APK signing is bundletool's local debug default; verify its certificate before installing as an update.
 
-`GNU_RELRO` end residues are reported separately from writable-data collisions. Some Unity/NDK libraries end RELRO on a4KB boundary but leave the rest of the16KB protection page unmapped. Do not hide these scalar failures or binary-patch them; assess the full layout and separately run the16KB application-environment probe. Static checks and translated emulator execution do not prove physical ARM64/16KB-kernel behavior or Play acceptance.
+`GNU_RELRO` end residues are reported separately from writable-data collisions. Some Unity/NDK libraries end RELRO on a 4KB boundary but leave the rest of the 16KB protection page unmapped. Do not hide these scalar failures or binary-patch them; assess the full layout and separately run the 16KB application-environment probe. Static checks and translated emulator execution do not prove physical ARM64/16KB-kernel behavior or Play acceptance.
 
 ## Tests and actual playtests
 
@@ -48,4 +48,4 @@ The accepted Session seam is `tests/Session.Tests`; supply `-p:NewtonsoftJsonAss
 
 Before committing/building after rendered tests, clear test-populated dynamic Inter and Emoji data through `FontAsset.ClearFontAssetData(true)` in the Editor and save assets; verify their semantic Git diff is empty. Do not commit generated atlas/glyph caches. Git may need `git add` for those exact unchanged assets to refresh CRLF normalization. Do not restore an unrelated user's asset change.
 
-Native checks belong to the coordinator's report: actual installed source/hash, old-state update, fresh offline startup, Gboard, DE/EN, Quick/Classic, White, reveal/release, Back/Home/resume, system text scaling/TalkBack and measured warm return/rematch. Capture the actual phone framebuffer at1080×1920 for store screenshots. Do not pass Editor fixture renders off as native gameplay.
+Native checks belong to the coordinator's report: actual installed source/hash, old-state update, fresh offline startup, Gboard, DE/EN, Quick/Classic, White, reveal/release, Back/Home/resume, system text scaling/TalkBack and measured warm return/rematch. Capture the actual phone framebuffer at 1080×1920 for store screenshots. Do not pass Editor fixture renders off as native gameplay.

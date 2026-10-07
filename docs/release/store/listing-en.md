@@ -6,14 +6,14 @@ Short description: One phone, secret words and your group. Play a quick game or 
 
 ## Full description
 
-Pass one phone around. Everyone gets a secret word – but some words are different. Give clues, listen closely and decide together who is bluffing.
+Pass one phone around. Everyone reads their secret card. Most share a word; some get a different one, and Mr. White gets no word at all. Give clues, listen closely and decide together who is bluffing.
 
 Word Deduction is a word and bluffing game for people in the same place. Add your names, choose a mode and play. No account, ads, purchases or internet connection needed.
 
 TWO WAYS TO PLAY
 
 • Quick: from 3 players. One clue round, one vote and the result. For short games and groups that keep changing.
-• Classic: from 4 players. Eliminate one suspect after each vote and continue with the survivors. From 5 players, add Mr. White: no word, plenty of bluffing, and one chance to guess the majority word after being eliminated.
+• Classic: from 4 players. Find suspects, reveal eliminated roles and continue with the survivors. From 5 players, add Mr. White: no word, plenty of bluffing, and one chance to guess the majority word after being eliminated.
 
 LESS SETUP, MORE CONVERSATION
 

@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "try { WordDeduction.Editor.AppBuild.ReleaseApk(); return \"ERROR: unexpected build\"; } catch (System.InvalidOperationException e) { return e.Message; }"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": "Commit tracked source and configured settings before building a release candidate."
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\worktrees\\release\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

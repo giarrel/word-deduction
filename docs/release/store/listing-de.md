@@ -6,14 +6,14 @@ Kurzbeschreibung: Ein Handy, geheime Wörter und eure Gruppe. Schnell oder klass
 
 ## Vollständige Beschreibung
 
-Ein Handy geht herum. Alle sehen ihr geheimes Wort – doch nicht alle haben dasselbe. Gebt Hinweise, hört genau zu und entscheidet gemeinsam, wer blufft.
+Ein Handy geht herum. Alle lesen ihre geheime Karte. Die meisten teilen ein Wort, manche bekommen ein anderes und Mr. White bekommt gar keines. Gebt Hinweise, hört genau zu und entscheidet gemeinsam, wer blufft.
 
 Word Deduction ist ein Wort- und Bluffspiel für eine Gruppe am selben Ort. Namen eintragen, Modus wählen, losspielen. Kein Konto, keine Werbung, keine Käufe und keine Internetverbindung nötig.
 
 ZWEI MODI FÜR EURE RUNDE
 
 • Schnell: ab 3 Personen. Eine Hinweisrunde, eine Abstimmung und direkt das Ergebnis. Für kurze Spiele und wechselnde Gruppen.
-• Klassisch: ab 4 Personen. Nach jeder Abstimmung scheidet jemand aus; die anderen spielen weiter. Ab 5 Personen kann Mr. White ohne eigenes Wort mitbluffen und nach dem Ausscheiden das Mehrheitswort erraten.
+• Klassisch: ab 4 Personen. Findet Verdächtige, deckt ausgeschiedene Rollen auf und spielt mit den Verbleibenden weiter. Ab 5 Personen kann Mr. White ohne eigenes Wort mitbluffen und nach dem Ausscheiden das Mehrheitswort erraten.
 
 EUER HANDY HÄLT EUCH DEN RÜCKEN FREI
 
