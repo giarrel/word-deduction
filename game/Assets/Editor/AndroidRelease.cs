@@ -107,14 +107,22 @@ namespace WordDeduction.Editor
                 custom = PlayerSettings.Android.useCustomKeystore;
             readonly string key = PlayerSettings.Android.keystoreName, alias = PlayerSettings.Android.keyaliasName,
                 storePassword = PlayerSettings.Android.keystorePass, keyPassword = PlayerSettings.Android.keyaliasPass;
+            readonly string serializedKey = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/ProjectSettings.asset")[0])
+                .FindProperty("AndroidKeystoreName").stringValue;
             public void Dispose()
             {
                 EditorUserBuildSettings.buildAppBundle = bundle; EditorUserBuildSettings.development = development;
                 EditorUserBuildSettings.allowDebugging = debugging; EditorUserBuildSettings.connectProfiler = profiler;
                 EditorUserBuildSettings.buildWithDeepProfilingSupport = deepProfiling; PlayerSettings.usePlayerLog = log;
-                PlayerSettings.Android.useCustomKeystore = custom; PlayerSettings.Android.keystoreName = key;
+                PlayerSettings.Android.useCustomKeystore = custom;
+                if (PlayerSettings.Android.keystoreName != key) PlayerSettings.Android.keystoreName = key;
                 PlayerSettings.Android.keyaliasName = alias; PlayerSettings.Android.keystorePass = storePassword;
                 PlayerSettings.Android.keyaliasPass = keyPassword;
+                // The public setter rewrites an empty path as an in-project marker.
+                // Preserve the original serialization so a local build leaves a clean checkout.
+                var settings = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/ProjectSettings.asset")[0]);
+                settings.FindProperty("AndroidKeystoreName").stringValue = serializedKey;
+                settings.ApplyModifiedPropertiesWithoutUndo();
                 AssetDatabase.SaveAssets();
             }
         }
