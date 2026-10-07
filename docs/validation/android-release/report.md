@@ -13,6 +13,8 @@ Build/static checks pass at the scope described below. **Coordinator native acce
 
 Paths relative to the build checkout are `artifacts/android/ef261b030a03/20261007T005044376Z-apk/WordDeduction-local-release.apk` and `artifacts/android/ef261b030a03/20261007T005648918Z-aab/WordDeduction-local-release.aab`. The [APK report](apk-build-summary.json) and [AAB report](aab-build-summary.json) preserve independent source/options/version/signing/size/hash records. Unity's much larger `reportedBytes` counts build inputs and is not the file download size. Preserve the artifacts before removing the ignored build checkout.
 
+The independent [merge verification](merge-verification.md) records the integration test rerun and the verified copies now preserved in the output repository under `artifacts/android-release/`.
+
 Unity **6000.3.25f1**, ARM64/IL2CPP, min SDK26, target/compile SDK36, OpenGLES3, portrait, package `com.giarrel.worddeduction`, version **1.0.0 / code2**. Package-lock SHA256 `da98f245e8c511d47699dc883e521eff5176800341117fcfe8f77fe9dcfb342d`. Installed Android tooling: OpenJDK17.0.18, NDK27.2.12479018, build-tools36.0.0, AGP9/Gradle9.3.1. This is a repeatable pinned build procedure, not a claim of byte-identical Unity builds.
 
 ## Reproduction and provenance
