@@ -2,6 +2,16 @@
 
 Ziel und Arbeitsweise: [Engineering-Ablauf](autonomous-workflow.md). Kanonische [Spec](https://github.com/giarrel/word-deduction/issues/2), [lokale Lesekopie](../specs/android-release-v1.md), [Gesamtziel](https://github.com/giarrel/word-deduction/issues/1).
 
+## Finale lokale Abnahme — 7. Oktober 2026
+
+Version1.0.0/code4 ist als lokal installierbarer Release-Kandidat abgenommen. Beide Modi,520 bilinguale Paare und persistente Gruppen sind auf `integration/android-v1` integriert. [Code4-Android-Prüfung](../validation/android-release/native-code4/report.md), [30/30 gerenderte Tests, Reviews und Paketprüfung](../validation/final-review/report.md), [separate Integration mit55/55 Session-Szenarien](../validation/final-corrections/merge.md), [Abnahmematrix](../validation/acceptance-matrix.md). Der saubere Build-Quellstand ist71e6f39e599727cd176e2545ee65d1ab692d12de; APK/AAB sind lokal signiert. Keine offenen Produktfehler aus den durchgeführten Reviews/Tests. Ein physisches Telefon, echte Gruppendynamik, Produktionssignatur und Storeannahme sind dadurch nicht nachgewiesen.
+
+Alle Implementierungs-Worktrees wurden nach Sicherung der Build-/Testartefakte entfernt; Branches bleiben erhalten. [Bereinigung](../validation/final-corrections/completed-worktree-cleanup.json). Unity/Android nutzen die vorhandene Installation6000.3.25f1; keine erneute Sonderinstallation und keine Änderung an Nischenreich.
+
+Offen zur Veröffentlichung sind ausschließlich die [konkreten Eigentümervoraussetzungen](../release/data-safety.md#owner-prerequisites-after-local-acceptance): Publisherkontakt/Policy-URL, eigener Uploadschlüssel, Play-Kontovoraussetzungen und ausdrücklicher Veröffentlichungsauftrag. Reale Telefon-/Gruppenprüfung wird in der Übergabe empfohlen und nicht als durchgeführter Test bezeichnet.
+
+Die folgenden Phasenberichte beschreiben die Entwicklungshistorie; für den aktuellen Stand gelten die verlinkten finalen Nachweise.
+
 ## Vor Implementierungsbeginn abgeschlossen
 
 - Engineering-Skills einschließlich `implement-spec` und `codebase-design` gelesen; autonome Entscheidungen und zwei Test-Seams festgehalten.
@@ -19,7 +29,7 @@ Ziel und Arbeitsweise: [Engineering-Ablauf](autonomous-workflow.md). Kanonische 
 | [Großer DE/EN-Wortbestand](https://github.com/giarrel/word-deduction/issues/6) | Redaktionelle Inhalte, Wiederholungsvermeidung, Übersetzungen | Schnellmodus | Abgenommen: `029ed64`/`d5da6f0`; kombinierte Karten-, Update- und Sprachwechselprüfung bestanden |
 | [Unterbrechung und Recovery](https://github.com/giarrel/word-deduction/issues/7) | Speicherschäden, Lebenszyklus, Geheimnisschutz | Schnellmodus | Abgenommen: `d5da6f0`; native Recovery-, Mehrfinger-, Systemgesten- und IME-Prüfung bestanden |
 | [Bedienung und visuelle Playtests](https://github.com/giarrel/word-deduction/issues/8) | Belegte Verbesserung der vollständigen App | Klassisch, Inhalte, Recovery | Abgenommen: `7404d17`; separat integriert mit `2423343`, 53/53 Session-Tests |
-| [Release-Kandidat](https://github.com/giarrel/word-deduction/issues/9) | Review, APK/AAB, Verpackungsnachweise, Storeunterlagen | Playtests | Bereit |
+| [Release-Kandidat](https://github.com/giarrel/word-deduction/issues/9) | Review, APK/AAB, Verpackungsnachweise, Storeunterlagen | Playtests | Abgenommen: code4/71e6f39; separate Integration91f259d |
 
 ```mermaid
 flowchart LR
@@ -63,4 +73,4 @@ Der große Wortbestand ist separat integriert: 520 Paare, 20 Themen, 1.038 Begri
 
 Ticket 8 verbessert echte Android-Dichte, Schrift-/Emojiabdeckung, sichere öffentliche Accessibility-Menüs, große Schrift, kompakte Gruppenverwaltung und Kartenidentität. [Prüfbericht](../validation/ui-polish/report.md), [betrachtete Ansichten](../validation/ui-polish/visual-review.md), [aktualisierte Abnahmematrix](../validation/acceptance-matrix.md). Der komplette PlayMode-Lauf bestand mit 25/25 Fällen; nach den folgenden gezielten Änderungen wurden sieben UI-, fünf Gruppen- und die fünf Quick-/fünf Recoveryfälle erneut geprüft. Die Berichte nennen die jeweiligen Stände, statt einen nicht ausgeführten identischen Gesamtlauf zu behaupten.
 
-Native Updates behalten die beiden bestätigten V4-Generationen bytegenau. Gespeicherte Gruppen werden vor temporären Fixtures gesichert und danach exakt wiederhergestellt. APKs sind weiterhin Development-Prüfstände; Releasebau, 16-KiB-Verpackung, Signierung, finale Latenz, Storeunterlagen und Reviews gehören zu Ticket 9. Physische Bedienung und echte Gruppendynamik bleiben von Emulatornachweisen getrennt.
+Native Updates behalten die beiden bestätigten V4-Generationen bytegenau. Gespeicherte Gruppen werden vor temporären Fixtures gesichert und danach exakt wiederhergestellt. Zum damaligen Abschluss von Ticket8 waren APKs Development-Prüfstände. Releasebau,16-KiB-Verpackung, lokale Signierung, Latenz, Storeunterlagen und Reviews wurden anschließend in Ticket9 abgenommen; siehe finalen Abschnitt oben. Physische Bedienung und echte Gruppendynamik bleiben von Emulatornachweisen getrennt.

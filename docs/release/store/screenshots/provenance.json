@@ -1,0 +1,118 @@
+{
+  "source_commit": "71e6f39e599727cd176e2545ee65d1ab692d12de",
+  "apk_sha256": "2f4523b0cbfe87379997bbaecfd4a78e21e9ae4afc09c79fc9baf3b20b1a9a97",
+  "version": "1.0.0/code4",
+  "environment": "Android API36 owned ps16k x86_64 AVD, ARM64 translation,1080x1920/density480",
+  "screenshots": [
+    {
+      "path": "de/01-group.png",
+      "source": "artifacts/android-release/native-code4/code4-store-group-de.png",
+      "sha256": "4a9d4f6edf312661cc1b552811deeec9cc45a22f56f8ea023f526824e040e626",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "de/02-covered-card.png",
+      "source": "artifacts/android-release/native-code4/code4-bea-covered.png",
+      "sha256": "46959ad5cf7c0ca0be6335b794f4574cb12795c4a88ebdfdd68f4d7eedd107cd",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "de/03-revealed-card.png",
+      "source": "artifacts/android-release/native-code4/code4-word-fit-normal-held.png",
+      "sha256": "a7ef205c163bd2febaff0ffec940a2662924baf2dfc0a662e65fbfe389500ffb",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "de/04-classic-clues.png",
+      "source": "artifacts/android-release/native-code4/code4-classic-clues.png",
+      "sha256": "1db4482ecbbbb627cf2aae3869b23f7e9ae23aebcb5ed021dcc1debf75253305",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "de/05-white-result.png",
+      "source": "artifacts/android-release/native-code4/code4-classic-result.png",
+      "sha256": "b5e69bed8fb0d540a97b3e6316430a003b7acd69dee60320aec96862a140661e",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "en/01-group.png",
+      "source": "artifacts/android-release/native-code4/code4-store-group-en-final.png",
+      "sha256": "1fe185fa906b7e3b91ed258254d25bc7ea1598588bdbabdc6d022308dfb7d258",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "en/02-covered-card.png",
+      "source": "artifacts/android-release/native-code4/code4-nora-normal-covered.png",
+      "sha256": "6bc5ad435c2c616ef1386cc0c14082faaa469815830afae6482d8cfa8c42139b",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "en/03-revealed-card.png",
+      "source": "artifacts/android-release/native-code4/code4-luca-held.png",
+      "sha256": "d5aadd810023d837ad42ab55dfdf46dbcbf3e98cc4ce09966e51d74ae654c959",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "en/04-quick-vote.png",
+      "source": "artifacts/android-release/native-code4/code4-quick-vote-ready.png",
+      "sha256": "25d5a07f87d3ef2f57136387d86c97cc3b807f260f04c94e5d785d92ac182782",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    },
+    {
+      "path": "en/05-quick-result.png",
+      "source": "artifacts/android-release/native-code4/code4-quick-result.png",
+      "sha256": "84f6ee922a7ac77bbde3d6758e820f45680450f1095e7c9e0db54303877c1093",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "edited": false,
+      "root_visually_inspected": true
+    }
+  ]
+}
