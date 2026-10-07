@@ -1,0 +1,97 @@
+{
+  "label": "release-classic-white-after-restart",
+  "files": {
+    "session.json": "ac4551eaf760927ca8ca15f0a803519d440119097b559ab8c86308876c4348bf",
+    "session.previous.json": "b587984fa2ac1fe8d0bb5e26ee891ab6139d94e8f0359ef21433f108b615b732"
+  },
+  "match": {
+    "Id": "d015858b2a374f62be3e25f81952d321",
+    "Mode": 1,
+    "Language": 1,
+    "Participants": [
+      {
+        "Id": "820f502c9ce64bfe9ff8a22a1baabbc9",
+        "DisplayName": "Alex",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "7c232b32f5be493aad74b11c2614ed68",
+        "DisplayName": "Bea",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "2fd3295c29d442e7bd3ceb004e2c0b67",
+        "DisplayName": "Cora",
+        "Role": 2,
+        "Eliminated": true
+      },
+      {
+        "Id": "5b7c7f511db9491f9d7ddfcaef483f0b",
+        "DisplayName": "Dani",
+        "Role": 1,
+        "Eliminated": true
+      },
+      {
+        "Id": "8dc5d6bce8c34042843b48b8f3ad09e2",
+        "DisplayName": "Emil",
+        "Role": 0,
+        "Eliminated": false
+      }
+    ],
+    "PairId": "technology-008",
+    "CivilianWord": "Steckdose",
+    "UndercoverWord": "Ladekabel",
+    "StartingIndex": 4,
+    "Phase": 5,
+    "Handoff": 5,
+    "Runoff": false,
+    "Suspect": "2fd3295c29d442e7bd3ceb004e2c0b67",
+    "Outcome": null,
+    "Round": 2
+  },
+  "players": [
+    {
+      "Id": "820f502c9ce64bfe9ff8a22a1baabbc9",
+      "Name": "Alex",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "7c232b32f5be493aad74b11c2614ed68",
+      "Name": "Bea",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "2fd3295c29d442e7bd3ceb004e2c0b67",
+      "Name": "Cora",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "5b7c7f511db9491f9d7ddfcaef483f0b",
+      "Name": "Dani",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "8dc5d6bce8c34042843b48b8f3ad09e2",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "care-health-002",
+    "garden-nature-013",
+    "technology-008"
+  ],
+  "byte_equal_to": "release-classic-white-before-restart"
+}

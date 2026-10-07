@@ -1,0 +1,13 @@
+# Final nondevelopment Android candidate: coordinator run plan
+
+Scope: the exact APK/source/hash supplied by ticket9. This file is a plan, not evidence of completion. The accepted development candidate has its separate `polish3-offline-report.md`.
+
+1. Record supplied source/hash/size; install with `-r` on the explicitly verified own AVD while offline. Read version/debuggable/signature/package flags. Before first launch, run `CheckReleaseUpdate.py` to compare both saved generations to the real three-player Quick baseline. Launch, inspect safe Pause, repeat the byte check and inspect resumed owner/card. The OS-only `su 0` inspection does not add a debug/export facility to the app.
+2. After capturing update evidence, preserve the test-only state and clear this app on this new AVD for a genuine first-run test. The stopped old AVD and its original eight-person match remain untouched. Verify no default network before launching.
+3. Enter real names using Gboard and the explicit Add action. Complete an English Quick match through all cards, clues, suspect confirmation and result. Inspect one-action rematch. Verify process restart retains the confirmed group and match without a new deal.
+4. At group editing, add two people, switch to German/Classic and enable White. Inspect all five real reveals, eliminate an adversary, continue a second round and resolve White's spoken judgment. Inspect winner/words/roles and direct next match with all players included.
+5. Exercise the new optional privacy/license screen in DE and EN at normal and 150% app text on 360×640dp. Read/scroll real credits, use Back, retain group. Inspect crowded group header and keyboard. Keep images suitable for actual 9:16 store screenshots separately from enlarged-text QA images.
+6. Check warm return on the same process three times; inspect each timed image and report capture-completion upper bounds, not am-return as ready time. Observe a cold launch separately. Inspect release logs for app failures, private names/words and runtime development tooling. Inspect background/task secret protection on the release artifact.
+7. Record final offline/network and compatibility properties, actual environment limitations, manifest/native package inspection pointers and personally viewed image list. Export actual screenshots from this exact artifact. Request separate final code reviews only against an immutable integrated tip; rebuild/recheck if a subsequent fix changes production code.
+
+Expected environment: API36 ps16k application emulation, PAGE_SIZE16384, compatibility disabled; ARM64 through native translation on x86_64, host GPU/WHPX; actual1080×1920/density480. No physical-phone or human-group fun/balance claim.
