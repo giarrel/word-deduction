@@ -3,7 +3,7 @@
   <ui:VisualElement name="safeRoot" class="safe-root">
     <ui:VisualElement name="screen" class="screen">
       <ui:VisualElement class="topbar">
-        <ui:Label text="word deduction" class="wordmark" />
+        <ui:Button name="appInfo" text="word deduction · info" class="brand-info" />
         <ui:VisualElement class="language-switch">
           <ui:Button name="german" text="DE" class="language-button" />
           <ui:Button name="english" text="EN" class="language-button" />

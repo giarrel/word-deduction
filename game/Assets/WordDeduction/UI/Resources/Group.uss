@@ -3,6 +3,12 @@
 .screen { flex-grow: 1; padding: 20px 22px 16px; max-width: 600px; width: 100%; align-self: center; }
 .topbar { flex-direction: row; align-items: center; justify-content: space-between; margin-bottom: 20px; flex-shrink: 0; }
 .wordmark { font-size: 16px; -unity-font-style: bold; letter-spacing: -0.3px; }
+.brand-info { font-size: 14px; letter-spacing: -0.3px; padding: 0 8px 0 0; flex-shrink: 1; min-width: 0; white-space: normal; -unity-text-align: middle-left; }
+.info-scroll { flex-grow: 1; flex-shrink: 1; min-height: 0; margin: 14px 0; }
+.info-copy { white-space: normal; font-size: 16px; margin-bottom: 18px; }
+.info-title { white-space: normal; font-size: 26px; -unity-font-style: bold; flex-shrink: 0; }
+.info-version { font-size: 13px; color: var(--muted); }
+.license-copy { white-space: normal; font-size: 13px; }
 .language-switch { flex-direction: row; background-color: #eee9df; border-radius: 20px; padding: 3px; }
 Button { border-width: 0; border-radius: 16px; color: var(--ink); margin: 0; padding: 0 12px; min-height: 48px; background-color: transparent; -unity-font-style: bold; font-size: 15px; }
 Button:focus { border-width: 2px; border-color: var(--purple); }

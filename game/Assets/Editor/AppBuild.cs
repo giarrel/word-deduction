@@ -17,9 +17,9 @@ namespace WordDeduction.Editor
         {
             PlayerSettings.companyName = "giarrel";
             PlayerSettings.productName = "Word Deduction";
-            PlayerSettings.bundleVersion = "0.1.0";
+            PlayerSettings.bundleVersion = "1.0.0";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.giarrel.worddeduction");
-            PlayerSettings.Android.bundleVersionCode = 1;
+            PlayerSettings.Android.bundleVersionCode = 2;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevel36;
             PlayerSettings.Android.targetArchitectures = AndroidArchitecture.ARM64;
@@ -33,6 +33,14 @@ namespace WordDeduction.Editor
             PlayerSettings.runInBackground = true;
             PlayerSettings.Android.forceInternetPermission = false;
             PlayerSettings.Android.forceSDCardPermission = false;
+            UnityEditor.Analytics.AnalyticsSettings.enabled = false;
+            UnityEditor.Analytics.AnalyticsSettings.initializeOnStartup = false;
+            var playerSettings = new SerializedObject(AssetDatabase.LoadAllAssetsAtPath("ProjectSettings/ProjectSettings.asset")[0]);
+            playerSettings.FindProperty("submitAnalytics").boolValue = false;
+            playerSettings.ApplyModifiedPropertiesWithoutUndo();
+            UnityEditor.Advertisements.AdvertisementSettings.enabled = false;
+            UnityEditor.Advertisements.AdvertisementSettings.initializeOnStartup = false;
+            PlayerSettings.usePlayerLog = false;
             PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.Android, false);
             PlayerSettings.SetGraphicsAPIs(BuildTarget.Android, new[] { GraphicsDeviceType.OpenGLES3 });
             PlayerSettings.colorSpace = ColorSpace.Gamma;
@@ -100,35 +108,10 @@ namespace WordDeduction.Editor
             }
             AssetDatabase.SaveAssets();
         }
-        public static void DevelopmentApk() => Build(false,true);
-        public static void ReleaseApk() => Build(false,false);
-        public static void ReleaseBundle() => Build(true,false);
-        static void Build(bool bundle, bool development)
-        {
-            if (EditorApplication.isPlaying) throw new InvalidOperationException("Stop Play mode before building.");
-            Configure();
-            if (EditorUserBuildSettings.activeBuildTarget != BuildTarget.Android)
-                throw new InvalidOperationException("Switch to Android first (or launch -buildTarget Android).");
-            if (PlayerSettings.Android.useCustomKeystore) throw new InvalidOperationException("Signing must be selected explicitly; do not silently use a custom key.");
-            var output = Path.GetFullPath(Path.Combine(Application.dataPath,"../../artifacts/android"));
-            Directory.CreateDirectory(output);
-            var path = Path.Combine(output, "WordDeduction-" + (development ? "development" : "local-release") + (bundle ? ".aab" : ".apk"));
-            bool previousBundle = EditorUserBuildSettings.buildAppBundle;
-            try
-            {
-                EditorUserBuildSettings.buildAppBundle = bundle;
-                var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions {
-                    scenes = new[] { "Assets/WordDeduction/Scenes/App.unity" }, locationPathName = path, target = BuildTarget.Android,
-                    options = BuildOptions.DetailedBuildReport | (development ? BuildOptions.Development : BuildOptions.CleanBuildCache)
-                });
-                File.WriteAllText(Path.Combine(output,"build-summary.json"), JsonUtility.ToJson(new BuildSummaryData {
-                    result = report.summary.result.ToString(), errors = report.summary.totalErrors, warnings = report.summary.totalWarnings,
-                    reportedBytes = report.summary.totalSize, fileBytes = File.Exists(path) ? (ulong)new FileInfo(path).Length : 0, path = path, unity = Application.unityVersion
-                },true));
-                if (report.summary.result != BuildResult.Succeeded) throw new InvalidOperationException("Android build failed; inspect the build log.");
-            }
-            finally { EditorUserBuildSettings.buildAppBundle = previousBundle; }
-        }
-        [Serializable] sealed class BuildSummaryData { public string result; public int errors; public int warnings; public ulong reportedBytes; public ulong fileBytes; public string path; public string unity; }
+        public static void DevelopmentApk() => AndroidRelease.Build(false,true,false);
+        public static void ReleaseApk() => AndroidRelease.Build(false,false,false);
+        public static void ReleaseBundle() => AndroidRelease.Build(true,false,false);
+        public static void ProductionApk() => AndroidRelease.Build(false,false,true);
+        public static void ProductionBundle() => AndroidRelease.Build(true,false,true);
     }
 }

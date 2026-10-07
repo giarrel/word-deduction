@@ -25,10 +25,12 @@ namespace WordDeduction.UI
         RuntimeTypography typography;
         AccessibleMenu accessibility;
         TextPreferences textPreferences;
+        GroupInformation information;
         public UnityEngine.Accessibility.AccessibilityHierarchy Accessibility => accessibility?.Hierarchy;
         public void Initialize(Session value)
         {
             matchSurface?.Dispose(); matchSurface = null;
+            information?.Close();
             if (root != null) CloseEditKeyboard();
             editingId = null; renameDraft = null; noticeCode = null;
             nameInput?.SetValueWithoutNotify("");
@@ -46,6 +48,11 @@ namespace WordDeduction.UI
             accessibility = new AccessibleMenu(root,() => session.Match?.Language ?? session.View.Language);
             Resources.Load<VisualTreeAsset>("Group").CloneTree(root);
             nameInput = root.Q<TextField>("nameInput");
+            information = new GroupInformation(root,() => session.View.Language,RefreshPresentation);
+            root.Q<Button>("appInfo").clicked += () => {
+                var keyboard = nameInput.textEdition.touchScreenKeyboard; if (keyboard != null) keyboard.active = false;
+                nameInput.Blur(); CloseEditKeyboard(); information.Open();
+            };
             nameInput.RegisterValueChangedCallback(e => typography?.IncludeNames(new[] { e.newValue }));
             root.Q<Button>("addPlayer").clicked += Add;
             nameInput.RegisterCallback<KeyDownEvent>(e => { if (e.keyCode == KeyCode.Return || e.keyCode == KeyCode.KeypadEnter) { Add(); e.StopPropagation(); } });
@@ -69,7 +76,7 @@ namespace WordDeduction.UI
             root.RegisterCallback<GeometryChangedEvent>(_ => UpdateSafeArea());
         }
         void CreateMatchSurface() { matchSurface = new MatchSurface(session,root.Q<VisualElement>("safeRoot"),Render,RefreshPresentation); }
-        void OnDisable() { textPreferences?.Dispose(); textPreferences = null; accessibility?.Dispose(); accessibility = null; mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; typography?.Dispose(); typography = null; }
+        void OnDisable() { information = null; textPreferences?.Dispose(); textPreferences = null; accessibility?.Dispose(); accessibility = null; mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; typography?.Dispose(); typography = null; }
         void OnApplicationFocus(bool focus) { if (!focus) matchSurface?.Pause(true); else MobilePrivacy.RefreshMotion(); }
         void OnApplicationPause(bool paused) { if (paused) matchSurface?.Pause(true); else MobilePrivacy.RefreshMotion(); }
         void Update()
@@ -89,7 +96,8 @@ namespace WordDeduction.UI
             if (Screen.safeArea != lastSafeArea) UpdateSafeArea();
             if ((mobileBack?.Consume() ?? false) || (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame))
             {
-                if (editingId != null) CancelEdit();
+                if (information != null && information.IsOpen) information.Close();
+                else if (editingId != null) CancelEdit();
                 else if (session.Match != null) matchSurface.Back();
                 else { var nameKeyboard = nameInput.textEdition.touchScreenKeyboard; if (nameKeyboard != null) nameKeyboard.active = false; nameInput.Blur(); }
             }
@@ -189,6 +197,7 @@ namespace WordDeduction.UI
             root.Q<VisualElement>("safeRoot").EnableInClassList("at-capacity",view.Players.Count >= 40);
             nameInput.textEdition.placeholder = T("name"); nameInput.tooltip = T("name");
             root.Q<Button>("addPlayer").tooltip = T("add");
+            root.Q<Button>("appInfo").tooltip = T("appInfo");
             root.Q<Button>("quickMode").text = T("quick"); root.Q<Button>("classicMode").text = T("classic");
             root.Q<Button>("quickMode").EnableInClassList("selected",view.Mode == GameMode.Quick);
             root.Q<Button>("classicMode").EnableInClassList("selected",view.Mode == GameMode.Classic);
