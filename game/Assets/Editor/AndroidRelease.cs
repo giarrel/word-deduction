@@ -35,7 +35,7 @@ namespace WordDeduction.Editor
                     throw new InvalidOperationException("Production requires an existing dedicated key outside the checkout, with a non-debug alias.");
             }
             var source = Git(root,"rev-parse HEAD").Trim();
-            if (!development && Git(root,"status --porcelain --untracked-files=no").Length != 0)
+            if (!development && Git(root,"status --porcelain").Length != 0)
                 throw new InvalidOperationException("Commit tracked source and configured settings before building a release candidate.");
             var stamp = DateTime.UtcNow.ToString("yyyyMMddTHHmmssfffZ");
             var kind = development ? "development" : production ? "production" : "local-release";

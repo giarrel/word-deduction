@@ -101,8 +101,20 @@ def inspect_apk(path, label, manifest=True):
     package = {"identity": identity(path), "native": inspect_native(path, label)}
     report["packages"].append(package)
     if manifest:
-        run(label + "-badging", [buildtools / "aapt2.exe", "dump", "badging", path])
-        run(label + "-manifest", [buildtools / "aapt2.exe", "dump", "xmltree", path, "--file", "AndroidManifest.xml"])
+        badging = run(label + "-badging", [buildtools / "aapt2.exe", "dump", "badging", path])
+        manifest_text = run(label + "-manifest", [buildtools / "aapt2.exe", "dump", "xmltree", path, "--file", "AndroidManifest.xml"])
+        forbidden = ("android.permission.INTERNET", "android.permission.ACCESS_NETWORK_STATE", "application-debuggable",
+                     "android.permission.CAMERA", "android.permission.RECORD_AUDIO", "android.permission.READ_CONTACTS",
+                     "android.permission.ACCESS_FINE_LOCATION", "android.permission.WRITE_EXTERNAL_STORAGE")
+        if any(value in badging for value in forbidden):
+            save()
+            raise RuntimeError("Release has an unexpected network/sensitive permission or is debuggable")
+        if label == "apk" or label.startswith("universal-"):
+            expected = ("package: name='com.giarrel.worddeduction'", "versionCode='2'", "versionName='1.0.0'",
+                        "minSdkVersion:'26'", "targetSdkVersion:'36'", "native-code: 'arm64-v8a'")
+            if not all(value in badging for value in expected):
+                save()
+                raise RuntimeError("Unexpected package identity, version, SDK or ABI")
     run(label + "-signature", [buildtools / "apksigner.bat", "verify", "--verbose", "--print-certs", path])
     run(label + "-zipalign", [buildtools / "zipalign.exe", "-v", "-c", "-P", "16", "4", path])
     save()

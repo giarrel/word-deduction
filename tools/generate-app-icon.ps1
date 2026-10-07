@@ -1,13 +1,14 @@
 # Original two-card mark. Rebuilds PNG assets from geometry using Windows GDI+.
-param([string]$OutputDirectory = (Join-Path $PSScriptRoot '../game/Assets/WordDeduction/UI/Artwork'))
+param([string]$OutputDirectory = (Join-Path $PSScriptRoot '../game/Assets/WordDeduction/UI/Artwork'), [ValidateSet(512,1024)][int]$Size = 1024)
 Add-Type -AssemblyName System.Drawing
 [IO.Directory]::CreateDirectory([IO.Path]::GetFullPath($OutputDirectory)) | Out-Null
-$bitmap = [Drawing.Bitmap]::new(1024,1024)
+$bitmap = [Drawing.Bitmap]::new($Size,$Size)
 $graphics = [Drawing.Graphics]::FromImage($bitmap)
 $graphics.SmoothingMode = [Drawing.Drawing2D.SmoothingMode]::AntiAlias
 $graphics.TextRenderingHint = [Drawing.Text.TextRenderingHint]::AntiAliasGridFit
 $paper = [Drawing.ColorTranslator]::FromHtml('#FAF7F0')
 $graphics.Clear($paper)
+$graphics.ScaleTransform($Size/1024.0,$Size/1024.0)
 function Card([single]$x,[single]$y,[single]$width,[single]$height,[single]$rotation,[string]$color,[bool]$question) {
     $state=$graphics.Save()
     $graphics.TranslateTransform($x+$width/2,$y+$height/2)
