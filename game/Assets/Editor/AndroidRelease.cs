@@ -82,7 +82,8 @@ namespace WordDeduction.Editor
         }
         static string Git(string root,string arguments)
         {
-            var start = new System.Diagnostics.ProcessStartInfo("git","-c safe.directory=\"" + root + "\" -C \"" + root + "\" " + arguments) {
+            var gitPath = root.Replace('\\','/');
+            var start = new System.Diagnostics.ProcessStartInfo("git","-c safe.directory=\"" + gitPath + "\" -C \"" + gitPath + "\" " + arguments) {
                 UseShellExecute = false, CreateNoWindow = true, RedirectStandardOutput = true, RedirectStandardError = true
             };
             using (var process = System.Diagnostics.Process.Start(start))
