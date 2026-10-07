@@ -1,0 +1,35 @@
+{
+  "am_output": "Starting: Intent { cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity\nTotalTime: 4064\nWaitTime: 4260\nComplete\n",
+  "am_elapsed_seconds": 4.432327599963173,
+  "process": "7376",
+  "samples": [
+    {
+      "target_seconds": 2.0,
+      "capture_complete_seconds": 4.536001899978146,
+      "screenshot": "release-first-install-cold-2s.png",
+      "sha256": "44d9fcb5da1ed84daa567ee870e0531118e19e286879ec9e118f76b70b04ac8c",
+      "visual_ready": "Pending root image inspection"
+    },
+    {
+      "target_seconds": 5.0,
+      "capture_complete_seconds": 5.091991800116375,
+      "screenshot": "release-first-install-cold-5s.png",
+      "sha256": "597cac735de6089843e0b498cd414c9fa529557999571aa85cf9a4fde9aca729",
+      "visual_ready": "Pending root image inspection"
+    },
+    {
+      "target_seconds": 10.0,
+      "capture_complete_seconds": 10.095931600080803,
+      "screenshot": "release-first-install-cold-10s.png",
+      "sha256": "41d6dfc8248b7ab987d97f32a61c2aded5e204140aa95d12096ae5eaba1ff5e7",
+      "visual_ready": "Pending root image inspection"
+    },
+    {
+      "target_seconds": 15.0,
+      "capture_complete_seconds": 15.106319900136441,
+      "screenshot": "release-first-install-cold-15s.png",
+      "sha256": "160d5f6adf7044210c737bb58b9ef315184478181555bb071c6a618fb0a7c6c0",
+      "visual_ready": "Pending root image inspection"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "label": "release-pre-correction",
+  "files": {
+    "session.json": "bcd07d9c71791a7d7119b625486ddee28fbac955a4feb5a58f51b69923a5ca94",
+    "session.previous.json": "7be2f81ff7a376e0e16485af16fc66aa350468989af8c00c9e7a55a5f469de38"
+  },
+  "match": {
+    "Id": "b7203215ad014899bfda2147685f8ddd",
+    "Mode": 1,
+    "Language": 1,
+    "Participants": [
+      {
+        "Id": "820f502c9ce64bfe9ff8a22a1baabbc9",
+        "DisplayName": "Alex",
+        "Role": 2,
+        "Eliminated": false
+      },
+      {
+        "Id": "7c232b32f5be493aad74b11c2614ed68",
+        "DisplayName": "Bea",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "2fd3295c29d442e7bd3ceb004e2c0b67",
+        "DisplayName": "Cora",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "5b7c7f511db9491f9d7ddfcaef483f0b",
+        "DisplayName": "Dani",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "8dc5d6bce8c34042843b48b8f3ad09e2",
+        "DisplayName": "Emil",
+        "Role": 0,
+        "Eliminated": false
+      }
+    ],
+    "PairId": "technology-023",
+    "CivilianWord": "Sprachnachricht",
+    "UndercoverWord": "Videoanruf",
+    "StartingIndex": 3,
+    "Phase": 0,
+    "Handoff": 0,
+    "Runoff": false,
+    "Suspect": null,
+    "Outcome": null,
+    "Round": 1
+  },
+  "players": [
+    {
+      "Id": "820f502c9ce64bfe9ff8a22a1baabbc9",
+      "Name": "Alex",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "7c232b32f5be493aad74b11c2614ed68",
+      "Name": "Bea",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "2fd3295c29d442e7bd3ceb004e2c0b67",
+      "Name": "Cora",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "5b7c7f511db9491f9d7ddfcaef483f0b",
+      "Name": "Dani",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "8dc5d6bce8c34042843b48b8f3ad09e2",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "care-health-002",
+    "garden-nature-013",
+    "technology-008",
+    "technology-023"
+  ]
+}

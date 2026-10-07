@@ -1,0 +1,35 @@
+[
+  {
+    "sample": 1,
+    "process": "6595",
+    "capture_after_seconds": 2.0,
+    "am_elapsed_seconds": 0.6431472001131624,
+    "capture_complete_seconds": 2.1010155000258237,
+    "start_output": "Starting: Intent { cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity }\nWarning: Activity not started, its current task has been brought to the front\nStatus: ok\nLaunchState: UNKNOWN (0)\nActivity: com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity\nWaitTime: 501\nComplete\n",
+    "screenshot": "warm-return-1.png",
+    "sha256": "8b2834999997edfbaa37030fd7f12a4a45ae9f865ac9b9377d41797476dc6558",
+    "visual_ready": "Pending root image inspection"
+  },
+  {
+    "sample": 2,
+    "process": "6595",
+    "capture_after_seconds": 2.0,
+    "am_elapsed_seconds": 0.5201206000056118,
+    "capture_complete_seconds": 2.098509799921885,
+    "start_output": "Starting: Intent { cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity }\nWarning: Activity not started, its current task has been brought to the front\nStatus: ok\nLaunchState: UNKNOWN (0)\nActivity: com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity\nWaitTime: 307\nComplete\n",
+    "screenshot": "warm-return-2.png",
+    "sha256": "fd63d67c1f6f1cbbf7cc8627f5e58ec7fbeeb49e744a20108134bcb6bedaf470",
+    "visual_ready": "Pending root image inspection"
+  },
+  {
+    "sample": 3,
+    "process": "6595",
+    "capture_after_seconds": 2.0,
+    "am_elapsed_seconds": 0.5339977000840008,
+    "capture_complete_seconds": 2.1000743000768125,
+    "start_output": "Starting: Intent { cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity }\nWarning: Activity not started, its current task has been brought to the front\nStatus: ok\nLaunchState: UNKNOWN (0)\nActivity: com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity\nWaitTime: 342\nComplete\n",
+    "screenshot": "warm-return-3.png",
+    "sha256": "fd63d67c1f6f1cbbf7cc8627f5e58ec7fbeeb49e744a20108134bcb6bedaf470",
+    "visual_ready": "Pending root image inspection"
+  }
+]

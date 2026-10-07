@@ -1,0 +1,69 @@
+{
+  "label": "release-quick-after-restart",
+  "files": {
+    "session.json": "1fdc01bb8ccdf1c56f98f03f3973bd9e80b5e7227dd33057c631e1bca3be265a",
+    "session.previous.json": "999dc3a0133695152f4a9ea69b10ceae0b814671f45d2d8d2b43ab1225e0d772"
+  },
+  "match": {
+    "Id": "643f2cd3d4854cf89c2aeb142175ea34",
+    "Mode": 0,
+    "Language": 0,
+    "Participants": [
+      {
+        "Id": "820f502c9ce64bfe9ff8a22a1baabbc9",
+        "DisplayName": "Alex",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "7c232b32f5be493aad74b11c2614ed68",
+        "DisplayName": "Bea",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "2fd3295c29d442e7bd3ceb004e2c0b67",
+        "DisplayName": "Cora",
+        "Role": 1,
+        "Eliminated": false
+      }
+    ],
+    "PairId": "care-health-002",
+    "CivilianWord": "Mouthwash",
+    "UndercoverWord": "Toothpaste",
+    "StartingIndex": 2,
+    "Phase": 0,
+    "Handoff": 2,
+    "Runoff": false,
+    "Suspect": null,
+    "Outcome": null,
+    "Round": 1
+  },
+  "players": [
+    {
+      "Id": "820f502c9ce64bfe9ff8a22a1baabbc9",
+      "Name": "Alex",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "7c232b32f5be493aad74b11c2614ed68",
+      "Name": "Bea",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "2fd3295c29d442e7bd3ceb004e2c0b67",
+      "Name": "Cora",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "care-health-002"
+  ],
+  "byte_equal_to": "release-quick-before-restart"
+}
