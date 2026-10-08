@@ -1,0 +1,3 @@
+FAIL Kings elimination continues through parity and lone good King until exactly two Kings remain: only the two Kings triggers evil victory
+Retained failed test snapshot: C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\kings-worktrees\elimination\artifacts\kings-elimination\tmp\WordDeduction-tests\05979d4bc28744b1a37bed6ecfc7a658
+0/1 passed

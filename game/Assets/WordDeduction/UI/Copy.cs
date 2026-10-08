@@ -6,6 +6,23 @@ namespace WordDeduction.UI
     public static class Copy
     {
         static readonly Dictionary<string, string[]> Text = new Dictionary<string, string[]> {
+            {"kingsRecordInstruction", new[]{"Play at the table. Select only the person your group has actually eliminated.","Spielt am Tisch. Wählt nur die Person, die eure Gruppe tatsächlich herausgewählt hat."}},
+            {"kingsConfirmTitle", new[]{"Eliminate this person?","Diese Person scheidet aus?"}},
+            {"kingsConfirmHint", new[]{"Confirm the name before revealing the consequence. You can still change this selection.","Bestätigt den Namen, bevor die Folge aufgedeckt wird. Jetzt könnt ihr die Auswahl noch ändern."}},
+            {"kingsNotKing", new[]{"Not a king","Kein König"}},
+            {"kingsLastChanceTitle", new[]{"Last chance.","Letzte Chance."}},
+            {"kingsLastChanceEntry", new[]{"Mr. White is the evil King. Pass the phone to this person for the last chance. The decision belongs to them alone, without team advice.","Mr. White ist der böse König. Gebt dieser Person das Handy für die Letzte Chance. Sie entscheidet allein, ohne Beratung durch ihr Team."}},
+            {"kingsEvilWin", new[]{"The evil team wins.","Das böse Team gewinnt."}},
+            {"kingsGoodWin", new[]{"The good team wins.","Das gute Team gewinnt."}},
+            {"GoodKingEliminated", new[]{"The good King was eliminated.","Der gute König ist ausgeschieden."}},
+            {"OnlyKingsRemain", new[]{"Only the two Kings remain.","Nur die beiden Könige sind noch dabei."}},
+            {"kingsTeamResult", new[]{"Eliminated teammates share their team's result.","Ausgeschiedene teilen das Ergebnis ihres Teams."}},
+            {"kingsGoodWord", new[]{"Good team's word","Wort des guten Teams"}},
+            {"kingsEvilWord", new[]{"Evil team's word","Wort des bösen Teams"}},
+            {"kingsFinalGoodKing", new[]{"Good King","Guter König"}},
+            {"kingsFinalEvilKing", new[]{"Evil King · Mr. White","Böser König · Mr. White"}},
+            {"kingsFinalGoodTeam", new[]{"Good team · Civilian","Gutes Team · Bürger"}},
+            {"kingsFinalEvilTeam", new[]{"Evil team · Undercover","Böses Team · Undercover"}},
             {"kings", new[]{"Kings","Könige"}},
             {"kingsDescription", new[]{"Protect your leader. Find the other King. 5–20 players.","Schützt euren Anführer. Findet den anderen König. 5–20 Personen."}},
             {"kingsRoleMix", new[]{"{0} good incl. King · {1} Undercover + Mr. White","{0} Gute inkl. König · {1} Undercover + Mr. White"}},

@@ -1,0 +1,6 @@
+PASS Kings elimination selection is correctable durable and ordinary disclosure stays neutral
+PASS Kings elimination of good King wins for whole evil team and rematch restores the group
+PASS Kings elimination continues through parity and lone good King until exactly two Kings remain
+PASS Kings elimination of White durably enters last chance before any general reveal
+PASS Kings elimination failed writes keep the committed selection and disclose no new consequence
+5/5 passed

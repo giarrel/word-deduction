@@ -45,6 +45,8 @@
 .role-row { flex-direction: row; justify-content: space-between; padding: 10px 4px; border-bottom-width: 1px; border-bottom-color: #e5ded2; }
 .role-name { font-size: 16px; white-space: normal; flex-grow: 1; flex-shrink: 1; margin-right: 12px; }
 .role-label { color: #5734a6; font-size: 14px; -unity-font-style: bold; }
+.kings-result .role-row { flex-direction: column; }
+.kings-result .role-label { white-space: normal; }
 .match-screen .hidden { display: none; }
 .compact .card-slot { min-height: 190px; padding-top: 28px; }
 .compact .secret-card { height: 180px; min-height: 155px; }

@@ -1,0 +1,2 @@
+PASS Kings elimination of good King wins for whole evil team and rematch restores the group
+1/1 passed

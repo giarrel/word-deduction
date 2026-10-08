@@ -58,6 +58,8 @@ namespace WordDeduction.UI
                 case MatchPhase.Elimination: Elimination(match); break;
                 case MatchPhase.WhiteGuess: WhiteGuess(match); break;
                 case MatchPhase.TablePlay: KingsTable(match); break;
+                case MatchPhase.KingsElimination: KingsTable(match); break;
+                case MatchPhase.KingsLastChance: KingsLastChance(match); break;
             }
         }
         void Act(CommandResult result)
@@ -92,6 +94,11 @@ namespace WordDeduction.UI
             else if (abandon) { abandon = false; Render(); }
             else if (session.Match?.Phase == MatchPhase.Result) Act(session.ReturnToGroup(session.Match.Id));
             else if (!paused && session.Match?.Phase == MatchPhase.Vote && session.Match.SelectedSuspect != null) Act(session.CancelSuspect());
+            else if (!paused && session.Match?.Mode == GameMode.Kings && session.Match.SelectedSuspect != null)
+            {
+                var match = session.Match;
+                Act(session.CancelElimination(match.Id,match.Participants.Count - match.Survivors.Count,match.SelectedSuspect.Id));
+            }
             else Pause();
         }
         public void Tick() { card?.Tick(); }
@@ -162,10 +169,40 @@ namespace WordDeduction.UI
         }
         void KingsTable(MatchView match)
         {
+            int eliminatedCount = match.Participants.Count - match.Survivors.Count;
+            if (match.SelectedSuspect != null)
+            {
+                var center = Center();
+                Label(center,"confirmTitle",T("kingsConfirmTitle"),"match-title");
+                Label(center,"confirmName",match.SelectedSuspect.DisplayName,"card-owner");
+                Label(center,"confirmHint",T("kingsConfirmHint"),"match-text");
+                string target = match.SelectedSuspect.Id;
+                Action("confirmElimination","confirmElimination",() => Act(session.ConfirmElimination(match.Id,eliminatedCount,target)));
+                Action("changeElimination","changeSuspect",() => Act(session.CancelElimination(match.Id,eliminatedCount,target)),false);
+                return;
+            }
             Label(body,"kingsTableTitle",T("kingsTableTitle"),"match-title");
-            Label(body,"kingsTableInstructions",T("kingsTableInstructions"),"match-text");
+            Label(body,"kingsTableInstructions",T("kingsRecordInstruction"),"match-text");
             var list = new ScrollView { name = "kingsSurvivors", horizontalScrollerVisibility = ScrollerVisibility.Hidden }; list.AddToClassList("vote-list"); body.Add(list);
-            foreach (var participant in match.Survivors) Label(list,"survivor-" + participant.Id,participant.DisplayName,"match-text");
+            if (match.EliminatedParticipant != null)
+            {
+                var banner = Box(list,"result-banner");
+                Label(banner,"kingsEliminatedName",match.EliminatedParticipant.DisplayName,"match-title");
+                Label(banner,"kingsEliminatedStatus",T("kingsNotKing"),"match-text");
+            }
+            foreach (var participant in match.Survivors)
+            {
+                string id = participant.Id;
+                var button = new Button(() => Act(session.SelectElimination(match.Id,eliminatedCount,id))) { name = "eliminate-" + id, text = participant.DisplayName };
+                button.AddToClassList("suspect-choice"); list.Add(button);
+            }
+        }
+        void KingsLastChance(MatchView match)
+        {
+            var center = Center();
+            Label(center,"kingsLastChanceTitle",T("kingsLastChanceTitle"),"match-title");
+            Label(center,"eliminatedName",match.EliminatedParticipant.DisplayName,"card-owner");
+            Label(center,"kingsLastChanceText",T("kingsLastChanceEntry"),"match-text");
         }
         void Clues(MatchView match)
         {
@@ -224,19 +261,23 @@ namespace WordDeduction.UI
         void Result(MatchView match)
         {
             var scroll = new ScrollView { name = "resultScroll", horizontalScrollerVisibility = ScrollerVisibility.Hidden }; scroll.AddToClassList("vote-list"); body.Add(scroll);
+            if (match.Mode == GameMode.Kings) scroll.AddToClassList("kings-result");
             var banner = Box(scroll,"result-banner");
-            Label(banner,"resultTitle",T(match.Result.WinningRoles.Count > 1 ? "adversariesWin" : match.Result.Winner == Role.White ? "whiteWin" : match.Result.Winner == Role.Civilian ? "civilianWin" : "undercoverWin"),"match-title");
+            Label(banner,"resultTitle",T(match.Mode == GameMode.Kings ? match.Result.Winner == Role.Civilian ? "kingsGoodWin" : "kingsEvilWin" : match.Result.WinningRoles.Count > 1 ? "adversariesWin" : match.Result.Winner == Role.White ? "whiteWin" : match.Result.Winner == Role.Civilian ? "civilianWin" : "undercoverWin"),"match-title");
             Label(banner,"resultReason",T(match.Result.Reason.ToString()),"match-text");
+            if (match.Mode == GameMode.Kings) Label(banner,"kingsTeamResult",T("kingsTeamResult"),"match-text");
             foreach (var role in new[] { Role.Civilian, Role.Undercover })
             {
-                var box = Box(scroll,"result-word"); Label(box,"wordRole" + role,T(role.ToString()),"match-note");
+                var box = Box(scroll,"result-word"); Label(box,"wordRole" + role,T(match.Mode == GameMode.Kings ? role == Role.Civilian ? "kingsGoodWord" : "kingsEvilWord" : role.ToString()),"match-note");
                 Label(box,"resultWord" + role,role == Role.Civilian ? match.Result.CivilianWord : match.Result.UndercoverWord,"match-title");
             }
             Label(scroll,"rolesTitle",T("rolesTitle"),"match-note");
             foreach (var assignment in match.Result.Roles)
             {
                 var row = Box(scroll,"role-row"); Label(row,"roleName-" + assignment.Participant.Id,assignment.Participant.DisplayName,"role-name");
-                Label(row,"role-" + assignment.Participant.Id,T(assignment.Role.ToString()),"role-label");
+                string roleKey = assignment.Role.ToString();
+                if (match.Mode == GameMode.Kings) roleKey = assignment.IsKing ? assignment.Role == Role.Civilian ? "kingsFinalGoodKing" : "kingsFinalEvilKing" : assignment.Role == Role.Civilian ? "kingsFinalGoodTeam" : "kingsFinalEvilTeam";
+                Label(row,"role-" + assignment.Participant.Id,T(roleKey),"role-label");
             }
             Action("rematch","rematch",() => { paused = false; Act(session.Rematch(match.Id)); });
             Action("editGroup","editGroup",() => Act(session.ReturnToGroup(match.Id)),false);
