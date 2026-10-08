@@ -35,6 +35,9 @@ namespace WordDeduction.Tests
                     Submit(fixture.Root.Q<Button>("abandonMatch")); yield return null; yield return null;
                 }
                 Assert.That(AllLabels(fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes), Does.Not.Contain("Add player "));
+                // Native accessibility invocations can arrive after this frame's
+                // panel layout, unlike the normal coroutine/input update above.
+                yield return new WaitForEndOfFrame();
                 Submit(fixture.Root.Q<Button>(result ? "editGroup" : "confirmAbandon"));
                 yield return null; yield return null; yield return null;
                 Assert.That(fixture.Session.Match, Is.Null);
@@ -49,6 +52,7 @@ namespace WordDeduction.Tests
                     Assert.That(node.frame.width, Is.GreaterThan(0));
                     Assert.That(node.frame.height, Is.GreaterThan(0));
                 }
+                yield return new WaitForEndOfFrame();
                 Submit(fixture.Root.Q<Button>("playButton")); yield return null; yield return null; yield return null;
                 Assert.That(fixture.Root.Q<Label>("cardOwner"), Is.Not.Null);
                 labels = string.Join("\n",AllLabels(fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes));
