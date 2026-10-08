@@ -53,4 +53,8 @@ No tests of private method order, no duplicate game engine, no machine enforceme
 
 ## Progress
 
-Planning complete; implementation not yet accepted. This log is updated with actual commits, tests, review findings and final outcome as work advances.
+Ticket #12 is accepted and closed. Foundation commit `7b695699b2ac29d8222fbf8580e805c6ce410f9b` was integrated by a separate merger at `eb8538390d430f0089c5fcfb9f7377e4b2186f98`; report commit `3c6d6694ff694ec7742f0caf8642219c0fa0a07a` is pushed. Implementer Session61/61, rendered33/33 and independent integration Session61/61 passed. Both earlier isolated full-suite failures are preserved with their cause unconfirmed; future failures now retain diagnostic details and snapshots. See ../validation/kings-foundation/report.md and ../validation/kings-foundation-merge/report.md.
+
+The new frontier is #13 (elimination/outcomes) and #15 (rules/private-card readability), each in a separate worktree. Unity use remains serialized. #14 and #16 remain blocked, and Spec#10 is not complete.
+
+The coordinator recovered the existing Android test guest after an OS service failure, preserved both old saves byte-for-byte, and prepared an authentic code4 Quick game with one completed handoff for update acceptance. Fresh native preparation and raw evidence are outside the repo in `C:/Users/lucac/Documents/Codex/2026-10-06/sie/work/kings-native/`; no Kings APK has been built or accepted. Native accessibility preparation uses the already installed TalkBack service and the existing external test helper.
