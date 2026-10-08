@@ -13,6 +13,7 @@ namespace WordDeduction.UI
         readonly Func<Language> language;
         readonly List<(VisualElement element, AccessibilityNode node)> nodes = new List<(VisualElement, AccessibilityNode)>();
         bool queued, disposed;
+        int refreshFrame = -1;
         string focusName;
         public AccessibilityHierarchy Hierarchy { get; private set; }
         public AccessibleMenu(VisualElement root, Func<Language> language)
@@ -23,9 +24,14 @@ namespace WordDeduction.UI
         void ReaderChanged(bool enabled) { if (enabled) Refresh(); }
         public void Refresh()
         {
-            if (disposed || queued) return;
+            if (disposed) return;
+            refreshFrame = -1;
+            if (queued) return;
             queued = true;
-            root.schedule.Execute(() => { queued = false; if (!disposed) Build(); });
+            root.schedule.Execute(() => {
+                queued = false;
+                if (!disposed) refreshFrame = Time.frameCount;
+            });
         }
         void Build()
         {
@@ -122,6 +128,14 @@ namespace WordDeduction.UI
         }
         public void Tick()
         {
+            if (disposed) return;
+            // Native invocations can arrive after a frame's panel update. First
+            // let the panel scheduler run, then wait for its style/layout pass.
+            if (refreshFrame >= 0 && Time.frameCount > refreshFrame)
+            {
+                refreshFrame = -1;
+                Build();
+            }
             foreach (var pair in nodes)
             {
                 // Unity's Android native frames otherwise retain pre-layout zero bounds.

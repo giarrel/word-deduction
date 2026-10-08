@@ -1,0 +1,1 @@
+INFO: The APKs will be signed with the debug keystore found at 'C:\Users\lucac\.android\debug.keystore'.

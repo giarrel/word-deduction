@@ -145,12 +145,15 @@ namespace WordDeduction
         }
         public CommandResult CancelElimination(string expectedMatchId, int expectedEliminationCount, string expectedParticipantId)
         {
-            if (!KingsTableAction(expectedMatchId, expectedEliminationCount) || state.Match.Phase != MatchPhase.TablePlay || expectedParticipantId == null || state.Match.Suspect != expectedParticipantId) return InvalidAction();
+            if (!PendingElimination(expectedMatchId, expectedEliminationCount, expectedParticipantId)) return InvalidAction();
             return Change(next => next.Match.Suspect = null);
         }
+        bool PendingElimination(string expectedMatchId, int expectedEliminationCount, string expectedParticipantId) =>
+            KingsTableAction(expectedMatchId, expectedEliminationCount) && state.Match.Phase == MatchPhase.TablePlay &&
+            expectedParticipantId != null && state.Match.Suspect == expectedParticipantId;
         public CommandResult ConfirmElimination(string expectedMatchId, int expectedEliminationCount, string expectedParticipantId)
         {
-            if (!KingsTableAction(expectedMatchId, expectedEliminationCount) || state.Match.Phase != MatchPhase.TablePlay || expectedParticipantId == null || state.Match.Suspect != expectedParticipantId) return InvalidAction();
+            if (!PendingElimination(expectedMatchId, expectedEliminationCount, expectedParticipantId)) return InvalidAction();
             return Change(next => {
                 var eliminated = next.Match.Participants.First(p => p.Id == expectedParticipantId);
                 eliminated.Eliminated = true;

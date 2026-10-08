@@ -1,0 +1,16 @@
+package: name='com.giarrel.worddeduction' versionCode='8' versionName='' split='config.arm64_v8a'
+application: label='' icon=''
+uses-permission: name='android.permission.WRITE_EXTERNAL_STORAGE'
+uses-implied-permission: name='android.permission.WRITE_EXTERNAL_STORAGE' reason='targetSdkVersion < 4'
+uses-permission: name='android.permission.READ_PHONE_STATE'
+uses-implied-permission: name='android.permission.READ_PHONE_STATE' reason='targetSdkVersion < 4'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE'
+uses-implied-permission: name='android.permission.READ_EXTERNAL_STORAGE' reason='requested WRITE_EXTERNAL_STORAGE'
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+supports-screens: 'normal'
+supports-any-density: 'false'
+locales:
+densities:
+native-code: 'arm64-v8a'

@@ -9,7 +9,7 @@ static class KingsRecoveryCases
             var session = Kings(directory);
             Advance(session);
             var backup = File.ReadAllText(Path.Combine(directory, "session.previous.json"));
-            Rewrite(directory, payload => {
+            SavedSessionFixture.RewritePrimary(directory, payload => {
                 foreach (var person in payload["Match"]["Participants"].OfType<JObject>())
                     if ((int)person["Role"] == (int)Role.Undercover) person["Role"] = (int)Role.Civilian;
             });
@@ -146,12 +146,4 @@ static class KingsRecoveryCases
         Checkpoint(path, session);
     }
     static void Check(bool condition, string expected) { if (!condition) throw new Exception(expected); }
-    static void Rewrite(string directory, Action<JObject> edit)
-    {
-        string path = Path.Combine(directory, "session.json");
-        var envelope = JObject.Parse(File.ReadAllText(path)); var payload = JObject.Parse((string)envelope["Payload"]);
-        edit(payload); string json = payload.ToString(Formatting.None); envelope["Payload"] = json;
-        envelope["Checksum"] = Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(json)));
-        File.WriteAllText(path, envelope.ToString());
-    }
 }
