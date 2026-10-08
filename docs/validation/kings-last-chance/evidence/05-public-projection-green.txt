@@ -1,0 +1,2 @@
+PASS all seats can be Undercover and start without leaking secret fields through safe views
+1/1 passed

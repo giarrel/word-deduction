@@ -1,0 +1,3 @@
+FAIL Kings last chance word choice and spoken answer lock before target disclosure: word choice commits
+Retained failed test snapshot: C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\kings-worktrees\last-chance\artifacts\test-runtime\temp\WordDeduction-tests\d11eeff5c01f403c8df922d26bbf7370
+0/1 passed

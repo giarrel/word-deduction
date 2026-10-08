@@ -60,6 +60,9 @@ namespace WordDeduction.UI
                 case MatchPhase.TablePlay: KingsTable(match); break;
                 case MatchPhase.KingsElimination: KingsTable(match); break;
                 case MatchPhase.KingsLastChance: KingsLastChance(match); break;
+                case MatchPhase.KingsWordAnswer: KingsWordAnswer(match); break;
+                case MatchPhase.KingsWordJudgment: KingsWordJudgment(match); break;
+                case MatchPhase.KingsKingTarget: KingsKingTarget(match); break;
             }
         }
         void Act(CommandResult result)
@@ -99,6 +102,8 @@ namespace WordDeduction.UI
                 var match = session.Match;
                 Act(session.CancelElimination(match.Id,match.Participants.Count - match.Survivors.Count,match.SelectedSuspect.Id));
             }
+            else if (!paused && session.Match?.SelectedKingTarget != null)
+                Act(session.CancelLastChanceKing(session.Match.Id,session.Match.SelectedKingTarget.Id));
             else Pause();
         }
         public void Tick() { card?.Tick(); }
@@ -202,7 +207,50 @@ namespace WordDeduction.UI
             var center = Center();
             Label(center,"kingsLastChanceTitle",T("kingsLastChanceTitle"),"match-title");
             Label(center,"eliminatedName",match.EliminatedParticipant.DisplayName,"card-owner");
-            Label(center,"kingsLastChanceText",T("kingsLastChanceEntry"),"match-text");
+            Label(center,"kingsLastChanceText",T("kingsLastChanceChoice"),"match-text");
+            Action("chooseLastChanceWord","chooseLastChanceWord",() => Act(session.ChooseLastChance(match.Id,LastChanceChoice.Word)));
+            Action("chooseLastChanceKing","chooseLastChanceKing",() => Act(session.ChooseLastChance(match.Id,LastChanceChoice.King)),false);
+        }
+        void KingsWordAnswer(MatchView match)
+        {
+            var center = Center();
+            Label(center,"lastChanceAnswerTitle",T("lastChanceAnswerTitle"),"match-title");
+            Label(center,"eliminatedName",match.EliminatedParticipant.DisplayName,"card-owner");
+            Label(center,"lastChanceAnswerText",T("lastChanceAnswerText"),"match-text");
+            Action("confirmLastChanceAnswer","confirmLastChanceAnswer",() => Act(session.ConfirmLastChanceAnswer(match.Id)));
+        }
+        void KingsWordJudgment(MatchView match)
+        {
+            var center = Center();
+            Label(center,"lastChanceJudgmentTitle",T("lastChanceJudgmentTitle"),"match-title");
+            Label(center,"lastChanceWordLabel",T("kingsGoodWord"),"match-note");
+            Label(center,"lastChanceWord",match.Judgment.Word,"match-title");
+            Label(center,"lastChanceJudgmentText",T("lastChanceJudgmentText"),"match-text");
+            Action("lastChanceCorrect","lastChanceCorrect",() => Act(session.ResolveLastChanceWord(match.Id,true)));
+            Action("lastChanceIncorrect","lastChanceIncorrect",() => Act(session.ResolveLastChanceWord(match.Id,false)),false);
+        }
+        void KingsKingTarget(MatchView match)
+        {
+            if (match.SelectedKingTarget != null)
+            {
+                var center = Center();
+                Label(center,"kingTargetTitle",T("kingTargetConfirmTitle"),"match-title");
+                Label(center,"kingTargetName",match.SelectedKingTarget.DisplayName,"card-owner");
+                Label(center,"kingTargetHint",T("kingTargetConfirmHint"),"match-text");
+                string target = match.SelectedKingTarget.Id;
+                Action("confirmLastChanceKing","confirmLastChanceKing",() => Act(session.ConfirmLastChanceKing(match.Id,target)));
+                Action("changeLastChanceKing","changeSuspect",() => Act(session.CancelLastChanceKing(match.Id,target)),false);
+                return;
+            }
+            Label(body,"kingTargetTitle",T("kingTargetTitle"),"match-title");
+            Label(body,"kingTargetHint",T("kingTargetHint"),"match-text");
+            var list = new ScrollView { name = "kingTargets", horizontalScrollerVisibility = ScrollerVisibility.Hidden }; list.AddToClassList("vote-list"); body.Add(list);
+            foreach (var participant in match.Survivors)
+            {
+                string id = participant.Id;
+                var button = new Button(() => Act(session.SelectLastChanceKing(match.Id,id))) { name = "kingTarget-" + id, text = participant.DisplayName };
+                button.AddToClassList("suspect-choice"); list.Add(button);
+            }
         }
         void Clues(MatchView match)
         {

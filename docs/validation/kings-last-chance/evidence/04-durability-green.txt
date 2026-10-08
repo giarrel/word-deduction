@@ -1,0 +1,6 @@
+PASS Kings last chance word choice and spoken answer lock before target disclosure
+PASS Kings last chance word judgment wins for the whole team and is final
+PASS Kings last chance King target is correctable until single stable identity commitment
+PASS Kings last chance failed writes disclose no new word or outcome and retain every commitment
+PASS Kings last chance rejects impossible saved commitments even with valid checksums
+5/5 passed

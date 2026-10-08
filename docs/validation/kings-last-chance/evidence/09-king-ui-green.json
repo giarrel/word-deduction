@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 2.04,
+      "summary": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.KingChoiceHasCorrectableUnmarkedTargetsAndOneTeamResultInBothLanguages",
+          "Status": "Passed",
+          "Duration": 2.0082512,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\last-chance\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
