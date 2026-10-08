@@ -1,0 +1,134 @@
+{
+  "createdUtc": "2026-10-08T19:46:56.8614414Z",
+  "priorIntegration": "8150e8518b52b0212836437069e3ab841133debe",
+  "implementationTip": "23d54c5abae564bd5333071ba8367def7fd935c6",
+  "mergeCommit": "42633ae4c0e3d384234377cc3aabf969b2560c0c",
+  "identicalSourceAndMergeTree": "4e5992acbe3463317179ac0aeb4d19d88181bb57",
+  "buildSourceCommit": "908d95fc80fc8173df02593422ff85264089b945",
+  "identicalBuildInputTrees": [
+    {
+      "path": "game",
+      "gitTree": "126d4b5b33c7a5cafcb575a6aa33371a746300a6"
+    },
+    {
+      "path": "tests",
+      "gitTree": "b35a2559303f9477b0488e2741d193360c51ed9a"
+    },
+    {
+      "path": "tools",
+      "gitTree": "4ecc82ecf031b44ddb169ca90df7adf72e551be8"
+    },
+    {
+      "path": "content",
+      "gitTree": "fae305a03886bbde4c514b9ab4606b56be478fdd"
+    },
+    {
+      "path": "third-party",
+      "gitTree": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+    }
+  ],
+  "packageLockSha256": "da98f245e8c511d47699dc883e521eff5176800341117fcfe8f77fe9dcfb342d",
+  "independentSession": {
+    "passed": 74,
+    "total": 74,
+    "exitCode": 0,
+    "durationSeconds": 159.88371,
+    "startedUtc": "2026-10-08T19:40:49.644556Z",
+    "finishedUtc": "2026-10-08T19:43:29.528266Z",
+    "diagnosticsEnabled": true,
+    "outputSha256": "b2d2d6f5baa67bd4158ccc8e3658cb34d519169c2e78f3435c42dd460dc9f9da",
+    "runtimeDllSha256": "7292d3eb508652d14726749dd27094f2d481aeccf2db6427b62f68a71460897e"
+  },
+  "rendered": {
+    "passed": 44,
+    "total": 44,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0,
+    "durationSeconds": 210.73,
+    "resultSha256": "12a020bab9142c63312b7c86d322e7bc695d49a86423d978135345283089ee17",
+    "runtimeInputsUnchanged": true,
+    "testedBeforeVersionSettingBump": true,
+    "rerunByMerger": false
+  },
+  "candidate": {
+    "version": "1.1.0",
+    "versionCode": 5,
+    "signing": "Android debug certificate; local testing only",
+    "apk": {
+      "path": "artifacts/android/908d95fc80fc/20261008T191608690Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37458410,
+      "sha256": "afd739cc5b8356a24ee9b2b92c7639ba128569d3f43090ac961fc0e6a3d24a01",
+      "inspectedCommands": 14,
+      "inspectedPackages": 1,
+      "failedCommands": 0,
+      "buildErrors": 0,
+      "buildWarnings": 2
+    },
+    "aab": {
+      "path": "artifacts/android/908d95fc80fc/20261008T192436613Z-aab/WordDeduction-local-release.aab",
+      "bytes": 37815362,
+      "sha256": "4b8aee0303ad77f5e4b39da1e6da9dcf8624a99005fe2bdda266cc58cc066d64",
+      "inspectedCommands": 44,
+      "inspectedPackages": 4,
+      "failedCommands": 0,
+      "buildErrors": 0,
+      "buildWarnings": 2
+    }
+  },
+  "preservation": {
+    "rawFiles": 216,
+    "rawBytes": 165095193,
+    "selectedFiles": 15,
+    "selectedBytes": 272760,
+    "archivedEarlierTicketStreams": 101,
+    "overwrittenExistingFiles": 0,
+    "sourceAndDestinationHashesVerified": true,
+    "selectedCheckoutExactByteMatches": 13,
+    "selectedCheckoutNewlineOnlyDifferences": 2,
+    "rawManifestSha256": "e4c27573d47a559393e0dfbda281c5eddffe162961f4def9cd97eb238753f61b",
+    "selectedManifestSha256": "b6b41afc41821720d641a9f6c70b780d83cda7ef629133c1e29447a35a6b6eb5"
+  },
+  "remainingGates": [
+    "Coordinator native Android acceptance",
+    "Independent Standards/Spec reviews and required corrections",
+    "Final release acceptance; #16 and #10 remain open"
+  ],
+  "files": [
+    {
+      "path": "artifacts/kings-acceptance-merge/preservation.json",
+      "bytes": 177952,
+      "sha256": "e015c5482136e035095e2b9e65ce2a4a408752e4104cdfed88650834ed599091"
+    },
+    {
+      "path": "artifacts/kings-acceptance-merge/tracked-evidence-comparison.json",
+      "bytes": 5196,
+      "sha256": "097ff593286308d9af14ab407c7e4fab2ed3eca14a4efa8b4d2bff12f0d40625"
+    },
+    {
+      "path": "artifacts/kings-acceptance-merge/rendered-input-comparison.json",
+      "bytes": 559,
+      "sha256": "04091f8c4f3a26f0d7f7b3a666767437baf52adfb449fd01c7bc266131dd4ecd"
+    },
+    {
+      "path": "artifacts/kings-acceptance-merge/session-independent.txt",
+      "bytes": 6854,
+      "sha256": "b2d2d6f5baa67bd4158ccc8e3658cb34d519169c2e78f3435c42dd460dc9f9da"
+    },
+    {
+      "path": "artifacts/kings-acceptance-merge/session-independent-run.json",
+      "bytes": 977,
+      "sha256": "ec18cc1c1b644e56a40965de4f7a571545bd59902f5f2f048ef7f07a7e7cf658"
+    },
+    {
+      "path": "artifacts/kings-acceptance-merge/raw-manifest.csv",
+      "bytes": 30540,
+      "sha256": "e4c27573d47a559393e0dfbda281c5eddffe162961f4def9cd97eb238753f61b"
+    },
+    {
+      "path": "artifacts/kings-acceptance-merge/evidence-manifest.csv",
+      "bytes": 1583,
+      "sha256": "b6b41afc41821720d641a9f6c70b780d83cda7ef629133c1e29447a35a6b6eb5"
+    }
+  ]
+}
