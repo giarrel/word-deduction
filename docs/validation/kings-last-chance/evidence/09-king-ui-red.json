@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.39,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.KingChoiceHasCorrectableUnmarkedTargetsAndOneTeamResultInBothLanguages",
+          "Status": "Failed",
+          "Duration": 0.3664675,
+          "Message": "  Committed King branch offers living unmarked targets.\r\n  Expected: not null\r\n  But was:  null\r\n",
+          "StackTrace": "at WordDeduction.Tests.KingsLastChanceScreenTests+<KingChoiceHasCorrectableUnmarkedTargetsAndOneTeamResultInBothLanguages>d__3.MoveNext () [0x00187] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\last-chance\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\KingsLastChanceScreenTests.cs:66\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\last-chance\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

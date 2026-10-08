@@ -1,0 +1,2 @@
+PASS Kings last chance King target is correctable until single stable identity commitment
+1/1 passed

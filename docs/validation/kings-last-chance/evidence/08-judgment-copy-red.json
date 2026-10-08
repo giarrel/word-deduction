@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.48,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.WordChoiceAndSpokenAnswerCommitBeforeJudgmentInBothLanguages",
+          "Status": "Failed",
+          "Duration": 0.4544945,
+          "Message": "  Kings judgment must not promise the Classic White solo win.\r\n  Expected string length 7 but was 24. Strings differ at index 7.\r\n  Expected: \"Correct\"\r\n  But was:  \"Correct · Mr. White wins\"\r\n  ------------------^\r\n",
+          "StackTrace": "at WordDeduction.Tests.KingsLastChanceScreenTests+<WordChoiceAndSpokenAnswerCommitBeforeJudgmentInBothLanguages>d__2.MoveNext () [0x004bd] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\last-chance\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\KingsLastChanceScreenTests.cs:44\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\last-chance\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

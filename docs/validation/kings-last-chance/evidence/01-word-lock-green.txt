@@ -1,0 +1,2 @@
+PASS Kings last chance word choice and spoken answer lock before target disclosure
+1/1 passed

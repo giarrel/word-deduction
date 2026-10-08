@@ -1,0 +1,7 @@
+PASS Kings last chance word choice and spoken answer lock before target disclosure
+PASS Kings last chance word judgment wins for the whole team and is final
+PASS Kings last chance King target is correctable until single stable identity commitment
+PASS Kings last chance failed writes disclose no new word or outcome and retain every commitment
+FAIL Kings last chance rejects impossible saved commitments even with valid checksums: new Kings phase cannot expose an old-mode target
+Retained failed test snapshot: C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\kings-worktrees\last-chance\artifacts\test-runtime\temp\WordDeduction-tests\c6ce43fc12e445c4a5fc47a5fc711dea
+4/5 passed
