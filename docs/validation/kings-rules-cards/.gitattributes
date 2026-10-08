@@ -1,0 +1,2 @@
+# Raw evidence retains its exact bytes and original whitespace for hash verification.
+/evidence/** -text -whitespace

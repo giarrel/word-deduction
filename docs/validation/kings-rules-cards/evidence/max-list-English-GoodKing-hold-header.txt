@@ -1,0 +1,1 @@
+help=Help; bounds=(x:262.00, y:52.00, width:76.00, height:52.00); content=(x:10.00, y:0.00, width:56.00, height:52.00); textWidth=56

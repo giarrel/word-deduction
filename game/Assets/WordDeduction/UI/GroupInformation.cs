@@ -18,27 +18,36 @@ namespace WordDeduction.UI
             this.language = language; this.changed = changed;
         }
         public void Open() => Show(false);
-        void Show(bool licenses)
+        void Show(bool licenses, bool kingsRules = false)
         {
             screen?.RemoveFromHierarchy();
             group.AddToClassList("hidden");
             screen = new VisualElement { name = "appInformation" }; screen.AddToClassList("screen"); host.Add(screen);
-            AddLabel(screen,"infoTitle",T(licenses ? "licenses" : "privacyTitle"),"info-title");
+            if (!kingsRules) AddLabel(screen,"infoTitle",T(licenses ? "licenses" : "privacyTitle"),"info-title");
             AddLabel(screen,"infoVersion","Word Deduction · " + Application.version,"info-version");
-            var scroll = new ScrollView { name = "infoScroll", horizontalScrollerVisibility = ScrollerVisibility.Hidden };
-            scroll.AddToClassList("info-scroll"); screen.Add(scroll);
-            AddLabel(scroll,licenses ? "licenseIntro" : "privacyText",T(licenses ? "licenseIntro" : "privacyText"),"info-copy");
-            if (licenses)
-            {
-                string notices = "";
-                foreach (var name in new[] { "Inter-LICENSE", "NotoColorEmoji-LICENSE", "Unicode-LICENSE", "Newtonsoft-LICENSE" })
-                    notices += name + "\n\n" + Resources.Load<TextAsset>(name).text + "\n\n";
-                AddLabel(scroll,"licenseText",notices,"license-copy");
-            }
+            if (kingsRules) KingsRules.AddTo(screen, language());
             else
             {
-                var button = new Button(() => Show(true)) { name = "showLicenses", text = T("licenses") };
-                button.AddToClassList("white-preference"); scroll.Add(button);
+                var scroll = new ScrollView { name = "infoScroll", horizontalScrollerVisibility = ScrollerVisibility.Hidden };
+                scroll.AddToClassList("info-scroll"); screen.Add(scroll);
+                if (!licenses)
+                {
+                    var rules = new Button(() => Show(false, true)) { name = "showKingsRules", text = T("kingsHelpTitle") };
+                    rules.AddToClassList("white-preference"); scroll.Add(rules);
+                }
+                AddLabel(scroll,licenses ? "licenseIntro" : "privacyText",T(licenses ? "licenseIntro" : "privacyText"),"info-copy");
+                if (licenses)
+                {
+                    string notices = "";
+                    foreach (var name in new[] { "Inter-LICENSE", "NotoColorEmoji-LICENSE", "Unicode-LICENSE", "Newtonsoft-LICENSE" })
+                        notices += name + "\n\n" + Resources.Load<TextAsset>(name).text + "\n\n";
+                    AddLabel(scroll,"licenseText",notices,"license-copy");
+                }
+                else
+                {
+                    var button = new Button(() => Show(true)) { name = "showLicenses", text = T("licenses") };
+                    button.AddToClassList("white-preference"); scroll.Add(button);
+                }
             }
             var close = new Button(Close) { name = "closeInfo", text = T("back") }; close.AddToClassList("play-button"); screen.Add(close);
             changed();

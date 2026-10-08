@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 1.03,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.MaximalKingListsCanBeReadWithOneFingerInsideTheSmallPhoneAtLargeText",
+          "Status": "Failed",
+          "Duration": 1.0038627,
+          "Message": "  A real in-bounds pointer path reaches the last complete name; assigning a scroll offset is not proof.\r\n  Expected: less than or equal to 487.204742f\r\n  But was:  721.201355f\r\n",
+          "StackTrace": "at WordDeduction.Tests.KingsRulesScreenTests+<MaximalKingListsCanBeReadWithOneFingerInsideTheSmallPhoneAtLargeText>d__3.MoveNext () [0x0061d] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\rules-cards\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\KingsRulesScreenTests.cs:99\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\rules-cards\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
