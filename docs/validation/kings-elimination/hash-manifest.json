@@ -1,0 +1,278 @@
+{
+  "sourceCommit": "30ac0c108f71f786840ae1aa16d7ceddd7dfe8ff",
+  "integrationTip": "ed74667ea54b7c01c63c915860e4bddc01253cfe",
+  "mergeCommit": "40d7cf67117d99a2797dedd6de682e1891f886c6",
+  "generatedUtc": "2026-10-08T17:42:35.6550001Z",
+  "files": [
+    {
+      "path": "artifacts/kings-elimination/commands.json",
+      "bytes": 351964,
+      "sha256": "da53fb2845f6582d2617666749d7b3350a145673c10774fae26907ee8d66df1b"
+    },
+    {
+      "path": "artifacts/kings-elimination/editor-exit-request.json",
+      "bytes": 658,
+      "sha256": "d0e550e06f1990edd0119ec42f86bbd79e477929ff91acd17d5e097b074c0f24"
+    },
+    {
+      "path": "artifacts/kings-elimination/editor-exit-verified.json",
+      "bytes": 55,
+      "sha256": "69156c0655a705754866eaa4b4688ff711042eb94ed47a769af0154014b5e23e"
+    },
+    {
+      "path": "artifacts/kings-elimination/editor-owned-process.json",
+      "bytes": 464,
+      "sha256": "63e8feff3b71faa449b424139429cc44fdbce7b0ca1c73078a65593f671d72d7"
+    },
+    {
+      "path": "artifacts/kings-elimination/editor-pid.txt",
+      "bytes": 8,
+      "sha256": "81fb256363dbb95a221250f0ff28cdbfb25aac1277da8e4476a3e3b1b80b1e4f"
+    },
+    {
+      "path": "artifacts/kings-elimination/editor.log",
+      "bytes": 443645,
+      "sha256": "bc6b7c2195503f2b75b28f9a6c9ed1520e410331cfb2e444703fb71ba51ea65a"
+    },
+    {
+      "path": "artifacts/kings-elimination/font-before-cleanup.txt",
+      "bytes": 286,
+      "sha256": "721a906170523b83b4630221a5277a5a819f7da5b29e4a1c72c142cab5218a32"
+    },
+    {
+      "path": "artifacts/kings-elimination/font-cleanup.json",
+      "bytes": 843,
+      "sha256": "db50edf393386dea0710b88b716caace616db8dc39b0ed43290ebec54b389483"
+    },
+    {
+      "path": "artifacts/kings-elimination/Inter-populated.asset",
+      "bytes": 6799571,
+      "sha256": "2a52e8b80b16bb588a35ba6646a13bc574d3cd357a6d25d9d8b55d9a7404af41"
+    },
+    {
+      "path": "artifacts/kings-elimination/last-chance-English.png",
+      "bytes": 30314,
+      "sha256": "27d69e4c793222caafe098dbc29eede78281fdd174eb9c752998d1a1fc3f4c67"
+    },
+    {
+      "path": "artifacts/kings-elimination/last-chance-German.png",
+      "bytes": 31531,
+      "sha256": "caad8bed48ff7a00a2c98f2cfba1705d09136d5304a7a01c235867db57e003e5"
+    },
+    {
+      "path": "artifacts/kings-elimination/ordinary-English.png",
+      "bytes": 32340,
+      "sha256": "7293e4b39a1f55d76bb2ec7eb71a3a42f8fef5e952be77e95968b12199029cd0"
+    },
+    {
+      "path": "artifacts/kings-elimination/ordinary-German.png",
+      "bytes": 32549,
+      "sha256": "ca474fb31e023d39d38f4e5832362cf5207a1fcce91f6eff29e975f60b7ac42c"
+    },
+    {
+      "path": "artifacts/kings-elimination/result-English.png",
+      "bytes": 46612,
+      "sha256": "fcb044d975c12cc39ad05622a74d5486e7c30d7eefe9ff87febe7eb25d32405a"
+    },
+    {
+      "path": "artifacts/kings-elimination/result-German.png",
+      "bytes": 51738,
+      "sha256": "e05b1f35342dd45a0a068b636f8f6807342f4e5dc14122de5b1df9b7a46a5b65"
+    },
+    {
+      "path": "artifacts/kings-elimination/tmp/WordDeduction-tests/05979d4bc28744b1a37bed6ecfc7a658/session.json",
+      "bytes": 12367,
+      "sha256": "57959d3a6da8050021d507d39d151f196c3b1dd2709423ebd27a3f9b2e94e2a4"
+    },
+    {
+      "path": "artifacts/kings-elimination/tmp/WordDeduction-tests/05979d4bc28744b1a37bed6ecfc7a658/session.previous.json",
+      "bytes": 12368,
+      "sha256": "eb04545538089813dfa5fef70deb07bf27f137f6b157864eaade19ab775c4f89"
+    },
+    {
+      "path": "artifacts/kings-elimination/tmp/WordDeduction-tests/66128c02cdc642668c11ad646ecc12ec/session.json",
+      "bytes": 12338,
+      "sha256": "5a0f2350dcc7b69637c690087c5bae7ecdc34cc1dc312354fad63720ea169d84"
+    },
+    {
+      "path": "artifacts/kings-elimination/tmp/WordDeduction-tests/66128c02cdc642668c11ad646ecc12ec/session.previous.json",
+      "bytes": 12338,
+      "sha256": "c7d2644062c940cc9f63066f20e3b8e7b0b6f4a9f963f45ee3aa546896040269"
+    },
+    {
+      "path": "artifacts/kings-elimination/tmp/WordDeduction-tests/7c01aa75475a412caf5d246d94ab3cc4/session.json",
+      "bytes": 12368,
+      "sha256": "f8e2489a7e1dfd51ce8975eb911878a7d63bf8a0dc621370251e116cf617d732"
+    },
+    {
+      "path": "artifacts/kings-elimination/tmp/WordDeduction-tests/7c01aa75475a412caf5d246d94ab3cc4/session.previous.json",
+      "bytes": 12369,
+      "sha256": "0adb93d329d19c06a2b1dad30dd44b216b06b100ba1032a2b30baa5624c47194"
+    },
+    {
+      "path": "artifacts/kings-elimination/tmp/WordDeduction-tests/fc4d787177a142959da90996277b51d6/session.json",
+      "bytes": 12369,
+      "sha256": "8e8aea314455a5a949ffe32cffa10c9c4239849f33b87bcda1875b826bbbc477"
+    },
+    {
+      "path": "artifacts/kings-elimination/tmp/WordDeduction-tests/fc4d787177a142959da90996277b51d6/session.previous.json",
+      "bytes": 12370,
+      "sha256": "f15dc1da15e987887206a39ebc3e864cc84480bdade764ce498fd9a7a70c2aed"
+    },
+    {
+      "path": "artifacts/kings-elimination/ui-selection-green-dispatch.json",
+      "bytes": 1001,
+      "sha256": "699e4cf3abd8e681ba4155ed032bb0e01954dc68b6f64df4579c6d68d41f5f58"
+    },
+    {
+      "path": "artifacts/kings-elimination/ui-selection-red-dispatch.json",
+      "bytes": 1001,
+      "sha256": "699e4cf3abd8e681ba4155ed032bb0e01954dc68b6f64df4579c6d68d41f5f58"
+    },
+    {
+      "path": "docs/development/session-interface.md",
+      "bytes": 11224,
+      "sha256": "fa0a4f040dc19304076979c420e627c5da84ad1d4f67cc3789a14e39c474f21c"
+    },
+    {
+      "path": "docs/validation/kings-elimination/report.md",
+      "bytes": 7155,
+      "sha256": "5f533af46f365ea60a8d685cfef4d1c699b8f09e0763cc19a7c51e6b0d08be89"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-full-green.txt",
+      "bytes": 5387,
+      "sha256": "9ac4a6085d72381950b595965ba3f97d57b05d660b6ac8d47d44c2eb68daab7f"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-good-king-green.txt",
+      "bytes": 105,
+      "sha256": "89bd89ce4ce0a4cade7f9fb1e7763e65bf84a91cf4388782ce9fa1964fe70900"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-good-king-red.txt",
+      "bytes": 351,
+      "sha256": "7b6e0f9701cf95e391a6b89b78611b65213c0185286b332cb39a2f6a5bfcd3e0"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-last-chance-green.txt",
+      "bytes": 98,
+      "sha256": "a8c3d786340f96d81f504333495e00a8ec6288fdab9086544303bb289e25c616"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-last-chance-red.txt",
+      "bytes": 332,
+      "sha256": "dff9136438c7890f232243b83fc37044aab1f2761d36a3cafa857b44b2389780"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-progression-green.txt",
+      "bytes": 484,
+      "sha256": "10e9694d4fc1f5587260c7f8a319b8441514ead87576b9e4839a225017ad5fae"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-selection-green.txt",
+      "bytes": 107,
+      "sha256": "691760e40198443da199a8bb6aabe62879d3b66e960180b22ba15b4bcee05470"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-selection-red.txt",
+      "bytes": 1682,
+      "sha256": "c5cd4cd38e8a66ce64c99ddf22ba976a074e943276bde17e6ba3a4017747ce61"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-two-kings-green.txt",
+      "bytes": 111,
+      "sha256": "54ad6be86bbcc6f47da646aa10329d26aeaf164236e758a6c6d5c3d20279520f"
+    },
+    {
+      "path": "docs/validation/kings-elimination/session-two-kings-red.txt",
+      "bytes": 349,
+      "sha256": "4b324c237be55683c1162753cae1c4c49244b0a82f74ebfeb3b5af554d73b397"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-classic-green.json",
+      "bytes": 1694,
+      "sha256": "30725aceae937d9c62c45df05c5b9477af5bc22f35a828045c5bfa735ccde2c1"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-elimination-green.json",
+      "bytes": 1490,
+      "sha256": "6d201fd8d60c3250f393e326b6942c59e1298f6571f21a0f937a1d4a1486ebfd"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-last-chance-red.json",
+      "bytes": 1562,
+      "sha256": "a3b65675af7c6e9fa52548fec067f9b6bdbb2f94d64ef925c603d53625bbe9cb"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-quick-green.json",
+      "bytes": 1977,
+      "sha256": "f24e2d3bcb570a76b9be6c4c7368f41aeab13e455398142fd48d3869e71a2814"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-result-green.json",
+      "bytes": 893,
+      "sha256": "e4d2babd2369f6c50efdf891d7fa21adfffe6096c3c805535cb4ed711f1901fd"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-result-red.json",
+      "bytes": 6009,
+      "sha256": "f3569b1aa6b18d92a634d71deeaa0f3307634083e4c00ccb6e8e11396d9afd0e"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-selection-green.json",
+      "bytes": 914,
+      "sha256": "5ec3f3be2fb0c4b60f46f8408e5383836f843291088c56e13234378d389b4d39"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-selection-red.json",
+      "bytes": 1842,
+      "sha256": "70d3b96eae88c8c6c25358ee56d8e1e6631e176871eae8853dabdfd85ef2006f"
+    },
+    {
+      "path": "docs/validation/kings-elimination/ui-selection-test-scope-failure.json",
+      "bytes": 2163,
+      "sha256": "ff35f3651ecf9d6e5790d3b0a70661edd451b090c746c2c78a78c3a9e426cf4c"
+    },
+    {
+      "path": "game/Assets/WordDeduction/Session/Match.cs",
+      "bytes": 26035,
+      "sha256": "237192e0ea01c865f1d383f894cfda0f79c35efe1bb26e90cea6846d9f182edd"
+    },
+    {
+      "path": "game/Assets/WordDeduction/Tests/PlayMode/KingsEliminationScreenTests.cs",
+      "bytes": 11928,
+      "sha256": "4fe19a8e426a9153f113709314527c7ff518de450c3fc954a48d80f9f5b3d236"
+    },
+    {
+      "path": "game/Assets/WordDeduction/Tests/PlayMode/KingsEliminationScreenTests.cs.meta",
+      "bytes": 60,
+      "sha256": "d9edb7656018dbc78804a45dbeb20e39f08ad381f32eaa58f897c6b635157c30"
+    },
+    {
+      "path": "game/Assets/WordDeduction/UI/Copy.cs",
+      "bytes": 25835,
+      "sha256": "9af4b023ffc5481676168d82a73beefbbedc1c340983f589a309904bb8de39f5"
+    },
+    {
+      "path": "game/Assets/WordDeduction/UI/MatchSurface.cs",
+      "bytes": 20105,
+      "sha256": "fa7ef21e72712b0031ba603431d27cee917f9f065c3c1b466dfe064923b3ca05"
+    },
+    {
+      "path": "game/Assets/WordDeduction/UI/Resources/Match.uss",
+      "bytes": 6657,
+      "sha256": "c86f73b7a2a51ca25866b877ef69f4c89f8c523b7a3b9dcd62dc5f070317ba48"
+    },
+    {
+      "path": "tests/Session.Tests/KingsEliminationCases.cs",
+      "bytes": 11255,
+      "sha256": "8ac9424bc72650f2dd19841f633087a900e4b23c6529f3d1351f5b7a9303e3d3"
+    },
+    {
+      "path": "tests/Session.Tests/Program.cs",
+      "bytes": 13790,
+      "sha256": "c49d1ad1192872b99baa3ca55b874a66215e6767d96675d23040804e4137fc19"
+    }
+  ]
+}

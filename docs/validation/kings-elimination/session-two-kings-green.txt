@@ -1,0 +1,2 @@
+PASS Kings elimination continues through parity and lone good King until exactly two Kings remain
+1/1 passed

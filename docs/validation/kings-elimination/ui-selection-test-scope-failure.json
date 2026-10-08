@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.45,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.OrdinaryEliminationCanBeCorrectedAndContinuesDirectlyAtTheTableInBothLanguages",
+          "Status": "Failed",
+          "Duration": 0.4286802,
+          "Message": "  Expected: not String containing \"Peach\" and not String containing \"Apricot\" and not String containing \"Undercover\" and not containing \"Mr. White\" and not containing \"Civilian\" and not containing \"Bürger\"\r\n  But was:  \"Good company.\nHidden words.\nOne phone. Everyone is in on it.\nYour group\n5 playing\nA\nB\nC\nD\nE\n?\nWho's joining?\nAdd your first player.\nTap a name to edit it.\n\n3 good incl. King · 1 Undercover + Mr. White\n1 Undercover\nUsing 1 for this group; your preference of  is saved.\nYour group is saved. Ready when you are.\nKings\nPlay around the table.\nPlay at the table. Select only the person your group has actually eliminated.\nDana\nNot a king\n\"\r\n",
+          "StackTrace": "at WordDeduction.Tests.KingsEliminationScreenTests+<OrdinaryEliminationCanBeCorrectedAndContinuesDirectlyAtTheTableInBothLanguages>d__2.MoveNext () [0x00447] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\elimination\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\KingsEliminationScreenTests.cs:43\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\elimination\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
