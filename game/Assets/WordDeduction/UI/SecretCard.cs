@@ -41,6 +41,7 @@ namespace WordDeduction.UI
                 target.RegisterCallback<PointerCancelEvent>(Cancel); target.RegisterCallback<PointerCaptureOutEvent>(CaptureOut);
             }
             root.RegisterCallback<DetachFromPanelEvent>(Detach);
+            word.RegisterCallback<GeometryChangedEvent>(WordGeometryChanged);
             Hide(true);
         }
         void DragDown(PointerDownEvent e) => Down(e,drag,false);
@@ -61,14 +62,25 @@ namespace WordDeduction.UI
             if (e.pointerId != pointer) return;
             if (holding)
             {
-                if (privateInformation != null) privateInformation.scrollOffset = new Vector2(0,Mathf.Clamp(startY - e.position.y,0,privateInformation.verticalScroller.highValue));
+                ScrollPrivateInformation(e.position.y, 0);
                 e.StopPropagation(); return;
             }
             float maximum = Mathf.Clamp(drag.resolvedStyle.height * 0.35f,60,110);
             lift = Mathf.Clamp(startY - e.position.y,0,maximum);
             if (lift >= maximum * 0.5f) Show(); else Conceal();
-            if (privateInformation != null) privateInformation.scrollOffset = new Vector2(0,Mathf.Clamp(startY - e.position.y - maximum,0,privateInformation.verticalScroller.highValue));
+            ScrollPrivateInformation(e.position.y, maximum);
             Pose(); e.StopPropagation();
+        }
+        void ScrollPrivateInformation(float pointerY, float revealDistance)
+        {
+            if (privateInformation == null) return;
+            // Map the full list to a reachable one-finger path. Reversing that
+            // same held finger reads earlier names without a second contact.
+            float safeTop = root.worldBound.yMin + root.resolvedStyle.paddingTop;
+            float travel = Mathf.Clamp(startY - revealDistance - safeTop - 24, 48, 280);
+            float range = privateInformation.verticalScroller.highValue;
+            float progress = Mathf.Clamp01((startY - pointerY - revealDistance) / travel);
+            privateInformation.scrollOffset = new Vector2(0, progress * range);
         }
         void Show()
         {
@@ -94,12 +106,19 @@ namespace WordDeduction.UI
             }
             symbol.EnableInClassList("hidden",true); caption.EnableInClassList("hidden",true); face.AddToClassList("revealed");
         }
+        void WordGeometryChanged(GeometryChangedEvent e)
+        {
+            if (word.text.Length > 0 && !word.ClassListContains("white-private")) FitWord(word.text);
+        }
         void FitWord(string text)
         {
             // Keep each token whole; phrases may wrap only between words. The current
             // bilingual catalog fits the small card without going below readable 22dp.
-            float available = face.contentRect.width - word.resolvedStyle.marginLeft - word.resolvedStyle.marginRight
-                - word.resolvedStyle.paddingLeft - word.resolvedStyle.paddingRight - 2;
+            float available = word.contentRect.width;
+            if (float.IsNaN(available) || available <= 0)
+                available = face.contentRect.width - word.resolvedStyle.marginLeft - word.resolvedStyle.marginRight
+                    - word.resolvedStyle.paddingLeft - word.resolvedStyle.paddingRight;
+            available -= 2;
             float measuredSize = word.resolvedStyle.fontSize;
             float widest = 0;
             foreach (var token in text.Split(' '))
@@ -156,6 +175,7 @@ namespace WordDeduction.UI
         {
             Hide(true); disposed = true;
             root.UnregisterCallback<DetachFromPanelEvent>(Detach);
+            word.UnregisterCallback<GeometryChangedEvent>(WordGeometryChanged);
             drag.UnregisterCallback<PointerDownEvent>(DragDown); hold.UnregisterCallback<PointerDownEvent>(HoldDown);
             next.UnregisterCallback<PointerDownEvent>(NextDown, TrickleDown.TrickleDown);
             next.UnregisterCallback<PointerUpEvent>(NextUp, TrickleDown.TrickleDown);
