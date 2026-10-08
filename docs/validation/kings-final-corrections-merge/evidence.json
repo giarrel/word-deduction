@@ -1,0 +1,186 @@
+{
+  "verifiedUtc": "2026-10-08T21:48:06.9891884Z",
+  "priorIntegration": "bdd8e2f291bd0d08b511acf940bb1ca99ab8f738",
+  "implementationTip": "cc0361d29ef267c90d1896db46c6051b37f11b35",
+  "mergeCommit": "b7d7e86aceef9785bcac45b65efda9abbda18c49",
+  "identicalSourceAndMergeTree": "c436e108c3a7c3e2da616ebdd6c3933fdd307cba",
+  "sourceIdentities": [
+    {
+      "anchor": "c98ab1f06680857caa6b28f2bc0348b9f4ed49b6",
+      "path": "game/Assets/WordDeduction/Session",
+      "gitTree": "6e80e583e3b9418293837f7aea6e8430d793080f"
+    },
+    {
+      "anchor": "c98ab1f06680857caa6b28f2bc0348b9f4ed49b6",
+      "path": "tests/Session.Tests",
+      "gitTree": "b3e692c843cc9f65bc1d33fa6afef7eb4b78f4db"
+    },
+    {
+      "anchor": "c98ab1f06680857caa6b28f2bc0348b9f4ed49b6",
+      "path": "content",
+      "gitTree": "fae305a03886bbde4c514b9ab4606b56be478fdd"
+    },
+    {
+      "anchor": "c98ab1f06680857caa6b28f2bc0348b9f4ed49b6",
+      "path": "third-party",
+      "gitTree": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+    },
+    {
+      "anchor": "85fa17555b44bca61640bcb13a738c3e37ffc34f",
+      "path": "game/Assets/WordDeduction",
+      "gitTree": "8dd58e933b3a2edd06e83904525c0132e9ce35a2"
+    },
+    {
+      "anchor": "85fa17555b44bca61640bcb13a738c3e37ffc34f",
+      "path": "tests",
+      "gitTree": "f9a55cba48725576f3bf5be348e2a6e267c562d3"
+    },
+    {
+      "anchor": "85fa17555b44bca61640bcb13a738c3e37ffc34f",
+      "path": "content",
+      "gitTree": "fae305a03886bbde4c514b9ab4606b56be478fdd"
+    },
+    {
+      "anchor": "85fa17555b44bca61640bcb13a738c3e37ffc34f",
+      "path": "third-party",
+      "gitTree": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+    },
+    {
+      "anchor": "5c56e63d755df24156e6f5e88f4170ae4857a0ab",
+      "path": "game",
+      "gitTree": "950c502e2e31569b332fbb8e4350ea44d9d7b777"
+    },
+    {
+      "anchor": "5c56e63d755df24156e6f5e88f4170ae4857a0ab",
+      "path": "tests",
+      "gitTree": "f9a55cba48725576f3bf5be348e2a6e267c562d3"
+    },
+    {
+      "anchor": "5c56e63d755df24156e6f5e88f4170ae4857a0ab",
+      "path": "tools",
+      "gitTree": "30e62ff322e9331ac7676455a37804ff4354eb38"
+    },
+    {
+      "anchor": "5c56e63d755df24156e6f5e88f4170ae4857a0ab",
+      "path": "content",
+      "gitTree": "fae305a03886bbde4c514b9ab4606b56be478fdd"
+    },
+    {
+      "anchor": "5c56e63d755df24156e6f5e88f4170ae4857a0ab",
+      "path": "third-party",
+      "gitTree": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+    }
+  ],
+  "reusedSession": {
+    "sourceCommit": "c98ab1f06680857caa6b28f2bc0348b9f4ed49b6",
+    "passed": 74,
+    "total": 74,
+    "failed": 0,
+    "logSha256": "1807995ad8583e712c8665e0e7818cde7b947c479cf5168355afcf8695f29ac2",
+    "rerunByMerger": false,
+    "provenance": "Correction implementer full run; exact Session, Session.Tests, content and third-party trees independently matched."
+  },
+  "reusedRendered": {
+    "sourceCommit": "85fa17555b44bca61640bcb13a738c3e37ffc34f",
+    "passed": 47,
+    "total": 47,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0,
+    "durationSeconds": 208.73,
+    "resultSha256": "6b2179f094de816286a3daf966b7381c097b514033795903a8a0af60b8c301cc",
+    "rerunByMerger": false,
+    "runtimeAndTestTreesUnchanged": true
+  },
+  "candidate": {
+    "sourceCommit": "5c56e63d755df24156e6f5e88f4170ae4857a0ab",
+    "version": "1.1.0",
+    "versionCode": 8,
+    "packageLockSha256": "da98f245e8c511d47699dc883e521eff5176800341117fcfe8f77fe9dcfb342d",
+    "signing": "Android debug certificate; local testing only",
+    "artifacts": [
+      {
+        "kind": "apk",
+        "path": "artifacts/android/5c56e63d755d/20261008T211322483Z-apk/WordDeduction-local-release.apk",
+        "bytes": 37454738,
+        "sha256": "d4ba4c5ba65ca03249f59455234c1df7bdf4f85b160828ca05b945a85cd78ab9",
+        "inspectedCommands": 14,
+        "inspectedPackages": 1,
+        "failedCommands": 0,
+        "buildErrors": 0,
+        "buildWarnings": 2,
+        "buildDurationSeconds": 270.34010159999997
+      },
+      {
+        "kind": "aab",
+        "path": "artifacts/android/5c56e63d755d/20261008T212247169Z-aab/WordDeduction-local-release.aab",
+        "bytes": 37811704,
+        "sha256": "41d5a652323b3a263bd7d28d5847bced7e9a2c3ab5a1359500e3026bb0ca8e50",
+        "inspectedCommands": 44,
+        "inspectedPackages": 4,
+        "failedCommands": 0,
+        "buildErrors": 0,
+        "buildWarnings": 2,
+        "buildDurationSeconds": 284.3041999
+      }
+    ]
+  },
+  "historicalPackages": [
+    {
+      "path": "artifacts/android/e5cb8af6b821/20261008T202751264Z-apk/WordDeduction-local-release.apk",
+      "versionCode": 6,
+      "sourceCommit": "e5cb8af6b821e179a145fe1ce920c1ee45066f47",
+      "bytes": 37457562,
+      "sha256": "ab410c4a92388fd0605626285bcf5746a7a64a26012ebe8fd35032a95ea7d5b9"
+    },
+    {
+      "path": "artifacts/android/760efb726cf1/20261008T204620608Z-apk/WordDeduction-local-release.apk",
+      "versionCode": 7,
+      "sourceCommit": "760efb726cf1c9746e9fb1628371ab7092cc8575",
+      "bytes": 37456662,
+      "sha256": "f02137fcda6821fe4272b903187ed3d42b95de173eb6fc4229f37a5a8c9beb31"
+    },
+    {
+      "path": "artifacts/android/760efb726cf1/20261008T205154443Z-aab/WordDeduction-local-release.aab",
+      "versionCode": 7,
+      "sourceCommit": "760efb726cf1c9746e9fb1628371ab7092cc8575",
+      "bytes": 37813616,
+      "sha256": "508e5b21df10074fbea125caef1d6ea5a931327920c85acf883d1dd4eed2c0d8"
+    }
+  ],
+  "preservation": {
+    "path": "artifacts/kings-final-corrections-merge/preservation.json",
+    "sha256": "f7492da2299c50bee701f0788975c27884fef61d8a81fa7152763c4a8a18c1c3",
+    "rawFiles": 609,
+    "rawBytes": 1401946541,
+    "selectedFiles": 168,
+    "selectedBytes": 979879.0,
+    "selectedManifestSha256": "68fec9adeeb8258a87519c08102285a98e1be25f5f96979ccb5246258f691036",
+    "committedArchiveSha256": "ec6589e6d6ad4d0884d376066cce3e06b24c5e1f4c14c4addeac9117aafbcb33",
+    "sourceVerified": 168,
+    "committedBlobVerified": 168,
+    "mergedCheckoutVerified": 168,
+    "overwrittenHistoricalFiles": 0
+  },
+  "existingNativePreservation": {
+    "path": "artifacts/kings-native/preservation.json",
+    "sha256": "bb0c8ae66bfe8fd6c6ce675386786d52d6f3e70730fe94b796b9775121a25030",
+    "files": 1092,
+    "bytes": 76455269.0,
+    "allDestinationHashesVerified": true,
+    "ownedBy": "Coordinator"
+  },
+  "diffChecks": {
+    "authoredSourceExit": 0,
+    "authoredReportsCrAtEolExit": 0,
+    "fullRawExit": 2,
+    "fullRawOutputSha256": "ef36e19980eafd3456b9540bfa37b0a4f566cc0581dda033252f9f3d02ec064f",
+    "note": "Full default check flags intentional raw CRLF and captured command whitespace; evidence was not normalized."
+  },
+  "boundaries": [
+    "Merger did not run Unity, ADB or builds, repeat unchanged suites, push, close issues or clean worktrees.",
+    "Native acceptance is coordinator-owned and retains platform/harness observations, low-memory exit and physical-device/audible-accessibility limits.",
+    "Original red tests, the overbroad guard failure, failed code6 inspection and code7 native failure remain preserved.",
+    "Prior push rejection was resolved by the coordinator with authenticated public-owner evidence; no ongoing push block."
+  ]
+}
