@@ -42,7 +42,7 @@ namespace WordDeduction.UI
             language = match.Language;
             screen.Q<Button>("matchBack").text = T("back");
             screen.Q<Button>("matchHelp").text = T("help");
-            screen.Q<Label>("matchMode").text = T(match.Mode == GameMode.Quick ? "quick" : "classic");
+            screen.Q<Label>("matchMode").text = T(match.Mode == GameMode.Quick ? "quick" : match.Mode == GameMode.Kings ? "kings" : "classic");
             var noticeLabel = screen.Q<Label>("matchNotice");
             var message = notice ?? session.View.StorageNotice;
             noticeLabel.text = message == null ? "" : T(message); noticeLabel.EnableInClassList("hidden",message == null);
@@ -57,6 +57,7 @@ namespace WordDeduction.UI
                 case MatchPhase.Result: Result(match); break;
                 case MatchPhase.Elimination: Elimination(match); break;
                 case MatchPhase.WhiteGuess: WhiteGuess(match); break;
+                case MatchPhase.TablePlay: KingsTable(match); break;
             }
         }
         void Act(CommandResult result)
@@ -135,15 +136,35 @@ namespace WordDeduction.UI
             var mark = Box(symbol,"mark-front"); mark.pickingMode = PickingMode.Ignore;
             Label(mark,"markQuestion","?","mark-question").pickingMode = PickingMode.Ignore;
             var caption = Label(face,"cardCaption",T("cardPrivate"),"card-caption"); caption.pickingMode = PickingMode.Ignore;
-            var word = Label(face,"secretWord","","secret-word"); word.pickingMode = PickingMode.Ignore;
-            Label(body,"dragHint",T("dragHint"),"card-instruction");
+            ScrollView privateInformation = null;
+            VisualElement informationParent = face;
+            if (match.Mode == GameMode.Kings)
+            {
+                privateInformation = new ScrollView { name = "secretInformation", horizontalScrollerVisibility = ScrollerVisibility.Hidden, pickingMode = PickingMode.Ignore };
+                privateInformation.AddToClassList("private-information"); privateInformation.AddToClassList("hidden"); face.Add(privateInformation); informationParent = privateInformation;
+                Label(informationParent,"secretRole","","secret-role").pickingMode = PickingMode.Ignore;
+            }
+            var word = Label(informationParent,"secretWord","","secret-word"); word.pickingMode = PickingMode.Ignore;
+            if (match.Mode == GameMode.Kings)
+            {
+                Label(informationParent,"secretLeader","","secret-details").pickingMode = PickingMode.Ignore;
+                Label(informationParent,"secretKnown","","secret-details").pickingMode = PickingMode.Ignore;
+            }
+            Label(body,"dragHint",T(match.Mode == GameMode.Kings ? "kingsDragHint" : "dragHint"),"card-instruction");
             var hold = Box(body,"hold-reveal"); hold.name = "holdReveal"; hold.focusable = true;
             Label(hold,"holdLabel",T("holdReveal"),"card-caption").pickingMode = PickingMode.Ignore;
             var next = Action("nextOwner",match.HandoffNumber == match.Participants.Count ? "beginClues" : "nextOwner",() => {
                 if (card == null || !card.CanAdvance) return;
                 card.Hide(true); Act(session.AdvanceHandoff(match.Owner.Id));
             });
-            card = new SecretCard(session,match.Owner.Id,contacts,screen.parent,slot,hold,face,word,symbol,caption,next);
+            card = new SecretCard(session,match.Owner.Id,contacts,screen.parent,slot,hold,face,word,symbol,caption,next,privateInformation);
+        }
+        void KingsTable(MatchView match)
+        {
+            Label(body,"kingsTableTitle",T("kingsTableTitle"),"match-title");
+            Label(body,"kingsTableInstructions",T("kingsTableInstructions"),"match-text");
+            var list = new ScrollView { name = "kingsSurvivors", horizontalScrollerVisibility = ScrollerVisibility.Hidden }; list.AddToClassList("vote-list"); body.Add(list);
+            foreach (var participant in match.Survivors) Label(list,"survivor-" + participant.Id,participant.DisplayName,"match-text");
         }
         void Clues(MatchView match)
         {
@@ -238,8 +259,8 @@ namespace WordDeduction.UI
         void Help()
         {
             var scroll = new ScrollView { horizontalScrollerVisibility = ScrollerVisibility.Hidden }; scroll.AddToClassList("vote-list"); body.Add(scroll);
-            Label(scroll,"helpTitle",T(session.Match.Mode == GameMode.Classic ? "classicHelpTitle" : "helpTitle"),"match-title");
-            Label(scroll,"helpText",T(session.Match.Mode == GameMode.Classic ? "classicHelpText" : "helpText"),"match-text");
+            Label(scroll,"helpTitle",T(session.Match.Mode == GameMode.Kings ? "kingsHelpTitle" : session.Match.Mode == GameMode.Classic ? "classicHelpTitle" : "helpTitle"),"match-title");
+            Label(scroll,"helpText",T(session.Match.Mode == GameMode.Kings ? "kingsHelpText" : session.Match.Mode == GameMode.Classic ? "classicHelpText" : "helpText"),"match-text");
             Action("closeHelp","closeHelp",() => { help = false; Render(); });
         }
     }

@@ -23,6 +23,10 @@
 .secret-word { font-size: 32px; width: 100%; max-width: 100%; margin: 0; padding: 0; color: #38215e; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; }
 .secret-word.whole-word { white-space: nowrap; }
 .secret-word.white-private { font-size: 20px; }
+.private-information { width: 100%; flex-grow: 1; flex-shrink: 1; min-height: 0; }
+.secret-role { font-size: 18px; -unity-font-style: bold; white-space: normal; -unity-text-align: middle-center; color: #38215e; margin-bottom: 6px; flex-shrink: 0; }
+.secret-details { font-size: 16px; white-space: normal; -unity-text-align: middle-center; color: #38215e; margin-top: 8px; flex-shrink: 0; }
+.private-information .secret-word { flex-shrink: 0; }
 .secret-card.revealed { background-color: #e0ecdf; border-color: #b5cdb3; }
 .card-instruction { font-size: 14px; white-space: normal; color: var(--muted); -unity-text-align: middle-center; margin: 8px 0; }
 .hold-reveal { min-height: 54px; border-radius: 18px; border-width: 2px; border-color: #c7b8e8; color: #503093; justify-content: center; margin-top: 8px; padding: 8px 12px; flex-shrink: 0; }

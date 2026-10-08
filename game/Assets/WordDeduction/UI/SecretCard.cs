@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -11,6 +12,8 @@ namespace WordDeduction.UI
         readonly string owner;
         readonly VisualElement root, drag, hold, face;
         readonly Label word, caption;
+        readonly Label role, leader, known;
+        readonly ScrollView privateInformation;
         readonly VisualElement symbol;
         readonly Button next;
         readonly HashSet<int> contacts;
@@ -21,10 +24,13 @@ namespace WordDeduction.UI
         bool holding, disposed;
         bool CardReady => pointer < 0 && lift <= 0.01f && session.Match != null && session.Match.CanAdvance;
         public bool CanAdvance => contacts.Count == 0 && CardReady;
-        public SecretCard(Session session, string owner, HashSet<int> contacts, VisualElement root, VisualElement drag, VisualElement hold, VisualElement face, Label word, VisualElement symbol, Label caption, Button next)
+        public SecretCard(Session session, string owner, HashSet<int> contacts, VisualElement root, VisualElement drag, VisualElement hold, VisualElement face, Label word, VisualElement symbol, Label caption, Button next, ScrollView privateInformation = null)
         {
             this.contacts = contacts;
             this.session = session; this.owner = owner; this.root = root; this.drag = drag; this.hold = hold; this.face = face; this.word = word; this.symbol = symbol; this.caption = caption; this.next = next;
+            this.privateInformation = privateInformation;
+            role = face.Q<Label>("secretRole"); leader = face.Q<Label>("secretLeader"); known = face.Q<Label>("secretKnown");
+            foreach (var label in new[] { role, leader, known }) if (label != null) label.enableRichText = false;
             drag.RegisterCallback<PointerDownEvent>(DragDown); hold.RegisterCallback<PointerDownEvent>(HoldDown);
             next.RegisterCallback<PointerDownEvent>(NextDown, TrickleDown.TrickleDown);
             next.RegisterCallback<PointerUpEvent>(NextUp, TrickleDown.TrickleDown);
@@ -52,24 +58,40 @@ namespace WordDeduction.UI
         }
         void Move(PointerMoveEvent e)
         {
-            if (e.pointerId != pointer || holding) return;
+            if (e.pointerId != pointer) return;
+            if (holding)
+            {
+                if (privateInformation != null) privateInformation.scrollOffset = new Vector2(0,Mathf.Clamp(startY - e.position.y,0,privateInformation.verticalScroller.highValue));
+                e.StopPropagation(); return;
+            }
             float maximum = Mathf.Clamp(drag.resolvedStyle.height * 0.35f,60,110);
             lift = Mathf.Clamp(startY - e.position.y,0,maximum);
             if (lift >= maximum * 0.5f) Show(); else Conceal();
+            if (privateInformation != null) privateInformation.scrollOffset = new Vector2(0,Mathf.Clamp(startY - e.position.y - maximum,0,privateInformation.verticalScroller.highValue));
             Pose(); e.StopPropagation();
         }
         void Show()
         {
             if (!MobilePrivacy.Ready) return;
-            var text = session.RevealWord(owner);
-            if (text == null) return;
-            bool white = text == "Mr. White";
+            var card = session.RevealCard(owner);
+            if (card == null) return;
+            var text = card.Word;
+            bool white = card.Kind == PrivateCardKind.White;
             root.AddToClassList("reading-card");
-            word.text = white ? Copy.Get(session.Match.Language,"whitePrivate") : text;
-            word.EnableInClassList("white-private",white); word.EnableInClassList("hidden",false);
-            word.EnableInClassList("whole-word",!white && !text.Contains(" "));
+            word.text = white ? Copy.Get(session.Match.Language,"whitePrivate") : text ?? "";
+            word.EnableInClassList("white-private",white); word.EnableInClassList("hidden",!white && text == null);
+            word.EnableInClassList("whole-word",!white && text != null && !text.Contains(" "));
             if (white) word.style.fontSize = StyleKeyword.Null;
-            else FitWord(text);
+            else if (text != null) FitWord(text);
+            if (privateInformation != null)
+            {
+                var language = session.Match.Language;
+                role.text = card.Kind == PrivateCardKind.GoodKing ? Copy.Get(language,"goodKingPrivate") : card.Kind == PrivateCardKind.EvilKing ? Copy.Get(language,"evilKingPrivate") : "";
+                leader.text = card.Leader == null ? "" : Copy.Get(language,"privateLeader",card.Leader.DisplayName);
+                known.text = card.KnownParticipants.Count == 0 ? "" : Copy.Get(language,card.Kind == PrivateCardKind.GoodKing ? "privateEvilNames" : "privateTeamNames") + "\n" + string.Join("\n",card.KnownParticipants.Select(p => p.DisplayName));
+                role.EnableInClassList("hidden",role.text.Length == 0); leader.EnableInClassList("hidden",leader.text.Length == 0); known.EnableInClassList("hidden",known.text.Length == 0);
+                privateInformation.RemoveFromClassList("hidden");
+            }
             symbol.EnableInClassList("hidden",true); caption.EnableInClassList("hidden",true); face.AddToClassList("revealed");
         }
         void FitWord(string text)
@@ -88,6 +110,11 @@ namespace WordDeduction.UI
         void Conceal()
         {
             word.text = ""; session.HideWord(); word.EnableInClassList("hidden",true);
+            if (privateInformation != null)
+            {
+                role.text = leader.text = known.text = "";
+                privateInformation.AddToClassList("hidden"); privateInformation.scrollOffset = Vector2.zero;
+            }
             root.RemoveFromClassList("reading-card");
             symbol.EnableInClassList("hidden",false); caption.EnableInClassList("hidden",false); face.RemoveFromClassList("revealed");
         }

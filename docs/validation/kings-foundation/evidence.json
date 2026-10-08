@@ -1,0 +1,163 @@
+{
+  "createdUtc": "2026-10-08T16:55:43.3039516Z",
+  "base": "bcdbb1389bea14b6e38e0122649380eafef04c1e",
+  "branch": "implement/kings-foundation",
+  "fileCount": 31,
+  "files": [
+    {
+      "path": "artifacts/kings-foundation/01-selection-green.txt",
+      "bytes": 102,
+      "sha256": "b0afcd0778025506f739d711e3d9fba3f4e025ea886beaa51626335a6d092906"
+    },
+    {
+      "path": "artifacts/kings-foundation/01-selection-red.txt",
+      "bytes": 1447,
+      "sha256": "e8310cdf029b7cf60c9562f77d5bbbf74b2d99da060f2f353127945fa82a50ea"
+    },
+    {
+      "path": "artifacts/kings-foundation/02-preference-green.txt",
+      "bytes": 197,
+      "sha256": "a89d46df62542736b21dda1f9d594431cbf724491ebe7eeab4c2319a3993650b"
+    },
+    {
+      "path": "artifacts/kings-foundation/02-preference-red.txt",
+      "bytes": 6262,
+      "sha256": "9482b3518a2ffda615879811085c00a00a90bbe290f90852acaca26ee5c5e6ad"
+    },
+    {
+      "path": "artifacts/kings-foundation/03-private-card-green.txt",
+      "bytes": 298,
+      "sha256": "87c8f8f4b5ce62f50049a839cd5d0b32218e2ca5ee8e4bed988b48d995ea8b7d"
+    },
+    {
+      "path": "artifacts/kings-foundation/03-private-card-red.txt",
+      "bytes": 3649,
+      "sha256": "8ed0955c1a267f3250efe5a5fb3ae391473ae3e7b28f0545c0894a2f36f4e4f2"
+    },
+    {
+      "path": "artifacts/kings-foundation/04-schema-green.txt",
+      "bytes": 94,
+      "sha256": "105e511bdc74b1cab4d0e18259d944ee7da135d2760112d0857e6588f6e3baf8"
+    },
+    {
+      "path": "artifacts/kings-foundation/04-schema-red.txt",
+      "bytes": 136,
+      "sha256": "2361c60d7264953c8a38f301127af33f5a1f0d43bfede6a358d2956b7b1e8734"
+    },
+    {
+      "path": "artifacts/kings-foundation/05-selection-ui-green-dispatch.json",
+      "bytes": 992,
+      "sha256": "e7be00eafd45eac068f3a1a6981cfc8e6320f49435c36ed25dc7492b31e8b020"
+    },
+    {
+      "path": "artifacts/kings-foundation/05-selection-ui-green.json",
+      "bytes": 905,
+      "sha256": "cca8e8e3e112df8988582d168248269ac098b9abaeece24747680cc169caf14b"
+    },
+    {
+      "path": "artifacts/kings-foundation/05-selection-ui-red-dispatch.json",
+      "bytes": 992,
+      "sha256": "e7be00eafd45eac068f3a1a6981cfc8e6320f49435c36ed25dc7492b31e8b020"
+    },
+    {
+      "path": "artifacts/kings-foundation/05-selection-ui-red.json",
+      "bytes": 1776,
+      "sha256": "afb9d355a4448867fe2f939ade5abfb4cf749a3b1ab83722b23c2db18c970275"
+    },
+    {
+      "path": "artifacts/kings-foundation/06-private-ui-green-dispatch.json",
+      "bytes": 992,
+      "sha256": "e7be00eafd45eac068f3a1a6981cfc8e6320f49435c36ed25dc7492b31e8b020"
+    },
+    {
+      "path": "artifacts/kings-foundation/06-private-ui-green.json",
+      "bytes": 1198,
+      "sha256": "6c08bd96500d2e6e8bee7b5d82ab3d92b0ed381cf421a64d0f9625432b006a85"
+    },
+    {
+      "path": "artifacts/kings-foundation/06-private-ui-red-dispatch.json",
+      "bytes": 1002,
+      "sha256": "0c2c42f15677fb2bda85bccd86582b6f90d922bdc9376b640247bb2f1b1af6a5"
+    },
+    {
+      "path": "artifacts/kings-foundation/06-private-ui-red.json",
+      "bytes": 1566,
+      "sha256": "5a71dd15630efa1eca70b99aea86e9306ccfd652493a9f5f240f59e0d07776da"
+    },
+    {
+      "path": "artifacts/kings-foundation/07-privacy-help-red-dispatch.json",
+      "bytes": 1034,
+      "sha256": "a8d02f6c99010628e4e22a7654b3c68e27be7fc905bfff04234b733b7f94070f"
+    },
+    {
+      "path": "artifacts/kings-foundation/07-privacy-help-red.json",
+      "bytes": 1653,
+      "sha256": "2820c47c710edc806d38c1a3844affd9d5ee730bdd16eac289e642e9a087e5ab"
+    },
+    {
+      "path": "artifacts/kings-foundation/commands.json",
+      "bytes": 351963,
+      "sha256": "c3d4a46f7e8da82aca187796fac4cd7f0f8bbbdb910bfffa19b4840232d81847"
+    },
+    {
+      "path": "artifacts/kings-foundation/editor-close.json",
+      "bytes": 683,
+      "sha256": "1fb8f5b8bc9387439735124fc80ae6268aa9c3afa52f74c5c843a9789a6cb4c7"
+    },
+    {
+      "path": "artifacts/kings-foundation/editor.log",
+      "bytes": 558248,
+      "sha256": "ab24a390d326d67dffa50444e482f276696761395bf3b6aec8896113dbf90683"
+    },
+    {
+      "path": "artifacts/kings-foundation/kings-session-expanded.txt",
+      "bytes": 581,
+      "sha256": "0b2b81a5979d26ae779166e6c8ce4e1aaf899e382e881ec74f999a40a7a7161e"
+    },
+    {
+      "path": "artifacts/kings-foundation/quick-repeat.txt",
+      "bytes": 85,
+      "sha256": "484303972efb015db740e9dc1ba51ac34448dc6eb62567fa69da00a93cb25015"
+    },
+    {
+      "path": "artifacts/kings-foundation/rendered-full-dispatch.json",
+      "bytes": 986,
+      "sha256": "26d0f7e09b43dfcfcc3253a330c84ad402f544409b3b3cadb3cbc57a2eec7b05"
+    },
+    {
+      "path": "artifacts/kings-foundation/rendered-full.json",
+      "bytes": 9543,
+      "sha256": "caa43cd714d96c48350d871596e6daf8591c1293ab93d5c2ea82d6e6ecba8c9f"
+    },
+    {
+      "path": "artifacts/kings-foundation/session-final-diagnostic.txt",
+      "bytes": 4915,
+      "sha256": "292f68b7787054ed2a2b4cace93f7e1d2242519048871258d276027b2ba70acc"
+    },
+    {
+      "path": "artifacts/kings-foundation/session-final.txt",
+      "bytes": 4947,
+      "sha256": "59d6c5ecee8db669896bebcd60c0a7f3139a2b1184c1574f5eb852e1d03f7911"
+    },
+    {
+      "path": "artifacts/kings-foundation/session-io-diagnostic.txt",
+      "bytes": 104,
+      "sha256": "180c7cf255be6ba7538f5251a49a6e3166afcc91b3db9fbbda95e7498ec551c7"
+    },
+    {
+      "path": "artifacts/kings-foundation/session-io-original-path.txt",
+      "bytes": 104,
+      "sha256": "180c7cf255be6ba7538f5251a49a6e3166afcc91b3db9fbbda95e7498ec551c7"
+    },
+    {
+      "path": "artifacts/kings-foundation/session-mid.txt",
+      "bytes": 4748,
+      "sha256": "6380f7e410b8d9fb1fd95b00089fbf582718ef02e1d059cb6c795d1e32c412b5"
+    },
+    {
+      "path": "artifacts/kings-foundation/source.patch",
+      "bytes": 84308,
+      "sha256": "b0ff9b100d19c71e996292f6f5f67282aa610910a27378fd019ec2cf0392ea6b"
+    }
+  ]
+}

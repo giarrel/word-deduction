@@ -166,13 +166,28 @@ cases = cases.Concat(RecoveryCases.All).ToArray();
 cases = cases.Concat(ClassicCases.All).ToArray();
 cases = cases.Concat(ContentCases.All).ToArray();
 cases = cases.Concat(NameCases.All).ToArray();
+cases = cases.Concat(KingsCases.All).ToArray();
 if (args.Length > 0) cases = cases.Where(test => test.name.Contains(args[0],StringComparison.OrdinalIgnoreCase)).ToArray();
 int failures = 0;
 foreach (var test in cases) {
     var directory = Path.Combine(Path.GetTempPath(), "WordDeduction-tests", Guid.NewGuid().ToString("N"));
+    var ioDiagnostics = new List<string>();
+    bool failed = false;
+    bool diagnose = Environment.GetEnvironmentVariable("WD_TEST_IO_DIAGNOSTICS") == "1";
+    EventHandler<System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs> recordIo = (_, error) => {
+        if (error.Exception is IOException && error.Exception is not FileNotFoundException && error.Exception is not DirectoryNotFoundException)
+            ioDiagnostics.Add(error.Exception.ToString());
+    };
+    if (diagnose) AppDomain.CurrentDomain.FirstChanceException += recordIo;
     try { test.run(directory); Console.WriteLine("PASS " + test.name); }
-    catch (Exception error) { failures++; Console.WriteLine("FAIL " + test.name + ": " + error.Message); }
-    finally { if (Directory.Exists(directory)) Directory.Delete(directory, true); }
+    catch (Exception error) {
+        failed = true; failures++; Console.WriteLine("FAIL " + test.name + ": " + error.Message);
+        if (diagnose) { foreach (var io in ioDiagnostics.TakeLast(3)) Console.WriteLine("HOST IO: " + io); Console.WriteLine("Retained failed test snapshot: " + directory); }
+    }
+    finally {
+        if (diagnose) AppDomain.CurrentDomain.FirstChanceException -= recordIo;
+        if (!(failed && diagnose) && Directory.Exists(directory)) Directory.Delete(directory, true);
+    }
 }
 Console.WriteLine($"{cases.Length - failures}/{cases.Length} passed");
 return failures == 0 ? 0 : 1;
