@@ -1,0 +1,54 @@
+{
+  "createdUtc": "2026-10-08T17:04:31.6012833Z",
+  "integrationBranch": "integration/kings-v1",
+  "priorIntegrationCommit": "bcdbb1389bea14b6e38e0122649380eafef04c1e",
+  "implementerCommit": "7b695699b2ac29d8222fbf8580e805c6ce410f9b",
+  "mergeCommit": "eb8538390d430f0089c5fcfb9f7377e4b2186f98",
+  "identicalSourceAndMergeTree": "c4faf8f0874c7f979cba84c3a1e8640f7c8eaa7a",
+  "foundationManifest": {
+    "path": "docs/validation/kings-foundation/evidence.json",
+    "sha256": "6b378f3ca462d16ec70ee5b5435f7dbc7b2d23e2d2f906eca31b1ffbbdc7ce8e",
+    "filesPreserved": 31,
+    "bytesPreserved": 1045510,
+    "sourceAndDestinationVerified": true
+  },
+  "independentSession": {
+    "passed": 61,
+    "total": 61,
+    "exitCode": 0,
+    "durationSeconds": 137.4750255,
+    "diagnosticsEnabled": true
+  },
+  "implementerRendered": {
+    "independentlyRerun": false,
+    "identicalMergedTree": true,
+    "passed": 33,
+    "total": 33,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0,
+    "durationSeconds": 141.34
+  },
+  "priorIntermittentFailures": {
+    "preserved": true,
+    "cause": "unconfirmed",
+    "diagnosedProductionFix": false
+  },
+  "files": [
+    {
+      "path": "artifacts/kings-foundation-merge/preservation.json",
+      "bytes": 16202,
+      "sha256": "5b026faad8e48584bc8f0de284e53beb2220e8c4b2e81f43efb2a9cdc64b59f8"
+    },
+    {
+      "path": "artifacts/kings-foundation-merge/session-independent.txt",
+      "bytes": 5864,
+      "sha256": "e991d312cf53f294df3c2ae52dd71842e667d6bec05e72d250491f2c7a69d06c"
+    },
+    {
+      "path": "artifacts/kings-foundation-merge/session-independent-run.json",
+      "bytes": 979,
+      "sha256": "c65c5f2f83df8aed14458e32228ae08359b445fc2278163e83db9ab2f205fc64"
+    }
+  ]
+}
