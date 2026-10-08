@@ -1,0 +1,73 @@
+# Kings acceptance matrix
+
+Spec: [#10](https://github.com/giarrel/word-deduction/issues/10), [local source](../../specs/kings-mode.md). Fixed review baseline `478953f496c0a8e88f6849c32960f02c2039f671`.
+
+This is a live coverage ledger, **not a completed release assertion**. Ticket #12 is accepted with [foundation evidence](../kings-foundation/report.md) and an [independent merge check](../kings-foundation-merge/report.md). Later tickets must replace pending cells with exact Session/rendered/native evidence and explicit remaining limits. A test plan or saved screenshot alone is not a passed observation.
+
+| Story | Requirement | Ticket ownership | Current evidence/status |
+| --- | --- | --- | --- |
+| 1 | As a host, I want to select a distinct third mode, so that our group can choose the leader game without changing Quick or Classic. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 2 | As a returning player, I want the existing two modes to retain their rules and settings, so that familiar games continue to work. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 3 | As a host, I want to reuse my saved Group, so that trying this mode requires no repeated name entry. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 4 | As a host, I want to add, rename, pause, restore, or remove players between matches, so that the app accommodates a changing group. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 5 | As a host, I want to start with at least five active participants, so that both leaders have teammates and the good side has a majority. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 6 | As a host, I want exactly one King on each side, so that each team's protection objective is clear. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 7 | As a host, I want to choose the number of ordinary Undercover within valid limits, so that I can adapt the challenge to the group. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 8 | As a host, I want the role summary to distinguish ordinary Undercover from Mr. White, so that I understand the actual evil-team size. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 9 | As a host, I want a valid default distribution, so that I can begin without configuring a rules matrix. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 10 | As a host, I want my count preference to survive reopening and mode changes, so that setup does not need repeating. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 11 | As a host, I want group-size changes to preserve my group and clearly show any effective count adjustment, so that invalid combinations do not derail the next match. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 12 | As a participant, I want teams and Kings dealt afresh at random, so that previous matches do not reveal my next role. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 13 | As a participant, I want repeated assignments to remain possible, so that nobody can infer a role from a rotation guarantee. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 14 | As a participant, I want a familiar bilingual word pair drawn from the existing collection, so that the new mode works with the included content. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 15 | As a returning group, I want the existing persistent word history to apply, so that this mode does not restart early word repetitions. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 16 | As an ordinary Civilian, I want my private word and leader's name, so that I can give clues and protect my leader without learning my side. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 17 | As an ordinary Undercover, I want my alternative word and leader's name in the same neutral presentation, so that the card does not identify me as evil. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 18 | As an ordinary participant, I want no role label, color, icon, speech label, or layout cue that distinguishes Civilian from Undercover, so that my uncertainty is genuine. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 19 | As the good King, I want to know that I am good and see the good word, so that I understand my objective. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 20 | As the good King, I want the names of all evil participants without a marker for their King, so that I can guide my team while still having to find the critical target. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 21 | As Mr. White, I want to know that I am the evil King and receive no word, so that I know I must bluff. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 22 | As Mr. White, I want the names of my ordinary Undercover teammates, so that I know my team without learning the good King or either secret word. | #12 | #12 implementation accepted; final combined/native evidence pending. |
+| 23 | As a participant, I want long or duplicate names to remain distinguishable on private information cards, so that I remember the correct people. | #15 | Pending implementation and/or combined acceptance. |
+| 24 | As a participant, I want my name shown before revealing, so that the phone is handed to the correct person. | #12, #15 | #12 implementation accepted; final combined/native evidence pending. |
+| 25 | As a participant, I want the established pull-up or hold-to-reveal interaction, so that the new mode feels familiar. | #12, #15 | #12 implementation accepted; final combined/native evidence pending. |
+| 26 | As a participant, I want all private information hidden immediately on release, interruption, or app backgrounding, so that others cannot glimpse my card. | #12, #15 | #12 implementation accepted; final combined/native evidence pending. |
+| 27 | As a participant, I want freedom to choose how long I examine my initial card, so that looking time can become part of the bluff. | #12, #15 | #12 implementation accepted; final combined/native evidence pending. |
+| 28 | As a participant, I want no later access to a completed private handoff, so that remembering information remains part of the challenge. | #12, #15 | #12 implementation accepted; final combined/native evidence pending. |
+| 29 | As a participant whose initial handoff is interrupted, I want to resume that same unfinished handoff safely, so that an interruption does not lose my original assignment. | #12, #15 | #12 implementation accepted; final combined/native evidence pending. |
+| 30 | As a group, I want to give clues and discuss without app confirmations, so that the phone stays out of the conversation. | #13, #15 | Pending implementation and/or combined acceptance. |
+| 31 | As a group, I want voting and runoffs explained as table rules, so that we can resolve them without digital ballots or vote-count entry. | #13, #15 | Pending implementation and/or combined acceptance. |
+| 32 | As a group, I want a tied vote to require no app action, so that another clue round can begin immediately. | #13, #15 | Pending implementation and/or combined acceptance. |
+| 33 | As a host, I want to record the one person actually eliminated by the group, so that the survivor list and outcome stay correct. | #13 | Pending implementation and/or combined acceptance. |
+| 34 | As a host, I want to correct an unconfirmed name selection before revealing its consequence, so that a mistaken tap does not spoil the game. | #13 | Pending implementation and/or combined acceptance. |
+| 35 | As a surviving participant, I want ordinary eliminations to show only “Not a king”, so that neither the app nor its public state reveals the eliminated side, word, or leader. | #13 | Pending implementation and/or combined acceptance. |
+| 36 | As an eliminated participant, I want to remain part of my original team's final result, so that elimination does not exclude me from a team victory. | #13 | Pending implementation and/or combined acceptance. |
+| 37 | As a group, I want play to continue through ordinary eliminations and numerical parity, so that finding a King remains the objective. | #13 | Pending implementation and/or combined acceptance. |
+| 38 | As a group, I want the good King's elimination to end the match with an evil-team victory, so that the consequence is immediate and clear. | #13 | Pending implementation and/or combined acceptance. |
+| 39 | As a group, I want the evil King's elimination to offer his last chance before any general reveal, so that he cannot use the result screen to choose correctly. | #13 | Pending implementation and/or combined acceptance. |
+| 40 | As Mr. White, I want to choose irrevocably between a word attempt and a King attempt, so that I get one strategic chance rather than both. | #14, #15 | Pending implementation and/or combined acceptance. |
+| 41 | As Mr. White, I want to make that choice and attempt without team advice, so that the final decision belongs to me. | #14, #15 | Pending implementation and/or combined acceptance. |
+| 42 | As Mr. White choosing the word, I want to speak one answer before the target word is shown, so that the attempt is fair. | #14, #15 | Pending implementation and/or combined acceptance. |
+| 43 | As a group, I want to judge the meaning of that spoken answer, so that true synonyms and harmless grammatical differences do not cause an unfair loss. | #14, #15 | Pending implementation and/or combined acceptance. |
+| 44 | As Mr. White choosing the King, I want to identify one surviving participant, so that my decision has one definite target. | #14, #15 | Pending implementation and/or combined acceptance. |
+| 45 | As a group, I want a successful last chance to win for the whole evil team and a failed one for the whole good team, so that Mr. White has no separate solo victory in this mode. | #14, #15 | Pending implementation and/or combined acceptance. |
+| 46 | As a group, I want a match with only the two Kings left to end with an evil-team victory, so that we cannot become stuck in an unavoidable voting tie. | #13 | Pending implementation and/or combined acceptance. |
+| 47 | As a returning group, I want eliminations, completed handoffs, a committed last-chance choice, and pending answer judgment to survive app restarts, so that reopening cannot undo decisions or provide an extra attempt. | #12–#16 | Pending implementation and/or combined acceptance. |
+| 48 | As a host, I want an unsuccessful save to leave the committed game unchanged and report the failure, so that the app never silently loses or pretends to record progress. | #12–#16 | Pending implementation and/or combined acceptance. |
+| 49 | As an existing user, I want an app update to preserve my group, settings, word history, and any live Quick or Classic match, so that the third mode does not cost me existing data. | #16 | Pending implementation and/or combined acceptance. |
+| 50 | As a group, I want an explicit final result with both words, teams, and Kings, so that we can discuss what happened after the outcome is settled. | #13, #14 | Pending implementation and/or combined acceptance. |
+| 51 | As a group, I want one-action Rematch / Folgepartie with all active group members restored, so that we can start playing again immediately. | #13, #16 | Pending implementation and/or combined acceptance. |
+| 52 | As a host, I want an explicit way to abandon a spoiled match while retaining the Group, so that accidents do not require rebuilding setup. | #13, #16 | Pending implementation and/or combined acceptance. |
+| 53 | As a German- or English-speaking player, I want complete cards, help, actions, errors, and results in my selected language, so that rules are understandable throughout the game. | #15, #16 | Pending implementation and/or combined acceptance. |
+| 54 | As a player using large text or a small phone, I want the names and leader information to remain readable and privately inspectable, so that memory is tested rather than eyesight. | #15, #16 | Pending implementation and/or combined acceptance. |
+| 55 | As a screen-reader or alternative-input user, I want equivalent private reveal and public navigation without additional secret disclosures, so that accessibility does not change what other participants can learn. | #15, #16 | Pending implementation and/or combined acceptance. |
+| 56 | As a group, I want offline play without accounts, network setup, or new services, so that passing one phone remains sufficient. | #16 | Pending implementation and/or combined acceptance. |
+
+## Cross-cutting gates
+
+- Independent final Standards and Spec reviews against the fixed baseline, correction implementer, and verified integrated source: pending.
+- Clean-source-pinned Android APK/AAB, version/code, signature, backup/privacy/16KB metadata and hashes: pending.
+- Native code4 update with live Quick/Classic preservation; all six Kings endings; restart/last-chance finality; DE/EN, small display/large text, private-list reachability, TalkBack public semantics and offline/log checks: pending. Coordinator preparation: `work/kings-native/preparation.md` and `scenarios.md` outside the checkout.
+- The foundation's two earlier isolated Session failures remain preserved with cause unconfirmed. The implementer and independent integration diagnostic full runs passed61/61. Any recurrence requires its actual error/snapshot investigation, not blind repeats.
+- Human group balance, physical haptics, spoken TalkBack/private audio and physical-device performance are not inferred from automated tests or the silent Android emulator. Production signing and store publishing remain outside Spec#10; #11 stays separate.
+
