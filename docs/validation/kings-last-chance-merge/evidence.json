@@ -1,0 +1,82 @@
+{
+  "createdUtc": "2026-10-08T19:00:14.6396946Z",
+  "priorIntegrationCommit": "7d20ae1ea72bf622adb5b3cc98b8783abb1e73f8",
+  "implementerHead": "d03b31eab35e057add1b40d23929d4961b6d9f76",
+  "mergeCommit": "9f0980d1a32b3ec76bfcea17f041c00ddc4054f1",
+  "identicalSourceAndMergeTree": "0c3e5f88671af7045348303a3b924a9a2b6a47a4",
+  "preservation": {
+    "manifest": "docs/validation/kings-last-chance/manifest.csv",
+    "manifestSha256": "2fb77fb2cefea6834e84b827b54d0f0d0863d6e0013419e2de63ce86a8740404",
+    "rawFiles": 109,
+    "rawBytes": 10142383,
+    "trackedObservationCopiesVerified": 27,
+    "sourceAndDestinationVerified": true,
+    "directory": "artifacts/kings-last-chance"
+  },
+  "independentSession": {
+    "passed": 71,
+    "total": 71,
+    "exitCode": 0,
+    "durationSeconds": 155.1887965,
+    "diagnosticsEnabled": true,
+    "startedUtc": "2026-10-08T18:53:36.1153675Z",
+    "finishedUtc": "2026-10-08T18:56:11.304164Z",
+    "logSha256": "23e4fc6a916235fde081bf0ce629e5d0dc7280bbc2fd1c9e6ed3f2cf828bcda6",
+    "runtimeDllSha256": "7292d3eb508652d14726749dd27094f2d481aeccf2db6427b62f68a71460897e"
+  },
+  "rendered": {
+    "testedCommit": "dd9fab75313da403425c6e82fd024ec9aef2a5e6",
+    "path": "docs/validation/kings-last-chance/evidence/12-rendered-full-result.json",
+    "sha256": "adb28fa47a92f31ecca61d618f6be079130162fab69fd14848aaba71bda8d217",
+    "status": "completed",
+    "passed": 44,
+    "total": 44,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0,
+    "durationSeconds": 207.16,
+    "rerunByMerger": false,
+    "identicalInputTrees": [
+      {
+        "path": "game",
+        "gitTree": "3a4668f2d6555f050c1b010c22f668af76628785"
+      },
+      {
+        "path": "tests",
+        "gitTree": "53e9968b65489b6ed578f72f594f6c9afbbc85db"
+      },
+      {
+        "path": "content",
+        "gitTree": "fae305a03886bbde4c514b9ab4606b56be478fdd"
+      },
+      {
+        "path": "third-party",
+        "gitTree": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+      }
+    ]
+  },
+  "failedEvidence": {
+    "originalFullRun": "70/71",
+    "path": "artifacts/kings-last-chance/05-session-full-projection-red.txt",
+    "retained": true,
+    "diagnosedCause": "Existing public-projection test rejected a top-level private word field; implementer replaced it with phase-scoped Judgment disclosure.",
+    "earlierFoundationIntermittentCause": "unconfirmed"
+  },
+  "files": [
+    {
+      "path": "artifacts/kings-last-chance-merge/preservation.json",
+      "bytes": 61227,
+      "sha256": "b3ecc5e2ddcdc1485e7b1c4d06b817a50a031ddda68dc889e7a13a0c98c9717b"
+    },
+    {
+      "path": "artifacts/kings-last-chance-merge/session-independent.txt",
+      "bytes": 6582,
+      "sha256": "23e4fc6a916235fde081bf0ce629e5d0dc7280bbc2fd1c9e6ed3f2cf828bcda6"
+    },
+    {
+      "path": "artifacts/kings-last-chance-merge/session-independent-run.json",
+      "bytes": 982,
+      "sha256": "426a88894470eb287baf6328feda48fd7ab8aec2e2d0754e099bfc31b5bd7a7c"
+    }
+  ]
+}
