@@ -1,6 +1,6 @@
 # Android release reproduction
 
-Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.1.0/code 6. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
+Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.1.0/code 7. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
 
 ## Build
 
