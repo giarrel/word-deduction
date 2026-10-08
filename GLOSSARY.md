@@ -32,7 +32,7 @@ Der Modus mit wiederholten Hinweisrunden und Eliminierungen bis zur Siegbedingun
 **Kings / Könige**:
 Der dritte Modus mit zwei verdeckten Anführern, in dem beide Teams ihren eigenen König schützen und den gegnerischen König suchen.
 
-**King / König**:
+**King / König (Anführer)**:
 Der einzelne Anführer eines Teams im Modus Könige, den gewöhnliche Teammitglieder namentlich kennen. Der gute König ist ein Bürger; der böse König ist Mr. White.
 _Avoid_: separater Assassine, zusätzliche dritte Seite
 
@@ -49,7 +49,7 @@ Der eine Versuch des herausgewählten bösen Königs, durch das Erraten des gute
 Die gemeinsame Hinweis-, Diskussions- und Abstimmungsphase im Modus Könige, deren Ablauf die Personen am Tisch selbst organisieren.
 
 **Civilian / Bürger**:
-Ein Teilnehmer mit dem Mehrheitswort, der abweichende Rollen finden möchte. Er kennt seine genaue Rolle zunächst nicht.
+Ein Teilnehmer mit dem Mehrheitswort, der abweichende Rollen finden möchte. Als gewöhnlicher Teilnehmer kennt er seine genaue Rolle zunächst nicht; der gute König kennt seine Seite ausdrücklich.
 
 **Undercover**:
 Ein Teilnehmer mit einem anderen, verwandten Wort. Er weiß zunächst nicht, dass sein Wort von der Mehrheit abweicht.

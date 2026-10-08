@@ -134,7 +134,8 @@ namespace WordDeduction.UI
         void Handoff(MatchView match)
         {
             Label(body,"cardProgress",T("cardProgress",match.HandoffNumber,match.Participants.Count),"card-progress");
-            Label(body,"cardOwner",match.Owner.DisplayName,"card-owner");
+            var ownerLabel = Label(body,"cardOwner",match.Owner.DisplayName,"card-owner");
+            if (match.Mode == GameMode.Kings) ownerLabel.AddToClassList("kings-card-owner");
             Label(body,"handoffHint",T("handoffHint"),"card-instruction");
             var slot = Box(body,"card-slot"); slot.name = "cardDrag";
             var face = Box(slot,"secret-card"); face.name = "cardFace"; face.pickingMode = PickingMode.Ignore;
@@ -159,7 +160,7 @@ namespace WordDeduction.UI
             }
             Label(body,"dragHint",T(match.Mode == GameMode.Kings ? "kingsDragHint" : "dragHint"),"card-instruction");
             var hold = Box(body,"hold-reveal"); hold.name = "holdReveal"; hold.focusable = true;
-            Label(hold,"holdLabel",T("holdReveal"),"card-caption").pickingMode = PickingMode.Ignore;
+            Label(hold,"holdLabel",T(match.Mode == GameMode.Kings ? "kingsHoldReveal" : "holdReveal"),"card-caption").pickingMode = PickingMode.Ignore;
             var next = Action("nextOwner",match.HandoffNumber == match.Participants.Count ? "beginClues" : "nextOwner",() => {
                 if (card == null || !card.CanAdvance) return;
                 card.Hide(true); Act(session.AdvanceHandoff(match.Owner.Id));
@@ -299,9 +300,13 @@ namespace WordDeduction.UI
         }
         void Help()
         {
-            var scroll = new ScrollView { horizontalScrollerVisibility = ScrollerVisibility.Hidden }; scroll.AddToClassList("vote-list"); body.Add(scroll);
-            Label(scroll,"helpTitle",T(session.Match.Mode == GameMode.Kings ? "kingsHelpTitle" : session.Match.Mode == GameMode.Classic ? "classicHelpTitle" : "helpTitle"),"match-title");
-            Label(scroll,"helpText",T(session.Match.Mode == GameMode.Kings ? "kingsHelpText" : session.Match.Mode == GameMode.Classic ? "classicHelpText" : "helpText"),"match-text");
+            if (session.Match.Mode == GameMode.Kings) KingsRules.AddTo(body, language);
+            else
+            {
+                var scroll = new ScrollView { horizontalScrollerVisibility = ScrollerVisibility.Hidden }; scroll.AddToClassList("vote-list"); body.Add(scroll);
+                Label(scroll,"helpTitle",T(session.Match.Mode == GameMode.Classic ? "classicHelpTitle" : "helpTitle"),"match-title");
+                Label(scroll,"helpText",T(session.Match.Mode == GameMode.Classic ? "classicHelpText" : "helpText"),"match-text");
+            }
             Action("closeHelp","closeHelp",() => { help = false; Render(); });
         }
     }

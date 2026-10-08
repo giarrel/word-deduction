@@ -8,6 +8,8 @@
 .info-copy { white-space: normal; font-size: 16px; margin-bottom: 18px; }
 .info-title { white-space: normal; font-size: 26px; -unity-font-style: bold; flex-shrink: 0; }
 .info-version { font-size: 13px; color: var(--muted); }
+.kings-rule-title { font-size: 18px; -unity-font-style: bold; white-space: normal; margin: 18px 0 6px; flex-shrink: 0; }
+.kings-rule-copy { font-size: 16px; white-space: normal; color: var(--muted); margin-bottom: 6px; flex-shrink: 0; }
 .license-copy { white-space: normal; font-size: 13px; }
 .language-switch { flex-direction: row; background-color: #eee9df; border-radius: 20px; padding: 3px; }
 Button { border-width: 0; border-radius: 16px; color: var(--ink); margin: 0; padding: 0 12px; min-height: 48px; background-color: transparent; -unity-font-style: bold; font-size: 15px; }
@@ -84,6 +86,8 @@ Button:disabled { opacity: 0.65; }
 .large-type .topbar { margin-bottom: 8px; }
 .large-type .add-row { margin-bottom: 8px; }
 .large-type .mode-description { min-height: 0; }
+.large-type .mode-button { flex-basis: auto; padding: 0 4px; }
+.large-type .kings-settings { margin-bottom: 4px; }
 .large-type .start-hint { margin-top: 4px; }
 .large-type .screen { padding-bottom: 8px; }
 .large-type .empty-symbol { display: none; }
