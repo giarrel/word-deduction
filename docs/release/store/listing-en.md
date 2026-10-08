@@ -2,7 +2,7 @@
 
 App name: Word Deduction
 
-Short description: One phone, secret words and your group. Play a quick game or go classic.
+Short description: One phone, secret words and three ways to bluff with your group.
 
 ## Full description
 
@@ -10,10 +10,11 @@ Pass one phone around. Everyone reads their secret card. Most share a word; some
 
 Word Deduction is a word and bluffing game for people in the same place. Add your names, choose a mode and play. No account, ads, purchases or internet connection needed.
 
-TWO WAYS TO PLAY
+THREE WAYS TO PLAY
 
 • Quick: from 3 players. One clue round, one vote and the result. For short games and groups that keep changing.
 • Classic: from 4 players. Find suspects, reveal eliminated roles and continue with the survivors. From 5 players, add Mr. White: no word, plenty of bluffing, and one chance to guess the majority word after being eliminated.
+• Kings: from 5 players. Protect your hidden leader and find the opposing King. Ordinary players know their word and leader, but not their side. Mr. White is the evil King. If caught, he gets one last chance: guess the good word or identify the good King. Adjust the number of his Undercover teammates within your group's limits.
 
 LESS SETUP, MORE CONVERSATION
 
@@ -30,6 +31,6 @@ WORDS INCLUDED FROM THE START
 
 Everyone shares one phone. There is no online mode. Your group discusses and votes in person; the app does not count individual ballots.
 
-## What's new in 1.0.0
+## What's new in 1.1.0
 
-The first Android release includes Quick and Classic modes, optional Mr. White, saved groups and 520 English and German word pairs. Play offline, pull up cards to reveal words and resume safely after an interruption.
+New: Kings, the third mode with hidden leaders and one last chance for Mr. White. Your saved group, live matches and word history survive the update. Keep playing offline in English and German with 520 word pairs.

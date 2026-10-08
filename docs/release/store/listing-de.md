@@ -2,7 +2,7 @@
 
 Name: Word Deduction
 
-Kurzbeschreibung: Ein Handy, geheime Wörter und eure Gruppe. Schnell oder klassisch spielen.
+Kurzbeschreibung: Ein Handy, geheime Wörter und drei Modi zum Bluffen mit eurer Gruppe.
 
 ## Vollständige Beschreibung
 
@@ -10,10 +10,11 @@ Ein Handy geht herum. Alle lesen ihre geheime Karte. Die meisten teilen ein Wort
 
 Word Deduction ist ein Wort- und Bluffspiel für eine Gruppe am selben Ort. Namen eintragen, Modus wählen, losspielen. Kein Konto, keine Werbung, keine Käufe und keine Internetverbindung nötig.
 
-ZWEI MODI FÜR EURE RUNDE
+DREI MODI FÜR EURE RUNDE
 
 • Schnell: ab 3 Personen. Eine Hinweisrunde, eine Abstimmung und direkt das Ergebnis. Für kurze Spiele und wechselnde Gruppen.
 • Klassisch: ab 4 Personen. Findet Verdächtige, deckt ausgeschiedene Rollen auf und spielt mit den Verbleibenden weiter. Ab 5 Personen kann Mr. White ohne eigenes Wort mitbluffen und nach dem Ausscheiden das Mehrheitswort erraten.
+• Könige: ab 5 Personen. Schützt euren geheimen Anführer und findet den gegnerischen König. Normale Mitspieler kennen ihr Wort und ihren Anführer, aber nicht ihre Seite. Mr. White ist der böse König. Wird er erwischt, hat er eine letzte Chance: das gute Wort erraten oder den guten König benennen. Die Anzahl seiner Undercover-Mitspieler lässt sich innerhalb der Gruppengrenzen einstellen.
 
 EUER HANDY HÄLT EUCH DEN RÜCKEN FREI
 
@@ -30,6 +31,6 @@ VIELE WÖRTER, DIREKT DABEI
 
 Alle spielen an einem Handy. Ein Online-Modus ist nicht enthalten. Die Gruppe spricht, diskutiert und stimmt selbst ab; die App zählt keine einzelnen Stimmen mit.
 
-## Versionshinweise 1.0.0
+## Versionshinweise 1.1.0
 
-Erste Android-Version mit Schnell- und Klassisch-Modus, optionalem Mr. White, gespeicherten Gruppen und 520 deutschen und englischen Wortpaaren. Offline spielen, Karten durch Hochziehen aufdecken und nach einer Unterbrechung sicher fortsetzen.
+Neu: Könige, der dritte Modus mit geheimen Anführern und einer letzten Chance für Mr. White. Eure gespeicherte Gruppe, laufende Partien und Wortauswahl bleiben beim Update erhalten. Weiterhin offline auf Deutsch und Englisch mit 520 Wortpaaren spielen.

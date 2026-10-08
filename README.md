@@ -1,13 +1,13 @@
 # Word Deduction
 
-An offline party game for one shared Android phone, in German and English. Quick plays one clue round and a vote; Classic continues through eliminations, with optional Mr. White. The app includes 520 bilingual word pairs across 20 themes, persistent groups (40 saved people, up to 20 playing), pull/hold-to-reveal cards, covered match recovery, and optional privacy/license information.
+An offline party game for one shared Android phone, in German and English. Quick plays one clue round and a vote; Classic continues through eliminations, with optional Mr. White. Kings adds hidden leaders: protect your King, identify the other, and give the caught evil King one final choice between guessing the word and identifying the good King. The app includes 520 bilingual word pairs across 20 themes, persistent groups (40 saved people, up to 20 playing), pull/hold-to-reveal cards, covered match recovery, and optional privacy/license information.
 
 - Unity **6000.3.25f1**, Android module, bundled SDK/NDK/OpenJDK.
 - Open `game/` once in Unity to resolve the pinned packages and import assets.
 - Open `Assets/WordDeduction/Scenes/App.unity` and enter Play mode.
 - Run behavior checks: `dotnet run --project tests/Session.Tests` (.NET 9).
 - If this checkout has no Unity package cache, add `-p:NewtonsoftJsonAssembly="<absolute path to an already resolved Unity Runtime/Newtonsoft.Json.dll>"`; the runner still compiles this checkout's production Session sources.
-- Run the Unity PlayMode suite `WordDeduction.Tests` through Test Runner or the existing CLI/Pipeline.
+- Run the Unity PlayMode suite `WordDeduction.PlayTests` through Test Runner or the existing CLI/Pipeline.
 - With the Editor closed: `./tools/build-android.ps1 -Build DevelopmentApk`.
 - Local nondevelopment candidates: `./tools/build-android.ps1 -Build ReleaseApk`, then `-Build ReleaseBundle`, with the Editor closed. For an open Editor, follow the exact-project live commands in the release guide.
 - Build output: ignored `artifacts/android/<source-prefix>/<UTC-stamp>-apk` or `-aab`. Every artifact has its own source/version/options/hash report. Local candidates use the Android debug certificate and are not production-signed submissions.
