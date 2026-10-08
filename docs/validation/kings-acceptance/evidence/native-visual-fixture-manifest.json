@@ -1,0 +1,579 @@
+{
+  "purpose": "Synthetic visual fixtures generated solely by public Session actions; not Android gameplay evidence.",
+  "sourceCommit": "908d95fc80fc8173df02593422ff85264089b945",
+  "generatedUtc": "2026-10-08T19:17:23.8532521Z",
+  "fixtures": [
+    {
+      "name": "English-GoodKing",
+      "language": "English",
+      "kind": "GoodKing",
+      "Id": "db4027930ea94456ae09cac36c742db3",
+      "HandoffNumber": 10,
+      "owner": {
+        "Id": "f4ce5a4107e0488698c66792e509a147",
+        "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+      },
+      "knownParticipants": [
+        {
+          "Id": "930d981e8f9946eb9f2174ebaf1e6058",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1"
+        },
+        {
+          "Id": "c94dd8eda2af48a4b435dacda0352706",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2"
+        },
+        {
+          "Id": "87bb3bec52174dde93710f4a7a818e3e",
+          "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑"
+        },
+        {
+          "Id": "9cabf9ef282b466583f23c0c264d9656",
+          "DisplayName": "Zoë 👨‍👩‍👧‍👦"
+        },
+        {
+          "Id": "216669f0dbfa4b04911a553b1518231c",
+          "DisplayName": "王小明東京花子"
+        },
+        {
+          "Id": "0401540de2ea42ee86a3f772a599ad88",
+          "DisplayName": "Ελένη Παπαδοπούλου"
+        },
+        {
+          "Id": "c7b623c39432419ab1c9a98d2ba1ddef",
+          "DisplayName": "Александра"
+        },
+        {
+          "Id": "77b84d93ac0341fc9085a910b175288b",
+          "DisplayName": "Wunderbare Wortkönigin"
+        },
+        {
+          "Id": "b6f30b0bec734cc797ad01ce4b89a775",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+        }
+      ],
+      "participants": [
+        {
+          "Id": "930d981e8f9946eb9f2174ebaf1e6058",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1"
+        },
+        {
+          "Id": "c94dd8eda2af48a4b435dacda0352706",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2"
+        },
+        {
+          "Id": "87bb3bec52174dde93710f4a7a818e3e",
+          "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑"
+        },
+        {
+          "Id": "9cabf9ef282b466583f23c0c264d9656",
+          "DisplayName": "Zoë 👨‍👩‍👧‍👦"
+        },
+        {
+          "Id": "216669f0dbfa4b04911a553b1518231c",
+          "DisplayName": "王小明東京花子"
+        },
+        {
+          "Id": "0401540de2ea42ee86a3f772a599ad88",
+          "DisplayName": "Ελένη Παπαδοπούλου"
+        },
+        {
+          "Id": "c7b623c39432419ab1c9a98d2ba1ddef",
+          "DisplayName": "Александра"
+        },
+        {
+          "Id": "77b84d93ac0341fc9085a910b175288b",
+          "DisplayName": "Wunderbare Wortkönigin"
+        },
+        {
+          "Id": "b6f30b0bec734cc797ad01ce4b89a775",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+        },
+        {
+          "Id": "f4ce5a4107e0488698c66792e509a147",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+        },
+        {
+          "Id": "9ed81cab34f04743bec3f768522bb6b9",
+          "DisplayName": "Ana María Fernández"
+        },
+        {
+          "Id": "da3e454bbe664956905b0dff7da7a242",
+          "DisplayName": "Christopher-Maximilian"
+        },
+        {
+          "Id": "cd6c0e35f588499d967385e55dab9f19",
+          "DisplayName": "Amélie"
+        },
+        {
+          "Id": "a2ce7a48e07e46dab153fec2b0c064f8",
+          "DisplayName": "Søren"
+        },
+        {
+          "Id": "1ff3b3cd35e44fa88662bafe31827923",
+          "DisplayName": "Renée"
+        },
+        {
+          "Id": "326fb543b2ad47d983795f4437c3dee8",
+          "DisplayName": "Łukasz"
+        },
+        {
+          "Id": "72f27be5862f4b37a9e9218ab11f81fd",
+          "DisplayName": "François"
+        },
+        {
+          "Id": "1a61ae15264043f6b25e6ab56a1b3817",
+          "DisplayName": "İpek"
+        },
+        {
+          "Id": "db94c08b8caa4a908e499b3bdb2d5d31",
+          "DisplayName": "Guðrún"
+        },
+        {
+          "Id": "cc45410b7db749bd9eda6da243c8af2b",
+          "DisplayName": "Léa 👩🏽‍🚀"
+        }
+      ],
+      "ordinaryUndercover": 8,
+      "totalParticipants": 20,
+      "files": [
+        {
+          "path": "English-GoodKing/session.json",
+          "bytes": 16238,
+          "sha256": "430ed95a32659c09b4a6ae091c5a2f81a11ac4df994c02b7e118ad703fd4974d"
+        },
+        {
+          "path": "English-GoodKing/session.previous.json",
+          "bytes": 16238,
+          "sha256": "568c4ee3631f378225f9838419373a7458bfcf30f34095e1c0034bed75034d22"
+        }
+      ]
+    },
+    {
+      "name": "English-EvilKing",
+      "language": "English",
+      "kind": "EvilKing",
+      "Id": "51280e788c344fd6ad3d299e84d7e1bc",
+      "HandoffNumber": 9,
+      "owner": {
+        "Id": "5ca76866af94492a9542dd962e73a00e",
+        "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+      },
+      "knownParticipants": [
+        {
+          "Id": "06c8321057f84cf8a6c20bfde90ebbfe",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1"
+        },
+        {
+          "Id": "b0bf90cf2c0947868feb7e8eb7f35e5f",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2"
+        },
+        {
+          "Id": "8470dcf2bfea46ebb9638b6953cf5f2c",
+          "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑"
+        },
+        {
+          "Id": "e31d0b4fb90640a4a1186fb9c05e8f4b",
+          "DisplayName": "Zoë 👨‍👩‍👧‍👦"
+        },
+        {
+          "Id": "7e7a0d9f627a46a7b09cb4c223a9e3f1",
+          "DisplayName": "王小明東京花子"
+        },
+        {
+          "Id": "c0323ee8d5764a898ae1c4dacd994bd6",
+          "DisplayName": "Ελένη Παπαδοπούλου"
+        },
+        {
+          "Id": "c49c29c79dc348f3ae256a9ca971ec0e",
+          "DisplayName": "Александра"
+        },
+        {
+          "Id": "b5c0975cae5b49dd882f89cf5bb54653",
+          "DisplayName": "Wunderbare Wortkönigin"
+        }
+      ],
+      "participants": [
+        {
+          "Id": "06c8321057f84cf8a6c20bfde90ebbfe",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1"
+        },
+        {
+          "Id": "b0bf90cf2c0947868feb7e8eb7f35e5f",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2"
+        },
+        {
+          "Id": "8470dcf2bfea46ebb9638b6953cf5f2c",
+          "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑"
+        },
+        {
+          "Id": "e31d0b4fb90640a4a1186fb9c05e8f4b",
+          "DisplayName": "Zoë 👨‍👩‍👧‍👦"
+        },
+        {
+          "Id": "7e7a0d9f627a46a7b09cb4c223a9e3f1",
+          "DisplayName": "王小明東京花子"
+        },
+        {
+          "Id": "c0323ee8d5764a898ae1c4dacd994bd6",
+          "DisplayName": "Ελένη Παπαδοπούλου"
+        },
+        {
+          "Id": "c49c29c79dc348f3ae256a9ca971ec0e",
+          "DisplayName": "Александра"
+        },
+        {
+          "Id": "b5c0975cae5b49dd882f89cf5bb54653",
+          "DisplayName": "Wunderbare Wortkönigin"
+        },
+        {
+          "Id": "5ca76866af94492a9542dd962e73a00e",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+        },
+        {
+          "Id": "8ff979b4db4c49a5aec29105b9184d24",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+        },
+        {
+          "Id": "6685f3b4cf354ba395d4560c3baa2109",
+          "DisplayName": "Ana María Fernández"
+        },
+        {
+          "Id": "ed88d8904faf4a4dbf73e7cd170fc290",
+          "DisplayName": "Christopher-Maximilian"
+        },
+        {
+          "Id": "7365af4951784c9dae160d96d0a8c14b",
+          "DisplayName": "Amélie"
+        },
+        {
+          "Id": "ad2e4e0ce4c74dffb29fefcfb5d2d3d0",
+          "DisplayName": "Søren"
+        },
+        {
+          "Id": "13cbcc24ac4a4daeb908d2eef133a993",
+          "DisplayName": "Renée"
+        },
+        {
+          "Id": "e313115d7d374cd0960eef57c85327cd",
+          "DisplayName": "Łukasz"
+        },
+        {
+          "Id": "79bafa89d38141729497ade6bf3abfcb",
+          "DisplayName": "François"
+        },
+        {
+          "Id": "f96483d2f0fe4c58840893bf41d59158",
+          "DisplayName": "İpek"
+        },
+        {
+          "Id": "8721081db9e9432c9739af3ed0587846",
+          "DisplayName": "Guðrún"
+        },
+        {
+          "Id": "f9adf6c63b1946aeac20c4f24369fd7a",
+          "DisplayName": "Léa 👩🏽‍🚀"
+        }
+      ],
+      "ordinaryUndercover": 8,
+      "totalParticipants": 20,
+      "files": [
+        {
+          "path": "English-EvilKing/session.json",
+          "bytes": 16238,
+          "sha256": "600cb367e5d8f7d36d6c9b5c6b98ddc9cbc925b80e8217d50e9b650e3571b356"
+        },
+        {
+          "path": "English-EvilKing/session.previous.json",
+          "bytes": 16238,
+          "sha256": "c86cc7cd23816e3de1daf8e034a212bc89d1a4070eebd001f022766420c8c60e"
+        }
+      ]
+    },
+    {
+      "name": "German-GoodKing",
+      "language": "German",
+      "kind": "GoodKing",
+      "Id": "cbe4d6c044814600a1af1be109199a54",
+      "HandoffNumber": 10,
+      "owner": {
+        "Id": "b906f5cbff064be0879aeede8c0ac5fa",
+        "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+      },
+      "knownParticipants": [
+        {
+          "Id": "ce56234b5da44bf5b58f317026f8016b",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1"
+        },
+        {
+          "Id": "16c49f5063b54f3fb999ea8e98e7d1eb",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2"
+        },
+        {
+          "Id": "ae4ef5d11eaf4ca7bcff9565a38c17d1",
+          "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑"
+        },
+        {
+          "Id": "e99d68b5a4ca41d6b053452477d9893b",
+          "DisplayName": "Zoë 👨‍👩‍👧‍👦"
+        },
+        {
+          "Id": "45158ee72132454c9d8d392d4c73fbea",
+          "DisplayName": "王小明東京花子"
+        },
+        {
+          "Id": "7c0995f088e14736b09cddf62ca1ad5b",
+          "DisplayName": "Ελένη Παπαδοπούλου"
+        },
+        {
+          "Id": "2643c7261c56436d893ae8cfcb3a0433",
+          "DisplayName": "Александра"
+        },
+        {
+          "Id": "16fec8e2ca6a4c68ab29824368b12243",
+          "DisplayName": "Wunderbare Wortkönigin"
+        },
+        {
+          "Id": "52ef510b01394df0b603f01fcd86742a",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+        }
+      ],
+      "participants": [
+        {
+          "Id": "ce56234b5da44bf5b58f317026f8016b",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1"
+        },
+        {
+          "Id": "16c49f5063b54f3fb999ea8e98e7d1eb",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2"
+        },
+        {
+          "Id": "ae4ef5d11eaf4ca7bcff9565a38c17d1",
+          "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑"
+        },
+        {
+          "Id": "e99d68b5a4ca41d6b053452477d9893b",
+          "DisplayName": "Zoë 👨‍👩‍👧‍👦"
+        },
+        {
+          "Id": "45158ee72132454c9d8d392d4c73fbea",
+          "DisplayName": "王小明東京花子"
+        },
+        {
+          "Id": "7c0995f088e14736b09cddf62ca1ad5b",
+          "DisplayName": "Ελένη Παπαδοπούλου"
+        },
+        {
+          "Id": "2643c7261c56436d893ae8cfcb3a0433",
+          "DisplayName": "Александра"
+        },
+        {
+          "Id": "16fec8e2ca6a4c68ab29824368b12243",
+          "DisplayName": "Wunderbare Wortkönigin"
+        },
+        {
+          "Id": "52ef510b01394df0b603f01fcd86742a",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+        },
+        {
+          "Id": "b906f5cbff064be0879aeede8c0ac5fa",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+        },
+        {
+          "Id": "013c3a50c9ec4fdf983238448bd5add4",
+          "DisplayName": "Ana María Fernández"
+        },
+        {
+          "Id": "e4f5eab37d3e4b00bb1119277bdc2314",
+          "DisplayName": "Christopher-Maximilian"
+        },
+        {
+          "Id": "d86bd314065e4b7bbddd9153dd53e665",
+          "DisplayName": "Amélie"
+        },
+        {
+          "Id": "16e5a59ebd684891832e87bd1920273a",
+          "DisplayName": "Søren"
+        },
+        {
+          "Id": "a130b22aebe040238156cacbc65be91a",
+          "DisplayName": "Renée"
+        },
+        {
+          "Id": "1115514c4f7549e78e733a31ef595259",
+          "DisplayName": "Łukasz"
+        },
+        {
+          "Id": "87bf2ec553f442a1b3d0b96b515280c8",
+          "DisplayName": "François"
+        },
+        {
+          "Id": "b11f3fe892ed4f2d8a417e9482af9073",
+          "DisplayName": "İpek"
+        },
+        {
+          "Id": "4351398ed8264f2da025928c005b5103",
+          "DisplayName": "Guðrún"
+        },
+        {
+          "Id": "e726e348b3ca40b4b57e83605d122df8",
+          "DisplayName": "Léa 👩🏽‍🚀"
+        }
+      ],
+      "ordinaryUndercover": 8,
+      "totalParticipants": 20,
+      "files": [
+        {
+          "path": "German-GoodKing/session.json",
+          "bytes": 16242,
+          "sha256": "72fce8b61364814443bfba83690c922cb89236e695dc99c379101866be16d25e"
+        },
+        {
+          "path": "German-GoodKing/session.previous.json",
+          "bytes": 16242,
+          "sha256": "1f390bc1f5503b92a4f37eb4efae10b1b0e2470f11fa03ff1d4d87fee44f5d45"
+        }
+      ]
+    },
+    {
+      "name": "German-EvilKing",
+      "language": "German",
+      "kind": "EvilKing",
+      "Id": "b3471b449c434f988baca93dec4f2ac7",
+      "HandoffNumber": 9,
+      "owner": {
+        "Id": "e2bb91d5f0fa4071b3a9f45c1a18c292",
+        "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+      },
+      "knownParticipants": [
+        {
+          "Id": "80044a57c17144abb4e869bc6f53561e",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1"
+        },
+        {
+          "Id": "875a8e7e4d5d435d84297713202a1e37",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2"
+        },
+        {
+          "Id": "a30c654f97d648d38338a14b8b4ff83c",
+          "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑"
+        },
+        {
+          "Id": "9401c0c0b6db434a8054f0614aeffbd6",
+          "DisplayName": "Zoë 👨‍👩‍👧‍👦"
+        },
+        {
+          "Id": "8e1d0ba38ec947509b5a84c1f09afa23",
+          "DisplayName": "王小明東京花子"
+        },
+        {
+          "Id": "9eba95b2a37c4974953046859b5df7f3",
+          "DisplayName": "Ελένη Παπαδοπούλου"
+        },
+        {
+          "Id": "9bb87c6b775743d5b5b66353c00da303",
+          "DisplayName": "Александра"
+        },
+        {
+          "Id": "567622bc9edc403e9e0c821e0375df94",
+          "DisplayName": "Wunderbare Wortkönigin"
+        }
+      ],
+      "participants": [
+        {
+          "Id": "80044a57c17144abb4e869bc6f53561e",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1"
+        },
+        {
+          "Id": "875a8e7e4d5d435d84297713202a1e37",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2"
+        },
+        {
+          "Id": "a30c654f97d648d38338a14b8b4ff83c",
+          "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑"
+        },
+        {
+          "Id": "9401c0c0b6db434a8054f0614aeffbd6",
+          "DisplayName": "Zoë 👨‍👩‍👧‍👦"
+        },
+        {
+          "Id": "8e1d0ba38ec947509b5a84c1f09afa23",
+          "DisplayName": "王小明東京花子"
+        },
+        {
+          "Id": "9eba95b2a37c4974953046859b5df7f3",
+          "DisplayName": "Ελένη Παπαδοπούλου"
+        },
+        {
+          "Id": "9bb87c6b775743d5b5b66353c00da303",
+          "DisplayName": "Александра"
+        },
+        {
+          "Id": "567622bc9edc403e9e0c821e0375df94",
+          "DisplayName": "Wunderbare Wortkönigin"
+        },
+        {
+          "Id": "e2bb91d5f0fa4071b3a9f45c1a18c292",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+        },
+        {
+          "Id": "0f17972a445948419f8a50b18abcecf6",
+          "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+        },
+        {
+          "Id": "66a77c8f0c8348ada2db4afa89437f2d",
+          "DisplayName": "Ana María Fernández"
+        },
+        {
+          "Id": "509ca1515de344d88082880de2bd029a",
+          "DisplayName": "Christopher-Maximilian"
+        },
+        {
+          "Id": "d7f373e418974f919b16ed3ee071a193",
+          "DisplayName": "Amélie"
+        },
+        {
+          "Id": "dd8e069815364fd580c7bbf175a85bb4",
+          "DisplayName": "Søren"
+        },
+        {
+          "Id": "668054049fc8400eb06f6e5dd4f31e1a",
+          "DisplayName": "Renée"
+        },
+        {
+          "Id": "3e670e4fb5434bbb938df8d7b834e568",
+          "DisplayName": "Łukasz"
+        },
+        {
+          "Id": "bf8b034cf4494bd98f6967eb69a0db6a",
+          "DisplayName": "François"
+        },
+        {
+          "Id": "5491e8cd5b76436798093f1861598287",
+          "DisplayName": "İpek"
+        },
+        {
+          "Id": "4daa182323cc4fc8abf1224460a3325f",
+          "DisplayName": "Guðrún"
+        },
+        {
+          "Id": "0beb523fc07d49f6a00462efabe4bc06",
+          "DisplayName": "Léa 👩🏽‍🚀"
+        }
+      ],
+      "ordinaryUndercover": 8,
+      "totalParticipants": 20,
+      "files": [
+        {
+          "path": "German-EvilKing/session.json",
+          "bytes": 16242,
+          "sha256": "beca8d6d0065cfa725eee56330fca7b485da3be864bccd3f338aa2d8e761dd07"
+        },
+        {
+          "path": "German-EvilKing/session.previous.json",
+          "bytes": 16242,
+          "sha256": "630f2e79d91f8b8bd48ab7332dd48683cc2b01e40dd841324bbb928b7ca37cf0"
+        }
+      ]
+    }
+  ]
+}
