@@ -86,8 +86,7 @@ Button:disabled { opacity: 0.65; }
 .large-type .topbar { margin-bottom: 8px; }
 .large-type .add-row { margin-bottom: 8px; }
 .large-type .mode-description { min-height: 0; }
-.large-type .mode-picker { flex-wrap: wrap; }
-.large-type .mode-button { flex-basis: 40%; }
+.large-type .mode-button { flex-basis: auto; padding: 0 4px; }
 .large-type .kings-settings { margin-bottom: 4px; }
 .large-type .start-hint { margin-top: 4px; }
 .large-type .screen { padding-bottom: 8px; }

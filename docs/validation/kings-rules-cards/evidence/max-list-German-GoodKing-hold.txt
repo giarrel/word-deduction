@@ -1,0 +1,1 @@
+start=(180.00, 483.00); target=(x:22.00, y:451.00, width:316.00, height:64.00); viewport=(x:47.91, y:293.81, width:254.19, height:121.39); known=(x:48.99, y:-299.18, width:249.10, height:712.38); offset=(0.00, 724.00); limit=724

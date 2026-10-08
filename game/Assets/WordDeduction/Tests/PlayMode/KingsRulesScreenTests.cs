@@ -116,6 +116,10 @@ namespace WordDeduction.Tests
                 Touch(target, TouchPhase.Ended, new Vector2(start.x, start.y - (holdMode ? 0 : 60)));
                 Assert.That(PrivateLabels(root).All(label => label.text.Length == 0), Is.True, "Release immediately clears the complete projection.");
                 yield return null; yield return null; yield return new WaitForSecondsRealtime(0.15f); fixture.Capture(capture + "-covered");
+                var help = root.Q<Button>("matchHelp");
+                float helpWidth = help.MeasureTextSize(help.text, 0, VisualElement.MeasureMode.Undefined, 0, VisualElement.MeasureMode.Undefined).x;
+                fixture.Note(capture + "-header", "help=" + help.text + "; bounds=" + help.worldBound + "; content=" + help.contentRect + "; textWidth=" + helpWidth);
+                Assert.That(helpWidth, Is.LessThanOrEqualTo(help.contentRect.width + 1), "The complete public Help label fits after card release.");
                 fixture.Dispose(); yield return null;
             }
         }

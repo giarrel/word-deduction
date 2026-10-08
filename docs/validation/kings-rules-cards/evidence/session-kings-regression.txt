@@ -1,0 +1,8 @@
+Failed to add 'C:\Users\lucac\Documents\Codex\2026-10-06\sie\work\kings-worktrees\rules-cards\artifacts\dotnet-home\.dotnet\tools' to the PATH environment variable. Add this directory to your PATH to use tools installed with 'dotnet tool install'.
+PASS Kings selects a durable third mode with a five person minimum and adaptive majority
+PASS Kings explicit count survives smaller groups and mode changes without losing the request
+PASS Kings private cards disclose only their owners knowledge and cannot revisit completed handoffs
+PASS Kings V5 storage is understood while V4 live deals remain frozen and usable
+PASS Kings supports every legal size and count with neutral ordered knowledge and fresh random assignments
+PASS Kings failed preference deal and handoff saves never commit progress or consume a read
+6/6 passed
