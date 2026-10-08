@@ -1,0 +1,13 @@
+{
+  "classes": [
+    "Lcom/google/androidgamesdk/gametextinput/Listener;",
+    "Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;",
+    "Lcom/google/androidgamesdk/gametextinput/GameTextInput;",
+    "Lcom/google/androidgamesdk/gametextinput/InputConnection$1;",
+    "Lcom/google/androidgamesdk/gametextinput/InputConnection$singleLineFilter;",
+    "Lcom/google/androidgamesdk/gametextinput/InputConnection;",
+    "Lcom/google/androidgamesdk/gametextinput/Settings;",
+    "Lcom/google/androidgamesdk/gametextinput/State;"
+  ],
+  "debugVerboseInfoCalls": []
+}

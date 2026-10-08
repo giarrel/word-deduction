@@ -1,0 +1,184 @@
+{
+  "actions": [
+    {
+      "label": "Gruppe bearbeiten",
+      "evidence": "code8-five-bound-00",
+      "nodeCount": 35,
+      "visibleLabels": [
+        "Regeln, Info, Datenschutz und Lizenzen",
+        "Deutsch",
+        "Englisch",
+        "Eure Gruppe",
+        "5 spielen mit",
+        "Nora bearbeiten",
+        "Nora pausieren",
+        "Luca bearbeiten",
+        "Luca pausieren",
+        "Name eingeben",
+        "Person hinzufügen",
+        "Namen antippen zum Ändern.",
+        "Schnell",
+        "Klassisch",
+        "Könige",
+        "3 Gute inkl. König · 1 Undercover + Mr. White",
+        "Ein Undercover weniger",
+        "1 Undercover",
+        "Ein Undercover mehr",
+        "Automatische Undercover-Anzahl verwenden",
+        "Los geht's"
+      ]
+    },
+    {
+      "label": "Schnell",
+      "evidence": "code8-five-bound-01",
+      "nodeCount": 31,
+      "visibleLabels": [
+        "Regeln, Info, Datenschutz und Lizenzen",
+        "Deutsch",
+        "Englisch",
+        "Eure Gruppe",
+        "5 spielen mit",
+        "Nora bearbeiten",
+        "Nora pausieren",
+        "Luca bearbeiten",
+        "Luca pausieren",
+        "Emil bearbeiten",
+        "Emil pausieren",
+        "Name eingeben",
+        "Person hinzufügen",
+        "Namen antippen zum Ändern.",
+        "Schnell",
+        "Klassisch",
+        "Könige",
+        "Eine Hinweisrunde. Eine Abstimmung. Alle bleiben dabei.",
+        "Los geht's"
+      ]
+    },
+    {
+      "label": "Klassisch",
+      "evidence": "code8-five-bound-02",
+      "nodeCount": 32,
+      "visibleLabels": [
+        "Regeln, Info, Datenschutz und Lizenzen",
+        "Deutsch",
+        "Englisch",
+        "Eure Gruppe",
+        "5 spielen mit",
+        "Nora bearbeiten",
+        "Nora pausieren",
+        "Luca bearbeiten",
+        "Luca pausieren",
+        "Name eingeben",
+        "Person hinzufügen",
+        "Namen antippen zum Ändern.",
+        "Schnell",
+        "Klassisch",
+        "Könige",
+        "4 Bürger · 1 Undercover · 0 Mr. White",
+        "Mr. White: aus",
+        "Los geht's"
+      ]
+    },
+    {
+      "label": "Könige",
+      "evidence": "code8-five-bound-03",
+      "nodeCount": 35,
+      "visibleLabels": [
+        "Regeln, Info, Datenschutz und Lizenzen",
+        "Deutsch",
+        "Englisch",
+        "Eure Gruppe",
+        "5 spielen mit",
+        "Nora bearbeiten",
+        "Nora pausieren",
+        "Luca bearbeiten",
+        "Luca pausieren",
+        "Name eingeben",
+        "Person hinzufügen",
+        "Namen antippen zum Ändern.",
+        "Schnell",
+        "Klassisch",
+        "Könige",
+        "3 Gute inkl. König · 1 Undercover + Mr. White",
+        "Ein Undercover weniger",
+        "1 Undercover",
+        "Ein Undercover mehr",
+        "Automatische Undercover-Anzahl verwenden",
+        "Los geht's"
+      ]
+    },
+    {
+      "label": "Los geht's",
+      "evidence": "code8-five-bound-04",
+      "nodeCount": 16,
+      "visibleLabels": [
+        "Zurück",
+        "Könige",
+        "Hilfe",
+        "KARTE 1 VON 5",
+        "Nora",
+        "Gib dieser Person das Handy.",
+        "Zum Lesen hochziehen. Für mehr hoch- oder runterstreichen. Loslassen verdeckt alles.",
+        "Private Karte. Wörter werden nie vorgelesen. Zum visuellen Lesen TalkBack kurz durchreichen lassen und dieses Feld halten. Loslassen verdeckt die Karte.",
+        "Handy weitergeben"
+      ]
+    },
+    {
+      "label": "Zurück",
+      "evidence": "code8-five-bound-05",
+      "nodeCount": 15,
+      "visibleLabels": [
+        "Zurück",
+        "Könige",
+        "Hilfe",
+        "Eure Partie ist gesichert.",
+        "Gleiche Personen. Gleiche Wörter. Spielt weiter, wenn ihr bereit seid. Karten bleiben zunächst verdeckt.",
+        "Partie fortsetzen",
+        "Partie abbrechen"
+      ]
+    },
+    {
+      "label": "Partie abbrechen",
+      "evidence": "code8-five-bound-06",
+      "nodeCount": 15,
+      "visibleLabels": [
+        "Zurück",
+        "Könige",
+        "Hilfe",
+        "Diese Partie beenden?",
+        "Diese Partie endet ohne Ergebnis. Eure gespeicherte Gruppe bleibt für die nächste Partie erhalten.",
+        "Partie behalten",
+        "Ja, Partie abbrechen"
+      ]
+    },
+    {
+      "label": "Ja, Partie abbrechen",
+      "evidence": "code8-five-bound-07",
+      "nodeCount": 35,
+      "visibleLabels": [
+        "Regeln, Info, Datenschutz und Lizenzen",
+        "Deutsch",
+        "Englisch",
+        "Eure Gruppe",
+        "5 spielen mit",
+        "Nora bearbeiten",
+        "Nora pausieren",
+        "Luca bearbeiten",
+        "Luca pausieren",
+        "Name eingeben",
+        "Person hinzufügen",
+        "Namen antippen zum Ändern.",
+        "Schnell",
+        "Klassisch",
+        "Könige",
+        "3 Gute inkl. König · 1 Undercover + Mr. White",
+        "Ein Undercover weniger",
+        "1 Undercover",
+        "Ein Undercover mehr",
+        "Automatische Undercover-Anzahl verwenden",
+        "Los geht's"
+      ]
+    }
+  ],
+  "pass": true
+}

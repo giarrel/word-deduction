@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "command": "unity job status",
+  "data": null,
+  "errors": [
+    {
+      "code": "COMMAND_FAILED",
+      "message": "Unauthorized. Missing or invalid authentication token"
+    }
+  ],
+  "warnings": []
+}

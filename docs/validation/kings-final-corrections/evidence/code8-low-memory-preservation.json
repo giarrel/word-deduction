@@ -1,0 +1,30 @@
+{
+  "before": "code8-first-cold-doubletap",
+  "after": "code8-after-low-memory",
+  "requireByteEquality": true,
+  "generations": [
+    {
+      "file": "session.json",
+      "beforeVersion": 5,
+      "afterVersion": 5,
+      "beforeSha256": "9153d5cdab17d839809a6c75e64b2a4e6fcb7ea3701e1b8a92386b2b65c92155",
+      "afterSha256": "9153d5cdab17d839809a6c75e64b2a4e6fcb7ea3701e1b8a92386b2b65c92155",
+      "byteEqual": true,
+      "legacyFieldDifferences": [],
+      "newTopLevelFields": [],
+      "pass": true
+    },
+    {
+      "file": "session.previous.json",
+      "beforeVersion": 5,
+      "afterVersion": 5,
+      "beforeSha256": "1b7a964802c292756d77195ceefa622f0d6e0b274113975218254d9c20c3abe2",
+      "afterSha256": "1b7a964802c292756d77195ceefa622f0d6e0b274113975218254d9c20c3abe2",
+      "byteEqual": true,
+      "legacyFieldDifferences": [],
+      "newTopLevelFields": [],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

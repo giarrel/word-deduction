@@ -1,0 +1,68 @@
+ACTIVITY MANAGER PROCESS EXIT INFO (dumpsys activity exit-info)
+Last Timestamp of Persistence Into Persistent Storage: 2026-10-08 23:05:43.382
+  package: com.giarrel.worddeduction
+    Historical Process Exit for uid=10215
+        ApplicationExitInfo #0:
+          timestamp=2026-10-08 23:19:53.427 pid=13388 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=3 (LOW_MEMORY) subreason=0 (UNKNOWN) status=0
+          importance=100 pss=0.00 rss=543MB description=null state=empty trace=null
+        ApplicationExitInfo #1:
+          timestamp=2026-10-08 23:14:13.000 pid=13025 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 13236 state=empty trace=null
+        ApplicationExitInfo #2:
+          timestamp=2026-10-08 23:05:47.268 pid=12519 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=550MB description=stop com.giarrel.worddeduction due to from pid 12967 state=empty trace=null
+        ApplicationExitInfo #3:
+          timestamp=2026-10-08 22:58:47.358 pid=12283 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 12462 state=empty trace=null
+        ApplicationExitInfo #4:
+          timestamp=2026-10-08 22:52:29.742 pid=11872 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=16 (PACKAGE UPDATED) subreason=0 (UNKNOWN) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to installPackageLI state=empty trace=null
+        ApplicationExitInfo #5:
+          timestamp=2026-10-08 22:37:27.669 pid=11645 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 11791 state=empty trace=null
+        ApplicationExitInfo #6:
+          timestamp=2026-10-08 22:35:43.324 pid=10823 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 11590 state=empty trace=null
+        ApplicationExitInfo #7:
+          timestamp=2026-10-08 22:24:32.417 pid=10545 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 10765 state=empty trace=null
+        ApplicationExitInfo #8:
+          timestamp=2026-10-08 22:22:58.150 pid=10257 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 10487 state=empty trace=null
+        ApplicationExitInfo #9:
+          timestamp=2026-10-08 22:20:19.532 pid=9394 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=581MB description=stop com.giarrel.worddeduction due to from pid 10170 state=empty trace=null
+        ApplicationExitInfo #10:
+          timestamp=2026-10-08 22:10:21.363 pid=8810 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=566MB description=stop com.giarrel.worddeduction due to from pid 9337 state=empty trace=null
+        ApplicationExitInfo #11:
+          timestamp=2026-10-08 22:03:13.846 pid=8292 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 8797 state=empty trace=null
+        ApplicationExitInfo #12:
+          timestamp=2026-10-08 21:59:21.459 pid=8161 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 8280 state=empty trace=null
+        ApplicationExitInfo #13:
+          timestamp=2026-10-08 21:58:30.675 pid=7535 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 8147 state=empty trace=null
+        ApplicationExitInfo #14:
+          timestamp=2026-10-08 21:50:38.417 pid=6631 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=573MB description=stop com.giarrel.worddeduction due to from pid 7522 state=empty trace=null
+        ApplicationExitInfo #15:
+          timestamp=2026-10-08 19:21:44.685 pid=5732 realUid=10215 packageUid=10215 definingUid=10215 user=0
+          process=com.giarrel.worddeduction reason=10 (USER REQUESTED) subreason=21 (FORCE STOP) status=0
+          importance=100 pss=0.00 rss=0.00 description=stop com.giarrel.worddeduction due to from pid 5976 state=empty trace=null

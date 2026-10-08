@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "job status",
+  "data": {
+    "jobId": "92a6ce75a1fc46479405789d5712407a",
+    "command": "eval",
+    "state": "completed",
+    "cancellationRequested": false,
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": false,
+      "command": "eval",
+      "result": null,
+      "executionTimeMs": 17,
+      "message": null,
+      "error": "Runtime Error",
+      "errorDetails": "Switch to Android first (or launch -buildTarget Android).",
+      "executedAt": "2026-10-08T20:25:41.0116662Z"
+    },
+    "error": null,
+    "errorDetails": null,
+    "progress": null
+  },
+  "errors": [],
+  "warnings": []
+}

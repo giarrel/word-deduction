@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "command": "unity command run_tests",
+  "data": null,
+  "errors": [
+    {
+      "code": "INVALID_COMMAND_ARGS",
+      "message": "Invalid arguments for run_tests:\n  run_tests has no parameter --async-tests. Did you mean --async_tests?"
+    }
+  ],
+  "warnings": []
+}
