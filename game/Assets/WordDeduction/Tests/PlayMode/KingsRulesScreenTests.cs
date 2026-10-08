@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UIElements;
 using WordDeduction.UI;
+using static WordDeduction.Tests.ScreenTestActions;
 
 namespace WordDeduction.Tests
 {
@@ -257,19 +258,6 @@ namespace WordDeduction.Tests
             else { using (var e = PointerUpEvent.GetPooled(touch)) { e.target = target; target.SendEvent(e); } }
         }
         static IEnumerable<string> AllSemantics(Fixture fixture) => AllLabels(fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes);
-        static IEnumerable<string> AllLabels(IEnumerable<UnityEngine.Accessibility.AccessibilityNode> nodes)
-        {
-            foreach (var node in nodes)
-            {
-                yield return node.label + " " + node.value;
-                foreach (var label in AllLabels(node.children)) yield return label;
-            }
-        }
-        static void Submit(VisualElement target)
-        {
-            Assert.That(target, Is.Not.Null);
-            using (var e = NavigationSubmitEvent.GetPooled()) { e.target = target; target.SendEvent(e); }
-        }
         static void Enlarge(VisualElement root)
         {
             root.AddToClassList("large-type");
@@ -310,11 +298,7 @@ namespace WordDeduction.Tests
             {
                 var destination = Path.GetFullPath(Path.Combine(Application.dataPath, "../../artifacts/kings-rules-cards/screenshots"));
                 Directory.CreateDirectory(destination);
-                var previous = RenderTexture.active; RenderTexture.active = texture;
-                var pixels = new Texture2D(360, 640, TextureFormat.RGB24, false);
-                pixels.ReadPixels(new Rect(0, 0, 360, 640), 0, 0); pixels.Apply();
-                File.WriteAllBytes(Path.Combine(destination, name + ".png"), pixels.EncodeToPNG());
-                RenderTexture.active = previous; UnityEngine.Object.Destroy(pixels);
+                SaveScreenshot(texture,Path.Combine(destination,name + ".png"));
             }
             public void Note(string name, string text)
             {

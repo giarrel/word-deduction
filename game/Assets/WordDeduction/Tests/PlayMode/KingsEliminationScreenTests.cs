@@ -9,6 +9,7 @@ using UnityEngine.TestTools;
 using UnityEngine.UIElements;
 using UnityEditor;
 using WordDeduction.UI;
+using static WordDeduction.Tests.ScreenTestActions;
 
 namespace WordDeduction.Tests
 {
@@ -16,6 +17,25 @@ namespace WordDeduction.Tests
     {
         readonly List<Fixture> live = new List<Fixture>();
         [TearDown] public void Cleanup() { foreach (var fixture in live) fixture.Dispose(); live.Clear(); }
+        [UnityTest] public IEnumerator RapidRepeatedConfirmationDoesNotStartARematch()
+        {
+            var fixture = new Fixture(Language.English); live.Add(fixture); yield return null;
+            Submit(fixture.Root.Q<Button>("resumeMatch")); yield return null;
+            string matchId = fixture.Session.Match.Id;
+            Submit(fixture.Root.Q<Button>("eliminate-" + fixture.Session.Match.Participants[2].Id));
+            yield return null; yield return null;
+            var position = fixture.Root.Q<Button>("confirmElimination").worldBound.center;
+            TapAt(fixture.Root, position);
+            Assert.That(fixture.Session.Match.Phase, Is.EqualTo(MatchPhase.Result), "The first real pointer tap confirms the good King's elimination.");
+            yield return new WaitForSecondsRealtime(0.075f);
+            Assert.That(fixture.Root.Q<Button>("rematch").worldBound.Contains(position), Is.True, "The new Rematch action occupies the repeated tap location.");
+            TapAt(fixture.Root, position);
+            Assert.That(fixture.Session.Match.Id, Is.EqualTo(matchId), "A rapid second tap must not activate the new screen's Rematch.");
+            Assert.That(fixture.Root.Q<Label>("resultTitle"), Is.Not.Null, "The complete result remains available to read.");
+            yield return new WaitForSecondsRealtime(0.5f);
+            TapAt(fixture.Root, fixture.Root.Q<Button>("rematch").worldBound.center);
+            Assert.That(fixture.Session.Match.Id, Is.Not.EqualTo(matchId), "A later deliberate single tap still starts a rematch.");
+        }
         [UnityTest] public IEnumerator OrdinaryEliminationCanBeCorrectedAndContinuesDirectlyAtTheTableInBothLanguages()
         {
             foreach (var language in new[] { Language.English, Language.German })
@@ -105,11 +125,6 @@ namespace WordDeduction.Tests
                 yield return fixture.Capture("last-chance-" + language);
             }
         }
-        static void Submit(VisualElement element)
-        {
-            Assert.That(element, Is.Not.Null, "Required user action must be rendered.");
-            using (var e = NavigationSubmitEvent.GetPooled()) { e.target = element; element.SendEvent(e); }
-        }
         sealed class Fixture : IDisposable
         {
             public readonly string DirectoryPath = Path.Combine(Application.temporaryCachePath, "kings-elimination-ui-" + Guid.NewGuid().ToString("N"));
@@ -144,11 +159,7 @@ namespace WordDeduction.Tests
             {
                 yield return null; yield return null;
                 string output = Path.GetFullPath(Path.Combine(Application.dataPath, "../../artifacts/kings-elimination")); Directory.CreateDirectory(output);
-                var previous = RenderTexture.active; RenderTexture.active = texture;
-                var pixels = new Texture2D(390, 844, TextureFormat.RGB24, false);
-                pixels.ReadPixels(new Rect(0, 0, 390, 844), 0, 0); pixels.Apply();
-                File.WriteAllBytes(Path.Combine(output, name + ".png"), pixels.EncodeToPNG());
-                RenderTexture.active = previous; UnityEngine.Object.Destroy(pixels);
+                SaveScreenshot(texture,Path.Combine(output,name + ".png"));
             }
             public void Dispose() { UnityEngine.Object.Destroy(Host); UnityEngine.Object.Destroy(panel); UnityEngine.Object.Destroy(texture); if (Directory.Exists(DirectoryPath)) Directory.Delete(DirectoryPath, true); }
         }

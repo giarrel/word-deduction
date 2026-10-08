@@ -12,6 +12,9 @@ namespace WordDeduction.UI
         readonly Action renderApp, screenChanged;
         readonly VisualElement inputRoot;
         readonly HashSet<int> contacts = new HashSet<int>();
+        readonly HashSet<int> suppressedContacts = new HashSet<int>();
+        int committedAction;
+        double acceptPointerAfter;
         SecretCard card;
         bool paused, help, abandon;
         string notice;
@@ -26,8 +29,8 @@ namespace WordDeduction.UI
             Resources.Load<VisualTreeAsset>("Match").CloneTree(parent);
             screen = parent.Q<VisualElement>("matchScreen"); body = screen.Q<VisualElement>("matchBody"); actions = screen.Q<VisualElement>("matchActions");
             paused = session.Match != null && session.Match.Phase != MatchPhase.Result;
-            screen.Q<Button>("matchBack").clicked += Back;
-            screen.Q<Button>("matchHelp").clicked += () => { card?.Hide(true); help = true; Render(); };
+            BindAction(screen.Q<Button>("matchBack"),Back);
+            BindAction(screen.Q<Button>("matchHelp"),() => { card?.Hide(true); help = true; Render(); });
         }
         string T(string key, params object[] args) => Copy.Get(language,key,args);
         public void Render() { RenderContents(); screenChanged(); }
@@ -68,6 +71,7 @@ namespace WordDeduction.UI
         void Act(CommandResult result)
         {
             card?.Hide(true);
+            if (result.Success) committedAction++;
             notice = result.Success ? result.Notice : result.Error;
             if (result.Success && session.Match == null) paused = help = abandon = false;
             renderApp();
@@ -75,18 +79,27 @@ namespace WordDeduction.UI
         void ContactDown(PointerDownEvent e)
         {
             contacts.Add(e.pointerId);
+            if (Time.realtimeSinceStartupAsDouble < acceptPointerAfter)
+            {
+                suppressedContacts.Add(e.pointerId);
+                e.StopImmediatePropagation(); return;
+            }
             if (contacts.Count <= 1) return;
             card?.Hide(false);
             e.StopImmediatePropagation(); e.PreventDefault();
         }
-        void ContactUp(PointerUpEvent e) { contacts.Remove(e.pointerId); }
-        void ContactCancel(PointerCancelEvent e) { contacts.Remove(e.pointerId); }
+        void ContactUp(PointerUpEvent e)
+        {
+            contacts.Remove(e.pointerId);
+            if (suppressedContacts.Remove(e.pointerId)) { e.StopImmediatePropagation(); return; }
+        }
+        void ContactCancel(PointerCancelEvent e) { contacts.Remove(e.pointerId); suppressedContacts.Remove(e.pointerId); }
         public void Pause(bool interrupted = false)
         {
             card?.Hide(true);
             // Android/Unity cancel their pointer stream on window interruption.
             // Navigation retains contacts until release; a new window starts fresh.
-            if (interrupted) contacts.Clear();
+            if (interrupted) { contacts.Clear(); suppressedContacts.Clear(); }
             if (session.Match == null || session.Match.Phase == MatchPhase.Result) return;
             paused = true; help = false; abandon = false; Render();
         }
@@ -113,7 +126,7 @@ namespace WordDeduction.UI
             inputRoot.UnregisterCallback<PointerDownEvent>(ContactDown, TrickleDown.TrickleDown);
             inputRoot.UnregisterCallback<PointerUpEvent>(ContactUp, TrickleDown.TrickleDown);
             inputRoot.UnregisterCallback<PointerCancelEvent>(ContactCancel, TrickleDown.TrickleDown);
-            contacts.Clear(); screen.RemoveFromHierarchy();
+            contacts.Clear(); suppressedContacts.Clear(); screen.RemoveFromHierarchy();
         }
         static Label Label(VisualElement parent, string name, string text, string css)
         {
@@ -133,8 +146,35 @@ namespace WordDeduction.UI
         }
         Button Action(string name, string key, Action click, bool primary = true)
         {
-            var button = new Button(click) { name = name, text = T(key) };
+            var button = new Button { name = name, text = T(key) }; BindAction(button,click);
             button.AddToClassList(primary ? "play-button" : "match-secondary"); actions.Add(button); return button;
+        }
+        void BindAction(Button button, Action click)
+        {
+            button.clickable.clickedWithEventInfo += e => {
+                int before = committedAction;
+                click();
+                // Captured PointerUp goes straight to the button, bypassing the
+                // root. Suppress the remaining taps of this gesture only when
+                // its committed action replaced the controls. Pure navigation
+                // (Help, Pause, Resume) remains immediately available.
+                if (e is IPointerEvent pointer) contacts.Remove(pointer.pointerId);
+                if (before != committedAction && (e is IPointerEvent || e is IMouseEvent))
+                    acceptPointerAfter = Time.realtimeSinceStartupAsDouble + 0.3;
+            };
+        }
+        ScrollView ParticipantChoices(string name, IEnumerable<ParticipantView> participants, string actionPrefix, Action<string> select)
+        {
+            var list = new ScrollView { name = name, horizontalScrollerVisibility = ScrollerVisibility.Hidden };
+            list.AddToClassList("vote-list"); body.Add(list);
+            foreach (var participant in participants)
+            {
+                string id = participant.Id;
+                var button = new Button { name = actionPrefix + id, text = participant.DisplayName };
+                BindAction(button,() => select(id));
+                button.AddToClassList("suspect-choice"); list.Add(button);
+            }
+            return list;
         }
         void Handoff(MatchView match)
         {
@@ -188,18 +228,13 @@ namespace WordDeduction.UI
             }
             Label(body,"kingsTableTitle",T("kingsTableTitle"),"match-title");
             Label(body,"kingsTableInstructions",T("kingsRecordInstruction"),"match-text");
-            var list = new ScrollView { name = "kingsSurvivors", horizontalScrollerVisibility = ScrollerVisibility.Hidden }; list.AddToClassList("vote-list"); body.Add(list);
+            var list = ParticipantChoices("kingsSurvivors",match.Survivors,"eliminate-",id => Act(session.SelectElimination(match.Id,eliminatedCount,id)));
             if (match.EliminatedParticipant != null)
             {
                 var banner = Box(list,"result-banner");
                 Label(banner,"kingsEliminatedName",match.EliminatedParticipant.DisplayName,"match-title");
                 Label(banner,"kingsEliminatedStatus",T("kingsNotKing"),"match-text");
-            }
-            foreach (var participant in match.Survivors)
-            {
-                string id = participant.Id;
-                var button = new Button(() => Act(session.SelectElimination(match.Id,eliminatedCount,id))) { name = "eliminate-" + id, text = participant.DisplayName };
-                button.AddToClassList("suspect-choice"); list.Add(button);
+                list.Insert(0,banner);
             }
         }
         void KingsLastChance(MatchView match)
@@ -244,13 +279,7 @@ namespace WordDeduction.UI
             }
             Label(body,"kingTargetTitle",T("kingTargetTitle"),"match-title");
             Label(body,"kingTargetHint",T("kingTargetHint"),"match-text");
-            var list = new ScrollView { name = "kingTargets", horizontalScrollerVisibility = ScrollerVisibility.Hidden }; list.AddToClassList("vote-list"); body.Add(list);
-            foreach (var participant in match.Survivors)
-            {
-                string id = participant.Id;
-                var button = new Button(() => Act(session.SelectLastChanceKing(match.Id,id))) { name = "kingTarget-" + id, text = participant.DisplayName };
-                button.AddToClassList("suspect-choice"); list.Add(button);
-            }
+            ParticipantChoices("kingTargets",match.Survivors,"kingTarget-",id => Act(session.SelectLastChanceKing(match.Id,id)));
         }
         void Clues(MatchView match)
         {
@@ -278,13 +307,7 @@ namespace WordDeduction.UI
             }
             Label(body,"voteTitle",T(match.Runoff ? "runoffTitle" : "voteTitle"),"match-title");
             Label(body,"voteInstructions",T(match.Runoff ? match.Mode == GameMode.Classic ? "classicRunoffInstructions" : "runoffInstructions" : "voteInstructions"),"match-text");
-            var list = new ScrollView { name = "suspects", horizontalScrollerVisibility = ScrollerVisibility.Hidden }; list.AddToClassList("vote-list"); body.Add(list);
-            foreach (var person in match.Survivors)
-            {
-                string id = person.Id;
-                var button = new Button(() => Act(session.SelectSuspect(id))) { name = "suspect-" + id, text = person.DisplayName };
-                button.AddToClassList("suspect-choice"); list.Add(button);
-            }
+            ParticipantChoices("suspects",match.Survivors,"suspect-",id => Act(session.SelectSuspect(id)));
             bool runoff = match.Runoff;
             Action("recordTie",runoff ? match.Mode == GameMode.Classic ? "classicSecondTie" : "secondTie" : "firstTie",() => Act(session.RecordTie(runoff)),false);
         }

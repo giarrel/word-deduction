@@ -93,18 +93,18 @@ static class KingsLastChanceCases
         ("Kings last chance rejects impossible saved commitments even with valid checksums", directory => {
             var session = LastChance(directory); string id = session.Match.Id;
             Check(session.ChooseLastChance(id, LastChanceChoice.Word).Success, "word branch");
-            RewritePrimary(directory, match => match["LastChanceTarget"] = session.Match.Participants[2].Id);
+            SavedSessionFixture.RewritePrimary(directory, payload => payload["Match"]["LastChanceTarget"] = session.Match.Participants[2].Id);
             session = Session.Open(directory, Language.English);
             Check(session.View.StorageNotice == "RecoveredBackup" && session.Match.Phase == MatchPhase.KingsLastChance, "target in word branch rejected");
             Check(session.ChooseLastChance(id, LastChanceChoice.King).Success, "King branch");
             string target = session.Match.Participants[3].Id;
             Check(session.SelectLastChanceKing(id, target).Success && session.ConfirmLastChanceKing(id, target).Success, "wrong target committed");
-            RewritePrimary(directory, match => match["Outcome"] = (int)Outcome.KingsKingCorrect);
+            SavedSessionFixture.RewritePrimary(directory, payload => payload["Match"]["Outcome"] = (int)Outcome.KingsKingCorrect);
             session = Session.Open(directory, Language.English);
             Check(session.View.StorageNotice == "RecoveredBackup" && session.Match.Phase == MatchPhase.KingsKingTarget && session.Match.SelectedKingTarget.Id == target, "fabricated correct outcome rejected");
             Check(session.AbandonMatch(id).Success && session.SetMode(GameMode.Classic).Success && session.StartMatch().Success, "Classic regression setup");
             while (session.Match.Phase == MatchPhase.Handoff) { var owner = session.Match.Owner.Id; session.RevealCard(owner); session.HideWord(); Check(session.AdvanceHandoff(owner).Success, "Classic handoff"); }
-            RewritePrimary(directory, match => match["Phase"] = (int)MatchPhase.KingsWordJudgment);
+            SavedSessionFixture.RewritePrimary(directory, payload => payload["Match"]["Phase"] = (int)MatchPhase.KingsWordJudgment);
             session = Session.Open(directory, Language.English);
             Check(session.View.StorageNotice == "RecoveredBackup" && session.Match.Judgment?.Word == null, "new Kings phase cannot expose an old-mode target");
         })
@@ -129,13 +129,5 @@ static class KingsLastChanceCases
             Check(Newtonsoft.Json.JsonConvert.SerializeObject(session.Match) == before, "failed write leaves live disclosure unchanged");
             Check(Newtonsoft.Json.JsonConvert.SerializeObject(Session.Open(directory, Language.English).Match) == before, "failed write leaves reopened disclosure unchanged");
         }
-    }
-    static void RewritePrimary(string directory, Action<Newtonsoft.Json.Linq.JObject> edit)
-    {
-        string path = Path.Combine(directory, "session.json"); var envelope = Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path));
-        var payload = Newtonsoft.Json.Linq.JObject.Parse((string)envelope["Payload"]); edit((Newtonsoft.Json.Linq.JObject)payload["Match"]);
-        string json = payload.ToString(Newtonsoft.Json.Formatting.None); envelope["Payload"] = json;
-        envelope["Checksum"] = Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(json)));
-        File.WriteAllText(path, envelope.ToString());
     }
 }

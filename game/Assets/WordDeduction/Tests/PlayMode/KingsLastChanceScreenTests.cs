@@ -9,6 +9,7 @@ using UnityEngine.TestTools;
 using UnityEngine.UIElements;
 using UnityEditor;
 using WordDeduction.UI;
+using static WordDeduction.Tests.ScreenTestActions;
 
 namespace WordDeduction.Tests
 {
@@ -16,6 +17,36 @@ namespace WordDeduction.Tests
     {
         readonly List<Fixture> live = new List<Fixture>();
         [TearDown] public void Cleanup() { foreach (var fixture in live) fixture.Dispose(); live.Clear(); }
+        [UnityTest] public IEnumerator RapidRepeatedLastChanceTapsCannotJudgeOrSkipTheResult()
+        {
+            foreach (bool word in new[] { true, false })
+            {
+                var fixture = new Fixture(Language.English); live.Add(fixture); yield return null;
+                Submit(fixture.Root.Q<Button>("resumeMatch")); yield return null;
+                string matchId = fixture.Session.Match.Id;
+                Submit(fixture.Root.Q<Button>(word ? "chooseLastChanceWord" : "chooseLastChanceKing")); yield return null;
+                if (!word) Submit(fixture.Root.Q<Button>("kingTarget-" + fixture.Session.Match.Participants[2].Id));
+                yield return null; yield return null;
+                var position = fixture.Root.Q<Button>(word ? "confirmLastChanceAnswer" : "confirmLastChanceKing").worldBound.center;
+                ScreenTestActions.TapAt(fixture.Root,position);
+                Assert.That(fixture.Session.Match.Phase, Is.EqualTo(word ? MatchPhase.KingsWordJudgment : MatchPhase.Result));
+                yield return new WaitForSecondsRealtime(0.075f);
+                Assert.That(fixture.Root.Q<Button>(word ? "lastChanceIncorrect" : "rematch").worldBound.Contains(position), Is.True, "The new irreversible action occupies the old tap location.");
+                ScreenTestActions.TapAt(fixture.Root,position);
+                Assert.That(fixture.Session.Match.Id, Is.EqualTo(matchId));
+                Assert.That(fixture.Session.Match.Phase, Is.EqualTo(word ? MatchPhase.KingsWordJudgment : MatchPhase.Result), "A second tap cannot judge an answer or start a new match.");
+                if (word)
+                {
+                    yield return new WaitForSecondsRealtime(0.5f);
+                    ScreenTestActions.TapAt(fixture.Root,position);
+                    Assert.That(fixture.Session.Match.Phase, Is.EqualTo(MatchPhase.Result), "A later deliberate judgment still works.");
+                    yield return new WaitForSecondsRealtime(0.075f);
+                    ScreenTestActions.TapAt(fixture.Root,position);
+                    Assert.That(fixture.Session.Match?.Id, Is.EqualTo(matchId), "Repeating the judgment must not dismiss the result to the Group.");
+                }
+                yield return fixture.Capture("repeat-protected-" + (word ? "word" : "king"));
+            }
+        }
         [UnityTest] public IEnumerator WordChoiceAndSpokenAnswerCommitBeforeJudgmentInBothLanguages()
         {
             foreach (var language in new[] { Language.English, Language.German })
@@ -147,11 +178,6 @@ namespace WordDeduction.Tests
                 Assert.That(button.worldBound.xMin, Is.GreaterThanOrEqualTo(0)); Assert.That(button.worldBound.xMax, Is.LessThanOrEqualTo(360));
             }
         }
-        static void Submit(VisualElement element)
-        {
-            Assert.That(element, Is.Not.Null, "Required user action must be rendered.");
-            using (var e = NavigationSubmitEvent.GetPooled()) { e.target = element; element.SendEvent(e); }
-        }
         sealed class Fixture : IDisposable
         {
             public readonly string DirectoryPath = Path.Combine(Application.temporaryCachePath, "kings-last-chance-ui-" + Guid.NewGuid().ToString("N"));
@@ -188,20 +214,12 @@ namespace WordDeduction.Tests
             public FileStream BlockWrite() => new FileStream(Path.Combine(DirectoryPath, "session.pending.json"), FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None);
             public string PublicText() => string.Join("\n", Root.Q<VisualElement>("matchScreen").Query<Label>().ToList().Select(l => l.text));
             public string AccessibleText() => string.Join("\n", AllLabels(Host.GetComponent<GroupScreen>().Accessibility.rootNodes));
-            static IEnumerable<string> AllLabels(IEnumerable<UnityEngine.Accessibility.AccessibilityNode> nodes)
-            {
-                foreach (var node in nodes) { yield return node.label + " " + node.value; foreach (var label in AllLabels(node.children)) yield return label; }
-            }
             public void Reopen() { Session = Session.Open(DirectoryPath, Language.German, _ => 0); Host.GetComponent<GroupScreen>().Initialize(Session); }
             public IEnumerator Capture(string name)
             {
                 yield return null; yield return null; yield return new WaitForSeconds(0.15f);
                 string output = Path.GetFullPath(Path.Combine(Application.dataPath, "../../artifacts/kings-last-chance/screenshots")); Directory.CreateDirectory(output);
-                var previous = RenderTexture.active; RenderTexture.active = texture;
-                var pixels = new Texture2D(360, 640, TextureFormat.RGB24, false);
-                pixels.ReadPixels(new Rect(0, 0, 360, 640), 0, 0); pixels.Apply();
-                File.WriteAllBytes(Path.Combine(output, name + ".png"), pixels.EncodeToPNG());
-                RenderTexture.active = previous; UnityEngine.Object.Destroy(pixels);
+                SaveScreenshot(texture,Path.Combine(output,name + ".png"));
                 if (name.StartsWith("large-",StringComparison.Ordinal))
                 {
                     var scroll = Root.Q<VisualElement>("matchBody").Q<ScrollView>();
@@ -210,10 +228,7 @@ namespace WordDeduction.Tests
                     {
                         scroll.ScrollTo(last); yield return null; yield return new WaitForSeconds(0.15f);
                         Assert.That(last.worldBound.yMax, Is.LessThanOrEqualTo(scroll.contentViewport.worldBound.yMax + 1), "Final explanatory line is reachable at150%.");
-                        RenderTexture.active = texture; pixels = new Texture2D(360,640,TextureFormat.RGB24,false);
-                        pixels.ReadPixels(new Rect(0,0,360,640),0,0); pixels.Apply();
-                        File.WriteAllBytes(Path.Combine(output,name + "-last.png"),pixels.EncodeToPNG());
-                        RenderTexture.active = previous; UnityEngine.Object.Destroy(pixels);
+                        SaveScreenshot(texture,Path.Combine(output,name + "-last.png"));
                     }
                 }
             }

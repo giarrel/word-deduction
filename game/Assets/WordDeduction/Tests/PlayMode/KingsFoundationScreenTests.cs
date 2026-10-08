@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UIElements;
 using WordDeduction.UI;
+using static WordDeduction.Tests.ScreenTestActions;
 
 namespace WordDeduction.Tests
 {
@@ -35,11 +36,6 @@ namespace WordDeduction.Tests
                 Assert.That(fixture.Root.Q<Label>("matchMode").text, Is.EqualTo(language == Language.German ? "Könige" : "Kings"));
                 Assert.That(fixture.Root.Q<Label>("secretWord").text, Is.Empty);
             }
-        }
-        static void Submit(VisualElement element)
-        {
-            Assert.That(element, Is.Not.Null);
-            using (var e = NavigationSubmitEvent.GetPooled()) { e.target = element; element.SendEvent(e); }
         }
         [UnityTest] public IEnumerator PrivateCardsConcealAllKnowledgeAndFinishDirectlyAtTheTableInBothLanguages()
         {
@@ -110,14 +106,6 @@ namespace WordDeduction.Tests
             Assert.That(fixture.Root.Q<Button>("nextOwner").enabledSelf, Is.False, "An interrupted unfinished handoff resumes covered and unread.");
             Submit(fixture.Root.Q<Button>("matchHelp")); yield return null;
             Assert.That(fixture.Root.Q<Label>("helpTitle").text, Is.EqualTo("Kings rules"), "Kings must never display Quick or Classic rules.");
-        }
-        static IEnumerable<string> AllLabels(IEnumerable<UnityEngine.Accessibility.AccessibilityNode> nodes)
-        {
-            foreach (var node in nodes)
-            {
-                yield return node.label + " " + node.value;
-                foreach (var label in AllLabels(node.children)) yield return label;
-            }
         }
         sealed class Fixture : IDisposable
         {
