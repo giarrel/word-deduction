@@ -1,0 +1,56 @@
+{
+  "Utc": "2026-10-08T21:56:12.9628944Z",
+  "Executed": true,
+  "Worktrees": [
+    {
+      "Path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\acceptance",
+      "Head": "23d54c5abae564bd5333071ba8367def7fd935c6",
+      "Merged": true,
+      "Clean": true,
+      "Residual": true,
+      "Removed": true
+    },
+    {
+      "Path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\elimination",
+      "Head": "1019600def984b295b9fe1d23f53199165b13099",
+      "Merged": true,
+      "Clean": true,
+      "Residual": false,
+      "Removed": true
+    },
+    {
+      "Path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\foundation",
+      "Head": "7b695699b2ac29d8222fbf8580e805c6ce410f9b",
+      "Merged": true,
+      "Clean": true,
+      "Residual": false,
+      "Removed": true
+    },
+    {
+      "Path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\last-chance",
+      "Head": "d03b31eab35e057add1b40d23929d4961b6d9f76",
+      "Merged": true,
+      "Clean": true,
+      "Residual": false,
+      "Removed": true
+    },
+    {
+      "Path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\rules-cards",
+      "Head": "c63cf67cc218a71f91c8f023fe72c7e6c9e592be",
+      "Merged": true,
+      "Clean": true,
+      "Residual": false,
+      "Removed": true
+    },
+    {
+      "Path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\final-corrections",
+      "Head": "cc0361d29ef267c90d1896db46c6051b37f11b35",
+      "Merged": true,
+      "Clean": true,
+      "Residual": false,
+      "Removed": true
+    }
+  ],
+  "BranchesPreserved": true,
+  "Primary": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction"
+}

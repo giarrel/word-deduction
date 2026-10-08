@@ -1,0 +1,52 @@
+{
+  "label": "code8-five-bound-02",
+  "files": {
+    "session.json": "a73575d5b4948afde5b61daa9c90bb18b177a18d615424f4ccbea0df7d4e46fa",
+    "session.previous.json": "e8f50cda4b5b25db4322025611a8c01c97654e12134e54ee8daa4f0696cfd96e"
+  },
+  "match": null,
+  "players": [
+    {
+      "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+      "Name": "Nora",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+      "Name": "Luca",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "77ab50d35ba744a2bb7a3d9916277069",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "8a9fb50d16894284ab051d0924ea92b3",
+      "Name": "Mila",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "ac5d584c805b49889e54e0db0a07e654",
+      "Name": "Jonas2",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "tools-materials-023",
+    "kitchen-011",
+    "clothing-021",
+    "technology-014",
+    "mammals-023"
+  ]
+}

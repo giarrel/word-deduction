@@ -1,0 +1,4735 @@
+{
+  "auditVersion": 1,
+  "generatedAtUtc": "2026-10-08T20:39:08.975982+00:00",
+  "scope": "Offline consistency of preserved code5 actual states, plus separately identified synthetic max-card semantic trees/log; not source-code6, visual, physical-device or release acceptance.",
+  "sourceCommit": "908d95fc80fc8173df02593422ff85264089b945",
+  "reportedApkSha256": "afd739cc5b8356a24ee9b2b92c7639ba128569d3f43090ac961fc0e6a3d24a01",
+  "apkHashIndependentlyRecomputed": false,
+  "sourceBlobs": {
+    "game/Assets/WordDeduction/Session/Match.cs": {
+      "commit": "908d95fc80fc8173df02593422ff85264089b945",
+      "sha256": "de7efc9dd956f91563519b744967ee114510dff906c85b1487fc3e37411a73ae",
+      "bytes": 30259
+    },
+    "game/Assets/WordDeduction/Session/SnapshotStore.cs": {
+      "commit": "908d95fc80fc8173df02593422ff85264089b945",
+      "sha256": "f93270b595e27efe80be8c0580c1f61944251772c050c73f72cf3beab5a94155",
+      "bytes": 5923
+    },
+    "game/Assets/WordDeduction/Session/WordHistory.cs": {
+      "commit": "908d95fc80fc8173df02593422ff85264089b945",
+      "sha256": "26c6ea4cb0220e00c408bbac256ae296b6be5a62af228a698f7c990e4331d183",
+      "bytes": 4293
+    }
+  },
+  "summary": {
+    "checks": 467,
+    "passed": 467,
+    "failed": 0,
+    "snapshotFiles": 74,
+    "allOfflineChecksPass": true
+  },
+  "terminalGames": [
+    {
+      "game": 2,
+      "folder": "code5-game2-result-state",
+      "matchId": "9f9a692f38424311b104a061b418d17a",
+      "phase": 3,
+      "previousPhase": 6,
+      "outcome": 7,
+      "outcomeName": "OnlyKingsRemain",
+      "winner": "evil team",
+      "pairId": "places-004",
+      "usedCount": 6,
+      "remainingCount": 514,
+      "primarySha256": "632fc8b55fce26e9a6b99fbd999a87c419a39ec07700a21cfac6aa2bd18e62bd",
+      "previousSha256": "2732d46dbda2e0bb092030f8463609f9ed840f9a988153f1796d62593cce6c49"
+    },
+    {
+      "game": 3,
+      "folder": "code5-game3-terminal-state",
+      "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+      "phase": 3,
+      "previousPhase": 10,
+      "outcome": 8,
+      "outcomeName": "KingsWordCorrect",
+      "winner": "evil team",
+      "pairId": "garden-nature-025",
+      "usedCount": 7,
+      "remainingCount": 513,
+      "primarySha256": "69f4e9ee0bb561a3ebe879578be6e0161b7c57eba8fbd776c73bbcf18802f6d5",
+      "previousSha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a"
+    },
+    {
+      "game": 4,
+      "folder": "code5-game4-result-state",
+      "matchId": "43661f7a969a44deb5807563b35cb693",
+      "phase": 3,
+      "previousPhase": 10,
+      "outcome": 9,
+      "outcomeName": "KingsWordIncorrect",
+      "winner": "good team",
+      "pairId": "meals-023",
+      "usedCount": 8,
+      "remainingCount": 512,
+      "primarySha256": "4fb62818d325a96a54151b1b946a32967978b58887d7589a9afc8196f57285aa",
+      "previousSha256": "d23a98384380a4cb3475300a3afcd320e73b582251e59856243e49ba54a0f414"
+    },
+    {
+      "game": 5,
+      "folder": "code5-game5-result-state",
+      "matchId": "3ceda517d0814ae3bad868244c417a46",
+      "phase": 3,
+      "previousPhase": 11,
+      "outcome": 10,
+      "outcomeName": "KingsKingCorrect",
+      "winner": "evil team",
+      "pairId": "school-office-007",
+      "usedCount": 9,
+      "remainingCount": 511,
+      "primarySha256": "1912463baa46723795a30c911d5eab16ff50ca06ed0ef4b0f4f6e4ef61893d40",
+      "previousSha256": "5bdbcba127c019930fcd677e5611b0e972e9feabe8c65859239a40aac873e1fc"
+    },
+    {
+      "game": 6,
+      "folder": "code5-game6-result-state",
+      "matchId": "83662afc639e45889146d1775cfb3d26",
+      "phase": 3,
+      "previousPhase": 11,
+      "outcome": 11,
+      "outcomeName": "KingsKingIncorrect",
+      "winner": "good team",
+      "pairId": "tools-materials-018",
+      "usedCount": 10,
+      "remainingCount": 510,
+      "primarySha256": "48f7687b54f668bdafb1532e296393fb1fc67856387d203c9747a5d7b165f38c",
+      "previousSha256": "ce993504e8e6474d6449dba8c41203446195a42194a9d4717fa8e905e1f6190e"
+    },
+    {
+      "game": 7,
+      "folder": "code5-game7-result-state",
+      "matchId": "01dd1170be424ef082b9b81e4681d6bc",
+      "phase": 3,
+      "previousPhase": 6,
+      "outcome": 6,
+      "outcomeName": "GoodKingEliminated",
+      "winner": "evil team",
+      "pairId": "fruit-vegetables-025",
+      "usedCount": 11,
+      "remainingCount": 509,
+      "primarySha256": "3c1466fe52e773f95c73e3289b1a31a62ab9dfef06394894d2be3d91ca28d667",
+      "previousSha256": "0b2ffc27bc5cc405518716f6523458e67a2dabb31b406e27fd1202a536e4932e"
+    }
+  ],
+  "roster": [
+    {
+      "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+      "Name": "Nora",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+      "Name": "Luca",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "77ab50d35ba744a2bb7a3d9916277069",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "8a9fb50d16894284ab051d0924ea92b3",
+      "Name": "Mila",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "ac5d584c805b49889e54e0db0a07e654",
+      "Name": "Jonas2",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    }
+  ],
+  "renameChangedPaths": [
+    "/Players/4/Name"
+  ],
+  "history": {
+    "baselineUsedPairs": [
+      "tools-materials-023",
+      "kitchen-011",
+      "clothing-021",
+      "technology-014"
+    ],
+    "steps": [
+      {
+        "game": 1,
+        "addedPairId": "mammals-023",
+        "usedPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023"
+        ],
+        "recentPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023"
+        ],
+        "remainingCount": 515
+      },
+      {
+        "game": 2,
+        "addedPairId": "places-004",
+        "usedPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004"
+        ],
+        "recentPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004"
+        ],
+        "remainingCount": 514
+      },
+      {
+        "game": 3,
+        "addedPairId": "garden-nature-025",
+        "usedPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025"
+        ],
+        "recentPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025"
+        ],
+        "remainingCount": 513
+      },
+      {
+        "game": 4,
+        "addedPairId": "meals-023",
+        "usedPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025",
+          "meals-023"
+        ],
+        "recentPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025",
+          "meals-023"
+        ],
+        "remainingCount": 512
+      },
+      {
+        "game": 5,
+        "addedPairId": "school-office-007",
+        "usedPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025",
+          "meals-023",
+          "school-office-007"
+        ],
+        "recentPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025",
+          "meals-023",
+          "school-office-007"
+        ],
+        "remainingCount": 511
+      },
+      {
+        "game": 6,
+        "addedPairId": "tools-materials-018",
+        "usedPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025",
+          "meals-023",
+          "school-office-007",
+          "tools-materials-018"
+        ],
+        "recentPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025",
+          "meals-023",
+          "school-office-007",
+          "tools-materials-018"
+        ],
+        "remainingCount": 510
+      },
+      {
+        "game": 7,
+        "addedPairId": "fruit-vegetables-025",
+        "usedPairIds": [
+          "tools-materials-023",
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025",
+          "meals-023",
+          "school-office-007",
+          "tools-materials-018",
+          "fruit-vegetables-025"
+        ],
+        "recentPairIds": [
+          "kitchen-011",
+          "clothing-021",
+          "technology-014",
+          "mammals-023",
+          "places-004",
+          "garden-nature-025",
+          "meals-023",
+          "school-office-007",
+          "tools-materials-018",
+          "fruit-vegetables-025"
+        ],
+        "remainingCount": 509
+      }
+    ],
+    "finalUsedPairs": [
+      "tools-materials-023",
+      "kitchen-011",
+      "clothing-021",
+      "technology-014",
+      "mammals-023",
+      "places-004",
+      "garden-nature-025",
+      "meals-023",
+      "school-office-007",
+      "tools-materials-018",
+      "fruit-vegetables-025"
+    ],
+    "finalRecentPairs": [
+      "kitchen-011",
+      "clothing-021",
+      "technology-014",
+      "mammals-023",
+      "places-004",
+      "garden-nature-025",
+      "meals-023",
+      "school-office-007",
+      "tools-materials-018",
+      "fruit-vegetables-025"
+    ],
+    "recentLimit": 10,
+    "catalogCycleTotal": 520
+  },
+  "comparisons": [
+    {
+      "record": "code5-update-bytes.json",
+      "before": "code4-immediately-before-install",
+      "after": "code5-after-install-before-launch",
+      "verified": [
+        {
+          "file": "session.json",
+          "beforeSha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+          "afterSha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+          "byteEqual": true
+        },
+        {
+          "file": "session.previous.json",
+          "beforeSha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+          "afterSha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+          "byteEqual": true
+        }
+      ]
+    },
+    {
+      "record": "code5-unfinished-nora-restored-comparison.json",
+      "before": "code5-before-first-kings-restart",
+      "after": "code5-unfinished-nora-restored",
+      "verified": [
+        {
+          "file": "session.json",
+          "beforeSha256": "2eee12cd7cd4c45250091e7d3133d99fc234781e3821c3e87a74c530c5a24270",
+          "afterSha256": "2eee12cd7cd4c45250091e7d3133d99fc234781e3821c3e87a74c530c5a24270",
+          "byteEqual": true
+        },
+        {
+          "file": "session.previous.json",
+          "beforeSha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+          "afterSha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+          "byteEqual": true
+        }
+      ]
+    },
+    {
+      "record": "code5-game3-branch-lock.json",
+      "before": "code5-game3-word-committed",
+      "after": "code5-game3-word-resumed",
+      "verified": [
+        {
+          "file": "session.json",
+          "beforeSha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+          "afterSha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+          "byteEqual": true
+        },
+        {
+          "file": "session.previous.json",
+          "beforeSha256": "8152c3d78363a2e84c618b1c3af172ffb3253ac970197153216bbb718341716d",
+          "afterSha256": "8152c3d78363a2e84c618b1c3af172ffb3253ac970197153216bbb718341716d",
+          "byteEqual": true
+        }
+      ]
+    },
+    {
+      "record": "code5-game3-answer-lock.json",
+      "before": "code5-game3-judgment",
+      "after": "code5-game3-judgment-resumed",
+      "verified": [
+        {
+          "file": "session.json",
+          "beforeSha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+          "afterSha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+          "byteEqual": true
+        },
+        {
+          "file": "session.previous.json",
+          "beforeSha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+          "afterSha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+          "byteEqual": true
+        }
+      ]
+    },
+    {
+      "record": "code5-game5-target-persistence.json",
+      "before": "code5-game5-target-pending",
+      "after": "code5-game5-target-resumed",
+      "verified": [
+        {
+          "file": "session.json",
+          "beforeSha256": "d3de19119eaa5e91f4f2c34dae3fff076664f1f45cf79dafbb38dac7c624605b",
+          "afterSha256": "d3de19119eaa5e91f4f2c34dae3fff076664f1f45cf79dafbb38dac7c624605b",
+          "byteEqual": true
+        },
+        {
+          "file": "session.previous.json",
+          "beforeSha256": "1ca8577d3e1756694ad1c5697a88bd8ffafbc589f708d7ac8d0b74d5ee00967e",
+          "afterSha256": "1ca8577d3e1756694ad1c5697a88bd8ffafbc589f708d7ac8d0b74d5ee00967e",
+          "byteEqual": true
+        }
+      ]
+    },
+    {
+      "before": "before-emulator-recovery-state",
+      "after": "after-emulator-recovery-state",
+      "verified": [
+        {
+          "file": "session.json",
+          "beforeSha256": "3ff7fa22cb08b7312230ecee1cd4740e6fa6f885fb16681982002294324fd4e7",
+          "afterSha256": "3ff7fa22cb08b7312230ecee1cd4740e6fa6f885fb16681982002294324fd4e7",
+          "byteEqual": true
+        },
+        {
+          "file": "session.previous.json",
+          "beforeSha256": "61606c587b8e527e5179577609e64bc3f40dcb16ccdd7be1db198600e7711979",
+          "afterSha256": "61606c587b8e527e5179577609e64bc3f40dcb16ccdd7be1db198600e7711979",
+          "byteEqual": true
+        }
+      ]
+    },
+    {
+      "before": "code4-immediately-before-install-state",
+      "after": "code5-resumed-old-match-state",
+      "verified": [
+        {
+          "file": "session.json",
+          "beforeSha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+          "afterSha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+          "byteEqual": true
+        },
+        {
+          "file": "session.previous.json",
+          "beforeSha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+          "afterSha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+          "byteEqual": true
+        }
+      ]
+    }
+  ],
+  "migrationLegacyChangedPaths": [
+    "/Match/Handoff"
+  ],
+  "syntheticMaxCardSemantics": [
+    {
+      "fixture": "German-GoodKing",
+      "provenance": "Synthetic replay; never counted among seven actual matches.",
+      "fixtureSha256": "72fce8b61364814443bfba83690c922cb89236e695dc99c379101866be16d25e",
+      "ownerId": "b906f5cbff064be0879aeede8c0ac5fa",
+      "publicOwnerName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10",
+      "pairWords": [
+        "Pfirsich",
+        "Aprikose"
+      ],
+      "knownSecretParticipantNames": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Zoë 👨‍👩‍👧‍👦",
+        "王小明東京花子",
+        "Ελένη Παπαδοπούλου",
+        "Александра",
+        "Wunderbare Wortkönigin",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+      ],
+      "allNonOwnerNamesChecked": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Zoë 👨‍👩‍👧‍👦",
+        "王小明東京花子",
+        "Ελένη Παπαδοπούλου",
+        "Александра",
+        "Wunderbare Wortkönigin",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 9",
+        "Ana María Fernández",
+        "Christopher-Maximilian",
+        "Amélie",
+        "Søren",
+        "Renée",
+        "Łukasz",
+        "François",
+        "İpek",
+        "Guðrún",
+        "Léa 👩🏽‍🚀"
+      ],
+      "stages": [
+        {
+          "file": "code5-de-good-talkback-private-held-tree.json",
+          "sha256": "731f38a1cdb1610bb1752a64ca22f7757321bfa97a2da5a7d91a47ac4732033b",
+          "nodeCount": 16,
+          "completeSemanticFields": [
+            {
+              "node": 7,
+              "field": "description",
+              "value": "Zurück"
+            },
+            {
+              "node": 8,
+              "field": "description",
+              "value": "Könige"
+            },
+            {
+              "node": 9,
+              "field": "description",
+              "value": "Hilfe"
+            },
+            {
+              "node": 10,
+              "field": "description",
+              "value": "KARTE 10 VON 20"
+            },
+            {
+              "node": 11,
+              "field": "description",
+              "value": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+            },
+            {
+              "node": 12,
+              "field": "description",
+              "value": "Gib dieser Person das Handy."
+            },
+            {
+              "node": 13,
+              "field": "description",
+              "value": "Zum Lesen hochziehen. Für mehr hoch- oder runterstreichen. Loslassen verdeckt alles."
+            },
+            {
+              "node": 14,
+              "field": "description",
+              "value": "Private Karte. Wörter werden nie vorgelesen. Zum visuellen Lesen TalkBack kurz durchreichen lassen und dieses Feld halten. Loslassen verdeckt die Karte."
+            },
+            {
+              "node": 15,
+              "field": "description",
+              "value": "Handy weitergeben"
+            }
+          ],
+          "completeActionStrings": [
+            "[AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]",
+            "[]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_CLEAR_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]"
+          ],
+          "secretExactValueHits": [],
+          "publicAllowlistMatches": true
+        },
+        {
+          "file": "code5-de-good-talkback-private-released-tree.json",
+          "sha256": "e994cde08797e970f4ef3931d2bfbf57a42b7b195b63b9b83c3edec98787f3d8",
+          "nodeCount": 16,
+          "completeSemanticFields": [
+            {
+              "node": 7,
+              "field": "description",
+              "value": "Zurück"
+            },
+            {
+              "node": 8,
+              "field": "description",
+              "value": "Könige"
+            },
+            {
+              "node": 9,
+              "field": "description",
+              "value": "Hilfe"
+            },
+            {
+              "node": 10,
+              "field": "description",
+              "value": "KARTE 10 VON 20"
+            },
+            {
+              "node": 11,
+              "field": "description",
+              "value": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+            },
+            {
+              "node": 12,
+              "field": "description",
+              "value": "Gib dieser Person das Handy."
+            },
+            {
+              "node": 13,
+              "field": "description",
+              "value": "Zum Lesen hochziehen. Für mehr hoch- oder runterstreichen. Loslassen verdeckt alles."
+            },
+            {
+              "node": 14,
+              "field": "description",
+              "value": "Private Karte. Wörter werden nie vorgelesen. Zum visuellen Lesen TalkBack kurz durchreichen lassen und dieses Feld halten. Loslassen verdeckt die Karte."
+            },
+            {
+              "node": 15,
+              "field": "description",
+              "value": "Handy weitergeben"
+            }
+          ],
+          "completeActionStrings": [
+            "[AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]",
+            "[]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_CLEAR_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]"
+          ],
+          "secretExactValueHits": [],
+          "publicAllowlistMatches": true
+        }
+      ]
+    },
+    {
+      "fixture": "English-EvilKing",
+      "provenance": "Synthetic replay; never counted among seven actual matches.",
+      "fixtureSha256": "600cb367e5d8f7d36d6c9b5c6b98ddc9cbc925b80e8217d50e9b650e3571b356",
+      "ownerId": "5ca76866af94492a9542dd962e73a00e",
+      "publicOwnerName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9",
+      "pairWords": [
+        "Peach",
+        "Apricot"
+      ],
+      "knownSecretParticipantNames": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Zoë 👨‍👩‍👧‍👦",
+        "王小明東京花子",
+        "Ελένη Παπαδοπούλου",
+        "Александра",
+        "Wunderbare Wortkönigin"
+      ],
+      "allNonOwnerNamesChecked": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Zoë 👨‍👩‍👧‍👦",
+        "王小明東京花子",
+        "Ελένη Παπαδοπούλου",
+        "Александра",
+        "Wunderbare Wortkönigin",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 10",
+        "Ana María Fernández",
+        "Christopher-Maximilian",
+        "Amélie",
+        "Søren",
+        "Renée",
+        "Łukasz",
+        "François",
+        "İpek",
+        "Guðrún",
+        "Léa 👩🏽‍🚀"
+      ],
+      "stages": [
+        {
+          "file": "code5-en-evil-max-header-held-tree.json",
+          "sha256": "c7f602070b1e9f03e271da45b684eb82b85c9c86661a570c811d09d820f8469d",
+          "nodeCount": 16,
+          "completeSemanticFields": [
+            {
+              "node": 7,
+              "field": "description",
+              "value": "Back"
+            },
+            {
+              "node": 8,
+              "field": "description",
+              "value": "Kings"
+            },
+            {
+              "node": 9,
+              "field": "description",
+              "value": "Help"
+            },
+            {
+              "node": 10,
+              "field": "description",
+              "value": "CARD 9 OF 20"
+            },
+            {
+              "node": 11,
+              "field": "description",
+              "value": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+            },
+            {
+              "node": 12,
+              "field": "description",
+              "value": "Pass the phone to this person."
+            },
+            {
+              "node": 13,
+              "field": "description",
+              "value": "Pull up to read. Slide up or down for more. Release to hide."
+            },
+            {
+              "node": 14,
+              "field": "description",
+              "value": "Private card. Words are never spoken. To read it visually, use TalkBack's pass-through gesture, then hold here. Release to hide."
+            },
+            {
+              "node": 15,
+              "field": "description",
+              "value": "Hide & pass on"
+            }
+          ],
+          "completeActionStrings": [
+            "[AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]",
+            "[]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_CLEAR_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]"
+          ],
+          "secretExactValueHits": [],
+          "publicAllowlistMatches": true
+        },
+        {
+          "file": "code5-en-evil-max-header-released-tree.json",
+          "sha256": "01df6d051c6c16fae13f550f8929cbe2fcad2ab5a2560dff129f431fca72d7e0",
+          "nodeCount": 16,
+          "completeSemanticFields": [
+            {
+              "node": 7,
+              "field": "description",
+              "value": "Back"
+            },
+            {
+              "node": 8,
+              "field": "description",
+              "value": "Kings"
+            },
+            {
+              "node": 9,
+              "field": "description",
+              "value": "Help"
+            },
+            {
+              "node": 10,
+              "field": "description",
+              "value": "CARD 9 OF 20"
+            },
+            {
+              "node": 11,
+              "field": "description",
+              "value": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+            },
+            {
+              "node": 12,
+              "field": "description",
+              "value": "Pass the phone to this person."
+            },
+            {
+              "node": 13,
+              "field": "description",
+              "value": "Pull up to read. Slide up or down for more. Release to hide."
+            },
+            {
+              "node": 14,
+              "field": "description",
+              "value": "Private card. Words are never spoken. To read it visually, use TalkBack's pass-through gesture, then hold here. Release to hide."
+            },
+            {
+              "node": 15,
+              "field": "description",
+              "value": "Hide & pass on"
+            }
+          ],
+          "completeActionStrings": [
+            "[AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]",
+            "[]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_CLEAR_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]"
+          ],
+          "secretExactValueHits": [],
+          "publicAllowlistMatches": true
+        }
+      ]
+    },
+    {
+      "fixture": "German-EvilKing",
+      "provenance": "Synthetic replay; never counted among seven actual matches.",
+      "fixtureSha256": "beca8d6d0065cfa725eee56330fca7b485da3be864bccd3f338aa2d8e761dd07",
+      "ownerId": "e2bb91d5f0fa4071b3a9f45c1a18c292",
+      "publicOwnerName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9",
+      "pairWords": [
+        "Pfirsich",
+        "Aprikose"
+      ],
+      "knownSecretParticipantNames": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Zoë 👨‍👩‍👧‍👦",
+        "王小明東京花子",
+        "Ελένη Παπαδοπούλου",
+        "Александра",
+        "Wunderbare Wortkönigin"
+      ],
+      "allNonOwnerNamesChecked": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Zoë 👨‍👩‍👧‍👦",
+        "王小明東京花子",
+        "Ελένη Παπαδοπούλου",
+        "Александра",
+        "Wunderbare Wortkönigin",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 10",
+        "Ana María Fernández",
+        "Christopher-Maximilian",
+        "Amélie",
+        "Søren",
+        "Renée",
+        "Łukasz",
+        "François",
+        "İpek",
+        "Guðrún",
+        "Léa 👩🏽‍🚀"
+      ],
+      "stages": [
+        {
+          "file": "code5-de-evil-max-header-held-tree.json",
+          "sha256": "b927373a305991e784d27b897464e0aff1d78bcf229470f3ff295115c91e8d55",
+          "nodeCount": 16,
+          "completeSemanticFields": [
+            {
+              "node": 7,
+              "field": "description",
+              "value": "Zurück"
+            },
+            {
+              "node": 8,
+              "field": "description",
+              "value": "Könige"
+            },
+            {
+              "node": 9,
+              "field": "description",
+              "value": "Hilfe"
+            },
+            {
+              "node": 10,
+              "field": "description",
+              "value": "KARTE 9 VON 20"
+            },
+            {
+              "node": 11,
+              "field": "description",
+              "value": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+            },
+            {
+              "node": 12,
+              "field": "description",
+              "value": "Gib dieser Person das Handy."
+            },
+            {
+              "node": 13,
+              "field": "description",
+              "value": "Zum Lesen hochziehen. Für mehr hoch- oder runterstreichen. Loslassen verdeckt alles."
+            },
+            {
+              "node": 14,
+              "field": "description",
+              "value": "Private Karte. Wörter werden nie vorgelesen. Zum visuellen Lesen TalkBack kurz durchreichen lassen und dieses Feld halten. Loslassen verdeckt die Karte."
+            },
+            {
+              "node": 15,
+              "field": "description",
+              "value": "Handy weitergeben"
+            }
+          ],
+          "completeActionStrings": [
+            "[AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]",
+            "[]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_CLEAR_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]"
+          ],
+          "secretExactValueHits": [],
+          "publicAllowlistMatches": true
+        },
+        {
+          "file": "code5-de-evil-max-header-released-tree.json",
+          "sha256": "d084d8eac4ef2248c018c9edd84e5e7640f9edfba9261e66b760a30b6fd07ea7",
+          "nodeCount": 16,
+          "completeSemanticFields": [
+            {
+              "node": 7,
+              "field": "description",
+              "value": "Zurück"
+            },
+            {
+              "node": 8,
+              "field": "description",
+              "value": "Könige"
+            },
+            {
+              "node": 9,
+              "field": "description",
+              "value": "Hilfe"
+            },
+            {
+              "node": 10,
+              "field": "description",
+              "value": "KARTE 9 VON 20"
+            },
+            {
+              "node": 11,
+              "field": "description",
+              "value": "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+            },
+            {
+              "node": 12,
+              "field": "description",
+              "value": "Gib dieser Person das Handy."
+            },
+            {
+              "node": 13,
+              "field": "description",
+              "value": "Zum Lesen hochziehen. Für mehr hoch- oder runterstreichen. Loslassen verdeckt alles."
+            },
+            {
+              "node": 14,
+              "field": "description",
+              "value": "Private Karte. Wörter werden nie vorgelesen. Zum visuellen Lesen TalkBack kurz durchreichen lassen und dieses Feld halten. Loslassen verdeckt die Karte."
+            },
+            {
+              "node": 15,
+              "field": "description",
+              "value": "Handy weitergeben"
+            }
+          ],
+          "completeActionStrings": [
+            "[AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]",
+            "[]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_CLEAR_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]"
+          ],
+          "secretExactValueHits": [],
+          "publicAllowlistMatches": true
+        }
+      ]
+    },
+    {
+      "fixture": "English-GoodKing",
+      "provenance": "Synthetic replay; never counted among seven actual matches.",
+      "fixtureSha256": "430ed95a32659c09b4a6ae091c5a2f81a11ac4df994c02b7e118ad703fd4974d",
+      "ownerId": "f4ce5a4107e0488698c66792e509a147",
+      "publicOwnerName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10",
+      "pairWords": [
+        "Peach",
+        "Apricot"
+      ],
+      "knownSecretParticipantNames": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Zoë 👨‍👩‍👧‍👦",
+        "王小明東京花子",
+        "Ελένη Παπαδοπούλου",
+        "Александра",
+        "Wunderbare Wortkönigin",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 9"
+      ],
+      "allNonOwnerNamesChecked": [
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Zoë 👨‍👩‍👧‍👦",
+        "王小明東京花子",
+        "Ελένη Παπαδοπούλου",
+        "Александра",
+        "Wunderbare Wortkönigin",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 9",
+        "Ana María Fernández",
+        "Christopher-Maximilian",
+        "Amélie",
+        "Søren",
+        "Renée",
+        "Łukasz",
+        "François",
+        "İpek",
+        "Guðrún",
+        "Léa 👩🏽‍🚀"
+      ],
+      "stages": [
+        {
+          "file": "code5-en-good-max-header-held-tree.json",
+          "sha256": "cdf55be2d246914deb761e10e57b95354cf04773fc2c64ca540a98c1a0d068ae",
+          "nodeCount": 16,
+          "completeSemanticFields": [
+            {
+              "node": 7,
+              "field": "description",
+              "value": "Back"
+            },
+            {
+              "node": 8,
+              "field": "description",
+              "value": "Kings"
+            },
+            {
+              "node": 9,
+              "field": "description",
+              "value": "Help"
+            },
+            {
+              "node": 10,
+              "field": "description",
+              "value": "CARD 10 OF 20"
+            },
+            {
+              "node": 11,
+              "field": "description",
+              "value": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+            },
+            {
+              "node": 12,
+              "field": "description",
+              "value": "Pass the phone to this person."
+            },
+            {
+              "node": 13,
+              "field": "description",
+              "value": "Pull up to read. Slide up or down for more. Release to hide."
+            },
+            {
+              "node": 14,
+              "field": "description",
+              "value": "Private card. Words are never spoken. To read it visually, use TalkBack's pass-through gesture, then hold here. Release to hide."
+            },
+            {
+              "node": 15,
+              "field": "description",
+              "value": "Hide & pass on"
+            }
+          ],
+          "completeActionStrings": [
+            "[AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]",
+            "[]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_CLEAR_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]"
+          ],
+          "secretExactValueHits": [],
+          "publicAllowlistMatches": true
+        },
+        {
+          "file": "code5-en-good-max-header-released-tree.json",
+          "sha256": "a5768b6877930e3c2519655d5025f7e2b968d2291f042c61c7a5ce91a00401a5",
+          "nodeCount": 16,
+          "completeSemanticFields": [
+            {
+              "node": 7,
+              "field": "description",
+              "value": "Back"
+            },
+            {
+              "node": 8,
+              "field": "description",
+              "value": "Kings"
+            },
+            {
+              "node": 9,
+              "field": "description",
+              "value": "Help"
+            },
+            {
+              "node": 10,
+              "field": "description",
+              "value": "CARD 10 OF 20"
+            },
+            {
+              "node": 11,
+              "field": "description",
+              "value": "WWWWWWWWWWWWWWWWWWWWWWWW · 10"
+            },
+            {
+              "node": 12,
+              "field": "description",
+              "value": "Pass the phone to this person."
+            },
+            {
+              "node": 13,
+              "field": "description",
+              "value": "Pull up to read. Slide up or down for more. Release to hide."
+            },
+            {
+              "node": 14,
+              "field": "description",
+              "value": "Private card. Words are never spoken. To read it visually, use TalkBack's pass-through gesture, then hold here. Release to hide."
+            },
+            {
+              "node": 15,
+              "field": "description",
+              "value": "Hide & pass on"
+            }
+          ],
+          "completeActionStrings": [
+            "[AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]",
+            "[]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_CLEAR_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]",
+            "[AccessibilityAction: ACTION_CLICK - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]"
+          ],
+          "secretExactValueHits": [],
+          "publicAllowlistMatches": true
+        }
+      ]
+    }
+  ],
+  "correctedGermanGoodLogRescan": {
+    "file": "code5-de-good-max-log.txt",
+    "sha256": "1716b0f7a26c8fa4f4ddfa81a1600e779aa173c13b74817573286db2f006b8cf",
+    "bytes": 11875,
+    "lineCount": 180,
+    "pid": "9394",
+    "method": "Case-insensitive literal search of actual pair, all raw/display names and match/player IDs.",
+    "testedValues": [
+      "Pfirsich",
+      "Aprikose",
+      "cbe4d6c044814600a1af1be109199a54",
+      "b906f5cbff064be0879aeede8c0ac5fa",
+      "WWWWWWWWWWWWWWWWWWWWWWWW",
+      "ÄÖÜéèñøçÅæœß Königin 👑",
+      "Zoë 👨‍👩‍👧‍👦",
+      "王小明東京花子",
+      "Ελένη Παπαδοπούλου",
+      "Александра",
+      "Wunderbare Wortkönigin",
+      "Ana María Fernández",
+      "Christopher-Maximilian",
+      "Amélie",
+      "Søren",
+      "Renée",
+      "Łukasz",
+      "François",
+      "İpek",
+      "Guðrún",
+      "Léa 👩🏽‍🚀",
+      "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+      "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+      "WWWWWWWWWWWWWWWWWWWWWWWW · 9",
+      "WWWWWWWWWWWWWWWWWWWWWWWW · 10",
+      "ce56234b5da44bf5b58f317026f8016b",
+      "16c49f5063b54f3fb999ea8e98e7d1eb",
+      "ae4ef5d11eaf4ca7bcff9565a38c17d1",
+      "e99d68b5a4ca41d6b053452477d9893b",
+      "45158ee72132454c9d8d392d4c73fbea",
+      "7c0995f088e14736b09cddf62ca1ad5b",
+      "2643c7261c56436d893ae8cfcb3a0433",
+      "16fec8e2ca6a4c68ab29824368b12243",
+      "52ef510b01394df0b603f01fcd86742a",
+      "013c3a50c9ec4fdf983238448bd5add4",
+      "e4f5eab37d3e4b00bb1119277bdc2314",
+      "d86bd314065e4b7bbddd9153dd53e665",
+      "16e5a59ebd684891832e87bd1920273a",
+      "a130b22aebe040238156cacbc65be91a",
+      "1115514c4f7549e78e733a31ef595259",
+      "87bf2ec553f442a1b3d0b96b515280c8",
+      "b11f3fe892ed4f2d8a417e9482af9073",
+      "4351398ed8264f2da025928c005b5103",
+      "e726e348b3ca40b4b57e83605d122df8"
+    ],
+    "hits": [],
+    "originalGap": "Original code5-de-good-max-log.json tested Nektarine and omitted actual Aprikose; original preserved, this offline rescan closes that value gap.",
+    "rawLineFeeds": 90,
+    "nonEmptyLines": 90,
+    "originalRecordedBytes": 11785,
+    "originalRecordedLines": 90,
+    "bytesAfterNormalizingDoubledCR": 11785
+  },
+  "maxGroupPreferenceAndModeChecks": {
+    "provenance": "Synthetic max roster and actual subsequent native group actions; not an eighth authentic played match.",
+    "savedPreference": 8,
+    "active": 18,
+    "totalPlayers": 20,
+    "effectiveUndercoverLimit": 7,
+    "modeSwitchTrees": [
+      {
+        "file": "code5-group-return-repro-0.json",
+        "sha256": "03f43b9f90335ddb1c0d47cfa11fa64f9f59601affde2dcfa010292dbe5e09cf",
+        "selectedMode": [
+          "Schnell"
+        ],
+        "completeSemanticValues": [
+          "Regeln, Info, Datenschutz und Lizenzen",
+          "Deutsch",
+          "Englisch",
+          "Eure Gruppe",
+          "18 spielen mit",
+          "Gespeicherte Personen. Für weitere scrollen.",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 1 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 1 mitspielen lassen",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 2 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 2 mitspielen lassen",
+          "ÄÖÜéèñøçÅæœß Königin 👑 bearbeiten",
+          "ÄÖÜéèñøçÅæœß Königin 👑 pausieren",
+          "Zoë 👨‍👩‍👧‍👦 bearbeiten",
+          "Zoë 👨‍👩‍👧‍👦 pausieren",
+          "王小明東京花子 bearbeiten",
+          "王小明東京花子 pausieren",
+          "Ελένη Παπαδοπούλου bearbeiten",
+          "Ελένη Παπαδοπούλου pausieren",
+          "Александра bearbeiten",
+          "Александра pausieren",
+          "Wunderbare Wortkönigin bearbeiten",
+          "Wunderbare Wortkönigin pausieren",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 9 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 9 pausieren",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 10 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 10 pausieren",
+          "Ana María Fernández bearbeiten",
+          "Ana María Fernández pausieren",
+          "Christopher-Maximilian bearbeiten",
+          "Christopher-Maximilian pausieren",
+          "Amélie bearbeiten",
+          "Amélie pausieren",
+          "Søren bearbeiten",
+          "Søren pausieren",
+          "Renée bearbeiten",
+          "Renée pausieren",
+          "Łukasz bearbeiten",
+          "Łukasz pausieren",
+          "François bearbeiten",
+          "François pausieren",
+          "İpek bearbeiten",
+          "İpek pausieren",
+          "Guðrún bearbeiten",
+          "Guðrún pausieren",
+          "Léa 👩🏽‍🚀 bearbeiten",
+          "Léa 👩🏽‍🚀 pausieren",
+          "Name eingeben",
+          "Person hinzufügen",
+          "Schnell",
+          "Klassisch",
+          "Könige",
+          "Eine Hinweisrunde. Eine Abstimmung. Alle bleiben dabei.",
+          "Los geht's"
+        ]
+      },
+      {
+        "file": "code5-group-return-repro-1.json",
+        "sha256": "0b7f360217a973cf218682af310ab7532ddb3eb8a97fc37b9e0ca77e9cccf11d",
+        "selectedMode": [
+          "Klassisch"
+        ],
+        "completeSemanticValues": [
+          "Regeln, Info, Datenschutz und Lizenzen",
+          "Deutsch",
+          "Englisch",
+          "Eure Gruppe",
+          "18 spielen mit",
+          "Gespeicherte Personen. Für weitere scrollen.",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 1 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 1 mitspielen lassen",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 2 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 2 mitspielen lassen",
+          "ÄÖÜéèñøçÅæœß Königin 👑 bearbeiten",
+          "ÄÖÜéèñøçÅæœß Königin 👑 pausieren",
+          "Zoë 👨‍👩‍👧‍👦 bearbeiten",
+          "Zoë 👨‍👩‍👧‍👦 pausieren",
+          "王小明東京花子 bearbeiten",
+          "王小明東京花子 pausieren",
+          "Ελένη Παπαδοπούλου bearbeiten",
+          "Ελένη Παπαδοπούλου pausieren",
+          "Александра bearbeiten",
+          "Александра pausieren",
+          "Wunderbare Wortkönigin bearbeiten",
+          "Wunderbare Wortkönigin pausieren",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 9 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 9 pausieren",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 10 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 10 pausieren",
+          "Ana María Fernández bearbeiten",
+          "Ana María Fernández pausieren",
+          "Christopher-Maximilian bearbeiten",
+          "Christopher-Maximilian pausieren",
+          "Amélie bearbeiten",
+          "Amélie pausieren",
+          "Søren bearbeiten",
+          "Søren pausieren",
+          "Renée bearbeiten",
+          "Renée pausieren",
+          "Łukasz bearbeiten",
+          "Łukasz pausieren",
+          "François bearbeiten",
+          "François pausieren",
+          "İpek bearbeiten",
+          "İpek pausieren",
+          "Guðrún bearbeiten",
+          "Guðrún pausieren",
+          "Léa 👩🏽‍🚀 bearbeiten",
+          "Léa 👩🏽‍🚀 pausieren",
+          "Name eingeben",
+          "Person hinzufügen",
+          "Schnell",
+          "Klassisch",
+          "Könige",
+          "15 Bürger · 3 Undercover · 0 Mr. White",
+          "Los geht's"
+        ]
+      },
+      {
+        "file": "code5-group-return-repro-2.json",
+        "sha256": "ea5bfb316d6cfdef4ac4603683208e0abd62ff37f64c404dfc92cc05c93bf646",
+        "selectedMode": [
+          "Könige"
+        ],
+        "completeSemanticValues": [
+          "Regeln, Info, Datenschutz und Lizenzen",
+          "Deutsch",
+          "Englisch",
+          "Eure Gruppe",
+          "18 spielen mit",
+          "Gespeicherte Personen. Für weitere scrollen.",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 1 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 1 mitspielen lassen",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 2 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 2 mitspielen lassen",
+          "ÄÖÜéèñøçÅæœß Königin 👑 bearbeiten",
+          "ÄÖÜéèñøçÅæœß Königin 👑 pausieren",
+          "Zoë 👨‍👩‍👧‍👦 bearbeiten",
+          "Zoë 👨‍👩‍👧‍👦 pausieren",
+          "王小明東京花子 bearbeiten",
+          "王小明東京花子 pausieren",
+          "Ελένη Παπαδοπούλου bearbeiten",
+          "Ελένη Παπαδοπούλου pausieren",
+          "Александра bearbeiten",
+          "Александра pausieren",
+          "Wunderbare Wortkönigin bearbeiten",
+          "Wunderbare Wortkönigin pausieren",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 9 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 9 pausieren",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 10 bearbeiten",
+          "WWWWWWWWWWWWWWWWWWWWWWWW · 10 pausieren",
+          "Ana María Fernández bearbeiten",
+          "Ana María Fernández pausieren",
+          "Christopher-Maximilian bearbeiten",
+          "Christopher-Maximilian pausieren",
+          "Amélie bearbeiten",
+          "Amélie pausieren",
+          "Søren bearbeiten",
+          "Søren pausieren",
+          "Renée bearbeiten",
+          "Renée pausieren",
+          "Łukasz bearbeiten",
+          "Łukasz pausieren",
+          "François bearbeiten",
+          "François pausieren",
+          "İpek bearbeiten",
+          "İpek pausieren",
+          "Guðrún bearbeiten",
+          "Guðrún pausieren",
+          "Léa 👩🏽‍🚀 bearbeiten",
+          "Léa 👩🏽‍🚀 pausieren",
+          "Name eingeben",
+          "Person hinzufügen",
+          "Schnell",
+          "Klassisch",
+          "Könige",
+          "10 Gute inkl. König · 7 Undercover + Mr. White",
+          "Los geht's"
+        ]
+      }
+    ],
+    "returnTransitionBug": "Root-observed accessibility transition defect remains pending correction; these settled mode trees do not disprove it."
+  },
+  "classicV4FixtureCompatibility": {
+    "provenance": "Explicit replay of a preserved real V4 Classic fixture; compatibility evidence, not a second in-place install update.",
+    "sourceFolder": "work/android-16kb-probe/final-long-word-state",
+    "matchId": "b7203215ad014899bfda2147685f8ddd",
+    "beforePrimarySha256": "f1589d992239c3c9d34f24866d122417f18b0f26985fe6d23a6240f8e8f7bc0a",
+    "afterPrimarySha256": "715654a61c5b305159ce95861345345c8a0fb6e51a4e01601900c5b7c754720d",
+    "afterBackupSha256": "f1589d992239c3c9d34f24866d122417f18b0f26985fe6d23a6240f8e8f7bc0a",
+    "legacyChangedPaths": [
+      "/Match/Handoff"
+    ],
+    "handoffBefore": 1,
+    "handoffAfter": 2,
+    "oldVersion": 4,
+    "newVersion": 5,
+    "backupVersion": 4
+  },
+  "correctedMaxEndLogRescan": {
+    "file": "code5-max-end-log.txt",
+    "sha256": "0594305fc63f72b0a8907a03438a112f1c918b4ff8a3f690c49e2119f9f51445",
+    "bytes": 17124,
+    "rawLineFeeds": 116,
+    "nonEmptyLines": 116,
+    "pid": "10823",
+    "rosterSource": "code5-max-end-state/session.json",
+    "playersCovered": 20,
+    "testedValues": [
+      "Kirsche",
+      "Pflaume",
+      "Peach",
+      "Apricot",
+      "WWWWWWWWWWWWWWWWWWWWWWWW",
+      "ÄÖÜéèñøçÅæœß Königin 👑",
+      "Zoë 👨‍👩‍👧‍👦",
+      "王小明東京花子",
+      "Ελένη Παπαδοπούλου",
+      "Александра",
+      "Wunderbare Wortkönigin",
+      "Ana María Fernández",
+      "Christopher-Maximilian",
+      "Amélie",
+      "Søren",
+      "Renée",
+      "Łukasz",
+      "François",
+      "İpek",
+      "Guðrún",
+      "Léa 👩🏽‍🚀",
+      "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+      "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+      "WWWWWWWWWWWWWWWWWWWWWWWW · 9",
+      "WWWWWWWWWWWWWWWWWWWWWWWW · 10",
+      "930d981e8f9946eb9f2174ebaf1e6058",
+      "c94dd8eda2af48a4b435dacda0352706",
+      "87bb3bec52174dde93710f4a7a818e3e",
+      "9cabf9ef282b466583f23c0c264d9656",
+      "216669f0dbfa4b04911a553b1518231c",
+      "0401540de2ea42ee86a3f772a599ad88",
+      "c7b623c39432419ab1c9a98d2ba1ddef",
+      "77b84d93ac0341fc9085a910b175288b",
+      "b6f30b0bec734cc797ad01ce4b89a775",
+      "f4ce5a4107e0488698c66792e509a147",
+      "9ed81cab34f04743bec3f768522bb6b9",
+      "da3e454bbe664956905b0dff7da7a242",
+      "cd6c0e35f588499d967385e55dab9f19",
+      "a2ce7a48e07e46dab153fec2b0c064f8",
+      "1ff3b3cd35e44fa88662bafe31827923",
+      "326fb543b2ad47d983795f4437c3dee8",
+      "72f27be5862f4b37a9e9218ab11f81fd",
+      "1a61ae15264043f6b25e6ab56a1b3817",
+      "db94c08b8caa4a908e499b3bdb2d5d31",
+      "cc45410b7db749bd9eda6da243c8af2b"
+    ],
+    "hits": [],
+    "originalGap": "Original record tested four words only. This offline rescan adds all20 players using real Name/Distinguished/Number fields plus IDs; original preserved."
+  },
+  "evidenceCautions": [
+    "Game1 good-king-result screenshot is an unintended new handoff: double-tap failure; terminal exists only in backup.",
+    "Game3 result-state is phase10; terminal-state is the actual phase3 result.",
+    "Game3 judgment-resumed and word-correct-result image labels do not establish visual resume/result; parent notes report pause.",
+    "Game5 target-safe-restart image was startup blank; later byte equality proves durable target, not that frame.",
+    "Observations-code5.md is an in-progress earlier note: pending game5/6/7 assertions are superseded only for durable state by these files.",
+    "Four synthetic max-card held/released trees are separately audited for exact public semantic strings; no inference of screenshot legibility, spoken output, touch usability or all accessibility passing.",
+    "Original English Good MaxFixturePass stopped on a false substring match: private display name ending in middle-dot 1 is a prefix of public owner ending in middle-dot 10. Both complete trees are checked here; original run is not relabelled passed.",
+    "Root reports a real max-group accessibility return-transition bug pending correction; this narrow private-tree audit does not override it.",
+    "Known code5 cross-screen double-tap failure remains; code6 verification is pending."
+  ],
+  "snapshots": {
+    "code4-immediately-before-install-state": {
+      "session.json": {
+        "version": 4,
+        "sha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+        "payloadSha256": "e186d3e81b512480fb140dc13b92644b7977d145e4c316330fd6c41eb379d8cd",
+        "checksum": "4YbT6BtRJID7FA3BO5JkS3l30UXkwxYzD9bEHrN52M0=",
+        "matchId": "5a845f1c7f8842789e784e1cc6a096b5",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+        "payloadSha256": "af6bd114573a975c9b82bba01eca53b753cb0ec912f0f4b2be69f9e774d48df5",
+        "checksum": "r2vRFFc6l1ybgrugHspTt1PLDskS8PSyvmn553TUjfU=",
+        "matchId": "5a845f1c7f8842789e784e1cc6a096b5",
+        "phase": 0,
+        "outcome": null
+      }
+    },
+    "code5-after-install-before-launch-state": {
+      "session.json": {
+        "version": 4,
+        "sha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+        "payloadSha256": "e186d3e81b512480fb140dc13b92644b7977d145e4c316330fd6c41eb379d8cd",
+        "checksum": "4YbT6BtRJID7FA3BO5JkS3l30UXkwxYzD9bEHrN52M0=",
+        "matchId": "5a845f1c7f8842789e784e1cc6a096b5",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+        "payloadSha256": "af6bd114573a975c9b82bba01eca53b753cb0ec912f0f4b2be69f9e774d48df5",
+        "checksum": "r2vRFFc6l1ybgrugHspTt1PLDskS8PSyvmn553TUjfU=",
+        "matchId": "5a845f1c7f8842789e784e1cc6a096b5",
+        "phase": 0,
+        "outcome": null
+      }
+    },
+    "code5-before-first-kings-restart-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "2eee12cd7cd4c45250091e7d3133d99fc234781e3821c3e87a74c530c5a24270",
+        "payloadSha256": "30d964656c96a65563f0879a54288dfc00f46a1a07b6458693434739743f3797",
+        "checksum": "MNlkZWyWplVj8IeaVCiN/AD0ahoHtkWGk0NHOXQ/N5c=",
+        "matchId": "69fc9f23a2b44963b61cc5e954f24af4",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+        "payloadSha256": "f4e976f6513da3c4835b936e49e252a5dc319317e831a7b994efe1991cfd4e6d",
+        "checksum": "9Ol29lE9o8SDW5NuSeJSpdwxkxfoMae5lO/hmRz9Tm0=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      }
+    },
+    "code5-unfinished-nora-restored-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "2eee12cd7cd4c45250091e7d3133d99fc234781e3821c3e87a74c530c5a24270",
+        "payloadSha256": "30d964656c96a65563f0879a54288dfc00f46a1a07b6458693434739743f3797",
+        "checksum": "MNlkZWyWplVj8IeaVCiN/AD0ahoHtkWGk0NHOXQ/N5c=",
+        "matchId": "69fc9f23a2b44963b61cc5e954f24af4",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+        "payloadSha256": "f4e976f6513da3c4835b936e49e252a5dc319317e831a7b994efe1991cfd4e6d",
+        "checksum": "9Ol29lE9o8SDW5NuSeJSpdwxkxfoMae5lO/hmRz9Tm0=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      }
+    },
+    "code5-game3-word-committed-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+        "payloadSha256": "7b29f33360d6f338bce7c57bce2adce42e731f6f641e351ddb08146672ab093d",
+        "checksum": "eynzM2DW8zi858V7zirc5C5zH29kHjUd2wgUZnKrCT0=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 9,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "8152c3d78363a2e84c618b1c3af172ffb3253ac970197153216bbb718341716d",
+        "payloadSha256": "f1d58764f9654ceb8db6757c0cb1a4e4b25ae42da7bd624c29b3b5ba8f58dac5",
+        "checksum": "8dWHZPllTOuNtnV8DLGk5LJa5C2nvWJMKbO1uo9Y2sU=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 8,
+        "outcome": null
+      }
+    },
+    "code5-game3-word-resumed-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+        "payloadSha256": "7b29f33360d6f338bce7c57bce2adce42e731f6f641e351ddb08146672ab093d",
+        "checksum": "eynzM2DW8zi858V7zirc5C5zH29kHjUd2wgUZnKrCT0=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 9,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "8152c3d78363a2e84c618b1c3af172ffb3253ac970197153216bbb718341716d",
+        "payloadSha256": "f1d58764f9654ceb8db6757c0cb1a4e4b25ae42da7bd624c29b3b5ba8f58dac5",
+        "checksum": "8dWHZPllTOuNtnV8DLGk5LJa5C2nvWJMKbO1uo9Y2sU=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 8,
+        "outcome": null
+      }
+    },
+    "code5-game3-judgment-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+        "payloadSha256": "78f8570d8affcb5a43900c34a599e82fb9ec69fb601eec35179902e4e1c0beaa",
+        "checksum": "ePhXDYr/y1pDkAw0pZnoL7nsaftgHuw1F5kC5OHAvqo=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 10,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+        "payloadSha256": "7b29f33360d6f338bce7c57bce2adce42e731f6f641e351ddb08146672ab093d",
+        "checksum": "eynzM2DW8zi858V7zirc5C5zH29kHjUd2wgUZnKrCT0=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 9,
+        "outcome": null
+      }
+    },
+    "code5-game3-judgment-resumed-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+        "payloadSha256": "78f8570d8affcb5a43900c34a599e82fb9ec69fb601eec35179902e4e1c0beaa",
+        "checksum": "ePhXDYr/y1pDkAw0pZnoL7nsaftgHuw1F5kC5OHAvqo=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 10,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+        "payloadSha256": "7b29f33360d6f338bce7c57bce2adce42e731f6f641e351ddb08146672ab093d",
+        "checksum": "eynzM2DW8zi858V7zirc5C5zH29kHjUd2wgUZnKrCT0=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 9,
+        "outcome": null
+      }
+    },
+    "code5-game5-target-pending-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "d3de19119eaa5e91f4f2c34dae3fff076664f1f45cf79dafbb38dac7c624605b",
+        "payloadSha256": "4eaf35aa67b968dd48c482e8b3902846d9582f520234ccbec6ecc292bcbe4811",
+        "checksum": "Tq81qme5aN1IxILos5AoRtlYL1ICNMy+xuzCkry+SBE=",
+        "matchId": "3ceda517d0814ae3bad868244c417a46",
+        "phase": 11,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "1ca8577d3e1756694ad1c5697a88bd8ffafbc589f708d7ac8d0b74d5ee00967e",
+        "payloadSha256": "0133c272e13794c2085c0c7df2da2b6589767f14fa265bb3b48d6ce7d754e92b",
+        "checksum": "ATPCcuE3lMIIXAx98torZYl2fxT6JluztI1s59dU6Ss=",
+        "matchId": "3ceda517d0814ae3bad868244c417a46",
+        "phase": 11,
+        "outcome": null
+      }
+    },
+    "code5-game5-target-resumed-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "d3de19119eaa5e91f4f2c34dae3fff076664f1f45cf79dafbb38dac7c624605b",
+        "payloadSha256": "4eaf35aa67b968dd48c482e8b3902846d9582f520234ccbec6ecc292bcbe4811",
+        "checksum": "Tq81qme5aN1IxILos5AoRtlYL1ICNMy+xuzCkry+SBE=",
+        "matchId": "3ceda517d0814ae3bad868244c417a46",
+        "phase": 11,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "1ca8577d3e1756694ad1c5697a88bd8ffafbc589f708d7ac8d0b74d5ee00967e",
+        "payloadSha256": "0133c272e13794c2085c0c7df2da2b6589767f14fa265bb3b48d6ce7d754e92b",
+        "checksum": "ATPCcuE3lMIIXAx98torZYl2fxT6JluztI1s59dU6Ss=",
+        "matchId": "3ceda517d0814ae3bad868244c417a46",
+        "phase": 11,
+        "outcome": null
+      }
+    },
+    "before-emulator-recovery-state": {
+      "session.json": {
+        "version": 4,
+        "sha256": "3ff7fa22cb08b7312230ecee1cd4740e6fa6f885fb16681982002294324fd4e7",
+        "payloadSha256": "943d77820445766e0242ec9bf02436de8f393c1e2ddcec9db047c7452a4de817",
+        "checksum": "lD13ggRFdm4CQuyb8CQ23o85PB4t3OydsEfHRSpN6Bc=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "61606c587b8e527e5179577609e64bc3f40dcb16ccdd7be1db198600e7711979",
+        "payloadSha256": "95e0f382a4db4c55dc90c236c856191760df8d14c70b033f0d1320d2ca0b42a1",
+        "checksum": "leDzgqTbTFXckMI2yFYZF2DfjRTHCwM/DRMg0soLQqE=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      }
+    },
+    "after-emulator-recovery-state": {
+      "session.json": {
+        "version": 4,
+        "sha256": "3ff7fa22cb08b7312230ecee1cd4740e6fa6f885fb16681982002294324fd4e7",
+        "payloadSha256": "943d77820445766e0242ec9bf02436de8f393c1e2ddcec9db047c7452a4de817",
+        "checksum": "lD13ggRFdm4CQuyb8CQ23o85PB4t3OydsEfHRSpN6Bc=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "61606c587b8e527e5179577609e64bc3f40dcb16ccdd7be1db198600e7711979",
+        "payloadSha256": "95e0f382a4db4c55dc90c236c856191760df8d14c70b033f0d1320d2ca0b42a1",
+        "checksum": "leDzgqTbTFXckMI2yFYZF2DfjRTHCwM/DRMg0soLQqE=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      }
+    },
+    "code5-resumed-old-match-state": {
+      "session.json": {
+        "version": 4,
+        "sha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+        "payloadSha256": "e186d3e81b512480fb140dc13b92644b7977d145e4c316330fd6c41eb379d8cd",
+        "checksum": "4YbT6BtRJID7FA3BO5JkS3l30UXkwxYzD9bEHrN52M0=",
+        "matchId": "5a845f1c7f8842789e784e1cc6a096b5",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+        "payloadSha256": "af6bd114573a975c9b82bba01eca53b753cb0ec912f0f4b2be69f9e774d48df5",
+        "checksum": "r2vRFFc6l1ybgrugHspTt1PLDskS8PSyvmn553TUjfU=",
+        "matchId": "5a845f1c7f8842789e784e1cc6a096b5",
+        "phase": 0,
+        "outcome": null
+      }
+    },
+    "code5-first-advanced-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "8713ca7e99e841efae8d609d2ac2679935ce40723703f582efd1ce4de4f00a67",
+        "payloadSha256": "42ca345cf6486e733b049c6b7819379e5cbab8cffd5d2cee52012641f5470449",
+        "checksum": "Qso0XPZIbnM7BJxreBk3nly6uM/9XSzuUgEmQfVHBEk=",
+        "matchId": "5a845f1c7f8842789e784e1cc6a096b5",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+        "payloadSha256": "e186d3e81b512480fb140dc13b92644b7977d145e4c316330fd6c41eb379d8cd",
+        "checksum": "4YbT6BtRJID7FA3BO5JkS3l30UXkwxYzD9bEHrN52M0=",
+        "matchId": "5a845f1c7f8842789e784e1cc6a096b5",
+        "phase": 0,
+        "outcome": null
+      }
+    },
+    "code5-kings-five-group-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "0c79d7c453c7cfcab19b3a84058f2e5873e65fdc796c73a494d0513fd788e8ed",
+        "payloadSha256": "8449706df72ca47ae5d40e3a5fbe6f8c410964cf4926f09af1e57c19ee8affb1",
+        "checksum": "hElwbfcspHrl1A46X75vjEEJZM9JJvCa8eV8Ge6K/7E=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "550417a14533f00e6817601d0ac70185aee57e6998e40f6334fedc6cc073997e",
+        "payloadSha256": "e44525aa00cf6bb94d3d1adc9cc66e11cf25b5b5030ac9d68f5ccad612e00fab",
+        "checksum": "5EUlqgDPa7lNPRrcnMZuEc8ltbUDCsnWj1zK1hLgD6s=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      }
+    },
+    "code5-renamed-group-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+        "payloadSha256": "f4e976f6513da3c4835b936e49e252a5dc319317e831a7b994efe1991cfd4e6d",
+        "checksum": "9Ol29lE9o8SDW5NuSeJSpdwxkxfoMae5lO/hmRz9Tm0=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "0c79d7c453c7cfcab19b3a84058f2e5873e65fdc796c73a494d0513fd788e8ed",
+        "payloadSha256": "8449706df72ca47ae5d40e3a5fbe6f8c410964cf4926f09af1e57c19ee8affb1",
+        "checksum": "hElwbfcspHrl1A46X75vjEEJZM9JJvCa8eV8Ge6K/7E=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      }
+    },
+    "code5-game2-result-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "632fc8b55fce26e9a6b99fbd999a87c419a39ec07700a21cfac6aa2bd18e62bd",
+        "payloadSha256": "b59d767d29a55b400a2a9c9429f2a115b3daa9e3fecb21aac0f8f35e8d7e3ecb",
+        "checksum": "tZ12fSmlW0AKKpyUKfKhFbPaqeP+yyGqwPjzXo1+Pss=",
+        "matchId": "9f9a692f38424311b104a061b418d17a",
+        "phase": 3,
+        "outcome": 7
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "2732d46dbda2e0bb092030f8463609f9ed840f9a988153f1796d62593cce6c49",
+        "payloadSha256": "b2ade33ebe0c219f20315c1e249a45ef76dc6f55fbf4e86f53bb448e93028b6d",
+        "checksum": "sq3jPr4MIZ8gMVweJJpF73bcb1X79OhvU7tEjpMCi20=",
+        "matchId": "9f9a692f38424311b104a061b418d17a",
+        "phase": 6,
+        "outcome": null
+      }
+    },
+    "code5-game2-deal-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "cf16d7817a4afd1a4a4c64830ffe4293e9f931d28d324c1778ccd86f226a2aa7",
+        "payloadSha256": "573e9e5b7b029027ef9601661e053c5577efdfae9e3589b25bd2c13b8e5314b0",
+        "checksum": "Vz6eW3sCkCfvlgFmHgU8VXfv366eNYmyW9LBO45TFLA=",
+        "matchId": "9f9a692f38424311b104a061b418d17a",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "9153d5cdab17d839809a6c75e64b2a4e6fcb7ea3701e1b8a92386b2b65c92155",
+        "payloadSha256": "bc8e4f1133baa5a7d4485a4a9e85d55af556e37a1960cbeda1a572b59feafde5",
+        "checksum": "vI5PETO6pafUSFpKnoXVWvVW43oZYMvtoaVytZ/q/eU=",
+        "matchId": "69fc9f23a2b44963b61cc5e954f24af4",
+        "phase": 3,
+        "outcome": 6
+      }
+    },
+    "code5-game3-terminal-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "69f4e9ee0bb561a3ebe879578be6e0161b7c57eba8fbd776c73bbcf18802f6d5",
+        "payloadSha256": "8eadf1e55a4679b6f7ac680a7475943937157d20ef8a80f6d65ae279afba5725",
+        "checksum": "jq3x5VpGebb3rGgKdHWUOTcVfSDvioD21lriea+6VyU=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 3,
+        "outcome": 8
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+        "payloadSha256": "78f8570d8affcb5a43900c34a599e82fb9ec69fb601eec35179902e4e1c0beaa",
+        "checksum": "ePhXDYr/y1pDkAw0pZnoL7nsaftgHuw1F5kC5OHAvqo=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 10,
+        "outcome": null
+      }
+    },
+    "code5-game3-deal-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "4a1cc0fec3e5b9ad28555b6cc19e6397b0b95da488ed8f5db4298595c626f10a",
+        "payloadSha256": "a6ffbda989fc94da5bc7a44acbbcdc3437f18b79c4f99a0783d28651a7af253f",
+        "checksum": "pv+9qYn8lNpbx6RKy7zcNDfxi3nE+ZoHg9KGUaevJT8=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "632fc8b55fce26e9a6b99fbd999a87c419a39ec07700a21cfac6aa2bd18e62bd",
+        "payloadSha256": "b59d767d29a55b400a2a9c9429f2a115b3daa9e3fecb21aac0f8f35e8d7e3ecb",
+        "checksum": "tZ12fSmlW0AKKpyUKfKhFbPaqeP+yyGqwPjzXo1+Pss=",
+        "matchId": "9f9a692f38424311b104a061b418d17a",
+        "phase": 3,
+        "outcome": 7
+      }
+    },
+    "code5-game4-result-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "4fb62818d325a96a54151b1b946a32967978b58887d7589a9afc8196f57285aa",
+        "payloadSha256": "2955bd663410f0d4dec97eae1d891a09a440c511b59203ea85e5dbb3b481e297",
+        "checksum": "KVW9ZjQQ8NTeyX6uHYkaCaRAxRG1kgPqheXbs7SB4pc=",
+        "matchId": "43661f7a969a44deb5807563b35cb693",
+        "phase": 3,
+        "outcome": 9
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "d23a98384380a4cb3475300a3afcd320e73b582251e59856243e49ba54a0f414",
+        "payloadSha256": "14cb50b0f6706b178ffdf00fec13338d8e100f8ae014958556568f02f77685ef",
+        "checksum": "FMtQsPZwaxeP/fAP7BMzjY4QD4rgFJWFVlaPAvd2he8=",
+        "matchId": "43661f7a969a44deb5807563b35cb693",
+        "phase": 10,
+        "outcome": null
+      }
+    },
+    "code5-game4-deal-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "5876e9b98d78b1218c28dd32ceebb1e95d3c11cc5fdc1b842b2a6b9e23a75d31",
+        "payloadSha256": "51e9d5778ee59118be363e2f5c168cbc0f89ad7d020c2e924a760df0768f9df8",
+        "checksum": "UenVd47lkRi+Nj4vXBaMvA+JrX0CDC6SSnYN8HaPnfg=",
+        "matchId": "43661f7a969a44deb5807563b35cb693",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "69f4e9ee0bb561a3ebe879578be6e0161b7c57eba8fbd776c73bbcf18802f6d5",
+        "payloadSha256": "8eadf1e55a4679b6f7ac680a7475943937157d20ef8a80f6d65ae279afba5725",
+        "checksum": "jq3x5VpGebb3rGgKdHWUOTcVfSDvioD21lriea+6VyU=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 3,
+        "outcome": 8
+      }
+    },
+    "code5-game5-result-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "1912463baa46723795a30c911d5eab16ff50ca06ed0ef4b0f4f6e4ef61893d40",
+        "payloadSha256": "ae00320cdacdba79495f542ff581705380a4a251720ef8c0621a375e31702b7a",
+        "checksum": "rgAyDNrNunlJX1Qv9YFwU4CkolFyDvjAYho3XjFwK3o=",
+        "matchId": "3ceda517d0814ae3bad868244c417a46",
+        "phase": 3,
+        "outcome": 10
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "5bdbcba127c019930fcd677e5611b0e972e9feabe8c65859239a40aac873e1fc",
+        "payloadSha256": "b020a72cfbeebc58ec6b3932274be567c35d93c6a1e78d417b8f254bcb07aea4",
+        "checksum": "sCCnLPvuvFjsazkyJ0vlZ8Ndk8ah541Be48lS8sHrqQ=",
+        "matchId": "3ceda517d0814ae3bad868244c417a46",
+        "phase": 11,
+        "outcome": null
+      }
+    },
+    "code5-game5-deal-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "32921e1facbf4b4a9e124dba607f168c4fab47e364d12f88b99cb06a7aba7d59",
+        "payloadSha256": "dfda503ccbc989a8fbd3e0c7fd5543aaf54b34b76f91601c54655310c6fee54f",
+        "checksum": "39pQPMvJiaj70+DH/VVDqvVLNLdvkWAcVGVTEMb+5U8=",
+        "matchId": "3ceda517d0814ae3bad868244c417a46",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "4fb62818d325a96a54151b1b946a32967978b58887d7589a9afc8196f57285aa",
+        "payloadSha256": "2955bd663410f0d4dec97eae1d891a09a440c511b59203ea85e5dbb3b481e297",
+        "checksum": "KVW9ZjQQ8NTeyX6uHYkaCaRAxRG1kgPqheXbs7SB4pc=",
+        "matchId": "43661f7a969a44deb5807563b35cb693",
+        "phase": 3,
+        "outcome": 9
+      }
+    },
+    "code5-game6-result-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "48f7687b54f668bdafb1532e296393fb1fc67856387d203c9747a5d7b165f38c",
+        "payloadSha256": "c366a76c12c73fbf4403b7956edcc4c95adc10855d6139ad2ce5772a577b0fd7",
+        "checksum": "w2anbBLHP79EA7eVbtzEyVrcEIVdYTmtLOV3Kld7D9c=",
+        "matchId": "83662afc639e45889146d1775cfb3d26",
+        "phase": 3,
+        "outcome": 11
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "ce993504e8e6474d6449dba8c41203446195a42194a9d4717fa8e905e1f6190e",
+        "payloadSha256": "fa2ffa5d670d56429159b4674ec48785c8a4f85d8e87367010bd1443cecb89b7",
+        "checksum": "+i/6XWcNVkKRWbRnTsSHhcik+F2OhzZwEL0UQ87Libc=",
+        "matchId": "83662afc639e45889146d1775cfb3d26",
+        "phase": 11,
+        "outcome": null
+      }
+    },
+    "code5-game6-deal-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "341fa93818984fa9373cdec09f28865300cda9f10a2483f024f86ae34f1ebb83",
+        "payloadSha256": "bb23689a6f122165d80cc9cff7cc29d2a81b16f9cf91e9b5458c95fbcdaaf9c9",
+        "checksum": "uyNomm8SIWXYDMnP98wp0qgbFvnPkem1RYyV+82q+ck=",
+        "matchId": "83662afc639e45889146d1775cfb3d26",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "1912463baa46723795a30c911d5eab16ff50ca06ed0ef4b0f4f6e4ef61893d40",
+        "payloadSha256": "ae00320cdacdba79495f542ff581705380a4a251720ef8c0621a375e31702b7a",
+        "checksum": "rgAyDNrNunlJX1Qv9YFwU4CkolFyDvjAYho3XjFwK3o=",
+        "matchId": "3ceda517d0814ae3bad868244c417a46",
+        "phase": 3,
+        "outcome": 10
+      }
+    },
+    "code5-game7-result-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "3c1466fe52e773f95c73e3289b1a31a62ab9dfef06394894d2be3d91ca28d667",
+        "payloadSha256": "e9c145cb83f365cc63a6c1f47a218639c7b909433104d61c1168eeaa8784f855",
+        "checksum": "6cFFy4PzZcxjpsH0eiGGOce5CUMxBNYcEWjuqoeE+FU=",
+        "matchId": "01dd1170be424ef082b9b81e4681d6bc",
+        "phase": 3,
+        "outcome": 6
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "0b2ffc27bc5cc405518716f6523458e67a2dabb31b406e27fd1202a536e4932e",
+        "payloadSha256": "b41ee7088fd5b6cca4258ffa4893f533260c1e8b47fa4058585c8bbe47fff614",
+        "checksum": "tB7nCI/VtsykJY/6SJP1MyYMHotH+kBYWFyLvkf/9hQ=",
+        "matchId": "01dd1170be424ef082b9b81e4681d6bc",
+        "phase": 6,
+        "outcome": null
+      }
+    },
+    "code5-game7-deal-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "c75415dbfed1ff920abb0f0e7c160998ba94a58c8ead12e443920003d80ed403",
+        "payloadSha256": "216d9da53a9b4d8a9d218cea11ba41a912258b695851d7fa088acf5daef774d4",
+        "checksum": "IW2dpTqbTYqdIYzqEbpBqRIli2lYUdf6CIrPXa73dNQ=",
+        "matchId": "01dd1170be424ef082b9b81e4681d6bc",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "48f7687b54f668bdafb1532e296393fb1fc67856387d203c9747a5d7b165f38c",
+        "payloadSha256": "c366a76c12c73fbf4403b7956edcc4c95adc10855d6139ad2ce5772a577b0fd7",
+        "checksum": "w2anbBLHP79EA7eVbtzEyVrcEIVdYTmtLOV3Kld7D9c=",
+        "matchId": "83662afc639e45889146d1775cfb3d26",
+        "phase": 3,
+        "outcome": 11
+      }
+    },
+    "code5-game1-result-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "cf16d7817a4afd1a4a4c64830ffe4293e9f931d28d324c1778ccd86f226a2aa7",
+        "payloadSha256": "573e9e5b7b029027ef9601661e053c5577efdfae9e3589b25bd2c13b8e5314b0",
+        "checksum": "Vz6eW3sCkCfvlgFmHgU8VXfv366eNYmyW9LBO45TFLA=",
+        "matchId": "9f9a692f38424311b104a061b418d17a",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "9153d5cdab17d839809a6c75e64b2a4e6fcb7ea3701e1b8a92386b2b65c92155",
+        "payloadSha256": "bc8e4f1133baa5a7d4485a4a9e85d55af556e37a1960cbeda1a572b59feafde5",
+        "checksum": "vI5PETO6pafUSFpKnoXVWvVW43oZYMvtoaVytZ/q/eU=",
+        "matchId": "69fc9f23a2b44963b61cc5e954f24af4",
+        "phase": 3,
+        "outcome": 6
+      }
+    },
+    "code5-kings-game1-deal-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "2eee12cd7cd4c45250091e7d3133d99fc234781e3821c3e87a74c530c5a24270",
+        "payloadSha256": "30d964656c96a65563f0879a54288dfc00f46a1a07b6458693434739743f3797",
+        "checksum": "MNlkZWyWplVj8IeaVCiN/AD0ahoHtkWGk0NHOXQ/N5c=",
+        "matchId": "69fc9f23a2b44963b61cc5e954f24af4",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+        "payloadSha256": "f4e976f6513da3c4835b936e49e252a5dc319317e831a7b994efe1991cfd4e6d",
+        "checksum": "9Ol29lE9o8SDW5NuSeJSpdwxkxfoMae5lO/hmRz9Tm0=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      }
+    },
+    "code5-game3-result-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+        "payloadSha256": "78f8570d8affcb5a43900c34a599e82fb9ec69fb601eec35179902e4e1c0beaa",
+        "checksum": "ePhXDYr/y1pDkAw0pZnoL7nsaftgHuw1F5kC5OHAvqo=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 10,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+        "payloadSha256": "7b29f33360d6f338bce7c57bce2adce42e731f6f641e351ddb08146672ab093d",
+        "checksum": "eynzM2DW8zi858V7zirc5C5zH29kHjUd2wgUZnKrCT0=",
+        "matchId": "5dfed8d3df3c43c4b3f0b2230ecc9b2b",
+        "phase": 9,
+        "outcome": null
+      }
+    },
+    "code5-group-after-seven-games-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "22681667fd810242f4c322dfc073da911dc80b39eaa43dd8f1183530585637a0",
+        "payloadSha256": "a01e3f3380c21482019e08c8b8258513ad03ee0cfc06d7887e049b56a0427ba8",
+        "checksum": "oB4/M4DCFIIBngjIuCWFE60D7gz8BteIfgSbVqBCe6g=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "3c1466fe52e773f95c73e3289b1a31a62ab9dfef06394894d2be3d91ca28d667",
+        "payloadSha256": "e9c145cb83f365cc63a6c1f47a218639c7b909433104d61c1168eeaa8784f855",
+        "checksum": "6cFFy4PzZcxjpsH0eiGGOce5CUMxBNYcEWjuqoeE+FU=",
+        "matchId": "01dd1170be424ef082b9b81e4681d6bc",
+        "phase": 3,
+        "outcome": 6
+      }
+    },
+    "code5-max-clamped-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "22ee0bd764ce2acc0ca6e1f05b81b77758ac0ebbc449878d9f681271b6cafa31",
+        "payloadSha256": "489356805ff27e375cc46e03aed904151cc43480e4619db546e23cdbc3d96ca8",
+        "checksum": "SJNWgF/yfjdcxG4DrtkEFRzENIDkYZ21RuI828PZbKg=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "de9b04b718520d2f4eb9ce3c44cd8c843215c43fa3ce4ee3b1729bb7da89227a",
+        "payloadSha256": "fe490c8bad9575b3fe98e8f92462412f746eee3f9a3c0c0d371455fb57d5d57b",
+        "checksum": "/kkMi62VdbP+mOj5JGJBL3Ru7j+aPAwNNxRV+1fV1Xs=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      }
+    },
+    "code5-max-end-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "d87ae1080b3ab1a1e5827e3f13cec6b0e59aa261d2c061408f3dbcb934587254",
+        "payloadSha256": "9e7d7500ec5e3a1d90979066e7fc44b1c89e24b0a0c1063876c6225f5a028ae0",
+        "checksum": "nn11AOxeOh2Ql5Bm5/xEscieJLCgwQY4dsYiX1oCiuA=",
+        "matchId": null,
+        "phase": null,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 5,
+        "sha256": "f0217f9887bad1f185b610fbbdcd918dd7d0f3b69623c1c8fea1b61e16ee04e4",
+        "payloadSha256": "55d631cd594cd7c5a1af773853bfbff3379ff4a30bde418e348e430bc4d70297",
+        "checksum": "VdYxzVlM18Whr3c4U7+/8zef9KML3kGONI5DC8TXApc=",
+        "matchId": "802267b52cde4b8d8d40fbc29897fb8c",
+        "phase": 0,
+        "outcome": null
+      }
+    },
+    "../android-16kb-probe/final-long-word-state": {
+      "session.json": {
+        "version": 4,
+        "sha256": "f1589d992239c3c9d34f24866d122417f18b0f26985fe6d23a6240f8e8f7bc0a",
+        "payloadSha256": "a08988a31ec7767953d662788bdf3e13a1beefc37114bae37fbd5b4171900ff5",
+        "checksum": "oImIox7HdnlT1mJ4i98+E6G+78NxFLrjf71bQXGQD/U=",
+        "matchId": "b7203215ad014899bfda2147685f8ddd",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "bcd07d9c71791a7d7119b625486ddee28fbac955a4feb5a58f51b69923a5ca94",
+        "payloadSha256": "57c18d93bf513559445159d067e08e764c75352cd799b0be7c010502d7c664a8",
+        "checksum": "V8GNk79RNVlEUVnQZ+COdkx1NSzXmbC+fAEFAtfGZKg=",
+        "matchId": "b7203215ad014899bfda2147685f8ddd",
+        "phase": 0,
+        "outcome": null
+      }
+    },
+    "code5-old-classic-before-resume-state": {
+      "session.json": {
+        "version": 4,
+        "sha256": "f1589d992239c3c9d34f24866d122417f18b0f26985fe6d23a6240f8e8f7bc0a",
+        "payloadSha256": "a08988a31ec7767953d662788bdf3e13a1beefc37114bae37fbd5b4171900ff5",
+        "checksum": "oImIox7HdnlT1mJ4i98+E6G+78NxFLrjf71bQXGQD/U=",
+        "matchId": "b7203215ad014899bfda2147685f8ddd",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "bcd07d9c71791a7d7119b625486ddee28fbac955a4feb5a58f51b69923a5ca94",
+        "payloadSha256": "57c18d93bf513559445159d067e08e764c75352cd799b0be7c010502d7c664a8",
+        "checksum": "V8GNk79RNVlEUVnQZ+COdkx1NSzXmbC+fAEFAtfGZKg=",
+        "matchId": "b7203215ad014899bfda2147685f8ddd",
+        "phase": 0,
+        "outcome": null
+      }
+    },
+    "code5-old-classic-after-advance-state": {
+      "session.json": {
+        "version": 5,
+        "sha256": "715654a61c5b305159ce95861345345c8a0fb6e51a4e01601900c5b7c754720d",
+        "payloadSha256": "a1582e5e3a6ff1c0b3ccf4613bfc057a616c8c0575094beb451265a279fc954c",
+        "checksum": "oVguXjpv8cCzzPRhO/wFemFsjAV1CUvrRRJlonn8lUw=",
+        "matchId": "b7203215ad014899bfda2147685f8ddd",
+        "phase": 0,
+        "outcome": null
+      },
+      "session.previous.json": {
+        "version": 4,
+        "sha256": "f1589d992239c3c9d34f24866d122417f18b0f26985fe6d23a6240f8e8f7bc0a",
+        "payloadSha256": "a08988a31ec7767953d662788bdf3e13a1beefc37114bae37fbd5b4171900ff5",
+        "checksum": "oImIox7HdnlT1mJ4i98+E6G+78NxFLrjf71bQXGQD/U=",
+        "matchId": "b7203215ad014899bfda2147685f8ddd",
+        "phase": 0,
+        "outcome": null
+      }
+    }
+  },
+  "inputs": {
+    "work/android-16kb-probe/final-long-word-state/manifest.json": {
+      "sha256": "ba4de19ff7fc2309b7eec9ab2971ca0004af8b7689ca614da7d1a68b17a99ea1",
+      "bytes": 2320
+    },
+    "work/android-16kb-probe/final-long-word-state/session.json": {
+      "sha256": "f1589d992239c3c9d34f24866d122417f18b0f26985fe6d23a6240f8e8f7bc0a",
+      "bytes": 12270
+    },
+    "work/android-16kb-probe/final-long-word-state/session.previous.json": {
+      "sha256": "bcd07d9c71791a7d7119b625486ddee28fbac955a4feb5a58f51b69923a5ca94",
+      "bytes": 12270
+    },
+    "work/kings-implementation/native-double-tap-finding.md": {
+      "sha256": "1af5ad650ee906ae7e944c51a1077784ab73872e9762a7665eea80a4dc2737f9",
+      "bytes": 1886
+    },
+    "work/kings-native/actual-update-verified.json": {
+      "sha256": "0c478b178fe253a9d10743c3bd6ac48056304bb33a32acb1dc04a3f2e0576ee3",
+      "bytes": 1024
+    },
+    "work/kings-native/after-emulator-recovery-state/manifest.json": {
+      "sha256": "de1ee3fc0e8f130fe7f5dfc5dbeb021eb6c082deff4ec6cbaae696953acadc28",
+      "bytes": 887
+    },
+    "work/kings-native/after-emulator-recovery-state/session.json": {
+      "sha256": "3ff7fa22cb08b7312230ecee1cd4740e6fa6f885fb16681982002294324fd4e7",
+      "bytes": 11188
+    },
+    "work/kings-native/after-emulator-recovery-state/session.previous.json": {
+      "sha256": "61606c587b8e527e5179577609e64bc3f40dcb16ccdd7be1db198600e7711979",
+      "bytes": 11188
+    },
+    "work/kings-native/before-emulator-recovery-state/manifest.json": {
+      "sha256": "04a3950e931b16202339be954643fe9a56ddceb8f1a367840f44a65a2323b062",
+      "bytes": 840
+    },
+    "work/kings-native/before-emulator-recovery-state/session.json": {
+      "sha256": "3ff7fa22cb08b7312230ecee1cd4740e6fa6f885fb16681982002294324fd4e7",
+      "bytes": 11188
+    },
+    "work/kings-native/before-emulator-recovery-state/session.previous.json": {
+      "sha256": "61606c587b8e527e5179577609e64bc3f40dcb16ccdd7be1db198600e7711979",
+      "bytes": 11188
+    },
+    "work/kings-native/code4-immediately-before-install-state/manifest.json": {
+      "sha256": "592378c18bd127a278f4e16ad5a111fc8e9da1c0dee4ee830c76ad6df772af46",
+      "bytes": 1743
+    },
+    "work/kings-native/code4-immediately-before-install-state/session.json": {
+      "sha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+      "bytes": 11802
+    },
+    "work/kings-native/code4-immediately-before-install-state/session.previous.json": {
+      "sha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+      "bytes": 11802
+    },
+    "work/kings-native/code5-after-install-before-launch-state/manifest.json": {
+      "sha256": "a771f05f60ed55999864f2f985a1e40314ec5b5516c7f24898468fa9ee05bb0b",
+      "bytes": 1739
+    },
+    "work/kings-native/code5-after-install-before-launch-state/session.json": {
+      "sha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+      "bytes": 11802
+    },
+    "work/kings-native/code5-after-install-before-launch-state/session.previous.json": {
+      "sha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+      "bytes": 11802
+    },
+    "work/kings-native/code5-before-first-kings-restart-state/manifest.json": {
+      "sha256": "75c01def10154beaa13af4c65a332b52cb3d324fb5b86420cd0f25cfa0151373",
+      "bytes": 2426
+    },
+    "work/kings-native/code5-before-first-kings-restart-state/session.json": {
+      "sha256": "2eee12cd7cd4c45250091e7d3133d99fc234781e3821c3e87a74c530c5a24270",
+      "bytes": 12383
+    },
+    "work/kings-native/code5-before-first-kings-restart-state/session.previous.json": {
+      "sha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+      "bytes": 11495
+    },
+    "work/kings-native/code5-de-evil-max-header-held-tree.json": {
+      "sha256": "b927373a305991e784d27b897464e0aff1d78bcf229470f3ff295115c91e8d55",
+      "bytes": 8621
+    },
+    "work/kings-native/code5-de-evil-max-header-released-tree.json": {
+      "sha256": "d084d8eac4ef2248c018c9edd84e5e7640f9edfba9261e66b760a30b6fd07ea7",
+      "bytes": 8620
+    },
+    "work/kings-native/code5-de-evil-max-replay/manifest.json": {
+      "sha256": "3b1bcd4f535907bf578bff9e959b04e64357e7c6f4e61cb971adce77081ee37a",
+      "bytes": 1113
+    },
+    "work/kings-native/code5-de-good-max-log.json": {
+      "sha256": "ca03093a549c919c427a76d3e10304d6cdfce8a71ba1518cdb275e53533a4a98",
+      "bytes": 388
+    },
+    "work/kings-native/code5-de-good-max-log.txt": {
+      "sha256": "1716b0f7a26c8fa4f4ddfa81a1600e779aa173c13b74817573286db2f006b8cf",
+      "bytes": 11875
+    },
+    "work/kings-native/code5-de-good-talkback-private-held-tree.json": {
+      "sha256": "731f38a1cdb1610bb1752a64ca22f7757321bfa97a2da5a7d91a47ac4732033b",
+      "bytes": 8623
+    },
+    "work/kings-native/code5-de-good-talkback-private-released-tree.json": {
+      "sha256": "e994cde08797e970f4ef3931d2bfbf57a42b7b195b63b9b83c3edec98787f3d8",
+      "bytes": 8622
+    },
+    "work/kings-native/code5-en-evil-max-header-held-tree.json": {
+      "sha256": "c7f602070b1e9f03e271da45b684eb82b85c9c86661a570c811d09d820f8469d",
+      "bytes": 8562
+    },
+    "work/kings-native/code5-en-evil-max-header-released-tree.json": {
+      "sha256": "01df6d051c6c16fae13f550f8929cbe2fcad2ab5a2560dff129f431fca72d7e0",
+      "bytes": 8561
+    },
+    "work/kings-native/code5-en-evil-max-replay/manifest.json": {
+      "sha256": "35eb671ab5ea837eeddcbe4c11d8717b4dbdb7a0709d0d0ef2ed3ffe0f54c30a",
+      "bytes": 1114
+    },
+    "work/kings-native/code5-en-good-max-header-held-tree.json": {
+      "sha256": "cdf55be2d246914deb761e10e57b95354cf04773fc2c64ca540a98c1a0d068ae",
+      "bytes": 8564
+    },
+    "work/kings-native/code5-en-good-max-header-released-tree.json": {
+      "sha256": "a5768b6877930e3c2519655d5025f7e2b968d2291f042c61c7a5ce91a00401a5",
+      "bytes": 8563
+    },
+    "work/kings-native/code5-en-good-max-replay/manifest.json": {
+      "sha256": "a901c8bc6cb433eaf5cd01f44cd4432beb2e56e313a85dd7612c00d81d088860",
+      "bytes": 1114
+    },
+    "work/kings-native/code5-first-advanced-state/manifest.json": {
+      "sha256": "c2df895c6181e0f9e815be2a6d459ea2bc339ae4edd29c5261b2e14307bba5cd",
+      "bytes": 1726
+    },
+    "work/kings-native/code5-first-advanced-state/session.json": {
+      "sha256": "8713ca7e99e841efae8d609d2ac2679935ce40723703f582efd1ce4de4f00a67",
+      "bytes": 11883
+    },
+    "work/kings-native/code5-first-advanced-state/session.previous.json": {
+      "sha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+      "bytes": 11802
+    },
+    "work/kings-native/code5-game1-result-state/manifest.json": {
+      "sha256": "cf484cfaf0c559b93dc919eef443dab6b1cd3e52467284fd8dff4172de8da533",
+      "bytes": 2438
+    },
+    "work/kings-native/code5-game1-result-state/session.json": {
+      "sha256": "cf16d7817a4afd1a4a4c64830ffe4293e9f931d28d324c1778ccd86f226a2aa7",
+      "bytes": 12405
+    },
+    "work/kings-native/code5-game1-result-state/session.previous.json": {
+      "sha256": "9153d5cdab17d839809a6c75e64b2a4e6fcb7ea3701e1b8a92386b2b65c92155",
+      "bytes": 12410
+    },
+    "work/kings-native/code5-game2-deal-state/manifest.json": {
+      "sha256": "1fb10647d6e4526732af514a9405cdb82eebc90db3aad337a6517ca0ea372202",
+      "bytes": 2436
+    },
+    "work/kings-native/code5-game2-deal-state/session.json": {
+      "sha256": "cf16d7817a4afd1a4a4c64830ffe4293e9f931d28d324c1778ccd86f226a2aa7",
+      "bytes": 12405
+    },
+    "work/kings-native/code5-game2-deal-state/session.previous.json": {
+      "sha256": "9153d5cdab17d839809a6c75e64b2a4e6fcb7ea3701e1b8a92386b2b65c92155",
+      "bytes": 12410
+    },
+    "work/kings-native/code5-game2-result-state/manifest.json": {
+      "sha256": "4298157c90caa998a0d7c2928b8797fbea4ebdecad6a5a686ed0d19aa6626f54",
+      "bytes": 2462
+    },
+    "work/kings-native/code5-game2-result-state/session.json": {
+      "sha256": "632fc8b55fce26e9a6b99fbd999a87c419a39ec07700a21cfac6aa2bd18e62bd",
+      "bytes": 12431
+    },
+    "work/kings-native/code5-game2-result-state/session.previous.json": {
+      "sha256": "2732d46dbda2e0bb092030f8463609f9ed840f9a988153f1796d62593cce6c49",
+      "bytes": 12435
+    },
+    "work/kings-native/code5-game3-answer-lock.json": {
+      "sha256": "07248479a41fc5f528b7676f04b73d695168eea3e2566a0cea358ef49eec6a84",
+      "bytes": 957
+    },
+    "work/kings-native/code5-game3-branch-lock.json": {
+      "sha256": "7dda4f61c917f70c9318dc0f6b21947af879abd56c8af32aebcb2b414a70335a",
+      "bytes": 959
+    },
+    "work/kings-native/code5-game3-deal-state/manifest.json": {
+      "sha256": "1ac66ed5e0fbb0686a810427202f71d1fc79e44860fde18702e92d3fab5bd88c",
+      "bytes": 2464
+    },
+    "work/kings-native/code5-game3-deal-state/session.json": {
+      "sha256": "4a1cc0fec3e5b9ad28555b6cc19e6397b0b95da488ed8f5db4298595c626f10a",
+      "bytes": 12429
+    },
+    "work/kings-native/code5-game3-deal-state/session.previous.json": {
+      "sha256": "632fc8b55fce26e9a6b99fbd999a87c419a39ec07700a21cfac6aa2bd18e62bd",
+      "bytes": 12431
+    },
+    "work/kings-native/code5-game3-judgment-resumed-state/manifest.json": {
+      "sha256": "95d5656ae5432929bcb2b017b4411c054c25e544f4bc0bbb381506bc3925084c",
+      "bytes": 2506
+    },
+    "work/kings-native/code5-game3-judgment-resumed-state/session.json": {
+      "sha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+      "bytes": 12461
+    },
+    "work/kings-native/code5-game3-judgment-resumed-state/session.previous.json": {
+      "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+      "bytes": 12460
+    },
+    "work/kings-native/code5-game3-judgment-state/manifest.json": {
+      "sha256": "2d91d5dfbae1aa7f053075a0991a9fbfc9930c44d4339714ae3844e31524ab5a",
+      "bytes": 2498
+    },
+    "work/kings-native/code5-game3-judgment-state/session.json": {
+      "sha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+      "bytes": 12461
+    },
+    "work/kings-native/code5-game3-judgment-state/session.previous.json": {
+      "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+      "bytes": 12460
+    },
+    "work/kings-native/code5-game3-result-state/manifest.json": {
+      "sha256": "7134e0b4b9c0684509e26780bd1d1cb860d48c0579c42699c190af17a7ce9544",
+      "bytes": 2496
+    },
+    "work/kings-native/code5-game3-result-state/session.json": {
+      "sha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+      "bytes": 12461
+    },
+    "work/kings-native/code5-game3-result-state/session.previous.json": {
+      "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+      "bytes": 12460
+    },
+    "work/kings-native/code5-game3-terminal-state/manifest.json": {
+      "sha256": "65eea9260d380a8ecd4224d2fdf42357da1a84e793f5152457ae7579c74641ec",
+      "bytes": 2494
+    },
+    "work/kings-native/code5-game3-terminal-state/session.json": {
+      "sha256": "69f4e9ee0bb561a3ebe879578be6e0161b7c57eba8fbd776c73bbcf18802f6d5",
+      "bytes": 12457
+    },
+    "work/kings-native/code5-game3-terminal-state/session.previous.json": {
+      "sha256": "8f6d44dceb80aba2e2f83a554c6f5c2f292e726b276f4a3ae345ce34443bc80a",
+      "bytes": 12461
+    },
+    "work/kings-native/code5-game3-word-committed-state/manifest.json": {
+      "sha256": "28f9b4eddb8524507cec6eb974c7c4636fd4b38b5f66e30abdf11bc6774213a9",
+      "bytes": 2503
+    },
+    "work/kings-native/code5-game3-word-committed-state/session.json": {
+      "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+      "bytes": 12460
+    },
+    "work/kings-native/code5-game3-word-committed-state/session.previous.json": {
+      "sha256": "8152c3d78363a2e84c618b1c3af172ffb3253ac970197153216bbb718341716d",
+      "bytes": 12460
+    },
+    "work/kings-native/code5-game3-word-resumed-state/manifest.json": {
+      "sha256": "364409a897f4ea68234db46ad55b58cdbc1e03424012cbf3e3319cc55c73a44c",
+      "bytes": 2501
+    },
+    "work/kings-native/code5-game3-word-resumed-state/session.json": {
+      "sha256": "5b22c0489ec6c4b88d722f11034d052d777dc85829286021b4759b88cb1fe46a",
+      "bytes": 12460
+    },
+    "work/kings-native/code5-game3-word-resumed-state/session.previous.json": {
+      "sha256": "8152c3d78363a2e84c618b1c3af172ffb3253ac970197153216bbb718341716d",
+      "bytes": 12460
+    },
+    "work/kings-native/code5-game4-deal-state/manifest.json": {
+      "sha256": "cfeae3268eeeb4ac318c7bf99cb3d3b70bde6a897e912a179ba40fbe258be187",
+      "bytes": 2485
+    },
+    "work/kings-native/code5-game4-deal-state/session.json": {
+      "sha256": "5876e9b98d78b1218c28dd32ceebb1e95d3c11cc5fdc1b842b2a6b9e23a75d31",
+      "bytes": 12446
+    },
+    "work/kings-native/code5-game4-deal-state/session.previous.json": {
+      "sha256": "69f4e9ee0bb561a3ebe879578be6e0161b7c57eba8fbd776c73bbcf18802f6d5",
+      "bytes": 12457
+    },
+    "work/kings-native/code5-game4-result-state/manifest.json": {
+      "sha256": "14d8b2adcf3cc0285a1f5325a368f985073e100da3e25e77cc8d5b467efb8c64",
+      "bytes": 2512
+    },
+    "work/kings-native/code5-game4-result-state/session.json": {
+      "sha256": "4fb62818d325a96a54151b1b946a32967978b58887d7589a9afc8196f57285aa",
+      "bytes": 12473
+    },
+    "work/kings-native/code5-game4-result-state/session.previous.json": {
+      "sha256": "d23a98384380a4cb3475300a3afcd320e73b582251e59856243e49ba54a0f414",
+      "bytes": 12477
+    },
+    "work/kings-native/code5-game5-deal-state/manifest.json": {
+      "sha256": "4fd4333b89cebd669cfeace9b0a5cd4e8372774f8d8551670e198f740dec6daa",
+      "bytes": 2510
+    },
+    "work/kings-native/code5-game5-deal-state/session.json": {
+      "sha256": "32921e1facbf4b4a9e124dba607f168c4fab47e364d12f88b99cb06a7aba7d59",
+      "bytes": 12467
+    },
+    "work/kings-native/code5-game5-deal-state/session.previous.json": {
+      "sha256": "4fb62818d325a96a54151b1b946a32967978b58887d7589a9afc8196f57285aa",
+      "bytes": 12473
+    },
+    "work/kings-native/code5-game5-result-state/manifest.json": {
+      "sha256": "318d716dfb010d4ad98259cfc87b8712e06b289045cbf04caa97cd284219a7f0",
+      "bytes": 2569
+    },
+    "work/kings-native/code5-game5-result-state/session.json": {
+      "sha256": "1912463baa46723795a30c911d5eab16ff50ca06ed0ef4b0f4f6e4ef61893d40",
+      "bytes": 12528
+    },
+    "work/kings-native/code5-game5-result-state/session.previous.json": {
+      "sha256": "5bdbcba127c019930fcd677e5611b0e972e9feabe8c65859239a40aac873e1fc",
+      "bytes": 12531
+    },
+    "work/kings-native/code5-game5-target-pending-state/manifest.json": {
+      "sha256": "05b34801d7ffb190d27c53edea3f7753faf664cd57173c62fefdd3816107a670",
+      "bytes": 2580
+    },
+    "work/kings-native/code5-game5-target-pending-state/session.json": {
+      "sha256": "d3de19119eaa5e91f4f2c34dae3fff076664f1f45cf79dafbb38dac7c624605b",
+      "bytes": 12531
+    },
+    "work/kings-native/code5-game5-target-pending-state/session.previous.json": {
+      "sha256": "1ca8577d3e1756694ad1c5697a88bd8ffafbc589f708d7ac8d0b74d5ee00967e",
+      "bytes": 12499
+    },
+    "work/kings-native/code5-game5-target-persistence.json": {
+      "sha256": "13d979ab839065f217bce8c3cc79798820bb75855c672fdade8437ba7bb58807",
+      "bytes": 961
+    },
+    "work/kings-native/code5-game5-target-resumed-state/manifest.json": {
+      "sha256": "24399b474b3e9d1d09f977697b67128faca95fba159b5d4b88899d0458ea9b21",
+      "bytes": 2580
+    },
+    "work/kings-native/code5-game5-target-resumed-state/session.json": {
+      "sha256": "d3de19119eaa5e91f4f2c34dae3fff076664f1f45cf79dafbb38dac7c624605b",
+      "bytes": 12531
+    },
+    "work/kings-native/code5-game5-target-resumed-state/session.previous.json": {
+      "sha256": "1ca8577d3e1756694ad1c5697a88bd8ffafbc589f708d7ac8d0b74d5ee00967e",
+      "bytes": 12499
+    },
+    "work/kings-native/code5-game6-deal-state/manifest.json": {
+      "sha256": "97cedec593e797c7aecf4b49a77dca70925e29ae15081ec11d8c558e12e996d0",
+      "bytes": 2554
+    },
+    "work/kings-native/code5-game6-deal-state/session.json": {
+      "sha256": "341fa93818984fa9373cdec09f28865300cda9f10a2483f024f86ae34f1ebb83",
+      "bytes": 12507
+    },
+    "work/kings-native/code5-game6-deal-state/session.previous.json": {
+      "sha256": "1912463baa46723795a30c911d5eab16ff50ca06ed0ef4b0f4f6e4ef61893d40",
+      "bytes": 12528
+    },
+    "work/kings-native/code5-game6-result-state/manifest.json": {
+      "sha256": "ad73e55cfeb3753fdbbfd9cbbd17797c10725ba49393858fc2d071b3e6af029c",
+      "bytes": 2612
+    },
+    "work/kings-native/code5-game6-result-state/session.json": {
+      "sha256": "48f7687b54f668bdafb1532e296393fb1fc67856387d203c9747a5d7b165f38c",
+      "bytes": 12567
+    },
+    "work/kings-native/code5-game6-result-state/session.previous.json": {
+      "sha256": "ce993504e8e6474d6449dba8c41203446195a42194a9d4717fa8e905e1f6190e",
+      "bytes": 12570
+    },
+    "work/kings-native/code5-game7-deal-state/manifest.json": {
+      "sha256": "46ef798205e436bccf271ad313d2051ddb5e5690711cfe1a29dff0cc7ecd8403",
+      "bytes": 2572
+    },
+    "work/kings-native/code5-game7-deal-state/session.json": {
+      "sha256": "c75415dbfed1ff920abb0f0e7c160998ba94a58c8ead12e443920003d80ed403",
+      "bytes": 12497
+    },
+    "work/kings-native/code5-game7-deal-state/session.previous.json": {
+      "sha256": "48f7687b54f668bdafb1532e296393fb1fc67856387d203c9747a5d7b165f38c",
+      "bytes": 12567
+    },
+    "work/kings-native/code5-game7-result-state/manifest.json": {
+      "sha256": "e699f967ca85595a6815cf8e8ad330bcfe641eadd98791eecc4ee44b126ad49d",
+      "bytes": 2600
+    },
+    "work/kings-native/code5-game7-result-state/session.json": {
+      "sha256": "3c1466fe52e773f95c73e3289b1a31a62ab9dfef06394894d2be3d91ca28d667",
+      "bytes": 12525
+    },
+    "work/kings-native/code5-game7-result-state/session.previous.json": {
+      "sha256": "0b2ffc27bc5cc405518716f6523458e67a2dabb31b406e27fd1202a536e4932e",
+      "bytes": 12529
+    },
+    "work/kings-native/code5-german-good-max-replay/manifest.json": {
+      "sha256": "17c7d56c42426381edacbd62802bc950b8c5345217733de901e82bc7332f6c8f",
+      "bytes": 1117
+    },
+    "work/kings-native/code5-group-after-seven-games-state/manifest.json": {
+      "sha256": "8bf5264cba9e9a7abf09d6e42e9c28af97eccca463bf67d8e88809b80ff8d258",
+      "bytes": 1377
+    },
+    "work/kings-native/code5-group-after-seven-games-state/session.json": {
+      "sha256": "22681667fd810242f4c322dfc073da911dc80b39eaa43dd8f1183530585637a0",
+      "bytes": 11609
+    },
+    "work/kings-native/code5-group-after-seven-games-state/session.previous.json": {
+      "sha256": "3c1466fe52e773f95c73e3289b1a31a62ab9dfef06394894d2be3d91ca28d667",
+      "bytes": 12525
+    },
+    "work/kings-native/code5-group-return-repro-0.json": {
+      "sha256": "03f43b9f90335ddb1c0d47cfa11fa64f9f59601affde2dcfa010292dbe5e09cf",
+      "bytes": 31695
+    },
+    "work/kings-native/code5-group-return-repro-1.json": {
+      "sha256": "0b7f360217a973cf218682af310ab7532ddb3eb8a97fc37b9e0ca77e9cccf11d",
+      "bytes": 31679
+    },
+    "work/kings-native/code5-group-return-repro-2.json": {
+      "sha256": "ea5bfb316d6cfdef4ac4603683208e0abd62ff37f64c404dfc92cc05c93bf646",
+      "bytes": 31682
+    },
+    "work/kings-native/code5-install.txt": {
+      "sha256": "c4aa470acafcf8576c15b0f0b5ae7e852d1ec5413372d0e6a9272e788e1306d3",
+      "bytes": 38
+    },
+    "work/kings-native/code5-kings-five-group-state/manifest.json": {
+      "sha256": "044c5872758a09db02ffbe14c89d6504a9523a2e010de0f834d509777fc95fb5",
+      "bytes": 1203
+    },
+    "work/kings-native/code5-kings-five-group-state/session.json": {
+      "sha256": "0c79d7c453c7cfcab19b3a84058f2e5873e65fdc796c73a494d0513fd788e8ed",
+      "bytes": 11494
+    },
+    "work/kings-native/code5-kings-five-group-state/session.previous.json": {
+      "sha256": "550417a14533f00e6817601d0ac70185aee57e6998e40f6334fedc6cc073997e",
+      "bytes": 11376
+    },
+    "work/kings-native/code5-kings-game1-deal-state/manifest.json": {
+      "sha256": "57f82e7cb839c918d70c6c4ace25f939f184cd40a4a31f157dadcee3f94ff810",
+      "bytes": 2416
+    },
+    "work/kings-native/code5-kings-game1-deal-state/session.json": {
+      "sha256": "2eee12cd7cd4c45250091e7d3133d99fc234781e3821c3e87a74c530c5a24270",
+      "bytes": 12383
+    },
+    "work/kings-native/code5-kings-game1-deal-state/session.previous.json": {
+      "sha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+      "bytes": 11495
+    },
+    "work/kings-native/code5-max-clamped-state/manifest.json": {
+      "sha256": "41a5995f9c044cc2caa2d6b418af2818dbf4075fbd62f0bdebfad5f22c2c568a",
+      "bytes": 3837
+    },
+    "work/kings-native/code5-max-clamped-state/session.json": {
+      "sha256": "22ee0bd764ce2acc0ca6e1f05b81b77758ac0ebbc449878d9f681271b6cafa31",
+      "bytes": 13498
+    },
+    "work/kings-native/code5-max-clamped-state/session.previous.json": {
+      "sha256": "de9b04b718520d2f4eb9ce3c44cd8c843215c43fa3ce4ee3b1729bb7da89227a",
+      "bytes": 13497
+    },
+    "work/kings-native/code5-max-end-log.json": {
+      "sha256": "4771f535c296060fd862f453ff631465cc831eadb165943031af08adc962d9b5",
+      "bytes": 194
+    },
+    "work/kings-native/code5-max-end-log.txt": {
+      "sha256": "0594305fc63f72b0a8907a03438a112f1c918b4ff8a3f690c49e2119f9f51445",
+      "bytes": 17124
+    },
+    "work/kings-native/code5-max-end-state/manifest.json": {
+      "sha256": "d1cab62e5eaf3acebad1b963b713b1387befcdc9ef5b5cfdb24bfbb37b6650c0",
+      "bytes": 3862
+    },
+    "work/kings-native/code5-max-end-state/session.json": {
+      "sha256": "d87ae1080b3ab1a1e5827e3f13cec6b0e59aa261d2c061408f3dbcb934587254",
+      "bytes": 13523
+    },
+    "work/kings-native/code5-max-end-state/session.previous.json": {
+      "sha256": "f0217f9887bad1f185b610fbbdcd918dd7d0f3b69623c1c8fea1b61e16ee04e4",
+      "bytes": 16011
+    },
+    "work/kings-native/code5-migrated-advance.json": {
+      "sha256": "2b7b2f1611b07bc87d980c1c5470afd700e709bf6e22b6c8d79e836f796ab796",
+      "bytes": 424
+    },
+    "work/kings-native/code5-old-classic-after-advance-state/manifest.json": {
+      "sha256": "f3e5012fea34ac06f6ee1747df3dfd15dede71938597a54ab295e60fbb6b6eed",
+      "bytes": 2392
+    },
+    "work/kings-native/code5-old-classic-after-advance-state/session.json": {
+      "sha256": "715654a61c5b305159ce95861345345c8a0fb6e51a4e01601900c5b7c754720d",
+      "bytes": 12351
+    },
+    "work/kings-native/code5-old-classic-after-advance-state/session.previous.json": {
+      "sha256": "f1589d992239c3c9d34f24866d122417f18b0f26985fe6d23a6240f8e8f7bc0a",
+      "bytes": 12270
+    },
+    "work/kings-native/code5-old-classic-before-resume-state/manifest.json": {
+      "sha256": "ad892299c39144d7c687c129f84c66cc848a602e396fbdb54fba04a1485f5e24",
+      "bytes": 2336
+    },
+    "work/kings-native/code5-old-classic-before-resume-state/session.json": {
+      "sha256": "f1589d992239c3c9d34f24866d122417f18b0f26985fe6d23a6240f8e8f7bc0a",
+      "bytes": 12270
+    },
+    "work/kings-native/code5-old-classic-before-resume-state/session.previous.json": {
+      "sha256": "bcd07d9c71791a7d7119b625486ddee28fbac955a4feb5a58f51b69923a5ca94",
+      "bytes": 12270
+    },
+    "work/kings-native/code5-renamed-group-state/manifest.json": {
+      "sha256": "e3dc1403318c0fc6f5b25d1a493b6d2fcfa2bf464d876a2508764f63b7006d9a",
+      "bytes": 1201
+    },
+    "work/kings-native/code5-renamed-group-state/session.json": {
+      "sha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+      "bytes": 11495
+    },
+    "work/kings-native/code5-renamed-group-state/session.previous.json": {
+      "sha256": "0c79d7c453c7cfcab19b3a84058f2e5873e65fdc796c73a494d0513fd788e8ed",
+      "bytes": 11494
+    },
+    "work/kings-native/code5-resumed-old-match-state/manifest.json": {
+      "sha256": "d065d1274f65262aa531244b3cf88982815c2acc19e2021aaecb93f5cc3dc57b",
+      "bytes": 1729
+    },
+    "work/kings-native/code5-resumed-old-match-state/session.json": {
+      "sha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+      "bytes": 11802
+    },
+    "work/kings-native/code5-resumed-old-match-state/session.previous.json": {
+      "sha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+      "bytes": 11802
+    },
+    "work/kings-native/code5-unfinished-nora-restored-comparison.json": {
+      "sha256": "4600072dea33c6f77a7e6e0dc040a205caf44c7f29258a248119a004c5712f34",
+      "bytes": 971
+    },
+    "work/kings-native/code5-unfinished-nora-restored-state/manifest.json": {
+      "sha256": "f8f2bc5ba27beeb3eb61b8a8c52eb19dae1cf82dc96bcc415b6c5b12f56de83b",
+      "bytes": 2424
+    },
+    "work/kings-native/code5-unfinished-nora-restored-state/session.json": {
+      "sha256": "2eee12cd7cd4c45250091e7d3133d99fc234781e3821c3e87a74c530c5a24270",
+      "bytes": 12383
+    },
+    "work/kings-native/code5-unfinished-nora-restored-state/session.previous.json": {
+      "sha256": "6918224e756ee90aa77902754e9a72ca81109d1270574e370b39e9fe39ba2ac1",
+      "bytes": 11495
+    },
+    "work/kings-native/code5-update-bytes.json": {
+      "sha256": "b84d85dc103fe369ba57dbfa4b61589f5e60aab1e4e5edaf62d052351d1c0d27",
+      "bytes": 974
+    },
+    "work/kings-native/observations-code5.md": {
+      "sha256": "aa839c3ca7fdf6be1ce722ef4bb3f90fb0bbfb836ec0cfffa06e8a94eb9c58bb",
+      "bytes": 8873
+    },
+    "work/kings-native/session-fixtures/English-EvilKing/session.json": {
+      "sha256": "600cb367e5d8f7d36d6c9b5c6b98ddc9cbc925b80e8217d50e9b650e3571b356",
+      "bytes": 16238
+    },
+    "work/kings-native/session-fixtures/English-GoodKing/session.json": {
+      "sha256": "430ed95a32659c09b4a6ae091c5a2f81a11ac4df994c02b7e118ad703fd4974d",
+      "bytes": 16238
+    },
+    "work/kings-native/session-fixtures/German-EvilKing/session.json": {
+      "sha256": "beca8d6d0065cfa725eee56330fca7b485da3be864bccd3f338aa2d8e761dd07",
+      "bytes": 16242
+    },
+    "work/kings-native/session-fixtures/German-GoodKing/session.json": {
+      "sha256": "72fce8b61364814443bfba83690c922cb89236e695dc99c379101866be16d25e",
+      "bytes": 16242
+    },
+    "work/kings-native/session-fixtures/manifest.json": {
+      "sha256": "b7a7610647f87d558164cb0daefd8a7d2335b6462404bcb2facf9462291c9ba9",
+      "bytes": 18241
+    }
+  },
+  "checks": [
+    {
+      "name": "update provenance pins code4 -> code5",
+      "pass": true
+    },
+    {
+      "name": "preserved installation output reports success",
+      "pass": true
+    },
+    {
+      "name": "code4-immediately-before-install-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code4-immediately-before-install-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code4-immediately-before-install-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code4-immediately-before-install-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code4-immediately-before-install-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-after-install-before-launch-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-after-install-before-launch-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-after-install-before-launch-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-after-install-before-launch-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-after-install-before-launch-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-update-bytes.json: session.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-update-bytes.json: session.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-update-bytes.json: session.previous.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-update-bytes.json: session.previous.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-before-first-kings-restart-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-before-first-kings-restart-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-before-first-kings-restart-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-before-first-kings-restart-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-before-first-kings-restart-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-comparison.json: session.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-comparison.json: session.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-comparison.json: session.previous.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-unfinished-nora-restored-comparison.json: session.previous.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-committed-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-committed-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-committed-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-committed-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-committed-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-resumed-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-resumed-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-resumed-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-resumed-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-word-resumed-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-branch-lock.json: session.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-branch-lock.json: session.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-branch-lock.json: session.previous.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-branch-lock.json: session.previous.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-resumed-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-resumed-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-resumed-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-resumed-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-judgment-resumed-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-answer-lock.json: session.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-answer-lock.json: session.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-answer-lock.json: session.previous.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-answer-lock.json: session.previous.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-pending-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-pending-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-pending-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-pending-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-pending-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-resumed-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-resumed-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-resumed-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-resumed-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-resumed-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-persistence.json: session.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-persistence.json: session.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-persistence.json: session.previous.json byte equality independently recomputed",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-target-persistence.json: session.previous.json recorded hashes and versions agree",
+      "pass": true
+    },
+    {
+      "name": "before-emulator-recovery-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "before-emulator-recovery-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "before-emulator-recovery-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "before-emulator-recovery-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "before-emulator-recovery-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "after-emulator-recovery-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "after-emulator-recovery-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "after-emulator-recovery-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "after-emulator-recovery-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "after-emulator-recovery-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "before-emulator-recovery-state -> after-emulator-recovery-state: session.json byte equality",
+      "pass": true
+    },
+    {
+      "name": "before-emulator-recovery-state -> after-emulator-recovery-state: session.previous.json byte equality",
+      "pass": true
+    },
+    {
+      "name": "code5-resumed-old-match-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-resumed-old-match-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-resumed-old-match-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-resumed-old-match-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-resumed-old-match-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code4-immediately-before-install-state -> code5-resumed-old-match-state: session.json byte equality",
+      "pass": true
+    },
+    {
+      "name": "code4-immediately-before-install-state -> code5-resumed-old-match-state: session.previous.json byte equality",
+      "pass": true
+    },
+    {
+      "name": "code5-first-advanced-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-first-advanced-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-first-advanced-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-first-advanced-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-first-advanced-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "first durable advance migrates V4 to V5; V4 primary becomes exact backup",
+      "pass": true
+    },
+    {
+      "name": "first durable advance changes only Handoff among legacy fields",
+      "pass": true,
+      "detail": [
+        "/Match/Handoff"
+      ]
+    },
+    {
+      "name": "migration record matches actual new primary",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-five-group-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-five-group-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-five-group-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-five-group-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-five-group-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-renamed-group-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-renamed-group-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-renamed-group-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-renamed-group-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-renamed-group-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "rename changes only fifth player Name",
+      "pass": true,
+      "detail": [
+        "/Players/4/Name"
+      ]
+    },
+    {
+      "name": "Jonas -> Jonas2 retains stable identity",
+      "pass": true
+    },
+    {
+      "name": "rename backup is exact unrenamed five-player primary",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-result-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-result-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-result-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-result-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-result-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game2: result phase and expected outcome",
+      "pass": true
+    },
+    {
+      "name": "game2: predecessor has same match and no outcome",
+      "pass": true
+    },
+    {
+      "name": "game2: expected predecessor phase",
+      "pass": true
+    },
+    {
+      "name": "game2: both generations retain exact roster",
+      "pass": true
+    },
+    {
+      "name": "game2: both generations retain participant order/IDs/names",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor Id",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor Mode",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor Language",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor PairId",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor Handoff",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor LastChanceTarget",
+      "pass": true
+    },
+    {
+      "name": "game2: terminal preserves predecessor history",
+      "pass": true
+    },
+    {
+      "name": "game2: exactly good King and White survive",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-deal-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-deal-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-deal-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-deal-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game2-deal-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game2: original deal preserves Id",
+      "pass": true
+    },
+    {
+      "name": "game2: original deal preserves Mode",
+      "pass": true
+    },
+    {
+      "name": "game2: original deal preserves Language",
+      "pass": true
+    },
+    {
+      "name": "game2: original deal preserves PairId",
+      "pass": true
+    },
+    {
+      "name": "game2: original deal preserves CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game2: original deal preserves UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game2: original deal preserves StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game2: original deal preserves GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game2: original assignment identities/names/roles preserved",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-terminal-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-terminal-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-terminal-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-terminal-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-terminal-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game3: result phase and expected outcome",
+      "pass": true
+    },
+    {
+      "name": "game3: predecessor has same match and no outcome",
+      "pass": true
+    },
+    {
+      "name": "game3: expected predecessor phase",
+      "pass": true
+    },
+    {
+      "name": "game3: both generations retain exact roster",
+      "pass": true
+    },
+    {
+      "name": "game3: both generations retain participant order/IDs/names",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor Id",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor Mode",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor Language",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor PairId",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor Handoff",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor LastChanceTarget",
+      "pass": true
+    },
+    {
+      "name": "game3: terminal preserves predecessor history",
+      "pass": true
+    },
+    {
+      "name": "game3: eliminated White owns last chance",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-deal-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-deal-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-deal-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-deal-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-deal-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game3: original deal preserves Id",
+      "pass": true
+    },
+    {
+      "name": "game3: original deal preserves Mode",
+      "pass": true
+    },
+    {
+      "name": "game3: original deal preserves Language",
+      "pass": true
+    },
+    {
+      "name": "game3: original deal preserves PairId",
+      "pass": true
+    },
+    {
+      "name": "game3: original deal preserves CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game3: original deal preserves UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game3: original deal preserves StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game3: original deal preserves GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game3: original assignment identities/names/roles preserved",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-result-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-result-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-result-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-result-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-result-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game4: result phase and expected outcome",
+      "pass": true
+    },
+    {
+      "name": "game4: predecessor has same match and no outcome",
+      "pass": true
+    },
+    {
+      "name": "game4: expected predecessor phase",
+      "pass": true
+    },
+    {
+      "name": "game4: both generations retain exact roster",
+      "pass": true
+    },
+    {
+      "name": "game4: both generations retain participant order/IDs/names",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor Id",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor Mode",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor Language",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor PairId",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor Handoff",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor LastChanceTarget",
+      "pass": true
+    },
+    {
+      "name": "game4: terminal preserves predecessor history",
+      "pass": true
+    },
+    {
+      "name": "game4: eliminated White owns last chance",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-deal-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-deal-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-deal-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-deal-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game4-deal-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game4: original deal preserves Id",
+      "pass": true
+    },
+    {
+      "name": "game4: original deal preserves Mode",
+      "pass": true
+    },
+    {
+      "name": "game4: original deal preserves Language",
+      "pass": true
+    },
+    {
+      "name": "game4: original deal preserves PairId",
+      "pass": true
+    },
+    {
+      "name": "game4: original deal preserves CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game4: original deal preserves UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game4: original deal preserves StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game4: original deal preserves GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game4: original assignment identities/names/roles preserved",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-result-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-result-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-result-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-result-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-result-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game5: result phase and expected outcome",
+      "pass": true
+    },
+    {
+      "name": "game5: predecessor has same match and no outcome",
+      "pass": true
+    },
+    {
+      "name": "game5: expected predecessor phase",
+      "pass": true
+    },
+    {
+      "name": "game5: both generations retain exact roster",
+      "pass": true
+    },
+    {
+      "name": "game5: both generations retain participant order/IDs/names",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor Id",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor Mode",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor Language",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor PairId",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor Handoff",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor LastChanceTarget",
+      "pass": true
+    },
+    {
+      "name": "game5: terminal preserves predecessor history",
+      "pass": true
+    },
+    {
+      "name": "game5: eliminated White owns last chance",
+      "pass": true
+    },
+    {
+      "name": "game5: King target comparison matches outcome",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-deal-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-deal-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-deal-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-deal-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game5-deal-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game5: original deal preserves Id",
+      "pass": true
+    },
+    {
+      "name": "game5: original deal preserves Mode",
+      "pass": true
+    },
+    {
+      "name": "game5: original deal preserves Language",
+      "pass": true
+    },
+    {
+      "name": "game5: original deal preserves PairId",
+      "pass": true
+    },
+    {
+      "name": "game5: original deal preserves CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game5: original deal preserves UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game5: original deal preserves StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game5: original deal preserves GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game5: original assignment identities/names/roles preserved",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-result-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-result-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-result-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-result-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-result-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game6: result phase and expected outcome",
+      "pass": true
+    },
+    {
+      "name": "game6: predecessor has same match and no outcome",
+      "pass": true
+    },
+    {
+      "name": "game6: expected predecessor phase",
+      "pass": true
+    },
+    {
+      "name": "game6: both generations retain exact roster",
+      "pass": true
+    },
+    {
+      "name": "game6: both generations retain participant order/IDs/names",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor Id",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor Mode",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor Language",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor PairId",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor Handoff",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor LastChanceTarget",
+      "pass": true
+    },
+    {
+      "name": "game6: terminal preserves predecessor history",
+      "pass": true
+    },
+    {
+      "name": "game6: eliminated White owns last chance",
+      "pass": true
+    },
+    {
+      "name": "game6: King target comparison matches outcome",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-deal-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-deal-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-deal-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-deal-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game6-deal-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game6: original deal preserves Id",
+      "pass": true
+    },
+    {
+      "name": "game6: original deal preserves Mode",
+      "pass": true
+    },
+    {
+      "name": "game6: original deal preserves Language",
+      "pass": true
+    },
+    {
+      "name": "game6: original deal preserves PairId",
+      "pass": true
+    },
+    {
+      "name": "game6: original deal preserves CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game6: original deal preserves UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game6: original deal preserves StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game6: original deal preserves GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game6: original assignment identities/names/roles preserved",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-result-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-result-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-result-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-result-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-result-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game7: result phase and expected outcome",
+      "pass": true
+    },
+    {
+      "name": "game7: predecessor has same match and no outcome",
+      "pass": true
+    },
+    {
+      "name": "game7: expected predecessor phase",
+      "pass": true
+    },
+    {
+      "name": "game7: both generations retain exact roster",
+      "pass": true
+    },
+    {
+      "name": "game7: both generations retain participant order/IDs/names",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor Id",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor Mode",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor Language",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor PairId",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor Handoff",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor LastChanceTarget",
+      "pass": true
+    },
+    {
+      "name": "game7: terminal preserves predecessor history",
+      "pass": true
+    },
+    {
+      "name": "game7: eliminated suspect is good King",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-deal-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-deal-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-deal-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-deal-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game7-deal-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game7: original deal preserves Id",
+      "pass": true
+    },
+    {
+      "name": "game7: original deal preserves Mode",
+      "pass": true
+    },
+    {
+      "name": "game7: original deal preserves Language",
+      "pass": true
+    },
+    {
+      "name": "game7: original deal preserves PairId",
+      "pass": true
+    },
+    {
+      "name": "game7: original deal preserves CivilianWord",
+      "pass": true
+    },
+    {
+      "name": "game7: original deal preserves UndercoverWord",
+      "pass": true
+    },
+    {
+      "name": "game7: original deal preserves StartingIndex",
+      "pass": true
+    },
+    {
+      "name": "game7: original deal preserves GoodKingId",
+      "pass": true
+    },
+    {
+      "name": "game7: original assignment identities/names/roles preserved",
+      "pass": true
+    },
+    {
+      "name": "games2-7 cover six distinct expected endings",
+      "pass": true
+    },
+    {
+      "name": "code5-game1-result-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game1-result-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game1-result-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game1-result-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game1-result-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game1 terminal is backup; primary is unintended game2 handoff",
+      "pass": true
+    },
+    {
+      "name": "game1 terminal retains same five-person roster",
+      "pass": true
+    },
+    {
+      "name": "game1 terminal retains participant order/IDs/names",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-game1-deal-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-game1-deal-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-game1-deal-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-game1-deal-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-kings-game1-deal-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "game1 terminal preserves original assignment IDs/names/roles",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-result-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-result-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-result-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-result-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-game3-result-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "mislabelled game3 result is nonterminal judgment",
+      "pass": true
+    },
+    {
+      "name": "game1: used history appends exactly this pair",
+      "pass": true
+    },
+    {
+      "name": "game1: remaining queue removes only this pair, order preserved",
+      "pass": true
+    },
+    {
+      "name": "game1: bounded recent queue keeps latest ten",
+      "pass": true
+    },
+    {
+      "name": "game1: no duplicate/lost/disjoint pair entries",
+      "pass": true
+    },
+    {
+      "name": "game2: used history appends exactly this pair",
+      "pass": true
+    },
+    {
+      "name": "game2: remaining queue removes only this pair, order preserved",
+      "pass": true
+    },
+    {
+      "name": "game2: bounded recent queue keeps latest ten",
+      "pass": true
+    },
+    {
+      "name": "game2: no duplicate/lost/disjoint pair entries",
+      "pass": true
+    },
+    {
+      "name": "game3: used history appends exactly this pair",
+      "pass": true
+    },
+    {
+      "name": "game3: remaining queue removes only this pair, order preserved",
+      "pass": true
+    },
+    {
+      "name": "game3: bounded recent queue keeps latest ten",
+      "pass": true
+    },
+    {
+      "name": "game3: no duplicate/lost/disjoint pair entries",
+      "pass": true
+    },
+    {
+      "name": "game4: used history appends exactly this pair",
+      "pass": true
+    },
+    {
+      "name": "game4: remaining queue removes only this pair, order preserved",
+      "pass": true
+    },
+    {
+      "name": "game4: bounded recent queue keeps latest ten",
+      "pass": true
+    },
+    {
+      "name": "game4: no duplicate/lost/disjoint pair entries",
+      "pass": true
+    },
+    {
+      "name": "game5: used history appends exactly this pair",
+      "pass": true
+    },
+    {
+      "name": "game5: remaining queue removes only this pair, order preserved",
+      "pass": true
+    },
+    {
+      "name": "game5: bounded recent queue keeps latest ten",
+      "pass": true
+    },
+    {
+      "name": "game5: no duplicate/lost/disjoint pair entries",
+      "pass": true
+    },
+    {
+      "name": "game6: used history appends exactly this pair",
+      "pass": true
+    },
+    {
+      "name": "game6: remaining queue removes only this pair, order preserved",
+      "pass": true
+    },
+    {
+      "name": "game6: bounded recent queue keeps latest ten",
+      "pass": true
+    },
+    {
+      "name": "game6: no duplicate/lost/disjoint pair entries",
+      "pass": true
+    },
+    {
+      "name": "game7: used history appends exactly this pair",
+      "pass": true
+    },
+    {
+      "name": "game7: remaining queue removes only this pair, order preserved",
+      "pass": true
+    },
+    {
+      "name": "game7: bounded recent queue keeps latest ten",
+      "pass": true
+    },
+    {
+      "name": "game7: no duplicate/lost/disjoint pair entries",
+      "pass": true
+    },
+    {
+      "name": "code5-group-after-seven-games-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-group-after-seven-games-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-group-after-seven-games-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-group-after-seven-games-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-group-after-seven-games-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "post-seven-game group preserves roster/history",
+      "pass": true
+    },
+    {
+      "name": "game5 persisted pending wrong target is Nora before later correction",
+      "pass": true
+    },
+    {
+      "name": "code5-max-clamped-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-max-clamped-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-max-clamped-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-max-clamped-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-max-clamped-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-max-end-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-max-end-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-max-end-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-max-end-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-max-end-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "max group retains all20 players,18 active and preference8",
+      "pass": true
+    },
+    {
+      "name": "max group after mode switches retains exact roster and returns to Kings",
+      "pass": true
+    },
+    {
+      "name": "code5-group-return-repro-0.json: selected mode and18 active agree",
+      "pass": true
+    },
+    {
+      "name": "code5-group-return-repro-1.json: selected mode and18 active agree",
+      "pass": true
+    },
+    {
+      "name": "code5-group-return-repro-2.json: selected mode and18 active agree",
+      "pass": true
+    },
+    {
+      "name": "max Kings semantics shows computed effective7 while saved preference remains8",
+      "pass": true
+    },
+    {
+      "name": "../android-16kb-probe/final-long-word-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "../android-16kb-probe/final-long-word-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "../android-16kb-probe/final-long-word-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "../android-16kb-probe/final-long-word-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "../android-16kb-probe/final-long-word-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-before-resume-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-before-resume-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-before-resume-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-before-resume-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-before-resume-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-after-advance-state/session.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-after-advance-state/session.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-after-advance-state/session.previous.json: payload checksum",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-after-advance-state/session.previous.json: manifest file hash",
+      "pass": true
+    },
+    {
+      "name": "code5-old-classic-after-advance-state: manifest extracted fields",
+      "pass": true
+    },
+    {
+      "name": "Classic fixture replay before resume preserves session.json",
+      "pass": true
+    },
+    {
+      "name": "Classic fixture replay before resume preserves session.previous.json",
+      "pass": true
+    },
+    {
+      "name": "Classic first advance V4->V5 preserves exact V4 primary as backup",
+      "pass": true
+    },
+    {
+      "name": "Classic migration changes only Handoff1->2 among legacy fields",
+      "pass": true,
+      "detail": [
+        "/Match/Handoff"
+      ]
+    },
+    {
+      "name": "Classic preserves actual match and word pair",
+      "pass": true
+    },
+    {
+      "name": "German-GoodKing: synthetic fixture checksum",
+      "pass": true
+    },
+    {
+      "name": "German-GoodKing: replay expected primary matches fixture",
+      "pass": true
+    },
+    {
+      "name": "German-GoodKing: owner agrees with fixture manifest",
+      "pass": true
+    },
+    {
+      "name": "German-GoodKing/held: complete semantic values are public allowlist only",
+      "pass": true
+    },
+    {
+      "name": "German-GoodKing/held: no full non-owner participant name or word exposed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "German-GoodKing/held: no custom accessibility-action label",
+      "pass": true
+    },
+    {
+      "name": "German-GoodKing/released: complete semantic values are public allowlist only",
+      "pass": true
+    },
+    {
+      "name": "German-GoodKing/released: no full non-owner participant name or word exposed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "German-GoodKing/released: no custom accessibility-action label",
+      "pass": true
+    },
+    {
+      "name": "German-GoodKing: held/released semantic text identical",
+      "pass": true
+    },
+    {
+      "name": "English-EvilKing: synthetic fixture checksum",
+      "pass": true
+    },
+    {
+      "name": "English-EvilKing: replay expected primary matches fixture",
+      "pass": true
+    },
+    {
+      "name": "English-EvilKing: owner agrees with fixture manifest",
+      "pass": true
+    },
+    {
+      "name": "English-EvilKing/held: complete semantic values are public allowlist only",
+      "pass": true
+    },
+    {
+      "name": "English-EvilKing/held: no full non-owner participant name or word exposed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "English-EvilKing/held: no custom accessibility-action label",
+      "pass": true
+    },
+    {
+      "name": "English-EvilKing/released: complete semantic values are public allowlist only",
+      "pass": true
+    },
+    {
+      "name": "English-EvilKing/released: no full non-owner participant name or word exposed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "English-EvilKing/released: no custom accessibility-action label",
+      "pass": true
+    },
+    {
+      "name": "English-EvilKing: held/released semantic text identical",
+      "pass": true
+    },
+    {
+      "name": "German-EvilKing: synthetic fixture checksum",
+      "pass": true
+    },
+    {
+      "name": "German-EvilKing: replay expected primary matches fixture",
+      "pass": true
+    },
+    {
+      "name": "German-EvilKing: owner agrees with fixture manifest",
+      "pass": true
+    },
+    {
+      "name": "German-EvilKing/held: complete semantic values are public allowlist only",
+      "pass": true
+    },
+    {
+      "name": "German-EvilKing/held: no full non-owner participant name or word exposed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "German-EvilKing/held: no custom accessibility-action label",
+      "pass": true
+    },
+    {
+      "name": "German-EvilKing/released: complete semantic values are public allowlist only",
+      "pass": true
+    },
+    {
+      "name": "German-EvilKing/released: no full non-owner participant name or word exposed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "German-EvilKing/released: no custom accessibility-action label",
+      "pass": true
+    },
+    {
+      "name": "German-EvilKing: held/released semantic text identical",
+      "pass": true
+    },
+    {
+      "name": "English-GoodKing: synthetic fixture checksum",
+      "pass": true
+    },
+    {
+      "name": "English-GoodKing: replay expected primary matches fixture",
+      "pass": true
+    },
+    {
+      "name": "English-GoodKing: owner agrees with fixture manifest",
+      "pass": true
+    },
+    {
+      "name": "English-GoodKing/held: complete semantic values are public allowlist only",
+      "pass": true
+    },
+    {
+      "name": "English-GoodKing/held: no full non-owner participant name or word exposed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "English-GoodKing/held: no custom accessibility-action label",
+      "pass": true
+    },
+    {
+      "name": "English-GoodKing/released: complete semantic values are public allowlist only",
+      "pass": true
+    },
+    {
+      "name": "English-GoodKing/released: no full non-owner participant name or word exposed",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "English-GoodKing/released: no custom accessibility-action label",
+      "pass": true
+    },
+    {
+      "name": "English-GoodKing: held/released semantic text identical",
+      "pass": true
+    },
+    {
+      "name": "German Good retained log is nonempty and includes its recorded PID",
+      "pass": true
+    },
+    {
+      "name": "German Good actual pair is Pfirsich/Aprikose",
+      "pass": true
+    },
+    {
+      "name": "German Good corrected full-fixture-value log scan has no matches",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "max end retained log includes PID10823 and is nonempty",
+      "pass": true
+    },
+    {
+      "name": "max end corrected20-player name/ID and actual word scan has no matches",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "label": "code8-twenty-settled-00",
+  "files": {
+    "session.json": "72fce8b61364814443bfba83690c922cb89236e695dc99c379101866be16d25e",
+    "session.previous.json": "1f390bc1f5503b92a4f37eb4efae10b1b0e2470f11fa03ff1d4d87fee44f5d45"
+  },
+  "match": {
+    "Id": "cbe4d6c044814600a1af1be109199a54",
+    "Mode": 2,
+    "Language": 1,
+    "Participants": [
+      {
+        "Id": "ce56234b5da44bf5b58f317026f8016b",
+        "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 1",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "16c49f5063b54f3fb999ea8e98e7d1eb",
+        "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 2",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "ae4ef5d11eaf4ca7bcff9565a38c17d1",
+        "DisplayName": "ÄÖÜéèñøçÅæœß Königin 👑",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "e99d68b5a4ca41d6b053452477d9893b",
+        "DisplayName": "Zoë 👨‍👩‍👧‍👦",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "45158ee72132454c9d8d392d4c73fbea",
+        "DisplayName": "王小明東京花子",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "7c0995f088e14736b09cddf62ca1ad5b",
+        "DisplayName": "Ελένη Παπαδοπούλου",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "2643c7261c56436d893ae8cfcb3a0433",
+        "DisplayName": "Александра",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "16fec8e2ca6a4c68ab29824368b12243",
+        "DisplayName": "Wunderbare Wortkönigin",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "52ef510b01394df0b603f01fcd86742a",
+        "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 9",
+        "Role": 2,
+        "Eliminated": false
+      },
+      {
+        "Id": "b906f5cbff064be0879aeede8c0ac5fa",
+        "DisplayName": "WWWWWWWWWWWWWWWWWWWWWWWW · 10",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "013c3a50c9ec4fdf983238448bd5add4",
+        "DisplayName": "Ana María Fernández",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "e4f5eab37d3e4b00bb1119277bdc2314",
+        "DisplayName": "Christopher-Maximilian",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "d86bd314065e4b7bbddd9153dd53e665",
+        "DisplayName": "Amélie",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "16e5a59ebd684891832e87bd1920273a",
+        "DisplayName": "Søren",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "a130b22aebe040238156cacbc65be91a",
+        "DisplayName": "Renée",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "1115514c4f7549e78e733a31ef595259",
+        "DisplayName": "Łukasz",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "87bf2ec553f442a1b3d0b96b515280c8",
+        "DisplayName": "François",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "b11f3fe892ed4f2d8a417e9482af9073",
+        "DisplayName": "İpek",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "4351398ed8264f2da025928c005b5103",
+        "DisplayName": "Guðrún",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "e726e348b3ca40b4b57e83605d122df8",
+        "DisplayName": "Léa 👩🏽‍🚀",
+        "Role": 0,
+        "Eliminated": false
+      }
+    ],
+    "PairId": "fruit-vegetables-002",
+    "CivilianWord": "Pfirsich",
+    "UndercoverWord": "Aprikose",
+    "StartingIndex": 0,
+    "Phase": 0,
+    "Handoff": 9,
+    "Runoff": false,
+    "Suspect": null,
+    "Outcome": null,
+    "Round": 1,
+    "GoodKingId": "b906f5cbff064be0879aeede8c0ac5fa",
+    "LastChanceTarget": null
+  },
+  "players": [
+    {
+      "Id": "ce56234b5da44bf5b58f317026f8016b",
+      "Name": "WWWWWWWWWWWWWWWWWWWWWWWW",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": true
+    },
+    {
+      "Id": "16c49f5063b54f3fb999ea8e98e7d1eb",
+      "Name": "WWWWWWWWWWWWWWWWWWWWWWWW",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": true
+    },
+    {
+      "Id": "ae4ef5d11eaf4ca7bcff9565a38c17d1",
+      "Name": "ÄÖÜéèñøçÅæœß Königin 👑",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "e99d68b5a4ca41d6b053452477d9893b",
+      "Name": "Zoë 👨‍👩‍👧‍👦",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "45158ee72132454c9d8d392d4c73fbea",
+      "Name": "王小明東京花子",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    },
+    {
+      "Id": "7c0995f088e14736b09cddf62ca1ad5b",
+      "Name": "Ελένη Παπαδοπούλου",
+      "Active": true,
+      "Number": 6,
+      "Distinguished": false
+    },
+    {
+      "Id": "2643c7261c56436d893ae8cfcb3a0433",
+      "Name": "Александра",
+      "Active": true,
+      "Number": 7,
+      "Distinguished": false
+    },
+    {
+      "Id": "16fec8e2ca6a4c68ab29824368b12243",
+      "Name": "Wunderbare Wortkönigin",
+      "Active": true,
+      "Number": 8,
+      "Distinguished": false
+    },
+    {
+      "Id": "52ef510b01394df0b603f01fcd86742a",
+      "Name": "WWWWWWWWWWWWWWWWWWWWWWWW",
+      "Active": true,
+      "Number": 9,
+      "Distinguished": true
+    },
+    {
+      "Id": "b906f5cbff064be0879aeede8c0ac5fa",
+      "Name": "WWWWWWWWWWWWWWWWWWWWWWWW",
+      "Active": true,
+      "Number": 10,
+      "Distinguished": true
+    },
+    {
+      "Id": "013c3a50c9ec4fdf983238448bd5add4",
+      "Name": "Ana María Fernández",
+      "Active": true,
+      "Number": 11,
+      "Distinguished": false
+    },
+    {
+      "Id": "e4f5eab37d3e4b00bb1119277bdc2314",
+      "Name": "Christopher-Maximilian",
+      "Active": true,
+      "Number": 12,
+      "Distinguished": false
+    },
+    {
+      "Id": "d86bd314065e4b7bbddd9153dd53e665",
+      "Name": "Amélie",
+      "Active": true,
+      "Number": 13,
+      "Distinguished": false
+    },
+    {
+      "Id": "16e5a59ebd684891832e87bd1920273a",
+      "Name": "Søren",
+      "Active": true,
+      "Number": 14,
+      "Distinguished": false
+    },
+    {
+      "Id": "a130b22aebe040238156cacbc65be91a",
+      "Name": "Renée",
+      "Active": true,
+      "Number": 15,
+      "Distinguished": false
+    },
+    {
+      "Id": "1115514c4f7549e78e733a31ef595259",
+      "Name": "Łukasz",
+      "Active": true,
+      "Number": 16,
+      "Distinguished": false
+    },
+    {
+      "Id": "87bf2ec553f442a1b3d0b96b515280c8",
+      "Name": "François",
+      "Active": true,
+      "Number": 17,
+      "Distinguished": false
+    },
+    {
+      "Id": "b11f3fe892ed4f2d8a417e9482af9073",
+      "Name": "İpek",
+      "Active": true,
+      "Number": 18,
+      "Distinguished": false
+    },
+    {
+      "Id": "4351398ed8264f2da025928c005b5103",
+      "Name": "Guðrún",
+      "Active": true,
+      "Number": 19,
+      "Distinguished": false
+    },
+    {
+      "Id": "e726e348b3ca40b4b57e83605d122df8",
+      "Name": "Léa 👩🏽‍🚀",
+      "Active": true,
+      "Number": 20,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "fruit-vegetables-002"
+  ]
+}

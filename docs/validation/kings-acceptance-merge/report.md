@@ -1,5 +1,7 @@
 # Kings candidate contribution integration — ticket #16
 
+> Historical code5 candidate evidence. Final local acceptance is documented in the [code8 native report](../kings-native/report.md) and [final correction merge](../kings-final-corrections-merge/report.md). Original observations below are retained unchanged.
+
 8 October 2026. The separate merger integrated the recovery coverage and inspected local Android candidate. **#16 and #10 remain open** for coordinator native acceptance and final independent reviews; this report does not accept the complete release.
 
 ## Source and merge

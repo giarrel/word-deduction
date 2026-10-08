@@ -1,0 +1,103 @@
+{
+  "label": "code5-game4-result",
+  "files": {
+    "session.json": "4fb62818d325a96a54151b1b946a32967978b58887d7589a9afc8196f57285aa",
+    "session.previous.json": "d23a98384380a4cb3475300a3afcd320e73b582251e59856243e49ba54a0f414"
+  },
+  "match": {
+    "Id": "43661f7a969a44deb5807563b35cb693",
+    "Mode": 2,
+    "Language": 1,
+    "Participants": [
+      {
+        "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+        "DisplayName": "Nora",
+        "Role": 1,
+        "Eliminated": true
+      },
+      {
+        "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+        "DisplayName": "Luca",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "77ab50d35ba744a2bb7a3d9916277069",
+        "DisplayName": "Emil",
+        "Role": 2,
+        "Eliminated": true
+      },
+      {
+        "Id": "8a9fb50d16894284ab051d0924ea92b3",
+        "DisplayName": "Mila",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "ac5d584c805b49889e54e0db0a07e654",
+        "DisplayName": "Jonas2",
+        "Role": 0,
+        "Eliminated": false
+      }
+    ],
+    "PairId": "meals-023",
+    "CivilianWord": "Linsensuppe",
+    "UndercoverWord": "Tomatensuppe",
+    "StartingIndex": 1,
+    "Phase": 3,
+    "Handoff": 5,
+    "Runoff": false,
+    "Suspect": "77ab50d35ba744a2bb7a3d9916277069",
+    "Outcome": 9,
+    "Round": 1,
+    "GoodKingId": "8a9fb50d16894284ab051d0924ea92b3",
+    "LastChanceTarget": null
+  },
+  "players": [
+    {
+      "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+      "Name": "Nora",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+      "Name": "Luca",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "77ab50d35ba744a2bb7a3d9916277069",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "8a9fb50d16894284ab051d0924ea92b3",
+      "Name": "Mila",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "ac5d584c805b49889e54e0db0a07e654",
+      "Name": "Jonas2",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "tools-materials-023",
+    "kitchen-011",
+    "clothing-021",
+    "technology-014",
+    "mammals-023",
+    "places-004",
+    "garden-nature-025",
+    "meals-023"
+  ]
+}

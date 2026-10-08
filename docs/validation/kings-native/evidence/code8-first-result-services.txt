@@ -1,0 +1,58 @@
+ACCESSIBILITY MANAGER (dumpsys accessibility)
+
+currentUserId=0
+hasMagnificationConnection=true
+Magnifier on display#0
+    MagnificationConfig[mode: 1, activated: false, scale: 1.0, centerX: 540.0, centerY: 924.0] 
+    Magnification region=SkRegion((0,0,1080,1848))
+    IdOfLastServiceToMagnify=-1
+    SupportWindowMagnification=true
+    WindowMagnificationConnectionState=CONNECTED
+User state[
+     attributes:{id=0, touchExplorationEnabled=true, serviceHandlesDoubleTap=true, requestMultiFingerGestures=true, requestTwoFingerPassthrough=true, sendMotionEventsEnabledfalse, displayMagnificationEnabled=false, autoclickEnabled=false, nonInteractiveUiTimeout=0, interactiveUiTimeout=10000, installedServiceCount=5, magnificationModes={0=1}, magnificationCapabilities=3, audioDescriptionByDefaultEnabled=false, magnificationFollowTypingEnabled=true, alwaysOnMagnificationEnabled=true}
+     button mode: 1
+     shortcut key:{}
+     button:{}
+     button target:{null}
+     gesture:{}
+     qs shortcut targets:{}
+     a11y tiles in QS panel:{}
+     Bound services:{Service[label=TalkBack, feedbackType[FEEDBACK_SPOKEN, FEEDBACK_HAPTIC, FEEDBACK_AUDIBLE], capabilities=251, eventTypes=TYPES_ALL_MASK, notificationTimeout=0, requestA11yBtn=false]}
+     Enabled services:{{com.google.android.marvin.talkback/com.google.android.marvin.talkback.TalkBackService}}
+     Binding services:{}
+     Crashed services:{}
+     Client list info:{
+          Client list callbacks: 8
+          Client list killed: false
+          Client list broadcasts count: -1
+          Registered clients:{
+[com.google.android.tts][com.google.android.as][com.google.android.marvin.talkback][com.google.android.googlequicksearchbox][com.google.android.apps.wellbeing][com.google.android.googlequicksearchbox][com.google.android.inputmethod.latin][com.google.android.apps.nexuslauncher]}]
+Global Info [ Top focused display Id = 0
+     Active Window Id = 64
+     Top Focused Window Id = 64
+     Accessibility Focused Window Id = 64 ]
+
+Display[0] : 
+A11yWindow[AccessibilityWindowInfo[title=null, displayId=0, id=72, taskId=-1, type=TYPE_SYSTEM, layer=1, region=SkRegion((0,0,1080,128)), bounds=Rect(0, 0 - 1080, 128), focused=false, active=false, pictureInPicture=false, transitionTime=17952069, hasParent=false, isAnchored=false, hasChildren=false]]
+WindowInfo[WindowInfo[title=null, displayId=0, taskId=-1, type=2000, layer=0, token=android.os.BinderProxy@6353de8, region=SkRegion((0,0,1080,128)), bounds=Rect(0, 0 - 1080, 128), parent=null, focused=false, children=null, accessibility anchor=9223372034707292159, pictureInPicture=false, watchOutsideTouch=false, mTransformMatrix=Matrix{[1.0, 0.0, 0.0][0.0, 1.0, 0.0][0.0, 0.0, 1.0]}, mMagnificationSpec=<scale:1.0,offsetX:0.0,offsetY:0.0>, locales=[en_US]]]
+,
+A11yWindow[AccessibilityWindowInfo[title=Home, displayId=0, id=64, taskId=2, type=TYPE_APPLICATION, layer=0, region=SkRegion((0,0,1080,1920)), bounds=Rect(0, 0 - 1080, 1920), focused=true, active=true, pictureInPicture=false, transitionTime=17952137, hasParent=false, isAnchored=false, hasChildren=false]]
+WindowInfo[WindowInfo[title=Home, displayId=0, taskId=2, type=1, layer=1, token=android.os.BinderProxy@c42d27c, region=SkRegion((0,0,1080,1920)), bounds=Rect(0, 0 - 1080, 1920), parent=null, focused=true, children=null, accessibility anchor=9223372034707292159, pictureInPicture=false, watchOutsideTouch=false, mTransformMatrix=Matrix{[1.0, 0.0, 0.0][0.0, 1.0, 0.0][0.0, 0.0, 1.0]}, mMagnificationSpec=<scale:1.0,offsetX:0.0,offsetY:0.0>, locales=[en_US]]]
+
+
+Window attributes:[{63=AccessibilityWindowAttributes{mAccessibilityWindowTitle=Navigation barmLocales=[en_US]}, 64=AccessibilityWindowAttributes{mAccessibilityWindowTitle=HomemLocales=[en_US]}, 65=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 66=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 67=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 69=AccessibilityWindowAttributes{mAccessibilityWindowTitle=Navigation bar Edge PanelmLocales=[en_US]}, 71=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 72=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}, 75=AccessibilityWindowAttributes{mAccessibilityWindowTitle=nullmLocales=[en_US]}}]
+A11yInputFilter Info : 
+Enabled features of Display [0] = [MagnificationKeyHandler,KeyboardInterceptor,MotionEventInjector,MagnificationGesture,TouchExplorer]
+Global client list info:{
+    Client list callbacks: 3
+    Client list killed: false
+    Client list broadcasts count: -1
+    Registered clients:{
+[com.google.android.permissioncontroller][com.android.settings, com.android.localtransport, com.android.providers.settings, com.android.emulator.multidisplay, com.android.location.fused, android, com.android.keychain, com.android.DeviceAsWebcam, com.android.inputdevices, com.android.server.telecom, com.android.dynsystem][com.android.systemui]
+
+Proxy manager state:
+    Number of proxy connections: 0
+    Registered proxy connections:
+Accessibility Display Listener:
+    SystemUI uid: 10185
+    1 valid display: 0

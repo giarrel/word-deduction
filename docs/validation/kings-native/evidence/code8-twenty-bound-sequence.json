@@ -1,0 +1,19 @@
+{
+  "actions": [
+    {
+      "label": "Zurück",
+      "evidence": "code8-twenty-bound-00",
+      "nodeCount": 14,
+      "visibleLabels": [
+        "Zurück",
+        "Könige",
+        "Hilfe",
+        "KARTE 10 VON 20",
+        "WWWWWWWWWWWWWWWWWWWWWWWW · 10",
+        "Private Karte. Wörter werden nie vorgelesen. Zum visuellen Lesen TalkBack kurz durchreichen lassen und dieses Feld halten. Loslassen verdeckt die Karte.",
+        "Handy weitergeben"
+      ]
+    }
+  ],
+  "pass": false
+}

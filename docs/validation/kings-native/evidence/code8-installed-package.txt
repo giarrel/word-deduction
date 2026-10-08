@@ -1,0 +1,113 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d126de3 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity filter ee623e0
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.giarrel.worddeduction.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION] (b31ffd4):
+    sourcePackage=com.giarrel.worddeduction
+    uid=10215 gids=[] type=0 prot=signature
+    perm=PermissionInfo{234b57d com.giarrel.worddeduction.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION}
+    flags=0x0
+
+Registered ContentProviders:
+  com.giarrel.worddeduction/androidx.startup.InitializationProvider:
+    Provider{b6b8c72 com.giarrel.worddeduction/androidx.startup.InitializationProvider}
+
+ContentProvider Authorities:
+  [com.giarrel.worddeduction.androidx-startup]:
+    Provider{b6b8c72 com.giarrel.worddeduction/androidx.startup.InitializationProvider}
+      applicationInfo=ApplicationInfo{3c1b8c3 com.giarrel.worddeduction}
+
+Key Set Manager:
+  [com.giarrel.worddeduction]
+      Signing KeySets: 63
+
+Packages:
+  Package [com.giarrel.worddeduction] (9994540):
+    appId=10215
+    pkg=Package{8dc2c79 com.giarrel.worddeduction}
+    codePath=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==
+    resourcePath=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==
+    legacyNativeLibraryDir=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/lib
+    extractNativeLibs=true
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=8 minSdk=26 targetSdk=36
+    minExtensionVersions=[]
+    versionName=1.1.0
+    hiddenApiEnforcementPolicy=2
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    pageSizeCompat=0
+    scannedAsStoppedSystemApp=false
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    timeStamp=2026-10-08 23:19:03
+    lastUpdateTime=2026-10-08 23:19:05
+    installerPackageName=null
+    installerPackageUid=-1
+    initiatingPackageName=com.android.shell
+    originatingPackageName=null
+    packageSource=1
+    appMetadataFilePath=null
+    appMetadataSource=0
+    signatures=PackageSignatures{7f0ca49 version:2, signatures:[e09ea429], past signatures:[]}
+    installPermissionsFixed=false
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.giarrel.worddeduction.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: prot=signature
+    requested permissions:
+      com.giarrel.worddeduction.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+    install permissions:
+      com.giarrel.worddeduction.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION: granted=true
+    User 0: ceDataInode=360632 deDataInode=82134 installed=true hidden=false suspended=false distractionFlags=0 stopped=true notLaunched=false enabled=0 instant=false virtual=false quarantined=false
+      installReason=0
+      dataDir=/data/user/0/com.giarrel.worddeduction
+      firstInstallTime=2026-10-07 04:38:15
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/EmulationPixel6/EmulationPixel6Overlay.apk
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+        /data/resource-cache/com.android.systemui-neutral-YEnY.frro
+        /data/resource-cache/com.android.systemui-accent-Oq4G.frro
+        /data/resource-cache/com.android.systemui-dynamic-C3xG.frro
+      legacy overlay paths:
+        /product/overlay/EmulationPixel6/EmulationPixel6Overlay.apk
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+  queries via component:
+    com.google.android.settings.intelligence:
+      com.giarrel.worddeduction
+    com.google.android.as:
+      com.giarrel.worddeduction
+    com.google.android.apps.accessibility.voiceaccess:
+      com.giarrel.worddeduction
+  queryable via interaction:
+    User 0:
+  queryable via uses-library:
+
+Dexopt state:
+  [com.giarrel.worddeduction]
+    path: /data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk
+      x86_64: [status=verify] [reason=install] [primary-abi]
+        [location is /data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/oat/x86_64/base.odex]
+
+Compiler stats:
+  [com.giarrel.worddeduction]
+     base.apk - 465

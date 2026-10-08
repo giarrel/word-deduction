@@ -1,0 +1,17 @@
+[
+  {
+    "stage": "resume",
+    "forbiddenHits": [],
+    "pass": true
+  },
+  {
+    "stage": "header-held-tree",
+    "forbiddenHits": [],
+    "pass": true
+  },
+  {
+    "stage": "header-released-tree",
+    "forbiddenHits": [],
+    "pass": true
+  }
+]

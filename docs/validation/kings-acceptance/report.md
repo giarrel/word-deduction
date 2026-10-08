@@ -1,5 +1,7 @@
 # Kings acceptance implementation — ticket #16
 
+> Historical code5 candidate evidence. Final local acceptance is documented in the [code8 native report](../kings-native/report.md) and [final correction merge](../kings-final-corrections-merge/report.md). Original observations below are retained unchanged.
+
 Status: local candidate prepared for coordinator acceptance. Native Android execution and the final independent Standards/Spec reviews remain required before closing #16 or #10. Issue #11 remains separate.
 
 ## Source and scope

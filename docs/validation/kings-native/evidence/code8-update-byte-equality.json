@@ -1,0 +1,30 @@
+{
+  "before": "code7-code8-pending-baseline",
+  "after": "code8-before-first-launch",
+  "requireByteEquality": true,
+  "generations": [
+    {
+      "file": "session.json",
+      "beforeVersion": 5,
+      "afterVersion": 5,
+      "beforeSha256": "1b7a964802c292756d77195ceefa622f0d6e0b274113975218254d9c20c3abe2",
+      "afterSha256": "1b7a964802c292756d77195ceefa622f0d6e0b274113975218254d9c20c3abe2",
+      "byteEqual": true,
+      "legacyFieldDifferences": [],
+      "newTopLevelFields": [],
+      "pass": true
+    },
+    {
+      "file": "session.previous.json",
+      "beforeVersion": 5,
+      "afterVersion": 5,
+      "beforeSha256": "687e3835c5b2930d952c10445fb0f59f1eb21af008f7606fa14ff68438096239",
+      "afterSha256": "687e3835c5b2930d952c10445fb0f59f1eb21af008f7606fa14ff68438096239",
+      "byteEqual": true,
+      "legacyFieldDifferences": [],
+      "newTopLevelFields": [],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

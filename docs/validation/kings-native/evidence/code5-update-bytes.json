@@ -1,0 +1,30 @@
+{
+  "before": "code4-immediately-before-install",
+  "after": "code5-after-install-before-launch",
+  "requireByteEquality": true,
+  "generations": [
+    {
+      "file": "session.json",
+      "beforeVersion": 4,
+      "afterVersion": 4,
+      "beforeSha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+      "afterSha256": "7581ec6b186f58c161cd60f044666ba16dd165898a1e3becf2370d93e28d13bd",
+      "byteEqual": true,
+      "legacyFieldDifferences": [],
+      "newTopLevelFields": [],
+      "pass": true
+    },
+    {
+      "file": "session.previous.json",
+      "beforeVersion": 4,
+      "afterVersion": 4,
+      "beforeSha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+      "afterSha256": "5bd67ae6fce7a0033951af7a60bce5914d11a45c24784ce5b2bcd28e6bd2f5d3",
+      "byteEqual": true,
+      "legacyFieldDifferences": [],
+      "newTopLevelFields": [],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,106 @@
+{
+  "label": "code5-game7-result",
+  "files": {
+    "session.json": "3c1466fe52e773f95c73e3289b1a31a62ab9dfef06394894d2be3d91ca28d667",
+    "session.previous.json": "0b2ffc27bc5cc405518716f6523458e67a2dabb31b406e27fd1202a536e4932e"
+  },
+  "match": {
+    "Id": "01dd1170be424ef082b9b81e4681d6bc",
+    "Mode": 2,
+    "Language": 1,
+    "Participants": [
+      {
+        "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+        "DisplayName": "Nora",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+        "DisplayName": "Luca",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "77ab50d35ba744a2bb7a3d9916277069",
+        "DisplayName": "Emil",
+        "Role": 2,
+        "Eliminated": false
+      },
+      {
+        "Id": "8a9fb50d16894284ab051d0924ea92b3",
+        "DisplayName": "Mila",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "ac5d584c805b49889e54e0db0a07e654",
+        "DisplayName": "Jonas2",
+        "Role": 0,
+        "Eliminated": true
+      }
+    ],
+    "PairId": "fruit-vegetables-025",
+    "CivilianWord": "Aubergine",
+    "UndercoverWord": "Kürbis",
+    "StartingIndex": 0,
+    "Phase": 3,
+    "Handoff": 5,
+    "Runoff": false,
+    "Suspect": "ac5d584c805b49889e54e0db0a07e654",
+    "Outcome": 6,
+    "Round": 1,
+    "GoodKingId": "ac5d584c805b49889e54e0db0a07e654",
+    "LastChanceTarget": null
+  },
+  "players": [
+    {
+      "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+      "Name": "Nora",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+      "Name": "Luca",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "77ab50d35ba744a2bb7a3d9916277069",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "8a9fb50d16894284ab051d0924ea92b3",
+      "Name": "Mila",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "ac5d584c805b49889e54e0db0a07e654",
+      "Name": "Jonas2",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "tools-materials-023",
+    "kitchen-011",
+    "clothing-021",
+    "technology-014",
+    "mammals-023",
+    "places-004",
+    "garden-nature-025",
+    "meals-023",
+    "school-office-007",
+    "tools-materials-018",
+    "fruit-vegetables-025"
+  ]
+}

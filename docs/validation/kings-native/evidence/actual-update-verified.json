@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "fromVersionCode": 4,
+  "toVersionCode": 5,
+  "versionName": "1.1.0",
+  "sourceCommit": "908d95fc80fc8173df02593422ff85264089b945",
+  "apkSha256": "afd739cc5b8356a24ee9b2b92c7639ba128569d3f43090ac961fc0e6a3d24a01",
+  "installationEvidence": "code5-install.txt",
+  "unchangedBeforeFirstLaunch": "code5-update-bytes.json",
+  "unchangedAfterResume": "code5-resumed-old-match-state/manifest.json",
+  "firstDurableAdvance": "code5-migrated-advance.json",
+  "actualVisuallyInspectedFrames": [
+    "code5-first-launch-settled.png",
+    "code5-resumed-luca-covered.png",
+    "code5-luca-word-held.png",
+    "code5-luca-word-released.png",
+    "code5-first-advanced-emil.png"
+  ],
+  "scope": "Real data-preserving update of the existing code4 Quick game, retaining both original generations and all legacy data. Luca remained next; only the intentional handoff advanced to Emil. The first new write produced V5 and preserved the old primary as the exact V4 backup. No fixture replay preceded this observation."
+}

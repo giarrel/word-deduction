@@ -1,0 +1,34 @@
+{
+  "app": "Word Deduction",
+  "version": "1.1.0",
+  "versionCode": 8,
+  "sourceCommit": "5c56e63d755df24156e6f5e88f4170ae4857a0ab",
+  "integrationBranch": "integration/kings-v1",
+  "package": "com.giarrel.worddeduction",
+  "minimumAndroidApi": 26,
+  "targetAndroidApi": 36,
+  "architecture": "arm64-v8a / IL2CPP",
+  "debuggable": false,
+  "signing": "Existing local Android debug certificate; not production upload signing",
+  "certificateSha256": "4a0d4929acea4c086bc5534bf462eebcd9d866f31c1bced10b400412117be926",
+  "verification": {
+    "sessionScenarios": "74/74",
+    "renderedTests": "47/47",
+    "apkInspectionCommands": 14,
+    "aabInspectionCommands": 44,
+    "nativeEnvironment": "Android16/API36 emulator,16KB pages,ARM64 native bridge",
+    "storePublished": false
+  },
+  "artifacts": [
+    {
+      "file": "Word-Deduction-1.1.0.apk",
+      "bytes": 37454738,
+      "sha256": "d4ba4c5ba65ca03249f59455234c1df7bdf4f85b160828ca05b945a85cd78ab9"
+    },
+    {
+      "file": "Word-Deduction-1.1.0.aab",
+      "bytes": 37811704,
+      "sha256": "41d5a652323b3a263bd7d28d5847bced7e9a2c3ab5a1359500e3026bb0ca8e50"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+--------- beginning of main
+10-08 23:21:07.540 14363 14363 I l.worddeduction: Using CollectorTypeCC GC.
+10-08 23:21:07.542 14363 14363 W l.worddeduction: Unexpected CPU variant for x86: x86_64.
+10-08 23:21:07.542 14363 14363 W l.worddeduction: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-08 23:21:07.619 14363 14363 I berberis: Initialized Berberis (aarch64), version 16.0.0
+10-08 23:21:07.794 14363 14363 E l.worddeduction: Not starting debugger since process cannot load the jdwp agent.
+10-08 23:21:07.796 14363 14363 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-08 23:21:07.851 14363 14363 D nativeloader: Configuring clns-9 for other apk /data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/lib/arm64:/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.giarrel.worddeduction
+10-08 23:21:07.877 14363 14363 I l.worddeduction: AssetManager2(0x748773a157b8) locale list changing from [] to [en-US]
+10-08 23:21:07.896 14363 14363 V GraphicsEnvironment: Currently set values for:
+10-08 23:21:07.896 14363 14363 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-08 23:21:07.896 14363 14363 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-08 23:21:07.896 14363 14363 V GraphicsEnvironment: com.giarrel.worddeduction is not listed in per-application setting
+10-08 23:21:07.896 14363 14363 V GraphicsEnvironment: ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+10-08 23:21:07.896 14363 14363 V GraphicsEnvironment: com.giarrel.worddeduction is not listed in ANGLE allowlist or settings, returning default
+10-08 23:21:07.897 14363 14363 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-08 23:21:07.931 14363 14363 I l.worddeduction: AssetManager2(0x748773a144f8) locale list changing from [] to [en-US]
+10-08 23:21:08.101 14363 14363 D nativeloader: Load /data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/lib/arm64/libgame.so using class loader ns clns-9 (caller=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk): ok
+10-08 23:21:08.104 14363 14363 D GameActivity: GameActivity_register
+10-08 23:21:08.119 14363 14363 I l.worddeduction: AssetManager2(0x748773a18378) locale list changing from [] to [en-US]
+10-08 23:21:08.122 14363 14363 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-08 23:21:08.100 14363 14363 W l.worddeduction: type=1400 audit(0.0:194): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=836 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.giarrel.worddeduction
+10-08 23:21:08.108 14363 14363 W l.worddeduction: type=1400 audit(0.0:195): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=836 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.giarrel.worddeduction
+10-08 23:21:08.108 14363 14363 W l.worddeduction: type=1400 audit(0.0:196): avc:  denied  { getattr } for  path="/dev/pmsg0" dev="tmpfs" ino=836 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:pmsg_device:s0 tclass=chr_file permissive=0 app=com.giarrel.worddeduction
+10-08 23:21:08.149 14363 14363 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-08 23:21:08.151 14363 14363 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-08 23:21:08.155 14363 14363 D nativeloader: Load /data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/lib/arm64/libmain.so using class loader ns clns-9 (caller=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk): ok
+10-08 23:21:08.220 14363 14363 I IL2CPP  : JNI_OnLoad
+10-08 23:21:08.220 14363 14363 V Unity   : Context Type: GameActivity
+10-08 23:21:08.229 14363 14363 D GameActivity: SDK version: 36
+10-08 23:21:08.232 14363 14379 I Unity   : UnityApplication::CreateInstance
+10-08 23:21:08.233 14363 14379 I Unity   : GameActivity Package Version '4.4.0'
+10-08 23:21:08.234 14363 14379 I Unity   : Starting Game Loop
+10-08 23:21:08.243 14363 14379 I Unity   : Handle cmd APP_CMD_START(11)
+10-08 23:21:08.246 14363 14379 I Unity   : Handle cmd APP_CMD_RESUME(12)
+--------- beginning of system
+10-08 23:21:08.256 14363 14363 D InsetsController: Setting requestedVisibleTypes to -14 (was -9)
+10-08 23:21:08.325 14363 14379 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+10-08 23:21:08.344 14363 14379 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+10-08 23:21:08.366 14363 14379 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+10-08 23:21:08.371 14363 14379 I Unity   : Handle cmd APP_CMD_INIT_WINDOW(1)
+10-08 23:21:08.577 14363 14379 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+10-08 23:21:08.630 14363 14363 D InsetsController: hide(ime(), fromIme=false)
+10-08 23:21:08.632 14363 14363 I ImeTracker: com.giarrel.worddeduction:dd418d9c: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-08 23:21:08.910 14363 14385 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=true, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.giarrel.worddeduction
+10-08 23:21:09.357 14363 14379 I Unity   : SystemInfo CPU = x86-64 SSE3 SSE4.1 AVX, Cores = 2, Memory = 2472mb
+10-08 23:21:09.358 14363 14379 I Unity   : SystemInfo ARM big.LITTLE configuration: 2 big (mask: 0x3), 0 little (mask: 0x0)
+10-08 23:21:09.359 14363 14379 I Unity   : ApplicationInfo 'com.giarrel.worddeduction', Version '1.1.0', Min API Level '26', Target API Level '36'
+10-08 23:21:09.359 14363 14379 I Unity   : Built from '6000.3/staging' branch, Version '6000.3.25f1 (e1dba0a9aba4)', Build type 'Release', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+10-08 23:21:09.360 14363 14379 I Unity   : Device Model 'Google sdk_gphone16k_x86_64', OS 'Android OS 16 (API 36)'
+10-08 23:21:09.716 14363 14379 I DisplayManager: Implicitly registering for refresh rate
+10-08 23:21:09.784 14363 14379 I Unity   : Company Name: giarrel
+10-08 23:21:09.785 14363 14379 I Unity   : Product Name: Word Deduction
+10-08 23:21:09.814 14363 14379 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-08 23:21:09.815 14363 14379 I EGL_emulation: Opening libGLESv2_emulation.so
+10-08 23:21:09.820 14363 14379 E EGL_emulation: eglCreateContext: EGL_BAD_CONFIG: no ES 3.2 support
+10-08 23:21:09.820 14363 14379 E EGL_emulation: tid 14379: eglCreateContext(1828): error 0x3005 (EGL_BAD_CONFIG)
+10-08 23:21:09.843 14363 14379 E EGL_emulation: [getAttribValue] Bad attribute idx
+10-08 23:21:09.843 14363 14379 E EGL_emulation: tid 14379: eglGetConfigAttrib(1247): error 0x3004 (EGL_BAD_ATTRIBUTE)
+10-08 23:21:10.021 14363 14379 D nativeloader: Load liblibswappywrapper.so using class loader ns clns-9 (caller=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk): dlopen failed: library "liblibswappywrapper.so" not found
+10-08 23:21:10.022 14363 14379 D nativeloader: Load /data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/lib/arm64/libswappywrapper.so using class loader ns clns-9 (caller=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk): ok
+10-08 23:21:10.025 14363 14379 I SwappyWrapper: SwappyWrapperInit() succeeded. Build: Thu Oct  8 23:13:42 2026
+10-08 23:21:10.030 14363 14440 D AChoreographer: Attaching thread to JVM for AChoreographer
+10-08 23:21:10.033 14363 14379 E SwappyDisplayManager: dalvik.system.InMemoryDexClassLoader[DexPathList[[dex file "InMemoryDexFile[cookie=[128128330767440, 128128599201424]]"],nativeLibraryDirectories=[/system/lib64, /system_ext/lib64]]] couldn't find "libgame.so"
+10-08 23:21:10.036 14363 14441 I SwappyDisplayManager: Starting looper thread
+10-08 23:21:10.473 14363 14379 I Unity   :     HasWindow = 1, HasFocus = 0
+10-08 23:21:10.474 14363 14379 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+10-08 23:21:10.474 14363 14379 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+10-08 23:21:10.474 14363 14379 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+10-08 23:21:10.474 14363 14379 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+10-08 23:21:10.563 14363 14379 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+10-08 23:21:10.570 14363 14379 I MediaRouter: Skip setBluetoothA2dpOn(): types=8388615, isPlaybackActive()=false, BT route=null
+10-08 23:21:11.266 14363 14379 I IL2CPP  : Locale en-US
+10-08 23:21:11.310 14363 14363 D GameActivity: ************** mainWorkCallback *********
+10-08 23:21:11.311 14363 14363 I ImeTracker: com.giarrel.worddeduction:3d367ce3: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT fromUser false
+10-08 23:21:11.313 14363 14363 D InsetsController: hide(ime(), fromIme=false)
+10-08 23:21:11.314 14363 14363 I ImeTracker: com.giarrel.worddeduction:3d367ce3: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-08 23:21:11.316 14363 14363 D CompatChangeReporter: Compat change id reported: 395521150; UID 10215; state: ENABLED
+10-08 23:21:12.902 14363 14379 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+10-08 23:21:12.907 14363 14379 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+10-08 23:21:12.907 14363 14379 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+10-08 23:21:13.191 14363 14379 D nativeloader: Load lib_burst_generated.so using class loader ns clns-9 (caller=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk): dlopen failed: library "lib_burst_generated.so" not found
+10-08 23:21:13.192 14363 14379 D nativeloader: Load liblib_burst_0_0.so using class loader ns clns-9 (caller=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk): dlopen failed: library "liblib_burst_0_0.so" not found
+10-08 23:21:13.193 14363 14379 D nativeloader: Load lib_burst_0_0.so using class loader ns clns-9 (caller=/data/app/~~pVtCJIw-yGD50nvPZdvxHA==/com.giarrel.worddeduction-6vPzpQTwZLJ7RQFoOsNfEA==/base.apk): dlopen failed: library "lib_burst_0_0.so" not found
+10-08 23:21:43.520 14363 14363 W UnityMain: type=1400 audit(0.0:197): avc:  denied  { link } for  name="session.json" dev="dm-54" ino=361080 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c215,c256,c512,c768 tclass=file permissive=0 app=com.giarrel.worddeduction
+10-08 23:21:47.416 14363 14363 W UnityMain: type=1400 audit(0.0:198): avc:  denied  { link } for  name="session.json" dev="dm-54" ino=361103 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c215,c256,c512,c768 tclass=file permissive=0 app=com.giarrel.worddeduction
+10-08 23:21:51.280 14363 14363 W UnityMain: type=1400 audit(0.0:199): avc:  denied  { link } for  name="session.json" dev="dm-54" ino=361080 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c215,c256,c512,c768 tclass=file permissive=0 app=com.giarrel.worddeduction
+10-08 23:21:55.016 14363 14363 W UnityMain: type=1400 audit(0.0:200): avc:  denied  { link } for  name="session.json" dev="dm-54" ino=361103 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c215,c256,c512,c768 tclass=file permissive=0 app=com.giarrel.worddeduction
+10-08 23:21:59.032 14363 14363 W UnityMain: type=1400 audit(0.0:201): avc:  denied  { link } for  name="session.json" dev="dm-54" ino=361080 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c215,c256,c512,c768 tclass=file permissive=0 app=com.giarrel.worddeduction
+10-08 23:22:10.700 14363 14363 W UnityMain: type=1400 audit(0.0:202): avc:  denied  { link } for  name="session.json" dev="dm-54" ino=361103 scontext=u:r:untrusted_app:s0:c215,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c215,c256,c512,c768 tclass=file permissive=0 app=com.giarrel.worddeduction
