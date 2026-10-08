@@ -13,7 +13,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument("artifact", type=Path)
 parser.add_argument("--android-player", required=True, type=Path)
 parser.add_argument("--output", required=True, type=Path)
-parser.add_argument("--version-code", default=4, type=int)
+parser.add_argument("--version-code", default=5, type=int)
+parser.add_argument("--version-name", default="1.1.0")
 args = parser.parse_args()
 artifact, sdk, out = args.artifact.resolve(), args.android_player.resolve(), args.output.resolve()
 out.mkdir(parents=True, exist_ok=True)
@@ -118,7 +119,7 @@ def inspect_apk(path, label, manifest=True):
             save()
             raise RuntimeError("Release has an unexpected network/sensitive permission or is debuggable")
         if label == "apk" or label.startswith("universal-") or label == "default-base-master":
-            expected = ("package: name='com.giarrel.worddeduction'", f"versionCode='{args.version_code}'", "versionName='1.0.0'",
+            expected = ("package: name='com.giarrel.worddeduction'", f"versionCode='{args.version_code}'", f"versionName='{args.version_name}'",
                         "minSdkVersion:'26'", "targetSdkVersion:'36'")
             if package["native"]:
                 expected += ("native-code: 'arm64-v8a'",)

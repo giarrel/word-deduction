@@ -1,6 +1,6 @@
 # Android release reproduction
 
-Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.0.0/code 4. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
+Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.1.0/code 5. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
 
 ## Build
 
@@ -40,7 +40,7 @@ python ./tools/inspect-android-release.py '<exact.aab>' --android-player '<Unity
 
 Use an unused output directory for each invocation: generated `.apks` files are not overwritten silently. The inspector records command exit codes and stdout/stderr; verifies APK v2/signature details, zipalign 16KB, ARM64 ELF headers, every LOAD and rounded RELRO writable-byte intersection; and saves boot.config, manifest and backup rules. AAB inspection uses bundletool validate/config/manifest, jarsigner, then default and universal APK generation and inspection of master/native-bearing APKs. Generated APK signing is bundletool's local debug default; verify its certificate before installing as an update.
 
-Code3 additionally enables release R8 and removes debug/info/verbose calls from the bundled GameTextInput Java code. JNI names/members are retained. The inspector disassembles actual APK DEX and refuses input classes that still invoke those logging methods; it also checks that InputConnection still exists. This runs against direct, universal and base-master delivery packages. Historical version2 reproduction can use `--version-code 2`, but its private-input log calls intentionally fail the new privacy gate. Native real keyboard entry and log inspection must follow every relevant release change.
+Code3 additionally enables release R8 and removes debug/info/verbose calls from the bundled GameTextInput Java code. JNI names/members are retained. The inspector disassembles actual APK DEX and refuses input classes that still invoke those logging methods; it also checks that InputConnection still exists. This runs against direct, universal and base-master delivery packages. Historical version2 reproduction can use `--version-code 2 --version-name 1.0.0`, but its private-input log calls intentionally fail the new privacy gate. Native real keyboard entry and log inspection must follow every relevant release change.
 
 `GNU_RELRO` end residues are reported separately from writable-data collisions. Some Unity/NDK libraries end RELRO on a 4KB boundary but leave the rest of the 16KB protection page unmapped. Do not hide these scalar failures or binary-patch them; assess the full layout and separately run the 16KB application-environment probe. Static checks and translated emulator execution do not prove physical ARM64/16KB-kernel behavior or Play acceptance.
 
@@ -48,6 +48,6 @@ Code3 additionally enables release R8 and removes debug/info/verbose calls from 
 
 The accepted Session seam is `tests/Session.Tests`; supply `-p:NewtonsoftJsonAssembly=<resolved package DLL>` when invoking `dotnet run`. The rendered suite is `WordDeduction.Tests`, PlayMode, through the installed Pipeline `run_tests` command and its `test_status` result. It uses real temporary stores and rendered inputs. Preserve a failed result before a fix and a passed result afterward.
 
-Before committing/building after rendered tests, clear test-populated dynamic Inter and Emoji data through `FontAsset.ClearFontAssetData(true)` in the Editor and save assets; verify their semantic Git diff is empty. Do not commit generated atlas/glyph caches. Git may need `git add` for those exact unchanged assets to refresh CRLF normalization. Do not restore an unrelated user's asset change.
+Before committing/building after rendered tests, preserve test-generated dynamic Inter and Emoji differences in ignored evidence, then clear only those test-populated assets through `FontAsset.ClearFontAssetData(true)` in the Editor and save assets; verify their semantic Git diff is empty. Do not commit generated atlas/glyph caches. Git may need `git add` for those exact unchanged assets to refresh CRLF normalization. Do not restore an unrelated user's asset change.
 
 Native checks belong to the coordinator's report: actual installed source/hash, old-state update, fresh offline startup, Gboard, DE/EN, Quick/Classic, White, reveal/release, Back/Home/resume, system text scaling/TalkBack and measured warm return/rematch. Capture the actual phone framebuffer at 1080×1920 for store screenshots. Do not pass Editor fixture renders off as native gameplay.
