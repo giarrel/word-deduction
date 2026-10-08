@@ -1,0 +1,77 @@
+{
+  "createdUtc": "2026-10-08T17:52:22.6929688Z",
+  "integrationBranch": "integration/kings-v1",
+  "priorIntegrationCommit": "ed74667ea54b7c01c63c915860e4bddc01253cfe",
+  "implementationSourceCommit": "30ac0c108f71f786840ae1aa16d7ceddd7dfe8ff",
+  "implementationIntegrationMerge": "40d7cf67117d99a2797dedd6de682e1891f886c6",
+  "implementerHead": "1019600def984b295b9fe1d23f53199165b13099",
+  "mergeCommit": "663f82f4dd1daa544f3beec0ae459923275fa0f1",
+  "identicalSourceAndMergeTree": "7f1e0ce922e957b2337e4c0d88583b5d0d4857bd",
+  "implementationManifest": {
+    "path": "docs/validation/kings-elimination/hash-manifest.json",
+    "sha256": "462ea5c6c23d93d73f422aa5e1d51ba345a58bc8c2884841dac25ba94b98e578",
+    "filesPreserved": 54,
+    "bytesPreserved": 8085061,
+    "rawArtifactFiles": 25,
+    "sourceDocumentationObservationCopies": 29,
+    "sourceAndDestinationVerified": true
+  },
+  "independentSession": {
+    "passed": 66,
+    "total": 66,
+    "exitCode": 0,
+    "durationSeconds": 143.2160484,
+    "diagnosticsEnabled": true
+  },
+  "implementerRendered": {
+    "independentlyRerun": false,
+    "identicalMergedSource": true,
+    "kings": {
+      "passed": 3,
+      "total": 3,
+      "durationSeconds": 1.59
+    },
+    "classic": {
+      "passed": 4,
+      "total": 4,
+      "durationSeconds": 4.0
+    },
+    "quick": {
+      "passed": 5,
+      "total": 5,
+      "durationSeconds": 7.21
+    },
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "priorFoundationIntermittentFailures": {
+    "preserved": true,
+    "cause": "unconfirmed",
+    "recurredInIndependentRun": false,
+    "diagnosedProductionFix": false
+  },
+  "push": {
+    "attemptedThisMerge": false,
+    "owner": "coordinator",
+    "priorFoundationBlockResolvedByCoordinator": true,
+    "remoteAtHandoff": "3c6d6694ff694ec7742f0caf8642219c0fa0a07a"
+  },
+  "files": [
+    {
+      "path": "artifacts/kings-elimination-merge/preservation.json",
+      "bytes": 38212,
+      "sha256": "0d046f5bfd866eebb7154ea8b72e1ec00e051ca413defe555dbbf5efa32af4a8"
+    },
+    {
+      "path": "artifacts/kings-elimination-merge/session-independent.txt",
+      "bytes": 6147,
+      "sha256": "67d5999712508a6e486b6bbf24416a9b9e0ed83e9777c6c4d2513debd2b218dd"
+    },
+    {
+      "path": "artifacts/kings-elimination-merge/session-independent-run.json",
+      "bytes": 982,
+      "sha256": "b2c1733e4da7861f51aaed5dfe1982e2511cf4c2c1054462f879236324c869c9"
+    }
+  ]
+}
