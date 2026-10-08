@@ -12,7 +12,8 @@ namespace WordDeduction.UI
         readonly VisualElement root;
         readonly Func<Language> language;
         readonly List<(VisualElement element, AccessibilityNode node)> nodes = new List<(VisualElement, AccessibilityNode)>();
-        bool queued, disposed;
+        bool disposed;
+        int refreshFrame = -1;
         string focusName;
         public AccessibilityHierarchy Hierarchy { get; private set; }
         public AccessibleMenu(VisualElement root, Func<Language> language)
@@ -23,9 +24,7 @@ namespace WordDeduction.UI
         void ReaderChanged(bool enabled) { if (enabled) Refresh(); }
         public void Refresh()
         {
-            if (disposed || queued) return;
-            queued = true;
-            root.schedule.Execute(() => { queued = false; if (!disposed) Build(); });
+            if (!disposed) refreshFrame = Time.frameCount;
         }
         void Build()
         {
@@ -122,6 +121,14 @@ namespace WordDeduction.UI
         }
         public void Tick()
         {
+            if (disposed) return;
+            // Refresh can precede UI Toolkit's style/layout pass. The following
+            // frame sees the newly shown panel instead of its stale display:none.
+            if (refreshFrame >= 0 && Time.frameCount > refreshFrame)
+            {
+                refreshFrame = -1;
+                Build();
+            }
             foreach (var pair in nodes)
             {
                 // Unity's Android native frames otherwise retain pre-layout zero bounds.

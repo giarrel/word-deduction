@@ -17,6 +17,48 @@ namespace WordDeduction.Tests
     {
         readonly List<Fixture> live = new List<Fixture>();
         [TearDown] public void Cleanup() { foreach (var fixture in live) fixture.Dispose(); live.Clear(); }
+        [UnityTest] public IEnumerator PublicGroupHierarchyReturnsAfterAbandonAndResultWithoutAnotherAction()
+        {
+            foreach (int count in new[] { 5, 20 })
+            foreach (bool result in new[] { false, true })
+            {
+                var fixture = new Fixture(Language.English,count); live.Add(fixture); yield return null; yield return null;
+                Submit(fixture.Root.Q<Button>("resumeMatch")); yield return null; yield return null;
+                if (result)
+                {
+                    Submit(fixture.Root.Q<Button>("eliminate-" + fixture.GoodKingId)); yield return null;
+                    Submit(fixture.Root.Q<Button>("confirmElimination")); yield return null; yield return null;
+                }
+                else
+                {
+                    Submit(fixture.Root.Q<Button>("matchBack")); yield return null;
+                    Submit(fixture.Root.Q<Button>("abandonMatch")); yield return null; yield return null;
+                }
+                Assert.That(AllLabels(fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes), Does.Not.Contain("Add player "));
+                Submit(fixture.Root.Q<Button>(result ? "editGroup" : "confirmAbandon"));
+                yield return null; yield return null; yield return null;
+                Assert.That(fixture.Session.Match, Is.Null);
+                Assert.That(fixture.Root.Q<VisualElement>("screen").resolvedStyle.display, Is.EqualTo(DisplayStyle.Flex));
+                string labels = string.Join("\n",AllLabels(fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes));
+                Assert.That(labels, Does.Contain("Add player").And.Contain("Kings").And.Contain("Alex"), "A newly visible Group must restore its public controls and nested player list without another redraw action.");
+                var groupNodes = fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes;
+                var players = groupNodes.First(n => n.role == UnityEngine.Accessibility.AccessibilityRole.ScrollView);
+                foreach (var node in new[] { groupNodes.First(n => n.label == "Add player"), players.children.First(n => n.label.Contains("Alex")) })
+                {
+                    Assert.That(node.isActive, Is.True);
+                    Assert.That(node.frame.width, Is.GreaterThan(0));
+                    Assert.That(node.frame.height, Is.GreaterThan(0));
+                }
+                Submit(fixture.Root.Q<Button>("playButton")); yield return null; yield return null; yield return null;
+                Assert.That(fixture.Root.Q<Label>("cardOwner"), Is.Not.Null);
+                labels = string.Join("\n",AllLabels(fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes));
+                Assert.That(labels, Does.Contain("Back").And.Contain("Help").And.Contain("Alex").And.Not.Contain("Add player"), "The newly shown Match must expose its public handoff controls without reviving the hidden Group.");
+                var back = fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes.First(n => n.label == "Back");
+                Assert.That(back.isActive, Is.True);
+                Assert.That(back.frame.width, Is.GreaterThan(0));
+                Assert.That(back.frame.height, Is.GreaterThan(0));
+            }
+        }
         [UnityTest] public IEnumerator RapidRepeatedConfirmationDoesNotStartARematch()
         {
             var fixture = new Fixture(Language.English); live.Add(fixture); yield return null;
@@ -132,17 +174,18 @@ namespace WordDeduction.Tests
             public readonly GameObject Host;
             readonly PanelSettings panel;
             readonly RenderTexture texture;
-            public string GoodWord, EvilWord;
+            public string GoodWord, EvilWord, GoodKingId;
             public VisualElement Root => Host.GetComponent<UIDocument>().rootVisualElement;
-            public Fixture(Language language)
+            public Fixture(Language language, int count = 5)
             {
                 Session = Session.Open(DirectoryPath, language, _ => 0);
                 foreach (var name in new[] { "Alex", "Bea", "Chris", "Dana", "Eli" }) Session.AddPlayer(name);
+                for (int i = 5; i < count; i++) Session.AddPlayer(new string('W',24));
                 Session.SetMode(GameMode.Kings); Session.StartMatch();
                 while (Session.Match.Phase == MatchPhase.Handoff)
                 {
                     string id = Session.Match.Owner.Id; var card = Session.RevealCard(id);
-                    if (card.Kind == PrivateCardKind.GoodKing) GoodWord = card.Word;
+                    if (card.Kind == PrivateCardKind.GoodKing) { GoodWord = card.Word; GoodKingId = card.Owner.Id; }
                     if (card.Owner.DisplayName == "Alex") EvilWord = card.Word;
                     Session.HideWord(); Session.AdvanceHandoff(id);
                 }
