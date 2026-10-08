@@ -1,5 +1,8 @@
 using WordDeduction;
 
+if (args.Length == 3 && args[0] == "--export-native-visual-fixtures")
+    return NativeVisualFixtures.Export(args[1], args[2]);
+
 var cases = new (string name, Action<string> run)[] {
     ("confirmed player survives reopening with stable identity", directory => {
         var session = Session.Open(directory, Language.English);
@@ -169,6 +172,7 @@ cases = cases.Concat(NameCases.All).ToArray();
 cases = cases.Concat(KingsCases.All).ToArray();
 cases = cases.Concat(KingsEliminationCases.All).ToArray();
 cases = cases.Concat(KingsLastChanceCases.All).ToArray();
+cases = cases.Concat(KingsRecoveryCases.All).ToArray();
 if (args.Length > 0) cases = cases.Where(test => test.name.Contains(args[0],StringComparison.OrdinalIgnoreCase)).ToArray();
 int failures = 0;
 foreach (var test in cases) {

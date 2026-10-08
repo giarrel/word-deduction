@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var report = UnityEditor.Build.Reporting.BuildReport.GetLatestReport(); var warnings = new System.Collections.Generic.List<string>(); foreach (var step in report.steps) foreach (var message in step.messages) if (message.type == UnityEngine.LogType.Warning || message.type == UnityEngine.LogType.Error) warnings.Add(step.name + \": \" + message.content); return new { report.summary.totalErrors, report.summary.totalWarnings, warnings };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "totalErrors": 0,
+        "totalWarnings": 2,
+        "warnings": [
+          "Preprocess Player: Pipeline: No RuntimePipelineConfig asset found (Project Settings > Pipeline > Runtime). Pipeline will be disabled in Player builds.",
+          "Compile scripts: Assets\\WordDeduction\\UI\\MatchSurface.cs(80,43): warning CS0618: 'EventBase.PreventDefault()' is obsolete: 'Use StopPropagation and/or FocusController.IgnoreEvent. Before proceeding, make sure you understand the latest changes to UIToolkit event propagation rules by visiting Unity's manual page https://docs.unity3d.com/Manual/UIE-Events-Dispatching.html'"
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7801,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\acceptance\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "WordDeduction.Editor.AppBuild.Configure(); foreach (var path in new[] { \"Assets/WordDeduction/UI/Inter.asset\", \"Assets/WordDeduction/UI/Emoji.asset\" }) { var font = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.TextCore.Text.FontAsset>(path); font.ClearFontAssetData(true); UnityEditor.EditorUtility.SetDirty(font); UnityEditor.AssetDatabase.SaveAssetIfDirty(font); } return new { Version = UnityEditor.PlayerSettings.bundleVersion, Code = UnityEditor.PlayerSettings.Android.bundleVersionCode, Target = UnityEditor.EditorUserBuildSettings.activeBuildTarget.ToString() };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "Version": "1.1.0",
+        "Code": 5,
+        "Target": "StandaloneWindows64"
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-worktrees\\acceptance\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
