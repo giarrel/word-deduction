@@ -36,9 +36,19 @@
       <ui:VisualElement class="mode-picker">
         <ui:Button name="quickMode" class="mode-button" />
         <ui:Button name="classicMode" class="mode-button" />
+        <ui:Button name="kingsMode" class="mode-button" />
       </ui:VisualElement>
       <ui:Label name="modeDescription" class="mode-description" />
       <ui:Button name="whitePreference" class="white-preference hidden" />
+      <ui:VisualElement name="kingsSettings" class="kings-settings hidden">
+        <ui:VisualElement class="kings-count-row">
+          <ui:Button name="lessUndercover" text="−" class="count-step" />
+          <ui:Label name="kingsUndercoverCount" class="count-label" />
+          <ui:Button name="moreUndercover" text="+" class="count-step" />
+          <ui:Button name="automaticUndercover" class="count-auto" />
+        </ui:VisualElement>
+        <ui:Label name="kingsCountAdjustment" class="hint count-adjustment hidden" />
+      </ui:VisualElement>
       <ui:Button name="playButton" class="play-button" />
       <ui:Label name="startHint" class="start-hint" />
     </ui:VisualElement>

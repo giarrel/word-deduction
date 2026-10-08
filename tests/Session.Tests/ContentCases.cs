@@ -10,7 +10,8 @@ static class ContentCases
             var used = new HashSet<string>(); string last = null;
             for (int deal=0;deal<1040;deal++) {
                 session = Session.Open(directory,Language.English, maximum => maximum-1);
-                Check(session.SetLanguage(deal%2==0 ? Language.German : Language.English).Success,"language changes between deals");
+                var languageChanged = session.SetLanguage(deal%2==0 ? Language.German : Language.English);
+                Check(languageChanged.Success,"language changes between deals: " + languageChanged.Error + "; deal=" + deal + "; storage=" + session.View.StorageNotice);
                 string id = Draw(session);
                 if (deal%520==0) { Check(last != id,"rollover avoids the last pair"); used.Clear(); }
                 Check(used.Add(id),"pair repeats before all 520 pairs were used at deal " + deal);

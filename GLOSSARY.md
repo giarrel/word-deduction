@@ -29,6 +29,25 @@ Der Modus mit einer Hinweisrunde, einer Entscheidung und anschließendem Ergebni
 **Classic / Klassisch**:
 Der Modus mit wiederholten Hinweisrunden und Eliminierungen bis zur Siegbedingung; Mr. White ist eine optionale zusätzliche Rolle.
 
+**Kings / Könige**:
+Der dritte Modus mit zwei verdeckten Anführern, in dem beide Teams ihren eigenen König schützen und den gegnerischen König suchen.
+
+**King / König**:
+Der einzelne Anführer eines Teams im Modus Könige, den gewöhnliche Teammitglieder namentlich kennen. Der gute König ist ein Bürger; der böse König ist Mr. White.
+_Avoid_: separater Assassine, zusätzliche dritte Seite
+
+**Good team / Gutes Team**:
+Die Bürger einschließlich ihres Königs im Modus Könige.
+
+**Evil team / Böses Team**:
+Die gewöhnlichen Undercover zusammen mit ihrem König Mr. White im Modus Könige.
+
+**Last chance / Letzte Chance**:
+Der eine Versuch des herausgewählten bösen Königs, durch das Erraten des guten Wortes oder das Identifizieren des guten Königs den Sieg für sein Team zu wenden.
+
+**Table play / Spiel am Tisch**:
+Die gemeinsame Hinweis-, Diskussions- und Abstimmungsphase im Modus Könige, deren Ablauf die Personen am Tisch selbst organisieren.
+
 **Civilian / Bürger**:
 Ein Teilnehmer mit dem Mehrheitswort, der abweichende Rollen finden möchte. Er kennt seine genaue Rolle zunächst nicht.
 
@@ -36,7 +55,7 @@ Ein Teilnehmer mit dem Mehrheitswort, der abweichende Rollen finden möchte. Er 
 Ein Teilnehmer mit einem anderen, verwandten Wort. Er weiß zunächst nicht, dass sein Wort von der Mehrheit abweicht.
 
 **Mr. White**:
-Ein Teilnehmer ohne geheimes Wort, der blufft und nach seiner Eliminierung einmal das Mehrheitswort erraten darf.
+Ein Teilnehmer ohne geheimes Wort, der blufft. In Klassisch darf er nach seiner Eliminierung einmal das Mehrheitswort erraten; in Könige ist er der böse König mit der Letzten Chance seines Teams.
 
 **Word pair / Wortpaar**:
 Zwei verschiedene, verwandte Begriffe, die für Bürger und Undercover plausible gemeinsame Hinweise ermöglichen.

@@ -22,7 +22,8 @@ static class QuickCases
                 while (session.Match.Phase == MatchPhase.Handoff) {
                     var owner = session.Match.Owner.Id;
                     words.Add(session.RevealWord(owner)); session.HideWord();
-                    Check(session.AdvanceHandoff(owner).Success, "read and hidden card can advance");
+                    var advanced = session.AdvanceHandoff(owner);
+                    Check(advanced.Success, "read and hidden card can advance: " + advanced.Error + "; size=" + count + "; owner=" + session.Match.HandoffNumber);
                 }
                 Check(words.Distinct().Count() == 2 && words.GroupBy(w => w).Any(g => g.Count() == 1), "exactly one different word, no White");
                 Check(session.Match.Phase == MatchPhase.Clues && session.Match.Result == null, "one public clue round without secret results");
