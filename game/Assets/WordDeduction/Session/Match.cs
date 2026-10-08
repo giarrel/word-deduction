@@ -4,10 +4,10 @@ using System.Linq;
 
 namespace WordDeduction
 {
-    public enum MatchPhase { Handoff, Clues, Vote, Result, Elimination, WhiteGuess, TablePlay }
+    public enum MatchPhase { Handoff, Clues, Vote, Result, Elimination, WhiteGuess, TablePlay, KingsElimination, KingsLastChance }
     public enum Role { Civilian, Undercover, White }
     public enum PrivateCardKind { Word, White, GoodKing, EvilKing }
-    public enum Outcome { CaughtUndercover, AccusedCivilian, RepeatedTie, AllAdversariesEliminated, OneCivilianRemains, WhiteGuessed }
+    public enum Outcome { CaughtUndercover, AccusedCivilian, RepeatedTie, AllAdversariesEliminated, OneCivilianRemains, WhiteGuessed, GoodKingEliminated, OnlyKingsRemain }
     internal static class RoleCounts
     {
         internal static int Minimum(GameMode mode) => mode == GameMode.Quick ? 3 : mode == GameMode.Kings ? 5 : 4;
@@ -34,6 +34,7 @@ namespace WordDeduction
     {
         public ParticipantView Participant { get; internal set; }
         public Role Role { get; internal set; }
+        public bool IsKing { get; internal set; }
     }
     public sealed class ResultView
     {
@@ -54,6 +55,7 @@ namespace WordDeduction
         public IReadOnlyList<ParticipantView> Survivors { get; internal set; }
         public int Round { get; internal set; }
         public RoleView Elimination { get; internal set; }
+        public ParticipantView EliminatedParticipant { get; internal set; }
         public ParticipantView Owner { get; internal set; }
         public ParticipantView StartingPlayer { get; internal set; }
         public int HandoffNumber { get; internal set; }
@@ -76,6 +78,8 @@ namespace WordDeduction
                     Id = match.Id, Mode = match.Mode, Language = match.Language, Phase = match.Phase,
                     Participants = match.Participants.Select(PublicParticipant).ToArray(),
                     Survivors = match.Participants.Where(p => !p.Eliminated).Select(PublicParticipant).ToArray(), Round = match.Round,
+                    EliminatedParticipant = match.Phase == MatchPhase.KingsElimination || match.Phase == MatchPhase.KingsLastChance
+                        ? PublicParticipant(match.Participants.First(p => p.Id == match.Suspect)) : null,
                     Elimination = match.Phase != MatchPhase.Elimination && match.Phase != MatchPhase.WhiteGuess ? null : new RoleView {
                         Participant = PublicParticipant(match.Participants.First(p => p.Id == match.Suspect)), Role = match.Participants.First(p => p.Id == match.Suspect).Role },
                     Owner = match.Phase == MatchPhase.Handoff ? PublicParticipant(match.Participants[match.Handoff]) : null,
@@ -83,11 +87,12 @@ namespace WordDeduction
                     HandoffNumber = match.Handoff + 1,
                     CanAdvance = !revealed && match.Phase == MatchPhase.Handoff && readOwner == match.Participants[match.Handoff].Id,
                     Runoff = match.Runoff,
-                    SelectedSuspect = match.Suspect == null ? null : PublicParticipant(match.Participants.First(p => p.Id == match.Suspect)),
+                    SelectedSuspect = match.Suspect == null || (match.Mode == GameMode.Kings && match.Phase != MatchPhase.TablePlay) ? null : PublicParticipant(match.Participants.First(p => p.Id == match.Suspect)),
                     Result = match.Phase != MatchPhase.Result ? null : new ResultView {
                         Reason = match.Outcome.Value, Winner = Winners(match)[0], WinningRoles = Winners(match),
                         CivilianWord = match.CivilianWord, UndercoverWord = match.UndercoverWord,
-                        Roles = match.Participants.Select(p => new RoleView { Participant = PublicParticipant(p), Role = p.Role }).ToArray()
+                        Roles = match.Participants.Select(p => new RoleView { Participant = PublicParticipant(p), Role = p.Role,
+                            IsKing = match.Mode == GameMode.Kings && (p.Id == match.GoodKingId || p.Role == Role.White) }).ToArray()
                     }
                 };
             }
@@ -98,6 +103,33 @@ namespace WordDeduction
             if (state.Match != null) return new CommandResult { Error = "MatchInProgress" };
             if (!View.ReadyToStart) return new CommandResult { Error = "NotEnoughPlayers" };
             return Deal();
+        }
+        bool KingsTableAction(string expectedMatchId, int expectedEliminationCount) =>
+            state.Match?.Mode == GameMode.Kings && state.Match.Id == expectedMatchId &&
+            (state.Match.Phase == MatchPhase.TablePlay || state.Match.Phase == MatchPhase.KingsElimination) &&
+            state.Match.Participants.Count(p => p.Eliminated) == expectedEliminationCount;
+        public CommandResult SelectElimination(string expectedMatchId, int expectedEliminationCount, string participantId)
+        {
+            if (!KingsTableAction(expectedMatchId, expectedEliminationCount) || !state.Match.Participants.Any(p => p.Id == participantId && !p.Eliminated)) return InvalidAction();
+            return Change(next => { next.Match.Suspect = participantId; next.Match.Phase = MatchPhase.TablePlay; });
+        }
+        public CommandResult CancelElimination(string expectedMatchId, int expectedEliminationCount, string expectedParticipantId)
+        {
+            if (!KingsTableAction(expectedMatchId, expectedEliminationCount) || state.Match.Phase != MatchPhase.TablePlay || expectedParticipantId == null || state.Match.Suspect != expectedParticipantId) return InvalidAction();
+            return Change(next => next.Match.Suspect = null);
+        }
+        public CommandResult ConfirmElimination(string expectedMatchId, int expectedEliminationCount, string expectedParticipantId)
+        {
+            if (!KingsTableAction(expectedMatchId, expectedEliminationCount) || state.Match.Phase != MatchPhase.TablePlay || expectedParticipantId == null || state.Match.Suspect != expectedParticipantId) return InvalidAction();
+            return Change(next => {
+                var eliminated = next.Match.Participants.First(p => p.Id == expectedParticipantId);
+                eliminated.Eliminated = true;
+                if (eliminated.Role == Role.White) { next.Match.Phase = MatchPhase.KingsLastChance; return; }
+                next.Match.Phase = MatchPhase.KingsElimination;
+                if (expectedParticipantId == next.Match.GoodKingId) { next.Match.Outcome = Outcome.GoodKingEliminated; next.Match.Phase = MatchPhase.Result; }
+                else if (next.Match.Participants.Count(p => !p.Eliminated) == 2 && next.Match.Participants.Any(p => !p.Eliminated && p.Role == Role.White))
+                { next.Match.Outcome = Outcome.OnlyKingsRemain; next.Match.Phase = MatchPhase.Result; }
+            });
         }
         CommandResult Deal()
         {
@@ -202,6 +234,7 @@ namespace WordDeduction
         bool LiveMatch => state.Match != null && state.Match.Phase != MatchPhase.Result;
         static Role[] Winners(MatchState match)
         {
+            if (match.Mode == GameMode.Kings) return new[] { Role.Undercover, Role.White };
             if (match.Outcome == Outcome.OneCivilianRemains) return match.Participants.Where(p => !p.Eliminated && p.Role != Role.Civilian).Select(p => p.Role).Distinct().OrderBy(r => r).ToArray();
             return new[] { match.Outcome == Outcome.WhiteGuessed ? Role.White : match.Outcome == Outcome.CaughtUndercover || match.Outcome == Outcome.AllAdversariesEliminated ? Role.Civilian : Role.Undercover };
         }
@@ -282,10 +315,21 @@ namespace WordDeduction
         static CommandResult InvalidAction() => new CommandResult { Error = "InvalidAction" };
         static bool ValidKingsMatch(MatchState match)
         {
-            return match.Participants.Count(p => p.Role == Role.White) == 1 &&
-                match.Participants.Any(p => p.Id == match.GoodKingId && p.Role == Role.Civilian) &&
-                (match.Phase == MatchPhase.Handoff || match.Phase == MatchPhase.TablePlay) &&
-                match.Round == 1 && !match.Runoff && match.Suspect == null && match.Outcome == null && !match.Participants.Any(p => p.Eliminated);
+            if (match.Participants.Count(p => p.Role == Role.White) != 1 ||
+                !match.Participants.Any(p => p.Id == match.GoodKingId && p.Role == Role.Civilian) || match.Round != 1 || match.Runoff) return false;
+            var suspect = match.Participants.FirstOrDefault(p => p.Id == match.Suspect);
+            bool goodKingOut = match.Participants.First(p => p.Id == match.GoodKingId).Eliminated;
+            bool evilKingOut = match.Participants.Single(p => p.Role == Role.White).Eliminated;
+            int survivors = match.Participants.Count(p => !p.Eliminated);
+            if (match.Phase == MatchPhase.Result) return suspect != null && suspect.Eliminated && !evilKingOut &&
+                (match.Outcome == Outcome.GoodKingEliminated ? suspect.Id == match.GoodKingId && survivors >= 2 :
+                 match.Outcome == Outcome.OnlyKingsRemain && !goodKingOut && survivors == 2 && suspect.Id != match.GoodKingId && suspect.Role != Role.White);
+            if (match.Outcome != null || match.Participants.First(p => p.Id == match.GoodKingId).Eliminated) return false;
+            if (match.Phase == MatchPhase.Handoff) return suspect == null && !match.Participants.Any(p => p.Eliminated);
+            if (match.Phase == MatchPhase.KingsLastChance) return suspect != null && suspect.Eliminated && suspect.Role == Role.White && survivors >= 2;
+            if (evilKingOut || survivors <= 2) return false;
+            if (match.Phase == MatchPhase.TablePlay) return suspect == null || !suspect.Eliminated;
+            return match.Phase == MatchPhase.KingsElimination && suspect != null && suspect.Eliminated && suspect.Role != Role.White && suspect.Id != match.GoodKingId;
         }
         public CommandResult AdvanceHandoff(string ownerId)
         {
