@@ -1,0 +1,75 @@
+{
+  "verifiedUtc": "2026-10-08T18:35:00.4986057Z",
+  "priorIntegration": "4217440823ce78c4c25ef356d8e3e4f9f542887e",
+  "implementationTip": "c63cf67cc218a71f91c8f023fe72c7e6c9e592be",
+  "mergeCommit": "ca8e2f10b7529d5950d650f8f33c6d58ab0d07ed",
+  "identicalSourceAndMergeTree": "75412735fb3d20eea13f2aad165ce34a411355a2",
+  "identicalRuntimeUiTree": "08e849f1bf9c5f5c4ceef637edaccb1c18ad9691",
+  "selectedEvidence": {
+    "files": 80,
+    "bytes": 1980675,
+    "manifestSha256": "4f28611fde2d011b4c914a96fac9f9798a4c2ec08d7ad9843a0b841b4e1a5fa6",
+    "sourceAndMergedDestinationVerified": true
+  },
+  "rawEvidence": {
+    "files": 87,
+    "bytes": 22437537,
+    "manifestSha256": "8ad6990a686a6ee407988c139d855fd7d5eaeb6d7f6fa5b9ecf49239a1315134",
+    "sourceAndBackupVerified": true,
+    "backupDirectory": "artifacts/kings-rules-cards-ticket15",
+    "overwritten": false
+  },
+  "preservationRecord": {
+    "path": "artifacts/kings-rules-cards-merge/preservation.json",
+    "bytes": 46426,
+    "sha256": "be20fe9883e3bd1dd9598744a38a2b4d4d19457ee528b6249a69c519e4f8cbce"
+  },
+  "rendered": {
+    "path": "docs/validation/kings-rules-cards/evidence/rendered-full.json",
+    "sha256": "757deefa049c5311bc4c4c8febea7bc6878012af911c8be59d10eb1bc7575392",
+    "status": "completed",
+    "total": 41,
+    "passed": 41,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0,
+    "durationSeconds": 209.87,
+    "rerunByMerger": false
+  },
+  "session": {
+    "reused": true,
+    "reason": "All production Session, project/test/fixture, corpus and Unicode input trees are unchanged.",
+    "testedCommit": "663f82f4dd1daa544f3beec0ae459923275fa0f1",
+    "inputTrees": [
+      {
+        "path": "game/Assets/WordDeduction/Session",
+        "gitTree": "2aa54ec2ec2d92bbc729b04255c8d5ddac41b116"
+      },
+      {
+        "path": "tests/Session.Tests",
+        "gitTree": "5746906388c3bffa3284f6d2fb022cfa4f2e88f8"
+      },
+      {
+        "path": "content",
+        "gitTree": "fae305a03886bbde4c514b9ab4606b56be478fdd"
+      },
+      {
+        "path": "third-party/unicode-17.0.0",
+        "gitTree": "60dfecd06cdc211dcbca878ec227edd563803b32"
+      }
+    ],
+    "passed": 66,
+    "total": 66,
+    "exitCode": 0,
+    "diagnosticsEnabled": true,
+    "logPath": "artifacts/kings-elimination-merge/session-independent.txt",
+    "logSha256": "67d5999712508a6e486b6bbf24416a9b9e0ed83e9777c6c4d2513debd2b218dd",
+    "runtimeDllSha256": "7292d3eb508652d14726749dd27094f2d481aeccf2db6427b62f68a71460897e"
+  },
+  "mergerSourceCorrection": {
+    "path": "game/Assets/WordDeduction/Tests/PlayMode/KingsRulesScreenTests.cs",
+    "change": "Removed only one extra blank line at EOF flagged by git diff --check.",
+    "affectsRuntimeOrAssertions": false
+  },
+  "nativeCjkFallback": "Pending coordinator/#16 Android validation"
+}
