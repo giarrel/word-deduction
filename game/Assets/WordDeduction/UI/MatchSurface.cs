@@ -226,20 +226,25 @@ namespace WordDeduction.UI
                 Label(center,"confirmName",match.SelectedSuspect.DisplayName,"card-owner");
                 Label(center,"confirmHint",T("kingsConfirmHint"),"match-text");
                 string target = match.SelectedSuspect.Id;
-                Action("confirmElimination","confirmElimination",() => Act(session.ConfirmElimination(match.Id,eliminatedCount,target)));
-                Action("changeElimination","changeSuspect",() => Act(session.CancelElimination(match.Id,eliminatedCount,target)),false);
+                Action("confirmElimination","confirmElimination",() => Act(session.ConfirmElimination(match.Id,match.Round,eliminatedCount,target)));
+                Action("changeElimination","changeSuspect",() => Act(session.CancelElimination(match.Id,match.Round,eliminatedCount,target)),false);
                 return;
             }
-            Label(body,"kingsTableTitle",T("kingsTableTitle"),"match-title");
-            Label(body,"kingsTableInstructions",T("kingsRecordInstruction"),"match-text");
-            var list = ParticipantChoices("kingsSurvivors",match.Survivors,"eliminate-",id => Act(session.SelectElimination(match.Id,eliminatedCount,id)));
+            Label(body,"kingsTableTitle",T("classicClueTitle",match.Round),"match-kicker").AddToClassList("kings-round");
+            var list = ParticipantChoices("kingsSurvivors",match.Survivors,"eliminate-",id => Act(session.SelectElimination(match.Id,match.Round,eliminatedCount,id)));
+            var introduction = new VisualElement(); list.Insert(0,introduction);
+            var starter = Box(introduction,"starting-person");
+            starter.AddToClassList("kings-starter");
+            Label(starter,"kingsStarterCaption",T("starts"),"match-kicker");
+            Label(starter,"kingsStarterName",match.StartingPlayer.DisplayName,"match-title");
+            Action("nextKingsRound","continueRound",() => Act(session.NextKingsRound(match.Id,match.Round,eliminatedCount)),false);
             if (match.EliminatedParticipant != null)
             {
-                var banner = Box(list,"result-banner");
+                var banner = Box(introduction,"result-banner");
                 Label(banner,"kingsEliminatedName",match.EliminatedParticipant.DisplayName,"match-title");
                 Label(banner,"kingsEliminatedStatus",T("kingsNotKing"),"match-text");
-                list.Insert(0,banner);
             }
+            Label(introduction,"kingsTableInstructions",T("kingsRecordInstruction"),"match-text");
         }
         void KingsLastChance(MatchView match)
         {

@@ -1,0 +1,2 @@
+FAIL Kings starter reuses the frozen deal and every participant including White is eligible: the frozen initial choice is publicly visible, including White at seat 1
+0/1 passed

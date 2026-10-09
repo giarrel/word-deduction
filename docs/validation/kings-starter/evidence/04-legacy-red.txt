@@ -1,0 +1,5 @@
+PASS Kings starter reuses the frozen deal without drawing on handoff or reopen
+PASS Kings starter changes atomically after ordinary elimination without selection rerolls
+PASS Kings starter optional next round includes every survivor and rejects stale actions
+FAIL Kings starter authentic V5 dead starter migrates without a write and continues through V6: first living person deterministically replaces the dead starter
+3/4 passed

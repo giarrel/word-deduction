@@ -14,7 +14,7 @@ internal static class KingsEliminationCases
             Check(!session.ConfirmElimination(match.Id, 0, people[0].Id).Success, "stale target cannot confirm a corrected choice");
             Check(session.ConfirmElimination(match.Id, 0, people[3].Id).Success, "confirm ordinary elimination");
             Check(session.Match.Phase == MatchPhase.KingsElimination && session.Match.EliminatedParticipant.Id == people[3].Id, "only not-a-king elimination surface is exposed");
-            Check(session.Match.Elimination == null && session.Match.Result == null && session.Match.Owner == null && session.Match.StartingPlayer == null, "no side, words, private owner or starter disclosed");
+            Check(session.Match.Elimination == null && session.Match.Result == null && session.Match.Owner == null && session.Match.StartingPlayer != null, "only the public starter is disclosed, no side, words or private owner");
             Check(session.Match.Survivors.Count == 4 && session.View.Players.All(p => p.Active), "elimination changes match survivors only");
             session = Session.Open(directory, Language.German, _ => 0);
             Check(session.Match.Phase == MatchPhase.KingsElimination && session.Match.Survivors.Count == 4, "confirmed elimination survives reopening");

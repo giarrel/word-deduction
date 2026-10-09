@@ -69,6 +69,12 @@ namespace WordDeduction
             if (envelope.Version < 4 && state != null) Session.MigrateWordHistory(state);
             if (envelope.Version >= 4 && Newtonsoft.Json.Linq.JObject.Parse(envelope.Payload)["History"] == null) throw new InvalidDataException("Missing word history.");
             if (!Session.ValidSnapshot(state)) throw new InvalidDataException("Invalid session snapshot.");
+            // Before V6 Kings never displayed its starter, so ordinary eliminations
+            // could leave it pointing at an eliminated participant. Repair only the
+            // legacy in-memory suggestion; opening a save never writes or draws.
+            if (state.Match?.Mode == GameMode.Kings && state.Match.RulesVersion == 0 &&
+                state.Match.Participants[state.Match.StartingIndex].Eliminated)
+                state.Match.StartingIndex = state.Match.Participants.FindIndex(p => !p.Eliminated);
             return state;
         }
         private static Envelope ReadEnvelope(string path)

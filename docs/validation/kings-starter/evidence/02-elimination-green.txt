@@ -1,0 +1,3 @@
+PASS Kings starter reuses the frozen deal without drawing on handoff or reopen
+PASS Kings starter changes atomically after ordinary elimination without selection rerolls
+2/2 passed

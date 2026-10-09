@@ -1,0 +1,490 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 216.91,
+      "summary": {
+        "total": 66,
+        "passed": 66,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.BaseRoleControlsAllowAtomicSingleSlotReplacementInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.2846378,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.ClassicCanStartFromTheSavedGroupInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.2675222,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.EliminationsAndRepeatedTiesKeepOnlySurvivorsOnAShortScreen",
+          "Status": "Passed",
+          "Duration": 0.6115869,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.QuickContinuesAfterACatchAndEachWhiteGetsASecretSafeJudgment",
+          "Status": "Passed",
+          "Duration": 0.713409,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.WhiteAloneAndBothSurvivingAdversaryRolesAreNamedInTheResult",
+          "Status": "Passed",
+          "Duration": 0.4468489,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.WhitePrivateCardAndSpokenGuessRemainPrivateAcrossResumeInBothLanguages",
+          "Status": "Passed",
+          "Duration": 2.6167105,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ContentScreenTests.LongBilingualWordsFitTheRealSmallCardAndDisappearOnRelease",
+          "Status": "Passed",
+          "Duration": 125.1090543,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.AddingAPlayerScrollsTheNewRowIntoViewAfterLayout",
+          "Status": "Passed",
+          "Duration": 0.0752709,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.EditingTheLastPlayerKeepsAllActionsVisibleAfterTheViewportShrinks",
+          "Status": "Passed",
+          "Duration": 0.0698909,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.FailedRenameKeepsTheTypedNameForRetry",
+          "Status": "Passed",
+          "Duration": 0.0463172,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.GroupActionsThroughRenderedControlsSurviveReopening",
+          "Status": "Passed",
+          "Duration": 0.1315471,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.GroupScreenExposesTheNameEntryAndBothModes",
+          "Status": "Passed",
+          "Duration": 0.0137332,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.HandleAutoScrollReachesTheEndWithoutReorderingDuringPreview",
+          "Status": "Passed",
+          "Duration": 1.3276781,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.HandleReordersOnlyOnValidDropAndMoveButtonsReachBothEnds",
+          "Status": "Passed",
+          "Duration": 0.2368881,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.LargeBilingualGroupsKeepEditAndMoveControlsReachable",
+          "Status": "Passed",
+          "Duration": 0.6791199,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.LegacyPeopleAreCollapsedAndOnlyExplicitlyRestored",
+          "Status": "Passed",
+          "Duration": 0.1562117,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.NameDragsNeverEditAndOnlyTheExplicitButtonEdits",
+          "Status": "Passed",
+          "Duration": 0.1777182,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.OrdinaryScrollDoesNotReorderAndInterruptedOrFailedDropKeepsCommittedGroup",
+          "Status": "Passed",
+          "Duration": 0.2040348,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.GoodKingResultNamesTheWholeTeamAndBothKingsInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.8095593,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.KingsStarterAndChoicesRemainReadableOnSmallPhoneAtLargeText",
+          "Status": "Passed",
+          "Duration": 3.7616514,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.OrdinaryEliminationCanBeCorrectedAndContinuesDirectlyAtTheTableInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.8325024,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.PublicGroupHierarchyReturnsAfterAbandonAndResultWithoutAnotherAction",
+          "Status": "Passed",
+          "Duration": 1.5080733,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.RapidRepeatedConfirmationDoesNotStartARematch",
+          "Status": "Passed",
+          "Duration": 0.7615354,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.StarterAndOptionalNextStayOnTheTableAndSurviveReopenInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.9264114,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.WhiteEliminationKeepsLastChanceSafeAcrossRestartAndFailedSaveInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.9190953,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsFoundationScreenTests.KingKnowledgeStaysOutsideEveryAccessibilityNodeAndClearsOnInterruption",
+          "Status": "Passed",
+          "Duration": 0.1301317,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsFoundationScreenTests.KingsSelectionRetainsRequestedCountAndExplainsAdjustmentInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.4161034,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsFoundationScreenTests.PrivateCardsConcealAllKnowledgeAndFinishDirectlyAtTheTableInBothLanguages",
+          "Status": "Passed",
+          "Duration": 2.3607888,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.KingChoiceHasCorrectableUnmarkedTargetsAndOneTeamResultInBothLanguages",
+          "Status": "Passed",
+          "Duration": 3.2384459,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.LastChanceScreensKeepLongNamesAndActionsReachableAtLargeText",
+          "Status": "Passed",
+          "Duration": 7.3123094,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.RapidRepeatedLastChanceTapsCannotJudgeOrSkipTheResult",
+          "Status": "Passed",
+          "Duration": 1.4487656,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.WordChoiceAndSpokenAnswerCommitBeforeJudgmentInBothLanguages",
+          "Status": "Passed",
+          "Duration": 3.6212527,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.AllThreeModesAndKingsCountControlsFitAtLargeTextWithTwentyPlayers",
+          "Status": "Passed",
+          "Duration": 0.8126956,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.EveryKingsCardKeepsNeutralOrdinaryPresentationAndClearsAllFieldsOnInterruption",
+          "Status": "Passed",
+          "Duration": 3.9724333,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.FreeRoleControlsRemainReachableAndAccessibleAtLargeText",
+          "Status": "Passed",
+          "Duration": 5.3615815,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.LongKingsWordsFitBesideThePrivateScrollbarAndLongLeader",
+          "Status": "Passed",
+          "Duration": 24.1191751,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.MaximalKingListsCanBeReadWithOneFingerInsideTheSmallPhoneAtLargeText",
+          "Status": "Passed",
+          "Duration": 8.9944097,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.OptionalKingsRulesAreReadableFromInformationAndMatchHelpInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.998698,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.MotionScreenTests.CapturedReorderReleaseAndCancelAllowAnotherFingerToRevealAfterStarting",
+          "Status": "Passed",
+          "Duration": 0.1681674,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.MotionScreenTests.EndingCapturedReorderKeepsOtherHeldFingersBlockingThePrivateCard",
+          "Status": "Passed",
+          "Duration": 0.0774561,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.MotionScreenTests.PartialPullReturnsGraduallyInsteadOfSnappingAndCannotRevealOrAdvance",
+          "Status": "Passed",
+          "Duration": 0.3596759,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.MotionScreenTests.RegrabbingAReturningCardKeepsItsPositionAndRequiresANewDeliberatePull",
+          "Status": "Passed",
+          "Duration": 0.111699,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.CancelAndNextBeginInOneInputUpdateKeepTheOrder",
+          "Status": "Passed",
+          "Duration": 0.1262396,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.CanceledNativeTouchNeverCommitsThePreviewOrder",
+          "Status": "Passed",
+          "Duration": 0.1100949,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.FullyBufferedCanceledDragKeepsTheOrder",
+          "Status": "Passed",
+          "Duration": 0.1051136,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.LaterCanceledContactDoesNotCancelAnEndedDrag",
+          "Status": "Passed",
+          "Duration": 0.1007373,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.InvisibleNamesAreRejectedAndExtendedNamesSurviveTheUnityRuntime",
+          "Status": "Passed",
+          "Duration": 0.0968328,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard",
+          "Status": "Passed",
+          "Duration": 0.415745,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeLongOwnerKeepsCardAndActionsSeparateInsidePhoneInsets",
+          "Status": "Passed",
+          "Duration": 0.1415044,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextCardKeepsDecorativeMarkClearOfItsCaption",
+          "Status": "Passed",
+          "Duration": 0.1122893,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextEmptyGroupKeepsTheWholeFirstStepVisible",
+          "Status": "Passed",
+          "Duration": 0.0479262,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextExplainsWhyQuickAndClassicCannotStart",
+          "Status": "Passed",
+          "Duration": 0.4500463,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.MenuFramesFollowResizingAndScrollWithoutReplacingTheHierarchy",
+          "Status": "Passed",
+          "Duration": 0.1120554,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.PublicMenuSemanticsFollowNavigationAndNeverContainThePrivateWord",
+          "Status": "Passed",
+          "Duration": 0.0863225,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.SmallGroupHasFingerSizedLanguageAndEditControls",
+          "Status": "Passed",
+          "Duration": 0.0986376,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.BothLanguagesCompleteTheActualQuickFlowAndKeepTheGroup",
+          "Status": "Passed",
+          "Duration": 1.932954,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.HoldCancelCaptureLossSecondFingerAndLifecycleEraseSecretsSynchronously",
+          "Status": "Passed",
+          "Duration": 0.0712523,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.QuickStartsAtANamedCoveredCardAndRequiresIntentionalReveal",
+          "Status": "Passed",
+          "Duration": 0.3222673,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.SaveFailuresKeepUnconfirmedScreensAndSecretsCoveredForRetry",
+          "Status": "Passed",
+          "Duration": 0.9525326,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.TwentyPlayersCanReachTheLastSuspectAndResolveARepeatedTieOnAShortScreen",
+          "Status": "Passed",
+          "Duration": 3.8101016,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.AdditionalContactsCannotRevealUntilEveryFingerHasLifted",
+          "Status": "Passed",
+          "Duration": 0.2895189,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.ColdRestoredPauseAcceptsAbandonAndRepeatedTouchNavigation",
+          "Status": "Passed",
+          "Duration": 0.3167047,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.FailedFreshStartShowsTheWriteFailureAndAllowsExplicitRetry",
+          "Status": "Passed",
+          "Duration": 0.1536357,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.NavigationRetainsHeldContactsAndFreshTouchesWorkAfterReleaseOrInterruption",
+          "Status": "Passed",
+          "Duration": 0.2793891,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.RecoveryExplainsRestoredBlockedAndInaccessibleFilesInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.2530936,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ReleaseScreenTests.InformationIsOptionalReadableAndReturnsToTheUnchangedGroup",
+          "Status": "Passed",
+          "Duration": 0.2546912,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
