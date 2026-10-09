@@ -1,0 +1,11 @@
+{
+  "baselineCode": 10,
+  "baselineSource": "bd7b618c957051d3ee61321a6ed3d275a5302a93",
+  "candidateCode": 11,
+  "candidateSource": "25d3e9f9d80609c178230cf838cecfda54ae0370",
+  "runtimeScope": "UI, Session, Session tests, Android plugins, packages",
+  "runtimeChanged": [
+    "game/Assets/WordDeduction/UI/GroupReorder.cs"
+  ],
+  "verifiedUtc": "2026-10-09T09:19:29.7449464Z"
+}

@@ -1,6 +1,9 @@
 using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.UIElements;
 
 namespace WordDeduction.UI
@@ -16,6 +19,10 @@ namespace WordDeduction.UI
         Vector2 start, position;
         float startScroll;
         bool moved;
+        TouchControl nativeTouch;
+        IInputStateChangeMonitor nativeMonitor;
+        int nativeTouchId;
+        bool nativeContactLive, nativeCanceled, nativeEnded;
         VisualElement candidate;
         IVisualElementScheduledItem scrolling;
         public GroupReorder(ScrollView list, VisualElement row, string[] activeIds, Action<int> commit, Action<int> endContact)
@@ -44,6 +51,17 @@ namespace WordDeduction.UI
             if (pointer >= 0 || e.button != 0 || !target.enabledInHierarchy) return;
             pointer = e.pointerId; start = position = e.position; startScroll = list.scrollOffset.y;
             moved = false; destination = -1;
+            nativeContactLive = nativeCanceled = nativeEnded = false;
+            var screen = Touchscreen.current;
+            int index = pointer - PointerId.touchPointerIdBase;
+            if (e.pointerType == UnityEngine.UIElements.PointerType.touch && screen != null && index >= 0 && index < screen.touches.Count)
+            {
+                nativeTouch = screen.touches[index]; nativeTouchId = nativeTouch.touchId.ReadValue();
+                var phase = nativeTouch.phase.ReadValue();
+                nativeContactLive = phase == UnityEngine.InputSystem.TouchPhase.Began || phase == UnityEngine.InputSystem.TouchPhase.Moved
+                    || phase == UnityEngine.InputSystem.TouchPhase.Stationary;
+                nativeMonitor = InputState.AddChangeMonitor(nativeTouch.phase,ObserveNativeTouch);
+            }
             target.CapturePointer(pointer); e.StopPropagation();
             scrolling = target.schedule.Execute(AutoScroll).Every(16);
         }
@@ -81,16 +99,31 @@ namespace WordDeduction.UI
         {
             if (e.pointerId != pointer) return;
             position = e.position; Preview();
-            int drop = moved && list.contentViewport.worldBound.Contains(position) ? destination : -1;
+            // A reused or already terminal slot cannot identify a buffered Down safely.
+            // Require the captured contact's deliberate end, not merely an arbitrary UI Up.
+            bool released = nativeTouch == null || (nativeContactLive && (nativeEnded
+                || (nativeTouch.touchId.ReadValue() == nativeTouchId && nativeTouch.phase.ReadValue() == UnityEngine.InputSystem.TouchPhase.Ended)));
+            int drop = released && !nativeCanceled && moved && list.contentViewport.worldBound.Contains(position) ? destination : -1;
             endContact(e.pointerId);
             Cancel(); e.StopPropagation();
             if (drop >= 0) commit(drop);
+        }
+        void ObserveNativeTouch(InputControl control, double time, InputEventPtr input, long monitorIndex)
+        {
+            // InputForUI buffers a canceled touch as PointerUp. Observe each state write
+            // before the next native Begin can reuse this slot within the same update.
+            if (nativeTouch == null || nativeTouch.touchId.ReadValue() != nativeTouchId) return;
+            var phase = nativeTouch.phase.ReadValue();
+            nativeCanceled |= phase == UnityEngine.InputSystem.TouchPhase.Canceled;
+            nativeEnded |= phase == UnityEngine.InputSystem.TouchPhase.Ended;
         }
         void CancelPointer(PointerCancelEvent e) { if (e.pointerId == pointer) { endContact(e.pointerId); Cancel(); } }
         void CaptureLost(PointerCaptureOutEvent e) { if (e.pointerId == pointer) Cancel(); }
         void Detached(DetachFromPanelEvent e) { Cancel(); }
         public void Cancel()
         {
+            if (nativeTouch != null && nativeMonitor != null) InputState.RemoveChangeMonitor(nativeTouch.phase,nativeMonitor);
+            nativeMonitor = null; nativeTouch = null;
             int previous = pointer; pointer = -1;
             scrolling?.Pause(); scrolling = null;
             row.style.translate = new Translate(0,0,0); row.RemoveFromClassList("reordering");

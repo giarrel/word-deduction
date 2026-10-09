@@ -1,0 +1,1685 @@
+{
+  "artifact": {
+    "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab",
+    "bytes": 37829159,
+    "sha256": "9148cb972b7c6b256ad0838f084ec3bfe2693e3cfbd70bcd5885e4b6623d930e"
+  },
+  "commands": [
+    {
+      "name": "bundle-validate",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\OpenJDK\\bin\\java.exe",
+        "-jar",
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\Tools\\bundletool-all-1.17.2.jar",
+        "validate",
+        "--bundle=C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "bundle-config",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\OpenJDK\\bin\\java.exe",
+        "-jar",
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\Tools\\bundletool-all-1.17.2.jar",
+        "dump",
+        "config",
+        "--bundle=C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "bundle-manifest",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\OpenJDK\\bin\\java.exe",
+        "-jar",
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\Tools\\bundletool-all-1.17.2.jar",
+        "dump",
+        "manifest",
+        "--bundle=C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab",
+        "--module=base"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "bundle-signature",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\OpenJDK\\bin\\jarsigner.exe",
+        "-verify",
+        "-verbose",
+        "-certs",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "aab-libc++_shared.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\aab\\base\\lib\\arm64-v8a\\libc++_shared.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "aab-libgame.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\aab\\base\\lib\\arm64-v8a\\libgame.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "aab-libil2cpp.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\aab\\base\\lib\\arm64-v8a\\libil2cpp.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "aab-libmain.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\aab\\base\\lib\\arm64-v8a\\libmain.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "aab-libswappywrapper.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\aab\\base\\lib\\arm64-v8a\\libswappywrapper.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "aab-libunity.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\aab\\base\\lib\\arm64-v8a\\libunity.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "build-apks-universal",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\OpenJDK\\bin\\java.exe",
+        "-jar",
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\Tools\\bundletool-all-1.17.2.jar",
+        "build-apks",
+        "--bundle=C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab",
+        "--output=C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal.apks",
+        "--mode=universal",
+        "--aapt2=C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-libc++_shared.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\universal-universal\\lib\\arm64-v8a\\libc++_shared.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-libgame.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\universal-universal\\lib\\arm64-v8a\\libgame.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-libil2cpp.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\universal-universal\\lib\\arm64-v8a\\libil2cpp.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-libmain.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\universal-universal\\lib\\arm64-v8a\\libmain.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-libswappywrapper.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\universal-universal\\lib\\arm64-v8a\\libswappywrapper.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-libunity.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\universal-universal\\lib\\arm64-v8a\\libunity.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-badging",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "badging",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal\\universal.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-manifest",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "xmltree",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal\\universal.apk",
+        "--file",
+        "AndroidManifest.xml"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-resources",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "resources",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal\\universal.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-session_backup_rules",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "xmltree",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal\\universal.apk",
+        "--file",
+        "res/xml/session_backup_rules.xml"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-session_data_extraction_rules",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "xmltree",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal\\universal.apk",
+        "--file",
+        "res/xml/session_data_extraction_rules.xml"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-classes.dex-disassembly",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\dexdump.exe",
+        "-d",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal-universal-classes.dex"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-signature",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\apksigner.bat",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal\\universal.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "universal-universal-zipalign",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\zipalign.exe",
+        "-v",
+        "-c",
+        "-P",
+        "16",
+        "4",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal\\universal.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "build-apks-default",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\OpenJDK\\bin\\java.exe",
+        "-jar",
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\Tools\\bundletool-all-1.17.2.jar",
+        "build-apks",
+        "--bundle=C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab",
+        "--output=C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default.apks",
+        "--mode=default",
+        "--aapt2=C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-libc++_shared.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\default-base-arm64_v8a\\lib\\arm64-v8a\\libc++_shared.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-libgame.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\default-base-arm64_v8a\\lib\\arm64-v8a\\libgame.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-libil2cpp.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\default-base-arm64_v8a\\lib\\arm64-v8a\\libil2cpp.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-libmain.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\default-base-arm64_v8a\\lib\\arm64-v8a\\libmain.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-libswappywrapper.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\default-base-arm64_v8a\\lib\\arm64-v8a\\libswappywrapper.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-libunity.so-readelf",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\llvm-readelf.exe",
+        "-Wl",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\native\\default-base-arm64_v8a\\lib\\arm64-v8a\\libunity.so"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-badging",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "badging",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-arm64_v8a.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-manifest",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "xmltree",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-arm64_v8a.apk",
+        "--file",
+        "AndroidManifest.xml"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-signature",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\apksigner.bat",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-arm64_v8a.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-arm64_v8a-zipalign",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\zipalign.exe",
+        "-v",
+        "-c",
+        "-P",
+        "16",
+        "4",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-arm64_v8a.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-master-badging",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "badging",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-master.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-master-manifest",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "xmltree",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-master.apk",
+        "--file",
+        "AndroidManifest.xml"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-master-resources",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "resources",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-master.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-master-session_backup_rules",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "xmltree",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-master.apk",
+        "--file",
+        "res/xml/session_backup_rules.xml"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-master-session_data_extraction_rules",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\aapt2.exe",
+        "dump",
+        "xmltree",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-master.apk",
+        "--file",
+        "res/xml/session_data_extraction_rules.xml"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-master-classes.dex-disassembly",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\dexdump.exe",
+        "-d",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default-base-master-classes.dex"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-master-signature",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\apksigner.bat",
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-master.apk"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "default-base-master-zipalign",
+      "command": [
+        "C:\\Users\\lucac\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\build-tools\\36.0.0\\zipalign.exe",
+        "-v",
+        "-c",
+        "-P",
+        "16",
+        "4",
+        "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-master.apk"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "packages": [
+    {
+      "identity": {
+        "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab",
+        "bytes": 37829159,
+        "sha256": "9148cb972b7c6b256ad0838f084ec3bfe2693e3cfbd70bcd5885e4b6623d930e"
+      },
+      "native": [
+        {
+          "file": "base/lib/arm64-v8a/libc++_shared.so",
+          "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4",
+          "zipCompression": 8,
+          "zipDataOffset": 14700262,
+          "zipOffsetModulo16k": 3814,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 634024,
+              "memoryBytes": 634024,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 634032,
+              "vaddr": 650416,
+              "fileBytes": 616000,
+              "memoryBytes": 616000,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 1250032,
+              "vaddr": 1282800,
+              "fileBytes": 39760,
+              "memoryBytes": 40208,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 1289792,
+              "vaddr": 1338944,
+              "fileBytes": 568,
+              "memoryBytes": 32016,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 1250032,
+              "vaddr": 1282800,
+              "fileBytes": 39760,
+              "memoryBytes": 40208,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 1282800,
+              "end": 1323008,
+              "endModulo16k": 12288,
+              "roundedProtection": [
+                1277952,
+                1327104
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "base/lib/arm64-v8a/libgame.so",
+          "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d",
+          "zipCompression": 8,
+          "zipDataOffset": 15106884,
+          "zipOffsetModulo16k": 836,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 144976,
+              "memoryBytes": 144976,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 144976,
+              "vaddr": 161360,
+              "fileBytes": 4424,
+              "memoryBytes": 6576,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 149400,
+              "vaddr": 182168,
+              "fileBytes": 520,
+              "memoryBytes": 5360,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 144976,
+              "vaddr": 161360,
+              "fileBytes": 4424,
+              "memoryBytes": 6576,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 161360,
+              "end": 167936,
+              "endModulo16k": 4096,
+              "roundedProtection": [
+                147456,
+                180224
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "base/lib/arm64-v8a/libil2cpp.so",
+          "sha256": "0f5ed163c0cb184ae177aa1cdbc066a218d768c8ef6e0e684cc0774ed68f66b3",
+          "zipCompression": 8,
+          "zipDataOffset": 15163806,
+          "zipOffsetModulo16k": 8606,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 19144800,
+              "memoryBytes": 19144800,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 19144800,
+              "vaddr": 19161184,
+              "fileBytes": 29666368,
+              "memoryBytes": 29666368,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 48811168,
+              "vaddr": 48843936,
+              "fileBytes": 1968768,
+              "memoryBytes": 1971040,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 50779936,
+              "vaddr": 50829088,
+              "fileBytes": 1679376,
+              "memoryBytes": 3917056,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 48811168,
+              "vaddr": 48843936,
+              "fileBytes": 1968768,
+              "memoryBytes": 1971040,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 48843936,
+              "end": 50814976,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                48840704,
+                50823168
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "base/lib/arm64-v8a/libmain.so",
+          "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b",
+          "zipCompression": 8,
+          "zipDataOffset": 29216882,
+          "zipOffsetModulo16k": 4210,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 2592,
+              "memoryBytes": 2592,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 2592,
+              "vaddr": 18976,
+              "fileBytes": 1280,
+              "memoryBytes": 1280,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 3872,
+              "vaddr": 36640,
+              "fileBytes": 560,
+              "memoryBytes": 4320,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 4432,
+              "vaddr": 53584,
+              "fileBytes": 48,
+              "memoryBytes": 64,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 3872,
+              "vaddr": 36640,
+              "fileBytes": 560,
+              "memoryBytes": 4320,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 36640,
+              "end": 40960,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                32768,
+                49152
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "base/lib/arm64-v8a/libswappywrapper.so",
+          "sha256": "ec386811c1726b21151052b9a26cc6ce6e6d6bf9b0769c24016cf0933c6875c1",
+          "zipCompression": 8,
+          "zipDataOffset": 29219527,
+          "zipOffsetModulo16k": 6855,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 208352,
+              "memoryBytes": 208352,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 208352,
+              "vaddr": 224736,
+              "fileBytes": 6800,
+              "memoryBytes": 8736,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 215152,
+              "vaddr": 247920,
+              "fileBytes": 8964,
+              "memoryBytes": 9416,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 208352,
+              "vaddr": 224736,
+              "fileBytes": 6800,
+              "memoryBytes": 8736,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 224736,
+              "end": 233472,
+              "endModulo16k": 4096,
+              "roundedProtection": [
+                212992,
+                245760
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "base/lib/arm64-v8a/libunity.so",
+          "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f",
+          "zipCompression": 8,
+          "zipDataOffset": 29299458,
+          "zipOffsetModulo16k": 4866,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 4381616,
+              "memoryBytes": 4381616,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 4381616,
+              "vaddr": 4398000,
+              "fileBytes": 13608928,
+              "memoryBytes": 13608928,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 17990544,
+              "vaddr": 18023312,
+              "fileBytes": 282008,
+              "memoryBytes": 285808,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 18272560,
+              "vaddr": 18321712,
+              "fileBytes": 90296,
+              "memoryBytes": 1499312,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 17990544,
+              "vaddr": 18023312,
+              "fileBytes": 282008,
+              "memoryBytes": 285808,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 18023312,
+              "end": 18309120,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                18022400,
+                18317312
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identity": {
+        "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\universal\\universal.apk",
+        "bytes": 37511614,
+        "sha256": "7893ef9945a49799f622ea95aecea1e7b2f1aa5c9248c3e9d0789cdac6f541fd"
+      },
+      "native": [
+        {
+          "file": "lib/arm64-v8a/libc++_shared.so",
+          "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4",
+          "zipCompression": 8,
+          "zipDataOffset": 14263416,
+          "zipOffsetModulo16k": 9336,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 634024,
+              "memoryBytes": 634024,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 634032,
+              "vaddr": 650416,
+              "fileBytes": 616000,
+              "memoryBytes": 616000,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 1250032,
+              "vaddr": 1282800,
+              "fileBytes": 39760,
+              "memoryBytes": 40208,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 1289792,
+              "vaddr": 1338944,
+              "fileBytes": 568,
+              "memoryBytes": 32016,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 1250032,
+              "vaddr": 1282800,
+              "fileBytes": 39760,
+              "memoryBytes": 40208,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 1282800,
+              "end": 1323008,
+              "endModulo16k": 12288,
+              "roundedProtection": [
+                1277952,
+                1327104
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libgame.so",
+          "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d",
+          "zipCompression": 8,
+          "zipDataOffset": 14670033,
+          "zipOffsetModulo16k": 6353,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 144976,
+              "memoryBytes": 144976,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 144976,
+              "vaddr": 161360,
+              "fileBytes": 4424,
+              "memoryBytes": 6576,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 149400,
+              "vaddr": 182168,
+              "fileBytes": 520,
+              "memoryBytes": 5360,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 144976,
+              "vaddr": 161360,
+              "fileBytes": 4424,
+              "memoryBytes": 6576,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 161360,
+              "end": 167936,
+              "endModulo16k": 4096,
+              "roundedProtection": [
+                147456,
+                180224
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libil2cpp.so",
+          "sha256": "0f5ed163c0cb184ae177aa1cdbc066a218d768c8ef6e0e684cc0774ed68f66b3",
+          "zipCompression": 8,
+          "zipDataOffset": 14726950,
+          "zipOffsetModulo16k": 14118,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 19144800,
+              "memoryBytes": 19144800,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 19144800,
+              "vaddr": 19161184,
+              "fileBytes": 29666368,
+              "memoryBytes": 29666368,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 48811168,
+              "vaddr": 48843936,
+              "fileBytes": 1968768,
+              "memoryBytes": 1971040,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 50779936,
+              "vaddr": 50829088,
+              "fileBytes": 1679376,
+              "memoryBytes": 3917056,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 48811168,
+              "vaddr": 48843936,
+              "fileBytes": 1968768,
+              "memoryBytes": 1971040,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 48843936,
+              "end": 50814976,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                48840704,
+                50823168
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libmain.so",
+          "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b",
+          "zipCompression": 8,
+          "zipDataOffset": 28780021,
+          "zipOffsetModulo16k": 9717,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 2592,
+              "memoryBytes": 2592,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 2592,
+              "vaddr": 18976,
+              "fileBytes": 1280,
+              "memoryBytes": 1280,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 3872,
+              "vaddr": 36640,
+              "fileBytes": 560,
+              "memoryBytes": 4320,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 4432,
+              "vaddr": 53584,
+              "fileBytes": 48,
+              "memoryBytes": 64,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 3872,
+              "vaddr": 36640,
+              "fileBytes": 560,
+              "memoryBytes": 4320,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 36640,
+              "end": 40960,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                32768,
+                49152
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libswappywrapper.so",
+          "sha256": "ec386811c1726b21151052b9a26cc6ce6e6d6bf9b0769c24016cf0933c6875c1",
+          "zipCompression": 8,
+          "zipDataOffset": 28782661,
+          "zipOffsetModulo16k": 12357,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 208352,
+              "memoryBytes": 208352,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 208352,
+              "vaddr": 224736,
+              "fileBytes": 6800,
+              "memoryBytes": 8736,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 215152,
+              "vaddr": 247920,
+              "fileBytes": 8964,
+              "memoryBytes": 9416,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 208352,
+              "vaddr": 224736,
+              "fileBytes": 6800,
+              "memoryBytes": 8736,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 224736,
+              "end": 233472,
+              "endModulo16k": 4096,
+              "roundedProtection": [
+                212992,
+                245760
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libunity.so",
+          "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f",
+          "zipCompression": 8,
+          "zipDataOffset": 28862587,
+          "zipOffsetModulo16k": 10363,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 4381616,
+              "memoryBytes": 4381616,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 4381616,
+              "vaddr": 4398000,
+              "fileBytes": 13608928,
+              "memoryBytes": 13608928,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 17990544,
+              "vaddr": 18023312,
+              "fileBytes": 282008,
+              "memoryBytes": 285808,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 18272560,
+              "vaddr": 18321712,
+              "fileBytes": 90296,
+              "memoryBytes": 1499312,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 17990544,
+              "vaddr": 18023312,
+              "fileBytes": 282008,
+              "memoryBytes": 285808,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 18023312,
+              "end": 18309120,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                18022400,
+                18317312
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        }
+      ],
+      "inputLogging": {
+        "classes": [
+          "Lcom/google/androidgamesdk/gametextinput/Listener;",
+          "Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;",
+          "Lcom/google/androidgamesdk/gametextinput/GameTextInput;",
+          "Lcom/google/androidgamesdk/gametextinput/InputConnection$1;",
+          "Lcom/google/androidgamesdk/gametextinput/InputConnection$singleLineFilter;",
+          "Lcom/google/androidgamesdk/gametextinput/InputConnection;",
+          "Lcom/google/androidgamesdk/gametextinput/Settings;",
+          "Lcom/google/androidgamesdk/gametextinput/State;"
+        ],
+        "debugVerboseInfoCalls": []
+      }
+    },
+    {
+      "identity": {
+        "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-arm64_v8a.apk",
+        "bytes": 22754004,
+        "sha256": "909621c40cb4030479f48756aef74b53a7be3d78ba6961fe91214a77ecc9762d"
+      },
+      "native": [
+        {
+          "file": "lib/arm64-v8a/libc++_shared.so",
+          "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4",
+          "zipCompression": 8,
+          "zipDataOffset": 484,
+          "zipOffsetModulo16k": 484,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 634024,
+              "memoryBytes": 634024,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 634032,
+              "vaddr": 650416,
+              "fileBytes": 616000,
+              "memoryBytes": 616000,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 1250032,
+              "vaddr": 1282800,
+              "fileBytes": 39760,
+              "memoryBytes": 40208,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 1289792,
+              "vaddr": 1338944,
+              "fileBytes": 568,
+              "memoryBytes": 32016,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 1250032,
+              "vaddr": 1282800,
+              "fileBytes": 39760,
+              "memoryBytes": 40208,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 1282800,
+              "end": 1323008,
+              "endModulo16k": 12288,
+              "roundedProtection": [
+                1277952,
+                1327104
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libgame.so",
+          "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d",
+          "zipCompression": 8,
+          "zipDataOffset": 407101,
+          "zipOffsetModulo16k": 13885,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 144976,
+              "memoryBytes": 144976,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 144976,
+              "vaddr": 161360,
+              "fileBytes": 4424,
+              "memoryBytes": 6576,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 149400,
+              "vaddr": 182168,
+              "fileBytes": 520,
+              "memoryBytes": 5360,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 144976,
+              "vaddr": 161360,
+              "fileBytes": 4424,
+              "memoryBytes": 6576,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 161360,
+              "end": 167936,
+              "endModulo16k": 4096,
+              "roundedProtection": [
+                147456,
+                180224
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libil2cpp.so",
+          "sha256": "0f5ed163c0cb184ae177aa1cdbc066a218d768c8ef6e0e684cc0774ed68f66b3",
+          "zipCompression": 8,
+          "zipDataOffset": 464018,
+          "zipOffsetModulo16k": 5266,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 19144800,
+              "memoryBytes": 19144800,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 19144800,
+              "vaddr": 19161184,
+              "fileBytes": 29666368,
+              "memoryBytes": 29666368,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 48811168,
+              "vaddr": 48843936,
+              "fileBytes": 1968768,
+              "memoryBytes": 1971040,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 50779936,
+              "vaddr": 50829088,
+              "fileBytes": 1679376,
+              "memoryBytes": 3917056,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 48811168,
+              "vaddr": 48843936,
+              "fileBytes": 1968768,
+              "memoryBytes": 1971040,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 48843936,
+              "end": 50814976,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                48840704,
+                50823168
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libmain.so",
+          "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b",
+          "zipCompression": 8,
+          "zipDataOffset": 14517089,
+          "zipOffsetModulo16k": 865,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 2592,
+              "memoryBytes": 2592,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 2592,
+              "vaddr": 18976,
+              "fileBytes": 1280,
+              "memoryBytes": 1280,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 3872,
+              "vaddr": 36640,
+              "fileBytes": 560,
+              "memoryBytes": 4320,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 4432,
+              "vaddr": 53584,
+              "fileBytes": 48,
+              "memoryBytes": 64,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 3872,
+              "vaddr": 36640,
+              "fileBytes": 560,
+              "memoryBytes": 4320,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 36640,
+              "end": 40960,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                32768,
+                49152
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libswappywrapper.so",
+          "sha256": "ec386811c1726b21151052b9a26cc6ce6e6d6bf9b0769c24016cf0933c6875c1",
+          "zipCompression": 8,
+          "zipDataOffset": 14519729,
+          "zipOffsetModulo16k": 3505,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 208352,
+              "memoryBytes": 208352,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 208352,
+              "vaddr": 224736,
+              "fileBytes": 6800,
+              "memoryBytes": 8736,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 215152,
+              "vaddr": 247920,
+              "fileBytes": 8964,
+              "memoryBytes": 9416,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 208352,
+              "vaddr": 224736,
+              "fileBytes": 6800,
+              "memoryBytes": 8736,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 224736,
+              "end": 233472,
+              "endModulo16k": 4096,
+              "roundedProtection": [
+                212992,
+                245760
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        },
+        {
+          "file": "lib/arm64-v8a/libunity.so",
+          "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f",
+          "zipCompression": 8,
+          "zipDataOffset": 14599655,
+          "zipOffsetModulo16k": 1511,
+          "load16kPass": true,
+          "segments": [
+            {
+              "type": "LOAD",
+              "flags": 4,
+              "offset": 0,
+              "vaddr": 0,
+              "fileBytes": 4381616,
+              "memoryBytes": 4381616,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 5,
+              "offset": 4381616,
+              "vaddr": 4398000,
+              "fileBytes": 13608928,
+              "memoryBytes": 13608928,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 17990544,
+              "vaddr": 18023312,
+              "fileBytes": 282008,
+              "memoryBytes": 285808,
+              "align": 16384
+            },
+            {
+              "type": "LOAD",
+              "flags": 6,
+              "offset": 18272560,
+              "vaddr": 18321712,
+              "fileBytes": 90296,
+              "memoryBytes": 1499312,
+              "align": 16384
+            },
+            {
+              "type": "GNU_RELRO",
+              "flags": 4,
+              "offset": 17990544,
+              "vaddr": 18023312,
+              "fileBytes": 282008,
+              "memoryBytes": 285808,
+              "align": 1
+            }
+          ],
+          "relro": [
+            {
+              "start": 18023312,
+              "end": 18309120,
+              "endModulo16k": 8192,
+              "roundedProtection": [
+                18022400,
+                18317312
+              ],
+              "conflictingWritableBytes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identity": {
+        "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\usability-final\\code11\\aab-terminal-inspection\\default\\splits\\base-master.apk",
+        "bytes": 14766088,
+        "sha256": "1376308ead06ef94b381ccaca5e61c6a2d82a0dedfc2988b48ac5dd0f9057736"
+      },
+      "native": [],
+      "inputLogging": {
+        "classes": [
+          "Lcom/google/androidgamesdk/gametextinput/Listener;",
+          "Lcom/google/androidgamesdk/gametextinput/GameTextInput$Pair;",
+          "Lcom/google/androidgamesdk/gametextinput/GameTextInput;",
+          "Lcom/google/androidgamesdk/gametextinput/InputConnection$1;",
+          "Lcom/google/androidgamesdk/gametextinput/InputConnection$singleLineFilter;",
+          "Lcom/google/androidgamesdk/gametextinput/InputConnection;",
+          "Lcom/google/androidgamesdk/gametextinput/Settings;",
+          "Lcom/google/androidgamesdk/gametextinput/State;"
+        ],
+        "debugVerboseInfoCalls": []
+      }
+    }
+  ]
+}

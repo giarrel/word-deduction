@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.76,
+      "summary": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.CancelAndNextBeginInOneInputUpdateKeepTheOrder",
+          "Status": "Passed",
+          "Duration": 0.3972705,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.CanceledNativeTouchNeverCommitsThePreviewOrder",
+          "Status": "Passed",
+          "Duration": 0.1256117,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.FullyBufferedCanceledDragKeepsTheOrder",
+          "Status": "Passed",
+          "Duration": 0.0963701,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.LaterCanceledContactDoesNotCancelAnEndedDrag",
+          "Status": "Passed",
+          "Duration": 0.104708,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

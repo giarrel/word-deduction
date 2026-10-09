@@ -5,7 +5,7 @@ Ein lokales Wort-Partyspiel, bei dem eine Gruppe ein Handy weitergibt, geheime W
 ## Language
 
 **Group / Gruppe**:
-Die dauerhaft auf dem Handy behaltene Liste von Personen, unabhängig von einer einzelnen Partie. Eine Person kann für nächste Partien teilnehmen oder pausieren.
+Die dauerhaft auf dem Handy behaltene, geordnete Liste der Personen für die nächste Partie. Alle Personen der aktuellen Gruppe nehmen teil; abwesende Personen werden entfernt. Früher pausierte Namen bleiben getrennt als gespeicherte Personen erhalten, bis sie ausdrücklich wieder hinzugefügt oder entfernt werden.
 _Avoid_: Lobby, room
 
 **Player / Spieler**:
@@ -70,4 +70,4 @@ Die vorübergehende Anzeige des persönlichen Wortes durch Hochziehen der Karte.
 Die mündliche Entscheidung der noch beteiligten Teilnehmer darüber, wer verdächtigt beziehungsweise eliminiert wird; das gemeinsame Handy hält das Ergebnis fest.
 
 **Rematch / Folgepartie**:
-Eine neue Partie mit der zuletzt aktiven Gruppe und den gewählten Einstellungen, aber neu vergebenen Rollen und Wörtern.
+Eine neue Partie mit der aktuellen Gruppe und den gewählten Einstellungen, aber neu vergebenen Rollen und Wörtern.

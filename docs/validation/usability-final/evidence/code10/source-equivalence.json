@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "bd7b618c957051d3ee61321a6ed3d275a5302a93",
+  "sessionReference": "3835a71035b0fe4c471e5893a54f2438b5c34505",
+  "sessionAndTestsChangedPaths": [],
+  "runtimeReference": "e106ce6f388a4e2dce834e4c2fe2b7092b61d47a",
+  "runtimeChangedPaths": [
+    "game/Assets/WordDeduction/UI/Copy.cs",
+    "game/Assets/WordDeduction/UI/GroupScreen.cs",
+    "game/Assets/WordDeduction/UI/Resources/Group.uss"
+  ],
+  "packageLockSha256": "da98f245e8c511d47699dc883e521eff5176800341117fcfe8f77fe9dcfb342d"
+}

@@ -1,0 +1,60 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "level": "error",
+      "tail": "200"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 3,
+          "timestampUtc": "2026-10-09T07:18:36.2604465Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 7,
+          "timestampUtc": "2026-10-09T07:19:16.5841009Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 14,
+      "session": "82b261d14e744d28b66cf43760391441",
+      "returned": 2,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 2,
+        "warn": 6,
+        "log": 6
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-09T07:21:27.5765319Z",
+        "ageMs": 27,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 1,
+        "consoleWarnings": 5,
+        "consoleLogs": 3,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

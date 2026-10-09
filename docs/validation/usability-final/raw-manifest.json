@@ -1,0 +1,3749 @@
+{
+  "createdUtc": "2026-10-09T09:35:09.1293833Z",
+  "root": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections",
+  "sourceCommit": "25d3e9f9d80609c178230cf838cecfda54ae0370",
+  "count": 748,
+  "totalBytes": 2700522954,
+  "files": [
+    {
+      "path": "artifacts/android/154388a64d15/20261009T083709763Z-apk/build-summary.json",
+      "bytes": 947,
+      "sha256": "459526d064a941e0b53374414e8a85455a8339722191cdd9d786b68c88c406cd"
+    },
+    {
+      "path": "artifacts/android/154388a64d15/20261009T083709763Z-apk/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/154388a64d15/20261009T083709763Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37471766,
+      "sha256": "640e2388f3807f1c8b61149fad5fb71ac1090fd538299f424ae7622102a8f480"
+    },
+    {
+      "path": "artifacts/android/154388a64d15/20261009T084247735Z-aab/build-summary.json",
+      "bytes": 947,
+      "sha256": "56570ea48c7c1b12e30886dedc3500e0872ce52dd8ef4750d3e87ef34a879fdc"
+    },
+    {
+      "path": "artifacts/android/154388a64d15/20261009T084247735Z-aab/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/154388a64d15/20261009T084247735Z-aab/WordDeduction-local-release.aab",
+      "bytes": 37828711,
+      "sha256": "af73f0ab569d5bf978babd94b32eb911752391265a36073bd00b0e59b31ae41d"
+    },
+    {
+      "path": "artifacts/android/25d3e9f9d806/20261009T091851857Z-apk/build-summary.json",
+      "bytes": 947,
+      "sha256": "241ad497b1297539771fe3bed1c0cb4af3e0ed640dfbfaa51c49619f3966312e"
+    },
+    {
+      "path": "artifacts/android/25d3e9f9d806/20261009T091851857Z-apk/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/25d3e9f9d806/20261009T091851857Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37472202,
+      "sha256": "9c08b19ab2270b236cd2eec9a8d9bd2f67b7a9db93fc0ff3d5d5f2a5d5e8c9ad"
+    },
+    {
+      "path": "artifacts/android/25d3e9f9d806/20261009T092518641Z-aab/build-summary.json",
+      "bytes": 954,
+      "sha256": "889cf752d2dd37f9fac3275b861b7caad9e7e9922a556e55dd21f6ead9fa8ce0"
+    },
+    {
+      "path": "artifacts/android/25d3e9f9d806/20261009T092518641Z-aab/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/25d3e9f9d806/20261009T092518641Z-aab/WordDeduction-local-release.aab",
+      "bytes": 37829159,
+      "sha256": "9148cb972b7c6b256ad0838f084ec3bfe2693e3cfbd70bcd5885e4b6623d930e"
+    },
+    {
+      "path": "artifacts/android/976c0fc49742/20261009T081330461Z-apk/build-summary.json",
+      "bytes": 947,
+      "sha256": "ddd05798e18e12b9e2051811ef8d9d88b43ae39e03408a165076caadbbeef2e2"
+    },
+    {
+      "path": "artifacts/android/976c0fc49742/20261009T081330461Z-apk/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/976c0fc49742/20261009T081330461Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37471958,
+      "sha256": "3c2d112cfc4d99aed516f5c7d6ee9034151a8b3bbc26e3fbc75d7c812ae7c957"
+    },
+    {
+      "path": "artifacts/android/bd7b618c9570/20261009T074456031Z-apk/build-summary.json",
+      "bytes": 954,
+      "sha256": "f4cb1a21d73471f1d70becbb8add4b2451bfcbb045f4a8e436b9c661b605e649"
+    },
+    {
+      "path": "artifacts/android/bd7b618c9570/20261009T074456031Z-apk/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/bd7b618c9570/20261009T074456031Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37472054,
+      "sha256": "3a73e1c6816ab97aad7df07cd216083cf2b3f8141c409c7c12320ec8c3aaa180"
+    },
+    {
+      "path": "artifacts/android/bd7b618c9570/20261009T075012526Z-aab/build-summary.json",
+      "bytes": 947,
+      "sha256": "b32934582e9cc1d956dc0a446f5bc21f88d5aaa6c73cf3c117056225fa1daab4"
+    },
+    {
+      "path": "artifacts/android/bd7b618c9570/20261009T075012526Z-aab/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/bd7b618c9570/20261009T075012526Z-aab/WordDeduction-local-release.aab",
+      "bytes": 37828990,
+      "sha256": "9ed3213acc2aff0dc9c674326540799820c29fd4882f3673f6fa71ba6416b617"
+    },
+    {
+      "path": "artifacts/android/e106ce6f388a/20261009T072242468Z-apk/build-summary.json",
+      "bytes": 946,
+      "sha256": "3420aff5ce4c704bf7a82467010a59528585bcc91cb94f6199fd6ff07033c271"
+    },
+    {
+      "path": "artifacts/android/e106ce6f388a/20261009T072242468Z-apk/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/e106ce6f388a/20261009T072242468Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37472494,
+      "sha256": "cae1f76c5811aee2519ab137ffbdb47defb2b6dee9bc13f200a9d9e45c302b4d"
+    },
+    {
+      "path": "artifacts/android/e106ce6f388a/20261009T072846624Z-aab/build-summary.json",
+      "bytes": 946,
+      "sha256": "3a62ca52e0e34cb774610ad92b86604ef908908347f8915d9dfd6023ae5c7b9a"
+    },
+    {
+      "path": "artifacts/android/e106ce6f388a/20261009T072846624Z-aab/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "artifacts/android/e106ce6f388a/20261009T072846624Z-aab/WordDeduction-local-release.aab",
+      "bytes": 37829429,
+      "sha256": "3f12212685a4eeaa994f573f94e2f5bcaac22c1f82e628f3a338d38cdce3b5ca"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/editing-large-English-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/editing-large-English.png",
+      "bytes": 28526,
+      "sha256": "42b07d8e724a47893d586fa0e6cc207228d3e8281b7a70a1fea9a9fefbce014c"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/editing-large-German-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/editing-large-German.png",
+      "bytes": 31574,
+      "sha256": "a246abe291c7416f5771e70ac52faddd8fe0ca6b668bf71f700d29868de526db"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/group-English.png",
+      "bytes": 46267,
+      "sha256": "82e72c8b011628613541f861b8133f3591c4e36d8b29d8b7228e9a9ac9ea0d62"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/group-German.png",
+      "bytes": 51954,
+      "sha256": "51d996afa372933029ad2ab73d492612483d2e02e5103a9e27af4e0ec36453ff"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/group-large-last-English.png",
+      "bytes": 58888,
+      "sha256": "30e8eacd2a16c3661819a963de5db575740d970b6e8a04d624ed4fb7d80d5c4a"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/group-large-last-German.png",
+      "bytes": 64329,
+      "sha256": "ddb3a263786e267d2a29da68b565d175be4d1dcafeda60a1435bb69d100ad33f"
+    },
+    {
+      "path": "artifacts/kings-elimination/last-chance-English.png",
+      "bytes": 37586,
+      "sha256": "4cbb31e6300b5a20a05c7a43a97c6cfaff63fe91272a6df43eb7288940c35cb8"
+    },
+    {
+      "path": "artifacts/kings-elimination/last-chance-German.png",
+      "bytes": 38935,
+      "sha256": "642a9c8b745cda15d189ff7455792821bbb6419cb995f0cd17d94af68fd4adbb"
+    },
+    {
+      "path": "artifacts/kings-elimination/ordinary-English.png",
+      "bytes": 32338,
+      "sha256": "e8b2e9bc4cb1ffd8be19436eea730aba86881ce2296dec26c1b2052cbae2f7ea"
+    },
+    {
+      "path": "artifacts/kings-elimination/ordinary-German.png",
+      "bytes": 32548,
+      "sha256": "9fc1051512e0e807b7b0b6f0199d19f116b4c96bc843c67682367781f4e56395"
+    },
+    {
+      "path": "artifacts/kings-elimination/result-English.png",
+      "bytes": 46612,
+      "sha256": "e02d772f6e84402b67fb7141ddecd0252f3c947fa5091843304b7e1c33959dc1"
+    },
+    {
+      "path": "artifacts/kings-elimination/result-German.png",
+      "bytes": 51737,
+      "sha256": "736ea9a56204a50caeebb4ef71d53c9acc9ffba166818cf48c8d265f07b8830f"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/choice-English-False.png",
+      "bytes": 34589,
+      "sha256": "3deb0849f6e1bae47597d4964b6de19c88804804b9c8af7419c62cd321407937"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/choice-English-True.png",
+      "bytes": 34589,
+      "sha256": "3deb0849f6e1bae47597d4964b6de19c88804804b9c8af7419c62cd321407937"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/choice-German-False.png",
+      "bytes": 35683,
+      "sha256": "fd5e0c1fc41148c95cd3a8f03ce2067efa2123915673538cf3da7efdc1f9f8ae"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/choice-German-True.png",
+      "bytes": 35683,
+      "sha256": "fd5e0c1fc41148c95cd3a8f03ce2067efa2123915673538cf3da7efdc1f9f8ae"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/judgment-English-False.png",
+      "bytes": 36358,
+      "sha256": "c9bd985e28e1b1a38bbe4c04995427c1f32db2e96229d98e921ba97f80f382e4"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/judgment-English-True.png",
+      "bytes": 36358,
+      "sha256": "c9bd985e28e1b1a38bbe4c04995427c1f32db2e96229d98e921ba97f80f382e4"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/judgment-German-False.png",
+      "bytes": 37502,
+      "sha256": "39c74ab5e86186de842fd4eb209f6a7ddf3593eb4da4cd0383de39c845a239fd"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/judgment-German-True.png",
+      "bytes": 37502,
+      "sha256": "39c74ab5e86186de842fd4eb209f6a7ddf3593eb4da4cd0383de39c845a239fd"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-confirm-English-False.png",
+      "bytes": 41612,
+      "sha256": "ea348b8bd3c275414dc7eecad7a62c63029e57a0c02ed0a4a378363c3bdb9243"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-confirm-English-True.png",
+      "bytes": 41688,
+      "sha256": "bb3017ff5078af858d9ad8bfe5715c24eaeecb690f885c70a650f85a6240119a"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-confirm-German-False.png",
+      "bytes": 46773,
+      "sha256": "1f8564b7a67b88a040aa79c962511ba021e3bbd351d3a6bb9dedf30ba4044f0e"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-confirm-German-True.png",
+      "bytes": 46835,
+      "sha256": "9a63bfdcf14e8310988341e812802e4af15960b8a6acbc06dfbf00b3eb48abea"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-result-English-False.png",
+      "bytes": 36996,
+      "sha256": "ae62182b9d59f6b25403e6cc59074134260478f45bb1d4743b6288530d1a3f62"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-result-English-True.png",
+      "bytes": 34714,
+      "sha256": "491d6c8d55a9fdb9b005739ef5d2fb77662e8441b7454c62af72be654757d29a"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-result-German-False.png",
+      "bytes": 41623,
+      "sha256": "4beb3bcffc32180989646887da60fe77e3855e8caaed755af1b8585d0b3c65aa"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-result-German-True.png",
+      "bytes": 41351,
+      "sha256": "56bee582624acd34024c03fd1be1b124fdf1057a61a300f641a69a67c3bdfb5d"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-targets-English-False.png",
+      "bytes": 27945,
+      "sha256": "bbb0ddd0be0f249aa8a6bbb6f7d04738ddc9d60075751d7d383fcb1c22beb2e9"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-targets-English-True.png",
+      "bytes": 27945,
+      "sha256": "bbb0ddd0be0f249aa8a6bbb6f7d04738ddc9d60075751d7d383fcb1c22beb2e9"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-targets-German-False.png",
+      "bytes": 31096,
+      "sha256": "13a020e67c37884c4f39fca4d57136c9ff135d54aa294c7f93d0e9bafde88d40"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-targets-German-True.png",
+      "bytes": 31096,
+      "sha256": "13a020e67c37884c4f39fca4d57136c9ff135d54aa294c7f93d0e9bafde88d40"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-answer-English-last.png",
+      "bytes": 53684,
+      "sha256": "4178ba8849d1c99be4f844a3a5103a1a2a1fd0b483f62c9ea63bb8c202a10ac6"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-answer-English.png",
+      "bytes": 47546,
+      "sha256": "5bfbb9c8fa85a175691579c4959929e3f82fa90b966d06630c32222a6256269c"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-answer-German-last.png",
+      "bytes": 54448,
+      "sha256": "355062d353e5c0237f9e400d8944a923200437540588fc499fd50e092dac19b3"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-answer-German.png",
+      "bytes": 47388,
+      "sha256": "0e2dd97bd98e4b3e6f7e0f62e242fc257b52cce2ce968ff53d86717f14084a25"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-English-King-last.png",
+      "bytes": 52322,
+      "sha256": "1ff4e6894e20d803d1488872606c112cea9aed062b177727bb7bb41d1685a614"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-English-King.png",
+      "bytes": 48000,
+      "sha256": "a88e828758c38e07ddb2f801301f27e6676e90ea9a5f2f978d11a57cd7a33546"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-English-Word-last.png",
+      "bytes": 52322,
+      "sha256": "1ff4e6894e20d803d1488872606c112cea9aed062b177727bb7bb41d1685a614"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-English-Word.png",
+      "bytes": 48000,
+      "sha256": "a88e828758c38e07ddb2f801301f27e6676e90ea9a5f2f978d11a57cd7a33546"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-German-King-last.png",
+      "bytes": 52806,
+      "sha256": "c27dea01cc38b7253ecbfb4677fa30ddb49509702f0f75a448b0e6400ba3afd3"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-German-King.png",
+      "bytes": 39845,
+      "sha256": "13867fed353abe2f5ad764067121d5957d4eb9291e0a096ec4c8a77d226ddaa2"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-German-Word-last.png",
+      "bytes": 52806,
+      "sha256": "c27dea01cc38b7253ecbfb4677fa30ddb49509702f0f75a448b0e6400ba3afd3"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-German-Word.png",
+      "bytes": 39845,
+      "sha256": "13867fed353abe2f5ad764067121d5957d4eb9291e0a096ec4c8a77d226ddaa2"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-judgment-English-last.png",
+      "bytes": 45453,
+      "sha256": "5c02535bff01cdfc7bb9caaa2c9e2b27b0b5d4bb1bbe2754a3943c1684b0e479"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-judgment-English.png",
+      "bytes": 38415,
+      "sha256": "11765934bc0c60e31b6f9822ba572b7ce19e58f40b251fa3b8c430e0d763d92d"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-judgment-German-last.png",
+      "bytes": 47059,
+      "sha256": "cd88f2f28598ac837e768d85a496782f7050591380a9d748183ae9818f19c953"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-judgment-German.png",
+      "bytes": 39474,
+      "sha256": "7ae4af1a319a407568cf2ad71058722581b76c7e8f5a5786568144229fccb19e"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-king-confirm-English-last.png",
+      "bytes": 49009,
+      "sha256": "1c13e59a5a35b13186c8f1a521d7a601eaae9c4d88235631b4b1e63010302cef"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-king-confirm-English.png",
+      "bytes": 43424,
+      "sha256": "1abc24e7f21a247ab76efaacfbb699dc079656ea561363ae91c05b030676b340"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-king-confirm-German-last.png",
+      "bytes": 51922,
+      "sha256": "f7e8855e3142a9adca153b2ace78dcc816816c092b5805f5bde16b69ed126b34"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-king-confirm-German.png",
+      "bytes": 40817,
+      "sha256": "8e056c97da1d0e45fc4461514ea1c17d6be04a53971fb9d421a03f617cc5b3a5"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-last-target-English.png",
+      "bytes": 50942,
+      "sha256": "550f5a37b6862c01c5c1aacf98b5ac98c484e96fbcdf29b97120b8ba28ffc076"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-last-target-German.png",
+      "bytes": 52360,
+      "sha256": "e3c729741ae2f1e5be086594579717ac4dd4ce4d4660832e9ca520e8734eb74f"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-English-King-last.png",
+      "bytes": 42418,
+      "sha256": "2447f9a1cb899bc35f11e1649d80ef1cc0b2172d51cbc5b10defe8d4eeb9c108"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-English-King.png",
+      "bytes": 42975,
+      "sha256": "f23170ab5c8ab3a5de4f73137cea5c82c7e8a19241bf45c5d91ee53f35459d2c"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-English-Word-last.png",
+      "bytes": 42430,
+      "sha256": "f19665e4d496610e9b2210d879f4c73cc7e99aa56b9c7f42792e9e17fba4e6f3"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-English-Word.png",
+      "bytes": 39256,
+      "sha256": "ea5d13ed73a0696c78d41989ac73800191afb20e448fa4be96a3c4127e583dad"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-German-King-last.png",
+      "bytes": 46047,
+      "sha256": "00406e949229e9ececcc58d9cb149a6952cdb4093e59d633a40b18e692e26082"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-German-King.png",
+      "bytes": 42568,
+      "sha256": "9be1131cacee82b0362b904ae9c9121696e7c14f96fe09088671dafc00ee9051"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-German-Word-last.png",
+      "bytes": 46039,
+      "sha256": "fd5a2934ea103dcd3ff8c5dc81ceb9888e42f45652e2ccaed3c2068c575ec3ca"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-German-Word.png",
+      "bytes": 44602,
+      "sha256": "cb2a9d0c8fd6841c30a0c888815fa7a287dbe0ed1f6f5bd2ff3e44dbf1ddc11b"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/repeat-protected-king.png",
+      "bytes": 34704,
+      "sha256": "2b7471ef0e0c767a088ebfd51c86f8c7b24f15f01160f21f1891be03dae88966"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/repeat-protected-word.png",
+      "bytes": 36509,
+      "sha256": "38fbf2d9894e76ed6e75a16bb0804b79b626807e7c3195498c862cf28ed83e93"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/spoken-answer-English-False.png",
+      "bytes": 44057,
+      "sha256": "1242de2772ad31df7a9964a5d56b18871f1d16b7a36e5775ed2606c7ee3d9664"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/spoken-answer-English-True.png",
+      "bytes": 44057,
+      "sha256": "1242de2772ad31df7a9964a5d56b18871f1d16b7a36e5775ed2606c7ee3d9664"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/spoken-answer-German-False.png",
+      "bytes": 46210,
+      "sha256": "439a801e74fe9ca10fb5518ad4e3021ec410eac810d7c1180b727a1203bc1b95"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/spoken-answer-German-True.png",
+      "bytes": 46210,
+      "sha256": "439a801e74fe9ca10fb5518ad4e3021ec410eac810d7c1180b727a1203bc1b95"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/word-result-English-False.png",
+      "bytes": 35916,
+      "sha256": "24169101df7fa6f625df8f9d611ab5f79f9e3a05793c6f41b82f6ab3a1587f80"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/word-result-English-True.png",
+      "bytes": 34836,
+      "sha256": "365be9942516b657678999a3157ae2360e68338b2d46b562a5b48574281e5731"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/word-result-German-False.png",
+      "bytes": 40598,
+      "sha256": "a2b6119e26ec808a8724aca0308e98e9995896ae4eaf965bf18743a95a24216f"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/word-result-German-True.png",
+      "bytes": 40959,
+      "sha256": "23ee7be2cde43c683722f3a28cb9dd8c4d09d81b2613d16025fccf437bf1f559"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-EvilKing-drag-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-EvilKing-drag.txt",
+      "bytes": 229,
+      "sha256": "09145f932ee9a82ecdcb29377f3c4db3c69a74a0be0bd650c4f9c5f11e685773"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-EvilKing-hold-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-EvilKing-hold.txt",
+      "bytes": 228,
+      "sha256": "8d40c971c13f4fc30f85973799993757911f9852680b22c193dcf89a1e172b45"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-GoodKing-drag-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-GoodKing-drag.txt",
+      "bytes": 229,
+      "sha256": "c529475ad05f41c3f67184202a9c8f6325fd389c685217c83b2188b90176afe6"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-GoodKing-hold-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-GoodKing-hold.txt",
+      "bytes": 228,
+      "sha256": "f0f70b2ac1d8d553a59cf9f627d10240e0af19d779bb5c753973e0cb3f2e79f5"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-EvilKing-drag-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-EvilKing-drag.txt",
+      "bytes": 229,
+      "sha256": "eb74eea21c479e6df3c972554c952b53e27436f6bcb68573adce4a173dd9c69c"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-EvilKing-hold-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-EvilKing-hold.txt",
+      "bytes": 228,
+      "sha256": "c21b387a736186c75c66e3fc4cc6c28d581f1ea4cdac97b63b5ffcbe3d654a2f"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-GoodKing-drag-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-GoodKing-drag.txt",
+      "bytes": 229,
+      "sha256": "21c1b292faef011ac049d4e0920f834a913e874d62c077d7e228e880d90fb360"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-GoodKing-hold-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-GoodKing-hold.txt",
+      "bytes": 228,
+      "sha256": "74267608cf12edfdeaa5a9053168c478c763a6b0f052e543b3348ab8ce02d16c"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/help-English-last.png",
+      "bytes": 62832,
+      "sha256": "5f35e56ef070beba6e9b7b7c98ebad43a824ed0bf8e5b573731161c86e186771"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/help-English-start.png",
+      "bytes": 58780,
+      "sha256": "552fec7004d5cc789b8b3350f9f836df85d8fe470a2343d37dbdb2f6e31236cb"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/help-German-last.png",
+      "bytes": 65764,
+      "sha256": "09eada454d801a336e463c70e47b6c25ff329708b0412dc290df77dcfa3edb3e"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/help-German-start.png",
+      "bytes": 54600,
+      "sha256": "c9c81e5ebae8ca45f4bf8dcbc602fa50d41a23166aa2d5f54933cc92e91badf4"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-covered.png",
+      "bytes": 37526,
+      "sha256": "e34f910270aae28bd7e691096d3b9c921546c84e972f6ebbc5f1fa9c19ed6d94"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-last.png",
+      "bytes": 56575,
+      "sha256": "95be0e523ee9da65e750fa3062dd3ae05c4b6d5b031eeebae8be3de2c280504d"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-start.png",
+      "bytes": 42293,
+      "sha256": "b4e94a4e4cf69981845551373b57c169d32b9bf8abe72d919138740e8b26268f"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-covered.png",
+      "bytes": 37699,
+      "sha256": "622f79e2343f12de86176fbaa687a472ec5ad6956463c278eae9352720be0590"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-last.png",
+      "bytes": 56760,
+      "sha256": "4bbbec22900dc278f2b67eda70c9e041e9b820bc93accfc555d22d6dbf8070f5"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-start.png",
+      "bytes": 42477,
+      "sha256": "1c1abcf7ee39f27ce9ba9bc46eb52725bb02a7ccadeffc5007a6decbfe9bd266"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-covered.png",
+      "bytes": 37540,
+      "sha256": "43b986b7eba218c5d358531df2bc5d118b88768c52217b2ddf39b66344b18ae9"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-last.png",
+      "bytes": 44940,
+      "sha256": "07e9358f800435c5ef248e67a2c4b46f9b1c9d73b563b237403551ca8977ec3b"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-start.png",
+      "bytes": 40876,
+      "sha256": "33219092fc0d90b97466efb02518e8699c37ff2d9590a84bb03ee6b2d8eef4a0"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-covered.png",
+      "bytes": 37709,
+      "sha256": "67d8d8bfd5a0af1fd279c0eb0f0ce3f5349c2ee64141786f6f1979b4a4fd5daf"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-last.png",
+      "bytes": 45149,
+      "sha256": "4baca062d47a1f8366cd2dfcf021de95bebb91d22f00ac5cadce0f2a31b2396b"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-start.png",
+      "bytes": 41078,
+      "sha256": "5373dceecf110b9f5389a48c29a9e23f06997aa1b5e955131128f48d9767662d"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-covered.png",
+      "bytes": 39280,
+      "sha256": "57f1d47b7216bc7f4179be384e3d37ae3747d6701856aa578348886ac0982063"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-last.png",
+      "bytes": 54992,
+      "sha256": "a53c2e7347be8d46b0e14ce9f7cff961abaefc511a29b886ea41d6954e233b2e"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-start.png",
+      "bytes": 45945,
+      "sha256": "939f92eb867991efe10089eef4160ba5608b72910726b9f319364347bcf0a530"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-covered.png",
+      "bytes": 39431,
+      "sha256": "03c06b5a40b4f8fc20392b66b0dc8c9575503f89d4b51991a8f1e39353ffd564"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-last.png",
+      "bytes": 55215,
+      "sha256": "a619015ef3a00d1bc3ce4895a6b22c3d0eeedc9e22c770f710c116767b5cd350"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-start.png",
+      "bytes": 46136,
+      "sha256": "5b95ac24b42b150fe64969ec8fbb320043602e40ef5ea6eb0a73b68df10db95b"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-covered.png",
+      "bytes": 39216,
+      "sha256": "2f7a9090129ef574fa19e35276392b15ddbd50196d9e087fa9e32c9004122755"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-last.png",
+      "bytes": 46207,
+      "sha256": "ae6a3e3cd8c3c3590b5d496b47155629c6147132028da0b7a51576b9d34fce5d"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-start.png",
+      "bytes": 44458,
+      "sha256": "a9cbf1ff7181b66657e5885d2cc2b1a9f7f6f8b1ce554f1f6ea93e22f3116779"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-covered.png",
+      "bytes": 39352,
+      "sha256": "15c242c808052868378c671c47d01d2f24fdb1205e01fabf070f4426e228b244"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-last.png",
+      "bytes": 46405,
+      "sha256": "cf18ad65190509e46704228fea49e8941a510de69b9019d60b99afae574ed1fc"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-start.png",
+      "bytes": 44647,
+      "sha256": "9b9dd3d9a7cb750fb7664d0f24e4f3bf4afa1b9e34834e09ea872d666e3081bb"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/ordinary-English-civilian.png",
+      "bytes": 36841,
+      "sha256": "e166a16b605d21c5b88993be97f11aeaec649261965811302965d17d15f7cd60"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/ordinary-English-undercover.png",
+      "bytes": 32515,
+      "sha256": "4031e26a6a3380694ce3401085b053a41cdf93e496f7c73b5c9540bfc117edd6"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/ordinary-German-civilian.png",
+      "bytes": 40836,
+      "sha256": "8644f8704a1c6303e27266282b335a24732406544921699d10a82ec5621565de"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/ordinary-German-undercover.png",
+      "bytes": 36874,
+      "sha256": "009a2dc306541724589327eceeba99fb1ff7db685426c3a63207fbd7e4ccc452"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/setup-English-large.png",
+      "bytes": 47902,
+      "sha256": "51344845a004c2f1fb5b06c989cc09ce626280ceab06749cbd124429b6147169"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/setup-German-large.png",
+      "bytes": 50785,
+      "sha256": "afdaa0acea6df17dc4e34ee36af9e70b46d8650d356f5ccc0d8f3f85dd5ed4f8"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/word-Chocolate-hazelnut-spread-large.png",
+      "bytes": 40908,
+      "sha256": "7f6a2fdba594931e556dae4bf32b81532c07b1634f8eb7f3420e7ebfefdb867f"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/word-Nuss-Nougat-Creme-large.png",
+      "bytes": 49873,
+      "sha256": "19421e9224954d4fd80d9c1b6a712abfaf8fd2bcb6cab054201bd9cf2287b367"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/word-Rollkragenpullover-large.png",
+      "bytes": 49217,
+      "sha256": "280e86a3d4a9d35b03bff064171b9da8113c701344dd74bcff4c6088155a45e2"
+    },
+    {
+      "path": "artifacts/usability-final/aab-dispatch.json",
+      "bytes": 230,
+      "sha256": "463ba9fe8a4a88858e6beeb46b33193dafda102b7f1be913e156a4d7995588a3"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "e47739e66a0b43d5d38c87d3502183ebed73bdcd6fda38646be26c9bd3fd085b"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/aab-boot.config.txt",
+      "bytes": 202,
+      "sha256": "2367d15c5c773dd21fa3a1a8c0aab077ebccc84b67219de2b035bd20636b9552"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/aab-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/aab-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/aab-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "9f5099dc43b1115ab7e32eeb9f5752759d2dcc9cc141502af7557112430cb492"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/aab-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/aab-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/aab-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/build-apks-default.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/build-apks-universal.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/bundle-config.txt",
+      "bytes": 1484,
+      "sha256": "9267844045173074e0d2e350f5697dbf15fc10dca86df7fc0e2226956d760b01"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/bundle-manifest.txt",
+      "bytes": 4301,
+      "sha256": "9d6076c50f31b6f67a0abd5f39a1ecc2b89a71852b5a29c524c79afd22a024ec"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/bundle-signature.txt",
+      "bytes": 267752,
+      "sha256": "0c6d7d10f3d27b6e09a41cfb4e432891d49f3c1e447ab1f24cb08ede7a070b31"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/bundle-validate.txt",
+      "bytes": 25901,
+      "sha256": "5b2ae968252af4fae245989c90cc29d700b9576583badca30c05b2dedf0d1be5"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-badging.txt",
+      "bytes": 924,
+      "sha256": "381ee251ba270776d007a5fb3f5f1fb0e1634891e6eb8408b67a5aa1e4fc40c7"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "9f5099dc43b1115ab7e32eeb9f5752759d2dcc9cc141502af7557112430cb492"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-manifest.txt",
+      "bytes": 610,
+      "sha256": "a23e3581a1c6122ee229ea04f41704bfa48460025c916fd10ef28a8204e948b9"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-signature.txt",
+      "bytes": 970,
+      "sha256": "25b76c7446dfd92d120731848b87d3ce4a424d1744cd8f6bb55c6afc1370e6cc"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-arm64_v8a-zipalign.txt",
+      "bytes": 752,
+      "sha256": "04599c068d3738bd63851b3ff83276c7ef3ef6a8d9598fb5e2885184132ac224"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-badging.txt",
+      "bytes": 5355,
+      "sha256": "ba87a6e80167e3f7f0b7046522e7b142346a3954357d69604012f60994acc557"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-boot.config.txt",
+      "bytes": 202,
+      "sha256": "2367d15c5c773dd21fa3a1a8c0aab077ebccc84b67219de2b035bd20636b9552"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-classes.dex-disassembly.txt",
+      "bytes": 16251489,
+      "sha256": "2e21e1df39fab46d71bb7b7fdbd345e655dd801f990ddac0593744c583190768"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-manifest.txt",
+      "bytes": 11005,
+      "sha256": "61db68d634d8a797a3efb44be6117e7fd05303dba2276640a40218c073ba50aa"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default-base-master-zipalign.txt",
+      "bytes": 31118,
+      "sha256": "f7a91476a8535ee88d3d1afa4ec46bbc40a5bce482dddce58f20aa202d961241"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default.apks",
+      "bytes": 52712985,
+      "sha256": "3621c9e2988528315a3d801123fbdeaa9bbf0290336138cac9ed2cc1b8630068"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default/splits/base-arm64_v8a.apk",
+      "bytes": 22754004,
+      "sha256": "a0518fe21a99b31a5bfe3a32d0acfc28f35143832eae0a4fc285a9f5003f15af"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default/splits/base-master_2.apk",
+      "bytes": 15192072,
+      "sha256": "abd7da72de8b9f69a11c0d2989f01002778ea1f524d274fab711c0af39fa15a2"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/default/splits/base-master.apk",
+      "bytes": 14766088,
+      "sha256": "35e7f39e2e7c0f47124b7b556933b66774eef4f06b73e8218469830dfcc03ab7"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/inspection.json",
+      "bytes": 64359,
+      "sha256": "9b69dec95dea0ce4c7c2fe392b5624d91014c49c149797fa7027fcf0ab0823cf"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/aab/base/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/aab/base/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/aab/base/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52460352,
+      "sha256": "641ada3183366ccf203cde2ef8b416a08c3efff115ff832736ba8fec20db5270"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/aab/base/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/aab/base/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "19a713983e5fdcc12a7f45ae7f7890b67e27e8f22ac14fb544b0e89f4dcd7187"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/aab/base/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52460352,
+      "sha256": "641ada3183366ccf203cde2ef8b416a08c3efff115ff832736ba8fec20db5270"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "19a713983e5fdcc12a7f45ae7f7890b67e27e8f22ac14fb544b0e89f4dcd7187"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/universal-universal/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/universal-universal/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/universal-universal/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52460352,
+      "sha256": "641ada3183366ccf203cde2ef8b416a08c3efff115ff832736ba8fec20db5270"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/universal-universal/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/universal-universal/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "19a713983e5fdcc12a7f45ae7f7890b67e27e8f22ac14fb544b0e89f4dcd7187"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/native/universal-universal/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-badging.txt",
+      "bytes": 5381,
+      "sha256": "f9f1900080b4f52b32a52abec580999e81658b33ec931e4eb75dcc57e8c8eca9"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-boot.config.txt",
+      "bytes": 202,
+      "sha256": "2367d15c5c773dd21fa3a1a8c0aab077ebccc84b67219de2b035bd20636b9552"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-classes.dex-disassembly.txt",
+      "bytes": 16251489,
+      "sha256": "53ce93934b88b9e9bbceb46b864c88d2f7d9155691824b3f55f8c3f74be08e18"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "9f5099dc43b1115ab7e32eeb9f5752759d2dcc9cc141502af7557112430cb492"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-manifest.txt",
+      "bytes": 10835,
+      "sha256": "71c05317fd04f520fcdb050de441fbd826998d13186d2701b6e39a243951d6e0"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal-universal-zipalign.txt",
+      "bytes": 31447,
+      "sha256": "bcedf5fe34fb5479b307c03b4036d553d11a076ee8b5dc5d5eed136cf23f03f8"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal.apks",
+      "bytes": 37511928,
+      "sha256": "4c7d8f134965aef8edc837cfd80cb775b106f37feac6a388ac1f1225a3eb9725"
+    },
+    {
+      "path": "artifacts/usability-final/aab-inspection/universal/universal.apk",
+      "bytes": 37511614,
+      "sha256": "30609de8d9c2c3735262b07fc09d4f76d770aad7a36d7c25791bc3bea70b0e9d"
+    },
+    {
+      "path": "artifacts/usability-final/apk-dispatch.json",
+      "bytes": 230,
+      "sha256": "fa17629eb029fd6755f916812db764c9974f8a743f37dc6b08cd5eae7421d0b3"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "5e36985d8e3650039cd0ba45434d4a033b38776ca33129a7bed272d30ed31892"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-badging.txt",
+      "bytes": 5228,
+      "sha256": "4e0c219a91d79aa6c64de5bd4572b7f0815da880c7c19f783ad5ef0ef3575667"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-boot.config.txt",
+      "bytes": 202,
+      "sha256": "628b79645e0396ae24516f4864ac87e0e5561cda9f0e0dd358e8dd3a87685344"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-classes.dex-disassembly.txt",
+      "bytes": 16251457,
+      "sha256": "88b331f0aaa55ec2796e09d62bb5fc9abd9272fb398276baba6111f207257db0"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "9f5099dc43b1115ab7e32eeb9f5752759d2dcc9cc141502af7557112430cb492"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-manifest.txt",
+      "bytes": 10275,
+      "sha256": "42fb2b8d749ec93b2e09b77e16ac31a3168e8869e5ba322ebeceef6e3c74b9fe"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-resources.txt",
+      "bytes": 301776,
+      "sha256": "174ed17d083376e8111104a80986f2f855a1254fb30c34c4df3c3f9f64a8f06f"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-signature.txt",
+      "bytes": 972,
+      "sha256": "76dd2a436313c778f1bad70e0e4d2c42f5954499e336b5df0c839ffe367693e8"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/apk-zipalign.txt",
+      "bytes": 18763,
+      "sha256": "191c981d445db2fa7ac5d9e368f45179472863d0fa9f6b3ea273f544a58d68ea"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/inspection.json",
+      "bytes": 20593,
+      "sha256": "0ef416e4f9f5f4bd9a02ab54995806034c7ad5c761372a0bcdee82d1b6c2dc79"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/native/apk/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/native/apk/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/native/apk/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52460352,
+      "sha256": "641ada3183366ccf203cde2ef8b416a08c3efff115ff832736ba8fec20db5270"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/native/apk/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/native/apk/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "b82f4239f6d622f959784e0936699216afe5c70371b906add2f457ed61922b99"
+    },
+    {
+      "path": "artifacts/usability-final/apk-inspection/native/apk/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/apk-managed-stripped.txt",
+      "bytes": 1208,
+      "sha256": "3038d0f903fe4c7eb877340b057628159c2a1e190832f29054f026a182240914"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-dispatch.json",
+      "bytes": 230,
+      "sha256": "c6580dec5abdd25b9d648c73b5dcead181f59499cae295176b959a2a029e1cb2"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "dd99d02149e5d4fcd5e5e8178a5d1b8dd3a168ac60f399e09d04f0d3add3edac"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/aab-boot.config.txt",
+      "bytes": 202,
+      "sha256": "42462ed7fb2fe301ddb036c8a755d6b13f71ce8d51ad13d318e2acd53701f62a"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/aab-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/aab-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/aab-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "c84000f332b057ca2145286154fe9b15a1fc3add0f86caa7117a2fa83e40e559"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/aab-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/aab-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/aab-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/build-apks-default.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/build-apks-universal.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/bundle-config.txt",
+      "bytes": 1484,
+      "sha256": "9267844045173074e0d2e350f5697dbf15fc10dca86df7fc0e2226956d760b01"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/bundle-manifest.txt",
+      "bytes": 4302,
+      "sha256": "f3602bdc8cf9f402867bfb8a08cb2b43c26f172e29f34f2d5cf26d0a9770adb6"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/bundle-signature.txt",
+      "bytes": 267752,
+      "sha256": "46b4ee6f392213b0603f229d0998a0c0bb69270ebe8f8375dd9840ee1233a64d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/bundle-validate.txt",
+      "bytes": 25901,
+      "sha256": "5b2ae968252af4fae245989c90cc29d700b9576583badca30c05b2dedf0d1be5"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-badging.txt",
+      "bytes": 925,
+      "sha256": "1b78f3b82b5345374b4683c3504406e07ae300af791304e272f41d194d4c9976"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "c84000f332b057ca2145286154fe9b15a1fc3add0f86caa7117a2fa83e40e559"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-manifest.txt",
+      "bytes": 611,
+      "sha256": "69c18aa5141ddbb6999914f181f01f7810d3454a74a3b8dfb9e0ed43f26b44a5"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-signature.txt",
+      "bytes": 970,
+      "sha256": "25b76c7446dfd92d120731848b87d3ce4a424d1744cd8f6bb55c6afc1370e6cc"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-arm64_v8a-zipalign.txt",
+      "bytes": 759,
+      "sha256": "a9a2d1aac42c98b1a1599e3e9cba3b00c2c65831a1876bb424a6dec1def81064"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-badging.txt",
+      "bytes": 5356,
+      "sha256": "d83afa498c5c6cbe57e5f666b6d638fec36127e02b165d972c7e1a87c2b877a8"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-boot.config.txt",
+      "bytes": 202,
+      "sha256": "42462ed7fb2fe301ddb036c8a755d6b13f71ce8d51ad13d318e2acd53701f62a"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-classes.dex-disassembly.txt",
+      "bytes": 16251503,
+      "sha256": "4b1e4d9554eb6f4c47573fc607210f72e032f40dc8c1f4756c37c8dd6ffc6428"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-manifest.txt",
+      "bytes": 11006,
+      "sha256": "d57a8e956592e793664e032db64f19a2382fb2bb47218eba56f537c260fde8b7"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default-base-master-zipalign.txt",
+      "bytes": 31125,
+      "sha256": "31794c4252c22d9a9a2fc162a5e9c2e117fe69742aff23b432f1b7ee501275ca"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default.apks",
+      "bytes": 52712985,
+      "sha256": "f48f52b699cb3f1be009a2e9d173c914266b2b9ebdb1d823b28a1aa17453f79d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default/splits/base-arm64_v8a.apk",
+      "bytes": 22754004,
+      "sha256": "eff19408b7ac61844bb7b7646738b0f30a9a232d84203566d69ff0abfac6f8da"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default/splits/base-master_2.apk",
+      "bytes": 15192072,
+      "sha256": "fe81a7ac82e2b1bb6c65757f2d920e29713fad7e1ca094daa8a4b03db02b901a"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/default/splits/base-master.apk",
+      "bytes": 14766088,
+      "sha256": "5005984ee9617fb71d976cfae4f1c145ffd146720d22b06d6e834b4c2596a6a9"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/inspection.json",
+      "bytes": 64701,
+      "sha256": "53c03616e6b1356425e2ccb57320af05a186474180a6fd76d4a9e8cde81ecefc"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/aab/base/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/aab/base/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/aab/base/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52460512,
+      "sha256": "2e42bffe2648b5e3d05e1af0a649d84459efa2c1b6102db481911ed28e47cf94"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/aab/base/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/aab/base/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "fff60442d73f07230ce40493ef913569e1a19194270b5c140924c2c3b6f681be"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/aab/base/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52460512,
+      "sha256": "2e42bffe2648b5e3d05e1af0a649d84459efa2c1b6102db481911ed28e47cf94"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "fff60442d73f07230ce40493ef913569e1a19194270b5c140924c2c3b6f681be"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/universal-universal/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/universal-universal/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/universal-universal/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52460512,
+      "sha256": "2e42bffe2648b5e3d05e1af0a649d84459efa2c1b6102db481911ed28e47cf94"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/universal-universal/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/universal-universal/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "fff60442d73f07230ce40493ef913569e1a19194270b5c140924c2c3b6f681be"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/native/universal-universal/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-badging.txt",
+      "bytes": 5382,
+      "sha256": "43366456006d34da55570e453637b38e7fbeacb1b37ece425dab40ebcd910ae4"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-boot.config.txt",
+      "bytes": 202,
+      "sha256": "42462ed7fb2fe301ddb036c8a755d6b13f71ce8d51ad13d318e2acd53701f62a"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-classes.dex-disassembly.txt",
+      "bytes": 16251503,
+      "sha256": "27d3ad4974aa3448dcbacf6184874266da4b3b450b5b3f3359b6dbc1f00058c5"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "c84000f332b057ca2145286154fe9b15a1fc3add0f86caa7117a2fa83e40e559"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-manifest.txt",
+      "bytes": 10836,
+      "sha256": "1800d5d31b1e589a2c9362645d0bb17ebe2dc0449eeb72b12f8ec59d682b539c"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal-universal-zipalign.txt",
+      "bytes": 31454,
+      "sha256": "a835ecacab98ade7a877706f73bb2e8b8084dcc7d3857fc258f6cee1763815ca"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal.apks",
+      "bytes": 37511928,
+      "sha256": "b503740e7d8bf970ae518893c5e2d24d71921ea054e3d3226e4b29a52d788444"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-inspection/universal/universal.apk",
+      "bytes": 37511614,
+      "sha256": "0e04664e5b6fe7b6fd1a513887615dde51d5d9299f27e045f5218b6232ab8c3a"
+    },
+    {
+      "path": "artifacts/usability-final/code10/aab-managed-stripped.txt",
+      "bytes": 1208,
+      "sha256": "3038d0f903fe4c7eb877340b057628159c2a1e190832f29054f026a182240914"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-dispatch.json",
+      "bytes": 230,
+      "sha256": "304c3dfa6a0ff3fe6ebeb128d3ccb5c9bd723b920a9ebcb2f6792957a62f046d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "aec7eeb7ee483582102a09b74b06ba54ab752651debfdbe7bcfad1b3291a966c"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-badging.txt",
+      "bytes": 5229,
+      "sha256": "e9decfebb2bba7c0bacbd872ee2ffe621c8a2aaca033b43bd82e91495603abad"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-boot.config.txt",
+      "bytes": 202,
+      "sha256": "a63f0b29b6f89efb6ae1532175aa9ef3d137db7ecd0b86836c929bd2f886bd4f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-classes.dex-disassembly.txt",
+      "bytes": 16251471,
+      "sha256": "096d374f74602f004433a47c86620762d0fcdd2ea3f1a4ddd4ac5a9ed9be7972"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "c84000f332b057ca2145286154fe9b15a1fc3add0f86caa7117a2fa83e40e559"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-manifest.txt",
+      "bytes": 10276,
+      "sha256": "3f181df6160a794217d7a85db3b5a96ea6cd232fb77eb31f48ceaa852b730f74"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-resources.txt",
+      "bytes": 301776,
+      "sha256": "174ed17d083376e8111104a80986f2f855a1254fb30c34c4df3c3f9f64a8f06f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-signature.txt",
+      "bytes": 972,
+      "sha256": "76dd2a436313c778f1bad70e0e4d2c42f5954499e336b5df0c839ffe367693e8"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/apk-zipalign.txt",
+      "bytes": 18763,
+      "sha256": "60242df2cc3e30eeb416d82341dd1a99d38b03f48d626450db9dfc0d9b923738"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/inspection.json",
+      "bytes": 20648,
+      "sha256": "608286d9c07ec69ab06da56195f297b1ffeb700fa560757512225d55d6b82adf"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/native/apk/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/native/apk/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/native/apk/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52460512,
+      "sha256": "2e42bffe2648b5e3d05e1af0a649d84459efa2c1b6102db481911ed28e47cf94"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/native/apk/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/native/apk/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "6ef47aa6e94b663c95bdc045e34a49922da861959ba78d7f7c24a270a0786eda"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-inspection/native/apk/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/apk-managed-stripped.txt",
+      "bytes": 1208,
+      "sha256": "3038d0f903fe4c7eb877340b057628159c2a1e190832f29054f026a182240914"
+    },
+    {
+      "path": "artifacts/usability-final/code10/capture.cs.txt",
+      "bytes": 977,
+      "sha256": "a432da02f9a6e7eca397e91fe5fa6cb16997bdcbba2b21aaee908c841d426f79"
+    },
+    {
+      "path": "artifacts/usability-final/code10/configuration.json",
+      "bytes": 603,
+      "sha256": "d1ed7684d315fc782d861c388704dbe965b185f2253bc6848166dc990226e623"
+    },
+    {
+      "path": "artifacts/usability-final/code10/console-errors.json",
+      "bytes": 7045,
+      "sha256": "c9318c79252dd1ba4157d18b7392a817cee2bfa36f92d05f9f6ed9755169fdbe"
+    },
+    {
+      "path": "artifacts/usability-final/code10/console-status.json",
+      "bytes": 948,
+      "sha256": "8a8e4771d41b386e7a22a89366db6c9db824233a3a13ccb2a0ff0869cc0bae6c"
+    },
+    {
+      "path": "artifacts/usability-final/code10/enlarge-kings-result.json",
+      "bytes": 1127,
+      "sha256": "ee6e3b61b204fc53c96990084f0056b73036d879ae77fac77813baee608ac3d4"
+    },
+    {
+      "path": "artifacts/usability-final/code10/enlarge.cs.txt",
+      "bytes": 617,
+      "sha256": "3712f8aa8b7e5519d2498760d71ede1bf3babc1f225f217d22607fd60b2e9874"
+    },
+    {
+      "path": "artifacts/usability-final/code10/fixture-corrected-result.json",
+      "bytes": 1760,
+      "sha256": "767f873af9c7e87c9bc7a7db40c700389e6b90f6669d198a50d82dd479f845a1"
+    },
+    {
+      "path": "artifacts/usability-final/code10/fixture-corrected.cs.txt",
+      "bytes": 1170,
+      "sha256": "da9d81cd3b97f2021a445639fefb2413f599aed6af1b7ce02a6ef024c9ddb2bf"
+    },
+    {
+      "path": "artifacts/usability-final/code10/fixture-kings-result.json",
+      "bytes": 1884,
+      "sha256": "105898aee1cf1f03acd11a24e089f5aae237472699dbc5ae040cbe6d04780401"
+    },
+    {
+      "path": "artifacts/usability-final/code10/fixture-result.json",
+      "bytes": 256,
+      "sha256": "0175e4c2ebead5c347c273381e8eb2fe64224cbcd79e39c7074ea67aafb761a5"
+    },
+    {
+      "path": "artifacts/usability-final/code10/fixture.cs.txt",
+      "bytes": 1011,
+      "sha256": "814212166d7e60bca5645249402948fea2605bc97ed098d1c287d37188c2b229"
+    },
+    {
+      "path": "artifacts/usability-final/code10/font-cleanup.json",
+      "bytes": 833,
+      "sha256": "b77ee6d4f439b3734d117304321daa475742995662a44c26c583fad2b3940aeb"
+    },
+    {
+      "path": "artifacts/usability-final/code10/font-generated-diff.txt",
+      "bytes": 7548835,
+      "sha256": "5a629485354b7a1875d7500689160094084bbefc4fbcd45fddd4b571b04c4f0d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/generated-fonts/Emoji.asset",
+      "bytes": 5311,
+      "sha256": "4b3934f84d7cc7917596430760ffcd921746e1299e7cdd9fc3fde8c44f9531df"
+    },
+    {
+      "path": "artifacts/usability-final/code10/generated-fonts/Inter.asset",
+      "bytes": 7362839,
+      "sha256": "65e69d43cf4a37f7b12b19da071958e6cc588b5a3b242022e05fabceb9a414b9"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-five-de.png",
+      "bytes": 47100,
+      "sha256": "14bfef10ad4792fd13a258ea57e283e47cd0f3b24dd104b7bfe82431cd5bfcb5"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-five-en-large.png",
+      "bytes": 46623,
+      "sha256": "0c9be87b762f0a773b70f14d19c718a1b83c666b4b0ab414af8de79953e4cad7"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-five-en.png",
+      "bytes": 42996,
+      "sha256": "8295544a8088de358d76e082fe0436530d1c742c23e79ae1c24c94879c9ae99d"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-five-kings-de-large.png",
+      "bytes": 52437,
+      "sha256": "e738fd51428d47ca17da3c37c17c79d959c3e3fd915c72fb20eabb396080e7e0"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-five-kings-de.png",
+      "bytes": 48370,
+      "sha256": "4e839521323f920c93688946424b54ca526fb291c91ee5fb1380a83f771c9ace"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-screenshots/editing-large-English-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-screenshots/editing-large-English.png",
+      "bytes": 28526,
+      "sha256": "42b07d8e724a47893d586fa0e6cc207228d3e8281b7a70a1fea9a9fefbce014c"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-screenshots/editing-large-German-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-screenshots/editing-large-German.png",
+      "bytes": 31574,
+      "sha256": "a246abe291c7416f5771e70ac52faddd8fe0ca6b668bf71f700d29868de526db"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-screenshots/group-English.png",
+      "bytes": 46267,
+      "sha256": "82e72c8b011628613541f861b8133f3591c4e36d8b29d8b7228e9a9ac9ea0d62"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-screenshots/group-German.png",
+      "bytes": 51954,
+      "sha256": "51d996afa372933029ad2ab73d492612483d2e02e5103a9e27af4e0ec36453ff"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-screenshots/group-large-last-English.png",
+      "bytes": 58902,
+      "sha256": "4522045a0137858ccaa751b8600bf71a8f38b197faf2803267030ac015d364f9"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-screenshots/group-large-last-German.png",
+      "bytes": 64346,
+      "sha256": "1052355030147db75c8fa7b436fe79191856c041d34983d331a76a8b2e87529c"
+    },
+    {
+      "path": "artifacts/usability-final/code10/group-test-result.json",
+      "bytes": 2274,
+      "sha256": "65cf5556fd256064ff6d27171d6f39221af7c8b81829c07dbeca612a66c9d22f"
+    },
+    {
+      "path": "artifacts/usability-final/code10/motion-test-result.json",
+      "bytes": 1740,
+      "sha256": "0a1954387c14dd75ec54644e637932c522de39a2a8b5ed57a1a1f496baafd8dc"
+    },
+    {
+      "path": "artifacts/usability-final/code10/source-equivalence.json",
+      "bytes": 519,
+      "sha256": "6592e22e8142e340dba0febe66fdd504fcc92091e07b90918418a72e0fe2144c"
+    },
+    {
+      "path": "artifacts/usability-final/code10/spec-code10-verification.md",
+      "bytes": 2120,
+      "sha256": "8c95d490ffa5f2047470c1372efce18740189dfecba7225fda59acb7fe27a926"
+    },
+    {
+      "path": "artifacts/usability-final/code10/standards-code10-verification.md",
+      "bytes": 1474,
+      "sha256": "7cc3eff23ee103b245709dc20d88c52e534ea57b41b73f6ecca2fce147b3a970"
+    },
+    {
+      "path": "artifacts/usability-final/code10/visual-de-geometry-corrected.json",
+      "bytes": 2242,
+      "sha256": "e9ac0edfcd6921f8f7fb604e4c0ecd5e44ef7f5282a7558ad0425c353d4fcdb1"
+    },
+    {
+      "path": "artifacts/usability-final/code10/visual-de-geometry.json",
+      "bytes": 500,
+      "sha256": "c7feffcc7cfe0af44fe0b12f7fe8626fbad31c0923bf1e04e767039a2fb637e5"
+    },
+    {
+      "path": "artifacts/usability-final/code10/visual-en-geometry.json",
+      "bytes": 2246,
+      "sha256": "e9d278a542645ba2eb5aa2fe5d83fbf5c14cd78762782dcbb5ed9db7d98f2bc1"
+    },
+    {
+      "path": "artifacts/usability-final/code10/visual-en-large-geometry.json",
+      "bytes": 2252,
+      "sha256": "a1d5e790377896baa77622125067d4947cb46b75b8f31ce9227fbabceee32971"
+    },
+    {
+      "path": "artifacts/usability-final/code10/visual-kings-de-geometry.json",
+      "bytes": 2252,
+      "sha256": "b4a5672ee85b24896fb2b141cf250d5d9ff7252485a948a3f5e0d2eb24a67af1"
+    },
+    {
+      "path": "artifacts/usability-final/code10/visual-kings-de-large-geometry.json",
+      "bytes": 2258,
+      "sha256": "6ce2c02529bd12b47988776269f6caf7623789575efbbee08dd6b452ea596fca"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-final-dispatch.json",
+      "bytes": 230,
+      "sha256": "89b807427a7aad233fd7a9aefe9ac946b2e965ab19aef64ebec5b0fbc2bc0233"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "c685ee821268359a55983bf6d01f5e8301f35121e4f063e4013c7922b3ce3507"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/aab-boot.config.txt",
+      "bytes": 202,
+      "sha256": "85028a05c7366e64cb4cdd7f3d11e0afea8c86b81c15018bc7234252606e4316"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/aab-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/aab-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/aab-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "a2f10f8e55b8153cf95335e4e6d4d273741dfd221f0dc5bad4e574b0e08451a2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/aab-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/aab-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/aab-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/build-apks-default.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/build-apks-universal.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/bundle-config.txt",
+      "bytes": 1484,
+      "sha256": "9267844045173074e0d2e350f5697dbf15fc10dca86df7fc0e2226956d760b01"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/bundle-manifest.txt",
+      "bytes": 4302,
+      "sha256": "bb76e319937fed34d94dca1b66541fe4cb07c1f2c7ba9b5058e176558b645740"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/bundle-signature.txt",
+      "bytes": 267752,
+      "sha256": "4b2571bfadc3f1a4b3969d46dc8579bc7839aca17ee33250d98e8685bfadc53d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/bundle-validate.txt",
+      "bytes": 25901,
+      "sha256": "5b2ae968252af4fae245989c90cc29d700b9576583badca30c05b2dedf0d1be5"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-badging.txt",
+      "bytes": 925,
+      "sha256": "d5cbe5bf7e4816995d5bde0be1075b24a6b6df3e084e39c85468d139c67b2eaf"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "a2f10f8e55b8153cf95335e4e6d4d273741dfd221f0dc5bad4e574b0e08451a2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-manifest.txt",
+      "bytes": 611,
+      "sha256": "9a29b6151f5501b24a7afeb422d54236681c1fbef67796231558c88285186076"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-signature.txt",
+      "bytes": 970,
+      "sha256": "25b76c7446dfd92d120731848b87d3ce4a424d1744cd8f6bb55c6afc1370e6cc"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-arm64_v8a-zipalign.txt",
+      "bytes": 767,
+      "sha256": "f1885e52ed0e6ae6ac1bb26639ac5581c13823cdc9f7365b211d0b2ce4bb2cfe"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-badging.txt",
+      "bytes": 5356,
+      "sha256": "9934f6d2c114cdf54c0150563542a18a23542a4c50afb1cf06a35602fdf44b85"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-boot.config.txt",
+      "bytes": 202,
+      "sha256": "85028a05c7366e64cb4cdd7f3d11e0afea8c86b81c15018bc7234252606e4316"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-classes.dex-disassembly.txt",
+      "bytes": 16251519,
+      "sha256": "c28cef0ba4334f5ceb7b0fe9e4513e02a70cb2b4d8b8a9db539ae51ffcdbe48e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-manifest.txt",
+      "bytes": 11006,
+      "sha256": "28172f8430291e4097ff92631be2b857c80d2b8d3caebb48f0bfb04c643a3591"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default-base-master-zipalign.txt",
+      "bytes": 31133,
+      "sha256": "9882ba8ccaac4f645991fe6964100858a47af597bcd2efc33b5d9e7336ceba60"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default.apks",
+      "bytes": 52712985,
+      "sha256": "244c70367c8743f596476a229761f8af223bbd0a752c28c6ec026faef60fe45a"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default/splits/base-arm64_v8a.apk",
+      "bytes": 22754004,
+      "sha256": "b058f9ba27be9348d82ab18951f587ea7c1511a60b4fb518da1ca19696ea3644"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default/splits/base-master_2.apk",
+      "bytes": 15192072,
+      "sha256": "0bda87fda11ab7bbf5791fba9c3ff1bdffee6c5cb1de21011a83a663500e1681"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/default/splits/base-master.apk",
+      "bytes": 14766088,
+      "sha256": "260b8ef219ba579e2a6b0ffdb5fcd33c9c0330f6f62090c4108353e9d86a33e2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/inspection.json",
+      "bytes": 65044,
+      "sha256": "6469e36f969f53f63d785eeb074db14e4f2691bbb174593e5438f72c31050830"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/aab/base/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/aab/base/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/aab/base/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461680,
+      "sha256": "30f3439687984d01e1787195e41ebc596b8c67d64d2c36311f728f6b09cba1f3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/aab/base/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/aab/base/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "4f48a5a9e2fccbbfb2dd48e0a7041b99da08579a6ec5af72dd02350c869437cf"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/aab/base/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461680,
+      "sha256": "30f3439687984d01e1787195e41ebc596b8c67d64d2c36311f728f6b09cba1f3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "4f48a5a9e2fccbbfb2dd48e0a7041b99da08579a6ec5af72dd02350c869437cf"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/universal-universal/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/universal-universal/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/universal-universal/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461680,
+      "sha256": "30f3439687984d01e1787195e41ebc596b8c67d64d2c36311f728f6b09cba1f3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/universal-universal/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/universal-universal/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "4f48a5a9e2fccbbfb2dd48e0a7041b99da08579a6ec5af72dd02350c869437cf"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/native/universal-universal/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-badging.txt",
+      "bytes": 5382,
+      "sha256": "7f679b8f25cd9e5e65493a8f4ed874a538127ed62facb3c588245d65b4e0a725"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-boot.config.txt",
+      "bytes": 202,
+      "sha256": "85028a05c7366e64cb4cdd7f3d11e0afea8c86b81c15018bc7234252606e4316"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-classes.dex-disassembly.txt",
+      "bytes": 16251519,
+      "sha256": "847e3fddf79389f20106ec5be8a6218592e06f217344cd499786182044fb3e51"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "a2f10f8e55b8153cf95335e4e6d4d273741dfd221f0dc5bad4e574b0e08451a2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-manifest.txt",
+      "bytes": 10836,
+      "sha256": "8b3dd1879a31a97499ca862ee1dc401bf7e3dcf066e6e800008c01f306e51c4d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal-universal-zipalign.txt",
+      "bytes": 31462,
+      "sha256": "52e3b9b2ba51068e859935af50ee6b092e2a4304c43e2d7a85532c1026f84395"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal.apks",
+      "bytes": 37511928,
+      "sha256": "35bc618760987c418e5f6cc51b04cb364d806e448638a65f95713693acb38ac8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-inspection/universal/universal.apk",
+      "bytes": 37511614,
+      "sha256": "a208a47295a8d57a6b2bf74cc1e4287f27c4767d0a1b7cdd4679d00d9f7eb539"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-monitor-managed-stripped.txt",
+      "bytes": 1208,
+      "sha256": "3038d0f903fe4c7eb877340b057628159c2a1e190832f29054f026a182240914"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-dispatch.json",
+      "bytes": 230,
+      "sha256": "e75fc5c6cd7e9f3de5af99d64a88590e66dcd3c673756e3fb35126da8c388e91"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "072e99323b6eb608853f3965fb0ec67aa6edf77d1125b108ab84cd2459073505"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/aab-boot.config.txt",
+      "bytes": 202,
+      "sha256": "24587ac8e5d01783661261ad0622e810f0da97be0338d3f1fac1d97669ba7a58"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/aab-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/aab-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/aab-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "f03e5302fc33eb45016c604d40fe08c43fa2ba221ac424955c7595bd553fa444"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/aab-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/aab-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/aab-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/build-apks-default.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/build-apks-universal.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/bundle-config.txt",
+      "bytes": 1484,
+      "sha256": "9267844045173074e0d2e350f5697dbf15fc10dca86df7fc0e2226956d760b01"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/bundle-manifest.txt",
+      "bytes": 4302,
+      "sha256": "bb76e319937fed34d94dca1b66541fe4cb07c1f2c7ba9b5058e176558b645740"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/bundle-signature.txt",
+      "bytes": 267752,
+      "sha256": "ea838997bf1cda106195abb40b558e6d556af537aaf3f6a698f4b354ef2a93b0"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/bundle-validate.txt",
+      "bytes": 25901,
+      "sha256": "5b2ae968252af4fae245989c90cc29d700b9576583badca30c05b2dedf0d1be5"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-badging.txt",
+      "bytes": 925,
+      "sha256": "d5cbe5bf7e4816995d5bde0be1075b24a6b6df3e084e39c85468d139c67b2eaf"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "f03e5302fc33eb45016c604d40fe08c43fa2ba221ac424955c7595bd553fa444"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-manifest.txt",
+      "bytes": 611,
+      "sha256": "9a29b6151f5501b24a7afeb422d54236681c1fbef67796231558c88285186076"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-signature.txt",
+      "bytes": 970,
+      "sha256": "25b76c7446dfd92d120731848b87d3ce4a424d1744cd8f6bb55c6afc1370e6cc"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-arm64_v8a-zipalign.txt",
+      "bytes": 768,
+      "sha256": "2be5d4b13e27226a2edfe1de45a136783308474d8d0af238b901bf8b4c14295e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-badging.txt",
+      "bytes": 5356,
+      "sha256": "9934f6d2c114cdf54c0150563542a18a23542a4c50afb1cf06a35602fdf44b85"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-boot.config.txt",
+      "bytes": 202,
+      "sha256": "24587ac8e5d01783661261ad0622e810f0da97be0338d3f1fac1d97669ba7a58"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-classes.dex-disassembly.txt",
+      "bytes": 16251521,
+      "sha256": "32b6746d99103fe5699cc92bdcd3a7e0d5b0c2a31e94fdb88ba385538ed033cd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-manifest.txt",
+      "bytes": 11006,
+      "sha256": "28172f8430291e4097ff92631be2b857c80d2b8d3caebb48f0bfb04c643a3591"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default-base-master-zipalign.txt",
+      "bytes": 31134,
+      "sha256": "f70f9b78767cdbe6be64b34fbf6d609a070ce10e5e8944f80e3da53402a818a7"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default.apks",
+      "bytes": 52712985,
+      "sha256": "be42f6d489b94ed6d2fba482f2d249ca1b7b98f32e885255d58fefa76ff34f23"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default/splits/base-arm64_v8a.apk",
+      "bytes": 22754004,
+      "sha256": "909621c40cb4030479f48756aef74b53a7be3d78ba6961fe91214a77ecc9762d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default/splits/base-master_2.apk",
+      "bytes": 15192072,
+      "sha256": "3359005e09dc2d8d406d4923fc5e62644d6043955d80ac1f27559e60e1e3a4da"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/default/splits/base-master.apk",
+      "bytes": 14766088,
+      "sha256": "1376308ead06ef94b381ccaca5e61c6a2d82a0dedfc2988b48ac5dd0f9057736"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/inspection.json",
+      "bytes": 65088,
+      "sha256": "07090e0514c76aa79dea5188d7856acae2d4aaae5e73e946c619014d7f436774"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/aab/base/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/aab/base/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/aab/base/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461856,
+      "sha256": "0f5ed163c0cb184ae177aa1cdbc066a218d768c8ef6e0e684cc0774ed68f66b3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/aab/base/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/aab/base/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "ec386811c1726b21151052b9a26cc6ce6e6d6bf9b0769c24016cf0933c6875c1"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/aab/base/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461856,
+      "sha256": "0f5ed163c0cb184ae177aa1cdbc066a218d768c8ef6e0e684cc0774ed68f66b3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "ec386811c1726b21151052b9a26cc6ce6e6d6bf9b0769c24016cf0933c6875c1"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/universal-universal/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/universal-universal/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/universal-universal/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461856,
+      "sha256": "0f5ed163c0cb184ae177aa1cdbc066a218d768c8ef6e0e684cc0774ed68f66b3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/universal-universal/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/universal-universal/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "ec386811c1726b21151052b9a26cc6ce6e6d6bf9b0769c24016cf0933c6875c1"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/native/universal-universal/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-badging.txt",
+      "bytes": 5382,
+      "sha256": "7f679b8f25cd9e5e65493a8f4ed874a538127ed62facb3c588245d65b4e0a725"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-boot.config.txt",
+      "bytes": 202,
+      "sha256": "24587ac8e5d01783661261ad0622e810f0da97be0338d3f1fac1d97669ba7a58"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-classes.dex-disassembly.txt",
+      "bytes": 16251521,
+      "sha256": "c5625b2fb00233641230f3e2e6885a90ad8808845dbc10ef25206e8768434e38"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "f03e5302fc33eb45016c604d40fe08c43fa2ba221ac424955c7595bd553fa444"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-manifest.txt",
+      "bytes": 10836,
+      "sha256": "8b3dd1879a31a97499ca862ee1dc401bf7e3dcf066e6e800008c01f306e51c4d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal-universal-zipalign.txt",
+      "bytes": 31463,
+      "sha256": "e05c79707887a2dd7e20b0b767b56329f6e557ee6b7a4aa983b0fe80979e8f17"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal.apks",
+      "bytes": 37511928,
+      "sha256": "7a927cc1997a9ebb63110448ef715e28e91380cb60c1b325ee09668a5b49180d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-inspection/universal/universal.apk",
+      "bytes": 37511614,
+      "sha256": "7893ef9945a49799f622ea95aecea1e7b2f1aa5c9248c3e9d0789cdac6f541fd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/aab-terminal-managed-stripped.txt",
+      "bytes": 1208,
+      "sha256": "3038d0f903fe4c7eb877340b057628159c2a1e190832f29054f026a182240914"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-dispatch.json",
+      "bytes": 230,
+      "sha256": "70fcd6daa924e63271618d5e0adfe2b2d80f5cbc114cf2745da4900c65fe5e3b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "9c86ba84a7d0b8ddb356f860d115a20094990b142dc1478f5c9a4aa25f28cfe6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-badging.txt",
+      "bytes": 5229,
+      "sha256": "82c2f6c10e7371fdc2c189011c4658c639d16f51ce0b1d38c693c3bb6d9b617b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-boot.config.txt",
+      "bytes": 202,
+      "sha256": "905f7690a7474c4c4020198c05be1efca7281877e1b00aba0a9fcf62cc627246"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-classes.dex-disassembly.txt",
+      "bytes": 16251483,
+      "sha256": "07a1d748564b96f379f4d65391be83783a3a8915d5997347d67e41803a4c1c3e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "a2f10f8e55b8153cf95335e4e6d4d273741dfd221f0dc5bad4e574b0e08451a2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-manifest.txt",
+      "bytes": 10276,
+      "sha256": "7c72234ca0a46c9d52e8b9e41eb7ff0806c912ecb75a6d1cf3a000144f9a2dfd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-resources.txt",
+      "bytes": 301776,
+      "sha256": "174ed17d083376e8111104a80986f2f855a1254fb30c34c4df3c3f9f64a8f06f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-signature.txt",
+      "bytes": 972,
+      "sha256": "76dd2a436313c778f1bad70e0e4d2c42f5954499e336b5df0c839ffe367693e8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/apk-zipalign.txt",
+      "bytes": 18763,
+      "sha256": "08f62648a44175effc73aca4e46795aa9873d4c9029abf461f1ffae63207a977"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/inspection.json",
+      "bytes": 20690,
+      "sha256": "df7763745ba4080e069ac78b5b7b267d16e74a75e6012ea7db499fa3fd21c137"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/native/apk/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/native/apk/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/native/apk/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461680,
+      "sha256": "30f3439687984d01e1787195e41ebc596b8c67d64d2c36311f728f6b09cba1f3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/native/apk/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/native/apk/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "b0c908afbb58529a9597d32534b3e86beb143a749862d6f64e6e9e085f797be4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-inspection/native/apk/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-final-managed-stripped.txt",
+      "bytes": 1208,
+      "sha256": "3038d0f903fe4c7eb877340b057628159c2a1e190832f29054f026a182240914"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "27f98e2acc6a34c89eea447766e8879b090c8881d6db10164ae4606168607439"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-badging.txt",
+      "bytes": 5229,
+      "sha256": "82c2f6c10e7371fdc2c189011c4658c639d16f51ce0b1d38c693c3bb6d9b617b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-boot.config.txt",
+      "bytes": 202,
+      "sha256": "bb74299d7f8221345cac3538a9d0c6f77f3e08ae883e35cda91ff5ebc69a2815"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-classes.dex-disassembly.txt",
+      "bytes": 16251487,
+      "sha256": "ba1d18bc84d4598691b41b3c37ea78bec1af18de28abe6d84831b8e9420bac99"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "5c90df112571b6eb85ee72395acece80d1ddec8580a14d8b982db346ad225a99"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-manifest.txt",
+      "bytes": 10276,
+      "sha256": "7c72234ca0a46c9d52e8b9e41eb7ff0806c912ecb75a6d1cf3a000144f9a2dfd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-resources.txt",
+      "bytes": 301776,
+      "sha256": "174ed17d083376e8111104a80986f2f855a1254fb30c34c4df3c3f9f64a8f06f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-signature.txt",
+      "bytes": 972,
+      "sha256": "76dd2a436313c778f1bad70e0e4d2c42f5954499e336b5df0c839ffe367693e8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/apk-zipalign.txt",
+      "bytes": 18763,
+      "sha256": "2dac9a4dc1c40f769c21eb8bd5bd02586a56d383cc5f168c407612b89ecb0f35"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/inspection.json",
+      "bytes": 20704,
+      "sha256": "d22de33ee4a457082d5aa981d84bae8e2d4a46ad02a39fe4c4fd846b0c020298"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/native/apk/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/native/apk/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/native/apk/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461400,
+      "sha256": "5cc888d100276167720b2e064814926df57f20033533a1be8f614079512d21dd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/native/apk/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/native/apk/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "7f66d969bc60b01b87778378a8e23781c28f68e082da79395c27b453da05fba8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-inspection/native/apk/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-initial-managed-stripped.txt",
+      "bytes": 1208,
+      "sha256": "3038d0f903fe4c7eb877340b057628159c2a1e190832f29054f026a182240914"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-monitor-dispatch.json",
+      "bytes": 230,
+      "sha256": "eb9cbb2b429b052e6b63b15e5961ee44a620d4b2f15e5316edd0e76d400e32fc"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-dispatch.json",
+      "bytes": 230,
+      "sha256": "3458c700b8758e04cbe8cff42f4afdae9dc1449e43742f0b08aa5947b25f1e20"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection-result.txt",
+      "bytes": 472,
+      "sha256": "ed44282e0a86373ed4aa741927d6cf664974cf02f8c3af3f7088555271e6fefa"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-badging.txt",
+      "bytes": 5229,
+      "sha256": "82c2f6c10e7371fdc2c189011c4658c639d16f51ce0b1d38c693c3bb6d9b617b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-boot.config.txt",
+      "bytes": 202,
+      "sha256": "b1112696ff5cf3c43a59d20667ffed9eaf082dc5012bd08345c38291e7f866e6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-classes.dex-disassembly.txt",
+      "bytes": 16251489,
+      "sha256": "44608fa4070fd37c37548a4f9f1ea6800e68eea5ce3b7c1d56d7d58f5000aaa9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "f03e5302fc33eb45016c604d40fe08c43fa2ba221ac424955c7595bd553fa444"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-manifest.txt",
+      "bytes": 10276,
+      "sha256": "7c72234ca0a46c9d52e8b9e41eb7ff0806c912ecb75a6d1cf3a000144f9a2dfd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-resources.txt",
+      "bytes": 301776,
+      "sha256": "174ed17d083376e8111104a80986f2f855a1254fb30c34c4df3c3f9f64a8f06f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-signature.txt",
+      "bytes": 972,
+      "sha256": "76dd2a436313c778f1bad70e0e4d2c42f5954499e336b5df0c839ffe367693e8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/apk-zipalign.txt",
+      "bytes": 18763,
+      "sha256": "9e85b9848cb1e9a57026d726ffbb692873887c3134184c7858ac8753ae498ad2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/inspection.json",
+      "bytes": 20711,
+      "sha256": "10401e937d04bc9dbf021f49d847d92164576120944cc5ac5cabed144d7f9917"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/native/apk/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/native/apk/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "e7e705c5209df166415e3a84765bbc2157bc3b6295ab8772f30ee07e06c4d10d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/native/apk/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52461856,
+      "sha256": "0f5ed163c0cb184ae177aa1cdbc066a218d768c8ef6e0e684cc0774ed68f66b3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/native/apk/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/native/apk/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "47bcfc04e196ecaae8846bbddb357bd8dcb3a7d717c26e7cd2e9d2a76ea73517"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-inspection/native/apk/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "1dfaaf857a87f9d46f899d6d68611ea354c488741e74e5c69ade1b34c707c14f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/apk-terminal-managed-stripped.txt",
+      "bytes": 1208,
+      "sha256": "3038d0f903fe4c7eb877340b057628159c2a1e190832f29054f026a182240914"
+    },
+    {
+      "path": "artifacts/usability-final/code11/batch-latch-diagnostic-result.json",
+      "bytes": 1845,
+      "sha256": "39c5e30a04934136df0f62d17d5799bfdac54d9c5aac3989f69a2ea7a1bf2786"
+    },
+    {
+      "path": "artifacts/usability-final/code11/batch-latch-diagnostics.txt",
+      "bytes": 428,
+      "sha256": "e539dfefbc27be7d1a8539b385b30a86964869a890b5817de684982976a36e60"
+    },
+    {
+      "path": "artifacts/usability-final/code11/compile-after-qualification.json",
+      "bytes": 948,
+      "sha256": "e81efaa3b7f3b82c88a49e9e214a3ceb7d56149841c112377f8e8f748406c3bb"
+    },
+    {
+      "path": "artifacts/usability-final/code11/configuration.json",
+      "bytes": 603,
+      "sha256": "314d9b4a6199833efc63dbf9ef0e0cb821b77ba8d6d1f7e504b1e6f8d580d489"
+    },
+    {
+      "path": "artifacts/usability-final/code11/console-errors.json",
+      "bytes": 13897,
+      "sha256": "40b57e55111d56fec2954f1db36a049198273216def4f1d0ecfcea22d7a29f3c"
+    },
+    {
+      "path": "artifacts/usability-final/code11/console-monitor-errors.json",
+      "bytes": 21169,
+      "sha256": "4a9e366afc2aff5026bc4b6c3e2dc54de3fa9d4ecde60a2a2cd8bf6997c09126"
+    },
+    {
+      "path": "artifacts/usability-final/code11/console-monitor-status.json",
+      "bytes": 952,
+      "sha256": "0059717f9f0b9a7dc1ad40b126846dacbd2e04fb62ca9c3947e2311f695b38c4"
+    },
+    {
+      "path": "artifacts/usability-final/code11/console-status.json",
+      "bytes": 950,
+      "sha256": "4f07fa92a9563f17dd6f7afa6070e3eae92100574624ec9f23a50aa813d67ec9"
+    },
+    {
+      "path": "artifacts/usability-final/code11/console-terminal-errors.json",
+      "bytes": 32075,
+      "sha256": "de1e207fbf5651ba87a1cebee7cbc31188037b5ce47ecdc311d6777551077b3e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/console-terminal-status.json",
+      "bytes": 951,
+      "sha256": "bd824f70c2ec8a1134a179ae276ffc65bb8f2a330718b814eaf68aba4cebc4cc"
+    },
+    {
+      "path": "artifacts/usability-final/code11/editor-final-confirmation.json",
+      "bytes": 1135,
+      "sha256": "2f5293948184de0a1c9556f84e435dcd59d5787ebbce06916cdf3f70727b17de"
+    },
+    {
+      "path": "artifacts/usability-final/code11/editor-final-exit.json",
+      "bytes": 265,
+      "sha256": "00378e3ed8f07cecc227a1f2003e2b88a146a9ecb63abace48f8de9b3e3cf28a"
+    },
+    {
+      "path": "artifacts/usability-final/code11/editor-quiet-confirmation.json",
+      "bytes": 133,
+      "sha256": "7f519856f732ef74da1f45b22d2d9ac392049ded863c2a02ac74f5027713a180"
+    },
+    {
+      "path": "artifacts/usability-final/code11/editor-quiet-exit.json",
+      "bytes": 265,
+      "sha256": "00378e3ed8f07cecc227a1f2003e2b88a146a9ecb63abace48f8de9b3e3cf28a"
+    },
+    {
+      "path": "artifacts/usability-final/code11/editor-terminal-pid.txt",
+      "bytes": 8,
+      "sha256": "b8eb9d08293d49f9a8781360ea605e3a1fa6bf9f9d09c97ea460f4a5b2688656"
+    },
+    {
+      "path": "artifacts/usability-final/code11/font-cleanup.json",
+      "bytes": 831,
+      "sha256": "5082fa2af7f5d8b8ea73c9444ce33ee1313f9c3ef44c0cd431bca434ebeb0ccb"
+    },
+    {
+      "path": "artifacts/usability-final/code11/font-generated-diff.txt",
+      "bytes": 17005800,
+      "sha256": "cf60508488e3d055a76189e917a4cfb6fdd12e9a7912dbc05b69ea6e26aab276"
+    },
+    {
+      "path": "artifacts/usability-final/code11/font-generated-monitor-diff.txt",
+      "bytes": 17233318,
+      "sha256": "6a5d40420509ca0ebda62641ecf1e86434ae1fbd8329364cb0fa8ef4e6ce96bf"
+    },
+    {
+      "path": "artifacts/usability-final/code11/font-generated-terminal-diff.txt",
+      "bytes": 17233356,
+      "sha256": "e5a2dac3dded8f1ad67825d1d44c3e8a6fb58a182c53f40c5aacbe9cbc539819"
+    },
+    {
+      "path": "artifacts/usability-final/code11/font-monitor-cleanup.json",
+      "bytes": 831,
+      "sha256": "5082fa2af7f5d8b8ea73c9444ce33ee1313f9c3ef44c0cd431bca434ebeb0ccb"
+    },
+    {
+      "path": "artifacts/usability-final/code11/font-terminal-cleanup.json",
+      "bytes": 831,
+      "sha256": "5082fa2af7f5d8b8ea73c9444ce33ee1313f9c3ef44c0cd431bca434ebeb0ccb"
+    },
+    {
+      "path": "artifacts/usability-final/code11/full-rendered-completed.json",
+      "bytes": 16532,
+      "sha256": "b69ba2683f7588ad8c249a45878de93072e44d8d419c2c11051b823b5aa2ec4f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/full-rendered-isolated-completed.json",
+      "bytes": 17312,
+      "sha256": "a768d1d208e7fdcdf285abc3a5df4845954f0f78b6e5b3c6584c84c6a50c2730"
+    },
+    {
+      "path": "artifacts/usability-final/code11/full-rendered-monitor-completed.json",
+      "bytes": 16799,
+      "sha256": "fb6e1ec356a26643ba2d5b8eda996b0c5c6feb63aae5ff977ee9739b00c45a59"
+    },
+    {
+      "path": "artifacts/usability-final/code11/full-rendered-monitor-status.json",
+      "bytes": 424,
+      "sha256": "88e9ef12b38ec041c0869fcd73f48b1a2dcc69751565e8f9999a712391489ec6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/full-rendered-status.json",
+      "bytes": 424,
+      "sha256": "88e9ef12b38ec041c0869fcd73f48b1a2dcc69751565e8f9999a712391489ec6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/full-rendered-terminal-completed.json",
+      "bytes": 20386,
+      "sha256": "5bc4aee59b9f1494552c9926d66367b24d2560613ef07d9f3202e9ce8c1a0781"
+    },
+    {
+      "path": "artifacts/usability-final/code11/generated-fonts-monitor/Emoji.asset",
+      "bytes": 8394352,
+      "sha256": "1dc5613a356c7494851d552da3d47be146b3d4737d3c5819ba5c5bf4b69a273c"
+    },
+    {
+      "path": "artifacts/usability-final/code11/generated-fonts-monitor/Inter.asset",
+      "bytes": 8392162,
+      "sha256": "73e5bba7eb8470ed6d3f229792689ec12243178164ac4ca036e3a4fa3afff818"
+    },
+    {
+      "path": "artifacts/usability-final/code11/generated-fonts-terminal/Emoji.asset",
+      "bytes": 8394352,
+      "sha256": "1dc5613a356c7494851d552da3d47be146b3d4737d3c5819ba5c5bf4b69a273c"
+    },
+    {
+      "path": "artifacts/usability-final/code11/generated-fonts-terminal/Inter.asset",
+      "bytes": 8392180,
+      "sha256": "ee23646ac6ebf4e9ff75f47e3298b27795a0153a61aa4bbcb2c7c06a97565098"
+    },
+    {
+      "path": "artifacts/usability-final/code11/generated-fonts/Emoji.asset",
+      "bytes": 8394352,
+      "sha256": "1dc5613a356c7494851d552da3d47be146b3d4737d3c5819ba5c5bf4b69a273c"
+    },
+    {
+      "path": "artifacts/usability-final/code11/generated-fonts/Inter.asset",
+      "bytes": 8392162,
+      "sha256": "73e5bba7eb8470ed6d3f229792689ec12243178164ac4ca036e3a4fa3afff818"
+    },
+    {
+      "path": "artifacts/usability-final/code11/group-isolated-result.json",
+      "bytes": 2274,
+      "sha256": "13b6822be9a43e8b5da56b3bf8c17c597065caf63b46f1622fc0270a0a8c32e8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/idle-slot-probe-result.json",
+      "bytes": 1783,
+      "sha256": "39ba47b018a66e93b63bcd1212154956a399f3df63246f76ce641a860ef5fe6e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/idle-slot-probe.txt",
+      "bytes": 38,
+      "sha256": "ffa5e5d14fccb875fb8fe872ab78895a923494ca51b4c1006812ffe0b6ebd109"
+    },
+    {
+      "path": "artifacts/usability-final/code11/InputState.reference.cs.txt",
+      "bytes": 14836,
+      "sha256": "ec0c7dc433598923b7a38d6ad821cdf8c8db4a235669217507966442e6d3054b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/InputSystemProvider.reference.cs.txt",
+      "bytes": 32333,
+      "sha256": "9cec0760acad84e80098e0bc03f1229a8de5386d10baedde82fccda487dad50b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/InputTestFixture.reference.cs.txt",
+      "bytes": 53323,
+      "sha256": "1d3496e92f6eaf53ed51b8499ffe4659ab9502f77691e562b33784a1fdac9765"
+    },
+    {
+      "path": "artifacts/usability-final/code11/motion-isolated-result.json",
+      "bytes": 1737,
+      "sha256": "e55b1624f4c8276afb7c9ee70d8dd8df55c63b77b38bd7ed3beb4f666c6563d1"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-outside-drop-verified-start-native-input.json",
+      "bytes": 827,
+      "sha256": "86dd5a8c36fd2e655928fbd1a8a3c4aca15619a0c1f6ebc1de218e9b5eec0e67"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-outside-drop-verified-start-state/manifest.json",
+      "bytes": 1449,
+      "sha256": "1642d8f557746a5cae251c3e43d071860f1445f36c1179d8412c1d6b0803dd9c"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-outside-drop-verified-start-state/session.json",
+      "bytes": 11606,
+      "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-outside-drop-verified-start-state/session.previous.json",
+      "bytes": 11606,
+      "sha256": "edd54d8d0c3646c5bb6890adc9da95beabd7480db459fbac629785812c9b58b2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-outside-drop-verified-start-summary.txt",
+      "bytes": 1451,
+      "sha256": "474a19d4284852a7ee5d0782cb992e87ed786a7a0efb23a0ddac00aefc73e599"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-outside-drop-verified-start.png",
+      "bytes": 172440,
+      "sha256": "5dd5772903bb7304e6e05b889c0c5b2c4b8c13f22088e4c39f032f6a1ddb6ec3"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-reorder-cancel-native-input.json",
+      "bytes": 1103,
+      "sha256": "d1df69157ecda3859bddf6d73f49b2994a37e4108d4598205dc2bbaa678e7adc"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-reorder-cancel-state/session.json",
+      "bytes": 11606,
+      "sha256": "edd54d8d0c3646c5bb6890adc9da95beabd7480db459fbac629785812c9b58b2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-reorder-cancel-state/session.previous.json",
+      "bytes": 11606,
+      "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-reorder-cancel-summary.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-native-input.json",
+      "bytes": 663,
+      "sha256": "bc6cf0c83285b742dfedb2a904d099a3c5e20bd43e89e3f4ddcde595be60e18b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-repeat-native-input.json",
+      "bytes": 670,
+      "sha256": "2fd69bad9b4a22045ee40b17766692eebb78b32d9df91afafac902b192facdd8"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-repeat-state/session.json",
+      "bytes": 11606,
+      "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-repeat-state/session.previous.json",
+      "bytes": 11606,
+      "sha256": "edd54d8d0c3646c5bb6890adc9da95beabd7480db459fbac629785812c9b58b2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-repeat-summary.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-repeat.png",
+      "bytes": 169218,
+      "sha256": "2ea9f9e3a24a6942c283127f44ea66da8f32cc55de289790f73a3a4a595948d2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-state/session.json",
+      "bytes": 11606,
+      "sha256": "edd54d8d0c3646c5bb6890adc9da95beabd7480db459fbac629785812c9b58b2"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-state/session.previous.json",
+      "bytes": 11606,
+      "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel-summary.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/usability-final/code11/native-red/code10-single-cancel.png",
+      "bytes": 172140,
+      "sha256": "cca48c67a55f14f28816f7a6beb6fd80b3ae534fe37602561410a125b8e17fcd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/prebuild-terminal-console.json",
+      "bytes": 944,
+      "sha256": "c85b5c84f7b58c2803ff419fed0f62deb8c9741009416f7fe8acf2b92c06360d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-after-isolation-result.json",
+      "bytes": 1663,
+      "sha256": "c5621dc5e9761242ce7d892a23d326296ac60074fe7ce123c7a4947b216b1d7f"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-all-monitor-green.json",
+      "bytes": 1149,
+      "sha256": "1f4696f00881a92f6058e09c6eee18820bc42ea38d0dee3727dfa7e6a25473ad"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-batch-latch-red.json",
+      "bytes": 1845,
+      "sha256": "314ff0e7288ccae72addfe9f6f9b89582a350292a91bb436b01d03e82579c8a1"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-batch-monitor-green.json",
+      "bytes": 887,
+      "sha256": "5b317031dba93fcbbb9a115941d2e56d02afeafa6f9660e6922d0fbc9f1eaf4e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-batch-red.json",
+      "bytes": 1845,
+      "sha256": "d180a4bd384ac85981505ddb4957dfb5c9cfb5d7cb05f94c802a52ae48bedf38"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-controls-green.json",
+      "bytes": 886,
+      "sha256": "0924ee9fe61fbd2c9de940a014ecfd5e05f31a829f597aea06ed8d1614219c03"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-green-completed.json",
+      "bytes": 887,
+      "sha256": "cb5626c630046ed8c6ac82605d67506f63cba704eb4b0c836199ab53a6e4a6dd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-green-status.json",
+      "bytes": 887,
+      "sha256": "cb5626c630046ed8c6ac82605d67506f63cba704eb4b0c836199ab53a6e4a6dd"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-green.json",
+      "bytes": 424,
+      "sha256": "88e9ef12b38ec041c0869fcd73f48b1a2dcc69751565e8f9999a712391489ec6"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-red-attempt1.json",
+      "bytes": 1833,
+      "sha256": "4146aa63cb93a2d926847517ee7b812005ac70299226b880b90bdc853226c074"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-red-phase.json",
+      "bytes": 1857,
+      "sha256": "7d19c5b7b34b740c68576dd9f408d13c2c45b20dadf12e5f1482cebc90272c2d"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-terminal-controls-green.json",
+      "bytes": 1662,
+      "sha256": "1e68c9d0c5851dfae71093c3fe16574a262ed39ac7e4f855c73403d7125b0478"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-terminal-green.json",
+      "bytes": 1663,
+      "sha256": "f3d721f8baa657f3f3c0fdbfa88bb2273d7ac5da7ab82077c2869bae7fa63d9e"
+    },
+    {
+      "path": "artifacts/usability-final/code11/provider-two-gaps-red.json",
+      "bytes": 3573,
+      "sha256": "545482494c01835c8b8a7fea3e24558746968e120157eac3d417f00ccd016f67"
+    },
+    {
+      "path": "artifacts/usability-final/code11/source-equivalence.json",
+      "bytes": 3184,
+      "sha256": "a9ed042df7303d5f3af09875e1ae26a7e6bfa86a4887c1405a3a1fe034145873"
+    },
+    {
+      "path": "artifacts/usability-final/code11/terminal-source-equivalence.json",
+      "bytes": 390,
+      "sha256": "b239bb843ee9f5718b1d998442402f3f848162f86351e3d0f6497239d8309edb"
+    },
+    {
+      "path": "artifacts/usability-final/code11/Touchscreen.reference.cs.txt",
+      "bytes": 48753,
+      "sha256": "e94e4b8831c026a2c02a9f8f52528849151c5706aaa5b632dc0d58501336a930"
+    },
+    {
+      "path": "artifacts/usability-final/code9-group-screenshots/screenshots/editing-large-English-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "artifacts/usability-final/code9-group-screenshots/screenshots/editing-large-English.png",
+      "bytes": 28526,
+      "sha256": "1f8896863c9f3515f8171c2ed1a8db958f3cec0241833eda2e4ef8bae64d66fd"
+    },
+    {
+      "path": "artifacts/usability-final/code9-group-screenshots/screenshots/editing-large-German-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "artifacts/usability-final/code9-group-screenshots/screenshots/editing-large-German.png",
+      "bytes": 31571,
+      "sha256": "9aa335a4d9e5daee10b10b54a0d54e1729a65ac362281c6133ad16f43a9264d0"
+    },
+    {
+      "path": "artifacts/usability-final/code9-group-screenshots/screenshots/group-English.png",
+      "bytes": 46336,
+      "sha256": "c7279201c165c07115fa6511afd9ca5a33c565fc3a73876f8de0df6070232050"
+    },
+    {
+      "path": "artifacts/usability-final/code9-group-screenshots/screenshots/group-German.png",
+      "bytes": 51972,
+      "sha256": "a9463d6c0ec8960c34c53020457237ca7d9b41c5736db4312bae6022a4736554"
+    },
+    {
+      "path": "artifacts/usability-final/code9-group-screenshots/screenshots/group-large-last-English.png",
+      "bytes": 58855,
+      "sha256": "8419a7d5dea5e0985446fb46d86578b30cb98c936d3f7be8821830b8c9ca650a"
+    },
+    {
+      "path": "artifacts/usability-final/code9-group-screenshots/screenshots/group-large-last-German.png",
+      "bytes": 64437,
+      "sha256": "67d4983dbb305a0c78b0eb1512a56298596088a77b2fa97627d19e900df549f2"
+    },
+    {
+      "path": "artifacts/usability-final/configuration.json",
+      "bytes": 980,
+      "sha256": "f1381cb0f12bca983e095668a8370aec195c5bfaaf38befa52082087e8f508bf"
+    },
+    {
+      "path": "artifacts/usability-final/console-errors.json",
+      "bytes": 3410,
+      "sha256": "56727162d24e014d1c786b3f27d4a2c25969dbae73ff1a049b48c2cbf8e50a1a"
+    },
+    {
+      "path": "artifacts/usability-final/console-metadata.json",
+      "bytes": 6855,
+      "sha256": "56bcf1abf6b8ac5e1912bd0687be37b352eedd8979bc9fc39f993e0897bf7899"
+    },
+    {
+      "path": "artifacts/usability-final/console-status.json",
+      "bytes": 946,
+      "sha256": "f1b5ee4a72313bbbcda7d549f8303670c3853ff0f3463682ec16bcd1481cf28e"
+    },
+    {
+      "path": "artifacts/usability-final/create-manifest.ps1",
+      "bytes": 1048,
+      "sha256": "2f92cb9ccee3d054b112d8be2a50d9bb7465cdde86465470d94aca93440ad272"
+    },
+    {
+      "path": "artifacts/usability-final/editor-pid.txt",
+      "bytes": 8,
+      "sha256": "5085f33247a2c405b3bd98eb0987dc59def80c7e94d3bf54d07939a308dec359"
+    },
+    {
+      "path": "artifacts/usability-final/editor-terminal.log",
+      "bytes": 358612,
+      "sha256": "0946f8c04703f7a22908b621464d44334747e8447cdb23a7e030c8f724a6b782"
+    },
+    {
+      "path": "artifacts/usability-final/editor.log",
+      "bytes": 2885192,
+      "sha256": "f74db05cdb60896b433dd91f9ff850e6761bf08d3b80ffc153ceb5f6317fced4"
+    },
+    {
+      "path": "artifacts/usability-final/eval-metadata.json",
+      "bytes": 20492,
+      "sha256": "87124407ac73fbdacbd734aaec24715a2b331eb83a3920139831c069ac39e395"
+    },
+    {
+      "path": "artifacts/usability-final/font-cleanup.json",
+      "bytes": 822,
+      "sha256": "f4235c41da9b86c7d6b4714a24e369fe8bbb6d2e83b9721e73f53e160daee4ef"
+    },
+    {
+      "path": "artifacts/usability-final/font-generated-diff.txt",
+      "bytes": 7644883,
+      "sha256": "5ef5bcea50700f31cdba5008c9c49dfc93ec8804603e4f36f867efb12c4e004c"
+    },
+    {
+      "path": "artifacts/usability-final/generated-fonts/Emoji.asset",
+      "bytes": 5513,
+      "sha256": "ce4d432982508e739138078f0852c747d1694ab038506138f2c7c845eba76a3e"
+    },
+    {
+      "path": "artifacts/usability-final/generated-fonts/Inter.asset",
+      "bytes": 7275034,
+      "sha256": "55af3ae82dbe5721587d594173e4097be70fe8c7a629fd0b1cb4dad3fca5e230"
+    },
+    {
+      "path": "artifacts/usability-final/group-test-result.json",
+      "bytes": 2274,
+      "sha256": "067cccbb8f2f2c09834a81bc422dc27fa3dad44eb05f5517d476b2a309f34c15"
+    },
+    {
+      "path": "artifacts/usability-final/motion-test-result.json",
+      "bytes": 1739,
+      "sha256": "02d8e66ef47a98bfb588ea77a4268bfa7bf293916cbf43d1b2bfc30b4228ff51"
+    },
+    {
+      "path": "artifacts/usability-final/raw-manifest-initial.json",
+      "bytes": 163535,
+      "sha256": "b38947a98ca59d7d0b9af3c9ed51abf201e4e2b8f9ead504d9eb935c9405783b"
+    },
+    {
+      "path": "artifacts/usability-final/spec-correction-verification.md",
+      "bytes": 1536,
+      "sha256": "751a6c53a1bd7cf11b5886ffa2136098ad611715ef23ba552a13637b6ed02002"
+    },
+    {
+      "path": "artifacts/usability-final/standards-correction-verification.md",
+      "bytes": 1352,
+      "sha256": "072ad97a8d7c4c505f0277378d9069d30d33e36f852a614c668e591e9a69e168"
+    },
+    {
+      "path": "artifacts/usability-final/test-metadata.json",
+      "bytes": 11185,
+      "sha256": "b88326a07bb4f93659e457e51b34f03740030c08b5cf88b25cd1e2e160b7d19e"
+    }
+  ]
+}

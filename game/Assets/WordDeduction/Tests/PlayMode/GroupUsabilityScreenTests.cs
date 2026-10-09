@@ -8,10 +8,12 @@ using UnityEngine.TestTools;
 using UnityEditor;
 using UnityEngine.UIElements;
 using WordDeduction.UI;
+using static WordDeduction.Tests.ScreenTestActions;
 
 namespace WordDeduction.Tests
 {
-    public class GroupUsabilityScreenTests
+    // Pooled pointer fixtures must not bind their synthetic contacts to host hardware.
+    public class GroupUsabilityScreenTests : UnityEngine.InputSystem.InputTestFixture
     {
         GameObject host;
         PanelSettings panel;
@@ -221,14 +223,6 @@ namespace WordDeduction.Tests
         {
             Assert.That(element, Is.Not.Null);
             using (var e = NavigationSubmitEvent.GetPooled()) { e.target = element; element.SendEvent(e); }
-        }
-        static void Touch(VisualElement target, TouchPhase phase, Vector2 position)
-        {
-            var touch = new Touch { fingerId = 0, position = position, phase = phase };
-            if (phase == TouchPhase.Began) { using (var e = PointerDownEvent.GetPooled(touch)) { e.target = target; target.SendEvent(e); } }
-            else if (phase == TouchPhase.Moved) { using (var e = PointerMoveEvent.GetPooled(touch)) { e.target = target; target.SendEvent(e); } }
-            else if (phase == TouchPhase.Canceled) { using (var e = PointerCancelEvent.GetPooled(touch)) { e.target = target; target.SendEvent(e); } }
-            else { using (var e = PointerUpEvent.GetPooled(touch)) { e.target = target; target.SendEvent(e); } }
         }
     }
 }

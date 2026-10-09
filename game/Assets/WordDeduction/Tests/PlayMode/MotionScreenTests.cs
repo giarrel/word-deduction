@@ -6,10 +6,11 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.UIElements;
 using WordDeduction.UI;
+using static WordDeduction.Tests.ScreenTestActions;
 
 namespace WordDeduction.Tests
 {
-    public class MotionScreenTests
+    public class MotionScreenTests : UnityEngine.InputSystem.InputTestFixture
     {
         Fixture fixture;
         [TearDown] public void Cleanup() { fixture?.Dispose(); fixture = null; }
@@ -125,14 +126,6 @@ namespace WordDeduction.Tests
             Touch(hold,TouchPhase.Ended,hold.worldBound.center,2);
         }
 
-        static void Touch(VisualElement element,TouchPhase phase,Vector2 position,int finger = 0)
-        {
-            var touch = new Touch { fingerId = finger,position = position,phase = phase };
-            if (phase == TouchPhase.Began) { using (var e = PointerDownEvent.GetPooled(touch)) { e.target=element; element.SendEvent(e); } }
-            else if (phase == TouchPhase.Moved) { using (var e = PointerMoveEvent.GetPooled(touch)) { e.target=element; element.SendEvent(e); } }
-            else if (phase == TouchPhase.Ended) { using (var e = PointerUpEvent.GetPooled(touch)) { e.target=element; element.SendEvent(e); } }
-            else if (phase == TouchPhase.Canceled) { using (var e = PointerCancelEvent.GetPooled(touch)) { e.target=element; element.SendEvent(e); } }
-        }
         static void Submit(VisualElement element)
         {
             using (var e = NavigationSubmitEvent.GetPooled()) { e.target=element; element.SendEvent(e); }

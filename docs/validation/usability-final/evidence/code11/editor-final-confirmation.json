@@ -1,0 +1,11 @@
+{
+  "sampledUtc": "2026-10-09T09:31:44.8217116Z",
+  "ownedEditorPid": 220416,
+  "ownedEditorPresent": false,
+  "editors": [
+    {
+      "ProcessId": 232924,
+      "CommandLine": "\"C:\\Users\\lucac\\AppData\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Unity.exe\" -batchmode -projectPath \"C:/Users/lucac/.codex/worktrees/organic-herd-life/wenn-ich-digitalversion-von-domination-species/game\" -executeMethod Nischenreich.Editor.WorldValidation.CreatureLifeBatch.BakeAndRun --creature-life-output \"C:\\Users\\lucac\\Documents\\Codex\\agent-notes\\nischenreich-organic-herds-20261008\\life-public-travel-red-mammal3\" --creature-public-travel --creature-public-archive \"C:/Users/lucac/Documents/Codex/agent-notes/nischenreich-organic-herds-20261008/life-public-fixtures/mammal-supply-travel/before.nrarchive\" --panel-preferences \"C:\\Users\\lucac\\Documents\\Codex\\agent-notes\\nischenreich-organic-herds-20261008\\life-public-travel-red-mammal3/panel-layout.json\" -logFile \"C:\\Users\\lucac\\Documents\\Codex\\agent-notes\\nischenreich-organic-herds-20261008\\life-public-travel-red-mammal3/Editor.log\""
+    }
+  ]
+}

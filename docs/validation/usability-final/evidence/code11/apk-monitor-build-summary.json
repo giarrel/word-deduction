@@ -1,0 +1,18 @@
+{
+    "result": "Succeeded",
+    "sha256": "640e2388f3807f1c8b61149fad5fb71ac1090fd538299f424ae7622102a8f480",
+    "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts/android\\154388a64d15\\20261009T083709763Z-apk\\WordDeduction-local-release.apk",
+    "unity": "6000.3.25f1",
+    "sourceCommit": "154388a64d15f8510f532b14f9d90ac7d46816a1",
+    "packageLockSha256": "da98f245e8c511d47699dc883e521eff5176800341117fcfe8f77fe9dcfb342d",
+    "options": "ForceOptimizeScriptCompilation, Il2CPP, CompressTextures, StripDebugSymbols, ShaderLivelinkSupport, CleanBuildCache, DetailedBuildReport",
+    "version": "1.2.0",
+    "applicationId": "com.giarrel.worddeduction",
+    "signing": "Android debug certificate; local testing only",
+    "errors": 0,
+    "warnings": 2,
+    "versionCode": 11,
+    "reportedBytes": 618685651,
+    "fileBytes": 37471766,
+    "durationSeconds": 262.2390422
+}

@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.41,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.CancelAndNextBeginInOneInputUpdateKeepTheOrder",
+          "Status": "Failed",
+          "Duration": 0.3792092,
+          "Message": "  Reusing a canceled touch slot in the same update cannot commit the canceled preview.\r\n  Expected is <System.String[5]>, actual is <System.Linq.Enumerable+SelectArrayIterator`2[WordDeduction.PlayerView,System.String]>\r\n  Values differ at index [0]\r\n  String lengths are both 32. Strings differ at index 0.\r\n  Expected: \"e538d74a81f84e32b6b1bad2f7db046b\"\r\n  But was:  \"8c39b0cfcea244d18e18ad284eeef69b\"\r\n  -----------^\r\n",
+          "StackTrace": "at WordDeduction.Tests.NativeTouchScreenTests+<CancelAndNextBeginInOneInputUpdateKeepTheOrder>d__10.MoveNext () [0x0023a] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\NativeTouchScreenTests.cs:109\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
