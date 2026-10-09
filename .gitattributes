@@ -17,3 +17,4 @@ docs/validation/kings-native/delivery-manifest.json -text
 /docs/validation/group-usability/evidence/** -text
 # Raw Unity logs retain original CRLF and whitespace for hash verification.
 /docs/validation/fluid-interactions/evidence/** -text -whitespace
+/docs/validation/usability-final/evidence/** -text -whitespace

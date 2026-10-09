@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "foreach(var path in new[]{\"Assets/WordDeduction/UI/Inter.asset\",\"Assets/WordDeduction/UI/Emoji.asset\"}) {var f=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.TextCore.Text.FontAsset>(path); f.ClearFontAssetData(true); UnityEditor.EditorUtility.SetDirty(f);} UnityEditor.AssetDatabase.SaveAssets();return true;"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": true
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
