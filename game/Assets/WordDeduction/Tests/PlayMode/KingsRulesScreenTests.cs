@@ -156,6 +156,8 @@ namespace WordDeduction.Tests
                 var root=fixture.Root; root.style.height=616; yield return null; yield return null;
                 root.AddToClassList("large-type"); yield return null; Enlarge(root); yield return null; yield return null;
                 var scroll=root.Q<ScrollView>("roleSettings");
+                Assert.That(root.Q<Button>("quickMode").resolvedStyle.fontSize,Is.EqualTo(22.5f).Within(0.01f),"Capture uses exactly150% mode text.");
+                Assert.That(root.Q<Label>("groupTitle").resolvedStyle.fontSize,Is.EqualTo(27f).Within(0.01f),"Group header is enlarged once, never compounded.");
                 yield return new WaitForSecondsRealtime(0.15f);
                 fixture.Capture("role-counts-"+language+"-"+example.Item1+"-"+example.Item2+"-top");
                 Assert.That(root.Q<Button>("playButton").worldBound.yMax,Is.LessThanOrEqualTo(616),"Start stays reachable beside roles.");
@@ -175,6 +177,10 @@ namespace WordDeduction.Tests
                 }
                 scroll.ScrollTo(root.Q<Label>("roleLimit")); yield return null; yield return null;
                 AssertTextFits(root.Q<Label>("roleLimit"));
+                yield return new WaitForSecondsRealtime(0.15f);
+                Assert.That(root.Q<Button>("quickMode").resolvedStyle.fontSize,Is.EqualTo(22.5f).Within(0.01f));
+                Assert.That(root.Q<Button>("playButton").worldBound.yMax,Is.LessThanOrEqualTo(616));
+                fixture.Note("role-counts-"+language+"-"+example.Item1+"-"+example.Item2,"texture360x640; root="+root.worldBound+"; modeFont="+root.Q<Button>("quickMode").resolvedStyle.fontSize+"; groupFont="+root.Q<Label>("groupTitle").resolvedStyle.fontSize+"; settings="+scroll.contentViewport.worldBound+"; players="+root.Q<ScrollView>("players").contentViewport.worldBound+"; start="+root.Q<Button>("playButton").worldBound);
                 fixture.Capture("role-counts-"+language+"-"+example.Item1+"-"+example.Item2+"-large");
                 fixture.Dispose(); yield return null;
             }

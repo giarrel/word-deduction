@@ -218,6 +218,7 @@ namespace WordDeduction.UI
             root.Q<Button>("english").EnableInClassList("selected",view.Language == Language.English);
             root.Q<Button>("german").tooltip = T("german"); root.Q<Button>("english").tooltip = T("english");
             root.Q<Label>("modeDescription").text = view.Mode == GameMode.Kings ? T(view.ReadyToStart ? "kingsRoleMix" : "kingsDescription",view.CivilianCount,view.UndercoverCount) : view.ReadyToStart ? T("roleMix",view.CivilianCount,view.UndercoverCount,view.WhiteCount) : T(view.Mode == GameMode.Quick ? "quickDescription" : "classicDescription");
+            root.Q<VisualElement>("roleSettings").EnableInClassList("hidden",!view.ReadyToStart);
             root.Q<Label>("kingsUndercoverCount").text = T("kingsUndercoverCount",view.UndercoverCount);
             root.Q<Button>("lessUndercover").tooltip = T("lessUndercover");
             root.Q<Button>("moreUndercover").tooltip = T("moreUndercover");
