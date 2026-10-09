@@ -61,10 +61,8 @@ namespace WordDeduction
             name = NormalizeName(name);
             if (name == null) return new CommandResult { Error = "InvalidName" };
             if (state.Players.Count >= 40) return new CommandResult { Error = "GroupFull" };
-            bool active = state.Players.Count(p => p.Active) < 20;
-            var result = Change(next => next.Players.Add(new PlayerState { Id = Guid.NewGuid().ToString("N"), Name = name, Active = active, Number = next.NextNumber++ }));
-            if (result.Success && !active) result.Notice = "AddedPaused";
-            return result;
+            if (state.Players.Count(p => p.Active) >= 20) return new CommandResult { Error = "ActiveFull" };
+            return Change(next => next.Players.Add(new PlayerState { Id = Guid.NewGuid().ToString("N"), Name = name, Active = true, Number = next.NextNumber++ }));
         }
         public CommandResult RenamePlayer(string id, string name)
         {
@@ -80,6 +78,16 @@ namespace WordDeduction
             if (!state.Players.Any(p => p.Id == id)) return new CommandResult { Error = "PlayerNotFound" };
             if (active && state.Players.Count(p => p.Active && p.Id != id) >= 20) return new CommandResult { Error = "ActiveFull" };
             return Change(next => next.Players.First(p => p.Id == id).Active = active);
+        }
+        public CommandResult ReorderPlayers(IReadOnlyList<string> expectedOrder, IReadOnlyList<string> orderedIds)
+        {
+            if (LiveMatch) return new CommandResult { Error = "MatchInProgress" };
+            var current = state.Players.Select(p => p.Id).ToArray();
+            if (expectedOrder == null || !current.SequenceEqual(expectedOrder)) return new CommandResult { Error = "StaleOrder" };
+            if (orderedIds == null || orderedIds.Count != current.Length || orderedIds.Distinct().Count() != current.Length || orderedIds.Any(id => !current.Contains(id)))
+                return new CommandResult { Error = "InvalidOrder" };
+            if (current.SequenceEqual(orderedIds)) return new CommandResult { Success = true };
+            return Change(next => next.Players = orderedIds.Select(id => next.Players.Single(p => p.Id == id)).ToList());
         }
         public CommandResult RemovePlayer(string id)
         {

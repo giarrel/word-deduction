@@ -29,8 +29,8 @@ Button:disabled { opacity: 0.65; }
 .player-row.paused { background-color: #eeeae2; }
 .player-initial { width: 38px; height: 38px; border-radius: 14px; background-color: var(--lilac); color: #503093; -unity-text-align: middle-center; -unity-font-style: bold; font-size: 17px; flex-shrink: 0; }
 .player-name { flex-grow: 1; flex-shrink: 1; -unity-text-align: middle-left; white-space: normal; font-size: 16px; min-width: 0; padding: 6px 10px; }
-.participation { min-width: 62px; color: var(--muted); font-size: 13px; padding: 0 7px; flex-shrink: 0; }
-.paused .participation { background-color: white; color: #503093; }
+.edit-player { min-width: 62px; color: var(--muted); font-size: 13px; padding: 0 7px; flex-shrink: 0; }
+.paused .edit-player { background-color: white; color: #503093; }
 .editing-row { flex-direction: column; align-items: stretch; padding: 8px; }
 .edit-actions { flex-direction: row; justify-content: space-between; margin-top: 4px; }
 .remove-button { color: #9e3436; }
@@ -109,3 +109,20 @@ Button:disabled { opacity: 0.65; }
 .large-type .edit-actions { flex-wrap: wrap; justify-content: flex-start; }
 .large-type .edit-actions > Button { flex-grow: 1; flex-basis: 0; min-width: 0; white-space: normal; padding: 0 8px; }
 .large-type .edit-actions > .remove-button { flex-basis: 100%; -unity-text-align: middle-left; }
+
+.saved-people-toggle { white-space: normal; -unity-text-align: middle-left; color: var(--muted); margin: 8px 0; flex-shrink: 0; }
+
+.reorder-handle { width: 44px; min-height: 48px; flex-shrink: 0; font-size: 26px; color: var(--muted); -unity-text-align: middle-center; }
+.reordering { opacity: 0.8; }
+.reorder-target { background-color: var(--lilac); }
+.move-actions { flex-direction: row; flex-shrink: 0; margin-top: 4px; }
+.move-player { flex-grow: 1; flex-basis: 0; min-width: 0; font-size: 13px; padding: 0 6px; white-space: normal; color: #503093; }
+
+.at-capacity .add-row { display: none; }
+.large-type .player-row { flex-wrap: wrap; }
+.large-type .editing-row { flex-wrap: nowrap; }
+.large-type .player-initial { display: none; }
+.large-type .player-name { flex-basis: 0; }
+.large-type .edit-player { flex-basis: 100%; margin-top: 4px; }
+
+.large-type .edit-actions > .text-button { padding-left: 4px; padding-right: 4px; }

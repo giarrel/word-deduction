@@ -1,0 +1,2 @@
+PASS legacy inactive people remain saved and require explicit restoration
+1/1 passed

@@ -1,0 +1,15 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.3/staging' branch; Version is '6000.3.25f1 (e1dba0a9aba4) revision 14801824'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Connection to channel LicenseClient-lucac refused
+OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 65458 MB
+BatchMode: 0, IsHumanControllingUs: 1, StartBugReporterOnCrash: 1, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-09T06:01:58Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 234876)
+Assertion failed on expression: 'SUCCEEDED(hr)'
+Assertion failed on expression: 'SUCCEEDED(hr)'
+Assertion failed on expression: 'ERROR_SUCCESS == status'
+[Licensing::IpcConnector] Channel LicenseClient-lucac doesn't exist
+[Licensing::Module] Timed-out after 60.01s, waiting for channel: "LicenseClient-lucac"
+[Licensing::Module] Error: Licensing initialization failed after 74.82s

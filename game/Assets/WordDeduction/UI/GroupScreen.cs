@@ -14,6 +14,8 @@ namespace WordDeduction.UI
         VisualElement root;
         TextField nameInput;
         string editingId;
+        bool savedPeopleOpen;
+        readonly System.Collections.Generic.List<GroupReorder> reorders = new System.Collections.Generic.List<GroupReorder>();
         string renameDraft;
         string noticeCode;
         Rect lastSafeArea;
@@ -32,7 +34,7 @@ namespace WordDeduction.UI
             matchSurface?.Dispose(); matchSurface = null;
             information?.Close();
             if (root != null) CloseEditKeyboard();
-            editingId = null; renameDraft = null; noticeCode = null;
+            editingId = null; renameDraft = null; noticeCode = null; savedPeopleOpen = false;
             nameInput?.SetValueWithoutNotify("");
             session = value;
             if (root != null) { CreateMatchSurface(); Render(); }
@@ -80,9 +82,9 @@ namespace WordDeduction.UI
             root.RegisterCallback<GeometryChangedEvent>(_ => UpdateSafeArea());
         }
         void CreateMatchSurface() { matchSurface = new MatchSurface(session,root.Q<VisualElement>("safeRoot"),Render,RefreshPresentation); }
-        void OnDisable() { information = null; textPreferences?.Dispose(); textPreferences = null; accessibility?.Dispose(); accessibility = null; mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; typography?.Dispose(); typography = null; }
-        void OnApplicationFocus(bool focus) { if (!focus) matchSurface?.Pause(true); else MobilePrivacy.RefreshMotion(); }
-        void OnApplicationPause(bool paused) { if (paused) matchSurface?.Pause(true); else MobilePrivacy.RefreshMotion(); }
+        void OnDisable() { CancelReorders(); information = null; textPreferences?.Dispose(); textPreferences = null; accessibility?.Dispose(); accessibility = null; mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; typography?.Dispose(); typography = null; }
+        void OnApplicationFocus(bool focus) { if (!focus) { CancelReorders(); matchSurface?.Pause(true); } else MobilePrivacy.RefreshMotion(); }
+        void OnApplicationPause(bool paused) { if (paused) { CancelReorders(); matchSurface?.Pause(true); } else MobilePrivacy.RefreshMotion(); }
         void Update()
         {
             if (root == null) return;
@@ -100,6 +102,7 @@ namespace WordDeduction.UI
             if (Screen.safeArea != lastSafeArea) UpdateSafeArea();
             if ((mobileBack?.Consume() ?? false) || (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame))
             {
+                CancelReorders();
                 if (information != null && information.IsOpen) information.Close();
                 else if (editingId != null) CancelEdit();
                 else if (session.Match != null) matchSurface.Back();
@@ -150,7 +153,7 @@ namespace WordDeduction.UI
         {
             var scroll = root.Q<ScrollView>("players");
             if (scroll.childCount == 0) return;
-            RevealAfterLayout(scroll,scroll.ElementAt(scroll.childCount - 1));
+            RevealAfterLayout(scroll,root.Q<VisualElement>("player-" + session.View.Players.Last(p => p.Active).Id));
         }
         static void RevealAfterLayout(ScrollView scroll, VisualElement row)
         {
@@ -186,6 +189,7 @@ namespace WordDeduction.UI
         void Render()
         {
             if (root == null) return;
+            CancelReorders();
             var view = session.View;
             root.Q<VisualElement>("safeRoot").EnableInClassList("ready",view.ReadyToStart && !view.StorageBlocked);
             root.Q<VisualElement>("safeRoot").EnableInClassList("recovery",view.StorageBlocked);
@@ -197,8 +201,8 @@ namespace WordDeduction.UI
             root.Q<VisualElement>("safeRoot").EnableInClassList("has-players",view.Players.Count > 0);
             root.Q<VisualElement>("safeRoot").EnableInClassList("editing",editingId != null);
             root.Q<Label>("emptyTitle").text = T("emptyTitle"); root.Q<Label>("emptyHint").text = T("emptyHint");
-            root.Q<Label>("editHint").text = T(view.Players.Count >= 40 ? "groupCapacity" : "editHint");
-            root.Q<VisualElement>("safeRoot").EnableInClassList("at-capacity",view.Players.Count >= 40);
+            root.Q<Label>("editHint").text = T(view.ActiveCount >= 20 ? "activeCapacity" : view.Players.Count >= 40 ? "groupCapacity" : "editHint");
+            root.Q<VisualElement>("safeRoot").EnableInClassList("at-capacity",view.ActiveCount >= 20 || view.Players.Count >= 40);
             nameInput.textEdition.placeholder = T("name"); nameInput.tooltip = T("name");
             root.Q<Button>("addPlayer").tooltip = T("add");
             root.Q<Button>("appInfo").tooltip = T("appInfo");
@@ -226,8 +230,19 @@ namespace WordDeduction.UI
             root.Q<Button>("playButton").text = T("play");
             root.Q<Button>("playButton").SetEnabled(view.ReadyToStart && !view.StorageBlocked);
             root.Q<Label>("startHint").text = T(view.ReadyToStart ? "ready" : view.NeededPlayers == 1 ? "neededOne" : "needed",view.NeededPlayers);
-            var list = root.Q<ScrollView>("players"); var oldOffset = list.scrollOffset; list.Clear();
-            foreach (var player in view.Players) list.Add(PlayerRow(player));
+            var list = root.Q<ScrollView>("players"); var oldOffset = list.scrollOffset; list.Clear(); reorders.Clear();
+            foreach (var player in view.Players.Where(p => p.Active)) list.Add(PlayerRow(player));
+            var saved = view.Players.Where(p => !p.Active).ToArray();
+            if (saved.Length > 0)
+            {
+                var toggle = ActionButton("savedPeople",T(savedPeopleOpen ? "savedPeopleHide" : "savedPeopleShow",saved.Length),"saved-people-toggle", () => { savedPeopleOpen = !savedPeopleOpen; CancelEdit(); });
+                list.Add(toggle);
+                if (savedPeopleOpen)
+                {
+                    var hint = new Label(T("savedPeopleHint")) { name = "savedPeopleHint" }; hint.AddToClassList("hint"); list.Add(hint);
+                    foreach (var player in saved) list.Add(PlayerRow(player));
+                }
+            }
             list.scrollOffset = oldOffset;
             if (editingId != null) RevealAfterLayout(list,root.Q<VisualElement>("player-" + editingId));
             list.EnableInClassList("hidden", view.Players.Count == 0);
@@ -237,20 +252,36 @@ namespace WordDeduction.UI
             root.Q<Label>("notice").text = message == null ? "" : T(message);
             var undo = root.Q<Button>("undo"); undo.text = T("undo"); undo.EnableInClassList("hidden",!view.CanUndo);
             var reset = root.Q<Button>("resetDamaged"); reset.text = T("startFresh"); reset.EnableInClassList("hidden",view.StorageNotice != "DamagedData");
-            nameInput.SetEnabled(!view.StorageBlocked && view.Players.Count < 40);
-            root.Q<Button>("addPlayer").SetEnabled(!view.StorageBlocked && view.Players.Count < 40);
+            nameInput.SetEnabled(!view.StorageBlocked && view.ActiveCount < 20 && view.Players.Count < 40);
+            root.Q<Button>("addPlayer").SetEnabled(!view.StorageBlocked && view.ActiveCount < 20 && view.Players.Count < 40);
             RefreshPresentation();
         }
         void RefreshPresentation() { textPreferences?.Refresh(); accessibility?.Refresh(); }
         VisualElement PlayerRow(PlayerView player)
         {
-            var row = new VisualElement { name = "player-" + player.Id };
+            var row = new VisualElement { name = "player-" + player.Id, usageHints = UsageHints.DynamicTransform };
             row.AddToClassList("player-row"); row.EnableInClassList("paused",!player.Active);
             if (editingId == player.Id)
             {
                 row.AddToClassList("editing-row");
                 var edit = new TextField { name = "renameInput", value = renameDraft ?? player.Name, tooltip = T("edit",player.DisplayName) }; edit.AddToClassList("name-input"); row.Add(edit);
                 edit.RegisterValueChangedCallback(e => { renameDraft = e.newValue; typography?.IncludeNames(new[] { e.newValue }); });
+                if (player.Active)
+                {
+                    var active = session.View.Players.Where(p => p.Active).Select(p => p.Id).ToArray();
+                    int index = Array.IndexOf(active,player.Id);
+                    var moves = new VisualElement(); moves.AddToClassList("move-actions"); row.Add(moves);
+                    var up = ActionButton("movePlayerUp",T("movePlayerUp"),"move-player", () => MovePlayer(player.Id,index - 1));
+                    var down = ActionButton("movePlayerDown",T("movePlayerDown"),"move-player", () => MovePlayer(player.Id,index + 1));
+                    up.SetEnabled(index > 0 && !session.View.StorageBlocked); down.SetEnabled(index < active.Length - 1 && !session.View.StorageBlocked);
+                    moves.Add(up); moves.Add(down);
+                }
+                if (!player.Active)
+                {
+                    var restore = ActionButton("restorePlayer",T("restorePlayer"),"save-button", () => Apply(session.SetParticipation(player.Id,true)));
+                    restore.SetEnabled(session.View.ActiveCount < 20 && !session.View.StorageBlocked); row.Add(restore);
+                    if (session.View.ActiveCount >= 20) { var capacity = new Label(T("activeCapacity")); capacity.AddToClassList("hint"); row.Add(capacity); }
+                }
                 var actions = new VisualElement(); actions.AddToClassList("edit-actions"); row.Add(actions);
                 actions.Add(ActionButton("removePlayer",T("remove"),"remove-button", () => Apply(session.RemovePlayer(player.Id), "Removed")));
                 actions.Add(ActionButton("cancelRename",T("cancel"),"text-button", CancelEdit));
@@ -260,12 +291,35 @@ namespace WordDeduction.UI
             }
             else
             {
+                if (player.Active)
+                {
+                    var handle = new Label("≡") { name = "reorder-" + player.Id, tooltip = T("reorderPlayer",player.DisplayName) };
+                    handle.AddToClassList("reorder-handle"); handle.SetEnabled(!session.View.StorageBlocked); row.Add(handle);
+                    var snapshot = session.View.Players;
+                    var active = snapshot.Where(p => p.Active).Select(p => p.Id).ToArray();
+                    var expected = snapshot.Select(p => p.Id).ToArray();
+                    var reorder = new GroupReorder(root.Q<ScrollView>("players"),row,active,index => MovePlayer(player.Id,index,expected));
+                    reorders.Add(reorder); handle.AddManipulator(reorder);
+                }
                 var initial = new Label(NameText.FirstElement(player.Name).ToUpperInvariant()); initial.AddToClassList("player-initial"); row.Add(initial);
-                var name = ActionButton("edit-" + player.Id,player.DisplayName,"player-name", () => { editingId = player.Id; renameDraft = player.Name; Render(); }); name.tooltip = T("edit",player.DisplayName); row.Add(name);
-                var participation = ActionButton("participation-" + player.Id,T(player.Active ? "pause" : "join"),"participation", () => Apply(session.SetParticipation(player.Id,!player.Active)));
-                participation.tooltip = T(player.Active ? "pausePlayer" : "joinPlayer",player.DisplayName); row.Add(participation);
+                var name = new Label(player.DisplayName) { name = "name-" + player.Id }; name.AddToClassList("player-name"); row.Add(name);
+                var edit = ActionButton("edit-" + player.Id,T("editLabel"),"edit-player", () => { editingId = player.Id; renameDraft = player.Name; Render(); });
+                edit.tooltip = T("edit",player.DisplayName); row.Add(edit);
             }
             return row;
+        }
+        void CancelReorders() { foreach (var reorder in reorders) reorder.Cancel(); }
+        void MovePlayer(string id, int destination, string[] expected = null)
+        {
+            var players = session.View.Players;
+            var active = players.Where(p => p.Active).Select(p => p.Id).ToList();
+            if (!active.Remove(id) || destination < 0 || destination > active.Count) return;
+            active.Insert(destination,id);
+            int index = 0;
+            var order = players.Select(p => p.Active ? active[index++] : p.Id).ToArray();
+            var result = session.ReorderPlayers(expected ?? players.Select(p => p.Id).ToArray(),order);
+            noticeCode = result.Success ? null : result.Error;
+            Render();
         }
         static Button ActionButton(string name, string text, string css, Action action)
         {
