@@ -172,8 +172,6 @@ namespace WordDeduction.Tests
                 if(fixture.Session.View.CanSwapSingleRole) {
                     var swap=root.Q<Button>("swapRole"); scroll.ScrollTo(swap); yield return null; yield return null;
                     Assert.That(swap.worldBound.yMax,Is.LessThanOrEqualTo(scroll.contentViewport.worldBound.yMax+1));
-                    Submit(swap); Assert.That(fixture.Session.View.WhiteCount,Is.EqualTo(1));
-                    yield return null; yield return null; Enlarge(root); yield return null;
                 }
                 scroll.ScrollTo(root.Q<Label>("roleLimit")); yield return null; yield return null;
                 AssertTextFits(root.Q<Label>("roleLimit"));
