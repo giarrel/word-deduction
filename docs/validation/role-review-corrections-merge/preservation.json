@@ -1,0 +1,107 @@
+{
+  "verifiedAtUtc": "2026-10-09T19:27:37.221798+00:00",
+  "integrationBefore": "d7cc6a79516294f8d2c69d9364b134b1fa16f603",
+  "runtimeSource": "d3ad9d0ecd42f4bfb46e2e09f75f914e07a02e59",
+  "handoff": "ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218",
+  "postRuntimeChanges": [
+    "docs/validation/role-review-corrections/evidence/session-after-run.json",
+    "docs/validation/role-review-corrections/evidence/session-after.log",
+    "docs/validation/role-review-corrections/evidence/session-before-run.json",
+    "docs/validation/role-review-corrections/evidence/session-before.log",
+    "docs/validation/role-review-corrections/report.md"
+  ],
+  "identicalTrees": {
+    "game": "bf05d79b59724199e70040f57b1728e58537b5b1",
+    "tests": "1270fcbf77ca9e8f4d2e5df729f7b89abf4b5fed",
+    "content": "fae305a03886bbde4c514b9ab4606b56be478fdd",
+    "tools": "21f1083d7530e62dfffa558e971e0bf64b565884",
+    "third-party": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+  },
+  "rawFileCount": 4,
+  "rawBytes": 16370,
+  "canonicalGitFileCount": 4,
+  "canonicalGitBytes": 16164,
+  "recordedBeforeAndAfterSession": {
+    "beforePassed": 93,
+    "afterPassed": 93,
+    "bothExitCodes": 0,
+    "mergerReranTests": false
+  },
+  "files": [
+    {
+      "name": "session-before.log",
+      "raw": {
+        "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-review-corrections\\artifacts\\role-review-corrections\\session-before.log",
+        "preserved": "artifacts/role-review-corrections-merge/ec3c3d4ff206/raw/session-before.log",
+        "bytes": 7627,
+        "sha256": "3eeafeb910bdbfdd41115f3fad157b81b1f43d2f95a95af3f2569cae1fbf2e54"
+      },
+      "canonicalGit": {
+        "sourceCommit": "ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218",
+        "sourcePath": "docs/validation/role-review-corrections/evidence/session-before.log",
+        "blobOid": "639a67feffd2b31de8d1a527a7e449382abe5428",
+        "preserved": "artifacts/role-review-corrections-merge/ec3c3d4ff206/canonical-git/session-before.log",
+        "bytes": 7533,
+        "sha256": "4b8559ff9577563608980405c8eca54f62b04b882f3b6144fda77d4f8fe090ca"
+      },
+      "rawEqualsCanonical": false
+    },
+    {
+      "name": "session-before-run.json",
+      "raw": {
+        "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-review-corrections\\artifacts\\role-review-corrections\\session-before-run.json",
+        "preserved": "artifacts/role-review-corrections-merge/ec3c3d4ff206/raw/session-before-run.json",
+        "bytes": 510,
+        "sha256": "877572a7c12b9a59cdfe015d2f41ce774cb9ebb007f9d951802bd30965ee0f78"
+      },
+      "canonicalGit": {
+        "sourceCommit": "ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218",
+        "sourcePath": "docs/validation/role-review-corrections/evidence/session-before-run.json",
+        "blobOid": "1c047bd8a559410ea6ff4bf9567c8f9aff6387f9",
+        "preserved": "artifacts/role-review-corrections-merge/ec3c3d4ff206/canonical-git/session-before-run.json",
+        "bytes": 502,
+        "sha256": "58627b4ed6061dcde4e4b0622c40c1b6dc0e704f6af591f284fdccaa4d102c3b"
+      },
+      "rawEqualsCanonical": false
+    },
+    {
+      "name": "session-after.log",
+      "raw": {
+        "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-review-corrections\\artifacts\\role-review-corrections\\session-after.log",
+        "preserved": "artifacts/role-review-corrections-merge/ec3c3d4ff206/raw/session-after.log",
+        "bytes": 7627,
+        "sha256": "3eeafeb910bdbfdd41115f3fad157b81b1f43d2f95a95af3f2569cae1fbf2e54"
+      },
+      "canonicalGit": {
+        "sourceCommit": "ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218",
+        "sourcePath": "docs/validation/role-review-corrections/evidence/session-after.log",
+        "blobOid": "639a67feffd2b31de8d1a527a7e449382abe5428",
+        "preserved": "artifacts/role-review-corrections-merge/ec3c3d4ff206/canonical-git/session-after.log",
+        "bytes": 7533,
+        "sha256": "4b8559ff9577563608980405c8eca54f62b04b882f3b6144fda77d4f8fe090ca"
+      },
+      "rawEqualsCanonical": false
+    },
+    {
+      "name": "session-after-run.json",
+      "raw": {
+        "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-review-corrections\\artifacts\\role-review-corrections\\session-after-run.json",
+        "preserved": "artifacts/role-review-corrections-merge/ec3c3d4ff206/raw/session-after-run.json",
+        "bytes": 606,
+        "sha256": "108eb15641533bc9d0eb9b1511c5677390cb8092cbca38f830b874980f6be47e"
+      },
+      "canonicalGit": {
+        "sourceCommit": "ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218",
+        "sourcePath": "docs/validation/role-review-corrections/evidence/session-after-run.json",
+        "blobOid": "915107e0108224746889b3bee8f49635fec0eb95",
+        "preserved": "artifacts/role-review-corrections-merge/ec3c3d4ff206/canonical-git/session-after-run.json",
+        "bytes": 596,
+        "sha256": "a4aea686f6125fe89ec43c1fb0c9ca2aa2fd0673b5b9f3573a3a40f754fa5f84"
+      },
+      "rawEqualsCanonical": false
+    }
+  ],
+  "mergeCommit": "b629bcfdd45cfb3715069401b665645334eb5291",
+  "postMergeTreesAndPreservedBytesVerified": true,
+  "rawCanonicalDifference": "CRLF versus LF only; both original representations preserved separately"
+}
