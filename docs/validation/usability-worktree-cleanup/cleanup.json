@@ -1,0 +1,41 @@
+{
+  "integrationBefore": "2146f2d817319c3d19757caad2202e359cce0ace",
+  "actions": [
+    {
+      "removedAtUtc": "2026-10-09T09:03:06.9923765Z",
+      "worktree": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group",
+      "retainedBranch": "implement/group-usability",
+      "head": "25b82d7e6906e7d432752813b1e66138e80af9d7",
+      "archive": "artifacts/usability-worktree-retirement-20261009T090033Z/group",
+      "preservedFiles": 224,
+      "preservedBytes": 21185469,
+      "reparsePoints": 0,
+      "matchingUnityEditors": 0,
+      "trackedAndUntrackedChanges": 0,
+      "gitCoreLongpaths": true,
+      "forceOnlyForInventoriedIgnoredData": true,
+      "manifestSha256": "0bd8ae735d08531b0ecf93c75cdf79d06c629183f449ddaf700967e3dd5466c8"
+    },
+    {
+      "removedAtUtc": "2026-10-09T09:03:12.9596579Z",
+      "worktree": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\motion",
+      "retainedBranch": "implement/fluid-interactions",
+      "head": "f07419bbbfd157c0072e61ab59f0c187d6e4ddfd",
+      "archive": "artifacts/usability-worktree-retirement-20261009T090033Z/motion",
+      "preservedFiles": 173,
+      "preservedBytes": 22452382,
+      "reparsePoints": 0,
+      "matchingUnityEditors": 0,
+      "trackedAndUntrackedChanges": 0,
+      "gitCoreLongpaths": true,
+      "forceOnlyForInventoriedIgnoredData": true,
+      "manifestSha256": "0b5420ef691b80431cb8ab75e304b4b0c39b3b07e7bc42af48f4fc040d6a8f6f"
+    }
+  ],
+  "otherWorktreesChanged": false,
+  "editorOperations": 0,
+  "adbOperations": 0,
+  "builds": 0,
+  "tests": 0,
+  "pushes": 0
+}
