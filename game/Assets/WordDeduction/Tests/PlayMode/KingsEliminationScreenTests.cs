@@ -43,10 +43,10 @@ namespace WordDeduction.Tests
                 Assert.That(fixture.Session.Match, Is.Null);
                 Assert.That(fixture.Root.Q<VisualElement>("screen").resolvedStyle.display, Is.EqualTo(DisplayStyle.Flex));
                 string labels = string.Join("\n",AllLabels(fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes));
-                Assert.That(labels, Does.Contain("Add player").And.Contain("Kings").And.Contain("Alex"), "A newly visible Group must restore its public controls and nested player list without another redraw action.");
+                Assert.That(labels, Does.Contain(fixture.Session.View.ActiveCount == 20 ? "20 players maximum" : "Add player").And.Contain("Kings").And.Contain("Alex"), "A newly visible Group must restore its public controls and nested player list without another redraw action.");
                 var groupNodes = fixture.Host.GetComponent<GroupScreen>().Accessibility.rootNodes;
                 var players = groupNodes.First(n => n.role == UnityEngine.Accessibility.AccessibilityRole.ScrollView);
-                foreach (var node in new[] { groupNodes.First(n => n.label == "Add player"), players.children.First(n => n.label.Contains("Alex")) })
+                foreach (var node in new[] { groupNodes.First(n => fixture.Session.View.ActiveCount == 20 ? n.label.StartsWith("20 players maximum",StringComparison.Ordinal) : n.label == "Add player"), players.children.First(n => n.label.Contains("Alex")) })
                 {
                     Assert.That(node.isActive, Is.True);
                     Assert.That(node.frame.width, Is.GreaterThan(0));

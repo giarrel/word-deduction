@@ -36,7 +36,7 @@ namespace WordDeduction.Tests
             host = new GameObject("Group usability test"); host.SetActive(false);
             var document = host.AddComponent<UIDocument>();
             panel = UnityEngine.Object.Instantiate(AssetDatabase.LoadAssetAtPath<PanelSettings>("Assets/WordDeduction/UI/Panel.asset"));
-            texture = new RenderTexture(360,640,0); texture.Create(); panel.targetTexture = texture;
+            texture = new RenderTexture(360,640,24); texture.Create(); panel.targetTexture = texture;
             panel.scaleMode = PanelScaleMode.ConstantPixelSize; panel.scale = 1; document.panelSettings = panel;
             host.AddComponent<GroupScreen>().Initialize(session); host.SetActive(true);
             root = document.rootVisualElement; root.style.width = 360; root.style.height = 640;
@@ -214,6 +214,8 @@ namespace WordDeduction.Tests
             pixels.ReadPixels(new Rect(0,0,texture.width,texture.height),0,0); pixels.Apply(); RenderTexture.active = previous;
             string path = Path.GetFullPath(Path.Combine(Application.dataPath,"../../artifacts/group-usability/screenshots")); Directory.CreateDirectory(path);
             File.WriteAllBytes(Path.Combine(path,name + ".png"),pixels.EncodeToPNG()); UnityEngine.Object.Destroy(pixels);
+            var edit = root.Q<TextField>("renameInput");
+            if (edit != null) File.WriteAllLines(Path.Combine(path,name + "-input.txt"), edit.Query<VisualElement>().ToList().Select(e => e.GetType().Name + " | " + e.name + " | " + string.Join(",",e.GetClasses()) + " | " + e.worldBound + " | bg=" + e.resolvedStyle.backgroundColor + " | display=" + e.resolvedStyle.display));
         }
         static void Submit(VisualElement element)
         {
