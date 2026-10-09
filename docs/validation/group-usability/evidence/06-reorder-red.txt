@@ -1,0 +1,2 @@
+FAIL reordering is durable atomic and respects stable Unicode identities: full stable-ID reorder succeeds
+0/1 passed

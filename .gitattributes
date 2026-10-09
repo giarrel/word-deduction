@@ -13,3 +13,5 @@ docs/validation/kings-native/audits/** -text
 docs/validation/kings-native/raw-preservation.json -text
 
 docs/validation/kings-native/delivery-manifest.json -text
+
+/docs/validation/group-usability/evidence/** -text
