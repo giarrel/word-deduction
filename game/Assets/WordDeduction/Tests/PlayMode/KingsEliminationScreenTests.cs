@@ -290,6 +290,7 @@ namespace WordDeduction.Tests
             public IEnumerator Capture(string name)
             {
                 yield return null; yield return null; yield return new WaitForSecondsRealtime(0.15f);
+                yield return new WaitForEndOfFrame();
                 string output = Path.GetFullPath(Path.Combine(Application.dataPath, "../../artifacts/kings-elimination")); Directory.CreateDirectory(output);
                 SaveScreenshot(texture,Path.Combine(output,name + ".png"));
             }

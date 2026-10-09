@@ -1,0 +1,94 @@
+PASS confirmed player survives reopening with stable identity
+PASS rename pause resume remove and undo preserve the group across restarts
+PASS duplicate names remain distinguishable after remove undo and restart
+PASS names accept Unicode text elements and reject invalid edits without saving
+PASS capacity rejects a new person without silently pausing anyone
+PASS reordering is durable atomic and respects stable Unicode identities
+PASS legacy inactive people remain saved and require explicit restoration
+PASS language and mode are durable and expose valid group readiness
+PASS a damaged primary restores a validated previous generation
+PASS failed writes retain memory and disk and can be retried
+PASS unrecoverable data stays blocked until an explicit fresh-start acknowledgement
+PASS newer save schemas are never rolled back or overwritten
+PASS entered names cannot impersonate generated disambiguators
+PASS valid checksums do not make invalid group snapshots safe
+PASS stale player actions are harmless and report what happened
+PASS Quick deals are durable and private for every supported group size
+PASS Quick spoken vote can be corrected and only confirmation reveals the result
+PASS Quick has one runoff and protects the active group until confirmed abandonment
+PASS failed deal handoff confirmation and rematch never expose uncommitted progress
+PASS legacy group migration keeps identities settings and undo without rewriting on open
+PASS valid checksums do not admit invalid match snapshots
+PASS rematch validates changed group size and mode through the same start rules
+PASS all seats can be Undercover and start without leaking secret fields through safe views
+PASS unreadable storage paths cannot masquerade as a new group
+PASS an interrupted first save requires acknowledgement and preserves the unfinished file
+PASS a newer backup cannot be overwritten by an older readable primary
+PASS every Quick phase restores the same confirmed deal without drawing or exposing a card
+PASS partial and complete pending writes never become confirmed actions on reopening
+PASS a damaged backup leaves a healthy primary usable and a missing primary visibly recovers
+PASS replacement denial after flushing leaves the previous vote intact and retryable
+PASS missing required snapshot fields cannot silently become an empty saved group
+PASS denied reads never fall back past an inaccessible confirmed generation
+PASS failed cancel and abandonment keep the selected vote and saved group
+PASS every Classic phase including both White judgments preserves its deal and history across interrupted saves
+PASS Classic deals the automatic mix and retains the optional White preference
+PASS Classic eliminates survivors only and continues until all adversaries are found
+PASS Classic names exactly the surviving adversary roles at one Civilian left
+PASS White gets one durable spoken guess before any terminal evaluation
+PASS Classic has one runoff then a new clue round with no elimination and any survivor may start
+PASS invalid Classic progress is rejected even with a valid checksum
+PASS Classic failed elimination and White judgment preserve both memory and saved progress
+PASS V2 live Quick import preserves the frozen deal and remains covered
+PASS all 520 bilingual pairs are dealt once per cycle across restarts and language changes
+PASS words from the last ten deals are avoided across languages while other pairs remain
+PASS a V4 deal without its consumed pair is rejected before revealing a word
+PASS legacy V2 and V3 deals retain their words and seed the shared cycle without rewriting on open
+PASS V3 Classic pending White guesses retain progress and seed history without rewriting on open
+PASS failed deals consume no pair in memory or after restart
+PASS a cycle completes even when the final eligible pair repeats a recent word
+PASS accepted long grapheme names and duplicate labels survive dealt and progressed matches
+PASS malformed frozen labels remain blocked despite a valid checksum
+PASS Unicode 17 conformance keeps every expected extended grapheme intact
+PASS legacy V4 names survive stricter new-entry policy in groups and live matches
+PASS new names use 24 extended graphemes for emoji flags Indic Hangul and accents
+PASS malformed UTF16 edits fail without damaging the confirmed name
+PASS Unicode line separators cannot enter a new name
+PASS invisible-only names cannot create or replace a player
+PASS Kings selects a durable third mode with a five person minimum and adaptive majority
+PASS Kings explicit count survives smaller groups and mode changes without losing the request
+PASS Kings private cards disclose only their owners knowledge and cannot revisit completed handoffs
+PASS Kings V5 storage is understood while V4 live deals remain frozen and usable
+PASS Kings supports every legal size and count with neutral ordered knowledge and fresh random assignments
+PASS Kings failed preference deal and handoff saves never commit progress or consume a read
+PASS Kings elimination selection is correctable durable and ordinary disclosure stays neutral
+PASS Kings elimination of good King wins for whole evil team and rematch restores the group
+PASS Kings elimination continues through parity and lone good King until exactly two Kings remain
+PASS Kings elimination of White durably enters last chance before any general reveal
+PASS Kings elimination failed writes keep the committed selection and disclose no new consequence
+PASS Kings last chance word choice and spoken answer lock before target disclosure
+PASS Kings last chance word judgment wins for the whole team and is final
+PASS Kings last chance King target is correctable until single stable identity commitment
+PASS Kings last chance failed writes disclose no new word or outcome and retain every commitment
+PASS Kings last chance rejects impossible saved commitments even with valid checksums
+PASS Kings recovery rejects a saved evil King without any ordinary teammate
+PASS Kings recovery preserves every durable phase and all six endings across interrupted replacement
+PASS Kings recovery distinguishes damaged missing unreadable and newer committed generations
+PASS free counts allow an atomic pure White replacement at minimum size
+PASS free counts preferences survive modes shrink undo growth Auto and failed writes
+PASS free counts write a new schema and reject new fields disguised as old
+PASS free counts reject invalid commands and malformed saved preferences
+PASS sequential Quick requires every adversary without another clue round
+PASS sequential Quick mistakes and repeated ties award all adversary roles in the deal
+PASS multiple Whites each guess once and all Whites alone share a correct guess
+PASS free counts deal and reopen every supported base-mode composition
+PASS V5 finalized Quick results keep their old frozen meaning and bytes
+PASS sequential Quick failure and stale actions preserve confirmation and continuation
+PASS sequential vote commands reject a previous accusation and another match
+PASS Kings starter reuses the frozen deal without drawing on handoff or reopen
+PASS Kings starter changes atomically after ordinary elimination without selection rerolls
+PASS Kings starter optional next round includes every survivor and rejects stale actions
+PASS Kings starter authentic V5 dead starter migrates without a write and continues through V6
+PASS Kings starter actions are unavailable during private handoff last chance and results
+PASS Kings starter invalid new suggestions and false legacy rounds recover safely
+93/93 passed

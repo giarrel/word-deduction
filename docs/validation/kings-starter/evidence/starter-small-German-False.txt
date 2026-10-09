@@ -1,0 +1,1 @@
+root=(x:0.00, y:0.00, width:360.00, height:616.00); viewport=(x:22.00, y:160.00, width:306.00, height:342.00); starterFont=39; captionFont=19.5; next=(x:22.00, y:522.00, width:316.00, height:54.00); nextFont=22.5; help=(x:262.00, y:52.00, width:76.00, height:52.00); helpContent=(x:10.00, y:0.00, width:56.00, height:52.00)

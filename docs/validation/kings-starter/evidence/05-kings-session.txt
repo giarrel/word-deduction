@@ -1,0 +1,24 @@
+PASS Kings selects a durable third mode with a five person minimum and adaptive majority
+PASS Kings explicit count survives smaller groups and mode changes without losing the request
+PASS Kings private cards disclose only their owners knowledge and cannot revisit completed handoffs
+PASS Kings V5 storage is understood while V4 live deals remain frozen and usable
+PASS Kings supports every legal size and count with neutral ordered knowledge and fresh random assignments
+PASS Kings failed preference deal and handoff saves never commit progress or consume a read
+PASS Kings elimination selection is correctable durable and ordinary disclosure stays neutral
+PASS Kings elimination of good King wins for whole evil team and rematch restores the group
+PASS Kings elimination continues through parity and lone good King until exactly two Kings remain
+PASS Kings elimination of White durably enters last chance before any general reveal
+PASS Kings elimination failed writes keep the committed selection and disclose no new consequence
+PASS Kings last chance word choice and spoken answer lock before target disclosure
+PASS Kings last chance word judgment wins for the whole team and is final
+PASS Kings last chance King target is correctable until single stable identity commitment
+PASS Kings last chance failed writes disclose no new word or outcome and retain every commitment
+PASS Kings last chance rejects impossible saved commitments even with valid checksums
+PASS Kings recovery rejects a saved evil King without any ordinary teammate
+PASS Kings recovery preserves every durable phase and all six endings across interrupted replacement
+PASS Kings recovery distinguishes damaged missing unreadable and newer committed generations
+PASS Kings starter reuses the frozen deal without drawing on handoff or reopen
+PASS Kings starter changes atomically after ordinary elimination without selection rerolls
+PASS Kings starter optional next round includes every survivor and rejects stale actions
+PASS Kings starter authentic V5 dead starter migrates without a write and continues through V6
+23/23 passed

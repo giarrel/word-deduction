@@ -1,0 +1,2 @@
+FAIL Kings starter reuses the frozen deal and every participant including White is eligible: handoff completion does not draw another starter
+0/1 passed

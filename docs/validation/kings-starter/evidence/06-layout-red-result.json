@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.79,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.KingsStarterAndChoicesRemainReadableOnSmallPhoneAtLargeText",
+          "Status": "Failed",
+          "Duration": 0.7617292,
+          "Message": "  Expected: greater than or equal to 783.0f\r\n  But was:  522.0f\r\n",
+          "StackTrace": "at WordDeduction.Tests.KingsEliminationScreenTests+<KingsStarterAndChoicesRemainReadableOnSmallPhoneAtLargeText>d__3.MoveNext () [0x00366] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\KingsEliminationScreenTests.cs:78\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

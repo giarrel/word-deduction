@@ -1,0 +1,42 @@
+[
+  {
+    "File": "starter-English.png",
+    "Hash": "489343F9672AD2CC68D64325AA6976A8304BFA08C81C14B6FEDAE2A0238C3CA7"
+  },
+  {
+    "File": "starter-German.png",
+    "Hash": "BC0F6439BF02040B206AD3342AE0723520E9466D77088899B33E98B128269BA7"
+  },
+  {
+    "File": "starter-small-English-False-last.png",
+    "Hash": "964CA5EC3AEA1488B17C2232A3096460FF970ECC406EBD45CCC1E32AF98D7274"
+  },
+  {
+    "File": "starter-small-English-False-top.png",
+    "Hash": "C2B90CD683FB8A31BFCED50B69C0375CD7149A1C0C552B97C46627751DBD67F6"
+  },
+  {
+    "File": "starter-small-English-True-last.png",
+    "Hash": "84D93A6E29E29C18D47CE713F269915CA5E9F99F14B07B7A525CAED68593FFEE"
+  },
+  {
+    "File": "starter-small-English-True-top.png",
+    "Hash": "1F8AF0AEC04A02941F0991868F7ED1A8067D04074230D5CA69BEB68FEA4FBAAD"
+  },
+  {
+    "File": "starter-small-German-False-last.png",
+    "Hash": "72AD9ACC41DE777994FC717AD29757950590AC2884A0A3ED82CA6177E3EF85C1"
+  },
+  {
+    "File": "starter-small-German-False-top.png",
+    "Hash": "D4476BE0CDE6AABE268F69C2C3E31588850F56FD4C890F9929D8C42F587B6149"
+  },
+  {
+    "File": "starter-small-German-True-last.png",
+    "Hash": "38BDB2192DC9DA35E25FE24F33D930A32ED4ACCE6D684D8CEB1A9EC5C8B29CBF"
+  },
+  {
+    "File": "starter-small-German-True-top.png",
+    "Hash": "D0DC966813CC684700634A5B18324E533CCE865E520BD96588AA75961A3ECB57"
+  }
+]
