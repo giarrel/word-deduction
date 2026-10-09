@@ -1,0 +1,1387 @@
+{
+  "sourceCommit": "e76c702648d4c7324041487e655e3e6e50f7bab5",
+  "archive": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-starter-preservation\\e76c702648d4-20261009T185347Z",
+  "rawCopiedFiles": 143,
+  "rawCopiedBytes": 26161978,
+  "sourceAndDestinationHashesVerified": true,
+  "raw": [
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\last-chance-English.png",
+      "archivePath": "worktree/artifacts/kings-elimination/last-chance-English.png",
+      "bytes": 37578,
+      "sha256": "9ac057a747bbe9ab577bc3e7844dc33a8e72cff94bc992f56126abe97471411f"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\last-chance-German.png",
+      "archivePath": "worktree/artifacts/kings-elimination/last-chance-German.png",
+      "bytes": 38937,
+      "sha256": "a3465b698a154114f34512a2bf6a383a72deb35aa2a68b25fe3d81611cf69be6"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\ordinary-English.png",
+      "archivePath": "worktree/artifacts/kings-elimination/ordinary-English.png",
+      "bytes": 35171,
+      "sha256": "2768f2419a8aaee45c84bf8a6664d30c46303f6f7cdc09767ee3895a0eeb243c"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\ordinary-German.png",
+      "archivePath": "worktree/artifacts/kings-elimination/ordinary-German.png",
+      "bytes": 38339,
+      "sha256": "4cafa8f3cd2a1a504c61a5d6fac01468ef55d275983926455a9d77b4d4f3b726"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\result-English.png",
+      "archivePath": "worktree/artifacts/kings-elimination/result-English.png",
+      "bytes": 46614,
+      "sha256": "3a77b4642f8f99dbd565d7e30f6852e274dbdcb4c2bef8301f096f29719e22a8"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\result-German.png",
+      "archivePath": "worktree/artifacts/kings-elimination/result-German.png",
+      "bytes": 51734,
+      "sha256": "e4a704236efd906285a0b4c5c552b6283f43234b017197830d730293e1e66020"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-English.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-English.png",
+      "bytes": 36580,
+      "sha256": "489343f9672ad2cc68d64325aa6976a8304bfa08c81c14b6fedae2a0238c3ca7"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-German.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-German.png",
+      "bytes": 39688,
+      "sha256": "bc0f6439bf02040b206ad3342ae0723520e9466d77088899b33e98b128269ba7"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-English-False-last.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-English-False-last.png",
+      "bytes": 31508,
+      "sha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-English-False-top.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-English-False-top.png",
+      "bytes": 40759,
+      "sha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-English-False.txt",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-English-False.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-English-True-last.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-English-True-last.png",
+      "bytes": 31720,
+      "sha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-English-True-top.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-English-True-top.png",
+      "bytes": 41388,
+      "sha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-English-True.txt",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-English-True.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-German-False-last.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-German-False-last.png",
+      "bytes": 33840,
+      "sha256": "72ad9acc41de777994fc717ad29757950590ac2884a0a3ed82ca6177e3ef85c1"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-German-False-top.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-German-False-top.png",
+      "bytes": 43564,
+      "sha256": "d4476be0cde6aabe268f69c2c3e31588850f56fd4c890f9929d8c42f587b6149"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-German-False.txt",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-German-False.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-German-True-last.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-German-True-last.png",
+      "bytes": 33993,
+      "sha256": "38bdb2192dc9da35e25fe24f33d930a32ed4acce6d684d8ceb1a9ec5c8b29cbf"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-German-True-top.png",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-German-True-top.png",
+      "bytes": 44149,
+      "sha256": "d0dc966813cc684700634a5b18324e533cce865e520bd96588aa75961a3ecb57"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-elimination\\starter-small-German-True.txt",
+      "archivePath": "worktree/artifacts/kings-elimination/starter-small-German-True.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\01-initial-green.txt",
+      "archivePath": "worktree/artifacts/kings-starter/01-initial-green.txt",
+      "bytes": 155,
+      "sha256": "7506e7e27f17d695a36ae686bca02871c16a06a2f6ac0f104e1cca270840754d"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\01-initial-red.txt",
+      "archivePath": "worktree/artifacts/kings-starter/01-initial-red.txt",
+      "bytes": 179,
+      "sha256": "b4e2987a6c7f77ff5f0f030af87bede508352b2eb6c96897c754be3f00e9a76d"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\02-elimination-green.txt",
+      "archivePath": "worktree/artifacts/kings-starter/02-elimination-green.txt",
+      "bytes": 184,
+      "sha256": "3cc49d62335633f501f0139857c3a61d4dd1a161059364b680714f7b603f089e"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\02-elimination-red.txt",
+      "archivePath": "worktree/artifacts/kings-starter/02-elimination-red.txt",
+      "bytes": 1769,
+      "sha256": "5a4ceff1d91f30132197c6dc43ed4e8852a30ab1333bf3d09e3ef38b7a5d3d69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\03-next-green.txt",
+      "archivePath": "worktree/artifacts/kings-starter/03-next-green.txt",
+      "bytes": 274,
+      "sha256": "055f94bb64a3128d94702dda513de285bfb2731dc3494c5c3a7ce3ebb05afbbb"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\03-next-red.txt",
+      "archivePath": "worktree/artifacts/kings-starter/03-next-red.txt",
+      "bytes": 4185,
+      "sha256": "9f37c38eb3bb74c0e814502b57c7896dfed0f6a77c7c880f9a76ffc56b9dcfd2"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\04-legacy-green.txt",
+      "archivePath": "worktree/artifacts/kings-starter/04-legacy-green.txt",
+      "bytes": 370,
+      "sha256": "69003087ad69e34575e17863507f1e6590577e0d4ade9cfae9372997abd053a3"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\04-legacy-red.txt",
+      "archivePath": "worktree/artifacts/kings-starter/04-legacy-red.txt",
+      "bytes": 435,
+      "sha256": "d005c5902564a616dcb1bed0f0bf083cda507c0ee2e362578bfa0cc470ecd362"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\05-kings-session.txt",
+      "archivePath": "worktree/artifacts/kings-starter/05-kings-session.txt",
+      "bytes": 2121,
+      "sha256": "2c673edd00ee3b283e3cdea4c3d7dd2163c53d5f7e95e41b861390025c75c112"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\05-ui-compile.json",
+      "archivePath": "worktree/artifacts/kings-starter/05-ui-compile.json",
+      "bytes": 503,
+      "sha256": "cc20077bec6ac952ea34cdc11d316c1569bcbf69aa02911f4655c4f6b129dcf9"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\05-ui-green-compile.json",
+      "archivePath": "worktree/artifacts/kings-starter/05-ui-green-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\05-ui-green-result.json",
+      "archivePath": "worktree/artifacts/kings-starter/05-ui-green-result.json",
+      "bytes": 911,
+      "sha256": "36c96967b7252745447ae3c726984bbbced0c7adc87fa4ff52c23134f6796345"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\05-ui-green-start.json",
+      "archivePath": "worktree/artifacts/kings-starter/05-ui-green-start.json",
+      "bytes": 959,
+      "sha256": "6c884d4ebf47d3cc3f5eeba05a59b2c7d9be8ba9a4015b88c0702ad02e217e93"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\05-ui-red-result.json",
+      "archivePath": "worktree/artifacts/kings-starter/05-ui-red-result.json",
+      "bytes": 1542,
+      "sha256": "2b75e5bc524a7db3698e8a5200371ab438399acd9545ffb8c6d81f8717cd7fe4"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\05-ui-red-start.json",
+      "archivePath": "worktree/artifacts/kings-starter/05-ui-red-start.json",
+      "bytes": 959,
+      "sha256": "6c884d4ebf47d3cc3f5eeba05a59b2c7d9be8ba9a4015b88c0702ad02e217e93"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\06-layout-compile.json",
+      "archivePath": "worktree/artifacts/kings-starter/06-layout-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\06-layout-green-compile.json",
+      "archivePath": "worktree/artifacts/kings-starter/06-layout-green-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\06-layout-green-result.json",
+      "archivePath": "worktree/artifacts/kings-starter/06-layout-green-result.json",
+      "bytes": 903,
+      "sha256": "42021c8d1e736d079f189db1614d8fdc29b4b622ea853b085d59c3fba7194b8b"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\06-layout-green-start.json",
+      "archivePath": "worktree/artifacts/kings-starter/06-layout-green-start.json",
+      "bytes": 923,
+      "sha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\06-layout-red-result.json",
+      "archivePath": "worktree/artifacts/kings-starter/06-layout-red-result.json",
+      "bytes": 1511,
+      "sha256": "0ce812fbc116372557b1466fcc551b57fd25dc802784d57c76ecde6b8af0d616"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\06-layout-start.json",
+      "archivePath": "worktree/artifacts/kings-starter/06-layout-start.json",
+      "bytes": 923,
+      "sha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\07-guards.txt",
+      "archivePath": "worktree/artifacts/kings-starter/07-guards.txt",
+      "bytes": 544,
+      "sha256": "2a9b34f478f6df968874ef993a14f30d238f48fe17543156119e0f243051cac6"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\08-visual-compile.json",
+      "archivePath": "worktree/artifacts/kings-starter/08-visual-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\08-visual-result.json",
+      "archivePath": "worktree/artifacts/kings-starter/08-visual-result.json",
+      "bytes": 903,
+      "sha256": "b3c8638e6f4928f9caa8758c07c97fffcffb225cb8b3bf5a4505f439848f0b7c"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\08-visual-start.json",
+      "archivePath": "worktree/artifacts/kings-starter/08-visual-start.json",
+      "bytes": 923,
+      "sha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\09-session-full.txt",
+      "archivePath": "worktree/artifacts/kings-starter/09-session-full.txt",
+      "bytes": 7627,
+      "sha256": "3eeafeb910bdbfdd41115f3fad157b81b1f43d2f95a95af3f2569cae1fbf2e54"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\10-ui-full-progress.json",
+      "archivePath": "worktree/artifacts/kings-starter/10-ui-full-progress.json",
+      "bytes": 404,
+      "sha256": "1e4822a0756572b1853f2891b22dec57564adf3e2844a1fd81940f09f2ad8c0a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\10-ui-full-result.json",
+      "archivePath": "worktree/artifacts/kings-starter/10-ui-full-result.json",
+      "bytes": 18205,
+      "sha256": "a44f18369458b0f4cdfcdc60441af3f96d42898ee173c95cacd514c4be471c03"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\10-ui-full-start.json",
+      "archivePath": "worktree/artifacts/kings-starter/10-ui-full-start.json",
+      "bytes": 886,
+      "sha256": "5024f996519376258020a62f5a4902d821b874bc2acc670380bfcc363ee3648e"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\11-capture-compile.json",
+      "archivePath": "worktree/artifacts/kings-starter/11-capture-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\11-capture-result.json",
+      "archivePath": "worktree/artifacts/kings-starter/11-capture-result.json",
+      "bytes": 2544,
+      "sha256": "6a7a25adb7a432e8359cd5c1243f8e2490acff53a4b3df4d7e463e98d8e77489"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\11-capture-start.json",
+      "archivePath": "worktree/artifacts/kings-starter/11-capture-start.json",
+      "bytes": 933,
+      "sha256": "dd1e3d3571cb1a6cbd3710d7e4957ad770e55e9d2e0b307313c30918843e4c29"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\12-compile-final-status.json",
+      "archivePath": "worktree/artifacts/kings-starter/12-compile-final-status.json",
+      "bytes": 493,
+      "sha256": "eba9a47077a0c60e37c3ae14a46acff181f61366efd323795de2ae1d56276704"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\12-editor-final-status.json",
+      "archivePath": "worktree/artifacts/kings-starter/12-editor-final-status.json",
+      "bytes": 718,
+      "sha256": "feed47edea3ae7a8eb507437a336263217d60bdcfd49ad7457c0a4b51c1559b2"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\12-editor-stop-identity.json",
+      "archivePath": "worktree/artifacts/kings-starter/12-editor-stop-identity.json",
+      "bytes": 476,
+      "sha256": "6bb2f2317e19587c7e1f8c3f5d46425a33e3efeee1925ed22fcd2a51a86d13c7"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\12-editor-stopped.json",
+      "archivePath": "worktree/artifacts/kings-starter/12-editor-stopped.json",
+      "bytes": 84,
+      "sha256": "97e9239117206d4bcb221d937c2d4c662f472123fe7575997e84ded5236823f4"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\12-generated-emoji-diff.txt",
+      "archivePath": "worktree/artifacts/kings-starter/12-generated-emoji-diff.txt",
+      "bytes": 8389378,
+      "sha256": "a78ba438dd3fda6709075e5a7816accdebd618cefaaf1e5b21be1be4ed88d2bd"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\12-generated-font-diff.txt",
+      "archivePath": "worktree/artifacts/kings-starter/12-generated-font-diff.txt",
+      "bytes": 6577165,
+      "sha256": "beab5a054b54dcdc3ae170856131371cd5fa38c9d56ac13d758dda7606fc78d9"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\12-header-pixels.jsonl",
+      "archivePath": "worktree/artifacts/kings-starter/12-header-pixels.jsonl",
+      "bytes": 1430,
+      "sha256": "a0a2bec06540d943677527b8c13f5fe2cd276784a39d723af98c7aad776fcf18"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\12-production-source-comparison.txt",
+      "archivePath": "worktree/artifacts/kings-starter/12-production-source-comparison.txt",
+      "bytes": 8389406,
+      "sha256": "aef4f5838edb2c69a992a7a260a9703c2067779e9f08e858e9a0da6f38f44a72"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\manifest.json",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/manifest.json",
+      "bytes": 1398,
+      "sha256": "28d5d97e3f3c67efd26224e38aa2d1075e078fd09d652c8d29de957a65df7f7d"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-English.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-English.png",
+      "bytes": 36580,
+      "sha256": "489343f9672ad2cc68d64325aa6976a8304bfa08c81c14b6fedae2a0238c3ca7"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-German.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-German.png",
+      "bytes": 39688,
+      "sha256": "bc0f6439bf02040b206ad3342ae0723520e9466d77088899b33e98b128269ba7"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-small-English-False-last.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-small-English-False-last.png",
+      "bytes": 31508,
+      "sha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-small-English-False-top.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-small-English-False-top.png",
+      "bytes": 40759,
+      "sha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-small-English-True-last.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-small-English-True-last.png",
+      "bytes": 31720,
+      "sha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-small-English-True-top.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-small-English-True-top.png",
+      "bytes": 41388,
+      "sha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-small-German-False-last.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-small-German-False-last.png",
+      "bytes": 33840,
+      "sha256": "72ad9acc41de777994fc717ad29757950590ac2884a0a3ed82ca6177e3ef85c1"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-small-German-False-top.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-small-German-False-top.png",
+      "bytes": 43564,
+      "sha256": "d4476be0cde6aabe268f69c2c3e31588850f56fd4c890f9929d8c42f587b6149"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-small-German-True-last.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-small-German-True-last.png",
+      "bytes": 33993,
+      "sha256": "38bdb2192dc9da35e25fe24f33d930a32ed4acce6d684d8ceb1a9ec5c8b29cbf"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\after-full-before-frame-fence\\starter-small-German-True-top.png",
+      "archivePath": "worktree/artifacts/kings-starter/after-full-before-frame-fence/starter-small-German-True-top.png",
+      "bytes": 44149,
+      "sha256": "d0dc966813cc684700634a5b18324e533cce865e520bd96588aa75961a3ecb57"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\cli-commands.json",
+      "archivePath": "worktree/artifacts/kings-starter/cli-commands.json",
+      "bytes": 343275,
+      "sha256": "9b1e156f96bde9f1255f3c704a0d48167f2f2abf9ddf7def8107bd7dbdf657b1"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\editor-identity.json",
+      "archivePath": "worktree/artifacts/kings-starter/editor-identity.json",
+      "bytes": 477,
+      "sha256": "381986c08c1aee0c92692bc45f7e442c63c4eaac1bfd70156e5e1c186bda31b1"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\editor.log",
+      "archivePath": "worktree/artifacts/kings-starter/editor.log",
+      "bytes": 565864,
+      "sha256": "72574263e00ed12f42bf5bead73039753e0dd21625c4f60bcae29ebd5540458d"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-English.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-English.png",
+      "bytes": 38592,
+      "sha256": "b692f35731723d86efaa7aa8a82baac9fd6f511a996188bbb0aecb9da36c4113"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-German.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-German.png",
+      "bytes": 42537,
+      "sha256": "3a907861e17f4740fcdb03e3fedceffb2b0f2bef446d5902c1868a986d7a301c"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-English-False-last.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-English-False-last.png",
+      "bytes": 32447,
+      "sha256": "15dd3719791a6fc8e727855a999dbc0dbdc4c35250932dfd734056fb22d68a03"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-English-False-top.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-English-False-top.png",
+      "bytes": 42249,
+      "sha256": "ac1f5f3e85067f37bf1abde1a5655a0b2050d0c694f0852d6daaffb07b6d7fee"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-English-False.txt",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-English-False.txt",
+      "bytes": 212,
+      "sha256": "4e430bc60511fd884c62985bacc0b83cb37620b13e7a5dc4625639184bd19de3"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-English-True-last.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-English-True-last.png",
+      "bytes": 32815,
+      "sha256": "fda43b481ae4913ccaebc244ec1eea7e03f9227799bbc2a3cefab1e6f6c3b381"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-English-True-top.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-English-True-top.png",
+      "bytes": 43022,
+      "sha256": "94b02cd362863e7f073b416a97d101d490750ebc358d3b6c88a6d82bc6cbfe03"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-English-True.txt",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-English-True.txt",
+      "bytes": 212,
+      "sha256": "4e430bc60511fd884c62985bacc0b83cb37620b13e7a5dc4625639184bd19de3"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-German-False-last.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-German-False-last.png",
+      "bytes": 32022,
+      "sha256": "03f765b74dbd3ad30b9848c1a70b2caaf78e1404788fc739de0169b3faf3848a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-German-False-top.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-German-False-top.png",
+      "bytes": 45122,
+      "sha256": "7ab28c517e2fd33c188509d64371874277f224c660573b027af1af3e4aebcc91"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-German-False.txt",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-German-False.txt",
+      "bytes": 212,
+      "sha256": "655b88be0af300644b8a8edf9e1afc4bee07ecb04c69fb352f0406d396f04e4f"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-German-True-last.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-German-True-last.png",
+      "bytes": 32426,
+      "sha256": "bb92bc2b282c9b77f13a38fe8a341383effe4d0d6de72c30592922305f9d0142"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-German-True-top.png",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-German-True-top.png",
+      "bytes": 45523,
+      "sha256": "050aaf9c531fa6438d0cfb9a91e2e790390d78d1f2b01e82fe3b5c915a893865"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-starter\\pre-visual-correction\\starter-small-German-True.txt",
+      "archivePath": "worktree/artifacts/kings-starter/pre-visual-correction/starter-small-German-True.txt",
+      "bytes": 212,
+      "sha256": "655b88be0af300644b8a8edf9e1afc4bee07ecb04c69fb352f0406d396f04e4f"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\01-initial-green.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/01-initial-green.txt",
+      "bytes": 155,
+      "sha256": "7506e7e27f17d695a36ae686bca02871c16a06a2f6ac0f104e1cca270840754d"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\01-initial-red.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/01-initial-red.txt",
+      "bytes": 179,
+      "sha256": "b4e2987a6c7f77ff5f0f030af87bede508352b2eb6c96897c754be3f00e9a76d"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\02-elimination-green.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/02-elimination-green.txt",
+      "bytes": 184,
+      "sha256": "3cc49d62335633f501f0139857c3a61d4dd1a161059364b680714f7b603f089e"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\02-elimination-red.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/02-elimination-red.txt",
+      "bytes": 1769,
+      "sha256": "5a4ceff1d91f30132197c6dc43ed4e8852a30ab1333bf3d09e3ef38b7a5d3d69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\03-next-green.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/03-next-green.txt",
+      "bytes": 274,
+      "sha256": "055f94bb64a3128d94702dda513de285bfb2731dc3494c5c3a7ce3ebb05afbbb"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\03-next-red.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/03-next-red.txt",
+      "bytes": 4185,
+      "sha256": "9f37c38eb3bb74c0e814502b57c7896dfed0f6a77c7c880f9a76ffc56b9dcfd2"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\04-legacy-green.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/04-legacy-green.txt",
+      "bytes": 370,
+      "sha256": "69003087ad69e34575e17863507f1e6590577e0d4ade9cfae9372997abd053a3"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\04-legacy-red.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/04-legacy-red.txt",
+      "bytes": 435,
+      "sha256": "d005c5902564a616dcb1bed0f0bf083cda507c0ee2e362578bfa0cc470ecd362"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\05-kings-session.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/05-kings-session.txt",
+      "bytes": 2121,
+      "sha256": "2c673edd00ee3b283e3cdea4c3d7dd2163c53d5f7e95e41b861390025c75c112"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\05-ui-compile.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/05-ui-compile.json",
+      "bytes": 503,
+      "sha256": "cc20077bec6ac952ea34cdc11d316c1569bcbf69aa02911f4655c4f6b129dcf9"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\05-ui-green-compile.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/05-ui-green-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\05-ui-green-result.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/05-ui-green-result.json",
+      "bytes": 911,
+      "sha256": "36c96967b7252745447ae3c726984bbbced0c7adc87fa4ff52c23134f6796345"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\05-ui-green-start.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/05-ui-green-start.json",
+      "bytes": 959,
+      "sha256": "6c884d4ebf47d3cc3f5eeba05a59b2c7d9be8ba9a4015b88c0702ad02e217e93"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\05-ui-red-result.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/05-ui-red-result.json",
+      "bytes": 1542,
+      "sha256": "2b75e5bc524a7db3698e8a5200371ab438399acd9545ffb8c6d81f8717cd7fe4"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\05-ui-red-start.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/05-ui-red-start.json",
+      "bytes": 959,
+      "sha256": "6c884d4ebf47d3cc3f5eeba05a59b2c7d9be8ba9a4015b88c0702ad02e217e93"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\06-layout-compile.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/06-layout-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\06-layout-green-compile.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/06-layout-green-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\06-layout-green-result.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/06-layout-green-result.json",
+      "bytes": 903,
+      "sha256": "42021c8d1e736d079f189db1614d8fdc29b4b622ea853b085d59c3fba7194b8b"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\06-layout-green-start.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/06-layout-green-start.json",
+      "bytes": 923,
+      "sha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\06-layout-red-result.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/06-layout-red-result.json",
+      "bytes": 1511,
+      "sha256": "0ce812fbc116372557b1466fcc551b57fd25dc802784d57c76ecde6b8af0d616"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\06-layout-start.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/06-layout-start.json",
+      "bytes": 923,
+      "sha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\07-guards.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/07-guards.txt",
+      "bytes": 544,
+      "sha256": "2a9b34f478f6df968874ef993a14f30d238f48fe17543156119e0f243051cac6"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\08-visual-compile.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/08-visual-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\08-visual-result.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/08-visual-result.json",
+      "bytes": 903,
+      "sha256": "b3c8638e6f4928f9caa8758c07c97fffcffb225cb8b3bf5a4505f439848f0b7c"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\08-visual-start.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/08-visual-start.json",
+      "bytes": 923,
+      "sha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\09-session-full.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/09-session-full.txt",
+      "bytes": 7627,
+      "sha256": "3eeafeb910bdbfdd41115f3fad157b81b1f43d2f95a95af3f2569cae1fbf2e54"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\10-ui-full-progress.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/10-ui-full-progress.json",
+      "bytes": 404,
+      "sha256": "1e4822a0756572b1853f2891b22dec57564adf3e2844a1fd81940f09f2ad8c0a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\10-ui-full-result.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/10-ui-full-result.json",
+      "bytes": 18205,
+      "sha256": "a44f18369458b0f4cdfcdc60441af3f96d42898ee173c95cacd514c4be471c03"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\10-ui-full-start.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/10-ui-full-start.json",
+      "bytes": 886,
+      "sha256": "5024f996519376258020a62f5a4902d821b874bc2acc670380bfcc363ee3648e"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\11-capture-compile.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/11-capture-compile.json",
+      "bytes": 484,
+      "sha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\11-capture-result.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/11-capture-result.json",
+      "bytes": 2544,
+      "sha256": "6a7a25adb7a432e8359cd5c1243f8e2490acff53a4b3df4d7e463e98d8e77489"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\11-capture-start.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/11-capture-start.json",
+      "bytes": 933,
+      "sha256": "dd1e3d3571cb1a6cbd3710d7e4957ad770e55e9d2e0b307313c30918843e4c29"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\12-compile-final-status.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/12-compile-final-status.json",
+      "bytes": 493,
+      "sha256": "eba9a47077a0c60e37c3ae14a46acff181f61366efd323795de2ae1d56276704"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\12-editor-final-status.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/12-editor-final-status.json",
+      "bytes": 718,
+      "sha256": "feed47edea3ae7a8eb507437a336263217d60bdcfd49ad7457c0a4b51c1559b2"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\12-editor-stop-identity.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/12-editor-stop-identity.json",
+      "bytes": 476,
+      "sha256": "6bb2f2317e19587c7e1f8c3f5d46425a33e3efeee1925ed22fcd2a51a86d13c7"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\12-editor-stopped.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/12-editor-stopped.json",
+      "bytes": 84,
+      "sha256": "97e9239117206d4bcb221d937c2d4c662f472123fe7575997e84ded5236823f4"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\12-header-pixels.jsonl",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/12-header-pixels.jsonl",
+      "bytes": 1430,
+      "sha256": "a0a2bec06540d943677527b8c13f5fe2cd276784a39d723af98c7aad776fcf18"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\editor-identity.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/editor-identity.json",
+      "bytes": 477,
+      "sha256": "381986c08c1aee0c92692bc45f7e442c63c4eaac1bfd70156e5e1c186bda31b1"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\production-source-comparison.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/production-source-comparison.json",
+      "bytes": 346,
+      "sha256": "b42567de5d666edbacdcec6d36371596de9d47e2b1b1cc3d5d07842ea1e62f5a"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\manifest.json",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/manifest.json",
+      "bytes": 1398,
+      "sha256": "28d5d97e3f3c67efd26224e38aa2d1075e078fd09d652c8d29de957a65df7f7d"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-English.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-English.png",
+      "bytes": 36580,
+      "sha256": "489343f9672ad2cc68d64325aa6976a8304bfa08c81c14b6fedae2a0238c3ca7"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-German.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-German.png",
+      "bytes": 39688,
+      "sha256": "bc0f6439bf02040b206ad3342ae0723520e9466d77088899b33e98b128269ba7"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-small-English-False-last.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-small-English-False-last.png",
+      "bytes": 31508,
+      "sha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-small-English-False-top.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-small-English-False-top.png",
+      "bytes": 40759,
+      "sha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-small-English-True-last.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-small-English-True-last.png",
+      "bytes": 31720,
+      "sha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-small-English-True-top.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-small-English-True-top.png",
+      "bytes": 41388,
+      "sha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-small-German-False-last.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-small-German-False-last.png",
+      "bytes": 33840,
+      "sha256": "72ad9acc41de777994fc717ad29757950590ac2884a0a3ed82ca6177e3ef85c1"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-small-German-False-top.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-small-German-False-top.png",
+      "bytes": 43564,
+      "sha256": "d4476be0cde6aabe268f69c2c3e31588850f56fd4c890f9929d8c42f587b6149"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-small-German-True-last.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-small-German-True-last.png",
+      "bytes": 33993,
+      "sha256": "38bdb2192dc9da35e25fe24f33d930a32ed4acce6d684d8ceb1a9ec5c8b29cbf"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\screenshots\\starter-small-German-True-top.png",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/screenshots/starter-small-German-True-top.png",
+      "bytes": 44149,
+      "sha256": "d0dc966813cc684700634a5b18324e533cce865e520bd96588aa75961a3ecb57"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\starter-small-English-False.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/starter-small-English-False.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\starter-small-English-True.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/starter-small-English-True.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\starter-small-German-False.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/starter-small-German-False.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\evidence\\starter-small-German-True.txt",
+      "archivePath": "worktree/docs/validation/kings-starter/evidence/starter-small-German-True.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\docs\\validation\\kings-starter\\report.md",
+      "archivePath": "worktree/docs/validation/kings-starter/report.md",
+      "bytes": 7875,
+      "sha256": "5a80ebd6317943756dbf410dff6ff8e92465e32a4ceba150a7f01c485fe99810"
+    }
+  ],
+  "gitCanonical": [
+    {
+      "path": "docs/validation/kings-starter/evidence/01-initial-green.txt",
+      "bytes": 153,
+      "gitBlobSha256": "1c676e6f683dbdf03887a8cb948828ec12e08ac333b9fce92365c17419849990",
+      "worktreeSha256": "7506e7e27f17d695a36ae686bca02871c16a06a2f6ac0f104e1cca270840754d",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/01-initial-red.txt",
+      "bytes": 177,
+      "gitBlobSha256": "42e168be2c437412bb5d12cdb39026ee273fb5240714a8ee21cedd6301f2b35b",
+      "worktreeSha256": "b4e2987a6c7f77ff5f0f030af87bede508352b2eb6c96897c754be3f00e9a76d",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/02-elimination-green.txt",
+      "bytes": 181,
+      "gitBlobSha256": "b963f9b5986a549a22e6f447e6cbc15f876c73c339d928498ae92c4da8fc2b5c",
+      "worktreeSha256": "3cc49d62335633f501f0139857c3a61d4dd1a161059364b680714f7b603f089e",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/02-elimination-red.txt",
+      "bytes": 1762,
+      "gitBlobSha256": "e5691d2489aa0528685469df42ae515fac5fe4a5a97e0820dde62f0ac30d793b",
+      "worktreeSha256": "5a4ceff1d91f30132197c6dc43ed4e8852a30ab1333bf3d09e3ef38b7a5d3d69",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/03-next-green.txt",
+      "bytes": 270,
+      "gitBlobSha256": "67f8cbf5f15932a13d94c3b23baa5fe74f98f9fdd1ee529871eb3c8068390158",
+      "worktreeSha256": "055f94bb64a3128d94702dda513de285bfb2731dc3494c5c3a7ce3ebb05afbbb",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/03-next-red.txt",
+      "bytes": 4175,
+      "gitBlobSha256": "0e46cfb076983bcdb988b92bbeae48878603000fa8419e309e5f3557998ff3e0",
+      "worktreeSha256": "9f37c38eb3bb74c0e814502b57c7896dfed0f6a77c7c880f9a76ffc56b9dcfd2",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/04-legacy-green.txt",
+      "bytes": 365,
+      "gitBlobSha256": "299a153bc8a7129bd9ae67eb8da3a6def909f34f719e4074571dd99fbd721b5c",
+      "worktreeSha256": "69003087ad69e34575e17863507f1e6590577e0d4ade9cfae9372997abd053a3",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/04-legacy-red.txt",
+      "bytes": 430,
+      "gitBlobSha256": "c878ba78ab3e122ead5f8af33f8d62d16f608b1ae335c2acd0a406fc0695e788",
+      "worktreeSha256": "d005c5902564a616dcb1bed0f0bf083cda507c0ee2e362578bfa0cc470ecd362",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/05-kings-session.txt",
+      "bytes": 2097,
+      "gitBlobSha256": "4c408d3f9463a18264910fcc783384ed300e596508d7671a63efbcebb6ee4e9a",
+      "worktreeSha256": "2c673edd00ee3b283e3cdea4c3d7dd2163c53d5f7e95e41b861390025c75c112",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/05-ui-compile.json",
+      "bytes": 484,
+      "gitBlobSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeSha256": "cc20077bec6ac952ea34cdc11d316c1569bcbf69aa02911f4655c4f6b129dcf9",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/05-ui-green-compile.json",
+      "bytes": 484,
+      "gitBlobSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/05-ui-green-result.json",
+      "bytes": 876,
+      "gitBlobSha256": "93b3a425a9ec8b253baefab07934a0d910b1845c4dbed88d9340814e61e9f3b7",
+      "worktreeSha256": "36c96967b7252745447ae3c726984bbbced0c7adc87fa4ff52c23134f6796345",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/05-ui-green-start.json",
+      "bytes": 923,
+      "gitBlobSha256": "089b838f7a9bb69295045126f05cb80ef29768308a384d22c83b0abe713247b4",
+      "worktreeSha256": "6c884d4ebf47d3cc3f5eeba05a59b2c7d9be8ba9a4015b88c0702ad02e217e93",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/05-ui-red-result.json",
+      "bytes": 1507,
+      "gitBlobSha256": "29401140d42efa3322f7cdc42cd915b04926b45a05e8f61c3eef0f7fd4c0ef5c",
+      "worktreeSha256": "2b75e5bc524a7db3698e8a5200371ab438399acd9545ffb8c6d81f8717cd7fe4",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/05-ui-red-start.json",
+      "bytes": 923,
+      "gitBlobSha256": "089b838f7a9bb69295045126f05cb80ef29768308a384d22c83b0abe713247b4",
+      "worktreeSha256": "6c884d4ebf47d3cc3f5eeba05a59b2c7d9be8ba9a4015b88c0702ad02e217e93",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/06-layout-compile.json",
+      "bytes": 484,
+      "gitBlobSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/06-layout-green-compile.json",
+      "bytes": 484,
+      "gitBlobSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/06-layout-green-result.json",
+      "bytes": 868,
+      "gitBlobSha256": "629bcc36f579ca70595b261717d31e85a7170d67b0aa02e7e7d6af1bd83965a7",
+      "worktreeSha256": "42021c8d1e736d079f189db1614d8fdc29b4b622ea853b085d59c3fba7194b8b",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/06-layout-green-start.json",
+      "bytes": 923,
+      "gitBlobSha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b",
+      "worktreeSha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/06-layout-red-result.json",
+      "bytes": 1476,
+      "gitBlobSha256": "8efafa7d9f162f56bcfa38122f9444cc772837f470d591c48dcff97e1c1f58be",
+      "worktreeSha256": "0ce812fbc116372557b1466fcc551b57fd25dc802784d57c76ecde6b8af0d616",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/06-layout-start.json",
+      "bytes": 923,
+      "gitBlobSha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b",
+      "worktreeSha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/07-guards.txt",
+      "bytes": 537,
+      "gitBlobSha256": "c0b52f7893ef8c354937b29b0f4ba0bc8641a0eb19f70f5c752595fd64d14600",
+      "worktreeSha256": "2a9b34f478f6df968874ef993a14f30d238f48fe17543156119e0f243051cac6",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/08-visual-compile.json",
+      "bytes": 484,
+      "gitBlobSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/08-visual-result.json",
+      "bytes": 868,
+      "gitBlobSha256": "8ed03a8de2013d08ae73c16945b909b551d10c42a9d4a3374ed9618cd6e91f4f",
+      "worktreeSha256": "b3c8638e6f4928f9caa8758c07c97fffcffb225cb8b3bf5a4505f439848f0b7c",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/08-visual-start.json",
+      "bytes": 923,
+      "gitBlobSha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b",
+      "worktreeSha256": "1b89e00cc935f44dd836e3aa07f6c4bfddf17f64bd89bd027402b0123144231b",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/09-session-full.txt",
+      "bytes": 7533,
+      "gitBlobSha256": "4b8559ff9577563608980405c8eca54f62b04b882f3b6144fda77d4f8fe090ca",
+      "worktreeSha256": "3eeafeb910bdbfdd41115f3fad157b81b1f43d2f95a95af3f2569cae1fbf2e54",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/10-ui-full-progress.json",
+      "bytes": 404,
+      "gitBlobSha256": "1e4822a0756572b1853f2891b22dec57564adf3e2844a1fd81940f09f2ad8c0a",
+      "worktreeSha256": "1e4822a0756572b1853f2891b22dec57564adf3e2844a1fd81940f09f2ad8c0a",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/10-ui-full-result.json",
+      "bytes": 18205,
+      "gitBlobSha256": "a44f18369458b0f4cdfcdc60441af3f96d42898ee173c95cacd514c4be471c03",
+      "worktreeSha256": "a44f18369458b0f4cdfcdc60441af3f96d42898ee173c95cacd514c4be471c03",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/10-ui-full-start.json",
+      "bytes": 851,
+      "gitBlobSha256": "a0646a0c4d2b469076b40e9aec77295426bf517624177bad652b6294f5a01768",
+      "worktreeSha256": "5024f996519376258020a62f5a4902d821b874bc2acc670380bfcc363ee3648e",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/11-capture-compile.json",
+      "bytes": 484,
+      "gitBlobSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeSha256": "6f7e6ca6624fbc1926d8cfb7a3fac039af88694616f6f6eec482661f60e8766a",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/11-capture-result.json",
+      "bytes": 2544,
+      "gitBlobSha256": "6a7a25adb7a432e8359cd5c1243f8e2490acff53a4b3df4d7e463e98d8e77489",
+      "worktreeSha256": "6a7a25adb7a432e8359cd5c1243f8e2490acff53a4b3df4d7e463e98d8e77489",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/11-capture-start.json",
+      "bytes": 933,
+      "gitBlobSha256": "dd1e3d3571cb1a6cbd3710d7e4957ad770e55e9d2e0b307313c30918843e4c29",
+      "worktreeSha256": "dd1e3d3571cb1a6cbd3710d7e4957ad770e55e9d2e0b307313c30918843e4c29",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/12-compile-final-status.json",
+      "bytes": 493,
+      "gitBlobSha256": "eba9a47077a0c60e37c3ae14a46acff181f61366efd323795de2ae1d56276704",
+      "worktreeSha256": "eba9a47077a0c60e37c3ae14a46acff181f61366efd323795de2ae1d56276704",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/12-editor-final-status.json",
+      "bytes": 718,
+      "gitBlobSha256": "feed47edea3ae7a8eb507437a336263217d60bdcfd49ad7457c0a4b51c1559b2",
+      "worktreeSha256": "feed47edea3ae7a8eb507437a336263217d60bdcfd49ad7457c0a4b51c1559b2",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/12-editor-stop-identity.json",
+      "bytes": 471,
+      "gitBlobSha256": "7c808387340fdca6a75619ece35fd0664c0b287e46b0ec76d846f427564d635a",
+      "worktreeSha256": "6bb2f2317e19587c7e1f8c3f5d46425a33e3efeee1925ed22fcd2a51a86d13c7",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/12-editor-stopped.json",
+      "bytes": 79,
+      "gitBlobSha256": "074354e9c8c41b32f1938b546622602d6a665d5471a1afbf9d88fb3f213b5d7c",
+      "worktreeSha256": "97e9239117206d4bcb221d937c2d4c662f472123fe7575997e84ded5236823f4",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/12-header-pixels.jsonl",
+      "bytes": 1427,
+      "gitBlobSha256": "dd2bfe8baef8402eb06a303fa694fe1e861cfcb97dae23519840e0af45c4cd4e",
+      "worktreeSha256": "a0a2bec06540d943677527b8c13f5fe2cd276784a39d723af98c7aad776fcf18",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/editor-identity.json",
+      "bytes": 471,
+      "gitBlobSha256": "7c13373c0fbe5b8aa90edc6382508961c8ba0f2bb7494f6a6f4d1f89ce1e5c21",
+      "worktreeSha256": "381986c08c1aee0c92692bc45f7e442c63c4eaac1bfd70156e5e1c186bda31b1",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/production-source-comparison.json",
+      "bytes": 335,
+      "gitBlobSha256": "4459590ad0d525d63574641089a0ed2bd08da29b05996330d260243b36431fff",
+      "worktreeSha256": "b42567de5d666edbacdcec6d36371596de9d47e2b1b1cc3d5d07842ea1e62f5a",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/manifest.json",
+      "bytes": 1356,
+      "gitBlobSha256": "f3ca8c8e228ad1a2ee5c90a946ff0b62a449ae0939f4c14552bb209ad33062a8",
+      "worktreeSha256": "28d5d97e3f3c67efd26224e38aa2d1075e078fd09d652c8d29de957a65df7f7d",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-English.png",
+      "bytes": 36580,
+      "gitBlobSha256": "489343f9672ad2cc68d64325aa6976a8304bfa08c81c14b6fedae2a0238c3ca7",
+      "worktreeSha256": "489343f9672ad2cc68d64325aa6976a8304bfa08c81c14b6fedae2a0238c3ca7",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-German.png",
+      "bytes": 39688,
+      "gitBlobSha256": "bc0f6439bf02040b206ad3342ae0723520e9466d77088899b33e98b128269ba7",
+      "worktreeSha256": "bc0f6439bf02040b206ad3342ae0723520e9466d77088899b33e98b128269ba7",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-small-English-False-last.png",
+      "bytes": 31508,
+      "gitBlobSha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274",
+      "worktreeSha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-small-English-False-top.png",
+      "bytes": 40759,
+      "gitBlobSha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6",
+      "worktreeSha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-small-English-True-last.png",
+      "bytes": 31720,
+      "gitBlobSha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee",
+      "worktreeSha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-small-English-True-top.png",
+      "bytes": 41388,
+      "gitBlobSha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad",
+      "worktreeSha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-small-German-False-last.png",
+      "bytes": 33840,
+      "gitBlobSha256": "72ad9acc41de777994fc717ad29757950590ac2884a0a3ed82ca6177e3ef85c1",
+      "worktreeSha256": "72ad9acc41de777994fc717ad29757950590ac2884a0a3ed82ca6177e3ef85c1",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-small-German-False-top.png",
+      "bytes": 43564,
+      "gitBlobSha256": "d4476be0cde6aabe268f69c2c3e31588850f56fd4c890f9929d8c42f587b6149",
+      "worktreeSha256": "d4476be0cde6aabe268f69c2c3e31588850f56fd4c890f9929d8c42f587b6149",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-small-German-True-last.png",
+      "bytes": 33993,
+      "gitBlobSha256": "38bdb2192dc9da35e25fe24f33d930a32ed4acce6d684d8ceb1a9ec5c8b29cbf",
+      "worktreeSha256": "38bdb2192dc9da35e25fe24f33d930a32ed4acce6d684d8ceb1a9ec5c8b29cbf",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/screenshots/starter-small-German-True-top.png",
+      "bytes": 44149,
+      "gitBlobSha256": "d0dc966813cc684700634a5b18324e533cce865e520bd96588aa75961a3ecb57",
+      "worktreeSha256": "d0dc966813cc684700634a5b18324e533cce865e520bd96588aa75961a3ecb57",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": false
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/starter-small-English-False.txt",
+      "bytes": 323,
+      "gitBlobSha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69",
+      "worktreeSha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/starter-small-English-True.txt",
+      "bytes": 323,
+      "gitBlobSha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69",
+      "worktreeSha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/starter-small-German-False.txt",
+      "bytes": 323,
+      "gitBlobSha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69",
+      "worktreeSha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/evidence/starter-small-German-True.txt",
+      "bytes": 323,
+      "gitBlobSha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69",
+      "worktreeSha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69",
+      "worktreeBytesEqual": true,
+      "textLineEndingEquivalent": true
+    },
+    {
+      "path": "docs/validation/kings-starter/report.md",
+      "bytes": 7873,
+      "gitBlobSha256": "548f34598251846357c33312344153d69b7ac35b73eb6e5e08ff10caa21200c9",
+      "worktreeSha256": "5a80ebd6317943756dbf410dff6ff8e92465e32a4ceba150a7f01c485fe99810",
+      "worktreeBytesEqual": false,
+      "textLineEndingEquivalent": true
+    }
+  ],
+  "finalScreenshots": [
+    {
+      "file": "starter-English.png",
+      "manifestSha256": "489343f9672ad2cc68d64325aa6976a8304bfa08c81c14b6fedae2a0238c3ca7",
+      "rawSha256": "489343f9672ad2cc68d64325aa6976a8304bfa08c81c14b6fedae2a0238c3ca7",
+      "gitBlobSha256": "489343f9672ad2cc68d64325aa6976a8304bfa08c81c14b6fedae2a0238c3ca7",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-German.png",
+      "manifestSha256": "bc0f6439bf02040b206ad3342ae0723520e9466d77088899b33e98b128269ba7",
+      "rawSha256": "bc0f6439bf02040b206ad3342ae0723520e9466d77088899b33e98b128269ba7",
+      "gitBlobSha256": "bc0f6439bf02040b206ad3342ae0723520e9466d77088899b33e98b128269ba7",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-small-English-False-last.png",
+      "manifestSha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274",
+      "rawSha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274",
+      "gitBlobSha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-small-English-False-top.png",
+      "manifestSha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6",
+      "rawSha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6",
+      "gitBlobSha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-small-English-True-last.png",
+      "manifestSha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee",
+      "rawSha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee",
+      "gitBlobSha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-small-English-True-top.png",
+      "manifestSha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad",
+      "rawSha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad",
+      "gitBlobSha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-small-German-False-last.png",
+      "manifestSha256": "72ad9acc41de777994fc717ad29757950590ac2884a0a3ed82ca6177e3ef85c1",
+      "rawSha256": "72ad9acc41de777994fc717ad29757950590ac2884a0a3ed82ca6177e3ef85c1",
+      "gitBlobSha256": "72ad9acc41de777994fc717ad29757950590ac2884a0a3ed82ca6177e3ef85c1",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-small-German-False-top.png",
+      "manifestSha256": "d4476be0cde6aabe268f69c2c3e31588850f56fd4c890f9929d8c42f587b6149",
+      "rawSha256": "d4476be0cde6aabe268f69c2c3e31588850f56fd4c890f9929d8c42f587b6149",
+      "gitBlobSha256": "d4476be0cde6aabe268f69c2c3e31588850f56fd4c890f9929d8c42f587b6149",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-small-German-True-last.png",
+      "manifestSha256": "38bdb2192dc9da35e25fe24f33d930a32ed4acce6d684d8ceb1a9ec5c8b29cbf",
+      "rawSha256": "38bdb2192dc9da35e25fe24f33d930a32ed4acce6d684d8ceb1a9ec5c8b29cbf",
+      "gitBlobSha256": "38bdb2192dc9da35e25fe24f33d930a32ed4acce6d684d8ceb1a9ec5c8b29cbf",
+      "bothMatch": true
+    },
+    {
+      "file": "starter-small-German-True-top.png",
+      "manifestSha256": "d0dc966813cc684700634a5b18324e533cce865e520bd96588aa75961a3ecb57",
+      "rawSha256": "d0dc966813cc684700634a5b18324e533cce865e520bd96588aa75961a3ecb57",
+      "gitBlobSha256": "d0dc966813cc684700634a5b18324e533cce865e520bd96588aa75961a3ecb57",
+      "bothMatch": true
+    }
+  ],
+  "canonicalSummary": {
+    "entries": 55,
+    "exactWorktreeGitMatches": 28,
+    "textOnlyNormalizedMatches": 27
+  },
+  "scope": "Original raw artifacts/failed outputs and actual working bytes are distinct from canonical committed Git blobs. Final screenshot catalog verified against both bytes."
+}

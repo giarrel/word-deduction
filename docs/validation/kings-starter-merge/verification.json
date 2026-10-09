@@ -1,0 +1,46 @@
+{
+  "pins": {
+    "fullSuite": "e7fa596b2ecead1a5f7cdb2c7d1f962e238aa952",
+    "handoff": "e76c702648d4c7324041487e655e3e6e50f7bab5",
+    "merge": "465ebe9712a15a2014d3eedaf736663a630b1b51"
+  },
+  "trees": {
+    "fullSuite": {
+      "game": "a8070948e079f1ee90cc19967cdd4e214e4da06a",
+      "tools": "21f1083d7530e62dfffa558e971e0bf64b565884",
+      "tests": "3d587ca978c5d4a6d12258b324f545ef88464363",
+      "content": "fae305a03886bbde4c514b9ab4606b56be478fdd",
+      "third-party": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+    },
+    "handoff": {
+      "game": "57efdd29b3839485c48001244533101558997657",
+      "tools": "21f1083d7530e62dfffa558e971e0bf64b565884",
+      "tests": "1270fcbf77ca9e8f4d2e5df729f7b89abf4b5fed",
+      "content": "fae305a03886bbde4c514b9ab4606b56be478fdd",
+      "third-party": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+    },
+    "merge": {
+      "game": "57efdd29b3839485c48001244533101558997657",
+      "tools": "21f1083d7530e62dfffa558e971e0bf64b565884",
+      "tests": "1270fcbf77ca9e8f4d2e5df729f7b89abf4b5fed",
+      "content": "fae305a03886bbde4c514b9ab4606b56be478fdd",
+      "third-party": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+    }
+  },
+  "handoffAndMergeInputTreesEqual": true,
+  "productionComparisonPathspec": [
+    "game",
+    "tools",
+    "content",
+    "third-party",
+    ":(exclude)game/Assets/WordDeduction/Tests"
+  ],
+  "productionDiff": "",
+  "afterFullSuiteChangedPaths": [
+    "game/Assets/WordDeduction/Tests/PlayMode/KingsEliminationScreenTests.cs",
+    "tests/Session.Tests/Fixtures/kings-v5-dead-starter.md"
+  ],
+  "postFullSuiteDelta": "One WaitForEndOfFrame in screenshot fixture; fixture provenance Markdown spacing only.",
+  "preservationManifestSha256": "d46be8a1a552fe8a26e4eef826cab3106fb9495c12922285f4fd2d42adb1ca43",
+  "mergerExecuted": "Ancestry/clean-state checks, raw/canonical archive and hashes, separate no-ff merge; no tests, Unity, ADB, build, remote mutation or cleanup."
+}
