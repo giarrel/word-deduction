@@ -20,9 +20,11 @@ namespace WordDeduction.UI
         int pointer = -1;
         int nextPointer = -1;
         VisualElement captured;
-        float startY, lift;
-        bool holding, disposed;
-        bool CardReady => pointer < 0 && lift <= 0.01f && session.Match != null && session.Match.CanAdvance;
+        float startY, lift, grabLift, returnFrom;
+        double returnStarted;
+        const double ReturnDuration = 0.14;
+        bool holding, disposed, showing, readyToAdvance;
+        bool CardReady => pointer < 0 && lift <= 0.01f && readyToAdvance;
         public bool CanAdvance => contacts.Count == 0 && CardReady;
         public SecretCard(Session session, string owner, HashSet<int> contacts, VisualElement root, VisualElement drag, VisualElement hold, VisualElement face, Label word, VisualElement symbol, Label caption, Button next, ScrollView privateInformation = null)
         {
@@ -52,7 +54,7 @@ namespace WordDeduction.UI
         void Down(PointerDownEvent e, VisualElement target, bool holdMode)
         {
             if (disposed || contacts.Count != 1 || pointer >= 0 || e.button != 0) return;
-            pointer = e.pointerId; startY = e.position.y; holding = holdMode; captured = target;
+            pointer = e.pointerId; startY = e.position.y; grabLift = VisibleLift; holding = holdMode; captured = target;
             captured.CapturePointer(pointer); next.SetEnabled(false);
             if (holding) { lift = 60; Show(); Pose(); }
             e.StopPropagation();
@@ -66,8 +68,11 @@ namespace WordDeduction.UI
                 e.StopPropagation(); return;
             }
             float maximum = Mathf.Clamp(drag.resolvedStyle.height * 0.35f,60,110);
-            lift = Mathf.Clamp(startY - e.position.y,0,maximum);
-            if (lift >= maximum * 0.5f) Show(); else Conceal();
+            float distance = startY - e.position.y;
+            // Catch a returning card where it is, while a fresh deliberate pull
+            // remains necessary to reveal. The visual never trails the finger.
+            lift = Mathf.Clamp(grabLift + distance,0,maximum);
+            if (distance >= maximum * 0.5f) Show(); else Conceal();
             ScrollPrivateInformation(e.position.y, maximum);
             Pose(); e.StopPropagation();
         }
@@ -84,20 +89,21 @@ namespace WordDeduction.UI
         }
         void Show()
         {
-            if (!MobilePrivacy.Ready) return;
+            if (showing || !MobilePrivacy.Ready) return;
             var card = session.RevealCard(owner);
             if (card == null) return;
+            showing = true; readyToAdvance = false;
+            var language = session.Match.Language;
             var text = card.Word;
             bool white = card.Kind == PrivateCardKind.White;
             root.AddToClassList("reading-card");
-            word.text = white ? Copy.Get(session.Match.Language,"whitePrivate") : text ?? "";
+            word.text = white ? Copy.Get(language,"whitePrivate") : text ?? "";
             word.EnableInClassList("white-private",white); word.EnableInClassList("hidden",!white && text == null);
             word.EnableInClassList("whole-word",!white && text != null && !text.Contains(" "));
             if (white) word.style.fontSize = StyleKeyword.Null;
             else if (text != null) FitWord(text);
             if (privateInformation != null)
             {
-                var language = session.Match.Language;
                 role.text = card.Kind == PrivateCardKind.GoodKing ? Copy.Get(language,"goodKingPrivate") : card.Kind == PrivateCardKind.EvilKing ? Copy.Get(language,"evilKingPrivate") : "";
                 leader.text = card.Leader == null ? "" : Copy.Get(language,"privateLeader",card.Leader.DisplayName);
                 known.text = card.KnownParticipants.Count == 0 ? "" : Copy.Get(language,card.Kind == PrivateCardKind.GoodKing ? "privateEvilNames" : "privateTeamNames") + "\n" + string.Join("\n",card.KnownParticipants.Select(p => p.DisplayName));
@@ -126,8 +132,10 @@ namespace WordDeduction.UI
             if (available > 0 && measuredSize > 0 && widest > 0)
                 word.style.fontSize = Mathf.Clamp(Mathf.Floor(measuredSize * available / widest),22,32);
         }
-        void Conceal()
+        void Conceal(bool force = false)
         {
+            if (!showing && !force) return;
+            showing = false;
             word.text = ""; session.HideWord(); word.EnableInClassList("hidden",true);
             if (privateInformation != null)
             {
@@ -136,6 +144,10 @@ namespace WordDeduction.UI
             }
             root.RemoveFromClassList("reading-card");
             symbol.EnableInClassList("hidden",false); caption.EnableInClassList("hidden",false); face.RemoveFromClassList("revealed");
+            // A card owns this presentation until the next rendered transition.
+            // Read the detached match projection only when concealment changes;
+            // the authoritative handoff command still validates advancement.
+            readyToAdvance = session.Match?.CanAdvance == true;
         }
         // Captured UITK events can dispatch directly to this target without
         // traversing the root. End the shared contact here as well.
@@ -146,26 +158,37 @@ namespace WordDeduction.UI
         public void Hide(bool immediate)
         {
             // Remove the secret synchronously, before capture callbacks or decoration.
-            Conceal();
+            Conceal(true);
             int oldPointer = pointer; var oldTarget = captured;
             pointer = -1; captured = null; holding = false;
             nextPointer = -1;
             if (oldTarget != null && oldTarget.HasPointerCapture(oldPointer)) oldTarget.ReleasePointer(oldPointer);
             if (immediate || MobilePrivacy.ReduceMotion) { lift = 0; Pose(); }
+            else
+            {
+                // Start at the visible position, including a short partial pull.
+                // Hidden gesture distance must not delay the decorative return.
+                lift = returnFrom = VisibleLift; returnStarted = Time.unscaledTimeAsDouble;
+            }
             next.SetEnabled(CanAdvance);
         }
+        float VisibleLift => float.IsNaN(face.layout.y) ? 0 : Mathf.Min(lift,Mathf.Max(0,face.layout.y - 6));
         void Pose()
         {
             // The gesture threshold stays unchanged; only decoration is bounded so
             // a long owner above the slot is never covered by the lifted card.
-            float visualLift = float.IsNaN(face.layout.y) ? 0 : Mathf.Min(lift,Mathf.Max(0,face.layout.y - 6));
+            float visualLift = VisibleLift;
             face.style.translate = new Translate(0,-visualLift,0);
             face.style.rotate = new Rotate(new Angle(MobilePrivacy.ReduceMotion ? 0 : -visualLift / 45));
         }
         public void Tick()
         {
             if (disposed) return;
-            if (pointer < 0 && lift > 0) { lift = Mathf.MoveTowards(lift,0,Time.unscaledDeltaTime * 700); Pose(); }
+            if (pointer < 0 && lift > 0)
+            {
+                float remaining = 1 - Mathf.Clamp01((float)((Time.unscaledTimeAsDouble - returnStarted) / ReturnDuration));
+                lift = returnFrom * remaining * remaining; Pose();
+            }
             // Keep an already pressed Next button enabled through its own Up.
             // The action still requires every contact to have ended.
             bool pressingNext = contacts.Count == 1 && contacts.Contains(nextPointer);
