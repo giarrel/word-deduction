@@ -170,13 +170,23 @@ namespace WordDeduction.Tests
                     Assert.That(button.worldBound.yMax,Is.LessThanOrEqualTo(scroll.contentViewport.worldBound.yMax+1),name);
                     Assert.That(button.worldBound.height,Is.GreaterThanOrEqualTo(48),name);
                     Assert.That(AllSemantics(fixture).Any(label => label.Trim() == button.tooltip),Is.True,"Public role control is in native semantics.");
+                    if(name=="moreWhite") {
+                        yield return new WaitForSecondsRealtime(0.15f);
+                        fixture.Capture("role-counts-"+language+"-"+example.Item1+"-"+example.Item2+"-white");
+                    }
                 }
                 if(fixture.Session.View.CanSwapSingleRole) {
                     var swap=root.Q<Button>("swapRole"); scroll.ScrollTo(swap); yield return null; yield return null;
+                    Assert.That(swap.worldBound.yMin,Is.GreaterThanOrEqualTo(scroll.contentViewport.worldBound.yMin-1));
                     Assert.That(swap.worldBound.yMax,Is.LessThanOrEqualTo(scroll.contentViewport.worldBound.yMax+1));
+                    Assert.That(swap.worldBound.height,Is.GreaterThanOrEqualTo(48));
+                    yield return new WaitForSecondsRealtime(0.15f);
+                    fixture.Capture("role-counts-"+language+"-"+example.Item1+"-"+example.Item2+"-swap");
                 }
                 scroll.ScrollTo(root.Q<Label>("roleLimit")); yield return null; yield return null;
                 AssertTextFits(root.Q<Label>("roleLimit"));
+                Assert.That(root.Q<Label>("roleLimit").worldBound.yMin,Is.GreaterThanOrEqualTo(scroll.contentViewport.worldBound.yMin-1));
+                Assert.That(root.Q<Label>("roleLimit").worldBound.yMax,Is.LessThanOrEqualTo(scroll.contentViewport.worldBound.yMax+1));
                 yield return new WaitForSecondsRealtime(0.15f);
                 Assert.That(root.Q<Button>("quickMode").resolvedStyle.fontSize,Is.EqualTo(22.5f).Within(0.01f));
                 Assert.That(root.Q<Button>("playButton").worldBound.yMax,Is.LessThanOrEqualTo(616));
