@@ -17,9 +17,9 @@ namespace WordDeduction.Editor
         {
             PlayerSettings.companyName = "giarrel";
             PlayerSettings.productName = "Word Deduction";
-            PlayerSettings.bundleVersion = "1.2.0";
+            PlayerSettings.bundleVersion = "1.3.0";
             PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.giarrel.worddeduction");
-            PlayerSettings.Android.bundleVersionCode = 11;
+            PlayerSettings.Android.bundleVersionCode = 12;
             PlayerSettings.Android.minifyRelease = true;
             PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel26;
             PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevel36;

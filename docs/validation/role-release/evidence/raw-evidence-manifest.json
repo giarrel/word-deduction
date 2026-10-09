@@ -1,0 +1,1953 @@
+{
+  "root": "C:/Users/lucac/Documents/Codex/2026-10-06/sie/work/role-counts/release-build",
+  "source": "b6e6a926bbcc58c7103d79a9f117cbd09e4269e3",
+  "files": [
+    {
+      "path": "02-owned-editor-start.json",
+      "bytes": 270,
+      "sha256": "25bd12aef6bc2078a048912904a6391cb98d9a823a2fdbf0d5da2c403f5bef12"
+    },
+    {
+      "path": "03-suite-source-reuse.json",
+      "bytes": 2030,
+      "sha256": "ae787246df9e43915cfdb537bc9b960b93676fd136922e7f60e6c76f3391749f"
+    },
+    {
+      "path": "04-command-discovery.json",
+      "bytes": 351969,
+      "sha256": "28a253feba9077c86dd5f5cfda3172d37bfaea41e6b908a9ccdf9aa1464e0c57"
+    },
+    {
+      "path": "04-editor-identity.json",
+      "bytes": 477,
+      "sha256": "e9bd083c747f9952e965a73400b1933e6635c9d566321414ac32dca74dba100a"
+    },
+    {
+      "path": "05-before-console.json",
+      "bytes": 1589,
+      "sha256": "ca9beecb1757ae9ae70f046e83517ad602854edc1163fee4b59ad5390752dfda"
+    },
+    {
+      "path": "05-before-console_status.json",
+      "bytes": 939,
+      "sha256": "4721865928b63d3e828fdf7fcf11df77d2ee087efd931aba7156605c870fb82f"
+    },
+    {
+      "path": "05-before-editor_status.json",
+      "bytes": 736,
+      "sha256": "300c159ac7da041cca14241f443c71fd2a25cda6f760f181b18610cb6c523f7a"
+    },
+    {
+      "path": "06-configured-version.json",
+      "bytes": 1145,
+      "sha256": "07805af28f1381cee3b9647c3a1231b85ef48362835b53bc8f679eb9e6164da4"
+    },
+    {
+      "path": "07-before-stop.json",
+      "bytes": 734,
+      "sha256": "371bee2fc18ef6c432e2aa7fa3263aa40d08c56461e67230cf14c8f88de8320a"
+    },
+    {
+      "path": "07-config-preparation.json",
+      "bytes": 372,
+      "sha256": "9b7187b4d65a747ba2f5612a6e1df465590a85206dee6ff2f17efe580fbe5a38"
+    },
+    {
+      "path": "07-editor-stopped.json",
+      "bytes": 106,
+      "sha256": "4dd37c4dfcd5efa74ac7a4f5de16cf3c1e1880141b90d0b64b10c24b8b93e7c1"
+    },
+    {
+      "path": "07-stop-identity.json",
+      "bytes": 460,
+      "sha256": "702cc9490ff294c6ec0026a75c5921d6c234088442b97f38bad799bf0315cf8d"
+    },
+    {
+      "path": "08-final-editor-start.json",
+      "bytes": 327,
+      "sha256": "228eee5767acee38f1692a594efbc9b91d2e77414327d8d805152c28543c3d71"
+    },
+    {
+      "path": "09-final-source-proof.json",
+      "bytes": 2124,
+      "sha256": "07f1000ae6caf763c49db46e121e6ab11a5cc9c238654b044d520398dadf3cf8"
+    },
+    {
+      "path": "10-console-before-test.json",
+      "bytes": 1589,
+      "sha256": "266894f2b62fdfd5c92a97de4e8f29d0cace121f5cbccc513fb5064ea0b9f3d2"
+    },
+    {
+      "path": "10-editor-before-test.json",
+      "bytes": 736,
+      "sha256": "46125b8df84a1e1f51d490c6fbde202fb88ed64bae77ff89344915c8224f43db"
+    },
+    {
+      "path": "10-full-ui-start.json",
+      "bytes": 883,
+      "sha256": "2f441874b784e60a5a8b70ae8a8a7e252a0cc4446ace806687835002a6751218"
+    },
+    {
+      "path": "11-full-ui-progress.json",
+      "bytes": 419,
+      "sha256": "85c9eb32ad9f007c2faa084733640cb9a035c0d694d5c8ba703c5e18498061b5"
+    },
+    {
+      "path": "12-full-ui-progress.json",
+      "bytes": 419,
+      "sha256": "85c9eb32ad9f007c2faa084733640cb9a035c0d694d5c8ba703c5e18498061b5"
+    },
+    {
+      "path": "13-full-ui-result.json",
+      "bytes": 18687,
+      "sha256": "777f767eca00638b807e42d26b595d39d8df55ed1c63c38adb8fc162a9a90efa"
+    },
+    {
+      "path": "15-apk-start.json",
+      "bytes": 230,
+      "sha256": "8edb320324baa75732dd442d526553679d8fe48c895e31a6386b2cadc60468da"
+    },
+    {
+      "path": "15-compile-before-build.json",
+      "bytes": 506,
+      "sha256": "0fa1ddb2a549fb0c1ffab1c02372d366964b0a52af0e24ece723540750d61bb0"
+    },
+    {
+      "path": "15-editor-before-build.json",
+      "bytes": 736,
+      "sha256": "b0288979748ae1adfcb8866f8c0c3238364eed9be85c50f845f8133b39d19062"
+    },
+    {
+      "path": "16-apk-progress.json",
+      "bytes": 334,
+      "sha256": "69858f2f4884bbb0eabbb85afda4e60f22e4382ef33912155d69e33b0ae3e18b"
+    },
+    {
+      "path": "17-apk-status.json",
+      "bytes": 334,
+      "sha256": "69858f2f4884bbb0eabbb85afda4e60f22e4382ef33912155d69e33b0ae3e18b"
+    },
+    {
+      "path": "18-apk-build-summary.json",
+      "bytes": 942,
+      "sha256": "0e9b854cb3fe474a14de608252234bcba9ac4ae75fa56133bdc287c7e01d3fc5"
+    },
+    {
+      "path": "18-apk-result.json",
+      "bytes": 633,
+      "sha256": "154bc544e2f2181a06d1833cda1535c3f785c3cf87ff3f233fce3d8b16106d2c"
+    },
+    {
+      "path": "19-apk-warnings.json",
+      "bytes": 2205,
+      "sha256": "5404b80fcd922005fc8ecf01632c54063e89f7bb00738982e96411e24a35ec33"
+    },
+    {
+      "path": "20-post-apk-generated-assets.diff",
+      "bytes": 6691841,
+      "sha256": "a44049672fc0abbb0b97996f7b0638d8c5570adc4ac01397849825fa4bbba944"
+    },
+    {
+      "path": "20-test-editor-identity.json",
+      "bytes": 466,
+      "sha256": "535f78ee5d9762e9bf32b234077c72a89eb408f1325f3bb14a17d3bacaab646b"
+    },
+    {
+      "path": "20-test-editor-state.json",
+      "bytes": 735,
+      "sha256": "c8f9e73fd3ab55d855be4241dc6e1e976fc8e3e82bf190def288ed062b38d2fd"
+    },
+    {
+      "path": "20-test-editor-stopped.json",
+      "bytes": 43,
+      "sha256": "5ca6ed51aa09f0a6c4dc5bb28159d0a11e08dbeb73be23a1b17c3e9789022fc6"
+    },
+    {
+      "path": "21-build-only-editor-start.json",
+      "bytes": 267,
+      "sha256": "adfdcfafedaaacce441c3c34b52926f7f304db78b49d51bdc290a3857cda9b47"
+    },
+    {
+      "path": "21-restart-correction.json",
+      "bytes": 188,
+      "sha256": "2b34da3de16c3bc1783243a8f2568e2504023e2e733f649060e0836689470205"
+    },
+    {
+      "path": "22-build-only-editor-start.json",
+      "bytes": 288,
+      "sha256": "4c79799b489ee25eeefbdf0c0a36cc934cea5b93c68ce264323382988ecaea72"
+    },
+    {
+      "path": "23-reconnect-status.json",
+      "bytes": 406,
+      "sha256": "ac567687b5dbe8e549ad657af8db11041bb93f3ab39969faa3e89b389a048c35"
+    },
+    {
+      "path": "24-build-editor-start.json",
+      "bytes": 256,
+      "sha256": "a6efd2a621fddeb5e17c08ad1398a6acfd548d17b7d81e125cd16c12395ae71a"
+    },
+    {
+      "path": "24-build-editor-window.json",
+      "bytes": 168,
+      "sha256": "b6da592b42d5d7b6e1b8e4a75d1965b642cb5e1662dd0eeae3808b2176f19f55"
+    },
+    {
+      "path": "24-rejected-candidate.md",
+      "bytes": 2131,
+      "sha256": "30359e16210710142005194e60dea1e0f23123255acb925c4dd36d02660794b8"
+    },
+    {
+      "path": "24-scene-backup-preservation.json",
+      "bytes": 584,
+      "sha256": "135c31aecdcf13ab5d464b45ef06718e6602caf455da7228049f43f3a256c1cb"
+    },
+    {
+      "path": "25-clean-apk-start.json",
+      "bytes": 230,
+      "sha256": "4666dda751353307bae592af368c0beb5ee4b71f60616717c2088795ec47ebf7"
+    },
+    {
+      "path": "25-clean-editor-config.json",
+      "bytes": 905,
+      "sha256": "a3ff19f1d20ff4d1f416f839f03c25aab69f1037a0cfac620ac99914f70d1cb7"
+    },
+    {
+      "path": "25-clean-fonts-before-build.json",
+      "bytes": 425,
+      "sha256": "739a1a7aab8f05b03c6f2b76f0150ed5608c5024634b09c874246f2815d1cf00"
+    },
+    {
+      "path": "26-rendered-preservation.json",
+      "bytes": 35626,
+      "sha256": "21ec3faf5565c5058ed4492e419ac1e428bd99521d6d8f08ee0cd2c5dec2b01e"
+    },
+    {
+      "path": "27-clean-apk-progress.json",
+      "bytes": 334,
+      "sha256": "4e78529c25ef14fbbd83de24f620ff2f4f6f761b60c5df6324513a8e2531c740"
+    },
+    {
+      "path": "28-clean-apk-build-summary.json",
+      "bytes": 942,
+      "sha256": "f6a324e9c42db73b41560200f99f27c35c53dea865ba4b026e4d34dea762505e"
+    },
+    {
+      "path": "28-clean-apk-result.json",
+      "bytes": 639,
+      "sha256": "7854cc6651bb96c63a8378da80779ad38c54f87a1d4108ef3f63f246347e0294"
+    },
+    {
+      "path": "28-clean-apk-source-check.json",
+      "bytes": 762,
+      "sha256": "2bf158259bbbd890d049a791b61d16ee4f26e63bd4bd1f8d91734f80cbcae49e"
+    },
+    {
+      "path": "29-post-apk-canonical-assets.json",
+      "bytes": 449,
+      "sha256": "840baf5d938e6f214276e9b1edba8466c454af1507d4854803ae8adb6329481a"
+    },
+    {
+      "path": "30-clean-apk-accepted-source.json",
+      "bytes": 1130,
+      "sha256": "d43f2c32e46f3a3b4c21779501cfa998801aef0b2bce69559d06b4660399045a"
+    },
+    {
+      "path": "30-font-line-ending-proof.json",
+      "bytes": 686,
+      "sha256": "598bb28a8f2085db9add85f1c1215006c3d440a2f53c320a298308c7a8b8af0c"
+    },
+    {
+      "path": "31-aab-start.json",
+      "bytes": 230,
+      "sha256": "7e02ddccdba51dacccc4305d5a2bb21132512fb8e8b928ec7311c00d67b7fc49"
+    },
+    {
+      "path": "31-clean-apk-warnings.json",
+      "bytes": 2205,
+      "sha256": "7c4512218b129e6ef36d9305841b6131f1968a6985501bda3b5118afed0d70a0"
+    },
+    {
+      "path": "32-apk-preservation.json",
+      "bytes": 1303,
+      "sha256": "af48aa9a9ea3bd0d29cb34faf95b20b0be2b476236c1bdf4bc7d7c48c21fa7b7"
+    },
+    {
+      "path": "33-aab-status.json",
+      "bytes": 334,
+      "sha256": "0acf2f35dc1ea7c50a0d243bc3eb45d1230499f5cd1114189b833275d7c67ac4"
+    },
+    {
+      "path": "34-aab-result.json",
+      "bytes": 334,
+      "sha256": "0acf2f35dc1ea7c50a0d243bc3eb45d1230499f5cd1114189b833275d7c67ac4"
+    },
+    {
+      "path": "35-aab-status.json",
+      "bytes": 633,
+      "sha256": "7fff133124593568adfe401319f76c48d6050d51276657c3710fa58854591aa1"
+    },
+    {
+      "path": "36-aab-build-summary.json",
+      "bytes": 949,
+      "sha256": "f72ff35177a5f5c2e16ea71a949c9910b05b4666b887b787c4c82d94309133fd"
+    },
+    {
+      "path": "36-aab-source-check.json",
+      "bytes": 694,
+      "sha256": "c1e5c08a90f30a2302b9f7ace54d75bd34ce4a45d0a581da40a441ffe45a421a"
+    },
+    {
+      "path": "37-aab-warnings.json",
+      "bytes": 2205,
+      "sha256": "684ba6865db41ed63404f5279cbd31745d79c5c754efec1efec1593d2903d72d"
+    },
+    {
+      "path": "37-editor-before-exit.json",
+      "bytes": 736,
+      "sha256": "9e3df8bb199ce2c62f5034f1925532c9136bedb34c517764949a1e5cc8bbf190"
+    },
+    {
+      "path": "37-editor-exit-identity.json",
+      "bytes": 471,
+      "sha256": "06e446e1f95f550dde934ecc65593d1f01d35399d5d7aa81d5ec323a7d0d9d85"
+    },
+    {
+      "path": "37-editor-exit-request.json",
+      "bytes": 661,
+      "sha256": "b31d69c8c681118640f72432be727d430f4a509eaa0ef2facbd25d96b827ded3"
+    },
+    {
+      "path": "37-final-console.json",
+      "bytes": 8653,
+      "sha256": "d0587e03b9df70c22bc6094c5d64d3c5f6e553d5c8c3ec720999aa02f1cc5055"
+    },
+    {
+      "path": "38-owned-editor-exit-confirmed.json",
+      "bytes": 86,
+      "sha256": "797e2cae113b1c332e10e004f110f9fcecd05a8632058e0197665cadffa4cab3"
+    },
+    {
+      "path": "39-aab-certificate.txt",
+      "bytes": 520,
+      "sha256": "4a89b13e31c9dfc69edc96201d93f0f0a1b35149a1bc2bd6972f17dd25532618"
+    },
+    {
+      "path": "39-package-inspection-summary.json",
+      "bytes": 9518,
+      "sha256": "60c5501c574d8b8d53e81ff1ca0d35fdd35cff06ece9c759c1ab5f2751dcce68"
+    },
+    {
+      "path": "40-editor-direct-exit-request.json",
+      "bytes": 230,
+      "sha256": "4a1bd0b27bd9c887d6eea6722eb478de71e6b7048134414909745042a76c1637"
+    },
+    {
+      "path": "40-editor-exit-confirmed.json",
+      "bytes": 85,
+      "sha256": "8e50d2ad7dc4b2593a231621458edf26e75dbef90a1e637856f033e30e74fb29"
+    },
+    {
+      "path": "41-packages-preservation.json",
+      "bytes": 1673,
+      "sha256": "12e923168eeeddaba14b9c87126d12263d1cbd5d886cf5791b696f3d1de3efe4"
+    },
+    {
+      "path": "aab-inspection/aab-boot.config.txt",
+      "bytes": 202,
+      "sha256": "f0a37bfec10e49aa773e0abc237e6188bcb122febf3d6817eeefb9ef2da8ace0"
+    },
+    {
+      "path": "aab-inspection/aab-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "aab-inspection/aab-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "aab-inspection/aab-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "5547e507502cf99104233a54f5e8fee2e363eac63bd82a90e86b3f71e2b14095"
+    },
+    {
+      "path": "aab-inspection/aab-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "aab-inspection/aab-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "aab-inspection/aab-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "aab-inspection/build-apks-default.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "aab-inspection/build-apks-universal.txt",
+      "bytes": 106,
+      "sha256": "fd70cb3e399893ea485bc3c818a915dd62170bd5fd96396f605758b3603c0314"
+    },
+    {
+      "path": "aab-inspection/bundle-config.txt",
+      "bytes": 1484,
+      "sha256": "9267844045173074e0d2e350f5697dbf15fc10dca86df7fc0e2226956d760b01"
+    },
+    {
+      "path": "aab-inspection/bundle-manifest.txt",
+      "bytes": 4302,
+      "sha256": "c9f8aa411433a1223e6ca8e922e36bb49dcc20f0406dad3776ad2d6b34b808e7"
+    },
+    {
+      "path": "aab-inspection/bundle-signature.txt",
+      "bytes": 267752,
+      "sha256": "c61ca302006ff5595f649c88fe62e0c2891979b01c4c8b4d5b199cba64374754"
+    },
+    {
+      "path": "aab-inspection/bundle-validate.txt",
+      "bytes": 25901,
+      "sha256": "5b2ae968252af4fae245989c90cc29d700b9576583badca30c05b2dedf0d1be5"
+    },
+    {
+      "path": "aab-inspection/default/splits/base-arm64_v8a.apk",
+      "bytes": 22758100,
+      "sha256": "4e1e9751edd75c369dff85c4825a11bf272f01d0d3856254ed44daa874796e5d"
+    },
+    {
+      "path": "aab-inspection/default/splits/base-master.apk",
+      "bytes": 14770184,
+      "sha256": "d1b06364892aa56ed1465b57601dafa7499c1267d00b21557b06f50f095191c0"
+    },
+    {
+      "path": "aab-inspection/default/splits/base-master_2.apk",
+      "bytes": 15196168,
+      "sha256": "dc2491794d2c5905fab4d7f2489b7fd71c1e854b354225211510b30d834a5529"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-badging.txt",
+      "bytes": 925,
+      "sha256": "f9506b1f6678858c29808b9106b65cf1a91bde9906d993711a701b92889dbab2"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "5547e507502cf99104233a54f5e8fee2e363eac63bd82a90e86b3f71e2b14095"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-manifest.txt",
+      "bytes": 611,
+      "sha256": "59958fad6af7680372c7f1e61086e8ab10a9fcee800ccdffe4b0e44191ec17b6"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-signature.txt",
+      "bytes": 970,
+      "sha256": "25b76c7446dfd92d120731848b87d3ce4a424d1744cd8f6bb55c6afc1370e6cc"
+    },
+    {
+      "path": "aab-inspection/default-base-arm64_v8a-zipalign.txt",
+      "bytes": 714,
+      "sha256": "34dd1a7981412f985f6761109bf6340103c38dc218555950dd30f86f3d29fcb6"
+    },
+    {
+      "path": "aab-inspection/default-base-master-badging.txt",
+      "bytes": 5356,
+      "sha256": "68fdc7739120a5b97886609ab61355d04b40e4e292f663de37c94fe839221dd3"
+    },
+    {
+      "path": "aab-inspection/default-base-master-boot.config.txt",
+      "bytes": 202,
+      "sha256": "f0a37bfec10e49aa773e0abc237e6188bcb122febf3d6817eeefb9ef2da8ace0"
+    },
+    {
+      "path": "aab-inspection/default-base-master-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "aab-inspection/default-base-master-classes.dex-disassembly.txt",
+      "bytes": 16251413,
+      "sha256": "348c2cc9d50128c0c4c82de9fc47535a83ab6f4188e7a7eca206fe60fbdd62b0"
+    },
+    {
+      "path": "aab-inspection/default-base-master-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "aab-inspection/default-base-master-manifest.txt",
+      "bytes": 11006,
+      "sha256": "c4d7763c7985acaf4744a391ccac8ca07c696c302a6cf91afa86e762a97085ad"
+    },
+    {
+      "path": "aab-inspection/default-base-master-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "aab-inspection/default-base-master-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "aab-inspection/default-base-master-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "aab-inspection/default-base-master-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "aab-inspection/default-base-master-zipalign.txt",
+      "bytes": 31080,
+      "sha256": "e9b43952f519752c2bafd0527fda840bcd393fb78f0e1dd651f109c4788d731c"
+    },
+    {
+      "path": "aab-inspection/default.apks",
+      "bytes": 52725273,
+      "sha256": "3e6f7f6d60f3a582e9ca3b6abf1fe25b353171d42228049e2c370e8e6e1b5d85"
+    },
+    {
+      "path": "aab-inspection/inspection.json",
+      "bytes": 62592,
+      "sha256": "a66181398b24216381be55bdaa6c437fc4a0b3a63a807dbcb1a7929ebba34dfd"
+    },
+    {
+      "path": "aab-inspection/native/aab/base/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "aab-inspection/native/aab/base/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "438df71c0f5238cfbc43e2b24343361e55525654cb50819d33394dac1a2562bd"
+    },
+    {
+      "path": "aab-inspection/native/aab/base/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52486304,
+      "sha256": "c4163654ad240dc0fc4af194ee7dedd152bd46c1b2d73071927dc1f55112e7c6"
+    },
+    {
+      "path": "aab-inspection/native/aab/base/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "aab-inspection/native/aab/base/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "87d01a6bfd7fb24a42f2921ac0098acd2cb52bf16d70a6e9b7f0624c499322e5"
+    },
+    {
+      "path": "aab-inspection/native/aab/base/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "a972f4a12a2775e3270f3ced08c7b06b48e484ff1a79d3d5ce2e15e9e6ab2093"
+    },
+    {
+      "path": "aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "438df71c0f5238cfbc43e2b24343361e55525654cb50819d33394dac1a2562bd"
+    },
+    {
+      "path": "aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52486304,
+      "sha256": "c4163654ad240dc0fc4af194ee7dedd152bd46c1b2d73071927dc1f55112e7c6"
+    },
+    {
+      "path": "aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "87d01a6bfd7fb24a42f2921ac0098acd2cb52bf16d70a6e9b7f0624c499322e5"
+    },
+    {
+      "path": "aab-inspection/native/default-base-arm64_v8a/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "a972f4a12a2775e3270f3ced08c7b06b48e484ff1a79d3d5ce2e15e9e6ab2093"
+    },
+    {
+      "path": "aab-inspection/native/universal-universal/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "aab-inspection/native/universal-universal/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "438df71c0f5238cfbc43e2b24343361e55525654cb50819d33394dac1a2562bd"
+    },
+    {
+      "path": "aab-inspection/native/universal-universal/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52486304,
+      "sha256": "c4163654ad240dc0fc4af194ee7dedd152bd46c1b2d73071927dc1f55112e7c6"
+    },
+    {
+      "path": "aab-inspection/native/universal-universal/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "aab-inspection/native/universal-universal/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "87d01a6bfd7fb24a42f2921ac0098acd2cb52bf16d70a6e9b7f0624c499322e5"
+    },
+    {
+      "path": "aab-inspection/native/universal-universal/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "a972f4a12a2775e3270f3ced08c7b06b48e484ff1a79d3d5ce2e15e9e6ab2093"
+    },
+    {
+      "path": "aab-inspection/universal/universal.apk",
+      "bytes": 37519806,
+      "sha256": "ac45bd960385929ecf648f0d7eb1f60f3fa636fcaa5c2d992b2ec3114ace29aa"
+    },
+    {
+      "path": "aab-inspection/universal-universal-badging.txt",
+      "bytes": 5382,
+      "sha256": "2df1a5d5e4d620d4e0fe8e2fa5f629e2532b2ebad8a35fcf4da53f45c98b6679"
+    },
+    {
+      "path": "aab-inspection/universal-universal-boot.config.txt",
+      "bytes": 202,
+      "sha256": "f0a37bfec10e49aa773e0abc237e6188bcb122febf3d6817eeefb9ef2da8ace0"
+    },
+    {
+      "path": "aab-inspection/universal-universal-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "aab-inspection/universal-universal-classes.dex-disassembly.txt",
+      "bytes": 16251413,
+      "sha256": "331c2a41055604db402a31471d5a26fa01ed505f0c978974fb56dbd748884933"
+    },
+    {
+      "path": "aab-inspection/universal-universal-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "aab-inspection/universal-universal-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "aab-inspection/universal-universal-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "aab-inspection/universal-universal-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "5547e507502cf99104233a54f5e8fee2e363eac63bd82a90e86b3f71e2b14095"
+    },
+    {
+      "path": "aab-inspection/universal-universal-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "aab-inspection/universal-universal-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "aab-inspection/universal-universal-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "aab-inspection/universal-universal-manifest.txt",
+      "bytes": 10836,
+      "sha256": "548a6bc027884dad0d6646e99dcb89e57bb2e87ebc0bb7c0bb01aeb434ec0337"
+    },
+    {
+      "path": "aab-inspection/universal-universal-resources.txt",
+      "bytes": 314946,
+      "sha256": "2ea9cde1ea7e3212bdc94e484239c805de54f222ee6cb36b5a8de148b4e1758e"
+    },
+    {
+      "path": "aab-inspection/universal-universal-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "aab-inspection/universal-universal-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "aab-inspection/universal-universal-signature.txt",
+      "bytes": 971,
+      "sha256": "f196d93fe20d063e239a08c2c44ecfa2a9212ab79187b220ecb4054c1f375233"
+    },
+    {
+      "path": "aab-inspection/universal-universal-zipalign.txt",
+      "bytes": 31409,
+      "sha256": "5291d858793a14db3e0b25815066c4b694f04f6c012e6cc7d66dd1460a86299c"
+    },
+    {
+      "path": "aab-inspection/universal.apks",
+      "bytes": 37520120,
+      "sha256": "9200f54525b2d38a7d32d960f34263df5cb79532092669925f5a2b41a2bb01b8"
+    },
+    {
+      "path": "apk-inspection/apk-badging.txt",
+      "bytes": 5229,
+      "sha256": "4998fadb93df572523ccdb9470dc622f2f7b15e480d0a3c82b90a8421914ea88"
+    },
+    {
+      "path": "apk-inspection/apk-boot.config.txt",
+      "bytes": 202,
+      "sha256": "fcf217e2c5968833351eeac4ad6d29e22f847b09bd69939ad244e3fdcd6d05cb"
+    },
+    {
+      "path": "apk-inspection/apk-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "apk-inspection/apk-classes.dex-disassembly.txt",
+      "bytes": 16251381,
+      "sha256": "00e05c403479359d196589b1f7dd4e83369ed459eabccf97db54fd95f88ba632"
+    },
+    {
+      "path": "apk-inspection/apk-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "apk-inspection/apk-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "apk-inspection/apk-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "apk-inspection/apk-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "5547e507502cf99104233a54f5e8fee2e363eac63bd82a90e86b3f71e2b14095"
+    },
+    {
+      "path": "apk-inspection/apk-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "apk-inspection/apk-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "apk-inspection/apk-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "apk-inspection/apk-manifest.txt",
+      "bytes": 10276,
+      "sha256": "75b2f3edddaa405ee2f86eeeda23ed246ab9eeb9ab8743b05121f7f59962b66e"
+    },
+    {
+      "path": "apk-inspection/apk-resources.txt",
+      "bytes": 301776,
+      "sha256": "174ed17d083376e8111104a80986f2f855a1254fb30c34c4df3c3f9f64a8f06f"
+    },
+    {
+      "path": "apk-inspection/apk-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "apk-inspection/apk-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "apk-inspection/apk-signature.txt",
+      "bytes": 972,
+      "sha256": "76dd2a436313c778f1bad70e0e4d2c42f5954499e336b5df0c839ffe367693e8"
+    },
+    {
+      "path": "apk-inspection/apk-zipalign.txt",
+      "bytes": 18758,
+      "sha256": "309125e90ff96d58557f23180bfba6edde1a851fad7210b75032d8d9004fa7ea"
+    },
+    {
+      "path": "apk-inspection/inspection.json",
+      "bytes": 20267,
+      "sha256": "b5d09e490d4ae9c843ea4d16f132b19252a92f3860a8e316fc21fa6da06d110e"
+    },
+    {
+      "path": "apk-inspection/native/apk/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "apk-inspection/native/apk/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "438df71c0f5238cfbc43e2b24343361e55525654cb50819d33394dac1a2562bd"
+    },
+    {
+      "path": "apk-inspection/native/apk/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52486304,
+      "sha256": "c4163654ad240dc0fc4af194ee7dedd152bd46c1b2d73071927dc1f55112e7c6"
+    },
+    {
+      "path": "apk-inspection/native/apk/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "apk-inspection/native/apk/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "a4deb4e414b79da8752fd29f385d3c4f1505d91424a0a165d5d38db773efdba9"
+    },
+    {
+      "path": "apk-inspection/native/apk/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "a972f4a12a2775e3270f3ced08c7b06b48e484ff1a79d3d5ce2e15e9e6ab2093"
+    },
+    {
+      "path": "clean-apk-inspection/apk-badging.txt",
+      "bytes": 5229,
+      "sha256": "4998fadb93df572523ccdb9470dc622f2f7b15e480d0a3c82b90a8421914ea88"
+    },
+    {
+      "path": "clean-apk-inspection/apk-boot.config.txt",
+      "bytes": 202,
+      "sha256": "4675d80dfb9a249c49c08ce078962bf0cd96179f90940590d08d740e00585262"
+    },
+    {
+      "path": "clean-apk-inspection/apk-classes.dex",
+      "bytes": 777652,
+      "sha256": "44b64c08758503b067f263bf2b9f1db2d28161da9ce793aaa758d7b7fe5ce754"
+    },
+    {
+      "path": "clean-apk-inspection/apk-classes.dex-disassembly.txt",
+      "bytes": 16251393,
+      "sha256": "90873b81bdcb39b6eb82e787c116f5d2834649df8ea09097a8e0184091c31bc9"
+    },
+    {
+      "path": "clean-apk-inspection/apk-input-logging.json",
+      "bytes": 580,
+      "sha256": "4b00036353615eb80eabee714a9065f7cba5949dd6ba082928cc5d13ae0d9f6f"
+    },
+    {
+      "path": "clean-apk-inspection/apk-libc++_shared.so-readelf.txt",
+      "bytes": 2022,
+      "sha256": "824a33113579703cc0e0d01d35c57536982b841f8c860031618cb9b1e5e2b0a3"
+    },
+    {
+      "path": "clean-apk-inspection/apk-libgame.so-readelf.txt",
+      "bytes": 1646,
+      "sha256": "113813148a33c4b9ef07109524c6d8dcb8c99838ec41f7d1b3093184588713be"
+    },
+    {
+      "path": "clean-apk-inspection/apk-libil2cpp.so-readelf.txt",
+      "bytes": 1784,
+      "sha256": "5547e507502cf99104233a54f5e8fee2e363eac63bd82a90e86b3f71e2b14095"
+    },
+    {
+      "path": "clean-apk-inspection/apk-libmain.so-readelf.txt",
+      "bytes": 1728,
+      "sha256": "5badc68b76bf901b57abed19872517d12a43ff35a8cb8c8247b464d3903e2a37"
+    },
+    {
+      "path": "clean-apk-inspection/apk-libswappywrapper.so-readelf.txt",
+      "bytes": 1628,
+      "sha256": "cc49fe618d09eb72a89fab6b651f8869b71ee148a4ae913d782503fed7c138d6"
+    },
+    {
+      "path": "clean-apk-inspection/apk-libunity.so-readelf.txt",
+      "bytes": 1790,
+      "sha256": "b1502f3a9e31b5d17287e063f8e8740f9c4b287c118c283eee52e09ba6d24dc9"
+    },
+    {
+      "path": "clean-apk-inspection/apk-manifest.txt",
+      "bytes": 10276,
+      "sha256": "75b2f3edddaa405ee2f86eeeda23ed246ab9eeb9ab8743b05121f7f59962b66e"
+    },
+    {
+      "path": "clean-apk-inspection/apk-resources.txt",
+      "bytes": 301776,
+      "sha256": "174ed17d083376e8111104a80986f2f855a1254fb30c34c4df3c3f9f64a8f06f"
+    },
+    {
+      "path": "clean-apk-inspection/apk-session_backup_rules.txt",
+      "bytes": 152,
+      "sha256": "24e70438f548bee7f6b437ee2debecbc8f00899bba702eecb98467a44e93ff71"
+    },
+    {
+      "path": "clean-apk-inspection/apk-session_data_extraction_rules.txt",
+      "bytes": 360,
+      "sha256": "315e14f9932c3d3e0632322cbc706cfc3f9ff13e65af43f74c39adc60a1705a8"
+    },
+    {
+      "path": "clean-apk-inspection/apk-signature.txt",
+      "bytes": 972,
+      "sha256": "76dd2a436313c778f1bad70e0e4d2c42f5954499e336b5df0c839ffe367693e8"
+    },
+    {
+      "path": "clean-apk-inspection/apk-zipalign.txt",
+      "bytes": 18758,
+      "sha256": "cf32e8708a8bca7a2beffb53c7fe3b734732382ab188d40695287da539689686"
+    },
+    {
+      "path": "clean-apk-inspection/inspection.json",
+      "bytes": 20309,
+      "sha256": "b768cef5613086b751d72dc4590e808294c2d9c9fc778a4f0d064ce43579c1bf"
+    },
+    {
+      "path": "clean-apk-inspection/native/apk/lib/arm64-v8a/libc++_shared.so",
+      "bytes": 1292904,
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4"
+    },
+    {
+      "path": "clean-apk-inspection/native/apk/lib/arm64-v8a/libgame.so",
+      "bytes": 152448,
+      "sha256": "438df71c0f5238cfbc43e2b24343361e55525654cb50819d33394dac1a2562bd"
+    },
+    {
+      "path": "clean-apk-inspection/native/apk/lib/arm64-v8a/libil2cpp.so",
+      "bytes": 52486304,
+      "sha256": "c4163654ad240dc0fc4af194ee7dedd152bd46c1b2d73071927dc1f55112e7c6"
+    },
+    {
+      "path": "clean-apk-inspection/native/apk/lib/arm64-v8a/libmain.so",
+      "bytes": 6696,
+      "sha256": "8c63eeda160250bc1e8a882a2f9298514a2d8a3a718e5cd0fa4f8150fae7a68b"
+    },
+    {
+      "path": "clean-apk-inspection/native/apk/lib/arm64-v8a/libswappywrapper.so",
+      "bytes": 226560,
+      "sha256": "36bade535b77250bd0cab384709d318dbe509719bd280fb44ef0bce3e686d580"
+    },
+    {
+      "path": "clean-apk-inspection/native/apk/lib/arm64-v8a/libunity.so",
+      "bytes": 18365136,
+      "sha256": "a972f4a12a2775e3270f3ced08c7b06b48e484ff1a79d3d5ce2e15e9e6ab2093"
+    },
+    {
+      "path": "editor-build-only.log",
+      "bytes": 407071,
+      "sha256": "accb778bd75031a2bfa1b966a31e55a04bc375a12afea98f1ff2e42b67cd735e"
+    },
+    {
+      "path": "editor-clean-build-verified.log",
+      "bytes": 2839,
+      "sha256": "a0b085852c00aa2b2d2c1ab1c77150a0b6d90c78efb9ec86cb8b244ef11b299b"
+    },
+    {
+      "path": "editor-clean-build.log",
+      "bytes": 2830,
+      "sha256": "dd4d5f735eb384fab43fa50fffb31294341733d99df33e34c5ea4df63157fe77"
+    },
+    {
+      "path": "editor-final.log",
+      "bytes": 418355,
+      "sha256": "6e4e97fa8288cc33c12d06b7f0ceb96632f07a40ddef2707979bcc98bc6ef842"
+    },
+    {
+      "path": "editor.log",
+      "bytes": 229323,
+      "sha256": "1845eec6d3792b456049f4a749ac13c580de57dff29e66dbec57ce4be64ea972"
+    },
+    {
+      "path": "packages-raw/20261009T193657533Z-apk/build-summary.json",
+      "bytes": 942,
+      "sha256": "0e9b854cb3fe474a14de608252234bcba9ac4ae75fa56133bdc287c7e01d3fc5"
+    },
+    {
+      "path": "packages-raw/20261009T193657533Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37533602,
+      "sha256": "0220c9eefcc523754ded30423e3906d7a9f88730c340b6d237bbe5560cfaf684"
+    },
+    {
+      "path": "packages-raw/20261009T193657533Z-apk/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "packages-raw/20261009T194843422Z-apk/build-summary.json",
+      "bytes": 942,
+      "sha256": "f6a324e9c42db73b41560200f99f27c35c53dea865ba4b026e4d34dea762505e"
+    },
+    {
+      "path": "packages-raw/20261009T194843422Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37480110,
+      "sha256": "cc0ab333bdb130cda07e45ec64a7eab68887d8a0384a9325506827885011aedc"
+    },
+    {
+      "path": "packages-raw/20261009T194843422Z-apk/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "packages-raw/20261009T195632345Z-aab/build-summary.json",
+      "bytes": 949,
+      "sha256": "f72ff35177a5f5c2e16ea71a949c9910b05b4666b887b787c4c82d94309133fd"
+    },
+    {
+      "path": "packages-raw/20261009T195632345Z-aab/WordDeduction-local-release.aab",
+      "bytes": 37837035,
+      "sha256": "b302d3a9bc9628870ce953156c2990d6491d3e0ad1a063a942f970a84bca15a6"
+    },
+    {
+      "path": "packages-raw/20261009T195632345Z-aab/WordDeduction-local-release_mapping.txt",
+      "bytes": 4225473,
+      "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+    },
+    {
+      "path": "rejected-first-apk-generated-assets/Emoji.asset",
+      "bytes": 5311,
+      "sha256": "4b3934f84d7cc7917596430760ffcd921746e1299e7cdd9fc3fde8c44f9531df"
+    },
+    {
+      "path": "rejected-first-apk-generated-assets/Inter.asset",
+      "bytes": 6247075,
+      "sha256": "3b4534732bc90a98e2eb4db89e971a252ef19c84c9b8fafd2237f0ade8ce809d"
+    },
+    {
+      "path": "rejected-first-apk-generated-assets/Text.asset",
+      "bytes": 1458,
+      "sha256": "67bafd7535bcdd0ee471c32413033d3058574bfa7b5d2b5bd7dac36d9189dc0f"
+    },
+    {
+      "path": "rejected-first-apk-generated-assets/UnityConnectSettings.asset",
+      "bytes": 1063,
+      "sha256": "a8359aaab57088d2c37b56dc79319d8b418fb3f690d7892544769e418b27dd63"
+    },
+    {
+      "path": "rendered-output/group-usability/screenshots/editing-large-English-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "rendered-output/group-usability/screenshots/editing-large-English.png",
+      "bytes": 28527,
+      "sha256": "55b2561dfc0242fe3c3523ca1d04b2ae3478a68263a3dbefe0881db3f192fb25"
+    },
+    {
+      "path": "rendered-output/group-usability/screenshots/editing-large-German-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "rendered-output/group-usability/screenshots/editing-large-German.png",
+      "bytes": 31576,
+      "sha256": "e9ee8e67e6fe3eb74b4b357c79541a00bedb5ff8708de5276dca85975b21aa4e"
+    },
+    {
+      "path": "rendered-output/group-usability/screenshots/group-English.png",
+      "bytes": 45568,
+      "sha256": "f205cd9e021e97780121f32e6db047a812b8c9b314e23e558eef0be3220155df"
+    },
+    {
+      "path": "rendered-output/group-usability/screenshots/group-German.png",
+      "bytes": 50783,
+      "sha256": "0a755b4262a6d0f6e44a0aa96a54b0efcbbaf545a366469e460e53cf8356cbcd"
+    },
+    {
+      "path": "rendered-output/group-usability/screenshots/group-large-last-English.png",
+      "bytes": 58228,
+      "sha256": "9dae3c9f5170d84611cf72ac3aeab025ff567cec9626fc1be8545ccab729fd11"
+    },
+    {
+      "path": "rendered-output/group-usability/screenshots/group-large-last-German.png",
+      "bytes": 60607,
+      "sha256": "6c5fe0adcd8a286311afa2f5a9b97880932323f49a360d292fc7894452035db7"
+    },
+    {
+      "path": "rendered-output/kings-elimination/last-chance-English.png",
+      "bytes": 37578,
+      "sha256": "c25d33df0dda653d4f95b2a1f9b0a665144d5f1d6b8fdce609297c53710f4c4f"
+    },
+    {
+      "path": "rendered-output/kings-elimination/last-chance-German.png",
+      "bytes": 38937,
+      "sha256": "96ca713740ce51c94ee6abc352ae04404794d477c8fb05ac1eeae058f4a8bdb7"
+    },
+    {
+      "path": "rendered-output/kings-elimination/ordinary-English.png",
+      "bytes": 35166,
+      "sha256": "c9f3506c9823a3ca04d75107862aee0a37fa68160d3c000643ff2c1698bc08dd"
+    },
+    {
+      "path": "rendered-output/kings-elimination/ordinary-German.png",
+      "bytes": 38339,
+      "sha256": "9608df4f1c4369715ee955c5fa269314b6c424aed0a0f583d99339bec1994926"
+    },
+    {
+      "path": "rendered-output/kings-elimination/result-English.png",
+      "bytes": 46613,
+      "sha256": "eaebbce4bce8287244b4a71982906f5843d060e39d6060a20af6fb9a0c343727"
+    },
+    {
+      "path": "rendered-output/kings-elimination/result-German.png",
+      "bytes": 51734,
+      "sha256": "9835db1ea26ae8f796a806f41d51dd320eec84a4a81570753f65f60cf1adac60"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-English.png",
+      "bytes": 36574,
+      "sha256": "b7324ce80e6f88e4a7475225ef814e8f6be44246f1e6bdacd1da140f19a36cdf"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-German.png",
+      "bytes": 39688,
+      "sha256": "b14e7042ed233916bbe43c68806360f59c2b17cedb4c7634145cfd1214342668"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-English-False-last.png",
+      "bytes": 31508,
+      "sha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-English-False-top.png",
+      "bytes": 40759,
+      "sha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-English-False.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-English-True-last.png",
+      "bytes": 31720,
+      "sha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-English-True-top.png",
+      "bytes": 41388,
+      "sha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-English-True.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-German-False-last.png",
+      "bytes": 33839,
+      "sha256": "eefdef64d478cc90b810ed208131c80aff655dad3f031d6538135c62ed42da32"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-German-False-top.png",
+      "bytes": 43562,
+      "sha256": "db507990eb10253239e97d53561e220a3c3c8ec02d741cd682789c35ca0f8671"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-German-False.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-German-True-last.png",
+      "bytes": 33991,
+      "sha256": "281e7343f1732f4984b6e1fc257c15763b0bb09cb1cd793320afdfcfa833cd8f"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-German-True-top.png",
+      "bytes": 44147,
+      "sha256": "400ce4b1a57597c8e3c609f4db9f4e6607c9e4738e67bc7158e1f64dc9d65636"
+    },
+    {
+      "path": "rendered-output/kings-elimination/starter-small-German-True.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/choice-English-False.png",
+      "bytes": 34586,
+      "sha256": "bfb9be21a0d8feb9c7a91b31042cabc1c88fc5191f1f0f95950be2716d1c1bc2"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/choice-English-True.png",
+      "bytes": 34586,
+      "sha256": "bfb9be21a0d8feb9c7a91b31042cabc1c88fc5191f1f0f95950be2716d1c1bc2"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/choice-German-False.png",
+      "bytes": 35683,
+      "sha256": "afc514fc77ddaf1839d83faebd14d1b061156ecf41d1605785398033c3810a42"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/choice-German-True.png",
+      "bytes": 35683,
+      "sha256": "afc514fc77ddaf1839d83faebd14d1b061156ecf41d1605785398033c3810a42"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/judgment-English-False.png",
+      "bytes": 36357,
+      "sha256": "4b177d222706c4c282add28381e39588b35209c223723acf502ea5f61a4f9492"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/judgment-English-True.png",
+      "bytes": 36357,
+      "sha256": "4b177d222706c4c282add28381e39588b35209c223723acf502ea5f61a4f9492"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/judgment-German-False.png",
+      "bytes": 37485,
+      "sha256": "e0df5e2300ca554db0c66e45d20eb6b1e4ea15e357d54f587b82b08e181e6091"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/judgment-German-True.png",
+      "bytes": 37485,
+      "sha256": "e0df5e2300ca554db0c66e45d20eb6b1e4ea15e357d54f587b82b08e181e6091"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-confirm-English-False.png",
+      "bytes": 41610,
+      "sha256": "9af0e948afb442f329ab51299a306e0c5f1f4fa1b6cd10c39ebc78ef0757656b"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-confirm-English-True.png",
+      "bytes": 41686,
+      "sha256": "5ccf25cd2a84c512405bea7ed6a89f80243ada64f9d3e6fde3df25711557aa18"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-confirm-German-False.png",
+      "bytes": 46787,
+      "sha256": "50e0a8ef82cde2119ceb9fb47327f3b0c32cc6e7a7c8c1bdf1e82889f4e0598e"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-confirm-German-True.png",
+      "bytes": 46846,
+      "sha256": "afdfae61412d42cb1c5bde1ab8307af4e1010cd63b3e38a3c1242e85af7d41b5"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-result-English-False.png",
+      "bytes": 36996,
+      "sha256": "54f474371eb291893ae6b43029e7a1825be0a3aa68f1cacbad029ac154bf5cf2"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-result-English-True.png",
+      "bytes": 34713,
+      "sha256": "3083ef150aeea7e340055c35e4861ac0b857902b02d35fbde2de10e2da79a1d8"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-result-German-False.png",
+      "bytes": 41611,
+      "sha256": "1f5d9086a8d56df6067e6f4fe0dfb251d455e155433c7e3de652d185fda0c823"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-result-German-True.png",
+      "bytes": 41341,
+      "sha256": "5d082cea521f5e54050b327a4ba3fbf64058a13e29c8e0cf3253e45b984c21a0"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-targets-English-False.png",
+      "bytes": 27941,
+      "sha256": "7d037ce2fe657b27ce5aca65284ec107f6a5c06f7f199e71e2f8772f560382a6"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-targets-English-True.png",
+      "bytes": 27941,
+      "sha256": "7d037ce2fe657b27ce5aca65284ec107f6a5c06f7f199e71e2f8772f560382a6"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-targets-German-False.png",
+      "bytes": 31096,
+      "sha256": "d1e0e728ff4950bf6d5b4992f8c377a5b1947e814ab1d75e0b9068b3b5709634"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/king-targets-German-True.png",
+      "bytes": 31096,
+      "sha256": "d1e0e728ff4950bf6d5b4992f8c377a5b1947e814ab1d75e0b9068b3b5709634"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-answer-English-last.png",
+      "bytes": 53685,
+      "sha256": "f8cc7ef5d847412d77e4fb1cd60b44f5f289db47efea6f45b078549f84481683"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-answer-English.png",
+      "bytes": 47554,
+      "sha256": "e2bf61d79adc9f25c26d856176192239900f5d0b9e111d72bda1a10cfa48b94e"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-answer-German-last.png",
+      "bytes": 54449,
+      "sha256": "aede18584d60e762e10e4dd0cc5f6527b9455a8ce22dfa47e3adfdcc6b00e249"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-answer-German.png",
+      "bytes": 47385,
+      "sha256": "e5ad04f1ace12726fcdb986862924b548f5a0362ccae650a39ab5895bc216839"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-choice-English-King-last.png",
+      "bytes": 52322,
+      "sha256": "e871adde3e871704bbabe70203469d0fa0529d14f3d604758d3d7af4aefc0d80"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-choice-English-King.png",
+      "bytes": 48001,
+      "sha256": "7b38db4a8303a9b8c4c77b433fc2e740f3100b861e2f6f5ebd0f1fc578d8821d"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-choice-English-Word-last.png",
+      "bytes": 52322,
+      "sha256": "e871adde3e871704bbabe70203469d0fa0529d14f3d604758d3d7af4aefc0d80"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-choice-English-Word.png",
+      "bytes": 48001,
+      "sha256": "7b38db4a8303a9b8c4c77b433fc2e740f3100b861e2f6f5ebd0f1fc578d8821d"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-choice-German-King-last.png",
+      "bytes": 52809,
+      "sha256": "92177382e97e71c2647a12042e70ffa60b5f96e719f89880b3af614187b1bd65"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-choice-German-King.png",
+      "bytes": 39852,
+      "sha256": "0c89718b74a2322074b7593cccd5d2c864cf7a8e0f5867e6a6048f7d2e69fe94"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-choice-German-Word-last.png",
+      "bytes": 52809,
+      "sha256": "92177382e97e71c2647a12042e70ffa60b5f96e719f89880b3af614187b1bd65"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-choice-German-Word.png",
+      "bytes": 39852,
+      "sha256": "0c89718b74a2322074b7593cccd5d2c864cf7a8e0f5867e6a6048f7d2e69fe94"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-judgment-English-last.png",
+      "bytes": 45451,
+      "sha256": "c12e3f6f5bca44dd866451d7d4cb9f3572c7e2a996ac2a0712a6349e5d1ee1c1"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-judgment-English.png",
+      "bytes": 38409,
+      "sha256": "5b02be3d226858a4745c9e085966177c7583b1231a49bafd39ca204fe3443438"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-judgment-German-last.png",
+      "bytes": 47054,
+      "sha256": "6838f127d0679293dba1fb35671d63b21aacbcaf5c504b684e7bb5f6a3febe3b"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-judgment-German.png",
+      "bytes": 39467,
+      "sha256": "193c18c8a36cd93a641bde306b9566e12fc7626e77a3db77dc030ed8115ce40d"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-king-confirm-English-last.png",
+      "bytes": 49011,
+      "sha256": "b49c0aab471c7d97f37212aa1578cc97df3ee0cfc6e427833c67d8a9584a7288"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-king-confirm-English.png",
+      "bytes": 43427,
+      "sha256": "92d78eb3c9898f8cfcaacf4fc70d552c2cd047e73ac721f5e6c907838b5a3657"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-king-confirm-German-last.png",
+      "bytes": 51912,
+      "sha256": "2b9777121713bcb1a32ec5eaa934c118ab47fc3a9a91f6db683951166becf698"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-king-confirm-German.png",
+      "bytes": 40820,
+      "sha256": "828713d9c793bb335d4742bf218d373036ebc55867a1635ba4c9c4a9c35130a9"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-last-target-English.png",
+      "bytes": 50946,
+      "sha256": "c84cfd8caf9c88fb8688a5845f15a323be9ffee5946a43865b61362c3b19dbc8"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-last-target-German.png",
+      "bytes": 52369,
+      "sha256": "de2fe6714c7dfb222e263391062074c493e942e004dd6f2a5393c6c89bde3555"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-result-English-King-last.png",
+      "bytes": 42412,
+      "sha256": "bbecc19a1ca4d6ba51b8670f4d20c829064ba28977300b0bf4f0c7e4f9d2fb21"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-result-English-King.png",
+      "bytes": 42972,
+      "sha256": "74e1b614d3e27f95cfef320bc79912b45bdebc0a19bb852e38d1006c7c71135c"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-result-English-Word-last.png",
+      "bytes": 42422,
+      "sha256": "dc2416fc96a9c2aff4ebaa125a3196f31cd3e990a7d2f4f64749a13903133549"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-result-English-Word.png",
+      "bytes": 39256,
+      "sha256": "370a86af5df9138731cfb9ec55f8de06992dd902043cbed669a17f197893ebdf"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-result-German-King-last.png",
+      "bytes": 46055,
+      "sha256": "2e0c89f7c37fac303c1115062f209bed1795b1792948dada0963ead9a4a16b93"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-result-German-King.png",
+      "bytes": 42574,
+      "sha256": "2b22395dd2fefbbf01ce2221eb55229ee5128591e2b54392eda06758007d972b"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-result-German-Word-last.png",
+      "bytes": 46046,
+      "sha256": "8971f3666fa859c607f62f1b8ab13bbc428ed035758945748a9bb0867cd60507"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/large-result-German-Word.png",
+      "bytes": 44607,
+      "sha256": "604290166fd24fffdcf2ad4e38dcb6c76ad64622bd9cd614c6b8ba28370b91e3"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/repeat-protected-king.png",
+      "bytes": 34704,
+      "sha256": "77bc7ab56acafb5c1f86ddb9a6a6be91a78528fe5a742d984f6e684d95c0f8d3"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/repeat-protected-word.png",
+      "bytes": 36509,
+      "sha256": "66588607dd062f6245dff6a740b419955fc2cfe3db4cc412d802b83e4bf3e1f5"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/spoken-answer-English-False.png",
+      "bytes": 44061,
+      "sha256": "a54da79de9f05fc15efba1c65309c2aa0c42669e32bee430eb924ddfc26a1b7d"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/spoken-answer-English-True.png",
+      "bytes": 44061,
+      "sha256": "a54da79de9f05fc15efba1c65309c2aa0c42669e32bee430eb924ddfc26a1b7d"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/spoken-answer-German-False.png",
+      "bytes": 46212,
+      "sha256": "782f58adef48cde7d67856508d66196fadc6362f3d56245a2b5f240129bb72a9"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/spoken-answer-German-True.png",
+      "bytes": 46212,
+      "sha256": "782f58adef48cde7d67856508d66196fadc6362f3d56245a2b5f240129bb72a9"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/word-result-English-False.png",
+      "bytes": 35916,
+      "sha256": "6fd5b4cd2dc91b4527a3a258368295a463e32fb8354d22847ca58fcc7e3afaf1"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/word-result-English-True.png",
+      "bytes": 34833,
+      "sha256": "ef5f6df379a37072611c38998a61ce418359c03aec3c9c397bc9fc688df3e78f"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/word-result-German-False.png",
+      "bytes": 40588,
+      "sha256": "c2e45e004bfcd3b76b7e418479b77aeace84bafb320b7a24fbde860384eb07c3"
+    },
+    {
+      "path": "rendered-output/kings-last-chance/screenshots/word-result-German-True.png",
+      "bytes": 40949,
+      "sha256": "6748d5dc5f0188d7d49814b80910a96c0f9dd19c22d8562b89df37874ecfecf9"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-English-EvilKing-drag-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-English-EvilKing-drag.txt",
+      "bytes": 229,
+      "sha256": "09145f932ee9a82ecdcb29377f3c4db3c69a74a0be0bd650c4f9c5f11e685773"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-English-EvilKing-hold-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-English-EvilKing-hold.txt",
+      "bytes": 228,
+      "sha256": "8d40c971c13f4fc30f85973799993757911f9852680b22c193dcf89a1e172b45"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-English-GoodKing-drag-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-English-GoodKing-drag.txt",
+      "bytes": 229,
+      "sha256": "c529475ad05f41c3f67184202a9c8f6325fd389c685217c83b2188b90176afe6"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-English-GoodKing-hold-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-English-GoodKing-hold.txt",
+      "bytes": 228,
+      "sha256": "f0f70b2ac1d8d553a59cf9f627d10240e0af19d779bb5c753973e0cb3f2e79f5"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-German-EvilKing-drag-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-German-EvilKing-drag.txt",
+      "bytes": 229,
+      "sha256": "eb74eea21c479e6df3c972554c952b53e27436f6bcb68573adce4a173dd9c69c"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-German-EvilKing-hold-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-German-EvilKing-hold.txt",
+      "bytes": 228,
+      "sha256": "c21b387a736186c75c66e3fc4cc6c28d581f1ea4cdac97b63b5ffcbe3d654a2f"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-German-GoodKing-drag-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-German-GoodKing-drag.txt",
+      "bytes": 229,
+      "sha256": "21c1b292faef011ac049d4e0920f834a913e874d62c077d7e228e880d90fb360"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-German-GoodKing-hold-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/max-list-German-GoodKing-hold.txt",
+      "bytes": 228,
+      "sha256": "74267608cf12edfdeaa5a9053168c478c763a6b0f052e543b3348ab8ce02d16c"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/role-counts-English-Classic-20.txt",
+      "bytes": 266,
+      "sha256": "a9ce24bf7aa4cf879f5984cdff95166b7a24ac381710c2094ba43fb598342d4e"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/role-counts-English-Classic-4.txt",
+      "bytes": 266,
+      "sha256": "c6fed9644def8cdff33e110b6c58ab70a8c6585f187b3ca9a7498d2bb014c217"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/role-counts-English-Kings-6.txt",
+      "bytes": 266,
+      "sha256": "c6fed9644def8cdff33e110b6c58ab70a8c6585f187b3ca9a7498d2bb014c217"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/role-counts-English-Quick-3.txt",
+      "bytes": 266,
+      "sha256": "c6fed9644def8cdff33e110b6c58ab70a8c6585f187b3ca9a7498d2bb014c217"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/role-counts-German-Classic-20.txt",
+      "bytes": 266,
+      "sha256": "c911b1b382286d3b3edea88eb8c9e22f3e8b86a6a6488722a9cb64b83cf343c8"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/role-counts-German-Classic-4.txt",
+      "bytes": 266,
+      "sha256": "957ce7a04f6c5dc6fc6feed722c8196813ae13235f057fd85df8a5006c927047"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/role-counts-German-Kings-6.txt",
+      "bytes": 266,
+      "sha256": "957ce7a04f6c5dc6fc6feed722c8196813ae13235f057fd85df8a5006c927047"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/role-counts-German-Quick-3.txt",
+      "bytes": 266,
+      "sha256": "957ce7a04f6c5dc6fc6feed722c8196813ae13235f057fd85df8a5006c927047"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/help-English-last.png",
+      "bytes": 62953,
+      "sha256": "c4484e766dd64a1959f7c9e5e3b9917b069dd4ee48bfd10b412f23d93f9dcfe4"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/help-English-start.png",
+      "bytes": 58925,
+      "sha256": "c1ae74b99753e1b131e1d7fb1b16f789659d16ef8bb35202bf8f7fd4297318fc"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/help-German-last.png",
+      "bytes": 65873,
+      "sha256": "eaf843848ad23953146c209ddef3f9edce4125d314c5c942140967d5e64e568a"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/help-German-start.png",
+      "bytes": 54720,
+      "sha256": "4b92c54cfdd103ce4b72a2721a0e19aea5fa459ad78b60ed83575db4b7ef0b9b"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-covered.png",
+      "bytes": 37528,
+      "sha256": "2201bdf6945aed010811d513fc12c946fe08ac5107081ad5e2aa1879953df21f"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-last.png",
+      "bytes": 56573,
+      "sha256": "104e7591e71d96c60fa17c048366010c56a07fa13499dcae92b2c79ffe65510e"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-start.png",
+      "bytes": 42284,
+      "sha256": "defa2d5a5d73f0ed3bd89dc973182cde41488e69bae39551e29a3b65df3174e6"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-covered.png",
+      "bytes": 37705,
+      "sha256": "406f84ba154b75122fc48de616e816d21bb16e21367fcd414045ee1089d13ef6"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-last.png",
+      "bytes": 56759,
+      "sha256": "e60fb132303c5512d7213789e12455424cab883abe4629528186982ab48eb127"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-start.png",
+      "bytes": 42468,
+      "sha256": "aaec1f009e806b052452f6511ea93b753f12e7e5e819ed58707f8f9f7f31a020"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-covered.png",
+      "bytes": 37534,
+      "sha256": "3abf90997d0a5ba9f8683cdb5029c72e7466678446f688bbd34bc742fb524dfc"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-last.png",
+      "bytes": 44929,
+      "sha256": "7341a13eb5ce4a9b741f9a15ee7a87804d42deb9b962ea59403d77f32e165441"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-start.png",
+      "bytes": 40873,
+      "sha256": "52c61a139b8af040caf40224722e4c9e9f5fd8035667e35f7a64f16c6abf9810"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-covered.png",
+      "bytes": 37708,
+      "sha256": "d3e6c7f6547e0dd5f5875713adf8a8219b39cfa856e92f168260126da2639ac9"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-last.png",
+      "bytes": 45137,
+      "sha256": "3b71f619445a483503ed31af55fcab8e54895b70aaa10549591768848936b853"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-start.png",
+      "bytes": 41063,
+      "sha256": "ee531365f419af3b98823b9b7952c12928a4acd6eeb66f62222d62cf0a46d1e6"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-covered.png",
+      "bytes": 39265,
+      "sha256": "3443879d0e82990e012204788c28bcea476668e93fdcac8c0fa449cf4d36aa9d"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-last.png",
+      "bytes": 54975,
+      "sha256": "f8b5082c1031f3e711557368e2b22d5be7e6dcd5a4913190321b8736de8efd6b"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-start.png",
+      "bytes": 45930,
+      "sha256": "96279d5b17831ba6a9325795695446117ec791cace5a82f4e71f704ca2abe7ee"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-covered.png",
+      "bytes": 39417,
+      "sha256": "0e74ad360c2ed2c44ee19b97cadfb397a05df7ce20f4e4840f8eca9bb47002b9"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-last.png",
+      "bytes": 55200,
+      "sha256": "341389491588d0b347fc50afebe4c177aca493499a84129ca0289d17263dbe15"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-start.png",
+      "bytes": 46124,
+      "sha256": "3ed6c472d2d85715b23c2daf87d6b9b5285b8c9dcc6f309c9fe317f12d401db4"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-covered.png",
+      "bytes": 39195,
+      "sha256": "7bdedd206480e01c678b3e89eeb3923537c05666d055d264d4820eeb5f7cc6fe"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-last.png",
+      "bytes": 46197,
+      "sha256": "9f12f42ed803aeeb05e198446e9134160f1f58c0cc9b2b5871a83d9285b69a21"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-start.png",
+      "bytes": 44455,
+      "sha256": "35299e3ebe6c08924fa7dc1cfaaa8465b78f8ff4bf1eafeba962fda04040e00e"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-covered.png",
+      "bytes": 39357,
+      "sha256": "954f3cb18115329e4382575041686c0d46e8df829c56c7246bbe658f71d6d911"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-last.png",
+      "bytes": 46395,
+      "sha256": "81cb065b6d4b308ba3332c3709d9aaf312cf09263d9fa68000e1e78597dd28f9"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-start.png",
+      "bytes": 44642,
+      "sha256": "a6f416f98db2e59bf88bc8d3605ff0d6d3d79fb0d05a881f004da84e14c53f20"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/ordinary-English-civilian.png",
+      "bytes": 36841,
+      "sha256": "9794941bad3d48d87074a17434a5f6b0eb1b781ad20edb9667ed3bcf3e265e34"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/ordinary-English-undercover.png",
+      "bytes": 32514,
+      "sha256": "95ae694a16f8fe9f6faf462da8c1a16ef9f49ba2cf50f3b5ad9176cc062db6a3"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/ordinary-German-civilian.png",
+      "bytes": 40837,
+      "sha256": "989b256f4d0e1c8ce86da4279d4330f3fc4b063c77d99ed5be74c0a0c7688f3a"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/ordinary-German-undercover.png",
+      "bytes": 36870,
+      "sha256": "6ccc36129fd230eb4dc823cf15be244ccb8cad1cf8ee209dfa26398a7a772ec5"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Classic-20-large.png",
+      "bytes": 48197,
+      "sha256": "8373db48e96352ed6410a198f7b629ce3f823c28e444f2bf1e8d44d681934b17"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Classic-20-top.png",
+      "bytes": 44292,
+      "sha256": "4c4d21b55d7394690d4da13073dec3d71ded9737aad165cca021c3e0bc0a33d9"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Classic-20-white.png",
+      "bytes": 44493,
+      "sha256": "3fda227a85c300910ab4ac841d81c9186e118eb50ba8a4156302455dc3c22d49"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Classic-4-large.png",
+      "bytes": 43762,
+      "sha256": "7e5d244507b268dced9ca689f7e708ebf603f3e609360c0f03e14ab24a7c865f"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Classic-4-swap.png",
+      "bytes": 39769,
+      "sha256": "ee6ff2ed527f951b25863848cf33abce972749fc17b6b5f026f377facf50d8d1"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Classic-4-top.png",
+      "bytes": 39420,
+      "sha256": "3e2b547692231b072cc8ad783f6777dc754b13c8ed204952cfa9d752eab24b35"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Classic-4-white.png",
+      "bytes": 39656,
+      "sha256": "985d7151c3f9d9d9f0c41d6e5e599c63431a38ec70c75dbf697f9ea33addc750"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Kings-6-large.png",
+      "bytes": 41299,
+      "sha256": "e7c0f8f7522375f190eac995fb2812bac3afadbd66351f68f72a33069e7a6a95"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Kings-6-top.png",
+      "bytes": 40171,
+      "sha256": "6ce81b17f5ebe58581ef92da124b3fa291c0e210b3f8e2634a3e2c09b0b4f952"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Quick-3-large.png",
+      "bytes": 43843,
+      "sha256": "46cfe2704f6f6923d45ba0c1038a45cc2f97c3173c76098689501c265a99dcdb"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Quick-3-swap.png",
+      "bytes": 39859,
+      "sha256": "442e54b96b16cefadccb30a38b8f7cff4a1d4e7f47ed23810496285839c0d3c0"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Quick-3-top.png",
+      "bytes": 39497,
+      "sha256": "868bc31b669e49fb6862e1c096e614054c0576e2140c5d57cbb1cb964724a31b"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-English-Quick-3-white.png",
+      "bytes": 39745,
+      "sha256": "110fe2546caa66d4e1a81a8d89c0b3682a820020aa38ebadff14387948b81092"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Classic-20-large.png",
+      "bytes": 50918,
+      "sha256": "01e82c02c2406d00cd422e6be605f63df1e22086253f20547ad4facbe054f399"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Classic-20-top.png",
+      "bytes": 47108,
+      "sha256": "83864fdb80b242a28d7b5adf1f9af55f0fd8f3d95275565b238fa102b1f77b60"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Classic-20-white.png",
+      "bytes": 47306,
+      "sha256": "a7132861c697eec96fac83f0ba50e366cc03e1ccecce40c869724bc0aa7ece8e"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Classic-4-large.png",
+      "bytes": 47037,
+      "sha256": "b4bea91e65668bfca196441d3ba41bf137f386e552d353061d7232e1451d5b68"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Classic-4-swap.png",
+      "bytes": 43482,
+      "sha256": "cb110e78a7d9d7e84dafa012f87b0f8286c8766580fcf6785fb5f8bff019d13b"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Classic-4-top.png",
+      "bytes": 42708,
+      "sha256": "f6bb8455e0cdb400b56c8887c3524fd06a0c39180c98cb1c0fb35e51cc320f09"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Classic-4-white.png",
+      "bytes": 42957,
+      "sha256": "b13fb689419611742fc3029ae8f87171a63dec0512080fb7116b8270474ff8ff"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Kings-6-large.png",
+      "bytes": 46034,
+      "sha256": "f579805bde1bc961ac2c36c579ed50cef1c01453765492460b22c526fff1bcf1"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Kings-6-top.png",
+      "bytes": 44588,
+      "sha256": "903961dd5b2d5bba929f229ff541f7e22f0a793be3ace4e4bd33f13a6997446e"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Quick-3-large.png",
+      "bytes": 46751,
+      "sha256": "e84c1cb500df34cee230f9cdfa6d04e5e54aad4314144561ffdd6432d9b132ea"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Quick-3-swap.png",
+      "bytes": 43182,
+      "sha256": "98b900621c4fe2a81bc221c17bd40ea436ba788c5c248a0f35ff0acd40e38ecc"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Quick-3-top.png",
+      "bytes": 42406,
+      "sha256": "675ffbaa3423d248c0f60e142b4d9492074b50b6b120d38674c7d1ff8313fa9d"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/role-counts-German-Quick-3-white.png",
+      "bytes": 42650,
+      "sha256": "29dad8b5932ce035281c7380483c999be0ba600191391a04a0478f4bf3daf613"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/setup-English-large.png",
+      "bytes": 47134,
+      "sha256": "b6aa9ec72bf704b8d2b716aa5125de5d07b4d2d5dcb849bdc64df0a5ff6199ea"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/setup-German-large.png",
+      "bytes": 49172,
+      "sha256": "8d557225a3252bc37d082823c1134a78024876144bad10c40f433536d2e2198a"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/word-Chocolate-hazelnut-spread-large.png",
+      "bytes": 40900,
+      "sha256": "ec89ffed1ae0adf2c9c5fbf3b8b348c5531903d460e5af7bd423025882a39f98"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/word-Nuss-Nougat-Creme-large.png",
+      "bytes": 49864,
+      "sha256": "fffd053fafa15d205dafbc21e0a2042b4014fa671d99b2cf4c4187197b69e6bc"
+    },
+    {
+      "path": "rendered-output/kings-rules-cards/screenshots/word-Rollkragenpullover-large.png",
+      "bytes": 49203,
+      "sha256": "9692ab4c18814b6917f5cd0f36b5e69f46b9606748a334b41f64903739438e40"
+    },
+    {
+      "path": "report-draft.md",
+      "bytes": 3831,
+      "sha256": "15162355e64699cc65de4f16f2c34c26fe179ce728046e4a3dd1b9af92e15732"
+    },
+    {
+      "path": "test-scene-backups/0.backup",
+      "bytes": 15492,
+      "sha256": "a8b7b8f29648c57db57452c994f54d91fe69d057830e521f44e51866932b89f3"
+    }
+  ],
+  "bytes": 759412395,
+  "note": "Original raw outputs, including rejected candidate and failed infrastructure attempts. Canonical tracked text exports may normalize line endings/trailing spaces; these hashes apply to the originals here."
+}

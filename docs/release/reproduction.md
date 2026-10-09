@@ -1,6 +1,6 @@
 # Android release reproduction
 
-Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.2.0/code 11. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
+Unity 6000.3.25f1; Android ARM64/IL2CPP, min API 26, target API 36; version 1.3.0/code 12. Pin the exact source and package lock from the artifact's `build-summary.json`. A reproducible procedure is provided; byte-identical Unity output is not promised.
 
 ## Build
 
@@ -19,7 +19,7 @@ With this project's stopped, connected Editor, use its exact absolute project pa
 unity command eval 'WordDeduction.Editor.AppBuild.ReleaseApk(); return "APK complete";' --timeout 1800000 --detach --project-path '<checkout>/game' --caller plugin --skill unity-cli --format json
 ```
 
-Wait for the real Editor build report and inspect the produced APK before calling `ReleaseBundle()` the same way. A Pipeline five-second callback timeout can occur while BuildPipeline continues; do not dispatch a duplicate build based on that response. Preserve errors/warnings and explain them against the actual report.
+Wait for the real Editor build report, inspect the produced APK, and verify post-build source equality before releasing it to a device or calling `ReleaseBundle()` the same way. Check the AAB's post-build source too. A Pipeline five-second callback timeout can occur while BuildPipeline continues; do not dispatch a duplicate build based on that response. Preserve errors/warnings and explain them against the actual report.
 
 Each build has a fresh directory under `artifacts/android/<commit-prefix>/<UTC-stamp>-apk` or `-aab`, with the artifact and its own `build-summary.json`. Reports include the complete source commit, package-lock hash, Unity version, options, identity/version/code, signing category, duration, warnings/errors, size and SHA256. The builder rejects nonignored uncommitted source and explicit runtime Pipeline/profiler symbols. Development/debugging/profiler/deep-profile, player-log, bundle and signing settings are restored after each build, including a failed build.
 
@@ -34,8 +34,8 @@ After a signed production build, verify the certificate fingerprint against the 
 ## Inspect artifacts
 
 ```powershell
-python ./tools/inspect-android-release.py '<exact.apk>' --android-player '<Unity Editor>/Data/PlaybackEngines/AndroidPlayer' --output ./artifacts/inspection-apk
-python ./tools/inspect-android-release.py '<exact.aab>' --android-player '<Unity Editor>/Data/PlaybackEngines/AndroidPlayer' --output ./artifacts/inspection-aab
+python ./tools/inspect-android-release.py '<exact.apk>' --android-player '<Unity Editor>/Data/PlaybackEngines/AndroidPlayer' --output ./artifacts/inspection-apk --version-code 12 --version-name 1.3.0
+python ./tools/inspect-android-release.py '<exact.aab>' --android-player '<Unity Editor>/Data/PlaybackEngines/AndroidPlayer' --output ./artifacts/inspection-aab --version-code 12 --version-name 1.3.0
 ```
 
 Use an unused output directory for each invocation: generated `.apks` files are not overwritten silently. The inspector records command exit codes and stdout/stderr; verifies APK v2/signature details, zipalign 16KB, ARM64 ELF headers, every LOAD and rounded RELRO writable-byte intersection; and saves boot.config, manifest and backup rules. AAB inspection uses bundletool validate/config/manifest, jarsigner, then default and universal APK generation and inspection of master/native-bearing APKs. Generated APK signing is bundletool's local debug default; verify its certificate before installing as an update.
@@ -48,6 +48,8 @@ Code3 additionally enables release R8 and removes debug/info/verbose calls from 
 
 The accepted Session seam is `tests/Session.Tests`; supply `-p:NewtonsoftJsonAssembly=<resolved package DLL>` when invoking `dotnet run`. The rendered suite is `WordDeduction.Tests`, PlayMode, through the installed Pipeline `run_tests` command and its `test_status` result. It uses real temporary stores and rendered inputs. Preserve a failed result before a fix and a passed result afterward.
 
-Before committing/building after rendered tests, preserve test-generated dynamic Inter and Emoji differences in ignored evidence, then clear only those test-populated assets through `FontAsset.ClearFontAssetData(true)` in the Editor and save assets; verify their semantic Git diff is empty. Do not commit generated atlas/glyph caches. Git may need `git add` for those exact unchanged assets to refresh CRLF normalization. Do not restore an unrelated user's asset change.
+After rendered tests, preserve the test-generated Inter/Emoji state and close that Editor before release packaging. Restore only the owned generated asset changes to the reviewed source, then use a fresh build-only Editor session. Preserve and move only this checkout's own test scene-recovery backups if they block startup; never recover them over the release scene. Configure/save before checking the source. A clean tree before Configure is insufficient: its SaveAssets can serialize a live font feature cache left by PlayMode. This was observed and the first code 12 candidate was rejected before installation; see the [release report](../validation/role-release/report.md).
+
+Check complete canonical Git content after every build, before candidate handoff. If Unity only rewrites CRLF as LF, retain both raw hashes and prove exact normalized equality before refreshing those unchanged index entries with `git add`. Do not call differing raw bytes identical or silently waive a populated font-feature/atlas diff. Never restore an unrelated user's asset change. Confirm that the owned Editor actually exits before returning its lease; scheduling an exit callback alone is not proof.
 
 Native checks belong to the coordinator's report: actual installed source/hash, old-state update, fresh offline startup, Gboard, DE/EN, Quick/Classic, White, reveal/release, Back/Home/resume, system text scaling/TalkBack and measured warm return/rematch. Capture the actual phone framebuffer at 1080×1920 for store screenshots. Do not pass Editor fixture renders off as native gameplay.

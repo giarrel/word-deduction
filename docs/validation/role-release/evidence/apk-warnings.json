@@ -1,0 +1,44 @@
+{
+  "success": true,
+  "command": "command eval",
+  "data": {
+    "command": "eval",
+    "parameters": {
+      "code": "var r = UnityEditor.Build.Reporting.BuildReport.GetLatestReport(); var messages = new System.Collections.Generic.List<string>(); foreach (var step in r.steps) foreach (var m in step.messages) if (m.type == UnityEngine.LogType.Warning || m.type == UnityEngine.LogType.Error || m.type == UnityEngine.LogType.Exception) messages.Add(step.name + \": \" + m.content); return new { summary = r.summary, messages = messages };"
+    },
+    "result": {
+      "output": null,
+      "diagnostics": [],
+      "success": true,
+      "result": {
+        "summary": {
+          "buildStartedAt": "2026-10-09T19:48:43.5301601",
+          "guid": {},
+          "platform": 13,
+          "platformGroup": 7,
+          "options": 536871040,
+          "outputPath": "C:/Users/lucac/Documents/Codex/2026-10-06/sie/work/role-counts/implement-acceptance/artifacts/android/b6e6a926bbcc/20261009T194843422Z-apk/WordDeduction-local-release.apk",
+          "totalSize": 619021613,
+          "totalTime": "00:05:41.0437281",
+          "buildEndedAt": "2026-10-09T19:54:24.5738882",
+          "totalErrors": 0,
+          "totalWarnings": 2,
+          "result": 1,
+          "buildType": 1,
+          "multiProcessEnabled": false
+        },
+        "messages": [
+          "Preprocess Player: Pipeline: No RuntimePipelineConfig asset found (Project Settings > Pipeline > Runtime). Pipeline will be disabled in Player builds.",
+          "Compile scripts: Assets\\WordDeduction\\UI\\MatchSurface.cs(90,43): warning CS0618: 'EventBase.PreventDefault()' is obsolete: 'Use StopPropagation and/or FocusController.IgnoreEvent. Before proceeding, make sure you understand the latest changes to UIToolkit event propagation rules by visiting Unity's manual page https://docs.unity3d.com/Manual/UIE-Events-Dispatching.html'"
+        ]
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-acceptance\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
