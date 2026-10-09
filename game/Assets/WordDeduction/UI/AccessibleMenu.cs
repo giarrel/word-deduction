@@ -51,7 +51,7 @@ namespace WordDeduction.UI
         void Visit(VisualElement element, AccessibilityNode parent)
         {
             if (element.resolvedStyle.display == DisplayStyle.None || element.ClassListContains("hidden")) return;
-            if (element.name == "cardDrag" || element.name == "secretWord" || element.ClassListContains("player-initial") ||
+            if (element.name == "cardDrag" || element.name == "secretWord" || element.ClassListContains("player-initial") || element.ClassListContains("reorder-handle") ||
                 element.ClassListContains("empty-symbol") || element.ClassListContains("wordmark")) return;
             if (element is Button button)
             {

@@ -57,19 +57,61 @@ var cases = new (string name, Action<string> run)[] {
         session = Session.Open(directory, Language.English);
         Check(session.View.Players.Count == 1 && session.View.Players[0].Name == new string('é',24), "valid normalized name is retained");
     }),
-    ("capacity keeps overflow players paused and allows a waiting player to join", directory => {
+    ("capacity rejects a new person without silently pausing anyone", directory => {
         var session = Session.Open(directory, Language.English);
-        for (int i=1;i<=40;i++) Check(session.AddPlayer("Player " + i).Success, "saved capacity accepts 40");
-        Check(session.View.Players.Count(p=>p.Active) == 20, "only 20 people active");
-        Check(!session.AddPlayer("41").Success, "saved capacity rejects 41st");
-        var waiting = session.View.Players[20].Id;
-        Check(!session.SetParticipation(waiting,true).Success, "cannot activate above 20");
-        session.SetParticipation(session.View.Players[0].Id,false);
-        Check(session.SetParticipation(waiting,true).Success, "waiting person can take free place");
-        session.RemovePlayer(waiting); session.AddPlayer("Replacement");
-        Check(!session.UndoRemove().Success, "undo cannot exceed saved capacity");
+        for (int i=1;i<=20;i++) Check(session.AddPlayer("Player " + i).Success, "20 current people accepted");
+        var result = session.AddPlayer("Overflow");
+        Check(!result.Success && result.Error == "ActiveFull", "capacity is reported, never a silent paused add");
         session = Session.Open(directory, Language.English);
-        Check(session.View.Players.Count == 40 && session.View.Players.Count(p=>p.Active) == 20, "capacity survives restart");
+        Check(session.View.Players.Count == 20 && session.View.Players.All(p=>p.Active), "no inactive overflow saved");
+        var id = session.View.Players[3].Id;
+        session.RemovePlayer(id); session.AddPlayer("Replacement");
+        Check(!session.UndoRemove().Success, "undo cannot exceed current capacity");
+    }),
+    ("reordering is durable atomic and respects stable Unicode identities", directory => {
+        var session = Session.Open(directory, Language.German);
+        foreach (var name in new[] { "Zoë", "李明", "Zoë", "Γιάννης" }) session.AddPlayer(name);
+        var before = session.View.Players.ToArray();
+        var ids = before.Select(p => p.Id).ToArray();
+        var next = new[] { ids[3], ids[1], ids[0], ids[2] };
+        Check(session.ReorderPlayers(ids, next).Success, "full stable-ID reorder succeeds");
+        session.SetMode(GameMode.Classic);
+        session = Session.Open(directory, Language.English);
+        Check(session.View.Players.Select(p => p.Id).SequenceEqual(next), "order survives mode change and reopen");
+        Check(session.View.Players.All(p => before.Single(old => old.Id == p.Id).DisplayName == p.DisplayName), "disambiguation unchanged");
+        Check(!session.ReorderPlayers(ids, ids).Success, "stale pre-move request rejected");
+        Check(!session.ReorderPlayers(next, new[] { ids[0], ids[0], ids[1], ids[2] }).Success, "duplicate IDs rejected");
+        Check(!session.ReorderPlayers(next, ids.Take(3).ToArray()).Success, "omitted player rejected");
+        Directory.CreateDirectory(Path.Combine(directory, "session.pending.json"));
+        var failed = session.ReorderPlayers(next, ids);
+        Check(!failed.Success && failed.Error == "SaveFailed", "denied write is reported");
+        Check(session.View.Players.Select(p => p.Id).SequenceEqual(next), "failed write keeps visible order");
+        Check(Session.Open(directory, Language.English).View.Players.Select(p => p.Id).SequenceEqual(next), "failed write keeps disk order");
+        Directory.Delete(Path.Combine(directory, "session.pending.json"));
+        Check(session.StartMatch().Success && session.Match.Owner.Id == ids[3], "next deal follows new first player");
+        var match = Newtonsoft.Json.JsonConvert.SerializeObject(session.Match);
+        Check(!session.ReorderPlayers(next, ids).Success, "live match blocks group reordering");
+        Check(Newtonsoft.Json.JsonConvert.SerializeObject(session.Match) == match, "frozen deal unchanged");
+    }),
+    ("legacy inactive people remain saved and require explicit restoration", directory => {
+        var session = Session.Open(directory, Language.German);
+        for (int i = 0; i < 20; i++) session.AddPlayer("Saved " + i);
+        foreach (var player in session.View.Players) session.SetParticipation(player.Id, false);
+        for (int i = 0; i < 20; i++) session.AddPlayer("Current " + i);
+        var before = session.View.Players.ToArray();
+        string primary = File.ReadAllText(Path.Combine(directory, "session.json"));
+        session = Session.Open(directory, Language.English);
+        Check(session.View.Players.Count == 40 && session.View.ActiveCount == 20, "old 40-name compatibility envelope retained");
+        Check(File.ReadAllText(Path.Combine(directory, "session.json")) == primary, "opening does not rewrite or activate legacy names");
+        Check(!session.SetParticipation(before[0].Id, true).Success, "explicit restoration respects active capacity");
+        Check(session.RemovePlayer(before[20].Id).Success, "remove current person");
+        Check(session.SetParticipation(before[0].Id, true).Success, "explicit restoration fills vacancy");
+        Check(session.RenamePlayer(before[1].Id, "Old friend").Success, "inactive name can be renamed");
+        var ids = session.View.Players.Select(p => p.Id).ToArray();
+        Check(session.ReorderPlayers(ids, ids.Reverse().ToArray()).Success, "legacy names remain part of exact atomic order");
+        session = Session.Open(directory, Language.English);
+        Check(session.View.Players.Select(p => p.Id).SequenceEqual(ids.Reverse()), "legacy and current order durable");
+        Check(session.View.Players.Single(p=>p.Id == before[0].Id).Active && !session.View.Players.Single(p=>p.Id == before[1].Id).Active, "only explicitly restored person becomes active");
     }),
     ("language and mode are durable and expose valid group readiness", directory => {
         var session = Session.Open(directory, Language.German);

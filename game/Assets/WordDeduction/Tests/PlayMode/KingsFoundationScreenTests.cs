@@ -26,7 +26,11 @@ namespace WordDeduction.Tests
                 Assert.That(fixture.Root.Q<Button>("whitePreference").ClassListContains("hidden"), Is.True);
                 Submit(fixture.Root.Q<Button>("moreUndercover"));
                 Assert.That(fixture.Session.View.KingsUndercoverPreference, Is.EqualTo(3));
-                for (int i = 5; i < 9; i++) Submit(fixture.Root.Q<Button>("participation-" + fixture.Session.View.Players[i].Id));
+                foreach (var id in fixture.Session.View.Players.Skip(5).Select(p => p.Id).ToArray())
+                {
+                    Submit(fixture.Root.Q<Button>("edit-" + id));
+                    Submit(fixture.Root.Q<Button>("removePlayer"));
+                }
                 yield return null;
                 Assert.That(fixture.Root.Q<Label>("kingsCountAdjustment").text, Does.Contain("3"));
                 Assert.That(fixture.Root.Q<Label>("kingsCountAdjustment").ClassListContains("hidden"), Is.False);
