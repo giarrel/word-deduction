@@ -10,7 +10,7 @@ using static WordDeduction.Tests.ScreenTestActions;
 
 namespace WordDeduction.Tests
 {
-    public class MotionScreenTests
+    public class MotionScreenTests : UnityEngine.InputSystem.InputTestFixture
     {
         Fixture fixture;
         [TearDown] public void Cleanup() { fixture?.Dispose(); fixture = null; }

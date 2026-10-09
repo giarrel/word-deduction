@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.85,
+      "summary": {
+        "total": 4,
+        "passed": 2,
+        "failed": 2,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.CancelAndNextBeginInOneInputUpdateKeepTheOrder",
+          "Status": "Passed",
+          "Duration": 0.473916,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.CanceledNativeTouchNeverCommitsThePreviewOrder",
+          "Status": "Passed",
+          "Duration": 0.1604811,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.FullyBufferedCanceledDragKeepsTheOrder",
+          "Status": "Failed",
+          "Duration": 0.0936308,
+          "Message": "  An entirely buffered canceled drag cannot commit using the replacement contact's state.\r\n  Expected is <System.String[5]>, actual is <System.Linq.Enumerable+SelectArrayIterator`2[WordDeduction.PlayerView,System.String]>\r\n  Values differ at index [0]\r\n  String lengths are both 32. Strings differ at index 0.\r\n  Expected: \"71ade3bdb7aa40bda4ef6b1106456087\"\r\n  But was:  \"45ce532187eb4a2889c7fa81200fddb0\"\r\n  -----------^\r\n",
+          "StackTrace": "at WordDeduction.Tests.NativeTouchScreenTests+<FullyBufferedCanceledDragKeepsTheOrder>d__11.MoveNext () [0x0017d] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\NativeTouchScreenTests.cs:131\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.NativeTouchScreenTests.LaterCanceledContactDoesNotCancelAnEndedDrag",
+          "Status": "Failed",
+          "Duration": 0.0875729,
+          "Message": "  A different contact's later cancellation cannot discard an intentional completed drag.\r\n  Expected is <System.String[5]>, actual is <System.Linq.Enumerable+SelectArrayIterator`2[WordDeduction.PlayerView,System.String]>\r\n  Values differ at index [0]\r\n  String lengths are both 32. Strings differ at index 0.\r\n  Expected: \"b2d10ec10cb443f7b017fd5840ecb922\"\r\n  But was:  \"2a55656d358243728c4482cc419231d5\"\r\n  -----------^\r\n",
+          "StackTrace": "at WordDeduction.Tests.NativeTouchScreenTests+<LaterCanceledContactDoesNotCancelAnEndedDrag>d__12.MoveNext () [0x001ff] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\NativeTouchScreenTests.cs:149\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

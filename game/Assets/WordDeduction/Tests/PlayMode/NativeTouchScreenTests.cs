@@ -115,5 +115,51 @@ namespace WordDeduction.Tests
             Assert.That(Session.Open(directory,Language.German).View.Players.Select(p => p.Id), Is.EqualTo(new[] { ids[1],ids[0],ids[2],ids[3],ids[4] }),
                 "The cancellation latch must be cleared for a following deliberate drag.");
         }
+
+        [UnityTest]
+        public IEnumerator FullyBufferedCanceledDragKeepsTheOrder()
+        {
+            Create(); yield return null; yield return null;
+            var ids = session.View.Players.Select(p => p.Id).ToArray();
+            var start = root.Q<VisualElement>("reorder-" + ids[0]).worldBound.center;
+            var destination = root.Q<VisualElement>("player-" + ids[1]).worldBound.center + new Vector2(0,10);
+            Touch(23,NativePhase.Began,start);
+            Touch(23,NativePhase.Moved,destination);
+            Touch(23,NativePhase.Canceled,destination);
+            Touch(24,NativePhase.Began,start);
+            yield return null; yield return null;
+            Assert.That(Session.Open(directory,Language.German).View.Players.Select(p => p.Id), Is.EqualTo(ids),
+                "An entirely buffered canceled drag cannot commit using the replacement contact's state.");
+            Touch(24,NativePhase.Canceled,start); yield return null; yield return null;
+            Touch(25,NativePhase.Began,start); yield return null; yield return null;
+            Touch(25,NativePhase.Moved,destination); yield return null; yield return null;
+            Touch(25,NativePhase.Ended,destination); yield return null; yield return null;
+            Assert.That(Session.Open(directory,Language.German).View.Players.Select(p => p.Id), Is.EqualTo(new[] { ids[1],ids[0],ids[2],ids[3],ids[4] }),
+                "An ambiguous buffered contact must not disable a later deliberate drag.");
+        }
+
+        [UnityTest]
+        public IEnumerator LaterCanceledContactDoesNotCancelAnEndedDrag()
+        {
+            Create(); yield return null; yield return null;
+            var ids = session.View.Players.Select(p => p.Id).ToArray();
+            var start = root.Q<VisualElement>("reorder-" + ids[0]).worldBound.center;
+            var destination = root.Q<VisualElement>("player-" + ids[1]).worldBound.center + new Vector2(0,10);
+            Touch(23,NativePhase.Began,start); yield return null; yield return null;
+            Touch(23,NativePhase.Moved,destination); yield return null; yield return null;
+            Touch(23,NativePhase.Ended,destination);
+            Touch(24,NativePhase.Began,start);
+            Touch(24,NativePhase.Canceled,start);
+            yield return null; yield return null;
+            Assert.That(Session.Open(directory,Language.German).View.Players.Select(p => p.Id), Is.EqualTo(new[] { ids[1],ids[0],ids[2],ids[3],ids[4] }),
+                "A different contact's later cancellation cannot discard an intentional completed drag.");
+            start = root.Q<VisualElement>("reorder-" + ids[1]).worldBound.center;
+            destination = root.Q<VisualElement>("player-" + ids[0]).worldBound.center + new Vector2(0,10);
+            Touch(25,NativePhase.Began,start); yield return null; yield return null;
+            Touch(25,NativePhase.Moved,destination); yield return null; yield return null;
+            Touch(25,NativePhase.Ended,destination); yield return null; yield return null;
+            Assert.That(Session.Open(directory,Language.German).View.Players.Select(p => p.Id), Is.EqualTo(ids),
+                "A later normal drag must remain usable after the buffered valid release.");
+        }
     }
 }

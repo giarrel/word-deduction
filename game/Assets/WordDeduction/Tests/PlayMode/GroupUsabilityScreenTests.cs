@@ -12,7 +12,8 @@ using static WordDeduction.Tests.ScreenTestActions;
 
 namespace WordDeduction.Tests
 {
-    public class GroupUsabilityScreenTests
+    // Pooled pointer fixtures must not bind their synthetic contacts to host hardware.
+    public class GroupUsabilityScreenTests : UnityEngine.InputSystem.InputTestFixture
     {
         GameObject host;
         PanelSettings panel;
