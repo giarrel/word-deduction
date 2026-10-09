@@ -1,0 +1,11 @@
+{
+  "targetedCaptureTotal": 7,
+  "sessionTotal": 93,
+  "onlyLaterTestChange": "KingsEliminationScreenTests screenshot waits for End-of-frame",
+  "fullUiTotal": 66,
+  "baseline": "e7fa596b2ecead1a5f7cdb2c7d1f962e238aa952",
+  "targetedCapturePassed": 7,
+  "productionSourceUnchanged": true,
+  "fullUiPassed": 66,
+  "sessionPassed": 93
+}
