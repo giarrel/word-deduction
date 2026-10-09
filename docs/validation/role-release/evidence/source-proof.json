@@ -1,0 +1,55 @@
+{
+  "source": "b6e6a926bbcc58c7103d79a9f117cbd09e4269e3",
+  "sessionSource": "d3ad9d0ecd42f4bfb46e2e09f75f914e07a02e59",
+  "reviewedVersionSource": "bcffd96114896f32606f66067c4060edfccc4d1d",
+  "runtimeDiff": [],
+  "versionDiff": [],
+  "trees": [
+    {
+      "path": "game/Assets/WordDeduction",
+      "testedTree": "a1a466c2e8888c66221c01b43da71f2ba7c174a7",
+      "buildTree": "a1a466c2e8888c66221c01b43da71f2ba7c174a7",
+      "identical": true
+    },
+    {
+      "path": "game/Assets/Plugins",
+      "testedTree": "09de8d8c89f77229ed0f487b07afa23b036fe0b2",
+      "buildTree": "09de8d8c89f77229ed0f487b07afa23b036fe0b2",
+      "identical": true
+    },
+    {
+      "path": "game/Packages",
+      "testedTree": "71be12cbeb4698fe99fc4113e9a22d613d77526f",
+      "buildTree": "71be12cbeb4698fe99fc4113e9a22d613d77526f",
+      "identical": true
+    },
+    {
+      "path": "tests/Session.Tests",
+      "testedTree": "fcfe2b14f63ca2eb6b4f606b3f3516fdc90e18a0",
+      "buildTree": "fcfe2b14f63ca2eb6b4f606b3f3516fdc90e18a0",
+      "identical": true
+    },
+    {
+      "path": "content",
+      "testedTree": "fae305a03886bbde4c514b9ab4606b56be478fdd",
+      "buildTree": "fae305a03886bbde4c514b9ab4606b56be478fdd",
+      "identical": true
+    },
+    {
+      "path": "third-party",
+      "testedTree": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24",
+      "buildTree": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24",
+      "identical": true
+    }
+  ],
+  "sessionRun": {
+    "source": "d3ad9d0ecd42f4bfb46e2e09f75f914e07a02e59",
+    "startedUtc": "2026-10-09T19:18:43.1127037Z",
+    "endedUtc": "2026-10-09T19:23:42.6697478Z",
+    "exitCode": 0,
+    "command": "dotnet run --project tests/Session.Tests/Session.Tests.csproj -p:NewtonsoftJsonAssembly=C:/Users/lucac/Documents/Codex/2026-10-06/sie/outputs/word-deduction/artifacts/repro-runtime/Newtonsoft.Json.dll --no-launch-profile",
+    "passed": 93,
+    "logSha256": "3eeafeb910bdbfdd41115f3fad157b81b1f43d2f95a95af3f2569cae1fbf2e54",
+    "newtonsoftSha256": "7292d3eb508652d14726749dd27094f2d481aeccf2db6427b62f68a71460897e"
+  }
+}

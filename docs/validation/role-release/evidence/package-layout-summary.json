@@ -1,0 +1,324 @@
+[
+  {
+    "kind": "clean-apk-inspection",
+    "commands": 14,
+    "allExitZero": true,
+    "packages": [
+      {
+        "identity": {
+          "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-acceptance\\artifacts\\android\\b6e6a926bbcc\\20261009T194843422Z-apk\\WordDeduction-local-release.apk",
+          "bytes": 37480110,
+          "sha256": "cc0ab333bdb130cda07e45ec64a7eab68887d8a0384a9325506827885011aedc"
+        },
+        "native": [
+          {
+            "file": "lib/arm64-v8a/libc++_shared.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 12288,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libgame.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 4096,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libil2cpp.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 0,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libmain.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 8192,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libswappywrapper.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 4096,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libunity.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 8192,
+                "conflictingWritableBytes": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "kind": "aab-inspection",
+    "commands": 44,
+    "allExitZero": true,
+    "packages": [
+      {
+        "identity": {
+          "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-acceptance\\artifacts\\android\\b6e6a926bbcc\\20261009T195632345Z-aab\\WordDeduction-local-release.aab",
+          "bytes": 37837035,
+          "sha256": "b302d3a9bc9628870ce953156c2990d6491d3e0ad1a063a942f970a84bca15a6"
+        },
+        "native": [
+          {
+            "file": "base/lib/arm64-v8a/libc++_shared.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 12288,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "base/lib/arm64-v8a/libgame.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 4096,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "base/lib/arm64-v8a/libil2cpp.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 0,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "base/lib/arm64-v8a/libmain.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 8192,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "base/lib/arm64-v8a/libswappywrapper.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 4096,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "base/lib/arm64-v8a/libunity.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 8192,
+                "conflictingWritableBytes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "identity": {
+          "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\release-build\\aab-inspection\\universal\\universal.apk",
+          "bytes": 37519806,
+          "sha256": "ac45bd960385929ecf648f0d7eb1f60f3fa636fcaa5c2d992b2ec3114ace29aa"
+        },
+        "native": [
+          {
+            "file": "lib/arm64-v8a/libc++_shared.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 12288,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libgame.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 4096,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libil2cpp.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 0,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libmain.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 8192,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libswappywrapper.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 4096,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libunity.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 8192,
+                "conflictingWritableBytes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "identity": {
+          "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\release-build\\aab-inspection\\default\\splits\\base-arm64_v8a.apk",
+          "bytes": 22758100,
+          "sha256": "4e1e9751edd75c369dff85c4825a11bf272f01d0d3856254ed44daa874796e5d"
+        },
+        "native": [
+          {
+            "file": "lib/arm64-v8a/libc++_shared.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 12288,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libgame.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 4096,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libil2cpp.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 0,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libmain.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 8192,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libswappywrapper.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 4096,
+                "conflictingWritableBytes": []
+              }
+            ]
+          },
+          {
+            "file": "lib/arm64-v8a/libunity.so",
+            "zipCompression": 8,
+            "load16kPass": true,
+            "relro": [
+              {
+                "endModulo16k": 8192,
+                "conflictingWritableBytes": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "identity": {
+          "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\release-build\\aab-inspection\\default\\splits\\base-master.apk",
+          "bytes": 14770184,
+          "sha256": "d1b06364892aa56ed1465b57601dafa7499c1267d00b21557b06f50f095191c0"
+        },
+        "native": []
+      }
+    ]
+  }
+]

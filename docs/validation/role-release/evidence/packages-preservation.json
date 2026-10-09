@@ -1,0 +1,47 @@
+[
+  {
+    "path": "20261009T193657533Z-apk/build-summary.json",
+    "bytes": 942,
+    "sha256": "0e9b854cb3fe474a14de608252234bcba9ac4ae75fa56133bdc287c7e01d3fc5"
+  },
+  {
+    "path": "20261009T193657533Z-apk/WordDeduction-local-release_mapping.txt",
+    "bytes": 4225473,
+    "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+  },
+  {
+    "path": "20261009T193657533Z-apk/WordDeduction-local-release.apk",
+    "bytes": 37533602,
+    "sha256": "0220c9eefcc523754ded30423e3906d7a9f88730c340b6d237bbe5560cfaf684"
+  },
+  {
+    "path": "20261009T194843422Z-apk/build-summary.json",
+    "bytes": 942,
+    "sha256": "f6a324e9c42db73b41560200f99f27c35c53dea865ba4b026e4d34dea762505e"
+  },
+  {
+    "path": "20261009T194843422Z-apk/WordDeduction-local-release_mapping.txt",
+    "bytes": 4225473,
+    "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+  },
+  {
+    "path": "20261009T194843422Z-apk/WordDeduction-local-release.apk",
+    "bytes": 37480110,
+    "sha256": "cc0ab333bdb130cda07e45ec64a7eab68887d8a0384a9325506827885011aedc"
+  },
+  {
+    "path": "20261009T195632345Z-aab/build-summary.json",
+    "bytes": 949,
+    "sha256": "f72ff35177a5f5c2e16ea71a949c9910b05b4666b887b787c4c82d94309133fd"
+  },
+  {
+    "path": "20261009T195632345Z-aab/WordDeduction-local-release_mapping.txt",
+    "bytes": 4225473,
+    "sha256": "c97b1cf1558032bed8c55278e4a670b858207ed8f780135c34c0e5414d6dcafd"
+  },
+  {
+    "path": "20261009T195632345Z-aab/WordDeduction-local-release.aab",
+    "bytes": 37837035,
+    "sha256": "b302d3a9bc9628870ce953156c2990d6491d3e0ad1a063a942f970a84bca15a6"
+  }
+]

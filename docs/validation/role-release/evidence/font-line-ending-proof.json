@@ -1,0 +1,19 @@
+{
+  "source": "b6e6a926bbcc58c7103d79a9f117cbd09e4269e3",
+  "rows": [
+    {
+      "path": "game/Assets/WordDeduction/UI/Inter.asset",
+      "preBuildWasExactCrlf": true,
+      "postBuildIsExactGitLf": true,
+      "canonicalSha256": "190749141bdb6585492b2fca95281bee8cd147913e7f63473c3e9bac4cc041f2",
+      "gitBlob": "faec5f30ce35bbc711768f193cba42e7f6ecfea7"
+    },
+    {
+      "path": "game/Assets/WordDeduction/UI/Emoji.asset",
+      "preBuildWasExactCrlf": true,
+      "postBuildIsExactGitLf": true,
+      "canonicalSha256": "4b3934f84d7cc7917596430760ffcd921746e1299e7cdd9fc3fde8c44f9531df",
+      "gitBlob": "c0b9d727d0e8ea1b087b60b5a562b71453d084a5"
+    }
+  ]
+}

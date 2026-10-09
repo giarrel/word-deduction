@@ -1,0 +1,888 @@
+{
+  "source": "b6e6a926bbcc58c7103d79a9f117cbd09e4269e3",
+  "testResult": "13-full-ui-result.json",
+  "files": [
+    {
+      "path": "group-usability/screenshots/editing-large-English-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "group-usability/screenshots/editing-large-English.png",
+      "bytes": 28527,
+      "sha256": "55b2561dfc0242fe3c3523ca1d04b2ae3478a68263a3dbefe0881db3f192fb25"
+    },
+    {
+      "path": "group-usability/screenshots/editing-large-German-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "group-usability/screenshots/editing-large-German.png",
+      "bytes": 31576,
+      "sha256": "e9ee8e67e6fe3eb74b4b357c79541a00bedb5ff8708de5276dca85975b21aa4e"
+    },
+    {
+      "path": "group-usability/screenshots/group-English.png",
+      "bytes": 45568,
+      "sha256": "f205cd9e021e97780121f32e6db047a812b8c9b314e23e558eef0be3220155df"
+    },
+    {
+      "path": "group-usability/screenshots/group-German.png",
+      "bytes": 50783,
+      "sha256": "0a755b4262a6d0f6e44a0aa96a54b0efcbbaf545a366469e460e53cf8356cbcd"
+    },
+    {
+      "path": "group-usability/screenshots/group-large-last-English.png",
+      "bytes": 58228,
+      "sha256": "9dae3c9f5170d84611cf72ac3aeab025ff567cec9626fc1be8545ccab729fd11"
+    },
+    {
+      "path": "group-usability/screenshots/group-large-last-German.png",
+      "bytes": 60607,
+      "sha256": "6c5fe0adcd8a286311afa2f5a9b97880932323f49a360d292fc7894452035db7"
+    },
+    {
+      "path": "kings-elimination/last-chance-English.png",
+      "bytes": 37578,
+      "sha256": "c25d33df0dda653d4f95b2a1f9b0a665144d5f1d6b8fdce609297c53710f4c4f"
+    },
+    {
+      "path": "kings-elimination/last-chance-German.png",
+      "bytes": 38937,
+      "sha256": "96ca713740ce51c94ee6abc352ae04404794d477c8fb05ac1eeae058f4a8bdb7"
+    },
+    {
+      "path": "kings-elimination/ordinary-English.png",
+      "bytes": 35166,
+      "sha256": "c9f3506c9823a3ca04d75107862aee0a37fa68160d3c000643ff2c1698bc08dd"
+    },
+    {
+      "path": "kings-elimination/ordinary-German.png",
+      "bytes": 38339,
+      "sha256": "9608df4f1c4369715ee955c5fa269314b6c424aed0a0f583d99339bec1994926"
+    },
+    {
+      "path": "kings-elimination/result-English.png",
+      "bytes": 46613,
+      "sha256": "eaebbce4bce8287244b4a71982906f5843d060e39d6060a20af6fb9a0c343727"
+    },
+    {
+      "path": "kings-elimination/result-German.png",
+      "bytes": 51734,
+      "sha256": "9835db1ea26ae8f796a806f41d51dd320eec84a4a81570753f65f60cf1adac60"
+    },
+    {
+      "path": "kings-elimination/starter-English.png",
+      "bytes": 36574,
+      "sha256": "b7324ce80e6f88e4a7475225ef814e8f6be44246f1e6bdacd1da140f19a36cdf"
+    },
+    {
+      "path": "kings-elimination/starter-German.png",
+      "bytes": 39688,
+      "sha256": "b14e7042ed233916bbe43c68806360f59c2b17cedb4c7634145cfd1214342668"
+    },
+    {
+      "path": "kings-elimination/starter-small-English-False-last.png",
+      "bytes": 31508,
+      "sha256": "964ca5ec3aea1488b17c2232a3096460ff970ecc406ebd45ccc1e32af98d7274"
+    },
+    {
+      "path": "kings-elimination/starter-small-English-False-top.png",
+      "bytes": 40759,
+      "sha256": "c2b90cd683fb8a31bfced50b69c0375cd7149a1c0c552b97c46627751dbd67f6"
+    },
+    {
+      "path": "kings-elimination/starter-small-English-False.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "path": "kings-elimination/starter-small-English-True-last.png",
+      "bytes": 31720,
+      "sha256": "84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee"
+    },
+    {
+      "path": "kings-elimination/starter-small-English-True-top.png",
+      "bytes": 41388,
+      "sha256": "1f8af0aec04a02941f0991868f7ed1a8067d04074230d5ca69beb68fea4fbaad"
+    },
+    {
+      "path": "kings-elimination/starter-small-English-True.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "path": "kings-elimination/starter-small-German-False-last.png",
+      "bytes": 33839,
+      "sha256": "eefdef64d478cc90b810ed208131c80aff655dad3f031d6538135c62ed42da32"
+    },
+    {
+      "path": "kings-elimination/starter-small-German-False-top.png",
+      "bytes": 43562,
+      "sha256": "db507990eb10253239e97d53561e220a3c3c8ec02d741cd682789c35ca0f8671"
+    },
+    {
+      "path": "kings-elimination/starter-small-German-False.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "path": "kings-elimination/starter-small-German-True-last.png",
+      "bytes": 33991,
+      "sha256": "281e7343f1732f4984b6e1fc257c15763b0bb09cb1cd793320afdfcfa833cd8f"
+    },
+    {
+      "path": "kings-elimination/starter-small-German-True-top.png",
+      "bytes": 44147,
+      "sha256": "400ce4b1a57597c8e3c609f4db9f4e6607c9e4738e67bc7158e1f64dc9d65636"
+    },
+    {
+      "path": "kings-elimination/starter-small-German-True.txt",
+      "bytes": 323,
+      "sha256": "f3f8381a1a0f190d61ed62cbf4e7b160ca5f072a93df979e293b8de7a9b25b69"
+    },
+    {
+      "path": "kings-last-chance/screenshots/choice-English-False.png",
+      "bytes": 34586,
+      "sha256": "bfb9be21a0d8feb9c7a91b31042cabc1c88fc5191f1f0f95950be2716d1c1bc2"
+    },
+    {
+      "path": "kings-last-chance/screenshots/choice-English-True.png",
+      "bytes": 34586,
+      "sha256": "bfb9be21a0d8feb9c7a91b31042cabc1c88fc5191f1f0f95950be2716d1c1bc2"
+    },
+    {
+      "path": "kings-last-chance/screenshots/choice-German-False.png",
+      "bytes": 35683,
+      "sha256": "afc514fc77ddaf1839d83faebd14d1b061156ecf41d1605785398033c3810a42"
+    },
+    {
+      "path": "kings-last-chance/screenshots/choice-German-True.png",
+      "bytes": 35683,
+      "sha256": "afc514fc77ddaf1839d83faebd14d1b061156ecf41d1605785398033c3810a42"
+    },
+    {
+      "path": "kings-last-chance/screenshots/judgment-English-False.png",
+      "bytes": 36357,
+      "sha256": "4b177d222706c4c282add28381e39588b35209c223723acf502ea5f61a4f9492"
+    },
+    {
+      "path": "kings-last-chance/screenshots/judgment-English-True.png",
+      "bytes": 36357,
+      "sha256": "4b177d222706c4c282add28381e39588b35209c223723acf502ea5f61a4f9492"
+    },
+    {
+      "path": "kings-last-chance/screenshots/judgment-German-False.png",
+      "bytes": 37485,
+      "sha256": "e0df5e2300ca554db0c66e45d20eb6b1e4ea15e357d54f587b82b08e181e6091"
+    },
+    {
+      "path": "kings-last-chance/screenshots/judgment-German-True.png",
+      "bytes": 37485,
+      "sha256": "e0df5e2300ca554db0c66e45d20eb6b1e4ea15e357d54f587b82b08e181e6091"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-confirm-English-False.png",
+      "bytes": 41610,
+      "sha256": "9af0e948afb442f329ab51299a306e0c5f1f4fa1b6cd10c39ebc78ef0757656b"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-confirm-English-True.png",
+      "bytes": 41686,
+      "sha256": "5ccf25cd2a84c512405bea7ed6a89f80243ada64f9d3e6fde3df25711557aa18"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-confirm-German-False.png",
+      "bytes": 46787,
+      "sha256": "50e0a8ef82cde2119ceb9fb47327f3b0c32cc6e7a7c8c1bdf1e82889f4e0598e"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-confirm-German-True.png",
+      "bytes": 46846,
+      "sha256": "afdfae61412d42cb1c5bde1ab8307af4e1010cd63b3e38a3c1242e85af7d41b5"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-result-English-False.png",
+      "bytes": 36996,
+      "sha256": "54f474371eb291893ae6b43029e7a1825be0a3aa68f1cacbad029ac154bf5cf2"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-result-English-True.png",
+      "bytes": 34713,
+      "sha256": "3083ef150aeea7e340055c35e4861ac0b857902b02d35fbde2de10e2da79a1d8"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-result-German-False.png",
+      "bytes": 41611,
+      "sha256": "1f5d9086a8d56df6067e6f4fe0dfb251d455e155433c7e3de652d185fda0c823"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-result-German-True.png",
+      "bytes": 41341,
+      "sha256": "5d082cea521f5e54050b327a4ba3fbf64058a13e29c8e0cf3253e45b984c21a0"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-targets-English-False.png",
+      "bytes": 27941,
+      "sha256": "7d037ce2fe657b27ce5aca65284ec107f6a5c06f7f199e71e2f8772f560382a6"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-targets-English-True.png",
+      "bytes": 27941,
+      "sha256": "7d037ce2fe657b27ce5aca65284ec107f6a5c06f7f199e71e2f8772f560382a6"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-targets-German-False.png",
+      "bytes": 31096,
+      "sha256": "d1e0e728ff4950bf6d5b4992f8c377a5b1947e814ab1d75e0b9068b3b5709634"
+    },
+    {
+      "path": "kings-last-chance/screenshots/king-targets-German-True.png",
+      "bytes": 31096,
+      "sha256": "d1e0e728ff4950bf6d5b4992f8c377a5b1947e814ab1d75e0b9068b3b5709634"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-answer-English-last.png",
+      "bytes": 53685,
+      "sha256": "f8cc7ef5d847412d77e4fb1cd60b44f5f289db47efea6f45b078549f84481683"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-answer-English.png",
+      "bytes": 47554,
+      "sha256": "e2bf61d79adc9f25c26d856176192239900f5d0b9e111d72bda1a10cfa48b94e"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-answer-German-last.png",
+      "bytes": 54449,
+      "sha256": "aede18584d60e762e10e4dd0cc5f6527b9455a8ce22dfa47e3adfdcc6b00e249"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-answer-German.png",
+      "bytes": 47385,
+      "sha256": "e5ad04f1ace12726fcdb986862924b548f5a0362ccae650a39ab5895bc216839"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-choice-English-King-last.png",
+      "bytes": 52322,
+      "sha256": "e871adde3e871704bbabe70203469d0fa0529d14f3d604758d3d7af4aefc0d80"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-choice-English-King.png",
+      "bytes": 48001,
+      "sha256": "7b38db4a8303a9b8c4c77b433fc2e740f3100b861e2f6f5ebd0f1fc578d8821d"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-choice-English-Word-last.png",
+      "bytes": 52322,
+      "sha256": "e871adde3e871704bbabe70203469d0fa0529d14f3d604758d3d7af4aefc0d80"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-choice-English-Word.png",
+      "bytes": 48001,
+      "sha256": "7b38db4a8303a9b8c4c77b433fc2e740f3100b861e2f6f5ebd0f1fc578d8821d"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-choice-German-King-last.png",
+      "bytes": 52809,
+      "sha256": "92177382e97e71c2647a12042e70ffa60b5f96e719f89880b3af614187b1bd65"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-choice-German-King.png",
+      "bytes": 39852,
+      "sha256": "0c89718b74a2322074b7593cccd5d2c864cf7a8e0f5867e6a6048f7d2e69fe94"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-choice-German-Word-last.png",
+      "bytes": 52809,
+      "sha256": "92177382e97e71c2647a12042e70ffa60b5f96e719f89880b3af614187b1bd65"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-choice-German-Word.png",
+      "bytes": 39852,
+      "sha256": "0c89718b74a2322074b7593cccd5d2c864cf7a8e0f5867e6a6048f7d2e69fe94"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-judgment-English-last.png",
+      "bytes": 45451,
+      "sha256": "c12e3f6f5bca44dd866451d7d4cb9f3572c7e2a996ac2a0712a6349e5d1ee1c1"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-judgment-English.png",
+      "bytes": 38409,
+      "sha256": "5b02be3d226858a4745c9e085966177c7583b1231a49bafd39ca204fe3443438"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-judgment-German-last.png",
+      "bytes": 47054,
+      "sha256": "6838f127d0679293dba1fb35671d63b21aacbcaf5c504b684e7bb5f6a3febe3b"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-judgment-German.png",
+      "bytes": 39467,
+      "sha256": "193c18c8a36cd93a641bde306b9566e12fc7626e77a3db77dc030ed8115ce40d"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-king-confirm-English-last.png",
+      "bytes": 49011,
+      "sha256": "b49c0aab471c7d97f37212aa1578cc97df3ee0cfc6e427833c67d8a9584a7288"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-king-confirm-English.png",
+      "bytes": 43427,
+      "sha256": "92d78eb3c9898f8cfcaacf4fc70d552c2cd047e73ac721f5e6c907838b5a3657"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-king-confirm-German-last.png",
+      "bytes": 51912,
+      "sha256": "2b9777121713bcb1a32ec5eaa934c118ab47fc3a9a91f6db683951166becf698"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-king-confirm-German.png",
+      "bytes": 40820,
+      "sha256": "828713d9c793bb335d4742bf218d373036ebc55867a1635ba4c9c4a9c35130a9"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-last-target-English.png",
+      "bytes": 50946,
+      "sha256": "c84cfd8caf9c88fb8688a5845f15a323be9ffee5946a43865b61362c3b19dbc8"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-last-target-German.png",
+      "bytes": 52369,
+      "sha256": "de2fe6714c7dfb222e263391062074c493e942e004dd6f2a5393c6c89bde3555"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-result-English-King-last.png",
+      "bytes": 42412,
+      "sha256": "bbecc19a1ca4d6ba51b8670f4d20c829064ba28977300b0bf4f0c7e4f9d2fb21"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-result-English-King.png",
+      "bytes": 42972,
+      "sha256": "74e1b614d3e27f95cfef320bc79912b45bdebc0a19bb852e38d1006c7c71135c"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-result-English-Word-last.png",
+      "bytes": 42422,
+      "sha256": "dc2416fc96a9c2aff4ebaa125a3196f31cd3e990a7d2f4f64749a13903133549"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-result-English-Word.png",
+      "bytes": 39256,
+      "sha256": "370a86af5df9138731cfb9ec55f8de06992dd902043cbed669a17f197893ebdf"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-result-German-King-last.png",
+      "bytes": 46055,
+      "sha256": "2e0c89f7c37fac303c1115062f209bed1795b1792948dada0963ead9a4a16b93"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-result-German-King.png",
+      "bytes": 42574,
+      "sha256": "2b22395dd2fefbbf01ce2221eb55229ee5128591e2b54392eda06758007d972b"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-result-German-Word-last.png",
+      "bytes": 46046,
+      "sha256": "8971f3666fa859c607f62f1b8ab13bbc428ed035758945748a9bb0867cd60507"
+    },
+    {
+      "path": "kings-last-chance/screenshots/large-result-German-Word.png",
+      "bytes": 44607,
+      "sha256": "604290166fd24fffdcf2ad4e38dcb6c76ad64622bd9cd614c6b8ba28370b91e3"
+    },
+    {
+      "path": "kings-last-chance/screenshots/repeat-protected-king.png",
+      "bytes": 34704,
+      "sha256": "77bc7ab56acafb5c1f86ddb9a6a6be91a78528fe5a742d984f6e684d95c0f8d3"
+    },
+    {
+      "path": "kings-last-chance/screenshots/repeat-protected-word.png",
+      "bytes": 36509,
+      "sha256": "66588607dd062f6245dff6a740b419955fc2cfe3db4cc412d802b83e4bf3e1f5"
+    },
+    {
+      "path": "kings-last-chance/screenshots/spoken-answer-English-False.png",
+      "bytes": 44061,
+      "sha256": "a54da79de9f05fc15efba1c65309c2aa0c42669e32bee430eb924ddfc26a1b7d"
+    },
+    {
+      "path": "kings-last-chance/screenshots/spoken-answer-English-True.png",
+      "bytes": 44061,
+      "sha256": "a54da79de9f05fc15efba1c65309c2aa0c42669e32bee430eb924ddfc26a1b7d"
+    },
+    {
+      "path": "kings-last-chance/screenshots/spoken-answer-German-False.png",
+      "bytes": 46212,
+      "sha256": "782f58adef48cde7d67856508d66196fadc6362f3d56245a2b5f240129bb72a9"
+    },
+    {
+      "path": "kings-last-chance/screenshots/spoken-answer-German-True.png",
+      "bytes": 46212,
+      "sha256": "782f58adef48cde7d67856508d66196fadc6362f3d56245a2b5f240129bb72a9"
+    },
+    {
+      "path": "kings-last-chance/screenshots/word-result-English-False.png",
+      "bytes": 35916,
+      "sha256": "6fd5b4cd2dc91b4527a3a258368295a463e32fb8354d22847ca58fcc7e3afaf1"
+    },
+    {
+      "path": "kings-last-chance/screenshots/word-result-English-True.png",
+      "bytes": 34833,
+      "sha256": "ef5f6df379a37072611c38998a61ce418359c03aec3c9c397bc9fc688df3e78f"
+    },
+    {
+      "path": "kings-last-chance/screenshots/word-result-German-False.png",
+      "bytes": 40588,
+      "sha256": "c2e45e004bfcd3b76b7e418479b77aeace84bafb320b7a24fbde860384eb07c3"
+    },
+    {
+      "path": "kings-last-chance/screenshots/word-result-German-True.png",
+      "bytes": 40949,
+      "sha256": "6748d5dc5f0188d7d49814b80910a96c0f9dd19c22d8562b89df37874ecfecf9"
+    },
+    {
+      "path": "kings-rules-cards/max-list-English-EvilKing-drag-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "kings-rules-cards/max-list-English-EvilKing-drag.txt",
+      "bytes": 229,
+      "sha256": "09145f932ee9a82ecdcb29377f3c4db3c69a74a0be0bd650c4f9c5f11e685773"
+    },
+    {
+      "path": "kings-rules-cards/max-list-English-EvilKing-hold-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "kings-rules-cards/max-list-English-EvilKing-hold.txt",
+      "bytes": 228,
+      "sha256": "8d40c971c13f4fc30f85973799993757911f9852680b22c193dcf89a1e172b45"
+    },
+    {
+      "path": "kings-rules-cards/max-list-English-GoodKing-drag-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "kings-rules-cards/max-list-English-GoodKing-drag.txt",
+      "bytes": 229,
+      "sha256": "c529475ad05f41c3f67184202a9c8f6325fd389c685217c83b2188b90176afe6"
+    },
+    {
+      "path": "kings-rules-cards/max-list-English-GoodKing-hold-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "kings-rules-cards/max-list-English-GoodKing-hold.txt",
+      "bytes": 228,
+      "sha256": "f0f70b2ac1d8d553a59cf9f627d10240e0af19d779bb5c753973e0cb3f2e79f5"
+    },
+    {
+      "path": "kings-rules-cards/max-list-German-EvilKing-drag-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "kings-rules-cards/max-list-German-EvilKing-drag.txt",
+      "bytes": 229,
+      "sha256": "eb74eea21c479e6df3c972554c952b53e27436f6bcb68573adce4a173dd9c69c"
+    },
+    {
+      "path": "kings-rules-cards/max-list-German-EvilKing-hold-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "kings-rules-cards/max-list-German-EvilKing-hold.txt",
+      "bytes": 228,
+      "sha256": "c21b387a736186c75c66e3fc4cc6c28d581f1ea4cdac97b63b5ffcbe3d654a2f"
+    },
+    {
+      "path": "kings-rules-cards/max-list-German-GoodKing-drag-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "kings-rules-cards/max-list-German-GoodKing-drag.txt",
+      "bytes": 229,
+      "sha256": "21c1b292faef011ac049d4e0920f834a913e874d62c077d7e228e880d90fb360"
+    },
+    {
+      "path": "kings-rules-cards/max-list-German-GoodKing-hold-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "kings-rules-cards/max-list-German-GoodKing-hold.txt",
+      "bytes": 228,
+      "sha256": "74267608cf12edfdeaa5a9053168c478c763a6b0f052e543b3348ab8ce02d16c"
+    },
+    {
+      "path": "kings-rules-cards/role-counts-English-Classic-20.txt",
+      "bytes": 266,
+      "sha256": "a9ce24bf7aa4cf879f5984cdff95166b7a24ac381710c2094ba43fb598342d4e"
+    },
+    {
+      "path": "kings-rules-cards/role-counts-English-Classic-4.txt",
+      "bytes": 266,
+      "sha256": "c6fed9644def8cdff33e110b6c58ab70a8c6585f187b3ca9a7498d2bb014c217"
+    },
+    {
+      "path": "kings-rules-cards/role-counts-English-Kings-6.txt",
+      "bytes": 266,
+      "sha256": "c6fed9644def8cdff33e110b6c58ab70a8c6585f187b3ca9a7498d2bb014c217"
+    },
+    {
+      "path": "kings-rules-cards/role-counts-English-Quick-3.txt",
+      "bytes": 266,
+      "sha256": "c6fed9644def8cdff33e110b6c58ab70a8c6585f187b3ca9a7498d2bb014c217"
+    },
+    {
+      "path": "kings-rules-cards/role-counts-German-Classic-20.txt",
+      "bytes": 266,
+      "sha256": "c911b1b382286d3b3edea88eb8c9e22f3e8b86a6a6488722a9cb64b83cf343c8"
+    },
+    {
+      "path": "kings-rules-cards/role-counts-German-Classic-4.txt",
+      "bytes": 266,
+      "sha256": "957ce7a04f6c5dc6fc6feed722c8196813ae13235f057fd85df8a5006c927047"
+    },
+    {
+      "path": "kings-rules-cards/role-counts-German-Kings-6.txt",
+      "bytes": 266,
+      "sha256": "957ce7a04f6c5dc6fc6feed722c8196813ae13235f057fd85df8a5006c927047"
+    },
+    {
+      "path": "kings-rules-cards/role-counts-German-Quick-3.txt",
+      "bytes": 266,
+      "sha256": "957ce7a04f6c5dc6fc6feed722c8196813ae13235f057fd85df8a5006c927047"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/help-English-last.png",
+      "bytes": 62953,
+      "sha256": "c4484e766dd64a1959f7c9e5e3b9917b069dd4ee48bfd10b412f23d93f9dcfe4"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/help-English-start.png",
+      "bytes": 58925,
+      "sha256": "c1ae74b99753e1b131e1d7fb1b16f789659d16ef8bb35202bf8f7fd4297318fc"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/help-German-last.png",
+      "bytes": 65873,
+      "sha256": "eaf843848ad23953146c209ddef3f9edce4125d314c5c942140967d5e64e568a"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/help-German-start.png",
+      "bytes": 54720,
+      "sha256": "4b92c54cfdd103ce4b72a2721a0e19aea5fa459ad78b60ed83575db4b7ef0b9b"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-EvilKing-drag-covered.png",
+      "bytes": 37528,
+      "sha256": "2201bdf6945aed010811d513fc12c946fe08ac5107081ad5e2aa1879953df21f"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-EvilKing-drag-last.png",
+      "bytes": 56573,
+      "sha256": "104e7591e71d96c60fa17c048366010c56a07fa13499dcae92b2c79ffe65510e"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-EvilKing-drag-start.png",
+      "bytes": 42284,
+      "sha256": "defa2d5a5d73f0ed3bd89dc973182cde41488e69bae39551e29a3b65df3174e6"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-EvilKing-hold-covered.png",
+      "bytes": 37705,
+      "sha256": "406f84ba154b75122fc48de616e816d21bb16e21367fcd414045ee1089d13ef6"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-EvilKing-hold-last.png",
+      "bytes": 56759,
+      "sha256": "e60fb132303c5512d7213789e12455424cab883abe4629528186982ab48eb127"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-EvilKing-hold-start.png",
+      "bytes": 42468,
+      "sha256": "aaec1f009e806b052452f6511ea93b753f12e7e5e819ed58707f8f9f7f31a020"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-GoodKing-drag-covered.png",
+      "bytes": 37534,
+      "sha256": "3abf90997d0a5ba9f8683cdb5029c72e7466678446f688bbd34bc742fb524dfc"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-GoodKing-drag-last.png",
+      "bytes": 44929,
+      "sha256": "7341a13eb5ce4a9b741f9a15ee7a87804d42deb9b962ea59403d77f32e165441"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-GoodKing-drag-start.png",
+      "bytes": 40873,
+      "sha256": "52c61a139b8af040caf40224722e4c9e9f5fd8035667e35f7a64f16c6abf9810"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-GoodKing-hold-covered.png",
+      "bytes": 37708,
+      "sha256": "d3e6c7f6547e0dd5f5875713adf8a8219b39cfa856e92f168260126da2639ac9"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-GoodKing-hold-last.png",
+      "bytes": 45137,
+      "sha256": "3b71f619445a483503ed31af55fcab8e54895b70aaa10549591768848936b853"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-English-GoodKing-hold-start.png",
+      "bytes": 41063,
+      "sha256": "ee531365f419af3b98823b9b7952c12928a4acd6eeb66f62222d62cf0a46d1e6"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-EvilKing-drag-covered.png",
+      "bytes": 39265,
+      "sha256": "3443879d0e82990e012204788c28bcea476668e93fdcac8c0fa449cf4d36aa9d"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-EvilKing-drag-last.png",
+      "bytes": 54975,
+      "sha256": "f8b5082c1031f3e711557368e2b22d5be7e6dcd5a4913190321b8736de8efd6b"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-EvilKing-drag-start.png",
+      "bytes": 45930,
+      "sha256": "96279d5b17831ba6a9325795695446117ec791cace5a82f4e71f704ca2abe7ee"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-EvilKing-hold-covered.png",
+      "bytes": 39417,
+      "sha256": "0e74ad360c2ed2c44ee19b97cadfb397a05df7ce20f4e4840f8eca9bb47002b9"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-EvilKing-hold-last.png",
+      "bytes": 55200,
+      "sha256": "341389491588d0b347fc50afebe4c177aca493499a84129ca0289d17263dbe15"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-EvilKing-hold-start.png",
+      "bytes": 46124,
+      "sha256": "3ed6c472d2d85715b23c2daf87d6b9b5285b8c9dcc6f309c9fe317f12d401db4"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-GoodKing-drag-covered.png",
+      "bytes": 39195,
+      "sha256": "7bdedd206480e01c678b3e89eeb3923537c05666d055d264d4820eeb5f7cc6fe"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-GoodKing-drag-last.png",
+      "bytes": 46197,
+      "sha256": "9f12f42ed803aeeb05e198446e9134160f1f58c0cc9b2b5871a83d9285b69a21"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-GoodKing-drag-start.png",
+      "bytes": 44455,
+      "sha256": "35299e3ebe6c08924fa7dc1cfaaa8465b78f8ff4bf1eafeba962fda04040e00e"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-GoodKing-hold-covered.png",
+      "bytes": 39357,
+      "sha256": "954f3cb18115329e4382575041686c0d46e8df829c56c7246bbe658f71d6d911"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-GoodKing-hold-last.png",
+      "bytes": 46395,
+      "sha256": "81cb065b6d4b308ba3332c3709d9aaf312cf09263d9fa68000e1e78597dd28f9"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/max-list-German-GoodKing-hold-start.png",
+      "bytes": 44642,
+      "sha256": "a6f416f98db2e59bf88bc8d3605ff0d6d3d79fb0d05a881f004da84e14c53f20"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/ordinary-English-civilian.png",
+      "bytes": 36841,
+      "sha256": "9794941bad3d48d87074a17434a5f6b0eb1b781ad20edb9667ed3bcf3e265e34"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/ordinary-English-undercover.png",
+      "bytes": 32514,
+      "sha256": "95ae694a16f8fe9f6faf462da8c1a16ef9f49ba2cf50f3b5ad9176cc062db6a3"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/ordinary-German-civilian.png",
+      "bytes": 40837,
+      "sha256": "989b256f4d0e1c8ce86da4279d4330f3fc4b063c77d99ed5be74c0a0c7688f3a"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/ordinary-German-undercover.png",
+      "bytes": 36870,
+      "sha256": "6ccc36129fd230eb4dc823cf15be244ccb8cad1cf8ee209dfa26398a7a772ec5"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Classic-20-large.png",
+      "bytes": 48197,
+      "sha256": "8373db48e96352ed6410a198f7b629ce3f823c28e444f2bf1e8d44d681934b17"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Classic-20-top.png",
+      "bytes": 44292,
+      "sha256": "4c4d21b55d7394690d4da13073dec3d71ded9737aad165cca021c3e0bc0a33d9"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Classic-20-white.png",
+      "bytes": 44493,
+      "sha256": "3fda227a85c300910ab4ac841d81c9186e118eb50ba8a4156302455dc3c22d49"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Classic-4-large.png",
+      "bytes": 43762,
+      "sha256": "7e5d244507b268dced9ca689f7e708ebf603f3e609360c0f03e14ab24a7c865f"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Classic-4-swap.png",
+      "bytes": 39769,
+      "sha256": "ee6ff2ed527f951b25863848cf33abce972749fc17b6b5f026f377facf50d8d1"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Classic-4-top.png",
+      "bytes": 39420,
+      "sha256": "3e2b547692231b072cc8ad783f6777dc754b13c8ed204952cfa9d752eab24b35"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Classic-4-white.png",
+      "bytes": 39656,
+      "sha256": "985d7151c3f9d9d9f0c41d6e5e599c63431a38ec70c75dbf697f9ea33addc750"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Kings-6-large.png",
+      "bytes": 41299,
+      "sha256": "e7c0f8f7522375f190eac995fb2812bac3afadbd66351f68f72a33069e7a6a95"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Kings-6-top.png",
+      "bytes": 40171,
+      "sha256": "6ce81b17f5ebe58581ef92da124b3fa291c0e210b3f8e2634a3e2c09b0b4f952"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Quick-3-large.png",
+      "bytes": 43843,
+      "sha256": "46cfe2704f6f6923d45ba0c1038a45cc2f97c3173c76098689501c265a99dcdb"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Quick-3-swap.png",
+      "bytes": 39859,
+      "sha256": "442e54b96b16cefadccb30a38b8f7cff4a1d4e7f47ed23810496285839c0d3c0"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Quick-3-top.png",
+      "bytes": 39497,
+      "sha256": "868bc31b669e49fb6862e1c096e614054c0576e2140c5d57cbb1cb964724a31b"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-English-Quick-3-white.png",
+      "bytes": 39745,
+      "sha256": "110fe2546caa66d4e1a81a8d89c0b3682a820020aa38ebadff14387948b81092"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Classic-20-large.png",
+      "bytes": 50918,
+      "sha256": "01e82c02c2406d00cd422e6be605f63df1e22086253f20547ad4facbe054f399"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Classic-20-top.png",
+      "bytes": 47108,
+      "sha256": "83864fdb80b242a28d7b5adf1f9af55f0fd8f3d95275565b238fa102b1f77b60"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Classic-20-white.png",
+      "bytes": 47306,
+      "sha256": "a7132861c697eec96fac83f0ba50e366cc03e1ccecce40c869724bc0aa7ece8e"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Classic-4-large.png",
+      "bytes": 47037,
+      "sha256": "b4bea91e65668bfca196441d3ba41bf137f386e552d353061d7232e1451d5b68"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Classic-4-swap.png",
+      "bytes": 43482,
+      "sha256": "cb110e78a7d9d7e84dafa012f87b0f8286c8766580fcf6785fb5f8bff019d13b"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Classic-4-top.png",
+      "bytes": 42708,
+      "sha256": "f6bb8455e0cdb400b56c8887c3524fd06a0c39180c98cb1c0fb35e51cc320f09"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Classic-4-white.png",
+      "bytes": 42957,
+      "sha256": "b13fb689419611742fc3029ae8f87171a63dec0512080fb7116b8270474ff8ff"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Kings-6-large.png",
+      "bytes": 46034,
+      "sha256": "f579805bde1bc961ac2c36c579ed50cef1c01453765492460b22c526fff1bcf1"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Kings-6-top.png",
+      "bytes": 44588,
+      "sha256": "903961dd5b2d5bba929f229ff541f7e22f0a793be3ace4e4bd33f13a6997446e"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Quick-3-large.png",
+      "bytes": 46751,
+      "sha256": "e84c1cb500df34cee230f9cdfa6d04e5e54aad4314144561ffdd6432d9b132ea"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Quick-3-swap.png",
+      "bytes": 43182,
+      "sha256": "98b900621c4fe2a81bc221c17bd40ea436ba788c5c248a0f35ff0acd40e38ecc"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Quick-3-top.png",
+      "bytes": 42406,
+      "sha256": "675ffbaa3423d248c0f60e142b4d9492074b50b6b120d38674c7d1ff8313fa9d"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/role-counts-German-Quick-3-white.png",
+      "bytes": 42650,
+      "sha256": "29dad8b5932ce035281c7380483c999be0ba600191391a04a0478f4bf3daf613"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/setup-English-large.png",
+      "bytes": 47134,
+      "sha256": "b6aa9ec72bf704b8d2b716aa5125de5d07b4d2d5dcb849bdc64df0a5ff6199ea"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/setup-German-large.png",
+      "bytes": 49172,
+      "sha256": "8d557225a3252bc37d082823c1134a78024876144bad10c40f433536d2e2198a"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/word-Chocolate-hazelnut-spread-large.png",
+      "bytes": 40900,
+      "sha256": "ec89ffed1ae0adf2c9c5fbf3b8b348c5531903d460e5af7bd423025882a39f98"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/word-Nuss-Nougat-Creme-large.png",
+      "bytes": 49864,
+      "sha256": "fffd053fafa15d205dafbc21e0a2042b4014fa671d99b2cf4c4187197b69e6bc"
+    },
+    {
+      "path": "kings-rules-cards/screenshots/word-Rollkragenpullover-large.png",
+      "bytes": 49203,
+      "sha256": "9692ab4c18814b6917f5cd0f36b5e69f46b9606748a334b41f64903739438e40"
+    }
+  ],
+  "actuallyViewed": [
+    "kings-elimination/starter-small-German-True-top.png",
+    "kings-elimination/starter-small-English-True-last.png",
+    "kings-rules-cards/screenshots/role-counts-German-Quick-3-swap.png",
+    "kings-rules-cards/screenshots/role-counts-English-Classic-20-large.png"
+  ],
+  "notes": "Original-resolution images viewed after final full run. The English Help preview omitted H again, but file SHA256 exactly matches previously pixel-verified84d93a6e29e29c18d47ce713f269915ca5e9f99f14b07b7a525caed68593ffee. Scroll positions are separate, not simultaneous visibility."
+}

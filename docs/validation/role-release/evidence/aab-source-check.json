@@ -1,0 +1,19 @@
+{
+  "source": "b6e6a926bbcc58c7103d79a9f117cbd09e4269e3",
+  "status": [],
+  "diff": [],
+  "fontChecks": [
+    {
+      "path": "game/Assets/WordDeduction/UI/Inter.asset",
+      "expectedCanonicalSha256": "190749141bdb6585492b2fca95281bee8cd147913e7f63473c3e9bac4cc041f2",
+      "actualSha256": "190749141bdb6585492b2fca95281bee8cd147913e7f63473c3e9bac4cc041f2",
+      "equal": true
+    },
+    {
+      "path": "game/Assets/WordDeduction/UI/Emoji.asset",
+      "expectedCanonicalSha256": "4b3934f84d7cc7917596430760ffcd921746e1299e7cdd9fc3fde8c44f9531df",
+      "actualSha256": "4b3934f84d7cc7917596430760ffcd921746e1299e7cdd9fc3fde8c44f9531df",
+      "equal": true
+    }
+  ]
+}
