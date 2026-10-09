@@ -69,7 +69,7 @@ internal static class KingsCases
             Check(cards[1].Kind == PrivateCardKind.EvilKing && cards[1].Word == null && cards[1].Leader == null && cards[1].KnownParticipants.Select(p => p.Id).SequenceEqual(new[] { people[0].Id }), "White knows his identity and ordinary team without either word or enemy king");
             Check(cards[2].Kind == PrivateCardKind.GoodKing && cards[2].Word == cards[3].Word && cards[2].Leader == null && cards[2].KnownParticipants.Select(p => p.Id).SequenceEqual(new[] { people[0].Id, people[1].Id }), "good King knows good word and evil names in seating order");
             Check(Newtonsoft.Json.JsonConvert.SerializeObject(cards[2].KnownParticipants).IndexOf("Role", StringComparison.OrdinalIgnoreCase) < 0, "known names do not mark the evil King");
-            Check(session.Match.Phase == MatchPhase.TablePlay && session.Match.Owner == null && session.Match.StartingPlayer == null && session.Match.Result == null, "handoffs lead directly to neutral table play");
+            Check(session.Match.Phase == MatchPhase.TablePlay && session.Match.Owner == null && session.Match.StartingPlayer != null && session.Match.Result == null, "handoffs lead directly to neutral table play with a public starter");
             Check(!session.BeginVote().Success && !session.RecordTie(false).Success, "Kings never falls through into Quick or Classic voting");
             Check(session.View.Players.All(p => p.Active), "dealing does not change group participation");
         }),
