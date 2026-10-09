@@ -1,0 +1,399 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 222.92,
+      "summary": {
+        "total": 53,
+        "passed": 50,
+        "failed": 3,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.ClassicCanStartFromTheSavedGroupInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.5405048,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.EliminationsAndRepeatedTiesKeepOnlySurvivorsOnAShortScreen",
+          "Status": "Passed",
+          "Duration": 0.7127512,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.WhiteAloneAndBothSurvivingAdversaryRolesAreNamedInTheResult",
+          "Status": "Passed",
+          "Duration": 0.5331318,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ClassicScreenTests.WhitePrivateCardAndSpokenGuessRemainPrivateAcrossResumeInBothLanguages",
+          "Status": "Passed",
+          "Duration": 2.7548518,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ContentScreenTests.LongBilingualWordsFitTheRealSmallCardAndDisappearOnRelease",
+          "Status": "Passed",
+          "Duration": 141.1626632,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.AddingAPlayerScrollsTheNewRowIntoViewAfterLayout",
+          "Status": "Passed",
+          "Duration": 0.0809501,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.EditingTheLastPlayerKeepsAllActionsVisibleAfterTheViewportShrinks",
+          "Status": "Passed",
+          "Duration": 0.0749673,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.FailedRenameKeepsTheTypedNameForRetry",
+          "Status": "Passed",
+          "Duration": 0.0447106,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.GroupActionsThroughRenderedControlsSurviveReopening",
+          "Status": "Passed",
+          "Duration": 0.1424273,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupScreenTests.GroupScreenExposesTheNameEntryAndBothModes",
+          "Status": "Passed",
+          "Duration": 0.0203086,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.HandleAutoScrollReachesTheEndWithoutReorderingDuringPreview",
+          "Status": "Passed",
+          "Duration": 1.154682,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.HandleReordersOnlyOnValidDropAndMoveButtonsReachBothEnds",
+          "Status": "Passed",
+          "Duration": 0.2145373,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.LargeBilingualGroupsKeepEditAndMoveControlsReachable",
+          "Status": "Failed",
+          "Duration": 0.3499837,
+          "Message": "  movePlayerUp\r\n  Expected: greater than or equal to 73.0f\r\n  But was:  19.0f\r\n",
+          "StackTrace": "at WordDeduction.Tests.GroupUsabilityScreenTests+<LargeBilingualGroupsKeepEditAndMoveControlsReachable>d__13.MoveNext () [0x0053e] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\GroupUsabilityScreenTests.cs:173\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.LegacyPeopleAreCollapsedAndOnlyExplicitlyRestored",
+          "Status": "Passed",
+          "Duration": 0.1285139,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.NameDragsNeverEditAndOnlyTheExplicitButtonEdits",
+          "Status": "Passed",
+          "Duration": 0.2030507,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.OrdinaryScrollDoesNotReorderAndInterruptedOrFailedDropKeepsCommittedGroup",
+          "Status": "Passed",
+          "Duration": 0.18193,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.GoodKingResultNamesTheWholeTeamAndBothKingsInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.5391754,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.OrdinaryEliminationCanBeCorrectedAndContinuesDirectlyAtTheTableInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.6018272,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.PublicGroupHierarchyReturnsAfterAbandonAndResultWithoutAnotherAction",
+          "Status": "Failed",
+          "Duration": 0.965104,
+          "Message": "  A newly visible Group must restore its public controls and nested player list without another redraw action.\r\n  Expected: String containing \"Add player\" and containing \"Kings\" and containing \"Alex\"\r\n  But was:  \"Rules, about, privacy and licenses \nGerman \nEnglish \nYour group \n20 playing \nSaved players. Scroll for more. \nAlex \nEdit Alex \nBea \nEdit Bea \nChris \nEdit Chris \nDana \nEdit Dana \nEli \nEdit Eli \nWWWWWWWWWWWWWWWWWWWWWWWW · 6 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 6 \nWWWWWWWWWWWWWWWWWWWWWWWW · 7 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 7 \nWWWWWWWWWWWWWWWWWWWWWWWW · 8 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 8 \nWWWWWWWWWWWWWWWWWWWWWWWW · 9 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 9 \nWWWWWWWWWWWWWWWWWWWWWWWW · 10 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 10 \nWWWWWWWWWWWWWWWWWWWWWWWW · 11 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 11 \nWWWWWWWWWWWWWWWWWWWWWWWW · 12 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 12 \nWWWWWWWWWWWWWWWWWWWWWWWW · 13 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 13 \nWWWWWWWWWWWWWWWWWWWWWWWW · 14 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 14 \nWWWWWWWWWWWWWWWWWWWWWWWW · 15 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 15 \nWWWWWWWWWWWWWWWWWWWWWWWW · 16 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 16 \nWWWWWWWWWWWWWWWWWWWWWWWW · 17 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 17 \nWWWWWWWWWWWWWWWWWWWWWWWW · 18 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 18 \nWWWWWWWWWWWWWWWWWWWWWWWW · 19 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 19 \nWWWWWWWWWWWWWWWWWWWWWWWW · 20 \nEdit WWWWWWWWWWWWWWWWWWWWWWWW · 20 \n20 players maximum. Remove someone to add another. \nQuick \nClassic \nKings \n16 good incl. King · 3 Undercover + Mr. White \nOne fewer Undercover \n3 Undercover \nOne more Undercover \nUse the automatic Undercover count \nLet's play \"\r\n",
+          "StackTrace": "at WordDeduction.Tests.KingsEliminationScreenTests+<PublicGroupHierarchyReturnsAfterAbandonAndResultWithoutAnotherAction>d__2.MoveNext () [0x003af] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\KingsEliminationScreenTests.cs:46\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.RapidRepeatedConfirmationDoesNotStartARematch",
+          "Status": "Passed",
+          "Duration": 0.7710389,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsEliminationScreenTests.WhiteEliminationKeepsLastChanceSafeAcrossRestartAndFailedSaveInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.4401863,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsFoundationScreenTests.KingKnowledgeStaysOutsideEveryAccessibilityNodeAndClearsOnInterruption",
+          "Status": "Passed",
+          "Duration": 0.137132,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsFoundationScreenTests.KingsSelectionRetainsRequestedCountAndExplainsAdjustmentInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.4252655,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsFoundationScreenTests.PrivateCardsConcealAllKnowledgeAndFinishDirectlyAtTheTableInBothLanguages",
+          "Status": "Passed",
+          "Duration": 2.4038564,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.KingChoiceHasCorrectableUnmarkedTargetsAndOneTeamResultInBothLanguages",
+          "Status": "Passed",
+          "Duration": 3.3651063,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.LastChanceScreensKeepLongNamesAndActionsReachableAtLargeText",
+          "Status": "Passed",
+          "Duration": 7.6154588,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.RapidRepeatedLastChanceTapsCannotJudgeOrSkipTheResult",
+          "Status": "Passed",
+          "Duration": 1.485288,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.WordChoiceAndSpokenAnswerCommitBeforeJudgmentInBothLanguages",
+          "Status": "Passed",
+          "Duration": 3.6486562,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.AllThreeModesAndKingsCountControlsFitAtLargeTextWithTwentyPlayers",
+          "Status": "Passed",
+          "Duration": 0.8272811,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.EveryKingsCardKeepsNeutralOrdinaryPresentationAndClearsAllFieldsOnInterruption",
+          "Status": "Passed",
+          "Duration": 4.0535771,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.LongKingsWordsFitBesideThePrivateScrollbarAndLongLeader",
+          "Status": "Passed",
+          "Duration": 25.4942146,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.MaximalKingListsCanBeReadWithOneFingerInsideTheSmallPhoneAtLargeText",
+          "Status": "Passed",
+          "Duration": 9.6754018,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.OptionalKingsRulesAreReadableFromInformationAndMatchHelpInBothLanguages",
+          "Status": "Passed",
+          "Duration": 1.072056,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.InvisibleNamesAreRejectedAndExtendedNamesSurviveTheUnityRuntime",
+          "Status": "Passed",
+          "Duration": 0.1117519,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard",
+          "Status": "Failed",
+          "Duration": 0.5151783,
+          "Message": "  removePlayer\r\n  Expected: greater than or equal to 74.0f\r\n  But was:  71.0f\r\n",
+          "StackTrace": "at WordDeduction.Tests.PolishScreenTests+<LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard>d__14.MoveNext () [0x00449] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\PolishScreenTests.cs:244\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeLongOwnerKeepsCardAndActionsSeparateInsidePhoneInsets",
+          "Status": "Passed",
+          "Duration": 0.1448417,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextCardKeepsDecorativeMarkClearOfItsCaption",
+          "Status": "Passed",
+          "Duration": 0.1447496,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextEmptyGroupKeepsTheWholeFirstStepVisible",
+          "Status": "Passed",
+          "Duration": 0.049467,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextExplainsWhyQuickAndClassicCannotStart",
+          "Status": "Passed",
+          "Duration": 0.5882144,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.MenuFramesFollowResizingAndScrollWithoutReplacingTheHierarchy",
+          "Status": "Passed",
+          "Duration": 0.1390383,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.PublicMenuSemanticsFollowNavigationAndNeverContainThePrivateWord",
+          "Status": "Passed",
+          "Duration": 0.110483,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.SmallGroupHasFingerSizedLanguageAndEditControls",
+          "Status": "Passed",
+          "Duration": 0.1236936,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.BothLanguagesCompleteTheActualQuickFlowAndKeepTheGroup",
+          "Status": "Passed",
+          "Duration": 2.0790442,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.HoldCancelCaptureLossSecondFingerAndLifecycleEraseSecretsSynchronously",
+          "Status": "Passed",
+          "Duration": 0.0741068,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.QuickStartsAtANamedCoveredCardAndRequiresIntentionalReveal",
+          "Status": "Passed",
+          "Duration": 0.3303844,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.SaveFailuresKeepUnconfirmedScreensAndSecretsCoveredForRetry",
+          "Status": "Passed",
+          "Duration": 0.9663848,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.QuickScreenTests.TwentyPlayersCanReachTheLastSuspectAndResolveARepeatedTieOnAShortScreen",
+          "Status": "Passed",
+          "Duration": 3.9435613,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.AdditionalContactsCannotRevealUntilEveryFingerHasLifted",
+          "Status": "Passed",
+          "Duration": 0.2921318,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.ColdRestoredPauseAcceptsAbandonAndRepeatedTouchNavigation",
+          "Status": "Passed",
+          "Duration": 0.3917456,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.FailedFreshStartShowsTheWriteFailureAndAllowsExplicitRetry",
+          "Status": "Passed",
+          "Duration": 0.1647618,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.NavigationRetainsHeldContactsAndFreshTouchesWorkAfterReleaseOrInterruption",
+          "Status": "Passed",
+          "Duration": 0.2825204,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.RecoveryScreenTests.RecoveryExplainsRestoredBlockedAndInaccessibleFilesInBothLanguages",
+          "Status": "Passed",
+          "Duration": 0.2929253,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.ReleaseScreenTests.InformationIsOptionalReadableAndReturnsToTheUnchangedGroup",
+          "Status": "Passed",
+          "Duration": 0.2657756,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

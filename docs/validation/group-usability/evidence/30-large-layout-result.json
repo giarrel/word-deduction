@@ -1,0 +1,91 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 18.92,
+      "summary": {
+        "total": 9,
+        "passed": 8,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.LargeBilingualGroupsKeepEditAndMoveControlsReachable",
+          "Status": "Failed",
+          "Duration": 0.5964819,
+          "Message": "  movePlayerUp\r\n  Expected: greater than or equal to 163.0f\r\n  But was:  61.0f\r\n",
+          "StackTrace": "at WordDeduction.Tests.GroupUsabilityScreenTests+<LargeBilingualGroupsKeepEditAndMoveControlsReachable>d__13.MoveNext () [0x004a7] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\GroupUsabilityScreenTests.cs:170\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.LastChanceScreensKeepLongNamesAndActionsReachableAtLargeText",
+          "Status": "Passed",
+          "Duration": 7.3745028,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.AllThreeModesAndKingsCountControlsFitAtLargeTextWithTwentyPlayers",
+          "Status": "Passed",
+          "Duration": 0.8151999,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.MaximalKingListsCanBeReadWithOneFingerInsideTheSmallPhoneAtLargeText",
+          "Status": "Passed",
+          "Duration": 8.8962995,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard",
+          "Status": "Passed",
+          "Duration": 0.4352684,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeLongOwnerKeepsCardAndActionsSeparateInsidePhoneInsets",
+          "Status": "Passed",
+          "Duration": 0.1390214,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextCardKeepsDecorativeMarkClearOfItsCaption",
+          "Status": "Passed",
+          "Duration": 0.1121606,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextEmptyGroupKeepsTheWholeFirstStepVisible",
+          "Status": "Passed",
+          "Duration": 0.0492919,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextExplainsWhyQuickAndClassicCannotStart",
+          "Status": "Passed",
+          "Duration": 0.4425985,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

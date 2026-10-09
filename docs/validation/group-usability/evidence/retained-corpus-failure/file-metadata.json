@@ -1,0 +1,23 @@
+[
+  {
+    "Name": "session.json",
+    "Attributes": 32,
+    "Length": 11995,
+    "CreationTimeUtc": "2026-10-09T06:27:49.2563669Z",
+    "LastWriteTimeUtc": "2026-10-09T06:28:54.1723379Z"
+  },
+  {
+    "Name": "session.pending.json",
+    "Attributes": 32,
+    "Length": 11995,
+    "CreationTimeUtc": "2026-10-09T06:27:49.2563669Z",
+    "LastWriteTimeUtc": "2026-10-09T06:28:54.1852137Z"
+  },
+  {
+    "Name": "session.previous.json",
+    "Attributes": 32,
+    "Length": 11364,
+    "CreationTimeUtc": "2026-10-09T06:27:49.2563669Z",
+    "LastWriteTimeUtc": "2026-10-09T06:28:54.1612747Z"
+  }
+]

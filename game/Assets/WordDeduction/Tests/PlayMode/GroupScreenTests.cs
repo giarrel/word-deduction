@@ -42,7 +42,6 @@ namespace WordDeduction.Tests
             }
             var id = session.View.Players[0].Id;
             Assert.That(root.Q<ScrollView>("players").childCount,Is.EqualTo(3));
-            Submit(root.Q<Button>("participation-" + id)); yield return null;
             Submit(root.Q<Button>("edit-" + id)); yield return null;
             root.Q<TextField>("renameInput").value = "Alexandra";
             Submit(root.Q<Button>("saveRename")); yield return null;
@@ -54,7 +53,7 @@ namespace WordDeduction.Tests
             var reopened = Session.Open(directory,Language.English).View;
             Assert.That(reopened.Players.Count,Is.EqualTo(3));
             Assert.That(reopened.Players[0].Name,Is.EqualTo("Alexandra"));
-            Assert.That(reopened.Players[0].Active,Is.False);
+            Assert.That(reopened.Players[0].Active,Is.True);
             Assert.That(reopened.Mode,Is.EqualTo(GameMode.Classic)); Assert.That(reopened.Language,Is.EqualTo(Language.German));
             Assert.That(root.Q<Label>("groupTitle").text,Is.EqualTo("Eure Gruppe"));
             UnityEngine.Object.Destroy(host); UnityEngine.Object.Destroy(panel);

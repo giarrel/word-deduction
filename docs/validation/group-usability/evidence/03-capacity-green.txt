@@ -1,0 +1,2 @@
+PASS capacity rejects a new person without silently pausing anyone
+1/1 passed

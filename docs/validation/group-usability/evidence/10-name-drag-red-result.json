@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.36,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.NameDragsNeverEditAndOnlyTheExplicitButtonEdits",
+          "Status": "Failed",
+          "Duration": 0.3310515,
+          "Message": "  A short name drag must not edit.\r\n  Expected: null\r\n  But was:  <TextField renameInput (x:8.00, y:8.00, width:300.00, height:52.00) world rect: (x:30.00, y:60.00, width:300.00, height:52.00)>\r\n",
+          "StackTrace": "at WordDeduction.Tests.GroupUsabilityScreenTests+<NameDragsNeverEditAndOnlyTheExplicitButtonEdits>d__7.MoveNext () [0x0015b] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\GroupUsabilityScreenTests.cs:49\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

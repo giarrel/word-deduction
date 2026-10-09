@@ -1,0 +1,23 @@
+{
+  "verifiedUtc": "2026-10-09T06:44:08.2115079Z",
+  "mergeCommit": "3d9687c6a9fd043148d22d6c7d1f19c692a2d45e",
+  "integrationParent": "af0cba1f605877dfd3ee672f869704a74a9d9174",
+  "sourceCommit": "25b82d7e6906e7d432752813b1e66138e80af9d7",
+  "runtimeCommit": "99b0bf04c236fc8f6c1467cf699d760de29c6acc",
+  "identicalSourceAndMergeTree": "3b411639f99510584cd3ab6c4dbe407c096ddc0a",
+  "selected": {
+    "count": 70,
+    "bytes": 1768010,
+    "allHashesVerified": true,
+    "manifestSha256": "dbfcc22af1e65b239b6f5ad49e51fe731dc352f9bff8e5647069965b3e2199ed"
+  },
+  "raw": {
+    "count": 72,
+    "bytes": 16487391,
+    "allHashesVerified": true,
+    "manifestSha256": "bbf6b4e01d7eabb37186ce5463faa581163e2deb24ab98839929d8c3817cdb85"
+  },
+  "rawArchive": "artifacts/usability-group-implementation",
+  "testRunsDuringMerge": 0,
+  "unityOrAdbOperations": 0
+}

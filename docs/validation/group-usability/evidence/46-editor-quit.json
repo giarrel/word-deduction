@@ -1,0 +1,12 @@
+{
+  "success": false,
+  "command": "unity command quit",
+  "data": null,
+  "errors": [
+    {
+      "code": "COMMAND_FAILED",
+      "message": "Pipeline server returned 400 Bad Request: Command Execution Failed. Command 'quit' failed: The following game object is invoking the DontDestroyOnLoad method: PipelineQuitScheduler. Notice that DontDestroyOnLoad can only be used in play mode and, as such, cannot be part of an editor script."
+    }
+  ],
+  "warnings": []
+}

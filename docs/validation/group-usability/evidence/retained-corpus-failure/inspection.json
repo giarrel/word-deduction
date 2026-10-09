@@ -1,0 +1,32 @@
+[
+  {
+    "name": "session.json",
+    "bytes": 11995,
+    "sha256": "b9f9352548038ee50c7ced770e39efc0dc568c1f03f318983cf06a11847f41af",
+    "checksum_valid": true,
+    "phase": 0,
+    "handoff": 0,
+    "match_id": "521003021e754718a27f4c1cd81bcdc4",
+    "history_count": 458
+  },
+  {
+    "name": "session.pending.json",
+    "bytes": 11995,
+    "sha256": "7ed88dc6704b5dd986e9543ad3f04a49d15eff2f079ce0434116728fd08a7056",
+    "checksum_valid": true,
+    "phase": 0,
+    "handoff": 1,
+    "match_id": "521003021e754718a27f4c1cd81bcdc4",
+    "history_count": 458
+  },
+  {
+    "name": "session.previous.json",
+    "bytes": 11364,
+    "sha256": "1612e63410040f9e4e85e067d9962600f6c4b00e9a4ffb50b4d9677bfa5a6604",
+    "checksum_valid": true,
+    "phase": null,
+    "handoff": null,
+    "match_id": null,
+    "history_count": 457
+  }
+]

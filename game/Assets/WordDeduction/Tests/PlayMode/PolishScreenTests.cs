@@ -81,7 +81,7 @@ namespace WordDeduction.Tests
             Assert.That(label.contentRect.height, Is.GreaterThanOrEqualTo(label.MeasureTextSize(label.text, label.contentRect.width, VisualElement.MeasureMode.AtMost, 0, VisualElement.MeasureMode.Undefined).y - 1), "Every line fits in the label.");
         }
         [UnityTest]
-        public IEnumerator SmallGroupHasFingerSizedLanguageAndParticipationControls()
+        public IEnumerator SmallGroupHasFingerSizedLanguageAndEditControls()
         {
             var root = Create(Language.German);
             yield return null; yield return null;
@@ -98,7 +98,7 @@ namespace WordDeduction.Tests
                 Assert.That(bounds.height, Is.GreaterThanOrEqualTo(48),name + " finger target height at 360dp");
                 Assert.That(bounds.yMax,Is.LessThanOrEqualTo(640),name + " remains visible");
             }
-            foreach (var button in root.Query<Button>(className:"participation").ToList())
+            foreach (var button in root.Query<Button>(className:"edit-player").ToList())
                 Assert.That(button.worldBound.height, Is.GreaterThanOrEqualTo(48));
         }
 
@@ -220,7 +220,7 @@ namespace WordDeduction.Tests
         public IEnumerator LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard()
         {
             var root = Create(Language.German); yield return null; yield return null;
-            for(int i=0;i<40;i++)
+            for(int i=0;i<20;i++)
             {
                 root.Q<TextField>("nameInput").value = "Alexandria-Maximilian-"+i.ToString("D2");
                 Submit(root.Q<Button>("addPlayer")); yield return null;

@@ -1,0 +1,91 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 21.21,
+      "summary": {
+        "total": 9,
+        "passed": 9,
+        "failed": 0,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.LargeBilingualGroupsKeepEditAndMoveControlsReachable",
+          "Status": "Passed",
+          "Duration": 1.1995009,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsLastChanceScreenTests.LastChanceScreensKeepLongNamesAndActionsReachableAtLargeText",
+          "Status": "Passed",
+          "Duration": 8.0904648,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.AllThreeModesAndKingsCountControlsFitAtLargeTextWithTwentyPlayers",
+          "Status": "Passed",
+          "Duration": 0.8923185,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.KingsRulesScreenTests.MaximalKingListsCanBeReadWithOneFingerInsideTheSmallPhoneAtLargeText",
+          "Status": "Passed",
+          "Duration": 9.7175386,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeGermanEditingKeepsAllActionsVisibleAboveTheKeyboard",
+          "Status": "Passed",
+          "Duration": 0.4767632,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeLongOwnerKeepsCardAndActionsSeparateInsidePhoneInsets",
+          "Status": "Passed",
+          "Duration": 0.1374709,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextCardKeepsDecorativeMarkClearOfItsCaption",
+          "Status": "Passed",
+          "Duration": 0.134437,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextEmptyGroupKeepsTheWholeFirstStepVisible",
+          "Status": "Passed",
+          "Duration": 0.0543917,
+          "Message": null,
+          "StackTrace": null
+        },
+        {
+          "FullName": "WordDeduction.Tests.PolishScreenTests.LargeTextExplainsWhyQuickAndClassicCannotStart",
+          "Status": "Passed",
+          "Duration": 0.4591249,
+          "Message": null,
+          "StackTrace": null
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

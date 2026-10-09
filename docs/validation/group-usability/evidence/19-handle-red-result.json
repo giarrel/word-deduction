@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "command": "command test_status",
+  "data": {
+    "command": "test_status",
+    "parameters": {},
+    "result": {
+      "status": "completed",
+      "duration": 0.24,
+      "summary": {
+        "total": 1,
+        "passed": 0,
+        "failed": 1,
+        "skipped": 0,
+        "inconclusive": 0
+      },
+      "results": [
+        {
+          "FullName": "WordDeduction.Tests.GroupUsabilityScreenTests.HandleReordersOnlyOnValidDropAndMoveButtonsReachBothEnds",
+          "Status": "Failed",
+          "Duration": 0.2115711,
+          "Message": "  There is a distinct reorder handle.\r\n  Expected: not null\r\n  But was:  null\r\n",
+          "StackTrace": "at WordDeduction.Tests.GroupUsabilityScreenTests+<HandleReordersOnlyOnValidDropAndMoveButtonsReachBothEnds>d__9.MoveNext () [0x000ea] in C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game\\Assets\\WordDeduction\\Tests\\PlayMode\\GroupUsabilityScreenTests.cs:82\r\nat UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in .\\Library\\PackageCache\\com.unity.test-framework@bd7f943e9647\\UnityEngine.TestRunner\\NUnitExtensions\\Attributes\\TestEnumerator.cs:44\r\n"
+        }
+      ]
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

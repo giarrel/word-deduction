@@ -25,11 +25,12 @@ namespace WordDeduction.Tests
                 Submit(fixture.Root.Q<Button>("whitePreference"));
                 Assert.That(fixture.Session.View.WhitePreferred,Is.True);
                 var fifth=fixture.Session.View.Players[4].Id;
-                Submit(fixture.Root.Q<Button>("participation-"+fifth));
+                Submit(fixture.Root.Q<Button>("edit-"+fifth));
+                Submit(fixture.Root.Q<Button>("removePlayer"));
                 Assert.That(fixture.Root.Q<Button>("whitePreference").enabledSelf,Is.False);
                 Assert.That(fixture.Session.View.WhitePreferred,Is.True,"Saved preference survives falling to four people.");
                 Assert.That(fixture.Session.View.WhiteCount,Is.Zero);
-                Submit(fixture.Root.Q<Button>("participation-"+fifth));
+                Submit(fixture.Root.Q<Button>("undo"));
                 Assert.That(fixture.Session.View.WhiteCount,Is.EqualTo(1),"Returning fifth person restores effective White.");
                 Submit(fixture.Root.Q<Button>("playButton")); yield return null;
                 Assert.That(fixture.Root.Q<Label>("matchMode").text,Is.EqualTo(language==Language.German ? "Klassisch" : "Classic"));
