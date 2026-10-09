@@ -1,6 +1,6 @@
 # Freie Rollenanzahlen: Anforderung für die nächste Version
 
-Kanonisch: [GitHub-Issue #11](https://github.com/giarrel/word-deduction/issues/11). Status: `needs-info`; die offenen Siegbedingungen stehen im Ticket.
+Historischer Anforderungsstand. Die offenen Fragen wurden am 9. Oktober 2026 beantwortet. Verbindlich ist jetzt die [vollständige Spec](role-counts.md) in [GitHub-Issue #11](https://github.com/giarrel/word-deduction/issues/11), Status `ready-for-agent`. Die folgenden Abschnitte dokumentieren den früheren Stand, nicht weiterhin offene Fragen.
 
 ## Ziel
 
