@@ -1,0 +1,1131 @@
+{
+  "preservedAtUtc": "2026-10-09T09:02:56.5997368Z",
+  "sourceWorktree": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\group",
+  "sourceHead": "25b82d7e6906e7d432752813b1e66138e80af9d7",
+  "retainedBranch": "implement/group-usability",
+  "archive": "artifacts/usability-worktree-retirement-20261009T090033Z/group",
+  "files": [
+    {
+      "path": "artifacts/group-usability/01-capacity-red.txt",
+      "bytes": 3965,
+      "sha256": "9d7fc6881715ffc8f3a128642005f10d4247410f139212c9404bbfe19aca4af1"
+    },
+    {
+      "path": "artifacts/group-usability/02-capacity-red.txt",
+      "bytes": 1454,
+      "sha256": "394034bf3a1379db1f7bd24dba4062630e6f3f538bf4c91b747787d8895887a5"
+    },
+    {
+      "path": "artifacts/group-usability/03-capacity-green.txt",
+      "bytes": 80,
+      "sha256": "75077b4e6b4e3145403a75a7cb722c512464f36395b3daa9a42f17ccbf4dd900"
+    },
+    {
+      "path": "artifacts/group-usability/04-reorder-red.txt",
+      "bytes": 274,
+      "sha256": "d03c609ea1fd53f3552354d77fe19ed261067f342cd42bbf70a4edda4fc77a68"
+    },
+    {
+      "path": "artifacts/group-usability/05-reorder-red.txt",
+      "bytes": 3465,
+      "sha256": "e838b50ddd64430e81f34d240d759a79df1181a0ae69a75dcf1d330392b9e804"
+    },
+    {
+      "path": "artifacts/group-usability/06-reorder-red.txt",
+      "bytes": 119,
+      "sha256": "d8fcc33dd44b37e0dd1a2358d67d224df9ca4f725a642e0b6b1c3f7f16bd9d89"
+    },
+    {
+      "path": "artifacts/group-usability/07-reorder-green.txt",
+      "bytes": 86,
+      "sha256": "c711e6ffd8a02b7863abd884822a0b9602db307ff9e05bcff21c711f7703eed4"
+    },
+    {
+      "path": "artifacts/group-usability/08-name-drag-red-dispatch.json",
+      "bytes": 941,
+      "sha256": "5dd0068c5292570518f4d2a8cb2f39135d8997153a7db997a0a0a2ecebb88d17"
+    },
+    {
+      "path": "artifacts/group-usability/09-legacy-existing-green.txt",
+      "bytes": 87,
+      "sha256": "a52a80a84c59cdab122937dd4d4ff442b7b7e5a8e0058e01d637cda3e195bc13"
+    },
+    {
+      "path": "artifacts/group-usability/10-name-drag-red-result.json",
+      "bytes": 1593,
+      "sha256": "02d60dc81f882003ee628e46abb96964cbc501bb23b6f034ef27f0cf81fff01a"
+    },
+    {
+      "path": "artifacts/group-usability/11-name-drag-green-dispatch.json",
+      "bytes": 941,
+      "sha256": "5dd0068c5292570518f4d2a8cb2f39135d8997153a7db997a0a0a2ecebb88d17"
+    },
+    {
+      "path": "artifacts/group-usability/12-name-drag-green-result.json",
+      "bytes": 879,
+      "sha256": "b53e86a6a7c71479af7fd6ea687b6be818895930e3239467da4bc65ca01e65b0"
+    },
+    {
+      "path": "artifacts/group-usability/13-legacy-red-dispatch.json",
+      "bytes": 953,
+      "sha256": "fce15bc73092334a1e71a757747f3fdaefc28e3016e5c3c7c46a09f5fe99464d"
+    },
+    {
+      "path": "artifacts/group-usability/14-session-regression.txt",
+      "bytes": 6295,
+      "sha256": "d72484baccc66213ca95f7fe307376d48ff4a5d6338983b17a451f37a74e35d8"
+    },
+    {
+      "path": "artifacts/group-usability/15-legacy-red-result.json",
+      "bytes": 1638,
+      "sha256": "97d2a13211ca1e6e09a151bf566819729930c5c367503fdd96308969ce1b852a"
+    },
+    {
+      "path": "artifacts/group-usability/16-legacy-green-dispatch.json",
+      "bytes": 953,
+      "sha256": "fce15bc73092334a1e71a757747f3fdaefc28e3016e5c3c7c46a09f5fe99464d"
+    },
+    {
+      "path": "artifacts/group-usability/17-legacy-green-result.json",
+      "bytes": 881,
+      "sha256": "4b70aeafaec6673302f0a5479e70fadc3a4c539301e2cc134108dab0ef2f2599"
+    },
+    {
+      "path": "artifacts/group-usability/18-handle-red-dispatch.json",
+      "bytes": 941,
+      "sha256": "ea32a0807366dbd964bb47ea6907ac8c6fd9066c3ce2fc4ecf60988664d840b4"
+    },
+    {
+      "path": "artifacts/group-usability/19-handle-red-result.json",
+      "bytes": 1495,
+      "sha256": "7aac4d07890f53d642c43659a090c96f914b0460bc36b1c56b58f7ee26e46979"
+    },
+    {
+      "path": "artifacts/group-usability/20-handle-green-dispatch.json",
+      "bytes": 941,
+      "sha256": "ea32a0807366dbd964bb47ea6907ac8c6fd9066c3ce2fc4ecf60988664d840b4"
+    },
+    {
+      "path": "artifacts/group-usability/21-handle-green-result.json",
+      "bytes": 888,
+      "sha256": "2aa3d98d4a93859e5df022bd1bc80df51c82780b3825ac535ccbb2706451ce69"
+    },
+    {
+      "path": "artifacts/group-usability/22-corpus-regression-retry.txt",
+      "bytes": 104,
+      "sha256": "180c7cf255be6ba7538f5251a49a6e3166afcc91b3db9fbbda95e7498ec551c7"
+    },
+    {
+      "path": "artifacts/group-usability/23-group-focused-dispatch.json",
+      "bytes": 955,
+      "sha256": "c6461fc489960daf636fe76c7240dd8d2fae36acf4e0342a596c051187d6f559"
+    },
+    {
+      "path": "artifacts/group-usability/24-group-focused-result.json",
+      "bytes": 1713,
+      "sha256": "e612f05a3aa02413b61c1a096e5847b4f520ca76565b7a069019aa6129b7919c"
+    },
+    {
+      "path": "artifacts/group-usability/25-rendered-regression-dispatch.json",
+      "bytes": 985,
+      "sha256": "78fe2414609d51c7700f1e3a42baef87dd7dd3f88d632d35b2f40a3b8b1ae5e8"
+    },
+    {
+      "path": "artifacts/group-usability/26-rendered-regression-status.json",
+      "bytes": 394,
+      "sha256": "dc06d173ed8bf1e76e011d2594554b88c3c0631ac02d5819dbadcb2d7708a65c"
+    },
+    {
+      "path": "artifacts/group-usability/27-rendered-regression-result.json",
+      "bytes": 394,
+      "sha256": "dc06d173ed8bf1e76e011d2594554b88c3c0631ac02d5819dbadcb2d7708a65c"
+    },
+    {
+      "path": "artifacts/group-usability/28-rendered-regression-result.json",
+      "bytes": 15952,
+      "sha256": "8b598d8c3ed948e268cf0bee6bf46a849162ddb6478818c4f86d3a0bce08268f"
+    },
+    {
+      "path": "artifacts/group-usability/29-large-layout-dispatch.json",
+      "bytes": 915,
+      "sha256": "258328dbccfbe24c9b4f729fce7726d3f2b5e2456831ebc9e035555c1d345567"
+    },
+    {
+      "path": "artifacts/group-usability/30-large-layout-result.json",
+      "bytes": 3555,
+      "sha256": "05226df653365a689fae2812483f7b3efa62900f4f22c4ff063b1df1970abdb2"
+    },
+    {
+      "path": "artifacts/group-usability/31-group-final-dispatch.json",
+      "bytes": 955,
+      "sha256": "c6461fc489960daf636fe76c7240dd8d2fae36acf4e0342a596c051187d6f559"
+    },
+    {
+      "path": "artifacts/group-usability/32-group-final-result.json",
+      "bytes": 2191,
+      "sha256": "222987c2c8980170cc3632fb7cb846069dfae80572de64808f7a620dee69967e"
+    },
+    {
+      "path": "artifacts/group-usability/33-rendered-final-dispatch.json",
+      "bytes": 985,
+      "sha256": "78fe2414609d51c7700f1e3a42baef87dd7dd3f88d632d35b2f40a3b8b1ae5e8"
+    },
+    {
+      "path": "artifacts/group-usability/34-session-final.txt",
+      "bytes": 6655,
+      "sha256": "fd283a2ad9261dbb1076e0f00de5e497fb8a9358e26f21b9c442b1180667809d"
+    },
+    {
+      "path": "artifacts/group-usability/35-rendered-final-result.json",
+      "bytes": 394,
+      "sha256": "dc06d173ed8bf1e76e011d2594554b88c3c0631ac02d5819dbadcb2d7708a65c"
+    },
+    {
+      "path": "artifacts/group-usability/36-rendered-final-result.json",
+      "bytes": 394,
+      "sha256": "dc06d173ed8bf1e76e011d2594554b88c3c0631ac02d5819dbadcb2d7708a65c"
+    },
+    {
+      "path": "artifacts/group-usability/37-rendered-final-result.json",
+      "bytes": 18213,
+      "sha256": "0ec132fd313902bd216eed57fb737d2093c34eb0ec5d595c39bba9eadded2aa6"
+    },
+    {
+      "path": "artifacts/group-usability/38-large-final-dispatch.json",
+      "bytes": 915,
+      "sha256": "258328dbccfbe24c9b4f729fce7726d3f2b5e2456831ebc9e035555c1d345567"
+    },
+    {
+      "path": "artifacts/group-usability/39-large-final-result.json",
+      "bytes": 2948,
+      "sha256": "a9164b62d1f5c5a857f47ac94d51f13f4954bf13aeb7eedc48f8a7d3fd264e13"
+    },
+    {
+      "path": "artifacts/group-usability/40-stencil-capture-dispatch.json",
+      "bytes": 945,
+      "sha256": "0e455ae72ca2be5d9a34d6064542a456fc69c72b6638e4c22c70f327de648ef8"
+    },
+    {
+      "path": "artifacts/group-usability/41-stencil-capture-result.json",
+      "bytes": 849,
+      "sha256": "21f12fa01339999b97f989c86879387fba7cd5cc05099b07393856cf14f366e1"
+    },
+    {
+      "path": "artifacts/group-usability/42-accessibility-dispatch.json",
+      "bytes": 945,
+      "sha256": "bcc085c75b028bd0dbd9f31f6cb2954cb2d96afc3e70805f04fcd6d6609f34f7"
+    },
+    {
+      "path": "artifacts/group-usability/43-accessibility-result.json",
+      "bytes": 867,
+      "sha256": "6fad5c415f0ad959bb6320f325642db881badcb12744871bcb969298a7a27137"
+    },
+    {
+      "path": "artifacts/group-usability/44-font-cleanup.json",
+      "bytes": 798,
+      "sha256": "32e14960be9356243c128633f2af070b6548051968f5a1e0e9deb72d079f2163"
+    },
+    {
+      "path": "artifacts/group-usability/45-console-status.json",
+      "bytes": 937,
+      "sha256": "4b5335828b15ea59ab9033f3fb3435f0b7fc1a90248785c0b5b5878db50d50be"
+    },
+    {
+      "path": "artifacts/group-usability/46-editor-quit.json",
+      "bytes": 478,
+      "sha256": "86e438f09eba60f6a7ea62f25ca4cdac5cd0bfc6a1cd484413247ccc114e4b0e"
+    },
+    {
+      "path": "artifacts/group-usability/47-console-errors.json",
+      "bytes": 19336,
+      "sha256": "76224a821c9257c4a4f4486dc1aeef249e136a8f6864becd36bd9535b99719a2"
+    },
+    {
+      "path": "artifacts/group-usability/48-editor-exit.json",
+      "bytes": 632,
+      "sha256": "048f5ee92f5364cd71223014bd92fe4535748e41b97067a2d071355131fed0c2"
+    },
+    {
+      "path": "artifacts/group-usability/49-editor-exited.txt",
+      "bytes": 43,
+      "sha256": "fd8bb7fdac23b0c10569fb96b52e1ecef38fc443e73a83e088249cff6c6af0dc"
+    },
+    {
+      "path": "artifacts/group-usability/commands.json",
+      "bytes": 343265,
+      "sha256": "2a763de1cd5ddf51d1235cf6895e9e4a77568b82d454ba722446dea636028849"
+    },
+    {
+      "path": "artifacts/group-usability/disk-availability.json",
+      "bytes": 55,
+      "sha256": "8f86b9b1304401efbd67ee06ae9e462a43a595d5cb31bea4216d80c9e39c6be7"
+    },
+    {
+      "path": "artifacts/group-usability/editor-authorized.log",
+      "bytes": 875510,
+      "sha256": "305115237f0d40a8eaab9e65d8a7ded50f3ba8f171cdce3599ee5c5e81b6b44d"
+    },
+    {
+      "path": "artifacts/group-usability/editor-pid.txt",
+      "bytes": 8,
+      "sha256": "8fdb22a0d29ac83c6e4f2084d77481787d59701ac48243352a1215f911028209"
+    },
+    {
+      "path": "artifacts/group-usability/editor.log",
+      "bytes": 1012,
+      "sha256": "bf848666fc61dfd1354815638c936fb41ea472f03d2b19714c986745260fe5a5"
+    },
+    {
+      "path": "artifacts/group-usability/font-cache-before-cleanup/Emoji.asset",
+      "bytes": 8393929,
+      "sha256": "ff4391329e7de4af52aaa994260bd9a08786f4ca5a331593e3dd168a1916921c"
+    },
+    {
+      "path": "artifacts/group-usability/font-cache-before-cleanup/Inter.asset",
+      "bytes": 6325452,
+      "sha256": "bf0fdddaf3989578525f3cee6c7aca791b167381feb2d2de83e889a3e5a61c38"
+    },
+    {
+      "path": "artifacts/group-usability/retained-corpus-failure/directory-acl.txt",
+      "bytes": 1826,
+      "sha256": "b864555be3cf24b36a40714052d459a28bc317ea72fab27688743d2b07df6681"
+    },
+    {
+      "path": "artifacts/group-usability/retained-corpus-failure/file-metadata.json",
+      "bytes": 613,
+      "sha256": "424e62e5b721cdd1c32bc52dbbd65e647b96b6eafae57ea7e14555c5d34e5147"
+    },
+    {
+      "path": "artifacts/group-usability/retained-corpus-failure/inspection.json",
+      "bytes": 860,
+      "sha256": "cca8f011dd6a96410efb71a826262cbc275342c1b203eb5adeb3d94ebc3b5333"
+    },
+    {
+      "path": "artifacts/group-usability/retained-corpus-failure/session.json",
+      "bytes": 11995,
+      "sha256": "b9f9352548038ee50c7ced770e39efc0dc568c1f03f318983cf06a11847f41af"
+    },
+    {
+      "path": "artifacts/group-usability/retained-corpus-failure/session.pending.json",
+      "bytes": 11995,
+      "sha256": "7ed88dc6704b5dd986e9543ad3f04a49d15eff2f079ce0434116728fd08a7056"
+    },
+    {
+      "path": "artifacts/group-usability/retained-corpus-failure/session.previous.json",
+      "bytes": 11364,
+      "sha256": "1612e63410040f9e4e85e067d9962600f6c4b00e9a4ffb50b4d9677bfa5a6604"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots-before-layout/group-German.png",
+      "bytes": 53501,
+      "sha256": "ef94b31a3fee47d3b7c2cafebbcd5d7094f562bb6bfacb598c7e6874f6a8cf52"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots-before-layout/group-large-last-German.png",
+      "bytes": 59585,
+      "sha256": "51bdef121ca58477b369ebe44fd9147d2285bfaa457c8a5a49ce419f92a31df0"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/editing-large-English-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/editing-large-English.png",
+      "bytes": 28526,
+      "sha256": "1f8896863c9f3515f8171c2ed1a8db958f3cec0241833eda2e4ef8bae64d66fd"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/editing-large-German-input.txt",
+      "bytes": 697,
+      "sha256": "bbc0b3ebdab258d8b6c8c636a14583be5800af9101c0e819ddd5c7631b9015fc"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/editing-large-German.png",
+      "bytes": 31571,
+      "sha256": "9aa335a4d9e5daee10b10b54a0d54e1729a65ac362281c6133ad16f43a9264d0"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/group-English.png",
+      "bytes": 46338,
+      "sha256": "fc40a1eebb0aedda615594750fd4ada3ae6f889a485cacfd0e906fb7d1b78714"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/group-German.png",
+      "bytes": 51972,
+      "sha256": "a9463d6c0ec8960c34c53020457237ca7d9b41c5736db4312bae6022a4736554"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/group-large-last-English.png",
+      "bytes": 58863,
+      "sha256": "516e64a5bb27a50ad19993d121790ecf307a328a855c6628ecda13dd49a6dd12"
+    },
+    {
+      "path": "artifacts/group-usability/screenshots/group-large-last-German.png",
+      "bytes": 64441,
+      "sha256": "69cad53a3f30412a33590b2d5113a15598db7bbc7e7d2f310aaf98ba6f0689d6"
+    },
+    {
+      "path": "artifacts/group-usability/temp/.dotnet/.workloadAdvertisingManifestSentinel10.0.400",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/group-usability/temp/.dotnet/10.0.401_IsDockerContainer.dotnetUserLevelCache",
+      "bytes": 5,
+      "sha256": "60a33e6cf5151f2d52eddae9685cfa270426aa89d8dbc7dfb854606f1d1a40fe"
+    },
+    {
+      "path": "artifacts/group-usability/temp/.dotnet/10.0.401_MachineId.dotnetUserLevelCache",
+      "bytes": 36,
+      "sha256": "8b66dfd183cf331bae86e9e2e4a910c35161bf0b3c8ccedb63d34cebe708eae2"
+    },
+    {
+      "path": "artifacts/group-usability/temp/.dotnet/10.0.401.aspNetCertificateSentinel",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/group-usability/temp/.dotnet/10.0.401.dotnetFirstUseSentinel",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/group-usability/temp/.dotnet/10.0.401.toolpath.sentinel",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/group-usability/temp/.dotnet/MachineId.v1.dotnetUserLevelCache",
+      "bytes": 36,
+      "sha256": "c5a84faa73c7c99ef71ab0be1b46a1674dc98610f44c683e58c5b13269210eb7"
+    },
+    {
+      "path": "artifacts/group-usability/temp/.dotnet/TelemetryStorageService/20261009063011_2d0f14381cec42e599fbe08164bac6a0.trn",
+      "bytes": 1004,
+      "sha256": "36ce17e60e00dfd04329b56b216051fe4f35b86585080ce74ce30336aab8a54d"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_185988_20261009_080609_046.log",
+      "bytes": 1135,
+      "sha256": "81be59f8372f617922d80f46550338ed05ec6853a7e2b5e36a70fe95078bc250"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_223720_20261009_080729_817.log",
+      "bytes": 1137,
+      "sha256": "cd4442ca1599fe3fffd638c495535852564aeb327398e797d3e40babe8209f7f"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_225004_20261009_080310_385.log",
+      "bytes": 1130,
+      "sha256": "45f63d2264f59fa5f2636fe98478a7f3b1ecae3367dcdaf13a515a0479db08ad"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_225004_20261009_080310_914.log",
+      "bytes": 1131,
+      "sha256": "9d4e92cdfeba639d8fe99a69d8203f42ea324a33e92b8dd8a44675d76e24b952"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_226996_20261009_081116_382.log",
+      "bytes": 1110,
+      "sha256": "eb17e63084ca57c1a3cdca7d4040fa8e31d4bcafed9f4a67b0923831d84a166c"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_235172_20261009_080503_487.log",
+      "bytes": 1137,
+      "sha256": "1d7cb6b8043e7e853f0679e5fa63bafe0efc1b188afb3a6980fdd7125023129d"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_235632_20261009_080420_090.log",
+      "bytes": 1132,
+      "sha256": "03ab63adcdcbb7e8cdeca9bb590167690151e0058086978244dcb6fdca9be274"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_235784_20261009_081528_717.log",
+      "bytes": 1139,
+      "sha256": "00ba4c9de25cd7adb806db3e379eb817c055616fb49c99aac458009112250423"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_236480_20261009_080704_325.log",
+      "bytes": 1137,
+      "sha256": "70aace413bed312f98eb3e58e48b3c41979a8ab7239e97da9280a6f818444d3a"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_236776_20261009_080914_383.log",
+      "bytes": 1138,
+      "sha256": "c5cbbd630241910568e7340fa05865f2b911ec5a84768729e9561d6755b4b3e2"
+    },
+    {
+      "path": "artifacts/group-usability/temp/Microsoft.NET.Workload_236856_20261009_082726_553.log",
+      "bytes": 1109,
+      "sha256": "77973668e84b143d962b024480bc4603a3480ee6cd9611ada847061f1877e855"
+    },
+    {
+      "path": "artifacts/group-usability/temp/WordDeduction-tests/c78d40e80ded42fb9be32b8b5d9e84b2/session.json",
+      "bytes": 11995,
+      "sha256": "b9f9352548038ee50c7ced770e39efc0dc568c1f03f318983cf06a11847f41af"
+    },
+    {
+      "path": "artifacts/group-usability/temp/WordDeduction-tests/c78d40e80ded42fb9be32b8b5d9e84b2/session.pending.json",
+      "bytes": 11995,
+      "sha256": "7ed88dc6704b5dd986e9543ad3f04a49d15eff2f079ce0434116728fd08a7056"
+    },
+    {
+      "path": "artifacts/group-usability/temp/WordDeduction-tests/c78d40e80ded42fb9be32b8b5d9e84b2/session.previous.json",
+      "bytes": 11364,
+      "sha256": "1612e63410040f9e4e85e067d9962600f6c4b00e9a4ffb50b4d9677bfa5a6604"
+    },
+    {
+      "path": "artifacts/kings-elimination/last-chance-English.png",
+      "bytes": 37578,
+      "sha256": "c25d33df0dda653d4f95b2a1f9b0a665144d5f1d6b8fdce609297c53710f4c4f"
+    },
+    {
+      "path": "artifacts/kings-elimination/last-chance-German.png",
+      "bytes": 38937,
+      "sha256": "96ca713740ce51c94ee6abc352ae04404794d477c8fb05ac1eeae058f4a8bdb7"
+    },
+    {
+      "path": "artifacts/kings-elimination/ordinary-English.png",
+      "bytes": 32340,
+      "sha256": "7293e4b39a1f55d76bb2ec7eb71a3a42f8fef5e952be77e95968b12199029cd0"
+    },
+    {
+      "path": "artifacts/kings-elimination/ordinary-German.png",
+      "bytes": 32555,
+      "sha256": "d11b1bc85ae56f369615c7ea8136958fef7d65fa978242300e8a6e1471e2116b"
+    },
+    {
+      "path": "artifacts/kings-elimination/result-English.png",
+      "bytes": 46613,
+      "sha256": "eaebbce4bce8287244b4a71982906f5843d060e39d6060a20af6fb9a0c343727"
+    },
+    {
+      "path": "artifacts/kings-elimination/result-German.png",
+      "bytes": 51734,
+      "sha256": "9835db1ea26ae8f796a806f41d51dd320eec84a4a81570753f65f60cf1adac60"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/choice-English-False.png",
+      "bytes": 34586,
+      "sha256": "bfb9be21a0d8feb9c7a91b31042cabc1c88fc5191f1f0f95950be2716d1c1bc2"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/choice-English-True.png",
+      "bytes": 34586,
+      "sha256": "bfb9be21a0d8feb9c7a91b31042cabc1c88fc5191f1f0f95950be2716d1c1bc2"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/choice-German-False.png",
+      "bytes": 35683,
+      "sha256": "afc514fc77ddaf1839d83faebd14d1b061156ecf41d1605785398033c3810a42"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/choice-German-True.png",
+      "bytes": 35683,
+      "sha256": "afc514fc77ddaf1839d83faebd14d1b061156ecf41d1605785398033c3810a42"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/judgment-English-False.png",
+      "bytes": 36357,
+      "sha256": "4b177d222706c4c282add28381e39588b35209c223723acf502ea5f61a4f9492"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/judgment-English-True.png",
+      "bytes": 36357,
+      "sha256": "4b177d222706c4c282add28381e39588b35209c223723acf502ea5f61a4f9492"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/judgment-German-False.png",
+      "bytes": 37485,
+      "sha256": "e0df5e2300ca554db0c66e45d20eb6b1e4ea15e357d54f587b82b08e181e6091"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/judgment-German-True.png",
+      "bytes": 37485,
+      "sha256": "e0df5e2300ca554db0c66e45d20eb6b1e4ea15e357d54f587b82b08e181e6091"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-confirm-English-False.png",
+      "bytes": 41610,
+      "sha256": "9af0e948afb442f329ab51299a306e0c5f1f4fa1b6cd10c39ebc78ef0757656b"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-confirm-English-True.png",
+      "bytes": 41686,
+      "sha256": "5ccf25cd2a84c512405bea7ed6a89f80243ada64f9d3e6fde3df25711557aa18"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-confirm-German-False.png",
+      "bytes": 46787,
+      "sha256": "50e0a8ef82cde2119ceb9fb47327f3b0c32cc6e7a7c8c1bdf1e82889f4e0598e"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-confirm-German-True.png",
+      "bytes": 46846,
+      "sha256": "afdfae61412d42cb1c5bde1ab8307af4e1010cd63b3e38a3c1242e85af7d41b5"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-result-English-False.png",
+      "bytes": 36996,
+      "sha256": "54f474371eb291893ae6b43029e7a1825be0a3aa68f1cacbad029ac154bf5cf2"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-result-English-True.png",
+      "bytes": 34713,
+      "sha256": "3083ef150aeea7e340055c35e4861ac0b857902b02d35fbde2de10e2da79a1d8"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-result-German-False.png",
+      "bytes": 41611,
+      "sha256": "1f5d9086a8d56df6067e6f4fe0dfb251d455e155433c7e3de652d185fda0c823"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-result-German-True.png",
+      "bytes": 41341,
+      "sha256": "5d082cea521f5e54050b327a4ba3fbf64058a13e29c8e0cf3253e45b984c21a0"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-targets-English-False.png",
+      "bytes": 27941,
+      "sha256": "7d037ce2fe657b27ce5aca65284ec107f6a5c06f7f199e71e2f8772f560382a6"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-targets-English-True.png",
+      "bytes": 27941,
+      "sha256": "7d037ce2fe657b27ce5aca65284ec107f6a5c06f7f199e71e2f8772f560382a6"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-targets-German-False.png",
+      "bytes": 31096,
+      "sha256": "d1e0e728ff4950bf6d5b4992f8c377a5b1947e814ab1d75e0b9068b3b5709634"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/king-targets-German-True.png",
+      "bytes": 31096,
+      "sha256": "d1e0e728ff4950bf6d5b4992f8c377a5b1947e814ab1d75e0b9068b3b5709634"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-answer-English-last.png",
+      "bytes": 53691,
+      "sha256": "63cb0a18677af795f7e0e0bed119d688c2d26bd77c5e47e0940c5111b693cba6"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-answer-English.png",
+      "bytes": 47555,
+      "sha256": "3c87472858250f1b5c83f065a6517e1491011abfb16dbfbb71e8a62dff02a58c"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-answer-German-last.png",
+      "bytes": 54451,
+      "sha256": "59e1290d619aaf951dddb62fb399f8abcfb0eac978a44380661afa65671f8ac4"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-answer-German.png",
+      "bytes": 47394,
+      "sha256": "3699fd2a46c7a3f21cbcd0a0f405eb4baf66945433d9cac11cf6a43d89a50fe7"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-English-King-last.png",
+      "bytes": 52325,
+      "sha256": "5086ede7ec46210e27a5a9a09a9ae7d58b6678daae02e7b27803d9b612d60cb9"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-English-King.png",
+      "bytes": 48001,
+      "sha256": "c1cd812dcf3ee19d3839801b8225aa4fb3f2b5bf9bc89126d32df62f1053cccd"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-English-Word-last.png",
+      "bytes": 52325,
+      "sha256": "5086ede7ec46210e27a5a9a09a9ae7d58b6678daae02e7b27803d9b612d60cb9"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-English-Word.png",
+      "bytes": 48001,
+      "sha256": "c1cd812dcf3ee19d3839801b8225aa4fb3f2b5bf9bc89126d32df62f1053cccd"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-German-King-last.png",
+      "bytes": 52816,
+      "sha256": "f171ff4dc791650b1565592838e9a7720f1b18143104511101fd9b937b90d28a"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-German-King.png",
+      "bytes": 39857,
+      "sha256": "57a6c67763b795bda609ae27c806e9f6208e45ac06268f73510c3328616bc9d7"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-German-Word-last.png",
+      "bytes": 52816,
+      "sha256": "f171ff4dc791650b1565592838e9a7720f1b18143104511101fd9b937b90d28a"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-choice-German-Word.png",
+      "bytes": 39857,
+      "sha256": "57a6c67763b795bda609ae27c806e9f6208e45ac06268f73510c3328616bc9d7"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-judgment-English-last.png",
+      "bytes": 45454,
+      "sha256": "5dd39744da4c66af06ae6153911b9d5055528466caced95521955123960adb89"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-judgment-English.png",
+      "bytes": 38414,
+      "sha256": "447b722fc41d13fd8d8fc538d76e36d95a207abf06a31ccdf667191df63df717"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-judgment-German-last.png",
+      "bytes": 47065,
+      "sha256": "349d04221081e45b27c511cbacc29a0661cf6895cccd84333678c46a49c69589"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-judgment-German.png",
+      "bytes": 39471,
+      "sha256": "448bef905fe33c3e2d36bf6d5742af0c7d887d12255fe03469751b0ed78e212f"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-king-confirm-English-last.png",
+      "bytes": 49015,
+      "sha256": "622cf2859b4413988ea83bb8e29fc6df3c20a3508f97706b281c07e0d6969060"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-king-confirm-English.png",
+      "bytes": 43435,
+      "sha256": "c62468b16c204bb244c710c8e50fb56ef72a3bd625b286b3e9466bf8ec419272"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-king-confirm-German-last.png",
+      "bytes": 51925,
+      "sha256": "6082ff8becd5517ca5c06e017b06f6a5230d25cdb1e24ed16bc34d44f145906e"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-king-confirm-German.png",
+      "bytes": 40824,
+      "sha256": "211d657349c8068973b48b64d3b73a2f69480344051df28cd513064b3671b04c"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-last-target-English.png",
+      "bytes": 50945,
+      "sha256": "4c22e501a1b63f21546ba30d7b392a182c2c4179a1b9d63b303abf71c334383d"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-last-target-German.png",
+      "bytes": 52364,
+      "sha256": "6c59e4df5d9d0615930e22f14eff4b0dac2e10a520d082133cfb423beab014ce"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-English-King-last.png",
+      "bytes": 42411,
+      "sha256": "1a3f064e3283833b6a2e8f1f5aa57ccc1911632461893c3d041d1cd12d64faf7"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-English-King.png",
+      "bytes": 42971,
+      "sha256": "71174a38d3bff7a443e3c42d0db7e26b0dce8e2e970836cd351e58f1fe95b2dd"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-English-Word-last.png",
+      "bytes": 42424,
+      "sha256": "f0e4869ca2d6cf6e598acd61a38ea73d5dce29dc0d1d616e8583f461483977cc"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-English-Word.png",
+      "bytes": 39258,
+      "sha256": "41df6a70623eabd2567d1bd58a19f86e517fd9761bfac854bd86227d4feef40a"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-German-King-last.png",
+      "bytes": 46043,
+      "sha256": "c6732b6d3a327646b19bf24f8db46eaa794a1f5925b59f61408408720c9b2fae"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-German-King.png",
+      "bytes": 42571,
+      "sha256": "4d05aa3efb98fd276d4363ed568ef61f4cced9f0e7a9c3693695ebbe76f83569"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-German-Word-last.png",
+      "bytes": 46035,
+      "sha256": "43fd280f465ddf1bdc9b1fd7ddf7ec24625767e05f403569ea61802bb8221353"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/large-result-German-Word.png",
+      "bytes": 44604,
+      "sha256": "fcd939f20df8dbd6615a59a31ea46d4edf6ddf12572fb9c6fcff32d9d815245a"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/repeat-protected-king.png",
+      "bytes": 34704,
+      "sha256": "77bc7ab56acafb5c1f86ddb9a6a6be91a78528fe5a742d984f6e684d95c0f8d3"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/repeat-protected-word.png",
+      "bytes": 36509,
+      "sha256": "66588607dd062f6245dff6a740b419955fc2cfe3db4cc412d802b83e4bf3e1f5"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/spoken-answer-English-False.png",
+      "bytes": 44061,
+      "sha256": "a54da79de9f05fc15efba1c65309c2aa0c42669e32bee430eb924ddfc26a1b7d"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/spoken-answer-English-True.png",
+      "bytes": 44061,
+      "sha256": "a54da79de9f05fc15efba1c65309c2aa0c42669e32bee430eb924ddfc26a1b7d"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/spoken-answer-German-False.png",
+      "bytes": 46212,
+      "sha256": "782f58adef48cde7d67856508d66196fadc6362f3d56245a2b5f240129bb72a9"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/spoken-answer-German-True.png",
+      "bytes": 46212,
+      "sha256": "782f58adef48cde7d67856508d66196fadc6362f3d56245a2b5f240129bb72a9"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/word-result-English-False.png",
+      "bytes": 35916,
+      "sha256": "6fd5b4cd2dc91b4527a3a258368295a463e32fb8354d22847ca58fcc7e3afaf1"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/word-result-English-True.png",
+      "bytes": 34833,
+      "sha256": "ef5f6df379a37072611c38998a61ce418359c03aec3c9c397bc9fc688df3e78f"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/word-result-German-False.png",
+      "bytes": 40588,
+      "sha256": "c2e45e004bfcd3b76b7e418479b77aeace84bafb320b7a24fbde860384eb07c3"
+    },
+    {
+      "path": "artifacts/kings-last-chance/screenshots/word-result-German-True.png",
+      "bytes": 40949,
+      "sha256": "6748d5dc5f0188d7d49814b80910a96c0f9dd19c22d8562b89df37874ecfecf9"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-EvilKing-drag-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-EvilKing-drag.txt",
+      "bytes": 229,
+      "sha256": "09145f932ee9a82ecdcb29377f3c4db3c69a74a0be0bd650c4f9c5f11e685773"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-EvilKing-hold-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-EvilKing-hold.txt",
+      "bytes": 228,
+      "sha256": "8d40c971c13f4fc30f85973799993757911f9852680b22c193dcf89a1e172b45"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-GoodKing-drag-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-GoodKing-drag.txt",
+      "bytes": 229,
+      "sha256": "c529475ad05f41c3f67184202a9c8f6325fd389c685217c83b2188b90176afe6"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-GoodKing-hold-header.txt",
+      "bytes": 132,
+      "sha256": "d303a0f1a3801666a6d7665ed17ba358f056d7a9a8a10555f63266dee6042924"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-English-GoodKing-hold.txt",
+      "bytes": 228,
+      "sha256": "f0f70b2ac1d8d553a59cf9f627d10240e0af19d779bb5c753973e0cb3f2e79f5"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-EvilKing-drag-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-EvilKing-drag.txt",
+      "bytes": 229,
+      "sha256": "eb74eea21c479e6df3c972554c952b53e27436f6bcb68573adce4a173dd9c69c"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-EvilKing-hold-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-EvilKing-hold.txt",
+      "bytes": 228,
+      "sha256": "c21b387a736186c75c66e3fc4cc6c28d581f1ea4cdac97b63b5ffcbe3d654a2f"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-GoodKing-drag-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-GoodKing-drag.txt",
+      "bytes": 229,
+      "sha256": "21c1b292faef011ac049d4e0920f834a913e874d62c077d7e228e880d90fb360"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-GoodKing-hold-header.txt",
+      "bytes": 133,
+      "sha256": "51ce90fec26fac1ec3989cd3eba0ffa96a2296f704a9017a5841c91984340913"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/max-list-German-GoodKing-hold.txt",
+      "bytes": 228,
+      "sha256": "74267608cf12edfdeaa5a9053168c478c763a6b0f052e543b3348ab8ce02d16c"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/help-English-last.png",
+      "bytes": 62755,
+      "sha256": "22611860e0919f107551cf7b7be5cb99fc4b501bc6679a2771bc0a467985e655"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/help-English-start.png",
+      "bytes": 58701,
+      "sha256": "8bb2ab72e6c38d020f06903e5de098b31053d05eb96f7d8c1471f7803889d83b"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/help-German-last.png",
+      "bytes": 65672,
+      "sha256": "f725d515aa8abb26291d39f5a626160afd3a5b3a8cf45d3c0cdbbace1f0a8090"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/help-German-start.png",
+      "bytes": 54526,
+      "sha256": "727c5dd8433c31288b4939f8f78ad84dcd13dcade0d2adcfca8e8325ab6b9a91"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-covered.png",
+      "bytes": 37523,
+      "sha256": "7ce00ac9bf4a11368598d949630a47abec686066bafe59098b2c8dd45d1d9503"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-last.png",
+      "bytes": 56573,
+      "sha256": "d85e4cfb1a5277c2ede7b2526324317ca9e581671b43e047ba744182022de16c"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-drag-start.png",
+      "bytes": 42285,
+      "sha256": "f9a77a9785061ea84ba72476458a4bcf179413e1f0b1546ef4cbfc559e7b2d1a"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-covered.png",
+      "bytes": 37696,
+      "sha256": "8699ddf35a4583b929054752d8ee44ed81978f49b145b3e3a5c914afcdda08b8"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-last.png",
+      "bytes": 56760,
+      "sha256": "040424980f50b37941ef9fc945d35b2d6ab42e3bffc193b1040b245a19377ec4"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-EvilKing-hold-start.png",
+      "bytes": 42469,
+      "sha256": "87c5f23650223585d3d7ce7d63e6b6136e59a2027d7195f38260a989a5a05acb"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-covered.png",
+      "bytes": 37526,
+      "sha256": "e5a5ab3798a096e7d7edba9bbbc0fa5970fc71b04615a27949a6a0b8cca25b54"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-last.png",
+      "bytes": 44940,
+      "sha256": "2b8bcb11b5955560e341e023546b42d151d75a778eac810e3e1e7d9fe7b48127"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-drag-start.png",
+      "bytes": 40877,
+      "sha256": "73f42b5df17f529cd9708697e7d6cacb46a7151cd5233aa06b17b7e2af36dc75"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-covered.png",
+      "bytes": 37698,
+      "sha256": "46653643bab99c21d19ee2cabbebb4fb49abc60ebee5a2be059e0f94e9818967"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-last.png",
+      "bytes": 45149,
+      "sha256": "2554f2a9d82e3f474abff455f31d2cb603e8e9857c0ed9bffb87fc08c15f0345"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-English-GoodKing-hold-start.png",
+      "bytes": 41078,
+      "sha256": "ad7f220a96885ab9782329c8f9c722ebc87174d7790c641592ebdab0b9e10dcf"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-covered.png",
+      "bytes": 39265,
+      "sha256": "e535701a0fa73ebbe04c73bbfa0a3407a65c3e666f765ccc52adbbe8df049673"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-last.png",
+      "bytes": 54984,
+      "sha256": "1e44e73fd146fd125284580cbef90a2746ba9ea76af2018e3dd337554e558c7f"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-drag-start.png",
+      "bytes": 45936,
+      "sha256": "157b4747cf83728434993abddfa6e12bc8fad5590b374f37492b72e841cc28ca"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-covered.png",
+      "bytes": 39420,
+      "sha256": "99c040d4b2ced1d88342619948ea46d63794a2e3c65c4fa1f693f10bfa819850"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-last.png",
+      "bytes": 55207,
+      "sha256": "cb2dad3d94904ae23bb3ca6e12d8783dc1e837c678d52cdb99a8a0beec02c068"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-EvilKing-hold-start.png",
+      "bytes": 46128,
+      "sha256": "5c59e1ec78e0c309926a38abe8d9c8a0aad11cdacd8e51fa2a4d38a77c87b707"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-covered.png",
+      "bytes": 39197,
+      "sha256": "8145f9f0dda854a1bcea90505d204b9001ba5c8453d4b9e4b9573ee936c0c2d8"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-last.png",
+      "bytes": 46192,
+      "sha256": "c7b44b9e58eb609608f7864506269d5ee5345fac5a48051516a731404ddeb1d5"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-drag-start.png",
+      "bytes": 44458,
+      "sha256": "b7fb7a40b5764e0959cf2a2ce9fc2577cd82788f500d4f29a9d32f1542841a29"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-covered.png",
+      "bytes": 39349,
+      "sha256": "026f7a32bacadffb4c8397c7b65c3dabbacf898aa27bfb39f05ba2ec89f46f2f"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-last.png",
+      "bytes": 46391,
+      "sha256": "e0dece34b4066a88e2d55f26379d16febe727e848dc01d3b60501d2a27a69652"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/max-list-German-GoodKing-hold-start.png",
+      "bytes": 44648,
+      "sha256": "77967e2614bcc4aec3ffc399fc6702bc4971738e884714c8028559e2dc6362cb"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/ordinary-English-civilian.png",
+      "bytes": 36842,
+      "sha256": "b2fea5887c4717d2c7b0106986556c0d937cffd75dfcea8b69446266dd6b044d"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/ordinary-English-undercover.png",
+      "bytes": 32514,
+      "sha256": "95ae694a16f8fe9f6faf462da8c1a16ef9f49ba2cf50f3b5ad9176cc062db6a3"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/ordinary-German-civilian.png",
+      "bytes": 40837,
+      "sha256": "989b256f4d0e1c8ce86da4279d4330f3fc4b063c77d99ed5be74c0a0c7688f3a"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/ordinary-German-undercover.png",
+      "bytes": 36870,
+      "sha256": "6ccc36129fd230eb4dc823cf15be244ccb8cad1cf8ee209dfa26398a7a772ec5"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/setup-English-large.png",
+      "bytes": 47976,
+      "sha256": "df313530cbf614a1fbbd5a9046574f8e6f628702203c08188d0da1a4cbb633cd"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/setup-German-large.png",
+      "bytes": 50758,
+      "sha256": "b72d24e0c9b830b70725ffb9c0a0f32574de39443eda82905004b1c44ea13e04"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/word-Chocolate-hazelnut-spread-large.png",
+      "bytes": 40900,
+      "sha256": "ec89ffed1ae0adf2c9c5fbf3b8b348c5531903d460e5af7bd423025882a39f98"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/word-Nuss-Nougat-Creme-large.png",
+      "bytes": 49864,
+      "sha256": "fffd053fafa15d205dafbc21e0a2042b4014fa671d99b2cf4c4187197b69e6bc"
+    },
+    {
+      "path": "artifacts/kings-rules-cards/screenshots/word-Rollkragenpullover-large.png",
+      "bytes": 49203,
+      "sha256": "9692ab4c18814b6917f5cd0f36b5e69f46b9606748a334b41f64903739438e40"
+    },
+    {
+      "path": "game/Logs/shadercompiler-UnityShaderCompiler.exe-0.log",
+      "bytes": 36750,
+      "sha256": "976094275432b4eb28b55a9965497fdd63320805c4b7ab3c9acd1b796aee7f1e"
+    },
+    {
+      "path": "game/Logs/shadercompiler-UnityShaderCompiler.exe-1.log",
+      "bytes": 1538,
+      "sha256": "1f84050c4f68b796117f4c1b958f70b4d4f6e7291f71b3f8b42ea75b36af1cb2"
+    },
+    {
+      "path": "game/Logs/shadercompiler-UnityShaderCompiler.exe-2.log",
+      "bytes": 1539,
+      "sha256": "c32cfab53fd753e042a7f9906c61f759ead80523907d17c7d15e7af11f73d89c"
+    },
+    {
+      "path": "game/Temp/FSTimeGet-8fd31bd7217939b40bb1d8b403822b6b",
+      "bytes": 8,
+      "sha256": "1ff66ac9fef32032c75d065f1dca8f58d995c9d35d75070503e83446305b3979"
+    },
+    {
+      "path": "game/Temp/pipeline_console_log.json",
+      "bytes": 92823,
+      "sha256": "61ec849973aed2d75635d4f5661282fd7642567e57ac284f2d960c4d5bdb3b89"
+    },
+    {
+      "path": "game/Temp/pipeline_recompile_status.json",
+      "bytes": 75,
+      "sha256": "bee7ed398c74283281bdc27971f5b936a800cd2b94c95af118450f3fec879c09"
+    },
+    {
+      "path": "game/Temp/pipeline_test_status.json",
+      "bytes": 449,
+      "sha256": "5174c25741bc5c633874462b86c5c14e4549002e6477be163e06693b5dee8f85"
+    },
+    {
+      "path": "game/Temp/UnityLockfile",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "game/UserSettings/EditorUserSettings.asset",
+      "bytes": 923,
+      "sha256": "8b836523a7c2e2ab7f9c15404094767ea746d9abd3b3550eebb81531571d03ed"
+    },
+    {
+      "path": "game/UserSettings/Layouts/default-6000.dwlt",
+      "bytes": 47040,
+      "sha256": "2967288de5079cf4cb3b7d46a33712688dba9c9691542e7de7fef424ac8d4edb"
+    },
+    {
+      "path": "game/UserSettings/Search.settings",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  ],
+  "fileCount": 224,
+  "bytes": 21185469
+}
