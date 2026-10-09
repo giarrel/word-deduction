@@ -1,0 +1,11 @@
+{
+  "successfulFullSessionRunSource": "3835a71035b0fe4c471e5893a54f2438b5c34505",
+  "fullSessionPassed": 76,
+  "builtSource": "25d3e9f9d80609c178230cf838cecfda54ae0370",
+  "comparedPaths": [
+    "game/Assets/WordDeduction/Session",
+    "tests/Session.Tests"
+  ],
+  "changedPaths": [],
+  "unchanged": true
+}
