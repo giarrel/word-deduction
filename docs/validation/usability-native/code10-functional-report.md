@@ -1,0 +1,106 @@
+# Code10: native Gruppenbedienung und isolierter Cancel-Fehler
+
+Stand: 9. Oktober 2026; separater Zwischenbericht für Specs #17/#18. **Code10 ist wegen des reproduzierten ACTION_CANCEL-Fehlers nicht abschließend abgenommen.** Quelle `bd7b618c957051d3ee61321a6ed3d275a5302a93`, Version 1.2.0 / Code10. Der [reale 9→10-Updatebeleg](evidence/code9-to10-update-verified.json) nennt APK-SHA256 `3a73e1c6816ab97aad7df07cd216083cf2b3f8141c409c7c12320ec8c3aaa180`. Dies sind Beobachtungen auf dem bekannten übersetzten ARM64/API36-Emulator, keine Handy- oder Performance-Abnahme.
+
+Dieser Bericht liest vorhandene Eingabeprotokolle, Save-Paare, Summaries und Bilder. Keine Editor-, ADB-, Geräte-, Tracker- oder Produktänderung wurde ausgeführt. Vorhandene Berichte und die vorläufige [32-Story-Matrix](acceptance-matrix.md) bleiben unverändert.
+
+## Reales Update und Darstellung
+
+Das Update erfolgte laut [Installationsbeleg](evidence/code9-to10-update-verified.json) per `install -r` von Code9 auf Code10, vor Fixture-Replay. `code10-opened-update-state` und `code10-settled-update-state` sind in beiden Generationen bytegleich zu `code8-original-state`:
+
+- Primary: `f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b`.
+- Previous: `d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467`.
+
+Fünf stabile Identitäten, Reihenfolge, Einstellungen und zwölf gespielte Wortpaare bleiben erhalten. Der frühere [8→9-Bericht](code9-functional-report.md) bleibt Teil dieser Update-Kette.
+
+Root und dieser Offline-Auditor haben [die settled Gruppe](evidence/code10-after-update-settled.png) gesehen: leichter Griff mit drei Balken, einzeiliger Hinweis „Am Griff ziehen, um zu sortieren.“, zwei vollständige Zeilen mit Nora/Luca und explizitem Bearbeiten. Das belegt die korrigierte normale DE-Darstellung; daraus folgt keine Maximalgruppen-, Legacy- oder Motion-Abnahme.
+
+## Tatsächliche Funktionsfolge
+
+| Aktion | Vorhandene Eingabe / Ergebnis | Befund |
+| --- | --- | --- |
+| Nora bearbeiten und speichern | [Edit](evidence/code10-edit-nora-native-input.json), [Save](evidence/code10-save-rename-native-input.json), [State](evidence/code10-save-rename-state/session.json), [Bild](evidence/code10-save-rename.png) | `Nora → NoraTest10`; einziger Payload-Unterschied zum settled Update ist `/Players/0/Name`. ID `b2a0e72ba96d426c9da9ac02dbf7b4be`, Position und vollständige Historie unverändert. |
+| Entfernen | [Eingabe](evidence/code10-remove-nora-native-input.json), [State](evidence/code10-removed-state/session.json), [Bild](evidence/code10-removed.png) | NoraTest10 aus Players entfernt, als Removed mit derselben ID und `RemovedIndex=0` gespeichert; vier verbleibende Personen. |
+| Undo | [Eingabe](evidence/code10-undo-remove-native-input.json), [State](evidence/code10-undo-remove-state/session.json), [Bild](evidence/code10-undo-remove.png) | Ursprüngliche Players-Liste einschließlich ID, Name und Position exakt wiederhergestellt. Auch der komplette Primary-Payload ist gleich dem gespeicherten Rename; Primary-SHA256 jeweils `398a42743bf042759925dc3c3deecfd8de6683154e7b35860c49421ed105c473`. Das Backup enthält weiterhin den entfernten Zwischenstand. |
+| Nach unten im Editor | [Eingabe](evidence/code10-move-with-button-native-input.json), [State](evidence/code10-move-with-button-state/session.json), [Bild](evidence/code10-move-with-button.png) | Reihenfolge Luca, NoraTest10, Emil, Mila, Jonas2. Identitäten und Historie bleiben erhalten. Dies belegt die nicht ziehende Verschiebeaktion. |
+| Back, Englisch und Quick | [Modus-/Spracheingabe](evidence/code10-switch-en-quick-native-input.json), [State](evidence/code10-en-quick-state/session.json), [Bild](evidence/code10-en-quick.png) | Sprache 0/EN, Modus 0/Quick; geänderte Reihenfolge bleibt bestehen. Die Back-Bedienung wurde von Root beobachtet; die zitierte Pointerdatei ersetzt keinen separaten Key-Event-Nachweis. |
+| Prozessneustart | [erster State](evidence/code10-restarted-en-quick-state/session.json), [settled State](evidence/code10-restarted-en-quick-settled-state/session.json), [settled Bild](evidence/code10-restarted-en-quick-settled.png) | Beide Generationen sind vor/nach Neustart bytegleich. Primary `029281d86eaa49eebbb365ba83992606b311e1aaf3744ae1d5495d0baeb2622f`, Previous `4567bd681d03dd8a4a52c9e253f77b6a83a20476de7bfc63b20536b191043543`. |
+| Neue Partie und nächste Karte | [Start](evidence/code10-start-after-move-native-input.json), [Finger-7-Zug/Release/Next](evidence/code10-read-and-next-after-move-native-input.json), [Karte 1](evidence/code10-first-handoff-after-move.png), [Karte 2](evidence/code10-second-handoff-after-move.png) | Match `56505df5a8b64b8da4870f6ae29551e7`: erste Übergabe Luca, zweite NoraTest10. Root bestätigte die Ansichten und Reveal mit anderem Finger 7 nach dem Reorder. Zwischen den beiden gespeicherten Match-Payloads ändert sich ausschließlich `/Match/Handoff`, 0→1. Deal/Words/Rollen bleiben gleich; die neue Partie ergänzt die Historie auf 13. |
+
+Die Pointerdateien dokumentieren tatsächlich injizierte Ereignisse; ein `exitCode=0` allein ist kein bestandenes Ergebnis. Root hat die genannten Funktionsansichten visuell bestätigt. Der [erste Neustart-Screenshot](evidence/code10-restarted-en-quick.png) war laut Root nach etwa fünf Sekunden noch leer, während auf dem Host ein Build lief; erst das settled Bild zeigt die normale Gruppe. Der leere Frame bleibt erhalten und ist weder eine bestandene Ansicht noch ein kontrollierter Startup-Zeitvergleich. Eine Ursache wird daraus nicht abgeleitet.
+
+## ACTION_CANCEL: zweimal isoliert fehlgeschlagen
+
+Nach dem [explizit markierten Replay](evidence/code10-cancel-isolation-replay/manifest.json) wurden zwei einzelne Folgen gespeichert: DOWN am Griff `(150,590)`, MOVE nach `(150,820)`, **ACTION_CANCEL (action=3)**. Beide [erste](evidence/code10-single-cancel-native-input.json) und [zweite](evidence/code10-single-cancel-repeat-native-input.json) Eingabedatei melden erfolgreiche Injektion und enthalten kein UP als Gestenabschluss.
+
+Trotz Cancel wird jeweils eine neue Reihenfolge dauerhaft geschrieben:
+
+| Isolierter Versuch | Vorher im Backup | Nachher im Primary |
+| --- | --- | --- |
+| `code10-single-cancel` | Nora, Luca, Emil, Mila, Jonas2 | Luca, Nora, Emil, Mila, Jonas2 |
+| `code10-single-cancel-repeat` | Luca, Nora, Emil, Mila, Jonas2 | Nora, Luca, Emil, Mila, Jonas2 |
+
+Die beiden Primary-Hashes wechseln zwischen `f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b` und `edd54d8d0c3646c5bb6890adc9da95beabd7480db459fbac629785812c9b58b2`; das jeweilige Backup ist der genaue vorherige Primary. Nur die ersten beiden Spieler wechseln ihre Listenposition. **Der zweite Versuch ist ebenfalls rot**, obwohl die Endreihenfolge wieder der ursprünglichen Reihenfolge entspricht. Die unveränderte Historie macht einen ungewollten Reorder nicht zulässig.
+
+Die fehlgeschlagenen Ordner `code10-reorder-cancel-state`, `code10-single-cancel-state` und `code10-single-cancel-repeat-state` enthalten gespeicherte Generationen, aber keinen erfolgreichen `manifest.json`-Abschluss. Diese Lücke wird nicht durch erfundene Pass-Metadaten geschlossen.
+
+Der frühere [gekoppelte Cancel-/Outside-Batch](evidence/code10-reorder-cancel-native-input.json) und [nachfolgende Drop](evidence/code10-reorder-drop-native-input.json) bleiben ungeeignet als bestandene Gesamtfolge: laut Root lief PowerShell nach der fehlgeschlagenen Zustandsprüfung weiter, weil Stop für native Befehlsfehler nicht gesetzt war. Die Originaldateien bleiben erhalten. Dass später wieder die ursprüngliche Liste erscheint, hebt den vorherigen unerlaubten Commit nicht auf.
+
+## Separater Outside-Drop
+
+Der [Versuch mit verifiziertem Start](evidence/code10-outside-drop-verified-start-native-input.json) bewegt zuerst innerhalb der Liste von `(150,590)` nach `(150,820)`, anschließend nach `(1045,820)` außerhalb und endet mit UP. Sein [Save-Paar](evidence/code10-outside-drop-verified-start-state/manifest.json) stimmt in beiden Generationen exakt mit dem unmittelbar zuvor gespeicherten `code10-single-outside-drop-state` überein: Primary `f146725f…`, Previous `edd54d8d…` (vollständig oben). Root bestätigte die Start-/Ergebnisansicht. **Dieser isolierte Outside-Drop besteht**; er ist vom Cancel-Fehler und vom fehlerhaft weiterlaufenden Batch getrennt.
+
+## Kapazität und Legacy-Gruppe bei 150%
+
+Das [Kapazitäts-Replay](evidence/code10-capacity-legacy-replay/manifest.json) ist ein ausdrücklich synthetisches V4-Fixture mit 20 aktiven und 20 inaktiven Namen. Der gelesene `code10-capacity-large-de-state` ist in beiden Generationen noch bytegleich zu diesem Fixture (SHA256 `d182748b6ec9d4efa1d56b6de64a781cad3e6e0321d8652a38e73a051499d400`). Es wurden an diesem Checkpoint keine alten Namen automatisch aktiviert oder verworfen.
+
+**Der Dateiname `code10-capacity-large-de` ist irreführend:** [das tatsächlich gelesene Bild](evidence/code10-capacity-large-de.png) zeigt **EN/Classic**, und der Payload enthält `Language=0`, `Mode=1`. [System-Fontscale](evidence/code10-large-preferences.json) ist 1.5. Sichtbar sind „20 playing“, eine lange erste Zeile, Edit und die englische Kapazitätserklärung. Dieser erste Frame belegt weder DE noch die spätere Legacy-Bedienung; deren getrennte Nachweise folgen unten.
+
+Die danach vorhandenen Belege erweitern diesen begrenzten Stand:
+
+- Root hat [den großen EN-Editor mit Gboard](evidence/code10-large-en-edit.png) tatsächlich gesehen: Move up/down, Remove, Cancel und Save sind bei 150% erreichbar. [Öffnen](evidence/code10-large-en-open-edit-stderr.txt) meldet `NAMED_APP_ACTION click success=true`; erst die anschließende Konsolenausgabe scheiterte laut Root an CP1252 für `▾`. Aktion und JSON waren bereits gespeichert. Die spätere Umstellung auf `PYTHONIOENCODING=UTF8` ist eine Tooling-Korrektur, keine App-Reparatur.
+- Die native [Move-down-Aktion](evidence/code10-large-en-move-down-stderr.txt) meldet Erfolg. [Der gespeicherte Checkpoint](evidence/code10-large-en-move-down-state/manifest.json) bestätigt `Alexandria-Maximilian-02` vor `-01`, weiter 20 aktive und insgesamt 40 Personen sowie vier History-Einträge. Der neue Primary ist V5; das allein ist keine zusätzliche reale Updateinstallation.
+- Der erste [Large-EN-Baum](evidence/code10-large-en-public-tree.json) hatte während des Service-Bindings laut Root null Nodes; [settled](evidence/code10-large-en-public-tree-settled.json) sind es 61, im [Editor](evidence/code10-large-en-edit-tree.json) 64. **Der unmittelbar mit Move down gespeicherte [Baum](evidence/code10-large-en-move-down.json) enthält sieben leere Framework-Nodes.** Das wird weder als bestandener Zielbaum noch ohne isolierten Nachweis als persistenter neuer Defekt gewertet. Nach [Cancel](evidence/code10-large-en-cancel.json), [Sprachwechsel](evidence/code10-large-switch-de.json) und im [DE-Public-Baum](evidence/code10-large-de-public-tree.json) sind wieder je 61 Nodes vorhanden. Alle diese Dumps setzen `dontSuppressAccessibilityServices=true`.
+- Erst [code10-capacity-actual-de.png](evidence/code10-capacity-actual-de.png) ist die von Root visuell bestätigte deutsche Kapazitätsansicht: klare 20-Personen-Grenze, mehrzeiliges Layout. Der ursprüngliche EN-Frame wird nicht umbenannt oder rückwirkend als DE-Beleg verwendet.
+
+Der anschließende Legacy-Ablauf ist nun belegt. Der [Scrollbericht zum Fold](evidence/code10-large-de-legacy-scroll-scroll-report.json) erreicht „Früher gespeicherte Personen (20) ▾“ nach 42 Scrollschritten; der [Bericht zum ersten Control](evidence/code10-large-de-legacy-first-control-scroll-report.json) erreicht „Alexandria-Maximilian-21 bearbeiten“ nach einem weiteren Schritt. Beide melden `pass=true`. Das belegt Erreichbarkeit durch natives Scrollen, keine Bewertung der Scrollgeschwindigkeit.
+
+Nach [Fold öffnen](evidence/code10-large-de-open-legacy.json) stehen 102 native Nodes bereit, im [Editor von Person 21](evidence/code10-large-de-legacy-edit-tree.json) 105. Die Beschreibungen enthalten den vollständigen Namen; „Zur Gruppe hinzufügen“ ist bei 20 aktiven Personen deaktiviert (`enabled=false`). Die sichtbare Erklärung lautet „Maximal 20 Personen. Zum Hinzufügen jemanden entfernen.“ Root und dieser Auditor haben [die DE-Legacy-Editoransicht](evidence/code10-large-de-legacy-edit.png) gesehen: Kapazitätserklärung, Entfernen, Abbrechen und Speichern bleiben bei 150% mit Gboard sichtbar. Das Namensfeld liegt in diesem gescrollten Frame oberhalb des Ausschnitts; seine Beschreibung im Baum ist kein Beleg gleichzeitiger Sichtbarkeit. Nach [Abbrechen](evidence/code10-large-de-legacy-cancel.json) sind wieder 102 Nodes vorhanden. Vollständige native Beschreibungen ersetzen keinen Nachweis tatsächlich gehörter TalkBack-Ausgabe.
+
+Die drei Checkpoints [expanded](evidence/code10-large-de-legacy-expanded-state/manifest.json), [first](evidence/code10-large-de-legacy-first-state/manifest.json) und [final](evidence/code10-large-de-legacy-final-state/manifest.json) sind **in beiden Save-Generationen bytegleich**. Alle sechs Payload-Checksums und Manifest-Dateihashes wurden offline nachgerechnet. Es bleiben 40 stabile Personen, davon 20 aktiv, vier verwendete Wortpaare, DE/Classic und `Match=null`; Öffnen, Scrollen und Abbrechen aktivieren keine Legacy-Person und schreiben keinen neuen Zustand.
+
+- Primary SHA256: `852584f3fdf97169fe2ed455d4fab88b8e22cdeca399ec746d29c766f59fa2a7`.
+- Previous SHA256: `81411e845bb9bf701149cae809a5a35128888df0a4919606e775a15449427da6`.
+
+## Große private GoodKing-Karten, DE und EN
+
+Beide Abläufe verwenden ausdrücklich markierte [DE-](evidence/code10-large-german-goodking-replay/manifest.json) und [EN-Fixtures](evidence/code10-large-english-goodking-replay/manifest.json) mit 20 Personen bei 150%. Das sind Replay-Layout-/Privatsphäreprüfungen, keine zusätzlich am Gerät erspielten Partien. Root hat in beiden Sprachen den geöffneten Header, die private Liste bis zum letzten Namen und das Verdecken nach Release visuell bestätigt:
+
+| Sprache | Sichtbelege | Semantik und gespeicherter Logscan |
+| --- | --- | --- |
+| DE | [Header gehalten](evidence/code10-large-german-goodking-header-held.png), [Listenende gehalten](evidence/code10-large-german-goodking-bottom-held.png), [Header verdeckt](evidence/code10-large-german-goodking-header-released.png), [Listenende verdeckt](evidence/code10-large-german-goodking-bottom-released.png) | [Privacy-Prüfung](evidence/code10-large-german-goodking-privacy-check.json): Resume/Held/Released ohne verbotene Werte. [Log](evidence/code10-large-german-goodking-log.json): PID 26979, 84 Zeilen, Pfirsich/Aprikose und alle 20 Fixture-Namen geprüft, 0 Treffer und 0 Diagnose-Treffer. |
+| EN | [Header gehalten](evidence/code10-large-english-goodking-header-held.png), [Listenende gehalten](evidence/code10-large-english-goodking-bottom-held.png), [Header verdeckt](evidence/code10-large-english-goodking-header-released.png), [Listenende verdeckt](evidence/code10-large-english-goodking-bottom-released.png) | [Getrennte Nachanalyse](evidence/code10-large-english-goodking-analysis.txt) und [Privacy-Prüfung](evidence/code10-large-english-goodking-privacy-check.json): Resume/Held/Released ohne verbotene Werte. [Log](evidence/code10-large-english-goodking-log.json): PID 26388, 84 Zeilen, Peach/Apricot und alle 20 Fixture-Namen geprüft, 0 Treffer und 0 Diagnose-Treffer. |
+
+Die tatsächlich gelesenen vier nativen Header-Bäume ([DE held](evidence/code10-large-german-goodking-header-held-tree.json), [DE released](evidence/code10-large-german-goodking-header-released-tree.json), [EN held](evidence/code10-large-english-goodking-header-held-tree.json), [EN released](evidence/code10-large-english-goodking-header-released-tree.json)) haben jeweils 14 Nodes und sieben nichtleere Beschreibungen. Held und Released enthalten je Sprache dieselben öffentlichen Werte: Back/Zurück, Kings/Könige, Help/Hilfe, Karte 10 von 20, den öffentlichen Besitzer `WWWWWWWWWWWWWWWWWWWWWWWW · 10`, den allgemeinen Privatkartenhinweis und Hide & pass on/Handy weitergeben. Wort, Rolle und private Mitspielerliste werden nicht als Semantik veröffentlicht. Geprüft wurden vollständige Werte; der Name mit `· 1` wird nicht fälschlich als Teiltreffer des öffentlichen Besitzers `· 10` gezählt. Dies belegt die gespeicherten öffentlichen Bäume, keine tatsächliche TalkBack-Durchreichgeste oder auditive Blindbedienung.
+
+Beim ursprünglichen EN-Helferlauf trat laut Root **erst nach Eingaben und Bildern** ein UTF-8-Decodierfehler auf. Dieser Lauf wird nicht als durchgängig fehlerfreier Helferabschluss umgedeutet. Die oben verlinkte anschließende Analyse prüfte vorhandene Bäume ohne erneute Eingabe; die gespeicherten Privacy-/Logergebnisse bestanden. Die erfolgreichen deutschen und englischen Beobachtungen bleiben getrennt von diesem Toolingfehler erhalten.
+
+Die gespeicherten Logdateien haben SHA256 `acce13e97c7ebfa80ace55b63f218e4de77fbd49eed2dfdd05edb77e8f068421` (DE, 11.363 Dateibytes) und `5ec7de918b18f17688da6f9f950f89ab91cae5f50349aae062e8f1f58c89710f` (EN, 11.365 Dateibytes). Die Scan-Metadaten nennen 11.279 bzw. 11.281 Bytes; diese Zählung wird nicht mit der nachgerechneten Dateigröße gleichgesetzt. Aussagen über Trefferfreiheit gelten für die gespeicherten 84-Zeilen-Ausschnitte.
+
+## Wiederhergestellter Ausgangszustand und Code11-Grenze
+
+Nach dem [expliziten Original-Replay](evidence/code10-original-before-next-update-replay/manifest.json) bestätigt [code10-original-ready](evidence/code10-original-ready-state/manifest.json) wieder beide ursprünglichen Save-Generationen. Der Offline-Vergleich zu `code8-original-state` ist bytegleich: Primary `f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b`, Previous `d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467`. Beide Checksums sind gültig. Die aktive Gruppe enthält Nora, Luca, Emil, Mila und Jonas2 mit ihren ursprünglichen IDs und zwölf verwendeten Wortpaaren; `Match=null`. Das ist eine bewusste Wiederherstellung nach Fixtures und kein weiterer Update-Erhaltungsnachweis.
+
+[Systempräferenzen](evidence/code10-preferences-restored-preferences.json) stehen wieder auf Fontscale 1.0 und dem ursprünglichen Motion-Wert `null`. Der [TalkBack-Restore](evidence/code10-talkback-restore.txt) hält `enabled_accessibility_services="null"`, `accessibility_enabled="0"` und `touch_exploration_enabled="0"` fest. Laut Root wurde die App anschließend für Code11 gestoppt; dieser Offline-Audit führt keine neue Prozessabfrage aus.
+
+Offline wurden zunächst 38 gespeicherte JSON-Generationen aus den 19 Checkpoints der Kernfolge auf den SHA256/Base64-Payload-Checksum geprüft; alle Checksum-Werte sind gültig. Die 16 dort vorhandenen Manifeste stimmen mit Dateihashes, Players und Match überein. Drei fehlende Cancel-Manifeste sind oben ausdrücklich vermerkt. Der zusätzliche Large-EN-Move-Checkpoint wird getrennt gelesen. Dies ist eine Konsistenzprüfung der vorhandenen Dateien, keine neue Ausführung von App-Tests und keine Aussage, dass alle aufgezeichneten App-Aktionen bestanden hätten.
+
+Zusätzlich wurden für diese Ergänzung die Legacy-Paare, der Large-EN-Move-Checkpoint, das wiederhergestellte Original und dessen Referenz offline nachgerechnet: zwölf Generationen, gültige Payload-Checksums und übereinstimmende Manifest-Dateihashes. Die Bytevergleiche oben beziehen sich auf die Dateien selbst; zwölf gelesene Generationen sind keine zwölf App-Testfälle.
+
+Für die begrenzte Übernahme nach Code11 wurde der unveränderliche Vergleich `bd7b618c957051d3ee61321a6ed3d275a5302a93 → 976c0fc49742898e41fa21d2392cd34fec6a73f8` read-only geprüft. Unter dem Produktions-Runtimecode ändert sich nur `GroupReorder.cs`; die übrigen Änderungen betreffen Tests, Versions-/Buildwerkzeuge und Belege. Damit bleiben diese Code10-UI-Beobachtungen als Belege für unveränderte Gruppenansichten, Texte, Legacy-/Kapazitätsdarstellung und Privatkarten verwendbar. Daraus folgt kein nativer Nachweis des geänderten Reorder-Verhaltens oder einer späteren, ungeprüften Quellrevision.
+
+Die [Code11-Standardsprüfung](standards-code11-verification.md) nennt 0 Befunde und eine vollständige gerenderte Suite mit 58/58. Die [Spec-Prüfung desselben Standes](spec-code11-verification.md) hält jedoch die P2-Frage zur Wiederverwendung eines Touch-Slots bei Cancel+Begin im selben Update offen. Dieser historische Reviewstand ist weder eine Behauptung über einen späteren Fix noch ein nativer Pass. **Finale Code11-Cancel-/CancelBegin-, Update- und Motion-/Reduced-Motion-Nachweise bleiben offen.** Die hier abgeschlossenen begrenzten Legacy-/Maximalgruppen- und Semantikprüfungen schließen keine ganze Story oder allgemeine Accessibility-Abnahme ab; die 32-Story-Matrix bleibt unverändert. Keine freien Rollenregeln aus #11 werden erfunden oder abgenommen.
+
+---
+
+Lesefassung mit dauerhaften relativen Links. Das [unveränderte eingefrorene Original](../../../artifacts/usability-final-preservation/25d3e9f9d806-20261009T093925Z/native/code10-functional-report.md) bleibt einschließlich früherer Formulierungen erhalten. Die aktuelle Updatebeschreibung unterscheidet den vorherigen Originalrestore vom eigentlichen Installationsversuch.

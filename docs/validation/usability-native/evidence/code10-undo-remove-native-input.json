@@ -1,0 +1,15 @@
+{
+  "label": "code10-undo-remove",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 370 1160",
+    "at 180",
+    "up 0",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=56646227\nTIMING action=0 event=56646330 started=56646330 finished=56646332 injected=true\nOK down 0 370 1160 injected=true\nTIMING action=1 event=56646409 started=56646409 finished=56646412 injected=true\nOK up 0 injected=true\n",
+  "stderr": ""
+}

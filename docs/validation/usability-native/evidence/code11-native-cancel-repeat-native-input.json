@@ -1,0 +1,17 @@
+{
+  "label": "code11-native-cancel-repeat",
+  "versionCode": 11,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 7 150 590",
+    "at 350",
+    "move 7 150 820",
+    "at 800",
+    "cancel",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=61776642\nTIMING action=0 event=61776759 started=61776760 finished=61776763 injected=true\nOK down 7 150 590 injected=true\nTIMING action=2 event=61776995 started=61776995 finished=61776996 injected=true\nOK move 7 150 820 injected=true\nTIMING action=3 event=61777442 started=61777443 finished=61777448 injected=true\nOK cancel injected=true\n",
+  "stderr": ""
+}

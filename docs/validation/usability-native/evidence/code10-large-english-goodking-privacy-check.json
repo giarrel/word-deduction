@@ -1,0 +1,20 @@
+[
+  {
+    "stage": "resume",
+    "nodeCount": 14,
+    "forbiddenHits": [],
+    "pass": true
+  },
+  {
+    "stage": "header-held-tree",
+    "nodeCount": 14,
+    "forbiddenHits": [],
+    "pass": true
+  },
+  {
+    "stage": "header-released-tree",
+    "nodeCount": 14,
+    "forbiddenHits": [],
+    "pass": true
+  }
+]

@@ -1,0 +1,843 @@
+--------- beginning of system
+10-08 18:21:15.110   645   668 W ActivityTaskManager: Skip updateConfiguration because mWindowManager isn't set
+10-08 18:21:15.914   645   645 I WindowManager: No existing display settings, starting empty
+10-08 18:21:16.133   645   645 I WindowManager: SAFE MODE not enabled
+10-08 18:21:16.231   645   645 I ActivityTaskManager: Config changes=20005df8 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port ?uimode ?night finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.2 ?fontWeightAdjustment}
+10-08 18:21:16.237   645   645 I WindowManager: Override config changes=60007dfc {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port ?uimode ?night finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.2 ?fontWeightAdjustment} for displayId=0
+10-08 18:21:19.235   645   645 I ActivityTaskManager: Config changes=200 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.4 ?fontWeightAdjustment}
+10-08 18:21:19.239   645   645 I WindowManager: Override config changes=200 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.4 ?fontWeightAdjustment} for displayId=0
+10-08 18:21:20.040   645   645 I ActivityTaskManager: Config changes=10008100 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.6 fontWeightAdjustment=0}
+10-08 18:21:20.048   645   645 I WindowManager: Override config changes=10008100 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.6 fontWeightAdjustment=0} for displayId=0
+10-08 18:21:21.335   645   749 I ActivityTaskManager: Config changes=100 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0}
+10-08 18:21:21.335   645   749 I WindowManager: Override config changes=100 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} s.8 fontWeightAdjustment=0} for displayId=0
+10-08 18:21:22.928   645   645 W ActivityTaskManager: callingPackage for (uid=-1, pid=0) has no WPC
+10-08 18:21:23.025   645   645 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+10-08 18:21:24.031   645   669 W WindowManager: Keyguard drawn timeout. Setting mKeyguardDrawComplete
+10-08 18:21:29.255   645   669 W WindowManager: Keyguard drawn timeout. Setting mKeyguardDrawComplete
+10-08 18:21:30.304   645   671 E WindowManager: Display reconfigured outside of a transition: Display{#0 state=ON size=1080x1920 ROTATION_0}
+10-08 18:21:32.724   645   668 I ActivityTaskManager: Restoring recents for user 0
+10-08 18:21:36.513   645   668 I ActivityTaskManager: Config changes=80000000 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11 fontWeightAdjustment=0}
+10-08 18:21:36.562   645   668 I WindowManager: Override config changes=80000000 {1.0 ?mcc0mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.11 fontWeightAdjustment=0} for displayId=0
+10-08 18:21:38.262   645  1492 I ActivityTaskManager: Config changes=3 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.33 fontWeightAdjustment=0}
+10-08 18:21:38.406   645  1492 I WindowManager: Override config changes=3 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.2 s.33 fontWeightAdjustment=0} for displayId=0
+10-08 18:21:43.411   645  1180 I WindowManager: finishDrawing of relaunch: Window{bb43b97 u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} 8042ms
+10-08 18:21:49.492   645   668 I ActivityTaskManager: Config changes=80000000 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.55 fontWeightAdjustment=0}
+10-08 18:21:49.535   645   668 I WindowManager: Override config changes=80000000 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.55 fontWeightAdjustment=0} for displayId=0
+10-08 18:21:49.616   645   668 W ActivityTaskManager: Current config: {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.55 fontWeightAdjustment=0} unchanged for IME proc com.google.android.inputmethod.latin
+10-08 18:21:50.394   645  1039 I WindowManager: finishDrawing of relaunch: Window{c56e9f8 u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} 783ms
+10-08 18:22:00.232   645   714 I WindowManager: WIN DEATH: Window{ad71bd6 u0 InputMethod}
+10-08 18:22:01.877   645  1528 I ActivityTaskManager: START u0 {act=com.google.android.gms.setupservices.COVERSHEET_WELCOME flg=0x14000000 xflg=0x4 pkg=com.google.android.gms cmp=com.google.android.gms/.setupservices.CoverSheetWelcomeActivity} with LAUNCH_MULTIPLE from uid 10185 (BAL_ALLOW_NON_APP_VISIBLE_WINDOW) result code=0
+10-08 18:22:04.383   645   662 I ActivityTaskManager: START u0 {act=com.google.android.apps.tips.action.COVERSHEET flg=0x14000000 xflg=0x4 pkg=com.google.android.apps.tips} with LAUNCH_MULTIPLE from uid 10146 (sr=119980342) result code=-91
+10-08 18:22:08.342   645  1527 I WindowManager: WIN DEATH: Window{55d01a5 u0 InputMethod}
+10-08 18:22:22.950   645  1039 I WindowManager: WIN DEATH: Window{3012458 u0 InputMethod}
+10-08 18:23:02.683   645  1492 W ActivityTaskManager: callingPackage for (uid=2000, pid=4791) has no WPC
+10-08 18:23:02.692   645  1492 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 18:30:29.856   645   669 W ActivityTaskManager: callingPackage for (uid=-1, pid=0) has no WPC
+10-08 18:30:29.869   645   669 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=2
+10-08 18:35:25.392   645   661 W ActivityTaskManager: Force removing ActivityRecord{74476159 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t20 f}}: app died, no saved state
+10-08 19:16:28.573   645  1019 I ActivityTaskManager: START u0 {flg=0x18000020 xflg=0x4 cmp=com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (BAL_ALLOW_TOKEN) result code=0
+10-08 19:16:29.624   645  1540 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS xflg=0x4 pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (rr=32292656) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-08 19:16:30.128   645   671 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{32292656 u0 com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity t21}
+10-08 19:16:30.128   645   671 W ActivityTaskManager: Activity pause timeout for ActivityRecord{32292656 u0 com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity t21}
+10-08 19:18:22.536   645   714 W WindowManager: Failed looking up window session=Session{2520fba 5442:u0a10161} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.setOnBackInvokedCallbackInfo:1002 android.view.IWindowSession$Stub.onTransact:1156 
+10-08 19:18:22.537   645   714 I WindowManager: setOnBackInvokedCallback(): No window state for package:com.google.android.marvin.talkback
+10-08 19:18:52.894   645  1534 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 xflg=0x4 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity bnds=[462,1395][618,1571]} with LAUNCH_SINGLE_TASK from uid 10182 (sr=103579883) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-08 19:18:55.255   645  2112 W ActivityTaskManager: Request to remove task ignored for non-existent task 21
+10-08 19:21:44.692   645   713 W ActivityTaskManager: Force removing ActivityRecord{26585523 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t22 f}}: app died, no saved state
+10-08 19:21:44.776   645  1540 I WindowManager: WIN DEATH: Window{708de56 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 19:21:44.900   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 19:21:45.201   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 19:21:46.107   645  1529 W WindowManager: Exception thrown during dispatchAppVisibility Window{708de56 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 19:21:46.107   645  1529 W WindowManager: android.os.DeadObjectException
+10-08 19:21:46.107   645  1529 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 19:21:46.107   645  1529 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 21:29:24.317   645  1540 W ActivityTaskManager: callingPackage for (uid=2000, pid=6628) has no WPC
+10-08 21:29:24.388   645  1540 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 21:29:25.940   645  1530 W WindowManager: Failed looking up window session=Session{72baa46 6631:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 21:40:49.929   645  1529 I WindowManager: WIN DEATH: Window{d4b0438 u0 InputMethod}
+10-08 21:42:54.205   645   669 W ActivityTaskManager: callingPackage for (uid=-1, pid=0) has no WPC
+10-08 21:42:54.246   645   669 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=2
+10-08 21:42:55.461   645  1529 W ActivityTaskManager: callingPackage for (uid=2000, pid=7395) has no WPC
+10-08 21:42:55.516   645  1529 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=2
+10-08 21:47:18.462   645  1529 W ActivityTaskManager: callingPackage for (uid=2000, pid=7445) has no WPC
+10-08 21:47:18.516   645  1529 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=3
+10-08 21:47:18.655   645  1548 W ActivityTaskManager: callingPackage for (uid=-1, pid=-1) has no WPC
+10-08 21:50:38.428   645  1529 W ActivityTaskManager: Force removing ActivityRecord{151058376 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t23 f}}: app died, no saved state
+10-08 21:50:38.631   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 21:50:38.845   645  1542 I WindowManager: WIN DEATH: Window{57f0934 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 21:50:39.061   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 21:50:39.621   645  1039 W ActivityTaskManager: callingPackage for (uid=2000, pid=7531) has no WPC
+10-08 21:50:39.702   645  1039 I ActivityTaskManager: Add Task{d98a061 #23 type=standard A=10215:com.giarrel.worddeduction minWidth=400 minHeight=300} to hidden list because adding Task{6bfc071 #24 type=standard A=10215:com.giarrel.worddeduction minWidth=400 minHeight=300}
+10-08 21:50:39.730   645  1039 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 21:50:40.048   645   918 W WindowManager: Exception thrown during dispatchAppVisibility Window{57f0934 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 21:50:40.048   645   918 W WindowManager: android.os.DeadObjectException
+10-08 21:50:40.048   645   918 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 21:50:40.048   645   918 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 21:50:40.048   645   918 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 21:50:40.048   645   918 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 21:50:40.048   645   918 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 21:50:40.048   645   918 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 21:50:40.048   645   918 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 21:50:40.810   645  1538 W WindowManager: Failed looking up window session=Session{fb763ec 7535:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 21:58:30.682   645  1039 W ActivityTaskManager: Force removing ActivityRecord{191843864 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t24 f}}: app died, no saved state
+10-08 21:58:30.875   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 21:58:31.108   645  2440 I WindowManager: WIN DEATH: Window{b880a4a u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 21:58:31.217   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 21:58:32.131   645  2440 W WindowManager: Exception thrown during dispatchAppVisibility Window{b880a4a u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 21:58:32.131   645  2440 W WindowManager: android.os.DeadObjectException
+10-08 21:58:32.131   645  2440 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 21:58:32.131   645  2440 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 21:58:33.342   645   855 W ActivityTaskManager: callingPackage for (uid=2000, pid=8158) has no WPC
+10-08 21:58:33.375   645   855 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 21:58:34.112   645  1538 W WindowManager: Failed looking up window session=Session{1b19e88 8161:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 21:59:21.461   645   662 W ActivityTaskManager: Force removing ActivityRecord{65585684 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t25 f}}: app died, no saved state
+10-08 21:59:21.535   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 21:59:21.600   645  1492 I WindowManager: WIN DEATH: Window{123ec46 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 21:59:21.940   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 21:59:22.866   645  1039 W WindowManager: Exception thrown during dispatchAppVisibility Window{123ec46 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 21:59:22.866   645  1039 W WindowManager: android.os.DeadObjectException
+10-08 21:59:22.866   645  1039 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 21:59:22.866   645  1039 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 21:59:23.204   645  1543 W ActivityTaskManager: callingPackage for (uid=2000, pid=8289) has no WPC
+10-08 21:59:23.291   645  1543 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:03:13.852   645  1039 W ActivityTaskManager: Force removing ActivityRecord{185654452 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t26 f}}: app died, no saved state
+10-08 22:03:13.928   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:03:13.944   645  1549 I WindowManager: WIN DEATH: Window{fa99b44 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:03:14.376   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:03:15.141   645  1529 W WindowManager: Exception thrown during dispatchAppVisibility Window{fa99b44 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:03:15.141   645  1529 W WindowManager: android.os.DeadObjectException
+10-08 22:03:15.141   645  1529 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 22:03:15.141   645  1529 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 22:03:15.543   645  1549 W ActivityTaskManager: callingPackage for (uid=2000, pid=8807) has no WPC
+10-08 22:03:15.584   645  1549 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:03:16.412   645  2440 W WindowManager: Failed looking up window session=Session{d99ad16 8810:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 22:08:23.513   645   671 I ActivityTaskManager: Config changes=40000000 {1.5 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.95 fontWeightAdjustment=0}
+10-08 22:08:23.527   645   671 I WindowManager: Override config changes=40000000 {1.5 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.95 fontWeightAdjustment=0} for displayId=0
+10-08 22:10:21.368   645  1548 W ActivityTaskManager: Force removing ActivityRecord{258417140 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t27 f}}: app died, no saved state
+10-08 22:10:21.653   645  2440 I WindowManager: WIN DEATH: Window{def5084 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:10:21.653   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:10:22.392   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:10:23.345   645  1110 W WindowManager: Exception thrown during dispatchAppVisibility Window{def5084 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:10:23.345   645  1110 W WindowManager: android.os.DeadObjectException
+10-08 22:10:23.345   645  1110 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 22:10:23.345   645  1110 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 22:10:29.914   645  1534 W ActivityTaskManager: callingPackage for (uid=2000, pid=9390) has no WPC
+10-08 22:10:29.956   645  1534 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:10:30.869   645  1535 W WindowManager: Failed looking up window session=Session{60614c7 9394:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 22:16:32.005   645  1110 I ActivityTaskManager: START u0 {flg=0x18000020 xflg=0x4 cmp=com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (BAL_ALLOW_TOKEN) result code=0
+10-08 22:16:32.528   645  1110 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS xflg=0x4 pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (rr=115288601) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-08 22:16:32.838   645  1110 I ActivityTaskManager: Process com.google.android.permissioncontroller restarted
+10-08 22:16:33.015   645   671 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{115288601 u0 com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity t29}
+10-08 22:16:33.031   645   671 W ActivityTaskManager: Activity pause timeout for ActivityRecord{115288601 u0 com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity t29}
+10-08 22:20:19.534   645  2405 W ActivityTaskManager: Force removing ActivityRecord{124992205 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t28 f}}: app died, no saved state
+10-08 22:20:19.675   645   746 I WindowManager: WINDOW DIED Window{8c8521d u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:20:19.678   645  2431 I WindowManager: WIN DEATH: Window{8c8521d u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:20:19.795   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:20:20.226   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:20:21.059   645  2405 W WindowManager: Exception thrown during dispatchAppVisibility Window{8c8521d u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:20:21.059   645  2405 W WindowManager: android.os.DeadObjectException
+10-08 22:20:21.059   645  2405 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 22:20:21.059   645  2405 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 22:20:37.945   645  2405 W ActivityTaskManager: callingPackage for (uid=2000, pid=10254) has no WPC
+10-08 22:20:37.979   645  2405 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:20:38.976   645   855 W WindowManager: Failed looking up window session=Session{262cc50 10257:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 22:20:39.561   645  2431 W ActivityTaskManager: Request to remove task ignored for non-existent task 29
+10-08 22:22:58.156   645  2440 W ActivityTaskManager: Force removing ActivityRecord{197944958 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t30 f}}: app died, no saved state
+10-08 22:22:58.416   645  1180 I WindowManager: WIN DEATH: Window{7ea034e u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:22:58.444   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:22:58.936   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:22:59.672   645  1538 W WindowManager: Exception thrown during dispatchAppVisibility Window{7ea034e u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:22:59.672   645  1538 W WindowManager: android.os.DeadObjectException
+10-08 22:22:59.672   645  1538 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 22:22:59.672   645  1538 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 22:23:00.637   645  1110 W ActivityTaskManager: callingPackage for (uid=2000, pid=10542) has no WPC
+10-08 22:23:00.665   645  1110 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:24:32.423   645  1019 W ActivityTaskManager: Force removing ActivityRecord{6914322 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t31 f}}: app died, no saved state
+10-08 22:24:32.523   645   746 I WindowManager: WINDOW DIED Window{6a4a307 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:24:32.537   645  1039 I WindowManager: WIN DEATH: Window{6a4a307 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:24:32.656   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:24:33.506   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:24:34.268   645  1535 W WindowManager: Exception thrown during dispatchAppVisibility Window{6a4a307 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:24:34.268   645  1535 W WindowManager: android.os.DeadObjectException
+10-08 22:24:34.268   645  1535 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 22:24:34.268   645  1535 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 22:24:35.170   645  1180 W ActivityTaskManager: callingPackage for (uid=2000, pid=10820) has no WPC
+10-08 22:24:35.251   645  1180 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:35:43.339   645  1039 W ActivityTaskManager: Force removing ActivityRecord{170160198 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t32 f}}: app died, no saved state
+10-08 22:35:43.393   645   746 I WindowManager: WINDOW DIED Window{ce44deb u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:35:43.431   645   714 I WindowManager: WIN DEATH: Window{ce44deb u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:35:43.533   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:35:43.893   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:35:44.885   645  1039 W WindowManager: Exception thrown during dispatchAppVisibility Window{ce44deb u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:35:44.885   645  1039 W WindowManager: android.os.DeadObjectException
+10-08 22:35:44.885   645  1039 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 22:35:44.885   645  1039 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 22:35:51.401   645  1039 W ActivityTaskManager: callingPackage for (uid=2000, pid=11642) has no WPC
+10-08 22:35:51.432   645  1039 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:37:26.925   645   671 I ActivityTaskManager: Config changes=40000000 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.122 fontWeightAdjustment=0}
+10-08 22:37:26.975   645   671 I WindowManager: Override config changes=40000000 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.122 fontWeightAdjustment=0} for displayId=0
+10-08 22:37:27.685   645  1039 W ActivityTaskManager: Force removing ActivityRecord{129336475 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t33 f}}: app died, no saved state
+10-08 22:37:27.760   645  1545 I WindowManager: WIN DEATH: Window{31a6a6b u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:37:29.185   645  1540 I WindowManager: finishDrawing of relaunch: Window{c7d9705 u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} 1457ms
+10-08 22:37:30.387   645  1531 W ActivityTaskManager: callingPackage for (uid=2000, pid=11868) has no WPC
+10-08 22:37:30.433   645  1531 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:37:31.782   645  1545 W WindowManager: Failed looking up window session=Session{df189bf 11872:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 22:52:29.791   645   677 W ActivityTaskManager: Force removing ActivityRecord{193992460 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t34 f}}: app died, no saved state
+10-08 22:52:30.016   645   746 I WindowManager: WINDOW DIED Window{1a87bd5 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:52:30.119   645  1019 I WindowManager: WIN DEATH: Window{1a87bd5 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:52:30.140   645   703 I WindowManager:   Force removing ActivityRecord{193992460 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t34 f} isExiting}
+10-08 22:52:30.140   645   703 W WindowManager: removeAppToken: Attempted to remove non-existing token: Token{d6ac26a ActivityRecord{193992460 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t34 f} isExiting}}
+10-08 22:52:30.589   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:52:32.123   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:52:32.571   645  1531 W WindowManager: Exception thrown during dispatchAppVisibility Window{1a87bd5 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:52:32.571   645  1531 W WindowManager: android.os.DeadObjectException
+10-08 22:52:32.571   645  1531 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 22:52:32.571   645  1531 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 22:52:51.498   645  1695 W ActivityTaskManager: callingPackage for (uid=2000, pid=12279) has no WPC
+10-08 22:52:51.595   645  1695 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:52:53.782   645  2440 W WindowManager: Failed looking up window session=Session{bd9018d 12283:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 22:58:47.372   645  1531 W ActivityTaskManager: Force removing ActivityRecord{98625189 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t35 f}}: app died, no saved state
+10-08 22:58:47.461   645   746 I WindowManager: WINDOW DIED Window{68b53 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 22:58:47.462   645   855 I WindowManager: WIN DEATH: Window{68b53 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:58:47.712   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:58:48.441   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 22:58:49.340   645  1545 W WindowManager: Exception thrown during dispatchAppVisibility Window{68b53 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 22:58:49.340   645  1545 W WindowManager: android.os.DeadObjectException
+10-08 22:58:49.340   645  1545 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 22:58:49.340   645  1545 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 22:58:50.266   645  1534 W ActivityTaskManager: callingPackage for (uid=2000, pid=12515) has no WPC
+10-08 22:58:50.304   645  1534 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 22:58:51.883   645  1545 W WindowManager: Failed looking up window session=Session{85ebc3a 12519:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 23:03:52.561   645  1545 I ActivityTaskManager: START u0 {flg=0x18000020 xflg=0x4 cmp=com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (BAL_ALLOW_TOKEN) result code=0
+10-08 23:03:53.060   645  2112 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS xflg=0x4 pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (rr=172790093) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-08 23:05:47.271   645  1039 W ActivityTaskManager: Force removing ActivityRecord{221287608 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t36 f}}: app died, no saved state
+10-08 23:05:47.388   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 23:05:47.589   645   661 I WindowManager: WIN DEATH: Window{a62e48 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 23:05:47.827   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 23:05:48.668   645  1019 W WindowManager: Exception thrown during dispatchAppVisibility Window{a62e48 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 23:05:48.668   645  1019 W WindowManager: android.os.DeadObjectException
+10-08 23:05:48.668   645  1019 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 23:05:48.668   645  1019 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 23:05:49.423   645  1019 W ActivityTaskManager: callingPackage for (uid=2000, pid=13022) has no WPC
+10-08 23:05:49.468   645  1019 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 23:05:50.981   645  1019 W ActivityTaskManager: Request to remove task ignored for non-existent task 37
+10-08 23:14:13.101   645  1549 W ActivityTaskManager: Force removing ActivityRecord{163424469 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t38 f}}: app died, no saved state
+10-08 23:14:13.619   645  1527 I WindowManager: WIN DEATH: Window{19ef625 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 23:14:13.835   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 23:14:14.992   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 23:14:15.399   645  1542 W WindowManager: Exception thrown during dispatchAppVisibility Window{19ef625 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 23:14:15.399   645  1542 W WindowManager: android.os.DeadObjectException
+10-08 23:14:15.399   645  1542 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 23:14:15.399   645  1542 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 23:19:06.679   645   855 W ActivityTaskManager: callingPackage for (uid=2000, pid=13374) has no WPC
+10-08 23:19:06.835   645   855 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 23:19:08.144   645   662 W WindowManager: Failed looking up window session=Session{bc9a423 13388:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 23:19:51.825   645  1542 I ActivityTaskManager: START u0 {flg=0x18000020 xflg=0x4 cmp=com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (BAL_ALLOW_TOKEN) result code=0
+10-08 23:19:52.200   645  1529 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS xflg=0x4 pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (rr=140783486) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-08 23:19:53.112   645  1535 I WindowManager: WIN DEATH: Window{d549f3c u0 InputMethod}
+10-08 23:19:53.322   645   746 I WindowManager: WINDOW DIED Window{a7376d9 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 23:19:53.332   645  1548 W WindowManager: Cannot find window which accessibility connection is added to
+10-08 23:19:53.488   645  1528 W ActivityTaskManager: Force removing ActivityRecord{173979229 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t39}: app died, no saved state
+10-08 23:19:56.307   645  1530 W ActivityTaskManager: takeTaskSnapshot: taskId=39 not found or not visible
+10-08 23:21:07.489   645  2431 W ActivityTaskManager: callingPackage for (uid=2000, pid=14360) has no WPC
+10-08 23:21:07.505   645  2431 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 23:21:08.256   645  1019 W WindowManager: Failed looking up window session=Session{57a8b6f 14363:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+--------- beginning of main
+10-08 23:21:08.472   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +968ms
+10-08 23:21:08.660   645   713 W ActivityTaskManager: Request to remove task ignored for non-existent task 40
+10-08 23:21:14.243   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +6s758ms
+10-08 23:22:46.701   645   671 I ActivityTaskManager: Config changes=40000000 {1.5 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.154 fontWeightAdjustment=0}
+10-08 23:22:46.726   645   671 I WindowManager: Override config changes=40000000 {1.5 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.154 fontWeightAdjustment=0} for displayId=0
+10-08 23:22:47.785   645  1535 W ActivityTaskManager: Force removing ActivityRecord{36529430 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t41 f}}: app died, no saved state
+10-08 23:22:47.883   645   746 I WindowManager: WINDOW DIED Window{53e0d05 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 23:22:47.892   645  1545 W WindowManager: Cannot find window which accessibility connection is added to
+10-08 23:22:49.623   645  1535 I WindowManager: finishDrawing of relaunch: Window{1b6e79b u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} 1769ms
+10-08 23:22:50.569   645  1543 W ActivityTaskManager: callingPackage for (uid=2000, pid=14852) has no WPC
+10-08 23:22:50.655   645  1543 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 23:22:53.028   645  1535 W WindowManager: Failed looking up window session=Session{c85217a 14856:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-08 23:22:53.588   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +2s892ms
+10-08 23:23:09.752   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +19s164ms
+10-08 23:23:29.517   645  1019 I WindowManager: WIN DEATH: Window{2a5d1fa u0 InputMethod}
+10-08 23:23:29.993   645  1492 W WindowManager: Cannot find window which accessibility connection is added to
+10-08 23:24:44.231   645  1549 I WindowManager: WIN DEATH: Window{bc5462d u0 InputMethod}
+10-08 23:24:44.233   645  1549 W WindowManager: Cannot find window which accessibility connection is added to
+10-08 23:29:13.689   645  1528 W ActivityTaskManager: Force removing ActivityRecord{131805939 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t42 f}}: app died, no saved state
+10-08 23:29:13.829   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 23:29:14.036   645  1535 I WindowManager: WIN DEATH: Window{fce3588 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 23:29:14.540   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-08 23:29:15.428   645  1039 W WindowManager: Exception thrown during dispatchAppVisibility Window{fce3588 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-08 23:29:15.428   645  1039 W WindowManager: android.os.DeadObjectException
+10-08 23:29:15.428   645  1039 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-08 23:29:15.428   645  1039 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-08 23:29:16.053   645  1039 W ActivityTaskManager: callingPackage for (uid=2000, pid=16091) has no WPC
+10-08 23:29:16.106   645  1039 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 23:29:17.478   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s408ms
+10-08 23:29:24.195   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +8s141ms
+10-08 23:31:44.988   645   671 I ActivityTaskManager: Config changes=40000000 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.183 fontWeightAdjustment=0}
+10-08 23:31:45.004   645   671 I WindowManager: Override config changes=40000000 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.183 fontWeightAdjustment=0} for displayId=0
+10-08 23:31:45.709   645  1535 W ActivityTaskManager: Force removing ActivityRecord{86062147 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t43 f}}: app died, no saved state
+10-08 23:31:45.847   645   746 I WindowManager: WINDOW DIED Window{4315e14 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-08 23:31:46.977   645  1535 I WindowManager: finishDrawing of relaunch: Window{27e61ff u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} 1170ms
+10-08 23:31:48.031   645  1527 W ActivityTaskManager: callingPackage for (uid=2000, pid=16462) has no WPC
+10-08 23:31:48.084   645  1527 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-08 23:31:49.124   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s94ms
+10-08 23:31:54.813   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +6s786ms
+10-09 08:00:41.833   645  1536 W ActivityTaskManager: Force removing ActivityRecord{203410808 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t44 f}}: app died, no saved state
+10-09 08:00:42.024   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:00:42.113   645  1695 I WindowManager: WIN DEATH: Window{cd1524f u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 08:00:43.349   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:00:44.188   645  1531 W WindowManager: Exception thrown during dispatchAppVisibility Window{cd1524f u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 08:00:44.188   645  1531 W WindowManager: android.os.DeadObjectException
+10-09 08:00:44.188   645  1531 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 08:00:44.188   645  1531 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 08:00:45.198   645  1695 W ActivityTaskManager: callingPackage for (uid=2000, pid=20089) has no WPC
+10-09 08:00:45.238   645  1695 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 08:00:46.516   645  1548 W WindowManager: Failed looking up window session=Session{bd523ff 20092:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 08:00:46.789   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s594ms
+10-09 08:00:53.085   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +7s888ms
+10-09 08:02:45.800   645  1530 W ActivityTaskManager: Force removing ActivityRecord{103472837 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t45 f}}: app died, no saved state
+10-09 08:02:45.891   645  1542 I WindowManager: WIN DEATH: Window{b4d4015 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 08:02:45.992   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:02:46.381   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:02:47.308   645   661 W WindowManager: Exception thrown during dispatchAppVisibility Window{b4d4015 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 08:02:47.308   645   661 W WindowManager: android.os.DeadObjectException
+10-09 08:02:47.308   645   661 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 08:02:47.308   645   661 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 08:02:47.308   645   661 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 08:02:47.308   645   661 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 08:02:47.308   645   661 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 08:02:47.308   645   661 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 08:02:47.308   645   661 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 08:02:48.076   645  1548 W ActivityTaskManager: callingPackage for (uid=2000, pid=20421) has no WPC
+10-09 08:02:48.092   645  1548 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 08:02:48.937   645   661 W WindowManager: Failed looking up window session=Session{1271c0e 20424:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 08:02:49.116   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s44ms
+10-09 08:02:54.568   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +6s496ms
+10-09 08:04:30.208   645  1530 W ActivityTaskManager: Force removing ActivityRecord{161397676 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t46 f}}: app died, no saved state
+10-09 08:04:30.273   645   746 I WindowManager: WINDOW DIED Window{a3043c u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 08:04:30.296   645  1019 I WindowManager: WIN DEATH: Window{a3043c u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 08:04:30.413   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:04:31.050   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:04:31.821   645  1530 W WindowManager: Exception thrown during dispatchAppVisibility Window{a3043c u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 08:04:31.821   645  1530 W WindowManager: android.os.DeadObjectException
+10-09 08:04:31.821   645  1530 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 08:04:31.821   645  1530 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 08:04:33.081   645  1530 W ActivityTaskManager: callingPackage for (uid=2000, pid=20711) has no WPC
+10-09 08:04:33.225   645  1530 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 08:04:36.666   645   855 W WindowManager: Failed looking up window session=Session{28abaf5 20714:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 08:04:37.153   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +3s947ms
+10-09 08:04:43.790   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +10s712ms
+10-09 08:39:05.747   645  1019 W ActivityTaskManager: Force removing ActivityRecord{59085009 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t47 f}}: app died, no saved state
+10-09 08:39:05.931   645  2440 I WindowManager: WIN DEATH: Window{c191171 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 08:39:06.060   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:39:06.593   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:39:07.267   645  2119 W WindowManager: Exception thrown during dispatchAppVisibility Window{c191171 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 08:39:07.267   645  2119 W WindowManager: android.os.DeadObjectException
+10-09 08:39:07.267   645  2119 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 08:39:07.267   645  2119 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 08:39:07.843   645  2119 W ActivityTaskManager: callingPackage for (uid=2000, pid=21302) has no WPC
+10-09 08:39:07.871   645  2119 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 08:39:08.662   645  1540 W WindowManager: Failed looking up window session=Session{a613c9b 21305:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 08:39:08.805   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +958ms
+10-09 08:39:13.876   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +6s33ms
+10-09 08:41:44.112   645  1180 W ActivityTaskManager: Force removing ActivityRecord{187656641 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t48 f}}: app died, no saved state
+10-09 08:41:44.185   645  1549 I WindowManager: WIN DEATH: Window{4493011 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 08:41:44.207   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:41:44.684   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 08:41:45.473   645  1528 W WindowManager: Exception thrown during dispatchAppVisibility Window{4493011 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 08:41:45.473   645  1528 W WindowManager: android.os.DeadObjectException
+10-09 08:41:45.473   645  1528 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 08:41:45.473   645  1528 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 08:41:46.257   645  1528 W ActivityTaskManager: callingPackage for (uid=2000, pid=21774) has no WPC
+10-09 08:41:46.291   645  1528 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 08:41:47.170   645  1542 W WindowManager: Failed looking up window session=Session{8434b38 21778:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 08:41:47.416   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s140ms
+10-09 08:41:52.534   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +6s283ms
+10-09 09:28:44.102   645  1180 W ActivityTaskManager: Force removing ActivityRecord{84918724 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t49 f}}: app died, no saved state
+10-09 09:28:44.227   645  1039 I WindowManager: WIN DEATH: Window{c25a076 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 09:28:44.251   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 09:28:44.967   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 09:28:45.823   645  1180 W WindowManager: Exception thrown during dispatchAppVisibility Window{c25a076 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 09:28:45.823   645  1180 W WindowManager: android.os.DeadObjectException
+10-09 09:28:45.823   645  1180 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 09:28:45.823   645  1180 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 09:29:14.108   645  1039 W ActivityTaskManager: callingPackage for (uid=2000, pid=22330) has no WPC
+10-09 09:29:14.392   645  1039 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 09:29:19.457   645  1542 W WindowManager: Failed looking up window session=Session{de77a06 22334:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 09:29:20.647   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +6s509ms
+10-09 09:29:33.537   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +19s429ms
+10-09 09:50:42.636   645  1528 W ActivityTaskManager: Force removing ActivityRecord{24480089 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t50 f}}: app died, no saved state
+10-09 09:50:42.926   645   746 I WindowManager: WINDOW DIED Window{b00bef4 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 09:50:42.938   645  1530 I WindowManager: WIN DEATH: Window{b00bef4 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 09:50:43.450   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 09:50:47.008   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 09:50:47.333   645  1180 W WindowManager: Exception thrown during dispatchAppVisibility Window{b00bef4 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 09:50:47.333   645  1180 W WindowManager: android.os.DeadObjectException
+10-09 09:50:47.333   645  1180 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 09:50:47.333   645  1180 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 09:50:51.114   645  2119 W ActivityTaskManager: callingPackage for (uid=2000, pid=22667) has no WPC
+10-09 09:50:51.632   645  2119 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 09:50:57.815   645   713 W WindowManager: Failed looking up window session=Session{4906390 22680:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 09:50:58.672   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +7s365ms
+10-09 09:51:22.537   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +31s423ms
+10-09 09:56:07.030   645  1528 W ActivityTaskManager: Force removing ActivityRecord{207548286 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t51 f}}: app died, no saved state
+10-09 09:56:07.144   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 09:56:07.281   645  1110 I WindowManager: WIN DEATH: Window{198c8e u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 09:56:07.587   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 09:56:08.521   645   661 W WindowManager: Exception thrown during dispatchAppVisibility Window{198c8e u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 09:56:08.521   645   661 W WindowManager: android.os.DeadObjectException
+10-09 09:56:08.521   645   661 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 09:56:08.521   645   661 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 09:56:08.521   645   661 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 09:56:08.521   645   661 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 09:56:08.521   645   661 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 09:56:08.521   645   661 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 09:56:08.521   645   661 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 09:56:08.969   645  1528 W ActivityTaskManager: callingPackage for (uid=2000, pid=22928) has no WPC
+10-09 09:56:08.992   645  1528 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 09:56:09.805   645  2119 W WindowManager: Failed looking up window session=Session{6341d6 22932:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 09:56:10.081   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s83ms
+10-09 09:56:14.992   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +6s18ms
+10-09 10:11:27.408   645  1534 W ActivityTaskManager: Force removing ActivityRecord{88478900 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t52 f}}: app died, no saved state
+10-09 10:11:27.678   645  1039 I WindowManager: WIN DEATH: Window{798d344 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 10:11:27.705   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:11:28.241   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:11:29.208   645  1110 W WindowManager: Exception thrown during dispatchAppVisibility Window{798d344 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 10:11:29.208   645  1110 W WindowManager: android.os.DeadObjectException
+10-09 10:11:29.208   645  1110 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 10:11:29.208   645  1110 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 10:11:29.297   645   749 E WindowManager: Display reconfigured outside of a transition: Display{#0 state=ON size=1080x1920 ROTATION_0}
+10-09 10:11:29.641   645  1528 W ActivityTaskManager: callingPackage for (uid=2000, pid=23376) has no WPC
+10-09 10:11:29.781   645  1528 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 10:11:30.181   645   749 E WindowManager: Display reconfigured outside of a transition: Display{#0 state=ON size=1080x1920 ROTATION_0}
+10-09 10:11:31.336   645   713 W WindowManager: Failed looking up window session=Session{3041c49 23394:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 10:11:31.612   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s958ms
+10-09 10:11:37.968   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +8s326ms
+10-09 10:18:16.509   645  1039 W ActivityTaskManager: Force removing ActivityRecord{21003979 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t53 f}}: app died, no saved state
+10-09 10:18:16.615   645   746 I WindowManager: WINDOW DIED Window{1c19a6f u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 10:18:16.624   645  1545 I WindowManager: WIN DEATH: Window{1c19a6f u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 10:18:16.917   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:18:17.669   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:18:18.503   645   713 W WindowManager: Exception thrown during dispatchAppVisibility Window{1c19a6f u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 10:18:18.503   645   713 W WindowManager: android.os.DeadObjectException
+10-09 10:18:18.503   645   713 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 10:18:18.503   645   713 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 10:18:18.503   645   713 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 10:18:18.503   645   713 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 10:18:18.503   645   713 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 10:18:18.503   645   713 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 10:18:18.503   645   713 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 10:18:20.197   645   671 I ActivityTaskManager: Config changes=40000000 {1.5 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.214 fontWeightAdjustment=0}
+10-09 10:18:20.213   645   671 I WindowManager: Override config changes=40000000 {1.5 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.214 fontWeightAdjustment=0} for displayId=0
+10-09 10:18:20.668   645  1695 W ActivityTaskManager: callingPackage for (uid=2000, pid=23681) has no WPC
+10-09 10:18:20.808   645  1695 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 10:18:21.241   645   671 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{103579883 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}
+10-09 10:18:21.300   645   671 W ActivityTaskManager: Activity pause timeout for ActivityRecord{103579883 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}
+10-09 10:18:22.992   645   713 W WindowManager: Failed looking up window session=Session{bb0372e 23689:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 10:18:23.456   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +2s741ms
+10-09 10:18:31.360   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +10s692ms
+10-09 10:20:03.602   645  1110 I ActivityTaskManager: START u0 {flg=0x18000020 xflg=0x4 cmp=com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (BAL_ALLOW_TOKEN) result code=0
+10-09 10:20:04.043   645  1110 I ActivityTaskManager: START u0 {act=android.content.pm.action.REQUEST_PERMISSIONS xflg=0x4 pkg=com.google.android.permissioncontroller cmp=com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity (has extras)} with LAUNCH_MULTIPLE from uid 10161 (rr=1151337) (BAL_ALLOW_VISIBLE_WINDOW) result code=0
+10-09 10:20:04.189   645  1110 I ActivityTaskManager: Process com.google.android.permissioncontroller restarted
+10-09 10:20:04.535   645   671 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{1151337 u0 com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity t55}
+10-09 10:20:04.535   645   671 W ActivityTaskManager: Activity pause timeout for ActivityRecord{1151337 u0 com.google.android.marvin.talkback/com.google.android.accessibility.talkback.permission.PermissionRequestActivity t55}
+10-09 10:20:05.356   645   918 I WindowManager: WIN DEATH: Window{e9028c7 u0 InputMethod}
+10-09 10:20:05.371   645  2112 W WindowManager: Cannot find window which accessibility connection is added to
+10-09 10:20:06.517   645   668 I ActivityTaskManager: Displayed com.google.android.permissioncontroller/com.android.permissioncontroller.permission.ui.GrantPermissionsActivity for user 0: +2s934ms
+10-09 10:20:08.051   645  1039 W WindowManager: Failed looking up window session=Session{c4d0e1e 24023:u0a10204} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.setOnBackInvokedCallbackInfo:1002 android.view.IWindowSession$Stub.onTransact:1156 
+10-09 10:20:08.051   645  1039 I WindowManager: setOnBackInvokedCallback(): No window state for package:com.google.android.permissioncontroller
+10-09 10:30:10.221   645  2119 W ActivityTaskManager: Force removing ActivityRecord{30511458 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t54 f}}: app died, no saved state
+10-09 10:30:10.377   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:30:10.537   645   918 I WindowManager: WIN DEATH: Window{770645c u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 10:30:11.144   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:30:12.069   645   661 W WindowManager: Exception thrown during dispatchAppVisibility Window{770645c u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 10:30:12.069   645   661 W WindowManager: android.os.DeadObjectException
+10-09 10:30:12.069   645   661 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 10:30:12.069   645   661 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 10:30:12.069   645   661 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 10:30:12.069   645   661 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 10:30:12.069   645   661 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 10:30:12.069   645   661 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 10:30:12.069   645   661 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 10:30:12.673   645  1527 W ActivityTaskManager: callingPackage for (uid=2000, pid=26385) has no WPC
+10-09 10:30:12.704   645  1527 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 10:30:14.157   645   714 W WindowManager: Failed looking up window session=Session{9b1c574 26388:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 10:30:14.491   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s784ms
+10-09 10:30:14.709   645  1527 W ActivityTaskManager: Request to remove task ignored for non-existent task 55
+10-09 10:30:23.060   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +10s387ms
+10-09 10:30:30.499   645  1492 I WindowManager: WIN DEATH: Window{b872595 u0 InputMethod}
+10-09 10:30:30.597   645  1548 W WindowManager: Cannot find window which accessibility connection is added to
+10-09 10:32:15.137   645  2440 W ActivityTaskManager: Force removing ActivityRecord{189014861 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t56 f}}: app died, no saved state
+10-09 10:32:15.384   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:32:15.416   645  1545 I WindowManager: WIN DEATH: Window{9f5db12 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 10:32:16.058   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:32:16.769   645  1538 W WindowManager: Exception thrown during dispatchAppVisibility Window{9f5db12 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 10:32:16.769   645  1538 W WindowManager: android.os.DeadObjectException
+10-09 10:32:16.769   645  1538 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 10:32:16.769   645  1538 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)
+10-09 10:32:17.697   645   855 W ActivityTaskManager: callingPackage for (uid=2000, pid=26975) has no WPC
+10-09 10:32:17.733   645   855 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 10:32:19.285   645  2440 W WindowManager: Failed looking up window session=Session{b4fb890 26979:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 10:32:19.744   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +1s854ms
+10-09 10:32:27.592   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +9s892ms
+10-09 10:34:31.663   645   671 I ActivityTaskManager: Config changes=40000000 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.241 fontWeightAdjustment=0}
+10-09 10:34:31.697   645   671 I WindowManager: Override config changes=40000000 {1.0 310mcc260mnc [en_US] ldltr sw360dp w360dp h640dp 480dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 1920) mAppBounds=Rect(0, 0 - 1080, 1920) mMaxBounds=Rect(0, 0 - 1080, 1920) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.241 fontWeightAdjustment=0} for displayId=0
+10-09 10:34:32.916   645  2405 W ActivityTaskManager: Force removing ActivityRecord{97578983 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t57 f}}: app died, no saved state
+10-09 10:34:32.978   645   746 I WindowManager: WINDOW DIED Window{7b5698e u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 10:34:34.626   645  1549 I WindowManager: finishDrawing of relaunch: Window{b50e675 u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} 1649ms
+10-09 10:44:14.886   645  1110 W ActivityTaskManager: callingPackage for (uid=2000, pid=27413) has no WPC
+10-09 10:44:15.150   645  1110 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-09 10:44:21.654   645  1039 W WindowManager: Failed looking up window session=Session{2af0bf1 27417:u0a10215} callers=com.android.server.wm.WindowManagerService.windowForClientLocked:6410 com.android.server.wm.Session.updateRequestedVisibleTypes:700 android.view.IWindowSession$Stub.onTransact:1023 
+10-09 10:44:23.024   645   668 I ActivityTaskManager: Displayed com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity for user 0: +7s829ms
+10-09 10:45:01.687   645   668 I ActivityTaskManager: Fully drawn com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity: +46s654ms
+10-09 10:46:53.872   645   669 W ActivityTaskManager: callingPackage for (uid=-1, pid=0) has no WPC
+10-09 10:46:54.332   645   669 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=2
+10-09 10:46:56.432   645  2405 W ActivityTaskManager: callingPackage for (uid=2000, pid=27524) has no WPC
+10-09 10:46:56.694   645  2405 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=2
+10-09 10:48:20.314   645  1536 W ActivityTaskManager: Force removing ActivityRecord{68166152 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t58 f}}: app died, no saved state
+10-09 10:48:20.541   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:48:20.684   645   855 I WindowManager: WIN DEATH: Window{b58f657 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}
+10-09 10:48:21.116   645   672 W ActivityTaskManager: Unable to send transaction to client proc com.giarrel.worddeduction: no app thread
+10-09 10:48:21.828   645  2431 W WindowManager: Exception thrown during dispatchAppVisibility Window{b58f657 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity EXITING}
+10-09 10:48:21.828   645  2431 W WindowManager: android.os.DeadObjectException
+10-09 10:48:21.828   645  2431 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:592)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:557)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3151)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1311)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:389)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:6650)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5561)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1391)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:1029)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:496)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:261)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:223)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1421)
+10-09 10:48:21.828   645  2431 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1365)

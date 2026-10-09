@@ -1,0 +1,1 @@
+NAMED_APP_ACTION click success=true

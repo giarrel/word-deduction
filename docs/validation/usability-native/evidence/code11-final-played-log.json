@@ -1,0 +1,16 @@
+{
+  "pid": "29493",
+  "lines": 89,
+  "bytes": 12520,
+  "tested_values": [
+    "Nora",
+    "Luca",
+    "Emil",
+    "Mila",
+    "Jonas2",
+    "Kreide",
+    "Schwamm"
+  ],
+  "matches": [],
+  "diagnostic_matches": []
+}

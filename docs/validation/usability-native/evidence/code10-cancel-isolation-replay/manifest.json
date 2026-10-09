@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T07:56:09.528627+00:00",
+  "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-native\\code8-original-state",
+  "label": "code10-cancel-isolation",
+  "versionCode": 10,
+  "fixtureVersions": {
+    "session.json": 5,
+    "session.previous.json": 5
+  },
+  "before": {
+    "session.json": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+    "session.previous.json": "edd54d8d0c3646c5bb6890adc9da95beabd7480db459fbac629785812c9b58b2"
+  },
+  "expected": {
+    "session.json": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+    "session.previous.json": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467"
+  },
+  "metadata": {
+    "session.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    },
+    "session.previous.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    }
+  },
+  "pass": true,
+  "provenance": "Explicit fixture replay, not Android-played match"
+}

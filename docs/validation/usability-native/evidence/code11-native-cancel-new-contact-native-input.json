@@ -1,0 +1,20 @@
+{
+  "label": "code11-native-cancel-new-contact",
+  "versionCode": 11,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 7 150 590",
+    "at 350",
+    "move 7 150 820",
+    "at 800",
+    "cancel",
+    "down 9 500 400",
+    "at 1100",
+    "up 9",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=61781135\nTIMING action=0 event=61781238 started=61781238 finished=61781239 injected=true\nOK down 7 150 590 injected=true\nTIMING action=2 event=61781508 started=61781508 finished=61781517 injected=true\nOK move 7 150 820 injected=true\nTIMING action=3 event=61781938 started=61781938 finished=61781939 injected=true\nOK cancel injected=true\nTIMING action=0 event=61781951 started=61781951 finished=61781967 injected=true\nOK down 9 500 400 injected=true\nTIMING action=1 event=61782238 started=61782238 finished=61782242 injected=true\nOK up 9 injected=true\n",
+  "stderr": ""
+}

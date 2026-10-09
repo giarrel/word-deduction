@@ -1,0 +1,23 @@
+{
+  "label": "code10-reorder-drop",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 150 590",
+    "at 180",
+    "move 0 150 640",
+    "at 260",
+    "move 0 150 690",
+    "at 340",
+    "move 0 150 750",
+    "at 420",
+    "move 0 150 825",
+    "at 520",
+    "up 0",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=56000767\nTIMING action=0 event=56000875 started=56000877 finished=56000882 injected=true\nOK down 0 150 590 injected=true\nTIMING action=2 event=56000950 started=56000950 finished=56000950 injected=true\nOK move 0 150 640 injected=true\nTIMING action=2 event=56001030 started=56001030 finished=56001030 injected=true\nOK move 0 150 690 injected=true\nTIMING action=2 event=56001114 started=56001114 finished=56001116 injected=true\nOK move 0 150 750 injected=true\nTIMING action=2 event=56001194 started=56001194 finished=56001202 injected=true\nOK move 0 150 825 injected=true\nTIMING action=1 event=56001298 started=56001298 finished=56001301 injected=true\nOK up 0 injected=true\n",
+  "stderr": ""
+}

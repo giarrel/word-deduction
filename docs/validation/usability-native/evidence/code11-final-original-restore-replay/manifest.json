@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T09:35:42.886041+00:00",
+  "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-native\\code8-original-state",
+  "label": "code11-final-original-restore",
+  "versionCode": 11,
+  "fixtureVersions": {
+    "session.json": 5,
+    "session.previous.json": 5
+  },
+  "before": {
+    "session.json": "f84db2424823f9f2f649b52c639f63a9aa3a3e21f078e04f1ed51a51676195c2",
+    "session.previous.json": "6dd45fb4d0ee0fc5b1e4e38c5d12b2a6e82269ff3b887c743476a967ec0787da"
+  },
+  "expected": {
+    "session.json": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+    "session.previous.json": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467"
+  },
+  "metadata": {
+    "session.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    },
+    "session.previous.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    }
+  },
+  "pass": true,
+  "provenance": "Explicit fixture replay, not Android-played match"
+}

@@ -1,0 +1,32 @@
+{
+  "results": [
+    {
+      "case": "cancel",
+      "pass": true,
+      "check": "Both generations byte-identical."
+    },
+    {
+      "case": "cancel-repeat",
+      "pass": true,
+      "check": "Both generations byte-identical."
+    },
+    {
+      "case": "cancel-new-contact",
+      "pass": true,
+      "check": "Both generations byte-identical."
+    },
+    {
+      "case": "outside",
+      "pass": true,
+      "check": "Both generations byte-identical."
+    },
+    {
+      "case": "edge-held-valid-drop",
+      "pass": true,
+      "check": "Initial first participant moves to index 3, others and history unchanged; previous generation exactly equals initial primary."
+    }
+  ],
+  "pass": true,
+  "originalHarness": "FinalReorderNative.py retained unchanged; fixed destination assertion failed.",
+  "interpretation": "Root inspected code11-valid-drop-observed.png: list scrolled during 553ms native edge hold. GroupReorder.AutoScroll confirms edge preview follows scroll. This is an audited actual destination, not a claimed fixed-index swap."
+}

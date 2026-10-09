@@ -1,0 +1,28 @@
+{
+  "removedAtUtc": "2026-10-09T09:52:57.2357003Z",
+  "removedWorktree": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections",
+  "retainedBranch": "implement/usability-final-corrections",
+  "head": "d4b1d2cbaf01e11cfb627ec2b2b2e6a8610850bb",
+  "reparsePoints": 0,
+  "matchingUnityEditors": 0,
+  "trackedAndUntrackedChanges": 0,
+  "forceOnlyForInventoriedIgnoredData": true,
+  "preservation": [
+    {
+      "name": "worktree",
+      "fileCount": 808,
+      "bytes": 2703119562,
+      "allSizesAndHashesMatch": true,
+      "archive": "artifacts/usability-final-preservation/25d3e9f9d806-20261009T093925Z/worktree"
+    },
+    {
+      "name": "native",
+      "fileCount": 1127,
+      "bytes": 117521959,
+      "allSizesAndHashesMatch": true,
+      "archive": "artifacts/usability-final-preservation/25d3e9f9d806-20261009T093925Z/native"
+    }
+  ],
+  "nativeSourceRemoved": false,
+  "otherEditorsTouched": false
+}

@@ -1,0 +1,17 @@
+{
+  "label": "code11-native-valid-drop",
+  "versionCode": 11,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 7 150 590",
+    "at 350",
+    "move 7 150 820",
+    "at 900",
+    "up 7",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=61789798\nTIMING action=0 event=61789900 started=61789900 finished=61789910 injected=true\nOK down 7 150 590 injected=true\nTIMING action=2 event=61790154 started=61790154 finished=61790156 injected=true\nOK move 7 150 820 injected=true\nTIMING action=1 event=61790707 started=61790707 finished=61790712 injected=true\nOK up 7 injected=true\n",
+  "stderr": ""
+}

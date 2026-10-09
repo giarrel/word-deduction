@@ -1,0 +1,529 @@
+{
+  "scope": "Offline file consistency audit only; no ADB, Editor, runtime tests or tracker actions",
+  "candidateSource": "25d3e9f9d80609c178230cf838cecfda54ae0370",
+  "versionCode": 11,
+  "saveGenerationsAudited": 20,
+  "stateManifestsAudited": 10,
+  "states": {
+    "code11-reorder-start": {
+      "session.json": {
+        "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      },
+      "session.previous.json": {
+        "sha256": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": "b8a9b91c8fa14f2db7605b8ba32c809c",
+        "handoff": 0
+      }
+    },
+    "code11-native-cancel": {
+      "session.json": {
+        "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      },
+      "session.previous.json": {
+        "sha256": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": "b8a9b91c8fa14f2db7605b8ba32c809c",
+        "handoff": 0
+      }
+    },
+    "code11-native-cancel-repeat": {
+      "session.json": {
+        "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      },
+      "session.previous.json": {
+        "sha256": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": "b8a9b91c8fa14f2db7605b8ba32c809c",
+        "handoff": 0
+      }
+    },
+    "code11-native-cancel-new-contact": {
+      "session.json": {
+        "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      },
+      "session.previous.json": {
+        "sha256": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": "b8a9b91c8fa14f2db7605b8ba32c809c",
+        "handoff": 0
+      }
+    },
+    "code11-native-outside": {
+      "session.json": {
+        "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      },
+      "session.previous.json": {
+        "sha256": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": "b8a9b91c8fa14f2db7605b8ba32c809c",
+        "handoff": 0
+      }
+    },
+    "code11-native-valid-drop": {
+      "session.json": {
+        "sha256": "cdaf0acdcea738c68405275152f2aa1ffcf4c672057387b57714c16efd63c567",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Luca",
+          "Emil",
+          "Nora",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      },
+      "session.previous.json": {
+        "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      }
+    },
+    "code11-played-match": {
+      "session.json": {
+        "sha256": "6dd45fb4d0ee0fc5b1e4e38c5d12b2a6e82269ff3b887c743476a967ec0787da",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Luca",
+          "Emil",
+          "Nora",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 13,
+        "matchId": "a7b639fb17d2451298f0b69f3f52e801",
+        "handoff": 0
+      },
+      "session.previous.json": {
+        "sha256": "cdaf0acdcea738c68405275152f2aa1ffcf4c672057387b57714c16efd63c567",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Luca",
+          "Emil",
+          "Nora",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      }
+    },
+    "code11-before-restart": {
+      "session.json": {
+        "sha256": "f84db2424823f9f2f649b52c639f63a9aa3a3e21f078e04f1ed51a51676195c2",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Luca",
+          "Emil",
+          "Nora",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 13,
+        "matchId": "a7b639fb17d2451298f0b69f3f52e801",
+        "handoff": 1
+      },
+      "session.previous.json": {
+        "sha256": "6dd45fb4d0ee0fc5b1e4e38c5d12b2a6e82269ff3b887c743476a967ec0787da",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Luca",
+          "Emil",
+          "Nora",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 13,
+        "matchId": "a7b639fb17d2451298f0b69f3f52e801",
+        "handoff": 0
+      }
+    },
+    "code11-after-restart": {
+      "session.json": {
+        "sha256": "f84db2424823f9f2f649b52c639f63a9aa3a3e21f078e04f1ed51a51676195c2",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Luca",
+          "Emil",
+          "Nora",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 13,
+        "matchId": "a7b639fb17d2451298f0b69f3f52e801",
+        "handoff": 1
+      },
+      "session.previous.json": {
+        "sha256": "6dd45fb4d0ee0fc5b1e4e38c5d12b2a6e82269ff3b887c743476a967ec0787da",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Luca",
+          "Emil",
+          "Nora",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 13,
+        "matchId": "a7b639fb17d2451298f0b69f3f52e801",
+        "handoff": 0
+      }
+    },
+    "code11-final-original": {
+      "session.json": {
+        "sha256": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": null,
+        "handoff": null
+      },
+      "session.previous.json": {
+        "sha256": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467",
+        "checksumValid": true,
+        "version": 5,
+        "rosterCount": 5,
+        "activeCount": 5,
+        "names": [
+          "Nora",
+          "Luca",
+          "Emil",
+          "Mila",
+          "Jonas2"
+        ],
+        "usedPairCount": 12,
+        "matchId": "b8a9b91c8fa14f2db7605b8ba32c809c",
+        "handoff": 0
+      }
+    }
+  },
+  "checks": [
+    {
+      "case": "code11-native-cancel",
+      "pass": true,
+      "check": "Both generations byte-equal to initial code11 state"
+    },
+    {
+      "case": "code11-native-cancel-repeat",
+      "pass": true,
+      "check": "Both generations byte-equal to initial code11 state"
+    },
+    {
+      "case": "code11-native-cancel-new-contact",
+      "pass": true,
+      "check": "Both generations byte-equal to initial code11 state"
+    },
+    {
+      "case": "code11-native-outside",
+      "pass": true,
+      "check": "Both generations byte-equal to initial code11 state"
+    },
+    {
+      "case": "valid-drop",
+      "pass": true,
+      "oldZeroBasedIndex": 0,
+      "newZeroBasedIndex": 2,
+      "humanPosition": 3,
+      "check": "Exact records and all non-Players fields unchanged; previous equals original primary"
+    },
+    {
+      "case": "new-match-and-next",
+      "pass": true,
+      "matchId": "a7b639fb17d2451298f0b69f3f52e801",
+      "pairId": "school-office-015",
+      "handoff": "0->1",
+      "participants": [
+        "Luca",
+        "Emil",
+        "Nora",
+        "Mila",
+        "Jonas2"
+      ],
+      "onlyNextChange": "/Match/Handoff",
+      "usedPairs": "12->13"
+    },
+    {
+      "case": "played-match-restart",
+      "pass": true,
+      "check": "Both generations byte-equal before/after process restart"
+    },
+    {
+      "case": "explicit-original-restore",
+      "pass": true,
+      "check": "Both generations exactly equal original; not new gameplay or update evidence"
+    }
+  ],
+  "inputs": {
+    "code11-native-cancel": {
+      "sha256": "1dca7eb726aa594fa4ab9c1c24822a3028ebe8afe17420b32e3822a9159606da",
+      "versionCode": 11,
+      "exitCode": 0
+    },
+    "code11-native-cancel-repeat": {
+      "sha256": "5eaffdc60b2fd43c52d7700a6c36a1da949e7790d9d0800e2c4368ceadd9567d",
+      "versionCode": 11,
+      "exitCode": 0
+    },
+    "code11-native-cancel-new-contact": {
+      "sha256": "1c0987bfa9ce33d99e72e85b46d6359951c87b4f7479b1e51368d21537cd7c36",
+      "versionCode": 11,
+      "exitCode": 0
+    },
+    "code11-native-outside": {
+      "sha256": "b785b242a6f489981da6f925e5c937a4caa9bb03e792aaa22bae0da193f753d5",
+      "versionCode": 11,
+      "exitCode": 0
+    },
+    "code11-native-valid-drop": {
+      "sha256": "718a8bd866ed14866360ba0f17efd0312e7683a82d66a45b5f7b940b62dcb51a",
+      "versionCode": 11,
+      "exitCode": 0
+    }
+  },
+  "originalHarness": {
+    "status": "failed",
+    "reason": "Expected only first/second swap; actual edge-held drop moves first person to third position",
+    "reviewedSeparately": true,
+    "missingSuccessReport": true
+  },
+  "log": {
+    "pid": "29493",
+    "lines": 89,
+    "metadataBytes": 12520,
+    "actualFileBytes": 12609,
+    "testedValues": [
+      "Nora",
+      "Luca",
+      "Emil",
+      "Mila",
+      "Jonas2",
+      "Kreide",
+      "Schwamm"
+    ],
+    "offlinePrivateHits": [],
+    "recordedDiagnosticMatches": []
+  },
+  "artifacts": {
+    "apk": {
+      "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T091851857Z-apk\\WordDeduction-local-release.apk",
+      "bytes": 37472202,
+      "sha256": "9c08b19ab2270b236cd2eec9a8d9bd2f67b7a9db93fc0ff3d5d5f2a5d5e8c9ad",
+      "hashIndependentlyVerified": true,
+      "inspectionCommands": 14,
+      "inspectionResult": "passed; inspect report for scalar RELRO remainders and runtime limits"
+    },
+    "aab": {
+      "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T092518641Z-aab\\WordDeduction-local-release.aab",
+      "bytes": 37829159,
+      "sha256": "9148cb972b7c6b256ad0838f084ec3bfe2693e3cfbd70bcd5885e4b6623d930e",
+      "hashIndependentlyVerified": true,
+      "inspectionCommands": 44,
+      "inspectionResult": "passed; inspect report for scalar RELRO remainders and runtime limits"
+    }
+  },
+  "renderedSuite": {
+    "total": 61,
+    "passed": 61,
+    "failed": 0,
+    "skipped": 0,
+    "inconclusive": 0
+  },
+  "sourceRuntimeEquivalence": {
+    "baselineCode": 10,
+    "baselineSource": "bd7b618c957051d3ee61321a6ed3d275a5302a93",
+    "candidateCode": 11,
+    "candidateSource": "25d3e9f9d80609c178230cf838cecfda54ae0370",
+    "runtimeScope": "UI, Session, Session tests, Android plugins, packages",
+    "runtimeChanged": [
+      "game/Assets/WordDeduction/UI/GroupReorder.cs"
+    ],
+    "verifiedUtc": "2026-10-09T09:19:29.7449464Z"
+  },
+  "evidenceSHA256": {
+    "code11-native-reorder-reviewed-result.json": "8f76e23c809dcd320ee3d801e5b9e8ddf8ff7385a8ad46fb61e7696e6f981113",
+    "FinalReorderNative.py": "b557f7f4d6e2af1c68b0d5b48b02da42b3ae660a7aff51d1499fc0ebebc7f554",
+    "code10-to11-update-verified.json": "f9dd6ea6661f7077a141c3417a47d09aed01b36d9531a4443c1d13f3d5ab4e81",
+    "code11-final-original-restore-replay/manifest.json": "e114520366d649c69403f696f6aa7a344ae709321e29d802ff712a796fee724e",
+    "code11-final-played-log.json": "c4b0291f8a0eaea4bddeefb277b1d47bcd54ed9d4a0c821df394bfafafd218bf",
+    "code11-final-played-log.txt": "96ddf545d871ada2ff6876aac5fce02dd7a62b5772d5d4c5f27f9ecaa0aec586",
+    "acceptance-matrix-pre-final.md": "86d0bd6d69264f06a08dc263ceec400b9d2188e98d5e4e661cae1f5e4f70dad0",
+    "motion-comparison-report.md": "f3acdee331988165725705fd80cb756635048b2b15edaffcc091f323a17e5d66",
+    "spec-code11-terminal-verification.md": "7e818cc08b348b98e3d511b4301c9bbf98d1b1f310cff6ac661c246ace9d11c9",
+    "standards-code11-terminal-verification.md": "5b1fca8b9abec1b0574ecc62b9842a329ca215c2aa6b6124d5da0a8c7217985a"
+  },
+  "remainingEmpiricalLimits": [
+    "18.1 scrolling smoothness only partly measured",
+    "18.2 consistent near-16.7ms frame pacing not established",
+    "18.6 first-reveal hitch freedom not established",
+    "No physical-phone, audible TalkBack or subframe concealment-latency claim"
+  ]
+}

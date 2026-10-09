@@ -1,0 +1,19 @@
+{
+  "label": "code10-outside-drop-verified-start",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 150 590",
+    "at 250",
+    "move 0 150 820",
+    "at 380",
+    "move 0 1045 820",
+    "at 520",
+    "up 0",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=56440539\nTIMING action=0 event=56440639 started=56440639 finished=56440640 injected=true\nOK down 0 150 590 injected=true\nTIMING action=2 event=56440793 started=56440793 finished=56440799 injected=true\nOK move 0 150 820 injected=true\nTIMING action=2 event=56440926 started=56440926 finished=56440930 injected=true\nOK move 0 1045 820 injected=true\nTIMING action=1 event=56441070 started=56441073 finished=56441078 injected=true\nOK up 0 injected=true\n",
+  "stderr": ""
+}

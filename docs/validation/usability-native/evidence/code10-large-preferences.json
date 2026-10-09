@@ -1,0 +1,14 @@
+{
+  "action": "font-large",
+  "original": {
+    "font": "1.0",
+    "motion": "null"
+  },
+  "requested": {
+    "font": "1.5"
+  },
+  "actual": {
+    "font": "1.5",
+    "motion": "null"
+  }
+}

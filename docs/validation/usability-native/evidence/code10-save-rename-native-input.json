@@ -1,0 +1,15 @@
+{
+  "label": "code10-save-rename",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 820 780",
+    "at 180",
+    "up 0",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=56573891\nTIMING action=0 event=56573995 started=56573995 finished=56573997 injected=true\nOK down 0 820 780 injected=true\nTIMING action=1 event=56574074 started=56574074 finished=56574077 injected=true\nOK up 0 injected=true\n",
+  "stderr": ""
+}

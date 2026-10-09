@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T08:18:19.857421+00:00",
+  "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-native\\capacity-legacy-fixture",
+  "label": "code10-capacity-legacy",
+  "versionCode": 10,
+  "fixtureVersions": {
+    "session.json": 4,
+    "session.previous.json": 4
+  },
+  "before": {
+    "session.json": "58954ce672c08b0d8b0bc6a85f883b129af41622bd78358c9404a83ffa1b538b",
+    "session.previous.json": "af2603cb0a6ad9d1c921f054477e7042e37705cccf52f60350b86f03c48c9217"
+  },
+  "expected": {
+    "session.json": "d182748b6ec9d4efa1d56b6de64a781cad3e6e0321d8652a38e73a051499d400",
+    "session.previous.json": "d182748b6ec9d4efa1d56b6de64a781cad3e6e0321d8652a38e73a051499d400"
+  },
+  "metadata": {
+    "session.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    },
+    "session.previous.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    }
+  },
+  "pass": true,
+  "provenance": "Explicit fixture replay, not Android-played match"
+}

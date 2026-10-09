@@ -1,0 +1,60 @@
+{
+  "label": "code10-outside-drop-verified-start",
+  "files": {
+    "session.json": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+    "session.previous.json": "edd54d8d0c3646c5bb6890adc9da95beabd7480db459fbac629785812c9b58b2"
+  },
+  "match": null,
+  "players": [
+    {
+      "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+      "Name": "Nora",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+      "Name": "Luca",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "77ab50d35ba744a2bb7a3d9916277069",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "8a9fb50d16894284ab051d0924ea92b3",
+      "Name": "Mila",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "ac5d584c805b49889e54e0db0a07e654",
+      "Name": "Jonas2",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "tools-materials-023",
+    "kitchen-011",
+    "clothing-021",
+    "technology-014",
+    "mammals-023",
+    "places-004",
+    "garden-nature-025",
+    "meals-023",
+    "school-office-007",
+    "tools-materials-018",
+    "fruit-vegetables-025",
+    "home-003"
+  ],
+  "byte_equal_to": "code10-single-outside-drop"
+}

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T08:30:12.951292+00:00",
+  "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-native\\session-fixtures\\English-GoodKing",
+  "label": "code10-large-english-goodking",
+  "versionCode": 10,
+  "fixtureVersions": {
+    "session.json": 5,
+    "session.previous.json": 5
+  },
+  "before": {
+    "session.json": "852584f3fdf97169fe2ed455d4fab88b8e22cdeca399ec746d29c766f59fa2a7",
+    "session.previous.json": "81411e845bb9bf701149cae809a5a35128888df0a4919606e775a15449427da6"
+  },
+  "expected": {
+    "session.json": "430ed95a32659c09b4a6ae091c5a2f81a11ac4df994c02b7e118ad703fd4974d",
+    "session.previous.json": "568c4ee3631f378225f9838419373a7458bfcf30f34095e1c0034bed75034d22"
+  },
+  "metadata": {
+    "session.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    },
+    "session.previous.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    }
+  },
+  "pass": true,
+  "provenance": "Explicit fixture replay, not Android-played match"
+}

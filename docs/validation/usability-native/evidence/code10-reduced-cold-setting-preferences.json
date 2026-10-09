@@ -1,0 +1,14 @@
+{
+  "action": "motion-off",
+  "original": {
+    "font": "1.0",
+    "motion": "null"
+  },
+  "requested": {
+    "motion": "0"
+  },
+  "actual": {
+    "font": "1.0",
+    "motion": "0"
+  }
+}

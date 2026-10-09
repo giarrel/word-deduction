@@ -1,0 +1,2257 @@
+{
+  "label": "code10-recorded-pull",
+  "kind": "pull",
+  "versionCode": 10,
+  "geometry": {
+    "x": 500,
+    "startY": 1160,
+    "endY": 880
+  },
+  "cycles": 4,
+  "stepsPerCycle": 60,
+  "dragDurationMs": 1000,
+  "schedule": "device uptime, whole batch sent without per-move host roundtrip",
+  "commands": [
+    "begin",
+    "at 1000",
+    "down 0 500 1160",
+    "at 1017",
+    "move 0 500 1155.333",
+    "at 1033",
+    "move 0 500 1150.667",
+    "at 1050",
+    "move 0 500 1146.000",
+    "at 1067",
+    "move 0 500 1141.333",
+    "at 1083",
+    "move 0 500 1136.667",
+    "at 1100",
+    "move 0 500 1132.000",
+    "at 1117",
+    "move 0 500 1127.333",
+    "at 1133",
+    "move 0 500 1122.667",
+    "at 1150",
+    "move 0 500 1118.000",
+    "at 1167",
+    "move 0 500 1113.333",
+    "at 1183",
+    "move 0 500 1108.667",
+    "at 1200",
+    "move 0 500 1104.000",
+    "at 1217",
+    "move 0 500 1099.333",
+    "at 1233",
+    "move 0 500 1094.667",
+    "at 1250",
+    "move 0 500 1090.000",
+    "at 1267",
+    "move 0 500 1085.333",
+    "at 1283",
+    "move 0 500 1080.667",
+    "at 1300",
+    "move 0 500 1076.000",
+    "at 1317",
+    "move 0 500 1071.333",
+    "at 1333",
+    "move 0 500 1066.667",
+    "at 1350",
+    "move 0 500 1062.000",
+    "at 1367",
+    "move 0 500 1057.333",
+    "at 1383",
+    "move 0 500 1052.667",
+    "at 1400",
+    "move 0 500 1048.000",
+    "at 1417",
+    "move 0 500 1043.333",
+    "at 1433",
+    "move 0 500 1038.667",
+    "at 1450",
+    "move 0 500 1034.000",
+    "at 1467",
+    "move 0 500 1029.333",
+    "at 1483",
+    "move 0 500 1024.667",
+    "at 1500",
+    "move 0 500 1020.000",
+    "at 1517",
+    "move 0 500 1015.333",
+    "at 1533",
+    "move 0 500 1010.667",
+    "at 1550",
+    "move 0 500 1006.000",
+    "at 1567",
+    "move 0 500 1001.333",
+    "at 1583",
+    "move 0 500 996.667",
+    "at 1600",
+    "move 0 500 992.000",
+    "at 1617",
+    "move 0 500 987.333",
+    "at 1633",
+    "move 0 500 982.667",
+    "at 1650",
+    "move 0 500 978.000",
+    "at 1667",
+    "move 0 500 973.333",
+    "at 1683",
+    "move 0 500 968.667",
+    "at 1700",
+    "move 0 500 964.000",
+    "at 1717",
+    "move 0 500 959.333",
+    "at 1733",
+    "move 0 500 954.667",
+    "at 1750",
+    "move 0 500 950.000",
+    "at 1767",
+    "move 0 500 945.333",
+    "at 1783",
+    "move 0 500 940.667",
+    "at 1800",
+    "move 0 500 936.000",
+    "at 1817",
+    "move 0 500 931.333",
+    "at 1833",
+    "move 0 500 926.667",
+    "at 1850",
+    "move 0 500 922.000",
+    "at 1867",
+    "move 0 500 917.333",
+    "at 1883",
+    "move 0 500 912.667",
+    "at 1900",
+    "move 0 500 908.000",
+    "at 1917",
+    "move 0 500 903.333",
+    "at 1933",
+    "move 0 500 898.667",
+    "at 1950",
+    "move 0 500 894.000",
+    "at 1967",
+    "move 0 500 889.333",
+    "at 1983",
+    "move 0 500 884.667",
+    "at 2000",
+    "move 0 500 880.000",
+    "at 2150",
+    "up 0",
+    "at 2500",
+    "down 0 500 1160",
+    "at 2517",
+    "move 0 500 1155.333",
+    "at 2533",
+    "move 0 500 1150.667",
+    "at 2550",
+    "move 0 500 1146.000",
+    "at 2567",
+    "move 0 500 1141.333",
+    "at 2583",
+    "move 0 500 1136.667",
+    "at 2600",
+    "move 0 500 1132.000",
+    "at 2617",
+    "move 0 500 1127.333",
+    "at 2633",
+    "move 0 500 1122.667",
+    "at 2650",
+    "move 0 500 1118.000",
+    "at 2667",
+    "move 0 500 1113.333",
+    "at 2683",
+    "move 0 500 1108.667",
+    "at 2700",
+    "move 0 500 1104.000",
+    "at 2717",
+    "move 0 500 1099.333",
+    "at 2733",
+    "move 0 500 1094.667",
+    "at 2750",
+    "move 0 500 1090.000",
+    "at 2767",
+    "move 0 500 1085.333",
+    "at 2783",
+    "move 0 500 1080.667",
+    "at 2800",
+    "move 0 500 1076.000",
+    "at 2817",
+    "move 0 500 1071.333",
+    "at 2833",
+    "move 0 500 1066.667",
+    "at 2850",
+    "move 0 500 1062.000",
+    "at 2867",
+    "move 0 500 1057.333",
+    "at 2883",
+    "move 0 500 1052.667",
+    "at 2900",
+    "move 0 500 1048.000",
+    "at 2917",
+    "move 0 500 1043.333",
+    "at 2933",
+    "move 0 500 1038.667",
+    "at 2950",
+    "move 0 500 1034.000",
+    "at 2967",
+    "move 0 500 1029.333",
+    "at 2983",
+    "move 0 500 1024.667",
+    "at 3000",
+    "move 0 500 1020.000",
+    "at 3017",
+    "move 0 500 1015.333",
+    "at 3033",
+    "move 0 500 1010.667",
+    "at 3050",
+    "move 0 500 1006.000",
+    "at 3067",
+    "move 0 500 1001.333",
+    "at 3083",
+    "move 0 500 996.667",
+    "at 3100",
+    "move 0 500 992.000",
+    "at 3117",
+    "move 0 500 987.333",
+    "at 3133",
+    "move 0 500 982.667",
+    "at 3150",
+    "move 0 500 978.000",
+    "at 3167",
+    "move 0 500 973.333",
+    "at 3183",
+    "move 0 500 968.667",
+    "at 3200",
+    "move 0 500 964.000",
+    "at 3217",
+    "move 0 500 959.333",
+    "at 3233",
+    "move 0 500 954.667",
+    "at 3250",
+    "move 0 500 950.000",
+    "at 3267",
+    "move 0 500 945.333",
+    "at 3283",
+    "move 0 500 940.667",
+    "at 3300",
+    "move 0 500 936.000",
+    "at 3317",
+    "move 0 500 931.333",
+    "at 3333",
+    "move 0 500 926.667",
+    "at 3350",
+    "move 0 500 922.000",
+    "at 3367",
+    "move 0 500 917.333",
+    "at 3383",
+    "move 0 500 912.667",
+    "at 3400",
+    "move 0 500 908.000",
+    "at 3417",
+    "move 0 500 903.333",
+    "at 3433",
+    "move 0 500 898.667",
+    "at 3450",
+    "move 0 500 894.000",
+    "at 3467",
+    "move 0 500 889.333",
+    "at 3483",
+    "move 0 500 884.667",
+    "at 3500",
+    "move 0 500 880.000",
+    "at 3650",
+    "up 0",
+    "at 4000",
+    "down 0 500 1160",
+    "at 4017",
+    "move 0 500 1155.333",
+    "at 4033",
+    "move 0 500 1150.667",
+    "at 4050",
+    "move 0 500 1146.000",
+    "at 4067",
+    "move 0 500 1141.333",
+    "at 4083",
+    "move 0 500 1136.667",
+    "at 4100",
+    "move 0 500 1132.000",
+    "at 4117",
+    "move 0 500 1127.333",
+    "at 4133",
+    "move 0 500 1122.667",
+    "at 4150",
+    "move 0 500 1118.000",
+    "at 4167",
+    "move 0 500 1113.333",
+    "at 4183",
+    "move 0 500 1108.667",
+    "at 4200",
+    "move 0 500 1104.000",
+    "at 4217",
+    "move 0 500 1099.333",
+    "at 4233",
+    "move 0 500 1094.667",
+    "at 4250",
+    "move 0 500 1090.000",
+    "at 4267",
+    "move 0 500 1085.333",
+    "at 4283",
+    "move 0 500 1080.667",
+    "at 4300",
+    "move 0 500 1076.000",
+    "at 4317",
+    "move 0 500 1071.333",
+    "at 4333",
+    "move 0 500 1066.667",
+    "at 4350",
+    "move 0 500 1062.000",
+    "at 4367",
+    "move 0 500 1057.333",
+    "at 4383",
+    "move 0 500 1052.667",
+    "at 4400",
+    "move 0 500 1048.000",
+    "at 4417",
+    "move 0 500 1043.333",
+    "at 4433",
+    "move 0 500 1038.667",
+    "at 4450",
+    "move 0 500 1034.000",
+    "at 4467",
+    "move 0 500 1029.333",
+    "at 4483",
+    "move 0 500 1024.667",
+    "at 4500",
+    "move 0 500 1020.000",
+    "at 4517",
+    "move 0 500 1015.333",
+    "at 4533",
+    "move 0 500 1010.667",
+    "at 4550",
+    "move 0 500 1006.000",
+    "at 4567",
+    "move 0 500 1001.333",
+    "at 4583",
+    "move 0 500 996.667",
+    "at 4600",
+    "move 0 500 992.000",
+    "at 4617",
+    "move 0 500 987.333",
+    "at 4633",
+    "move 0 500 982.667",
+    "at 4650",
+    "move 0 500 978.000",
+    "at 4667",
+    "move 0 500 973.333",
+    "at 4683",
+    "move 0 500 968.667",
+    "at 4700",
+    "move 0 500 964.000",
+    "at 4717",
+    "move 0 500 959.333",
+    "at 4733",
+    "move 0 500 954.667",
+    "at 4750",
+    "move 0 500 950.000",
+    "at 4767",
+    "move 0 500 945.333",
+    "at 4783",
+    "move 0 500 940.667",
+    "at 4800",
+    "move 0 500 936.000",
+    "at 4817",
+    "move 0 500 931.333",
+    "at 4833",
+    "move 0 500 926.667",
+    "at 4850",
+    "move 0 500 922.000",
+    "at 4867",
+    "move 0 500 917.333",
+    "at 4883",
+    "move 0 500 912.667",
+    "at 4900",
+    "move 0 500 908.000",
+    "at 4917",
+    "move 0 500 903.333",
+    "at 4933",
+    "move 0 500 898.667",
+    "at 4950",
+    "move 0 500 894.000",
+    "at 4967",
+    "move 0 500 889.333",
+    "at 4983",
+    "move 0 500 884.667",
+    "at 5000",
+    "move 0 500 880.000",
+    "at 5150",
+    "up 0",
+    "at 5500",
+    "down 0 500 1160",
+    "at 5517",
+    "move 0 500 1155.333",
+    "at 5533",
+    "move 0 500 1150.667",
+    "at 5550",
+    "move 0 500 1146.000",
+    "at 5567",
+    "move 0 500 1141.333",
+    "at 5583",
+    "move 0 500 1136.667",
+    "at 5600",
+    "move 0 500 1132.000",
+    "at 5617",
+    "move 0 500 1127.333",
+    "at 5633",
+    "move 0 500 1122.667",
+    "at 5650",
+    "move 0 500 1118.000",
+    "at 5667",
+    "move 0 500 1113.333",
+    "at 5683",
+    "move 0 500 1108.667",
+    "at 5700",
+    "move 0 500 1104.000",
+    "at 5717",
+    "move 0 500 1099.333",
+    "at 5733",
+    "move 0 500 1094.667",
+    "at 5750",
+    "move 0 500 1090.000",
+    "at 5767",
+    "move 0 500 1085.333",
+    "at 5783",
+    "move 0 500 1080.667",
+    "at 5800",
+    "move 0 500 1076.000",
+    "at 5817",
+    "move 0 500 1071.333",
+    "at 5833",
+    "move 0 500 1066.667",
+    "at 5850",
+    "move 0 500 1062.000",
+    "at 5867",
+    "move 0 500 1057.333",
+    "at 5883",
+    "move 0 500 1052.667",
+    "at 5900",
+    "move 0 500 1048.000",
+    "at 5917",
+    "move 0 500 1043.333",
+    "at 5933",
+    "move 0 500 1038.667",
+    "at 5950",
+    "move 0 500 1034.000",
+    "at 5967",
+    "move 0 500 1029.333",
+    "at 5983",
+    "move 0 500 1024.667",
+    "at 6000",
+    "move 0 500 1020.000",
+    "at 6017",
+    "move 0 500 1015.333",
+    "at 6033",
+    "move 0 500 1010.667",
+    "at 6050",
+    "move 0 500 1006.000",
+    "at 6067",
+    "move 0 500 1001.333",
+    "at 6083",
+    "move 0 500 996.667",
+    "at 6100",
+    "move 0 500 992.000",
+    "at 6117",
+    "move 0 500 987.333",
+    "at 6133",
+    "move 0 500 982.667",
+    "at 6150",
+    "move 0 500 978.000",
+    "at 6167",
+    "move 0 500 973.333",
+    "at 6183",
+    "move 0 500 968.667",
+    "at 6200",
+    "move 0 500 964.000",
+    "at 6217",
+    "move 0 500 959.333",
+    "at 6233",
+    "move 0 500 954.667",
+    "at 6250",
+    "move 0 500 950.000",
+    "at 6267",
+    "move 0 500 945.333",
+    "at 6283",
+    "move 0 500 940.667",
+    "at 6300",
+    "move 0 500 936.000",
+    "at 6317",
+    "move 0 500 931.333",
+    "at 6333",
+    "move 0 500 926.667",
+    "at 6350",
+    "move 0 500 922.000",
+    "at 6367",
+    "move 0 500 917.333",
+    "at 6383",
+    "move 0 500 912.667",
+    "at 6400",
+    "move 0 500 908.000",
+    "at 6417",
+    "move 0 500 903.333",
+    "at 6433",
+    "move 0 500 898.667",
+    "at 6450",
+    "move 0 500 894.000",
+    "at 6467",
+    "move 0 500 889.333",
+    "at 6483",
+    "move 0 500 884.667",
+    "at 6500",
+    "move 0 500 880.000",
+    "at 6650",
+    "up 0",
+    "quit"
+  ],
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=60900795\nTIMING action=0 event=60901796 started=60901796 finished=60901803 injected=true\nOK down 0 500 1160 injected=true\nTIMING action=2 event=60901815 started=60901815 finished=60901817 injected=true\nOK move 0 500 1155.333 injected=true\nTIMING action=2 event=60901830 started=60901830 finished=60901847 injected=true\nOK move 0 500 1150.667 injected=true\nTIMING action=2 event=60901848 started=60901848 finished=60901878 injected=true\nOK move 0 500 1146.000 injected=true\nTIMING action=2 event=60901878 started=60901878 finished=60901878 injected=true\nOK move 0 500 1141.333 injected=true\nTIMING action=2 event=60901879 started=60901879 finished=60901880 injected=true\nOK move 0 500 1136.667 injected=true\nTIMING action=2 event=60901897 started=60901897 finished=60901911 injected=true\nOK move 0 500 1132.000 injected=true\nTIMING action=2 event=60901917 started=60901917 finished=60901928 injected=true\nOK move 0 500 1127.333 injected=true\nTIMING action=2 event=60901928 started=60901928 finished=60901936 injected=true\nOK move 0 500 1122.667 injected=true\nTIMING action=2 event=60901959 started=60901959 finished=60901960 injected=true\nOK move 0 500 1118.000 injected=true\nTIMING action=2 event=60901966 started=60901966 finished=60901966 injected=true\nOK move 0 500 1113.333 injected=true\nTIMING action=2 event=60901982 started=60901982 finished=60901983 injected=true\nOK move 0 500 1108.667 injected=true\nTIMING action=2 event=60902014 started=60902014 finished=60902014 injected=true\nOK move 0 500 1104.000 injected=true\nTIMING action=2 event=60902015 started=60902015 finished=60902015 injected=true\nOK move 0 500 1099.333 injected=true\nTIMING action=2 event=60902035 started=60902035 finished=60902043 injected=true\nOK move 0 500 1094.667 injected=true\nTIMING action=2 event=60902049 started=60902049 finished=60902051 injected=true\nOK move 0 500 1090.000 injected=true\nTIMING action=2 event=60902067 started=60902067 finished=60902075 injected=true\nOK move 0 500 1085.333 injected=true\nTIMING action=2 event=60902085 started=60902085 finished=60902085 injected=true\nOK move 0 500 1080.667 injected=true\nTIMING action=2 event=60902098 started=60902098 finished=60902104 injected=true\nOK move 0 500 1076.000 injected=true\nTIMING action=2 event=60902118 started=60902118 finished=60902141 injected=true\nOK move 0 500 1071.333 injected=true\nTIMING action=2 event=60902151 started=60902151 finished=60902188 injected=true\nOK move 0 500 1066.667 injected=true\nTIMING action=2 event=60902189 started=60902189 finished=60902195 injected=true\nOK move 0 500 1062.000 injected=true\nTIMING action=2 event=60902195 started=60902195 finished=60902211 injected=true\nOK move 0 500 1057.333 injected=true\nTIMING action=2 event=60902216 started=60902216 finished=60902216 injected=true\nOK move 0 500 1052.667 injected=true\nTIMING action=2 event=60902216 started=60902216 finished=60902226 injected=true\nOK move 0 500 1048.000 injected=true\nTIMING action=2 event=60902227 started=60902227 finished=60902236 injected=true\nOK move 0 500 1043.333 injected=true\nTIMING action=2 event=60902238 started=60902242 finished=60902251 injected=true\nOK move 0 500 1038.667 injected=true\nTIMING action=2 event=60902251 started=60902251 finished=60902256 injected=true\nOK move 0 500 1034.000 injected=true\nTIMING action=2 event=60902266 started=60902266 finished=60902275 injected=true\nOK move 0 500 1029.333 injected=true\nTIMING action=2 event=60902282 started=60902282 finished=60902287 injected=true\nOK move 0 500 1024.667 injected=true\nTIMING action=2 event=60902296 started=60902296 finished=60902297 injected=true\nOK move 0 500 1020.000 injected=true\nTIMING action=2 event=60902315 started=60902315 finished=60902316 injected=true\nOK move 0 500 1015.333 injected=true\nTIMING action=2 event=60902331 started=60902331 finished=60902334 injected=true\nOK move 0 500 1010.667 injected=true\nTIMING action=2 event=60902347 started=60902347 finished=60902351 injected=true\nOK move 0 500 1006.000 injected=true\nTIMING action=2 event=60902363 started=60902364 finished=60902364 injected=true\nOK move 0 500 1001.333 injected=true\nTIMING action=2 event=60902381 started=60902381 finished=60902381 injected=true\nOK move 0 500 996.667 injected=true\nTIMING action=2 event=60902396 started=60902396 finished=60902398 injected=true\nOK move 0 500 992.000 injected=true\nTIMING action=2 event=60902415 started=60902415 finished=60902416 injected=true\nOK move 0 500 987.333 injected=true\nTIMING action=2 event=60902431 started=60902431 finished=60902440 injected=true\nOK move 0 500 982.667 injected=true\nTIMING action=2 event=60902447 started=60902447 finished=60902448 injected=true\nOK move 0 500 978.000 injected=true\nTIMING action=2 event=60902468 started=60902468 finished=60902470 injected=true\nOK move 0 500 973.333 injected=true\nTIMING action=2 event=60902492 started=60902492 finished=60902498 injected=true\nOK move 0 500 968.667 injected=true\nTIMING action=2 event=60902498 started=60902498 finished=60902500 injected=true\nOK move 0 500 964.000 injected=true\nTIMING action=2 event=60902515 started=60902515 finished=60902532 injected=true\nOK move 0 500 959.333 injected=true\nTIMING action=2 event=60902535 started=60902535 finished=60902544 injected=true\nOK move 0 500 954.667 injected=true\nTIMING action=2 event=60902547 started=60902547 finished=60902567 injected=true\nOK move 0 500 950.000 injected=true\nTIMING action=2 event=60902567 started=60902567 finished=60902569 injected=true\nOK move 0 500 945.333 injected=true\nTIMING action=2 event=60902595 started=60902595 finished=60902597 injected=true\nOK move 0 500 940.667 injected=true\nTIMING action=2 event=60902598 started=60902598 finished=60902599 injected=true\nOK move 0 500 936.000 injected=true\nTIMING action=2 event=60902626 started=60902626 finished=60902626 injected=true\nOK move 0 500 931.333 injected=true\nTIMING action=2 event=60902630 started=60902630 finished=60902631 injected=true\nOK move 0 500 926.667 injected=true\nTIMING action=2 event=60902654 started=60902654 finished=60902659 injected=true\nOK move 0 500 922.000 injected=true\nTIMING action=2 event=60902663 started=60902663 finished=60902702 injected=true\nOK move 0 500 917.333 injected=true\nTIMING action=2 event=60902703 started=60902703 finished=60902718 injected=true\nOK move 0 500 912.667 injected=true\nTIMING action=2 event=60902718 started=60902718 finished=60902755 injected=true\nOK move 0 500 908.000 injected=true\nTIMING action=2 event=60902762 started=60902762 finished=60902767 injected=true\nOK move 0 500 903.333 injected=true\nTIMING action=2 event=60902788 started=60902788 finished=60902788 injected=true\nOK move 0 500 898.667 injected=true\nTIMING action=2 event=60902788 started=60902788 finished=60902804 injected=true\nOK move 0 500 894.000 injected=true\nTIMING action=2 event=60902804 started=60902804 finished=60902805 injected=true\nOK move 0 500 889.333 injected=true\nTIMING action=2 event=60902805 started=60902805 finished=60902812 injected=true\nOK move 0 500 884.667 injected=true\nTIMING action=2 event=60902812 started=60902814 finished=60902814 injected=true\nOK move 0 500 880.000 injected=true\nTIMING action=1 event=60902953 started=60902953 finished=60902953 injected=true\nOK up 0 injected=true\nTIMING action=0 event=60903298 started=60903298 finished=60903309 injected=true\nOK down 0 500 1160 injected=true\nTIMING action=2 event=60903312 started=60903312 finished=60903313 injected=true\nOK move 0 500 1155.333 injected=true\nTIMING action=2 event=60903333 started=60903333 finished=60903336 injected=true\nOK move 0 500 1150.667 injected=true\nTIMING action=2 event=60903369 started=60903372 finished=60903379 injected=true\nOK move 0 500 1146.000 injected=true\nTIMING action=2 event=60903380 started=60903380 finished=60903383 injected=true\nOK move 0 500 1141.333 injected=true\nTIMING action=2 event=60903383 started=60903383 finished=60903403 injected=true\nOK move 0 500 1136.667 injected=true\nTIMING action=2 event=60903403 started=60903403 finished=60903412 injected=true\nOK move 0 500 1132.000 injected=true\nTIMING action=2 event=60903412 started=60903412 finished=60903431 injected=true\nOK move 0 500 1127.333 injected=true\nTIMING action=2 event=60903431 started=60903431 finished=60903459 injected=true\nOK move 0 500 1122.667 injected=true\nTIMING action=2 event=60903459 started=60903459 finished=60903479 injected=true\nOK move 0 500 1118.000 injected=true\nTIMING action=2 event=60903479 started=60903479 finished=60903491 injected=true\nOK move 0 500 1113.333 injected=true\nTIMING action=2 event=60903500 started=60903500 finished=60903511 injected=true\nOK move 0 500 1108.667 injected=true\nTIMING action=2 event=60903519 started=60903519 finished=60903523 injected=true\nOK move 0 500 1104.000 injected=true\nTIMING action=2 event=60903524 started=60903524 finished=60903524 injected=true\nOK move 0 500 1099.333 injected=true\nTIMING action=2 event=60903531 started=60903531 finished=60903542 injected=true\nOK move 0 500 1094.667 injected=true\nTIMING action=2 event=60903549 started=60903549 finished=60903554 injected=true\nOK move 0 500 1090.000 injected=true\nTIMING action=2 event=60903570 started=60903570 finished=60903572 injected=true\nOK move 0 500 1085.333 injected=true\nTIMING action=2 event=60903586 started=60903586 finished=60903587 injected=true\nOK move 0 500 1080.667 injected=true\nTIMING action=2 event=60903599 started=60903599 finished=60903600 injected=true\nOK move 0 500 1076.000 injected=true\nTIMING action=2 event=60903615 started=60903615 finished=60903623 injected=true\nOK move 0 500 1071.333 injected=true\nTIMING action=2 event=60903631 started=60903631 finished=60903634 injected=true\nOK move 0 500 1066.667 injected=true\nTIMING action=2 event=60903650 started=60903650 finished=60903651 injected=true\nOK move 0 500 1062.000 injected=true\nTIMING action=2 event=60903665 started=60903665 finished=60903666 injected=true\nOK move 0 500 1057.333 injected=true\nTIMING action=2 event=60903680 started=60903680 finished=60903686 injected=true\nOK move 0 500 1052.667 injected=true\nTIMING action=2 event=60903697 started=60903697 finished=60903703 injected=true\nOK move 0 500 1048.000 injected=true\nTIMING action=2 event=60903713 started=60903713 finished=60903714 injected=true\nOK move 0 500 1043.333 injected=true\nTIMING action=2 event=60903733 started=60903733 finished=60903742 injected=true\nOK move 0 500 1038.667 injected=true\nTIMING action=2 event=60903753 started=60903753 finished=60903755 injected=true\nOK move 0 500 1034.000 injected=true\nTIMING action=2 event=60903767 started=60903767 finished=60903770 injected=true\nOK move 0 500 1029.333 injected=true\nTIMING action=2 event=60903781 started=60903781 finished=60903791 injected=true\nOK move 0 500 1024.667 injected=true\nTIMING action=2 event=60903801 started=60903801 finished=60903802 injected=true\nOK move 0 500 1020.000 injected=true\nTIMING action=2 event=60903823 started=60903823 finished=60903839 injected=true\nOK move 0 500 1015.333 injected=true\nTIMING action=2 event=60903839 started=60903839 finished=60903843 injected=true\nOK move 0 500 1010.667 injected=true\nTIMING action=2 event=60903852 started=60903852 finished=60903853 injected=true\nOK move 0 500 1006.000 injected=true\nTIMING action=2 event=60903867 started=60903867 finished=60903868 injected=true\nOK move 0 500 1001.333 injected=true\nTIMING action=2 event=60903882 started=60903882 finished=60903883 injected=true\nOK move 0 500 996.667 injected=true\nTIMING action=2 event=60903897 started=60903897 finished=60903899 injected=true\nOK move 0 500 992.000 injected=true\nTIMING action=2 event=60903914 started=60903914 finished=60903915 injected=true\nOK move 0 500 987.333 injected=true\nTIMING action=2 event=60903933 started=60903933 finished=60903933 injected=true\nOK move 0 500 982.667 injected=true\nTIMING action=2 event=60903947 started=60903947 finished=60903960 injected=true\nOK move 0 500 978.000 injected=true\nTIMING action=2 event=60903967 started=60903967 finished=60903968 injected=true\nOK move 0 500 973.333 injected=true\nTIMING action=2 event=60903980 started=60903980 finished=60903981 injected=true\nOK move 0 500 968.667 injected=true\nTIMING action=2 event=60903998 started=60903998 finished=60904000 injected=true\nOK move 0 500 964.000 injected=true\nTIMING action=2 event=60904027 started=60904027 finished=60904045 injected=true\nOK move 0 500 959.333 injected=true\nTIMING action=2 event=60904045 started=60904045 finished=60904048 injected=true\nOK move 0 500 954.667 injected=true\nTIMING action=2 event=60904048 started=60904048 finished=60904057 injected=true\nOK move 0 500 950.000 injected=true\nTIMING action=2 event=60904102 started=60904102 finished=60904102 injected=true\nOK move 0 500 945.333 injected=true\nTIMING action=2 event=60904103 started=60904103 finished=60904112 injected=true\nOK move 0 500 940.667 injected=true\nTIMING action=2 event=60904113 started=60904115 finished=60904124 injected=true\nOK move 0 500 936.000 injected=true\nTIMING action=2 event=60904124 started=60904124 finished=60904125 injected=true\nOK move 0 500 931.333 injected=true\nTIMING action=2 event=60904130 started=60904130 finished=60904143 injected=true\nOK move 0 500 926.667 injected=true\nTIMING action=2 event=60904150 started=60904150 finished=60904151 injected=true\nOK move 0 500 922.000 injected=true\nTIMING action=2 event=60904166 started=60904166 finished=60904168 injected=true\nOK move 0 500 917.333 injected=true\nTIMING action=2 event=60904183 started=60904183 finished=60904185 injected=true\nOK move 0 500 912.667 injected=true\nTIMING action=2 event=60904205 started=60904205 finished=60904206 injected=true\nOK move 0 500 908.000 injected=true\nTIMING action=2 event=60904219 started=60904219 finished=60904230 injected=true\nOK move 0 500 903.333 injected=true\nTIMING action=2 event=60904230 started=60904230 finished=60904233 injected=true\nOK move 0 500 898.667 injected=true\nTIMING action=2 event=60904255 started=60904255 finished=60904255 injected=true\nOK move 0 500 894.000 injected=true\nTIMING action=2 event=60904272 started=60904272 finished=60904276 injected=true\nOK move 0 500 889.333 injected=true\nTIMING action=2 event=60904291 started=60904292 finished=60904299 injected=true\nOK move 0 500 884.667 injected=true\nTIMING action=2 event=60904299 started=60904299 finished=60904301 injected=true\nOK move 0 500 880.000 injected=true\nTIMING action=1 event=60904449 started=60904449 finished=60904458 injected=true\nOK up 0 injected=true\nTIMING action=0 event=60904797 started=60904797 finished=60904811 injected=true\nOK down 0 500 1160 injected=true\nTIMING action=2 event=60904814 started=60904814 finished=60904817 injected=true\nOK move 0 500 1155.333 injected=true\nTIMING action=2 event=60904834 started=60904834 finished=60904837 injected=true\nOK move 0 500 1150.667 injected=true\nTIMING action=2 event=60904847 started=60904847 finished=60904851 injected=true\nOK move 0 500 1146.000 injected=true\nTIMING action=2 event=60904864 started=60904864 finished=60904866 injected=true\nOK move 0 500 1141.333 injected=true\nTIMING action=2 event=60904882 started=60904882 finished=60904884 injected=true\nOK move 0 500 1136.667 injected=true\nTIMING action=2 event=60904898 started=60904898 finished=60904899 injected=true\nOK move 0 500 1132.000 injected=true\nTIMING action=2 event=60904915 started=60904915 finished=60904918 injected=true\nOK move 0 500 1127.333 injected=true\nTIMING action=2 event=60904930 started=60904930 finished=60904982 injected=true\nOK move 0 500 1122.667 injected=true\nTIMING action=2 event=60904982 started=60904982 finished=60904991 injected=true\nOK move 0 500 1118.000 injected=true\nTIMING action=2 event=60904994 started=60904994 finished=60905011 injected=true\nOK move 0 500 1113.333 injected=true\nTIMING action=2 event=60905011 started=60905011 finished=60905019 injected=true\nOK move 0 500 1108.667 injected=true\nTIMING action=2 event=60905020 started=60905020 finished=60905032 injected=true\nOK move 0 500 1104.000 injected=true\nTIMING action=2 event=60905033 started=60905033 finished=60905038 injected=true\nOK move 0 500 1099.333 injected=true\nTIMING action=2 event=60905038 started=60905038 finished=60905089 injected=true\nOK move 0 500 1094.667 injected=true\nTIMING action=2 event=60905090 started=60905090 finished=60905103 injected=true\nOK move 0 500 1090.000 injected=true\nTIMING action=2 event=60905106 started=60905106 finished=60905115 injected=true\nOK move 0 500 1085.333 injected=true\nTIMING action=2 event=60905127 started=60905127 finished=60905133 injected=true\nOK move 0 500 1080.667 injected=true\nTIMING action=2 event=60905133 started=60905133 finished=60905159 injected=true\nOK move 0 500 1076.000 injected=true\nTIMING action=2 event=60905159 started=60905159 finished=60905160 injected=true\nOK move 0 500 1071.333 injected=true\nTIMING action=2 event=60905160 started=60905160 finished=60905169 injected=true\nOK move 0 500 1066.667 injected=true\nTIMING action=2 event=60905169 started=60905169 finished=60905171 injected=true\nOK move 0 500 1062.000 injected=true\nTIMING action=2 event=60905172 started=60905172 finished=60905173 injected=true\nOK move 0 500 1057.333 injected=true\nTIMING action=2 event=60905193 started=60905193 finished=60905193 injected=true\nOK move 0 500 1052.667 injected=true\nTIMING action=2 event=60905207 started=60905207 finished=60905223 injected=true\nOK move 0 500 1048.000 injected=true\nTIMING action=2 event=60905223 started=60905223 finished=60905239 injected=true\nOK move 0 500 1043.333 injected=true\nTIMING action=2 event=60905249 started=60905257 finished=60905264 injected=true\nOK move 0 500 1038.667 injected=true\nTIMING action=2 event=60905268 started=60905274 finished=60905274 injected=true\nOK move 0 500 1034.000 injected=true\nTIMING action=2 event=60905275 started=60905275 finished=60905282 injected=true\nOK move 0 500 1029.333 injected=true\nTIMING action=2 event=60905282 started=60905282 finished=60905283 injected=true\nOK move 0 500 1024.667 injected=true\nTIMING action=2 event=60905300 started=60905300 finished=60905301 injected=true\nOK move 0 500 1020.000 injected=true\nTIMING action=2 event=60905315 started=60905315 finished=60905316 injected=true\nOK move 0 500 1015.333 injected=true\nTIMING action=2 event=60905331 started=60905331 finished=60905335 injected=true\nOK move 0 500 1010.667 injected=true\nTIMING action=2 event=60905347 started=60905347 finished=60905366 injected=true\nOK move 0 500 1006.000 injected=true\nTIMING action=2 event=60905366 started=60905366 finished=60905384 injected=true\nOK move 0 500 1001.333 injected=true\nTIMING action=2 event=60905384 started=60905384 finished=60905393 injected=true\nOK move 0 500 996.667 injected=true\nTIMING action=2 event=60905395 started=60905395 finished=60905396 injected=true\nOK move 0 500 992.000 injected=true\nTIMING action=2 event=60905413 started=60905413 finished=60905415 injected=true\nOK move 0 500 987.333 injected=true\nTIMING action=2 event=60905431 started=60905431 finished=60905433 injected=true\nOK move 0 500 982.667 injected=true\nTIMING action=2 event=60905461 started=60905461 finished=60905462 injected=true\nOK move 0 500 978.000 injected=true\nTIMING action=2 event=60905463 started=60905463 finished=60905469 injected=true\nOK move 0 500 973.333 injected=true\nTIMING action=2 event=60905479 started=60905479 finished=60905491 injected=true\nOK move 0 500 968.667 injected=true\nTIMING action=2 event=60905499 started=60905499 finished=60905500 injected=true\nOK move 0 500 964.000 injected=true\nTIMING action=2 event=60905513 started=60905513 finished=60905516 injected=true\nOK move 0 500 959.333 injected=true\nTIMING action=2 event=60905534 started=60905534 finished=60905535 injected=true\nOK move 0 500 954.667 injected=true\nTIMING action=2 event=60905548 started=60905548 finished=60905553 injected=true\nOK move 0 500 950.000 injected=true\nTIMING action=2 event=60905567 started=60905567 finished=60905569 injected=true\nOK move 0 500 945.333 injected=true\nTIMING action=2 event=60905607 started=60905607 finished=60905628 injected=true\nOK move 0 500 940.667 injected=true\nTIMING action=2 event=60905632 started=60905632 finished=60905656 injected=true\nOK move 0 500 936.000 injected=true\nTIMING action=2 event=60905656 started=60905656 finished=60905663 injected=true\nOK move 0 500 931.333 injected=true\nTIMING action=2 event=60905664 started=60905664 finished=60905679 injected=true\nOK move 0 500 926.667 injected=true\nTIMING action=2 event=60905688 started=60905688 finished=60905690 injected=true\nOK move 0 500 922.000 injected=true\nTIMING action=2 event=60905690 started=60905690 finished=60905690 injected=true\nOK move 0 500 917.333 injected=true\nTIMING action=2 event=60905690 started=60905690 finished=60905691 injected=true\nOK move 0 500 912.667 injected=true\nTIMING action=2 event=60905721 started=60905721 finished=60905730 injected=true\nOK move 0 500 908.000 injected=true\nTIMING action=2 event=60905730 started=60905730 finished=60905744 injected=true\nOK move 0 500 903.333 injected=true\nTIMING action=2 event=60905744 started=60905744 finished=60905770 injected=true\nOK move 0 500 898.667 injected=true\nTIMING action=2 event=60905787 started=60905787 finished=60905819 injected=true\nOK move 0 500 894.000 injected=true\nTIMING action=2 event=60905819 started=60905819 finished=60905824 injected=true\nOK move 0 500 889.333 injected=true\nTIMING action=2 event=60905824 started=60905824 finished=60905846 injected=true\nOK move 0 500 884.667 injected=true\nTIMING action=2 event=60905847 started=60905847 finished=60905859 injected=true\nOK move 0 500 880.000 injected=true\nTIMING action=1 event=60905950 started=60905959 finished=60905962 injected=true\nOK up 0 injected=true\nTIMING action=0 event=60906303 started=60906303 finished=60906312 injected=true\nOK down 0 500 1160 injected=true\nTIMING action=2 event=60906313 started=60906313 finished=60906319 injected=true\nOK move 0 500 1155.333 injected=true\nTIMING action=2 event=60906330 started=60906330 finished=60906331 injected=true\nOK move 0 500 1150.667 injected=true\nTIMING action=2 event=60906348 started=60906348 finished=60906360 injected=true\nOK move 0 500 1146.000 injected=true\nTIMING action=2 event=60906372 started=60906372 finished=60906376 injected=true\nOK move 0 500 1141.333 injected=true\nTIMING action=2 event=60906382 started=60906382 finished=60906383 injected=true\nOK move 0 500 1136.667 injected=true\nTIMING action=2 event=60906398 started=60906398 finished=60906403 injected=true\nOK move 0 500 1132.000 injected=true\nTIMING action=2 event=60906414 started=60906414 finished=60906444 injected=true\nOK move 0 500 1127.333 injected=true\nTIMING action=2 event=60906444 started=60906444 finished=60906450 injected=true\nOK move 0 500 1122.667 injected=true\nTIMING action=2 event=60906450 started=60906450 finished=60906455 injected=true\nOK move 0 500 1118.000 injected=true\nTIMING action=2 event=60906466 started=60906466 finished=60906467 injected=true\nOK move 0 500 1113.333 injected=true\nTIMING action=2 event=60906481 started=60906481 finished=60906482 injected=true\nOK move 0 500 1108.667 injected=true\nTIMING action=2 event=60906496 started=60906496 finished=60906497 injected=true\nOK move 0 500 1104.000 injected=true\nTIMING action=2 event=60906518 started=60906518 finished=60906570 injected=true\nOK move 0 500 1099.333 injected=true\nTIMING action=2 event=60906571 started=60906571 finished=60906572 injected=true\nOK move 0 500 1094.667 injected=true\nTIMING action=2 event=60906572 started=60906572 finished=60906594 injected=true\nOK move 0 500 1090.000 injected=true\nTIMING action=2 event=60906594 started=60906594 finished=60906601 injected=true\nOK move 0 500 1085.333 injected=true\nTIMING action=2 event=60906601 started=60906601 finished=60906604 injected=true\nOK move 0 500 1080.667 injected=true\nTIMING action=2 event=60906604 started=60906604 finished=60906604 injected=true\nOK move 0 500 1076.000 injected=true\nTIMING action=2 event=60906612 started=60906622 finished=60906635 injected=true\nOK move 0 500 1071.333 injected=true\nTIMING action=2 event=60906638 started=60906638 finished=60906650 injected=true\nOK move 0 500 1066.667 injected=true\nTIMING action=2 event=60906650 started=60906650 finished=60906651 injected=true\nOK move 0 500 1062.000 injected=true\nTIMING action=2 event=60906666 started=60906666 finished=60906671 injected=true\nOK move 0 500 1057.333 injected=true\nTIMING action=2 event=60906682 started=60906682 finished=60906684 injected=true\nOK move 0 500 1052.667 injected=true\nTIMING action=2 event=60906698 started=60906698 finished=60906698 injected=true\nOK move 0 500 1048.000 injected=true\nTIMING action=2 event=60906714 started=60906714 finished=60906715 injected=true\nOK move 0 500 1043.333 injected=true\nTIMING action=2 event=60906732 started=60906732 finished=60906738 injected=true\nOK move 0 500 1038.667 injected=true\nTIMING action=2 event=60906750 started=60906750 finished=60906752 injected=true\nOK move 0 500 1034.000 injected=true\nTIMING action=2 event=60906765 started=60906765 finished=60906775 injected=true\nOK move 0 500 1029.333 injected=true\nTIMING action=2 event=60906782 started=60906782 finished=60906784 injected=true\nOK move 0 500 1024.667 injected=true\nTIMING action=2 event=60906798 started=60906798 finished=60906799 injected=true\nOK move 0 500 1020.000 injected=true\nTIMING action=2 event=60906815 started=60906815 finished=60906816 injected=true\nOK move 0 500 1015.333 injected=true\nTIMING action=2 event=60906839 started=60906841 finished=60906874 injected=true\nOK move 0 500 1010.667 injected=true\nTIMING action=2 event=60906874 started=60906874 finished=60906881 injected=true\nOK move 0 500 1006.000 injected=true\nTIMING action=2 event=60906881 started=60906881 finished=60906894 injected=true\nOK move 0 500 1001.333 injected=true\nTIMING action=2 event=60906895 started=60906895 finished=60906911 injected=true\nOK move 0 500 996.667 injected=true\nTIMING action=2 event=60906912 started=60906912 finished=60906951 injected=true\nOK move 0 500 992.000 injected=true\nTIMING action=2 event=60906953 started=60906953 finished=60906959 injected=true\nOK move 0 500 987.333 injected=true\nTIMING action=2 event=60906960 started=60906960 finished=60906966 injected=true\nOK move 0 500 982.667 injected=true\nTIMING action=2 event=60906967 started=60906967 finished=60906979 injected=true\nOK move 0 500 978.000 injected=true\nTIMING action=2 event=60906979 started=60906979 finished=60906988 injected=true\nOK move 0 500 973.333 injected=true\nTIMING action=2 event=60906990 started=60906990 finished=60907000 injected=true\nOK move 0 500 968.667 injected=true\nTIMING action=2 event=60907000 started=60907000 finished=60907001 injected=true\nOK move 0 500 964.000 injected=true\nTIMING action=2 event=60907014 started=60907014 finished=60907017 injected=true\nOK move 0 500 959.333 injected=true\nTIMING action=2 event=60907031 started=60907031 finished=60907032 injected=true\nOK move 0 500 954.667 injected=true\nTIMING action=2 event=60907047 started=60907047 finished=60907050 injected=true\nOK move 0 500 950.000 injected=true\nTIMING action=2 event=60907066 started=60907066 finished=60907066 injected=true\nOK move 0 500 945.333 injected=true\nTIMING action=2 event=60907081 started=60907086 finished=60907087 injected=true\nOK move 0 500 940.667 injected=true\nTIMING action=2 event=60907097 started=60907097 finished=60907098 injected=true\nOK move 0 500 936.000 injected=true\nTIMING action=2 event=60907118 started=60907118 finished=60907119 injected=true\nOK move 0 500 931.333 injected=true\nTIMING action=2 event=60907130 started=60907130 finished=60907132 injected=true\nOK move 0 500 926.667 injected=true\nTIMING action=2 event=60907147 started=60907147 finished=60907149 injected=true\nOK move 0 500 922.000 injected=true\nTIMING action=2 event=60907164 started=60907164 finished=60907177 injected=true\nOK move 0 500 917.333 injected=true\nTIMING action=2 event=60907178 started=60907186 finished=60907187 injected=true\nOK move 0 500 912.667 injected=true\nTIMING action=2 event=60907199 started=60907199 finished=60907202 injected=true\nOK move 0 500 908.000 injected=true\nTIMING action=2 event=60907215 started=60907215 finished=60907216 injected=true\nOK move 0 500 903.333 injected=true\nTIMING action=2 event=60907231 started=60907231 finished=60907234 injected=true\nOK move 0 500 898.667 injected=true\nTIMING action=2 event=60907247 started=60907247 finished=60907248 injected=true\nOK move 0 500 894.000 injected=true\nTIMING action=2 event=60907265 started=60907265 finished=60907267 injected=true\nOK move 0 500 889.333 injected=true\nTIMING action=2 event=60907280 started=60907280 finished=60907284 injected=true\nOK move 0 500 884.667 injected=true\nTIMING action=2 event=60907296 started=60907296 finished=60907300 injected=true\nOK move 0 500 880.000 injected=true\nTIMING action=1 event=60907447 started=60907447 finished=60907451 injected=true\nOK up 0 injected=true\n",
+  "stderr": "",
+  "exitCode": 0,
+  "durationHostSeconds": 9.422000000020489,
+  "measurementOutput": "{\n  \"label\": \"code10-recorded-pull\",\n  \"layer\": \"b6940e2 SurfaceView[com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity](BLAST)#1513\",\n  \"startDeviceUptimeNs\": 60900170000000,\n  \"durationHostSeconds\": 9.422635099850595,\n  \"samples\": 21,\n  \"count\": 144,\n  \"statistics\": {\n    \"meanMs\": 63.42785734265734,\n    \"medianMs\": 52.1728,\n    \"p95Ms\": 128.5647,\n    \"maxMs\": 188.2573,\n    \"fps\": 15.765943260509083,\n    \"over25ms\": 139,\n    \"over50ms\": 78,\n    \"over100ms\": 19\n  }\n}\n",
+  "events": [
+    {
+      "action": 0,
+      "event": 60901796,
+      "started": 60901796,
+      "finished": 60901803,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901815,
+      "started": 60901815,
+      "finished": 60901817,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901830,
+      "started": 60901830,
+      "finished": 60901847,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901848,
+      "started": 60901848,
+      "finished": 60901878,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901878,
+      "started": 60901878,
+      "finished": 60901878,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901879,
+      "started": 60901879,
+      "finished": 60901880,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901897,
+      "started": 60901897,
+      "finished": 60901911,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901917,
+      "started": 60901917,
+      "finished": 60901928,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901928,
+      "started": 60901928,
+      "finished": 60901936,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901959,
+      "started": 60901959,
+      "finished": 60901960,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901966,
+      "started": 60901966,
+      "finished": 60901966,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60901982,
+      "started": 60901982,
+      "finished": 60901983,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902014,
+      "started": 60902014,
+      "finished": 60902014,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902015,
+      "started": 60902015,
+      "finished": 60902015,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902035,
+      "started": 60902035,
+      "finished": 60902043,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902049,
+      "started": 60902049,
+      "finished": 60902051,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902067,
+      "started": 60902067,
+      "finished": 60902075,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902085,
+      "started": 60902085,
+      "finished": 60902085,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902098,
+      "started": 60902098,
+      "finished": 60902104,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902118,
+      "started": 60902118,
+      "finished": 60902141,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902151,
+      "started": 60902151,
+      "finished": 60902188,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902189,
+      "started": 60902189,
+      "finished": 60902195,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902195,
+      "started": 60902195,
+      "finished": 60902211,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902216,
+      "started": 60902216,
+      "finished": 60902216,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902216,
+      "started": 60902216,
+      "finished": 60902226,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902227,
+      "started": 60902227,
+      "finished": 60902236,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902238,
+      "started": 60902242,
+      "finished": 60902251,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902251,
+      "started": 60902251,
+      "finished": 60902256,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902266,
+      "started": 60902266,
+      "finished": 60902275,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902282,
+      "started": 60902282,
+      "finished": 60902287,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902296,
+      "started": 60902296,
+      "finished": 60902297,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902315,
+      "started": 60902315,
+      "finished": 60902316,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902331,
+      "started": 60902331,
+      "finished": 60902334,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902347,
+      "started": 60902347,
+      "finished": 60902351,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902363,
+      "started": 60902364,
+      "finished": 60902364,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902381,
+      "started": 60902381,
+      "finished": 60902381,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902396,
+      "started": 60902396,
+      "finished": 60902398,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902415,
+      "started": 60902415,
+      "finished": 60902416,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902431,
+      "started": 60902431,
+      "finished": 60902440,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902447,
+      "started": 60902447,
+      "finished": 60902448,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902468,
+      "started": 60902468,
+      "finished": 60902470,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902492,
+      "started": 60902492,
+      "finished": 60902498,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902498,
+      "started": 60902498,
+      "finished": 60902500,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902515,
+      "started": 60902515,
+      "finished": 60902532,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902535,
+      "started": 60902535,
+      "finished": 60902544,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902547,
+      "started": 60902547,
+      "finished": 60902567,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902567,
+      "started": 60902567,
+      "finished": 60902569,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902595,
+      "started": 60902595,
+      "finished": 60902597,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902598,
+      "started": 60902598,
+      "finished": 60902599,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902626,
+      "started": 60902626,
+      "finished": 60902626,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902630,
+      "started": 60902630,
+      "finished": 60902631,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902654,
+      "started": 60902654,
+      "finished": 60902659,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902663,
+      "started": 60902663,
+      "finished": 60902702,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902703,
+      "started": 60902703,
+      "finished": 60902718,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902718,
+      "started": 60902718,
+      "finished": 60902755,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902762,
+      "started": 60902762,
+      "finished": 60902767,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902788,
+      "started": 60902788,
+      "finished": 60902788,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902788,
+      "started": 60902788,
+      "finished": 60902804,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902804,
+      "started": 60902804,
+      "finished": 60902805,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902805,
+      "started": 60902805,
+      "finished": 60902812,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60902812,
+      "started": 60902814,
+      "finished": 60902814,
+      "injected": true
+    },
+    {
+      "action": 1,
+      "event": 60902953,
+      "started": 60902953,
+      "finished": 60902953,
+      "injected": true
+    },
+    {
+      "action": 0,
+      "event": 60903298,
+      "started": 60903298,
+      "finished": 60903309,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903312,
+      "started": 60903312,
+      "finished": 60903313,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903333,
+      "started": 60903333,
+      "finished": 60903336,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903369,
+      "started": 60903372,
+      "finished": 60903379,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903380,
+      "started": 60903380,
+      "finished": 60903383,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903383,
+      "started": 60903383,
+      "finished": 60903403,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903403,
+      "started": 60903403,
+      "finished": 60903412,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903412,
+      "started": 60903412,
+      "finished": 60903431,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903431,
+      "started": 60903431,
+      "finished": 60903459,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903459,
+      "started": 60903459,
+      "finished": 60903479,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903479,
+      "started": 60903479,
+      "finished": 60903491,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903500,
+      "started": 60903500,
+      "finished": 60903511,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903519,
+      "started": 60903519,
+      "finished": 60903523,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903524,
+      "started": 60903524,
+      "finished": 60903524,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903531,
+      "started": 60903531,
+      "finished": 60903542,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903549,
+      "started": 60903549,
+      "finished": 60903554,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903570,
+      "started": 60903570,
+      "finished": 60903572,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903586,
+      "started": 60903586,
+      "finished": 60903587,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903599,
+      "started": 60903599,
+      "finished": 60903600,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903615,
+      "started": 60903615,
+      "finished": 60903623,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903631,
+      "started": 60903631,
+      "finished": 60903634,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903650,
+      "started": 60903650,
+      "finished": 60903651,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903665,
+      "started": 60903665,
+      "finished": 60903666,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903680,
+      "started": 60903680,
+      "finished": 60903686,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903697,
+      "started": 60903697,
+      "finished": 60903703,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903713,
+      "started": 60903713,
+      "finished": 60903714,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903733,
+      "started": 60903733,
+      "finished": 60903742,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903753,
+      "started": 60903753,
+      "finished": 60903755,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903767,
+      "started": 60903767,
+      "finished": 60903770,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903781,
+      "started": 60903781,
+      "finished": 60903791,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903801,
+      "started": 60903801,
+      "finished": 60903802,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903823,
+      "started": 60903823,
+      "finished": 60903839,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903839,
+      "started": 60903839,
+      "finished": 60903843,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903852,
+      "started": 60903852,
+      "finished": 60903853,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903867,
+      "started": 60903867,
+      "finished": 60903868,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903882,
+      "started": 60903882,
+      "finished": 60903883,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903897,
+      "started": 60903897,
+      "finished": 60903899,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903914,
+      "started": 60903914,
+      "finished": 60903915,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903933,
+      "started": 60903933,
+      "finished": 60903933,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903947,
+      "started": 60903947,
+      "finished": 60903960,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903967,
+      "started": 60903967,
+      "finished": 60903968,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903980,
+      "started": 60903980,
+      "finished": 60903981,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60903998,
+      "started": 60903998,
+      "finished": 60904000,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904027,
+      "started": 60904027,
+      "finished": 60904045,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904045,
+      "started": 60904045,
+      "finished": 60904048,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904048,
+      "started": 60904048,
+      "finished": 60904057,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904102,
+      "started": 60904102,
+      "finished": 60904102,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904103,
+      "started": 60904103,
+      "finished": 60904112,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904113,
+      "started": 60904115,
+      "finished": 60904124,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904124,
+      "started": 60904124,
+      "finished": 60904125,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904130,
+      "started": 60904130,
+      "finished": 60904143,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904150,
+      "started": 60904150,
+      "finished": 60904151,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904166,
+      "started": 60904166,
+      "finished": 60904168,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904183,
+      "started": 60904183,
+      "finished": 60904185,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904205,
+      "started": 60904205,
+      "finished": 60904206,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904219,
+      "started": 60904219,
+      "finished": 60904230,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904230,
+      "started": 60904230,
+      "finished": 60904233,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904255,
+      "started": 60904255,
+      "finished": 60904255,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904272,
+      "started": 60904272,
+      "finished": 60904276,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904291,
+      "started": 60904292,
+      "finished": 60904299,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904299,
+      "started": 60904299,
+      "finished": 60904301,
+      "injected": true
+    },
+    {
+      "action": 1,
+      "event": 60904449,
+      "started": 60904449,
+      "finished": 60904458,
+      "injected": true
+    },
+    {
+      "action": 0,
+      "event": 60904797,
+      "started": 60904797,
+      "finished": 60904811,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904814,
+      "started": 60904814,
+      "finished": 60904817,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904834,
+      "started": 60904834,
+      "finished": 60904837,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904847,
+      "started": 60904847,
+      "finished": 60904851,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904864,
+      "started": 60904864,
+      "finished": 60904866,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904882,
+      "started": 60904882,
+      "finished": 60904884,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904898,
+      "started": 60904898,
+      "finished": 60904899,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904915,
+      "started": 60904915,
+      "finished": 60904918,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904930,
+      "started": 60904930,
+      "finished": 60904982,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904982,
+      "started": 60904982,
+      "finished": 60904991,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60904994,
+      "started": 60904994,
+      "finished": 60905011,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905011,
+      "started": 60905011,
+      "finished": 60905019,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905020,
+      "started": 60905020,
+      "finished": 60905032,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905033,
+      "started": 60905033,
+      "finished": 60905038,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905038,
+      "started": 60905038,
+      "finished": 60905089,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905090,
+      "started": 60905090,
+      "finished": 60905103,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905106,
+      "started": 60905106,
+      "finished": 60905115,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905127,
+      "started": 60905127,
+      "finished": 60905133,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905133,
+      "started": 60905133,
+      "finished": 60905159,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905159,
+      "started": 60905159,
+      "finished": 60905160,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905160,
+      "started": 60905160,
+      "finished": 60905169,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905169,
+      "started": 60905169,
+      "finished": 60905171,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905172,
+      "started": 60905172,
+      "finished": 60905173,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905193,
+      "started": 60905193,
+      "finished": 60905193,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905207,
+      "started": 60905207,
+      "finished": 60905223,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905223,
+      "started": 60905223,
+      "finished": 60905239,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905249,
+      "started": 60905257,
+      "finished": 60905264,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905268,
+      "started": 60905274,
+      "finished": 60905274,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905275,
+      "started": 60905275,
+      "finished": 60905282,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905282,
+      "started": 60905282,
+      "finished": 60905283,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905300,
+      "started": 60905300,
+      "finished": 60905301,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905315,
+      "started": 60905315,
+      "finished": 60905316,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905331,
+      "started": 60905331,
+      "finished": 60905335,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905347,
+      "started": 60905347,
+      "finished": 60905366,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905366,
+      "started": 60905366,
+      "finished": 60905384,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905384,
+      "started": 60905384,
+      "finished": 60905393,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905395,
+      "started": 60905395,
+      "finished": 60905396,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905413,
+      "started": 60905413,
+      "finished": 60905415,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905431,
+      "started": 60905431,
+      "finished": 60905433,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905461,
+      "started": 60905461,
+      "finished": 60905462,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905463,
+      "started": 60905463,
+      "finished": 60905469,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905479,
+      "started": 60905479,
+      "finished": 60905491,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905499,
+      "started": 60905499,
+      "finished": 60905500,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905513,
+      "started": 60905513,
+      "finished": 60905516,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905534,
+      "started": 60905534,
+      "finished": 60905535,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905548,
+      "started": 60905548,
+      "finished": 60905553,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905567,
+      "started": 60905567,
+      "finished": 60905569,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905607,
+      "started": 60905607,
+      "finished": 60905628,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905632,
+      "started": 60905632,
+      "finished": 60905656,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905656,
+      "started": 60905656,
+      "finished": 60905663,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905664,
+      "started": 60905664,
+      "finished": 60905679,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905688,
+      "started": 60905688,
+      "finished": 60905690,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905690,
+      "started": 60905690,
+      "finished": 60905690,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905690,
+      "started": 60905690,
+      "finished": 60905691,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905721,
+      "started": 60905721,
+      "finished": 60905730,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905730,
+      "started": 60905730,
+      "finished": 60905744,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905744,
+      "started": 60905744,
+      "finished": 60905770,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905787,
+      "started": 60905787,
+      "finished": 60905819,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905819,
+      "started": 60905819,
+      "finished": 60905824,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905824,
+      "started": 60905824,
+      "finished": 60905846,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60905847,
+      "started": 60905847,
+      "finished": 60905859,
+      "injected": true
+    },
+    {
+      "action": 1,
+      "event": 60905950,
+      "started": 60905959,
+      "finished": 60905962,
+      "injected": true
+    },
+    {
+      "action": 0,
+      "event": 60906303,
+      "started": 60906303,
+      "finished": 60906312,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906313,
+      "started": 60906313,
+      "finished": 60906319,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906330,
+      "started": 60906330,
+      "finished": 60906331,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906348,
+      "started": 60906348,
+      "finished": 60906360,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906372,
+      "started": 60906372,
+      "finished": 60906376,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906382,
+      "started": 60906382,
+      "finished": 60906383,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906398,
+      "started": 60906398,
+      "finished": 60906403,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906414,
+      "started": 60906414,
+      "finished": 60906444,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906444,
+      "started": 60906444,
+      "finished": 60906450,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906450,
+      "started": 60906450,
+      "finished": 60906455,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906466,
+      "started": 60906466,
+      "finished": 60906467,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906481,
+      "started": 60906481,
+      "finished": 60906482,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906496,
+      "started": 60906496,
+      "finished": 60906497,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906518,
+      "started": 60906518,
+      "finished": 60906570,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906571,
+      "started": 60906571,
+      "finished": 60906572,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906572,
+      "started": 60906572,
+      "finished": 60906594,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906594,
+      "started": 60906594,
+      "finished": 60906601,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906601,
+      "started": 60906601,
+      "finished": 60906604,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906604,
+      "started": 60906604,
+      "finished": 60906604,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906612,
+      "started": 60906622,
+      "finished": 60906635,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906638,
+      "started": 60906638,
+      "finished": 60906650,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906650,
+      "started": 60906650,
+      "finished": 60906651,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906666,
+      "started": 60906666,
+      "finished": 60906671,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906682,
+      "started": 60906682,
+      "finished": 60906684,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906698,
+      "started": 60906698,
+      "finished": 60906698,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906714,
+      "started": 60906714,
+      "finished": 60906715,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906732,
+      "started": 60906732,
+      "finished": 60906738,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906750,
+      "started": 60906750,
+      "finished": 60906752,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906765,
+      "started": 60906765,
+      "finished": 60906775,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906782,
+      "started": 60906782,
+      "finished": 60906784,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906798,
+      "started": 60906798,
+      "finished": 60906799,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906815,
+      "started": 60906815,
+      "finished": 60906816,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906839,
+      "started": 60906841,
+      "finished": 60906874,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906874,
+      "started": 60906874,
+      "finished": 60906881,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906881,
+      "started": 60906881,
+      "finished": 60906894,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906895,
+      "started": 60906895,
+      "finished": 60906911,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906912,
+      "started": 60906912,
+      "finished": 60906951,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906953,
+      "started": 60906953,
+      "finished": 60906959,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906960,
+      "started": 60906960,
+      "finished": 60906966,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906967,
+      "started": 60906967,
+      "finished": 60906979,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906979,
+      "started": 60906979,
+      "finished": 60906988,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60906990,
+      "started": 60906990,
+      "finished": 60907000,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907000,
+      "started": 60907000,
+      "finished": 60907001,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907014,
+      "started": 60907014,
+      "finished": 60907017,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907031,
+      "started": 60907031,
+      "finished": 60907032,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907047,
+      "started": 60907047,
+      "finished": 60907050,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907066,
+      "started": 60907066,
+      "finished": 60907066,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907081,
+      "started": 60907086,
+      "finished": 60907087,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907097,
+      "started": 60907097,
+      "finished": 60907098,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907118,
+      "started": 60907118,
+      "finished": 60907119,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907130,
+      "started": 60907130,
+      "finished": 60907132,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907147,
+      "started": 60907147,
+      "finished": 60907149,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907164,
+      "started": 60907164,
+      "finished": 60907177,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907178,
+      "started": 60907186,
+      "finished": 60907187,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907199,
+      "started": 60907199,
+      "finished": 60907202,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907215,
+      "started": 60907215,
+      "finished": 60907216,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907231,
+      "started": 60907231,
+      "finished": 60907234,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907247,
+      "started": 60907247,
+      "finished": 60907248,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907265,
+      "started": 60907265,
+      "finished": 60907267,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907280,
+      "started": 60907280,
+      "finished": 60907284,
+      "injected": true
+    },
+    {
+      "action": 2,
+      "event": 60907296,
+      "started": 60907296,
+      "finished": 60907300,
+      "injected": true
+    },
+    {
+      "action": 1,
+      "event": 60907447,
+      "started": 60907447,
+      "finished": 60907451,
+      "injected": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "label": "code10-single-cancel-repeat",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 150 590",
+    "at 250",
+    "move 0 150 820",
+    "at 400",
+    "cancel",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=56285729\nTIMING action=0 event=56285832 started=56285832 finished=56285835 injected=true\nOK down 0 150 590 injected=true\nTIMING action=2 event=56285982 started=56285982 finished=56285983 injected=true\nOK move 0 150 820 injected=true\nTIMING action=3 event=56286131 started=56286131 finished=56286132 injected=true\nOK cancel injected=true\n",
+  "stderr": ""
+}

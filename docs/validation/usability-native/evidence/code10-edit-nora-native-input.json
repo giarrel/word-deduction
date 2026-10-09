@@ -1,0 +1,15 @@
+{
+  "label": "code10-edit-nora",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 830 590",
+    "at 180",
+    "up 0",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=56500122\nTIMING action=0 event=56500223 started=56500224 finished=56500224 injected=true\nOK down 0 830 590 injected=true\nTIMING action=1 event=56500305 started=56500305 finished=56500305 injected=true\nOK up 0 injected=true\n",
+  "stderr": ""
+}

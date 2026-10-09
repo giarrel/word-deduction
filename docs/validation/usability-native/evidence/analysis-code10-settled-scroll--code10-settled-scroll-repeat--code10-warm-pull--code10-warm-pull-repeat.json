@@ -1,0 +1,818 @@
+[
+  {
+    "label": "code10-settled-scroll",
+    "kind": "scroll",
+    "versionCode": 10,
+    "geometry": {
+      "x": 500,
+      "startY": 800,
+      "endY": 570
+    },
+    "presentedFrames": 239,
+    "actualWholeWindow": {
+      "count": 238,
+      "medianMs": 32.894499998539686,
+      "p95Ms": 80.49610000103712,
+      "percentileMethod": "nearest-rank",
+      "maxMs": 135.91019999980927,
+      "over25ms": 181,
+      "over50ms": 43,
+      "over100ms": 3
+    },
+    "completeCycles": 4,
+    "cycles": [
+      {
+        "downMs": 60758471,
+        "upMs": 60759495,
+        "complete": true,
+        "dragFrames": {
+          "count": 18,
+          "medianMs": 46.82414999976754,
+          "p95Ms": 135.91019999980927,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 135.91019999980927,
+          "over25ms": 17,
+          "over50ms": 8,
+          "over100ms": 2
+        },
+        "returnFramesFirst300ms": {
+          "count": 9,
+          "medianMs": 30.98759999871254,
+          "p95Ms": 48.151699997484684,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 48.151699997484684,
+          "over25ms": 6,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 29,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 34,
+          "over25ms": 8,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 4.0,
+          "p95Ms": 24,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 29,
+          "over25ms": 3,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60759985,
+        "upMs": 60760999,
+        "complete": true,
+        "dragFrames": {
+          "count": 18,
+          "medianMs": 52.716749999672174,
+          "p95Ms": 81.81199999898672,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 81.81199999898672,
+          "over25ms": 17,
+          "over50ms": 10,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 8,
+          "medianMs": 31.002949997782707,
+          "p95Ms": 46.51070000231266,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 46.51070000231266,
+          "over25ms": 5,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 36,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 39,
+          "over25ms": 8,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 6.0,
+          "p95Ms": 23,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 26,
+          "over25ms": 2,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60761471,
+        "upMs": 60762515,
+        "complete": true,
+        "dragFrames": {
+          "count": 17,
+          "medianMs": 62.81490000337362,
+          "p95Ms": 94.69319999963045,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 94.69319999963045,
+          "over25ms": 16,
+          "over50ms": 12,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 8,
+          "medianMs": 31.836400002241135,
+          "p95Ms": 41.28269999474287,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 41.28269999474287,
+          "over25ms": 7,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 16,
+          "p95Ms": 35,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 53,
+          "over25ms": 9,
+          "over50ms": 1,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 5.0,
+          "p95Ms": 20,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 39,
+          "over25ms": 2,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60762978,
+        "upMs": 60764027,
+        "complete": true,
+        "dragFrames": {
+          "count": 20,
+          "medianMs": 45.48014999553561,
+          "p95Ms": 82.32039999961853,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 109.52470000088215,
+          "over25ms": 20,
+          "over50ms": 8,
+          "over100ms": 1
+        },
+        "returnFramesFirst300ms": {
+          "count": 8,
+          "medianMs": 32.30849999934435,
+          "p95Ms": 42.99269999563694,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 42.99269999563694,
+          "over25ms": 6,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 35,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 50,
+          "over25ms": 8,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 6.5,
+          "p95Ms": 23,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 36,
+          "over25ms": 3,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      }
+    ]
+  },
+  {
+    "label": "code10-settled-scroll-repeat",
+    "kind": "scroll",
+    "versionCode": 10,
+    "geometry": {
+      "x": 500,
+      "startY": 800,
+      "endY": 570
+    },
+    "presentedFrames": 238,
+    "actualWholeWindow": {
+      "count": 237,
+      "medianMs": 33.89029999822378,
+      "p95Ms": 79.63360000401735,
+      "percentileMethod": "nearest-rank",
+      "maxMs": 147.15590000152588,
+      "over25ms": 191,
+      "over50ms": 40,
+      "over100ms": 4
+    },
+    "completeCycles": 4,
+    "cycles": [
+      {
+        "downMs": 60768466,
+        "upMs": 60769491,
+        "complete": true,
+        "dragFrames": {
+          "count": 18,
+          "medianMs": 46.75085000321269,
+          "p95Ms": 101.78190000355244,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 101.78190000355244,
+          "over25ms": 18,
+          "over50ms": 8,
+          "over100ms": 1
+        },
+        "returnFramesFirst300ms": {
+          "count": 8,
+          "medianMs": 24.008549999445677,
+          "p95Ms": 44.09869999438524,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 44.09869999438524,
+          "over25ms": 4,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 29,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 54,
+          "over25ms": 6,
+          "over50ms": 1,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 5.0,
+          "p95Ms": 22,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 50,
+          "over25ms": 2,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60769970,
+        "upMs": 60770980,
+        "complete": true,
+        "dragFrames": {
+          "count": 19,
+          "medianMs": 39.33510000258684,
+          "p95Ms": 130.3728999942541,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 130.3728999942541,
+          "over25ms": 18,
+          "over50ms": 5,
+          "over100ms": 2
+        },
+        "returnFramesFirst300ms": {
+          "count": 8,
+          "medianMs": 30.117850001901388,
+          "p95Ms": 34.03090000152588,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 34.03090000152588,
+          "over25ms": 6,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 16,
+          "p95Ms": 28,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 39,
+          "over25ms": 3,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 3.0,
+          "p95Ms": 17,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 40,
+          "over25ms": 2,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60771466,
+        "upMs": 60772504,
+        "complete": true,
+        "dragFrames": {
+          "count": 18,
+          "medianMs": 48.262699998915195,
+          "p95Ms": 97.6055000051856,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 97.6055000051856,
+          "over25ms": 18,
+          "over50ms": 8,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 6,
+          "medianMs": 33.943149998784065,
+          "p95Ms": 46.84499999880791,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 46.84499999880791,
+          "over25ms": 6,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 30,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 35,
+          "over25ms": 6,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 4.5,
+          "p95Ms": 24,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 38,
+          "over25ms": 3,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60772966,
+        "upMs": 60773995,
+        "complete": true,
+        "dragFrames": {
+          "count": 20,
+          "medianMs": 46.650600001215935,
+          "p95Ms": 76.18400000035763,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 79.63360000401735,
+          "over25ms": 19,
+          "over50ms": 9,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 9,
+          "medianMs": 29.565200001001358,
+          "p95Ms": 50.17220000177622,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 50.17220000177622,
+          "over25ms": 6,
+          "over50ms": 1,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 16,
+          "p95Ms": 29,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 38,
+          "over25ms": 5,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 4.0,
+          "p95Ms": 20,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 32,
+          "over25ms": 2,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      }
+    ]
+  },
+  {
+    "label": "code10-warm-pull",
+    "kind": "pull",
+    "versionCode": 10,
+    "geometry": {
+      "x": 500,
+      "startY": 1160,
+      "endY": 880
+    },
+    "presentedFrames": 257,
+    "actualWholeWindow": {
+      "count": 256,
+      "medianMs": 31.70795000344515,
+      "p95Ms": 67.77029999345541,
+      "percentileMethod": "nearest-rank",
+      "maxMs": 200.32670000195503,
+      "over25ms": 172,
+      "over50ms": 38,
+      "over100ms": 2
+    },
+    "completeCycles": 4,
+    "cycles": [
+      {
+        "downMs": 60853719,
+        "upMs": 60854858,
+        "complete": true,
+        "dragFrames": {
+          "count": 21,
+          "medianMs": 39.98499999940395,
+          "p95Ms": 160.3369999974966,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 200.32670000195503,
+          "over25ms": 18,
+          "over50ms": 8,
+          "over100ms": 2
+        },
+        "returnFramesFirst300ms": {
+          "count": 7,
+          "medianMs": 35.06969999521971,
+          "p95Ms": 84.51579999923706,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 84.51579999923706,
+          "over25ms": 5,
+          "over50ms": 1,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 25,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 33,
+          "over25ms": 2,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 2.0,
+          "p95Ms": 13,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 21,
+          "over25ms": 0,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60855210,
+        "upMs": 60856359,
+        "complete": true,
+        "dragFrames": {
+          "count": 27,
+          "medianMs": 38.43129999935627,
+          "p95Ms": 68.05420000106096,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 79.67059999704361,
+          "over25ms": 23,
+          "over50ms": 11,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 10,
+          "medianMs": 18.51374999806285,
+          "p95Ms": 46.75789999961853,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 46.75789999961853,
+          "over25ms": 4,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 16,
+          "p95Ms": 26,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 29,
+          "over25ms": 3,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 2.5,
+          "p95Ms": 12,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 23,
+          "over25ms": 0,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60856725,
+        "upMs": 60857861,
+        "complete": true,
+        "dragFrames": {
+          "count": 24,
+          "medianMs": 39.48154999688268,
+          "p95Ms": 89.94640000164509,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 96.28880000114441,
+          "over25ms": 20,
+          "over50ms": 9,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 10,
+          "medianMs": 27.275950003415346,
+          "p95Ms": 49.805500000715256,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 49.805500000715256,
+          "over25ms": 6,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 31,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 56,
+          "over25ms": 7,
+          "over50ms": 1,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 4.0,
+          "p95Ms": 22,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 55,
+          "over25ms": 2,
+          "over50ms": 1,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60858214,
+        "upMs": 60859359,
+        "complete": true,
+        "dragFrames": {
+          "count": 27,
+          "medianMs": 34.81750000268221,
+          "p95Ms": 82.37709999829531,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 86.39970000088215,
+          "over25ms": 26,
+          "over50ms": 6,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 12,
+          "medianMs": 19.397050004452467,
+          "p95Ms": 35.07469999790192,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 35.07469999790192,
+          "over25ms": 5,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 24,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 29,
+          "over25ms": 1,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 3.0,
+          "p95Ms": 14,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 22,
+          "over25ms": 0,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      }
+    ]
+  },
+  {
+    "label": "code10-warm-pull-repeat",
+    "kind": "pull",
+    "versionCode": 10,
+    "geometry": {
+      "x": 500,
+      "startY": 1160,
+      "endY": 880
+    },
+    "presentedFrames": 251,
+    "actualWholeWindow": {
+      "count": 250,
+      "medianMs": 32.66330000013113,
+      "p95Ms": 73.39429999887943,
+      "percentileMethod": "nearest-rank",
+      "maxMs": 148.21010000258684,
+      "over25ms": 179,
+      "over50ms": 37,
+      "over100ms": 1
+    },
+    "completeCycles": 4,
+    "cycles": [
+      {
+        "downMs": 60863553,
+        "upMs": 60864699,
+        "complete": true,
+        "dragFrames": {
+          "count": 26,
+          "medianMs": 37.11989999935031,
+          "p95Ms": 73.39429999887943,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 148.21010000258684,
+          "over25ms": 21,
+          "over50ms": 6,
+          "over100ms": 1
+        },
+        "returnFramesFirst300ms": {
+          "count": 8,
+          "medianMs": 37.44864999875426,
+          "p95Ms": 43.32609999924898,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 43.32609999924898,
+          "over25ms": 7,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 24,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 25,
+          "over25ms": 0,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 2.0,
+          "p95Ms": 17,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 20,
+          "over25ms": 0,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60865065,
+        "upMs": 60866199,
+        "complete": true,
+        "dragFrames": {
+          "count": 25,
+          "medianMs": 35.822400003671646,
+          "p95Ms": 85.03919999301434,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 86.57140000164509,
+          "over25ms": 21,
+          "over50ms": 5,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 10,
+          "medianMs": 27.40719999745488,
+          "p95Ms": 50.40070000290871,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 50.40070000290871,
+          "over25ms": 6,
+          "over50ms": 1,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 16,
+          "p95Ms": 35,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 36,
+          "over25ms": 6,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 5.0,
+          "p95Ms": 20,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 27,
+          "over25ms": 2,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60866562,
+        "upMs": 60867699,
+        "complete": true,
+        "dragFrames": {
+          "count": 21,
+          "medianMs": 49.501400001347065,
+          "p95Ms": 85.8636000007391,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 87.72640000283718,
+          "over25ms": 20,
+          "over50ms": 10,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 10,
+          "medianMs": 28.022049997001886,
+          "p95Ms": 37.22240000218153,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 37.22240000218153,
+          "over25ms": 5,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 16,
+          "p95Ms": 36,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 54,
+          "over25ms": 6,
+          "over50ms": 1,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 3.5,
+          "p95Ms": 18,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 32,
+          "over25ms": 1,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      },
+      {
+        "downMs": 60868059,
+        "upMs": 60869205,
+        "complete": true,
+        "dragFrames": {
+          "count": 21,
+          "medianMs": 52.3222000002861,
+          "p95Ms": 81.75389999896288,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 82.08989999443293,
+          "over25ms": 18,
+          "over50ms": 11,
+          "over100ms": 0
+        },
+        "returnFramesFirst300ms": {
+          "count": 8,
+          "medianMs": 34.29800000041723,
+          "p95Ms": 52.49139999598265,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 52.49139999598265,
+          "over25ms": 7,
+          "over50ms": 1,
+          "over100ms": 0
+        },
+        "actualMoveEventGap": {
+          "count": 59,
+          "medianMs": 17,
+          "p95Ms": 28,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 31,
+          "over25ms": 5,
+          "over50ms": 0,
+          "over100ms": 0
+        },
+        "injectionCallMs": {
+          "count": 62,
+          "medianMs": 3.0,
+          "p95Ms": 11,
+          "percentileMethod": "nearest-rank",
+          "maxMs": 28,
+          "over25ms": 1,
+          "over50ms": 0,
+          "over100ms": 0
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "mainDocuments": [
+    {
+      "file": "README.md",
+      "existingLocalLinks": 24
+    },
+    {
+      "file": "docs/development/usability-implementation.md",
+      "existingLocalLinks": 6
+    },
+    {
+      "file": "docs/validation/usability-final-merge/report.md",
+      "existingLocalLinks": 20
+    },
+    {
+      "file": "docs/validation/usability-native/acceptance-matrix.md",
+      "existingLocalLinks": 20
+    },
+    {
+      "file": "docs/validation/usability-native/code11-native-audit.md",
+      "existingLocalLinks": 37
+    },
+    {
+      "file": "docs/validation/usability-native/motion-comparison-report.md",
+      "existingLocalLinks": 60
+    }
+  ],
+  "brokenLocalLinks": [],
+  "uniqueStoryRows": 32,
+  "finalPackageHashesMatch": true,
+  "worktreeRemoved": true,
+  "testsOrBuildsRun": false
+}

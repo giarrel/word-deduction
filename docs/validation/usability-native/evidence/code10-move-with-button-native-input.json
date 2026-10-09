@@ -1,0 +1,19 @@
+{
+  "label": "code10-move-with-button",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 830 590",
+    "at 180",
+    "up 0",
+    "at 1800",
+    "down 0 740 620",
+    "at 1880",
+    "up 0",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=56702983\nTIMING action=0 event=56703088 started=56703091 finished=56703099 injected=true\nOK down 0 830 590 injected=true\nTIMING action=1 event=56703165 started=56703165 finished=56703166 injected=true\nOK up 0 injected=true\nTIMING action=0 event=56704794 started=56704794 finished=56704797 injected=true\nOK down 0 740 620 injected=true\nTIMING action=1 event=56704864 started=56704864 finished=56704865 injected=true\nOK up 0 injected=true\n",
+  "stderr": ""
+}

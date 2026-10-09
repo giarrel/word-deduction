@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T09:13:42.412309+00:00",
+  "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\ux-motion-investigation\\card-start-state",
+  "label": "code10-motion-card",
+  "versionCode": 10,
+  "fixtureVersions": {
+    "session.json": 5,
+    "session.previous.json": 5
+  },
+  "before": {
+    "session.json": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+    "session.previous.json": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467"
+  },
+  "expected": {
+    "session.json": "013b7d9ab6dcde354fca2d63d4e7cc0a95aa5e97903c3b305ff50dd08c856993",
+    "session.previous.json": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b"
+  },
+  "metadata": {
+    "session.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    },
+    "session.previous.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    }
+  },
+  "pass": true,
+  "provenance": "Explicit fixture replay, not Android-played match"
+}

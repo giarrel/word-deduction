@@ -1,0 +1,50 @@
+{
+  "verifiedAtUtc": "2026-10-09T09:42:23.331115+00:00",
+  "integrationBefore": "3d0f098859277705a19c930ba520ec9fd04dda15",
+  "handoff": "d4b1d2cbaf01e11cfb627ec2b2b2e6a8610850bb",
+  "buildSource": "25d3e9f9d80609c178230cf838cecfda54ae0370",
+  "postBuildChanges": [
+    "docs/validation/usability-final/evidence/code11/aab-terminal-build-summary.json",
+    "docs/validation/usability-final/evidence/code11/aab-terminal-inspection.json",
+    "docs/validation/usability-final/evidence/code11/aab-terminal-managed-stripped.txt",
+    "docs/validation/usability-final/evidence/code11/apk-terminal-build-summary.json",
+    "docs/validation/usability-final/evidence/code11/apk-terminal-inspection.json",
+    "docs/validation/usability-final/evidence/code11/apk-terminal-managed-stripped.txt",
+    "docs/validation/usability-final/evidence/code11/editor-final-confirmation.json",
+    "docs/validation/usability-final/evidence/code11/prebuild-terminal-console.json",
+    "docs/validation/usability-final/evidence/code11/session-source-equivalence.json",
+    "docs/validation/usability-final/evidence/code11/terminal-source-equivalence.json",
+    "docs/validation/usability-final/raw-manifest.json",
+    "docs/validation/usability-final/report.md",
+    "docs/validation/usability-final/spec-code11-terminal-verification.md",
+    "docs/validation/usability-final/standards-code11-terminal-verification.md"
+  ],
+  "identicalBuildTrees": {
+    "game": "8742f6dfa97833b23a5a379701457af18e1d585a",
+    "content": "fae305a03886bbde4c514b9ab4606b56be478fdd",
+    "tools": "21f1083d7530e62dfffa558e971e0bf64b565884",
+    "tests": "bdd737637be4f6ec698937596b4fca650a6f7c15",
+    "third-party": "b68bf6ddd26fdf6f56ccbc69785b1fede2408a24"
+  },
+  "packages": [
+    {
+      "kind": "apk",
+      "path": "artifacts/releases/1.2.0-code11/WordDeduction-1.2.0-code11.apk",
+      "archivedOriginal": "artifacts/usability-final-preservation/25d3e9f9d806-20261009T093925Z/worktree/artifacts/android/25d3e9f9d806/20261009T091851857Z-apk/WordDeduction-local-release.apk",
+      "bytes": 37472202,
+      "sha256": "9c08b19ab2270b236cd2eec9a8d9bd2f67b7a9db93fc0ff3d5d5f2a5d5e8c9ad"
+    },
+    {
+      "kind": "aab",
+      "path": "artifacts/releases/1.2.0-code11/WordDeduction-1.2.0-code11.aab",
+      "archivedOriginal": "artifacts/usability-final-preservation/25d3e9f9d806-20261009T093925Z/worktree/artifacts/android/25d3e9f9d806/20261009T092518641Z-aab/WordDeduction-local-release.aab",
+      "bytes": 37829159,
+      "sha256": "9148cb972b7c6b256ad0838f084ec3bfe2693e3cfbd70bcd5885e4b6623d930e"
+    }
+  ],
+  "testsRerunDuringMerge": 0,
+  "nativeArchiveStatus": "Frozen and preserved: 1127 files, 117521959 bytes; all source/copy sizes and hashes reverified before cleanup",
+  "worktreeRemovalStatus": "Removed after explicit approval and fresh containment, reparse, clean/merged branch, Editor and preservation checks; branch retained",
+  "integrationMerge": "1d9fcece9bd1752d25db56e57d28b8e16a8f6082",
+  "postMergeBuildTreesVerified": true
+}

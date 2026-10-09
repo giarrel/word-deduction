@@ -1,0 +1,15 @@
+{
+  "action": "restore",
+  "original": {
+    "font": "1.0",
+    "motion": "null"
+  },
+  "requested": {
+    "font": "1.0",
+    "motion": "null"
+  },
+  "actual": {
+    "font": "1.0",
+    "motion": "null"
+  }
+}

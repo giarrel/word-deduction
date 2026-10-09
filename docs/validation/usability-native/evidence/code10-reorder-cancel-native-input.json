@@ -1,0 +1,23 @@
+{
+  "label": "code10-reorder-cancel",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 150 590",
+    "at 250",
+    "move 0 150 820",
+    "at 400",
+    "cancel",
+    "at 700",
+    "down 0 150 590",
+    "at 850",
+    "move 0 1045 820",
+    "at 1000",
+    "up 0",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=55996942\nTIMING action=0 event=55997050 started=55997051 finished=55997056 injected=true\nOK down 0 150 590 injected=true\nTIMING action=2 event=55997195 started=55997201 finished=55997203 injected=true\nOK move 0 150 820 injected=true\nTIMING action=3 event=55997343 started=55997343 finished=55997347 injected=true\nOK cancel injected=true\nTIMING action=0 event=55997654 started=55997654 finished=55997680 injected=true\nOK down 0 150 590 injected=true\nTIMING action=2 event=55997797 started=55997797 finished=55997801 injected=true\nOK move 0 1045 820 injected=true\nTIMING action=1 event=55997946 started=55997946 finished=55997952 injected=true\nOK up 0 injected=true\n",
+  "stderr": ""
+}

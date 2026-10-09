@@ -1,0 +1,19 @@
+{
+  "label": "code10-switch-en-quick",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 0 930 240",
+    "at 180",
+    "up 0",
+    "at 1500",
+    "down 0 230 1260",
+    "at 1580",
+    "up 0",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=57004898\nTIMING action=0 event=57005001 started=57005001 finished=57005018 injected=true\nOK down 0 930 240 injected=true\nTIMING action=1 event=57005080 started=57005080 finished=57005083 injected=true\nOK up 0 injected=true\nTIMING action=0 event=57006405 started=57006405 finished=57006423 injected=true\nOK down 0 230 1260 injected=true\nTIMING action=1 event=57006483 started=57006483 finished=57006487 injected=true\nOK up 0 injected=true\n",
+  "stderr": ""
+}

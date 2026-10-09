@@ -1,0 +1,15 @@
+{
+  "container": "Gespeicherte Personen. Für weitere scrollen.",
+  "target": "Alexandria-Maximilian-21 bearbeiten",
+  "steps": [
+    {
+      "name": "code10-large-de-legacy-first-control-00",
+      "targetVisible": false
+    },
+    {
+      "name": "code10-large-de-legacy-first-control-01",
+      "targetVisible": true
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T08:32:18.122238+00:00",
+  "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\kings-native\\session-fixtures\\German-GoodKing",
+  "label": "code10-large-german-goodking",
+  "versionCode": 10,
+  "fixtureVersions": {
+    "session.json": 5,
+    "session.previous.json": 5
+  },
+  "before": {
+    "session.json": "430ed95a32659c09b4a6ae091c5a2f81a11ac4df994c02b7e118ad703fd4974d",
+    "session.previous.json": "568c4ee3631f378225f9838419373a7458bfcf30f34095e1c0034bed75034d22"
+  },
+  "expected": {
+    "session.json": "72fce8b61364814443bfba83690c922cb89236e695dc99c379101866be16d25e",
+    "session.previous.json": "1f390bc1f5503b92a4f37eb4efae10b1b0e2470f11fa03ff1d4d87fee44f5d45"
+  },
+  "metadata": {
+    "session.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    },
+    "session.previous.json": {
+      "stat": "10215:10215:600",
+      "context": "u:object_r:app_data_file:s0:c215,c256,c512,c768"
+    }
+  },
+  "pass": true,
+  "provenance": "Explicit fixture replay, not Android-played match"
+}

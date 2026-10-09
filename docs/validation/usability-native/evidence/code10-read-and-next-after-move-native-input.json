@@ -1,0 +1,21 @@
+{
+  "label": "code10-read-and-next-after-move",
+  "versionCode": 10,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 7 500 1160",
+    "at 300",
+    "move 7 500 880",
+    "at 1200",
+    "up 7",
+    "at 1900",
+    "down 7 500 1715",
+    "at 2000",
+    "up 7",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=57408704\nTIMING action=0 event=57408826 started=57408826 finished=57408839 injected=true\nOK down 7 500 1160 injected=true\nTIMING action=2 event=57409027 started=57409027 finished=57409043 injected=true\nOK move 7 500 880 injected=true\nTIMING action=1 event=57409909 started=57409909 finished=57409922 injected=true\nOK up 7 injected=true\nTIMING action=0 event=57410607 started=57410607 finished=57410620 injected=true\nOK down 7 500 1715 injected=true\nTIMING action=1 event=57410707 started=57410718 finished=57410720 injected=true\nOK up 7 injected=true\n",
+  "stderr": ""
+}

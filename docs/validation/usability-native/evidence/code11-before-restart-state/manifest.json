@@ -1,0 +1,108 @@
+{
+  "label": "code11-before-restart",
+  "files": {
+    "session.json": "f84db2424823f9f2f649b52c639f63a9aa3a3e21f078e04f1ed51a51676195c2",
+    "session.previous.json": "6dd45fb4d0ee0fc5b1e4e38c5d12b2a6e82269ff3b887c743476a967ec0787da"
+  },
+  "match": {
+    "Id": "a7b639fb17d2451298f0b69f3f52e801",
+    "Mode": 2,
+    "Language": 1,
+    "Participants": [
+      {
+        "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+        "DisplayName": "Luca",
+        "Role": 1,
+        "Eliminated": false
+      },
+      {
+        "Id": "77ab50d35ba744a2bb7a3d9916277069",
+        "DisplayName": "Emil",
+        "Role": 2,
+        "Eliminated": false
+      },
+      {
+        "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+        "DisplayName": "Nora",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "8a9fb50d16894284ab051d0924ea92b3",
+        "DisplayName": "Mila",
+        "Role": 0,
+        "Eliminated": false
+      },
+      {
+        "Id": "ac5d584c805b49889e54e0db0a07e654",
+        "DisplayName": "Jonas2",
+        "Role": 0,
+        "Eliminated": false
+      }
+    ],
+    "PairId": "school-office-015",
+    "CivilianWord": "Kreide",
+    "UndercoverWord": "Schwamm",
+    "StartingIndex": 1,
+    "Phase": 0,
+    "Handoff": 1,
+    "Runoff": false,
+    "Suspect": null,
+    "Outcome": null,
+    "Round": 1,
+    "GoodKingId": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+    "LastChanceTarget": null
+  },
+  "players": [
+    {
+      "Id": "7e4b5aa0772a4c35b18bdb7167affffd",
+      "Name": "Luca",
+      "Active": true,
+      "Number": 2,
+      "Distinguished": false
+    },
+    {
+      "Id": "77ab50d35ba744a2bb7a3d9916277069",
+      "Name": "Emil",
+      "Active": true,
+      "Number": 3,
+      "Distinguished": false
+    },
+    {
+      "Id": "b2a0e72ba96d426c9da9ac02dbf7b4be",
+      "Name": "Nora",
+      "Active": true,
+      "Number": 1,
+      "Distinguished": false
+    },
+    {
+      "Id": "8a9fb50d16894284ab051d0924ea92b3",
+      "Name": "Mila",
+      "Active": true,
+      "Number": 4,
+      "Distinguished": false
+    },
+    {
+      "Id": "ac5d584c805b49889e54e0db0a07e654",
+      "Name": "Jonas2",
+      "Active": true,
+      "Number": 5,
+      "Distinguished": false
+    }
+  ],
+  "used_pairs": [
+    "tools-materials-023",
+    "kitchen-011",
+    "clothing-021",
+    "technology-014",
+    "mammals-023",
+    "places-004",
+    "garden-nature-025",
+    "meals-023",
+    "school-office-007",
+    "tools-materials-018",
+    "fruit-vegetables-025",
+    "home-003",
+    "school-office-015"
+  ]
+}

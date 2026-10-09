@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-09T09:26:27.974026+00:00",
+  "fromVersionCode": 10,
+  "toVersionCode": 11,
+  "apk": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\artifacts\\android\\25d3e9f9d806\\20261009T091851857Z-apk\\WordDeduction-local-release.apk",
+  "sha256": "9c08b19ab2270b236cd2eec9a8d9bd2f67b7a9db93fc0ff3d5d5f2a5d5e8c9ad",
+  "pass": true,
+  "provenance": "Actual adb install -r; original code8 saves preserved; no fixture replay",
+  "savedGenerations": {
+    "session.json": "f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b",
+    "session.previous.json": "d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467"
+  }
+}

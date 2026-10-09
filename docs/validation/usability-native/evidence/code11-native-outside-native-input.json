@@ -1,0 +1,19 @@
+{
+  "label": "code11-native-outside",
+  "versionCode": 11,
+  "commands": [
+    "begin",
+    "at 100",
+    "down 7 150 590",
+    "at 350",
+    "move 7 150 820",
+    "at 700",
+    "move 7 1045 820",
+    "at 900",
+    "up 7",
+    "quit"
+  ],
+  "exitCode": 0,
+  "stdout": "READY source=TOUCHSCREEN tool=FINGER\nBEGIN uptime=61785604\nTIMING action=0 event=61785705 started=61785707 finished=61785714 injected=true\nOK down 7 150 590 injected=true\nTIMING action=2 event=61785955 started=61785955 finished=61785957 injected=true\nOK move 7 150 820 injected=true\nTIMING action=2 event=61786305 started=61786306 finished=61786313 injected=true\nOK move 7 1045 820 injected=true\nTIMING action=1 event=61786505 started=61786505 finished=61786506 injected=true\nOK up 7 injected=true\n",
+  "stderr": ""
+}

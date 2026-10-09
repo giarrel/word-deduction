@@ -1,0 +1,5 @@
+{
+  "ProcessId": 235236,
+  "Name": "dotnet.exe",
+  "CommandLine": "\"dotnet\" exec \"C:\\Users\\lucac\\AppData\\Local\\Unity\\Editors\\6000.3.25f1\\Editor\\Data\\DotNetSdkRoslyn\\VBCSCompiler.dll\" \"-pipename:eTJTLlWwW3zf7ZfEMvqPO_lRHsthwmJVEcd+ZtsX9II\""
+}

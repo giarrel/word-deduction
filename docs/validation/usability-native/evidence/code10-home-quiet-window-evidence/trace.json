@@ -1,0 +1,74 @@
+{
+  "versionCode": 10,
+  "trace": [
+    {
+      "command": "down 7 500 1160",
+      "reply": "OK down 7 500 1160 injected=true"
+    },
+    {
+      "command": "move 7 500 880",
+      "reply": "OK move 7 500 880 injected=true"
+    },
+    {
+      "stage": "before",
+      "hostMonotonic": 1345305.265,
+      "focused": [
+        "mCurrentFocus=Window{1cb62b4 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}",
+        "mFocusedApp=ActivityRecord{14696249 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t60}"
+      ],
+      "resumed": [
+        "topResumedActivity=ActivityRecord{14696249 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t60}"
+      ]
+    },
+    {
+      "stage": "home-0",
+      "hostMonotonic": 1345305.953,
+      "focused": [
+        "mCurrentFocus=null",
+        "mFocusedApp=ActivityRecord{103579883 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}"
+      ],
+      "resumed": [
+        "topResumedActivity=ActivityRecord{103579883 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}"
+      ]
+    },
+    {
+      "stage": "home-1",
+      "hostMonotonic": 1345306.734,
+      "focused": [
+        "mCurrentFocus=Window{b50e675 u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}",
+        "mFocusedApp=ActivityRecord{103579883 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}"
+      ],
+      "resumed": [
+        "topResumedActivity=ActivityRecord{103579883 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}"
+      ]
+    },
+    {
+      "stage": "home-settled",
+      "hostMonotonic": 1345309.125,
+      "focused": [
+        "mCurrentFocus=Window{b50e675 u0 com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}",
+        "mFocusedApp=ActivityRecord{103579883 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}"
+      ],
+      "resumed": [
+        "topResumedActivity=ActivityRecord{103579883 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t2}"
+      ]
+    },
+    {
+      "command": "up 7",
+      "reply": "OK up 7 injected=true"
+    },
+    {
+      "stage": "resumed",
+      "hostMonotonic": 1345312.796,
+      "focused": [
+        "mCurrentFocus=Window{1cb62b4 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity}",
+        "mFocusedApp=ActivityRecord{14696249 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t60}"
+      ],
+      "resumed": [
+        "topResumedActivity=ActivityRecord{14696249 u0 com.giarrel.worddeduction/com.unity3d.player.UnityPlayerGameActivity t60}"
+      ]
+    }
+  ],
+  "tail": "",
+  "exitCode": 0
+}

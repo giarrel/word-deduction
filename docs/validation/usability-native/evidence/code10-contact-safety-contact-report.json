@@ -1,0 +1,52 @@
+{
+  "versionCode": 10,
+  "trace": [
+    {
+      "command": "down 7 500 1160",
+      "reply": "OK down 7 500 1160 injected=true"
+    },
+    {
+      "command": "move 7 500 880",
+      "reply": "OK move 7 500 880 injected=true"
+    },
+    {
+      "command": "down 9 700 1530",
+      "reply": "OK down 9 700 1530 injected=true"
+    },
+    {
+      "command": "up 7",
+      "reply": "OK up 7 injected=true"
+    },
+    {
+      "command": "up 9",
+      "reply": "OK up 9 injected=true"
+    },
+    {
+      "command": "down 11 500 1160",
+      "reply": "OK down 11 500 1160 injected=true"
+    },
+    {
+      "command": "move 11 500 880",
+      "reply": "OK move 11 500 880 injected=true"
+    },
+    {
+      "command": "cancel",
+      "reply": "OK cancel injected=true"
+    },
+    {
+      "command": "down 12 500 1160",
+      "reply": "OK down 12 500 1160 injected=true"
+    },
+    {
+      "command": "move 12 500 880",
+      "reply": "OK move 12 500 880 injected=true"
+    },
+    {
+      "command": "up 12",
+      "reply": "OK up 12 injected=true"
+    }
+  ],
+  "tail": "",
+  "exitCode": 0,
+  "note": "Screenshots require visual inspection; not a frame-time measurement."
+}
