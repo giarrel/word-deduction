@@ -11,7 +11,7 @@ Prepared 7 October 2026 for the exact nondevelopment package identified in the r
 | Encryption in transit | No off-device app transmission is implemented. Do not claim an encrypted service or tick a question that is inapplicable to the no-collection path. |
 | Deleting local data | Android Clear storage or uninstall removes app-local data. Removing a visible name can leave it in the previous save generation or a retained damaged copy. |
 | SDKs | Unity's core runtime, UI/Input/accessibility, AndroidX appcompat/core/emoji/lifecycle, GameActivity/frame pacing and Newtonsoft.Json support local execution. Pipeline runtime/server/test assemblies are excluded. Analytics startup and device-stat submission are disabled; networking permission is absent. Editor-only tooling telemetry is not app telemetry. |
-| App access for review | Unrestricted; no credentials. Add 3 names and choose Quick, or add 5 and choose Classic with Mr. White. All content ships locally. |
+| App access for review | Unrestricted; no credentials. Add 3 names and choose Quick, or 4 for Classic; either mode allows Mr. White without Undercover at its minimum size. Kings requires 5 people. All content ships locally. |
 | Intended category | Game → Word is the proposed category. Store tags and age-target selection require the owner's final audience decision. |
 | Content rating basis | Authored everyday word pairs and social bluffing; no ads, real-money gambling, purchases, chat, online user content or external web browsing. The owner completes the actual IARC questionnaire; no age rating is invented here. |
 

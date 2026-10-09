@@ -12,14 +12,17 @@ Word Deduction ist ein Wort- und Bluffspiel für eine Gruppe am selben Ort. Name
 
 DREI MODI FÜR EURE RUNDE
 
-• Schnell: ab 3 Personen. Eine Hinweisrunde, eine Abstimmung und direkt das Ergebnis. Für kurze Spiele und wechselnde Gruppen.
-• Klassisch: ab 4 Personen. Findet Verdächtige, deckt ausgeschiedene Rollen auf und spielt mit den Verbleibenden weiter. Ab 5 Personen kann Mr. White ohne eigenes Wort mitbluffen und nach dem Ausscheiden das Mehrheitswort erraten.
-• Könige: ab 5 Personen. Schützt euren geheimen Anführer und findet den gegnerischen König. Normale Mitspieler kennen ihr Wort und ihren Anführer, aber nicht ihre Seite. Mr. White ist der böse König. Wird er erwischt, hat er eine letzte Chance: das gute Wort erraten oder den guten König benennen. Die Anzahl seiner Undercover-Mitspieler lässt sich innerhalb der Gruppengrenzen einstellen.
+• Schnell: ab 3 Personen. Nach einer Hinweisrunde wählt und bestätigt ihr Verdächtige nacheinander. Findet alle Bösen; erwischt ihr einen Bürger, gewinnen die Bösen. Wie lange ihr dazwischen diskutiert, entscheidet ihr selbst.
+• Klassisch: ab 4 Personen. Findet Verdächtige, deckt ausgeschiedene Rollen auf und spielt mit den Verbleibenden neue Hinweisrunden.
+• Könige: ab 5 Personen. Schützt euren geheimen Anführer und findet den gegnerischen König. Normale Mitspieler kennen ihr Wort und ihren Anführer, aber nicht ihre Seite. Die App schlägt für jede Hinweisrunde eine noch beteiligte Startperson vor. Mr. White ist der böse König. Wird er erwischt, hat er eine letzte Chance: das gute Wort erraten oder den guten König benennen. Die Anzahl seiner Undercover-Mitspieler lässt sich innerhalb der Gruppengrenzen einstellen.
+
+In Schnell und Klassisch bestimmt ihr die Anzahl von Undercover und Mr. White, auch ohne Undercover. Jeder erwischte Mr. White darf sofort einmal das Bürgerwort raten. Ein richtiger Tipp gewinnt für alle Mr. Whites gemeinsam. Die Gruppe bewertet den gesprochenen Tipp; das Wort bleibt bis zum Ergebnis geheim.
 
 EUER HANDY HÄLT EUCH DEN RÜCKEN FREI
 
-• Bis zu 20 aktive Personen und 40 gespeicherte Namen.
-• Namen bleiben gespeichert. Personen einfach umbenennen, pausieren, wieder mitspielen lassen oder entfernen. Versehentliches Entfernen lässt sich rückgängig machen.
+• Bis zu 20 Personen spielen mit.
+• Namen und Reihenfolge bleiben gespeichert. Personen über Bearbeiten umbenennen oder entfernen, neue Namen hinzufügen und die Reihenfolge am Griff ändern. Versehentliches Entfernen lässt sich rückgängig machen.
+• Rollenwünsche werden pro Modus gemerkt und bei kleineren Gruppen vorübergehend angepasst. Auto stellt die vorgeschlagenen Zahlen wieder her.
 • Karte hochziehen oder das Aufdecken-Feld halten, Wort lesen, loslassen: sofort wieder verdeckt.
 • Hinweise und Abstimmungen finden in eurer Gruppe statt. Das Handy führt durch den Ablauf und hält eure Entscheidung fest.
 • Am Ende seht ihr Wörter, Rollen und den Grund für den Sieg. Die nächste Partie startet mit einem Tippen.
@@ -31,6 +34,6 @@ VIELE WÖRTER, DIREKT DABEI
 
 Alle spielen an einem Handy. Ein Online-Modus ist nicht enthalten. Die Gruppe spricht, diskutiert und stimmt selbst ab; die App zählt keine einzelnen Stimmen mit.
 
-## Versionshinweise 1.1.0
+## Versionshinweise 1.3.0
 
-Neu: Könige, der dritte Modus mit geheimen Anführern und einer letzten Chance für Mr. White. Eure gespeicherte Gruppe, laufende Partien und Wortauswahl bleiben beim Update erhalten. Weiterhin offline auf Deutsch und Englisch mit 520 Wortpaaren spielen.
+Undercover und Mr. White sind jetzt in Schnell und Klassisch frei innerhalb der Gruppengrenzen einstellbar. Im Schnellmodus müsst ihr alle Bösen nacheinander finden. Könige zeigt eine Startperson pro Hinweisrunde. Eure Gruppe, Rollenwünsche und laufenden Partien bleiben gespeichert. Weiterhin offline auf Deutsch und Englisch mit 520 Wortpaaren spielen.
