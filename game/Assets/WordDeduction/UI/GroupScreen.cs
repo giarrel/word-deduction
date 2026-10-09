@@ -83,8 +83,8 @@ namespace WordDeduction.UI
         }
         void CreateMatchSurface() { matchSurface = new MatchSurface(session,root.Q<VisualElement>("safeRoot"),Render,RefreshPresentation); }
         void OnDisable() { CancelReorders(); information = null; textPreferences?.Dispose(); textPreferences = null; accessibility?.Dispose(); accessibility = null; mobileBack?.Dispose(); mobileBack = null; matchSurface?.Dispose(); matchSurface = null; root = null; typography?.Dispose(); typography = null; }
-        void OnApplicationFocus(bool focus) { if (!focus) { CancelReorders(); matchSurface?.Pause(true); } else MobilePrivacy.RefreshMotion(); }
-        void OnApplicationPause(bool paused) { if (paused) { CancelReorders(); matchSurface?.Pause(true); } else MobilePrivacy.RefreshMotion(); }
+        void OnApplicationFocus(bool focus) { if (!focus) { CancelReorders(); matchSurface?.Pause(true); } else { MobilePrivacy.RefreshMotion(); MobileViewport.ConfigureFrameRate(); } }
+        void OnApplicationPause(bool paused) { if (paused) { CancelReorders(); matchSurface?.Pause(true); } else { MobilePrivacy.RefreshMotion(); MobileViewport.ConfigureFrameRate(); } }
         void Update()
         {
             if (root == null) return;
@@ -298,7 +298,7 @@ namespace WordDeduction.UI
                     var snapshot = session.View.Players;
                     var active = snapshot.Where(p => p.Active).Select(p => p.Id).ToArray();
                     var expected = snapshot.Select(p => p.Id).ToArray();
-                    var reorder = new GroupReorder(root.Q<ScrollView>("players"),row,active,index => MovePlayer(player.Id,index,expected));
+                    var reorder = new GroupReorder(root.Q<ScrollView>("players"),row,active,index => MovePlayer(player.Id,index,expected),pointer => matchSurface?.EndCapturedContact(pointer));
                     reorders.Add(reorder); handle.AddManipulator(reorder);
                 }
                 var initial = new Label(NameText.FirstElement(player.Name).ToUpperInvariant()); initial.AddToClassList("player-initial"); row.Add(initial);

@@ -94,6 +94,9 @@ namespace WordDeduction.UI
             if (suppressedContacts.Remove(e.pointerId)) { e.StopImmediatePropagation(); return; }
         }
         void ContactCancel(PointerCancelEvent e) { contacts.Remove(e.pointerId); suppressedContacts.Remove(e.pointerId); }
+        // A captured group gesture bypasses root propagation when it ends.
+        // End only that contact; other held fingers must still block reveal.
+        public void EndCapturedContact(int pointerId) { contacts.Remove(pointerId); suppressedContacts.Remove(pointerId); }
         public void Pause(bool interrupted = false)
         {
             card?.Hide(true);

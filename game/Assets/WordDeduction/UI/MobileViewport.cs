@@ -8,6 +8,7 @@ namespace WordDeduction.UI
         public static void Configure(PanelSettings panel)
         {
 #if UNITY_ANDROID && !UNITY_EDITOR
+            ConfigureFrameRate();
             using (var unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
             using (var activity = unity.GetStatic<AndroidJavaObject>("currentActivity"))
             using (var resources = activity.Call<AndroidJavaObject>("getResources"))
@@ -17,6 +18,15 @@ namespace WordDeduction.UI
                 panel.scaleMode = PanelScaleMode.ConstantPixelSize;
                 panel.scale = metrics.Get<float>("density");
             }
+#endif
+        }
+        public static void ConfigureFrameRate()
+        {
+#if UNITY_ANDROID && !UNITY_EDITOR
+            // Android otherwise defaults to 30 fps, regardless of vSyncCount.
+            // Follow the current display so 90/120 Hz devices remain compatible.
+            int refreshRate = (int)Math.Round(Screen.currentResolution.refreshRateRatio.value);
+            Application.targetFrameRate = refreshRate > 0 ? refreshRate : 60;
 #endif
         }
         public static float KeyboardHeight()

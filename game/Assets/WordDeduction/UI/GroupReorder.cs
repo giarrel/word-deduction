@@ -11,15 +11,15 @@ namespace WordDeduction.UI
         readonly ScrollView list;
         readonly VisualElement row;
         readonly string[] activeIds;
-        readonly Action<int> commit;
+        readonly Action<int> commit, endContact;
         int pointer = -1, destination;
         Vector2 start, position;
         float startScroll;
         bool moved;
         VisualElement candidate;
         IVisualElementScheduledItem scrolling;
-        public GroupReorder(ScrollView list, VisualElement row, string[] activeIds, Action<int> commit)
-        { this.list = list; this.row = row; this.activeIds = activeIds; this.commit = commit; }
+        public GroupReorder(ScrollView list, VisualElement row, string[] activeIds, Action<int> commit, Action<int> endContact)
+        { this.list = list; this.row = row; this.activeIds = activeIds; this.commit = commit; this.endContact = endContact; }
         protected override void RegisterCallbacksOnTarget()
         {
             target.RegisterCallback<PointerDownEvent>(Down);
@@ -82,10 +82,11 @@ namespace WordDeduction.UI
             if (e.pointerId != pointer) return;
             position = e.position; Preview();
             int drop = moved && list.contentViewport.worldBound.Contains(position) ? destination : -1;
+            endContact(e.pointerId);
             Cancel(); e.StopPropagation();
             if (drop >= 0) commit(drop);
         }
-        void CancelPointer(PointerCancelEvent e) { if (e.pointerId == pointer) Cancel(); }
+        void CancelPointer(PointerCancelEvent e) { if (e.pointerId == pointer) { endContact(e.pointerId); Cancel(); } }
         void CaptureLost(PointerCaptureOutEvent e) { if (e.pointerId == pointer) Cancel(); }
         void Detached(DetachFromPanelEvent e) { Cancel(); }
         public void Cancel()
