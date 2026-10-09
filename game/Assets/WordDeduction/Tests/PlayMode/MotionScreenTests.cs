@@ -75,12 +75,63 @@ namespace WordDeduction.Tests
             Assert.That(root.Q<Label>("secretWord").text,Is.Empty);
         }
 
-        static void Touch(VisualElement element,TouchPhase phase,Vector2 position)
+        [UnityTest]
+        public IEnumerator CapturedReorderReleaseAndCancelAllowAnotherFingerToRevealAfterStarting()
         {
-            var touch = new Touch { fingerId = 0,position = position,phase = phase };
+            foreach (var ending in new[] { TouchPhase.Ended, TouchPhase.Canceled })
+            {
+                fixture = new Fixture(); fixture.Root.style.height = 900;
+                yield return null; yield return null;
+                var root = fixture.Root;
+                string first = fixture.Session.View.Players[0].Id;
+                string second = fixture.Session.View.Players[1].Id;
+                var handle = root.Q<VisualElement>("reorder-" + first);
+                var start = handle.worldBound.center;
+                var destination = root.Q<VisualElement>("player-" + second).worldBound.center + new Vector2(0,10);
+                Touch(handle,TouchPhase.Began,start,0); yield return null;
+                Assert.That(handle.HasPointerCapture(PointerId.touchPointerIdBase),Is.True);
+                Touch(handle,TouchPhase.Moved,destination,0); yield return null;
+                Touch(handle,ending,destination,0);
+                yield return null; yield return null;
+                Assert.That(fixture.Session.View.Players[0].Id,Is.EqualTo(ending == TouchPhase.Ended ? second : first));
+                Submit(root.Q<Button>("playButton")); yield return null; yield return null;
+                var hold = root.Q<VisualElement>("holdReveal");
+                Touch(hold,TouchPhase.Began,hold.worldBound.center,1);
+                Assert.That(root.Q<Label>("secretWord").text,Is.Not.Empty,"Only the new finger remains after the captured reorder " + ending + ".");
+                Touch(hold,TouchPhase.Ended,hold.worldBound.center,1);
+                Assert.That(root.Q<Label>("secretWord").text,Is.Empty);
+                fixture.Dispose(); fixture = null; yield return null;
+            }
+        }
+
+        [UnityTest]
+        public IEnumerator EndingCapturedReorderKeepsOtherHeldFingersBlockingThePrivateCard()
+        {
+            fixture = new Fixture(); yield return null; yield return null;
+            var root = fixture.Root;
+            var handle = root.Q<VisualElement>("reorder-" + fixture.Session.View.Players[0].Id);
+            var start = handle.worldBound.center;
+            Touch(handle,TouchPhase.Began,start,0); yield return null;
+            Touch(root.Q<VisualElement>("safeRoot"),TouchPhase.Began,start,1);
+            Touch(handle,TouchPhase.Ended,start,0);
+            Submit(root.Q<Button>("playButton")); yield return null; yield return null;
+            var hold = root.Q<VisualElement>("holdReveal");
+            Touch(hold,TouchPhase.Began,hold.worldBound.center,2);
+            Assert.That(root.Q<Label>("secretWord").text,Is.Empty,"Ending the drag cannot clear a different still-held contact.");
+            Touch(hold,TouchPhase.Ended,hold.worldBound.center,2);
+            Touch(root.Q<VisualElement>("safeRoot"),TouchPhase.Ended,start,1);
+            Touch(hold,TouchPhase.Began,hold.worldBound.center,2);
+            Assert.That(root.Q<Label>("secretWord").text,Is.Not.Empty,"A new deliberate gesture works after every older contact ends.");
+            Touch(hold,TouchPhase.Ended,hold.worldBound.center,2);
+        }
+
+        static void Touch(VisualElement element,TouchPhase phase,Vector2 position,int finger = 0)
+        {
+            var touch = new Touch { fingerId = finger,position = position,phase = phase };
             if (phase == TouchPhase.Began) { using (var e = PointerDownEvent.GetPooled(touch)) { e.target=element; element.SendEvent(e); } }
             else if (phase == TouchPhase.Moved) { using (var e = PointerMoveEvent.GetPooled(touch)) { e.target=element; element.SendEvent(e); } }
             else if (phase == TouchPhase.Ended) { using (var e = PointerUpEvent.GetPooled(touch)) { e.target=element; element.SendEvent(e); } }
+            else if (phase == TouchPhase.Canceled) { using (var e = PointerCancelEvent.GetPooled(touch)) { e.target=element; element.SendEvent(e); } }
         }
         static void Submit(VisualElement element)
         {
@@ -91,10 +142,11 @@ namespace WordDeduction.Tests
             readonly string directory = Path.Combine(Application.temporaryCachePath,"motion-ui-" + Guid.NewGuid().ToString("N"));
             readonly GameObject host;
             readonly PanelSettings panel;
+            public Session Session { get; }
             public VisualElement Root => host.GetComponent<UIDocument>().rootVisualElement;
             public Fixture()
             {
-                var session = Session.Open(directory,Language.English,maximum => 0);
+                var session = Session = Session.Open(directory,Language.English,maximum => 0);
                 session.AddPlayer("Alex"); session.AddPlayer("Bea"); session.AddPlayer("Chris");
                 host = new GameObject("Motion interaction test"); host.SetActive(false);
                 var document = host.AddComponent<UIDocument>();
