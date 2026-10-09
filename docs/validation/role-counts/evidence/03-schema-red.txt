@@ -1,0 +1,2 @@
+FAIL free counts write a new schema and reject new fields disguised as old: new semantics use V6 so old apps block rather than misread
+0/1 passed

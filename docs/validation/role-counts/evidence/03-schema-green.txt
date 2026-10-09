@@ -1,0 +1,5 @@
+PASS free counts allow an atomic pure White replacement at minimum size
+PASS free counts preferences survive modes shrink undo growth Auto and failed writes
+PASS free counts write a new schema and reject new fields disguised as old
+PASS free counts reject invalid commands and malformed saved preferences
+4/4 passed
