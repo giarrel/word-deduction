@@ -1,0 +1,160 @@
+{
+  "purpose": "Additional source files not covered by frozen baseline manifest; baseline was not regenerated.",
+  "files": [
+    {
+      "path": "baseline-manifest.json",
+      "bytes": 40571,
+      "sha256": "f18a6882ba2429d6e8e7a506db8a8cb3c00c631b3ee1f00b61a1221100304555"
+    },
+    {
+      "path": "dotnet-temp/Microsoft.NET.Workload_68480_20261009_081935_785.log",
+      "bytes": 966,
+      "sha256": "7d1ea57940ad1a29079a76cfa9e59dcb422de2dd8b160ebbad2a4b8c4032d353"
+    },
+    {
+      "path": "implementation-checkpoint.md",
+      "bytes": 4619,
+      "sha256": "9e9a3af2099edeaaf7147354f7c1ff4dcf51f5dfc4728f6b87febe11750b4c88"
+    },
+    {
+      "path": "measurement-sources.md",
+      "bytes": 1237,
+      "sha256": "93269fe07d13ff7cb6e40a33ffa4b8483f621e8c139cea556e0507bd07da77c2"
+    },
+    {
+      "path": "session-probe/bin/Release/net9.0/Newtonsoft.Json.dll",
+      "bytes": 696320,
+      "sha256": "7292d3eb508652d14726749dd27094f2d481aeccf2db6427b62f68a71460897e"
+    },
+    {
+      "path": "session-probe/bin/Release/net9.0/SessionAllocationProbe.deps.json",
+      "bytes": 870,
+      "sha256": "80190a8377fd80a14cdf0806d73957874716bec1cfd834300f788aa353dc44df"
+    },
+    {
+      "path": "session-probe/bin/Release/net9.0/SessionAllocationProbe.dll",
+      "bytes": 158208,
+      "sha256": "6c648607e9882f7a0a06938145ff8a0ceb966cfc8e66b93c5cc0742c0649aa77"
+    },
+    {
+      "path": "session-probe/bin/Release/net9.0/SessionAllocationProbe.exe",
+      "bytes": 156160,
+      "sha256": "3b0b7a090cc7ef705a2f88a87430fc6e046774234671db633c2e553b3fab2abc"
+    },
+    {
+      "path": "session-probe/bin/Release/net9.0/SessionAllocationProbe.pdb",
+      "bytes": 25544,
+      "sha256": "1c124bf5ba86f9cdf7648466fa5399624813994b49f23a6653dc27eefd081df4"
+    },
+    {
+      "path": "session-probe/bin/Release/net9.0/SessionAllocationProbe.runtimeconfig.json",
+      "bytes": 340,
+      "sha256": "3c0bf772b95c93363a0a14e5df78e4ec408c90f04cb7103205af97b2d276fab0"
+    },
+    {
+      "path": "session-probe/obj/project.assets.json",
+      "bytes": 2221,
+      "sha256": "ffb5659cda2322505b87c9a48072187c5eca7083ce424895965ae161e9b4b4d0"
+    },
+    {
+      "path": "session-probe/obj/project.nuget.cache",
+      "bytes": 273,
+      "sha256": "dc57dd7e1dfdeab9122563bb0b1c8a95a702dadb7db9b1ede4c5ffd6d9bc8823"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs",
+      "bytes": 198,
+      "sha256": "9e76499c4e5cb623ad4889eaa99b1a53d9c970efcf902d8b096e78a19ee4285d"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/apphost.exe",
+      "bytes": 156160,
+      "sha256": "3b0b7a090cc7ef705a2f88a87430fc6e046774234671db633c2e553b3fab2abc"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/ref/SessionAllocationProbe.dll",
+      "bytes": 45568,
+      "sha256": "5cf5d54eb8b0f5c5d51c904ba854cbf7a2dbb83f1b64775850bede87a59a76c5"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/refint/SessionAllocationProbe.dll",
+      "bytes": 45568,
+      "sha256": "5cf5d54eb8b0f5c5d51c904ba854cbf7a2dbb83f1b64775850bede87a59a76c5"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionA.36F15A8A.Up2Date",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.AssemblyInfo.cs",
+      "bytes": 1001,
+      "sha256": "a3940997093e2da71883a98b434e64a1a70c36d97fe6bab6358543a5519b6104"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.AssemblyInfoInputs.cache",
+      "bytes": 66,
+      "sha256": "40e819e956dc3b7c1d9545776e5fc754a7398e27cd8dcced3a245b06b9a50cc5"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.assets.cache",
+      "bytes": 166,
+      "sha256": "544cdecf1d28d66a0ce3487a7b408c101b2709f609864b48e46644e068509c40"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.csproj.AssemblyReference.cache",
+      "bytes": 591,
+      "sha256": "dbde8eb52ca62a6fc14c861d70cca35968d4325bcda1388b70b51b5cdda441d3"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.csproj.CoreCompileInputs.cache",
+      "bytes": 66,
+      "sha256": "6549dfd8d68e2de4f00baf2a3b3c0ad5a8fff4a4eef2bcf1e52b5acbd1a6e246"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.csproj.FileListAbsolute.txt",
+      "bytes": 2480,
+      "sha256": "442ffef3322d9c205e5cfd3b9a531d4accd01f5959e30b03b3e17b41688d3a53"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.dll",
+      "bytes": 158208,
+      "sha256": "6c648607e9882f7a0a06938145ff8a0ceb966cfc8e66b93c5cc0742c0649aa77"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.GeneratedMSBuildEditorConfig.editorconfig",
+      "bytes": 882,
+      "sha256": "530c0a473d128a915346475805edde1f8c53bd95ac9b483098001f7fbe1545d5"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.genruntimeconfig.cache",
+      "bytes": 66,
+      "sha256": "b32c4cf3d054269597b4c87d8f7634f6a1c037efa160f23e806d49073fecf99d"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.GlobalUsings.g.cs",
+      "bytes": 239,
+      "sha256": "a3c6048bb4d922b1799a9977f84362a3787b68810cac67aa86ac3aa23295f227"
+    },
+    {
+      "path": "session-probe/obj/Release/net9.0/SessionAllocationProbe.pdb",
+      "bytes": 25544,
+      "sha256": "1c124bf5ba86f9cdf7648466fa5399624813994b49f23a6653dc27eefd081df4"
+    },
+    {
+      "path": "session-probe/obj/SessionAllocationProbe.csproj.nuget.dgspec.json",
+      "bytes": 2436,
+      "sha256": "320fdf3e569b0488a62bd4beded999f63c79672aeedf8581159fd4e6b8b8c887"
+    },
+    {
+      "path": "session-probe/obj/SessionAllocationProbe.csproj.nuget.g.props",
+      "bytes": 1177,
+      "sha256": "8cf0cba502b20258d133693133258cf466740b1cb82c38c25af9bb422656ef4a"
+    },
+    {
+      "path": "session-probe/obj/SessionAllocationProbe.csproj.nuget.g.targets",
+      "bytes": 150,
+      "sha256": "971cc9b535384849b5c661d776cd7a80833a416265e32e8968e06c367368b8b5"
+    }
+  ]
+}

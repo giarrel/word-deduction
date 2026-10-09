@@ -1,0 +1,77 @@
+{
+  "selected": {
+    "files": 33,
+    "bytes": 769137
+  },
+  "raw": {
+    "files": 35,
+    "bytes": 17555889
+  },
+  "baseline": {
+    "files": 233,
+    "bytes": 3848293
+  },
+  "baselineSupplements": {
+    "files": 31,
+    "bytes": 1527895
+  },
+  "supplementPaths": [
+    "baseline-manifest.json",
+    "dotnet-temp/Microsoft.NET.Workload_68480_20261009_081935_785.log",
+    "implementation-checkpoint.md",
+    "measurement-sources.md",
+    "session-probe/bin/Release/net9.0/Newtonsoft.Json.dll",
+    "session-probe/bin/Release/net9.0/SessionAllocationProbe.deps.json",
+    "session-probe/bin/Release/net9.0/SessionAllocationProbe.dll",
+    "session-probe/bin/Release/net9.0/SessionAllocationProbe.exe",
+    "session-probe/bin/Release/net9.0/SessionAllocationProbe.pdb",
+    "session-probe/bin/Release/net9.0/SessionAllocationProbe.runtimeconfig.json",
+    "session-probe/obj/project.assets.json",
+    "session-probe/obj/project.nuget.cache",
+    "session-probe/obj/Release/net9.0/.NETCoreApp,Version=v9.0.AssemblyAttributes.cs",
+    "session-probe/obj/Release/net9.0/apphost.exe",
+    "session-probe/obj/Release/net9.0/ref/SessionAllocationProbe.dll",
+    "session-probe/obj/Release/net9.0/refint/SessionAllocationProbe.dll",
+    "session-probe/obj/Release/net9.0/SessionA.36F15A8A.Up2Date",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.AssemblyInfo.cs",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.AssemblyInfoInputs.cache",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.assets.cache",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.csproj.AssemblyReference.cache",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.csproj.CoreCompileInputs.cache",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.csproj.FileListAbsolute.txt",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.dll",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.GeneratedMSBuildEditorConfig.editorconfig",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.genruntimeconfig.cache",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.GlobalUsings.g.cs",
+    "session-probe/obj/Release/net9.0/SessionAllocationProbe.pdb",
+    "session-probe/obj/SessionAllocationProbe.csproj.nuget.dgspec.json",
+    "session-probe/obj/SessionAllocationProbe.csproj.nuget.g.props",
+    "session-probe/obj/SessionAllocationProbe.csproj.nuget.g.targets"
+  ],
+  "rawDestination": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-motion-implementation",
+  "investigationDestination": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-motion-investigation",
+  "postMergeSelected": {
+    "verified": true,
+    "files": 33,
+    "bytes": 769137
+  },
+  "postMergeRaw": {
+    "verified": true,
+    "files": 35,
+    "bytes": 17555889
+  },
+  "postMergeInvestigation": {
+    "verified": true,
+    "files": 233,
+    "bytes": 3848293
+  },
+  "postMergeSupplements": {
+    "verified": true,
+    "files": 31,
+    "bytes": 1527895
+  },
+  "integrationParent": "3835a71035b0fe4c471e5893a54f2438b5c34505",
+  "handoff": "f07419bbbfd157c0072e61ab59f0c187d6e4ddfd",
+  "merge": "8f018b15c344c687dbbb22bfaaf5601dd2b398a8",
+  "identicalMergeAndHandoffTree": "8616e4c387f05813bc07bd9b4ac06031b8d39a87"
+}
