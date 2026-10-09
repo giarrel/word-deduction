@@ -126,6 +126,7 @@ static class ClassicCases
             var id=session.Match.Id; var owner=session.Match.Owner.Id; var word=session.RevealWord(owner);
             var path=Path.Combine(directory,"session.json"); var envelope=Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path));
             var payload=Newtonsoft.Json.Linq.JObject.Parse((string)envelope["Payload"]); payload.Remove("WhitePreferred");
+            payload.Remove("QuickRoles"); payload.Remove("ClassicRoles"); ((Newtonsoft.Json.Linq.JObject)payload["Match"]).Remove("RulesVersion");
             ((Newtonsoft.Json.Linq.JObject)payload["Match"]).Remove("Round"); foreach(var participant in payload["Match"]["Participants"]) ((Newtonsoft.Json.Linq.JObject)participant).Remove("Eliminated");
             var json=payload.ToString(Newtonsoft.Json.Formatting.None); envelope["Version"]=2; envelope["Payload"]=json; envelope["Checksum"]=Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(json)));
             File.WriteAllText(path,envelope.ToString()); var old=File.ReadAllText(path);

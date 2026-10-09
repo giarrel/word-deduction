@@ -297,6 +297,7 @@ namespace WordDeduction.UI
         }
         void Vote(MatchView match)
         {
+            int eliminated = match.Participants.Count - match.Survivors.Count;
             if (match.SelectedSuspect != null)
             {
                 var center = Center();
@@ -304,15 +305,15 @@ namespace WordDeduction.UI
                 Label(center,"confirmName",match.SelectedSuspect.DisplayName,"card-owner");
                 Label(center,"confirmHint",T(match.Mode == GameMode.Classic ? "classicConfirmHint" : "confirmHint"),"match-text");
                 string suspect = match.SelectedSuspect.Id;
-                Action("confirmSuspect",match.Mode == GameMode.Classic ? "confirmElimination" : "confirmSuspect",() => Act(session.ConfirmSuspect(suspect)));
-                Action("changeSuspect","changeSuspect",() => Act(session.CancelSuspect()),false);
+                Action("confirmSuspect",match.Mode == GameMode.Classic ? "confirmElimination" : "confirmSuspect",() => Act(session.ConfirmSuspect(match.Id,match.Round,eliminated,suspect)));
+                Action("changeSuspect","changeSuspect",() => Act(session.CancelSuspect(match.Id,match.Round,eliminated)),false);
                 return;
             }
             Label(body,"voteTitle",T(match.Runoff ? "runoffTitle" : "voteTitle"),"match-title");
             Label(body,"voteInstructions",T(match.Runoff ? match.Mode == GameMode.Classic ? "classicRunoffInstructions" : "runoffInstructions" : "voteInstructions"),"match-text");
-            ParticipantChoices("suspects",match.Survivors,"suspect-",id => Act(session.SelectSuspect(id)));
+            ParticipantChoices("suspects",match.Survivors,"suspect-",id => Act(session.SelectSuspect(match.Id,match.Round,eliminated,id)));
             bool runoff = match.Runoff;
-            Action("recordTie",runoff ? match.Mode == GameMode.Classic ? "classicSecondTie" : "secondTie" : "firstTie",() => Act(session.RecordTie(runoff)),false);
+            Action("recordTie",runoff ? match.Mode == GameMode.Classic ? "classicSecondTie" : "secondTie" : "firstTie",() => Act(session.RecordTie(match.Id,match.Round,eliminated,runoff)),false);
         }
         void Elimination(MatchView match)
         {
@@ -320,8 +321,9 @@ namespace WordDeduction.UI
             Label(center,"eliminationTitle",T("eliminationTitle"),"match-title");
             Label(center,"eliminatedName",match.Elimination.Participant.DisplayName,"card-owner");
             Label(center,"eliminatedRole",T(match.Elimination.Role.ToString()),"match-title");
-            Label(center,"eliminationText",T("eliminationText",match.Survivors.Count),"match-text");
-            Action("continueRound","continueRound",() => Act(session.ContinueRound(match.Round)));
+            Label(center,"eliminationText",T(match.Mode == GameMode.Quick ? match.Elimination.Role == Role.White ? "quickWhiteIncorrect" : "quickEliminationText" : "eliminationText",match.Survivors.Count),"match-text");
+            if (match.Mode == GameMode.Quick) Action("continueAccusations","continueAccusations",() => Act(session.ContinueAccusations(match.Id,match.Elimination.Participant.Id)));
+            else Action("continueRound","continueRound",() => Act(session.ContinueRound(match.Id,match.Round)));
         }
         void WhiteGuess(MatchView match)
         {
@@ -329,8 +331,8 @@ namespace WordDeduction.UI
             Label(center,"whiteGuessTitle",T("whiteGuessTitle"),"match-title");
             Label(center,"eliminatedName",match.Elimination.Participant.DisplayName,"card-owner");
             Label(center,"whiteGuessText",T("whiteGuessText"),"match-text");
-            Action("whiteCorrect","whiteCorrect",() => Act(session.ResolveWhiteGuess(match.Elimination.Participant.Id,true)));
-            Action("whiteIncorrect","whiteIncorrect",() => Act(session.ResolveWhiteGuess(match.Elimination.Participant.Id,false)),false);
+            Action("whiteCorrect","whiteCorrect",() => Act(session.ResolveWhiteGuess(match.Id,match.Elimination.Participant.Id,true)));
+            Action("whiteIncorrect","whiteIncorrect",() => Act(session.ResolveWhiteGuess(match.Id,match.Elimination.Participant.Id,false)),false);
         }
         void Result(MatchView match)
         {
@@ -342,6 +344,7 @@ namespace WordDeduction.UI
             if (match.Mode == GameMode.Kings) Label(banner,"kingsTeamResult",T("kingsTeamResult"),"match-text");
             foreach (var role in new[] { Role.Civilian, Role.Undercover })
             {
+                if (role == Role.Undercover && !match.Result.Roles.Any(assignment => assignment.Role == Role.Undercover)) continue;
                 var box = Box(scroll,"result-word"); Label(box,"wordRole" + role,T(match.Mode == GameMode.Kings ? role == Role.Civilian ? "kingsGoodWord" : "kingsEvilWord" : role.ToString()),"match-note");
                 Label(box,"resultWord" + role,role == Role.Civilian ? match.Result.CivilianWord : match.Result.UndercoverWord,"match-title");
             }

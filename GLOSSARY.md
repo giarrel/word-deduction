@@ -24,7 +24,7 @@ Ein Durchgang, in dem alle noch beteiligten Teilnehmer je einen Hinweis geben, g
 _Avoid_: Neue Partie für einen weiteren Durchgang
 
 **Quick / Schnell**:
-Der Modus mit einer Hinweisrunde, einer Entscheidung und anschließendem Ergebnis.
+Der Modus mit einer Hinweisrunde und einzeln bestätigten Beschuldigungen. Alle Bösen müssen gefunden werden; ein beschuldigter Bürger beendet die Partie zugunsten aller Bösen. Wie die Gruppe diskutiert und ihre Auswahl festlegt, entscheidet sie selbst.
 
 **Classic / Klassisch**:
 Der Modus mit wiederholten Hinweisrunden und Eliminierungen bis zur Siegbedingung; Mr. White ist eine optionale zusätzliche Rolle.
@@ -55,7 +55,7 @@ Ein Teilnehmer mit dem Mehrheitswort, der abweichende Rollen finden möchte. Als
 Ein Teilnehmer mit einem anderen, verwandten Wort. Er weiß zunächst nicht, dass sein Wort von der Mehrheit abweicht.
 
 **Mr. White**:
-Ein Teilnehmer ohne geheimes Wort, der blufft. In Klassisch darf er nach seiner Eliminierung einmal das Mehrheitswort erraten; in Könige ist er der böse König mit der Letzten Chance seines Teams.
+Ein Teilnehmer ohne geheimes Wort, der blufft. In Schnell und Klassisch darf jeder erwischte Mr. White einmal das Mehrheitswort erraten; ein richtiger Tipp gewinnt nur für alle Mr. Whites einschließlich ausgeschiedener. In Könige ist er der einzelne böse König mit der Letzten Chance seines Teams.
 
 **Word pair / Wortpaar**:
 Zwei verschiedene, verwandte Begriffe, die für Bürger und Undercover plausible gemeinsame Hinweise ermöglichen.

@@ -92,7 +92,7 @@ internal static class KingsCases
             Check(session.SetKingsUndercoverPreference(1).Success && session.StartMatch().Success, "new Kings deal persists in upgraded session");
             session = Session.Open(directory, Language.German);
             Check(!session.View.StorageBlocked && session.Match.Mode == GameMode.Kings && session.View.Players.Take(4).Select(p => (p.Id, p.Name, p.DisplayName, p.Active)).SequenceEqual(originalGroup), "both old Unicode names and new Kings identities survive V5 reopen");
-            Check((int)Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path))["Version"] == 5, "new writes use V5 so older apps refuse them");
+            Check((int)Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path))["Version"] == 6, "new writes use V6 so older apps refuse them");
         }),
         ("Kings supports every legal size and count with neutral ordered knowledge and fresh random assignments", directory => {
             var goodKings = new HashSet<int>(); var evilKings = new HashSet<int>();

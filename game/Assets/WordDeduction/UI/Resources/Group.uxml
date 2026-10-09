@@ -39,16 +39,22 @@
         <ui:Button name="kingsMode" class="mode-button" />
       </ui:VisualElement>
       <ui:Label name="modeDescription" class="mode-description" />
-      <ui:Button name="whitePreference" class="white-preference hidden" />
-      <ui:VisualElement name="kingsSettings" class="kings-settings hidden">
+      <ui:ScrollView name="roleSettings" class="role-settings" vertical-scroller-visibility="Auto" horizontal-scroller-visibility="Hidden">
         <ui:VisualElement class="kings-count-row">
           <ui:Button name="lessUndercover" text="−" class="count-step" />
           <ui:Label name="kingsUndercoverCount" class="count-label" />
           <ui:Button name="moreUndercover" text="+" class="count-step" />
           <ui:Button name="automaticUndercover" class="count-auto" />
         </ui:VisualElement>
+        <ui:VisualElement name="whiteCountRow" class="kings-count-row white-count-row">
+          <ui:Button name="lessWhite" text="−" class="count-step" />
+          <ui:Label name="whiteCount" class="count-label" />
+          <ui:Button name="moreWhite" text="+" class="count-step" />
+        </ui:VisualElement>
+        <ui:Button name="swapRole" class="swap-role hidden" />
+        <ui:Label name="roleLimit" class="hint count-adjustment" />
         <ui:Label name="kingsCountAdjustment" class="hint count-adjustment hidden" />
-      </ui:VisualElement>
+      </ui:ScrollView>
       <ui:Button name="playButton" class="play-button" />
       <ui:Label name="startHint" class="start-hint" />
     </ui:VisualElement>

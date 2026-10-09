@@ -23,7 +23,7 @@ namespace WordDeduction.Tests
                 var fixture = new Fixture(language, 9); live.Add(fixture); yield return null;
                 Submit(fixture.Root.Q<Button>("kingsMode")); yield return null;
                 Assert.That(fixture.Session.View.Mode, Is.EqualTo(GameMode.Kings));
-                Assert.That(fixture.Root.Q<Button>("whitePreference").ClassListContains("hidden"), Is.True);
+                Assert.That(fixture.Root.Q<VisualElement>("whiteCountRow").ClassListContains("hidden"), Is.True);
                 Submit(fixture.Root.Q<Button>("moreUndercover"));
                 Assert.That(fixture.Session.View.KingsUndercoverPreference, Is.EqualTo(3));
                 foreach (var id in fixture.Session.View.Players.Skip(5).Select(p => p.Id).ToArray())

@@ -146,6 +146,41 @@ namespace WordDeduction.Tests
                 fixture.Dispose(); yield return null;
             }
         }
+        [UnityTest] public IEnumerator FreeRoleControlsRemainReachableAndAccessibleAtLargeText()
+        {
+            foreach (var language in new[] { Language.German, Language.English })
+            foreach (var example in new[] { (GameMode.Quick,3), (GameMode.Classic,4), (GameMode.Classic,20), (GameMode.Kings,6) })
+            {
+                var fixture = new Fixture(language,example.Item2); live.Add(fixture);
+                fixture.Session.SetMode(example.Item1); fixture.Host.GetComponent<GroupScreen>().Initialize(fixture.Session);
+                var root=fixture.Root; root.style.height=616; yield return null; yield return null;
+                root.AddToClassList("large-type"); yield return null; Enlarge(root); yield return null; yield return null;
+                var scroll=root.Q<ScrollView>("roleSettings");
+                yield return new WaitForSecondsRealtime(0.15f);
+                fixture.Capture("role-counts-"+language+"-"+example.Item1+"-"+example.Item2+"-top");
+                Assert.That(root.Q<Button>("playButton").worldBound.yMax,Is.LessThanOrEqualTo(616),"Start stays reachable beside roles.");
+                Assert.That(root.Q<ScrollView>("players").contentViewport.worldBound.height,Is.GreaterThanOrEqualTo(48),"Group still scrolls.");
+                foreach(var name in example.Item1==GameMode.Kings ? new[]{"lessUndercover","moreUndercover","automaticUndercover"} : new[]{"lessUndercover","moreUndercover","lessWhite","moreWhite","automaticUndercover"}) {
+                    var button=root.Q<Button>(name); scroll.ScrollTo(button); yield return null; yield return null;
+                    Assert.That(button.worldBound.xMin,Is.GreaterThanOrEqualTo(0),name);
+                    Assert.That(button.worldBound.xMax,Is.LessThanOrEqualTo(360),name);
+                    Assert.That(button.worldBound.yMin,Is.GreaterThanOrEqualTo(scroll.contentViewport.worldBound.yMin-1),name);
+                    Assert.That(button.worldBound.yMax,Is.LessThanOrEqualTo(scroll.contentViewport.worldBound.yMax+1),name);
+                    Assert.That(button.worldBound.height,Is.GreaterThanOrEqualTo(48),name);
+                    Assert.That(AllSemantics(fixture).Any(label => label.Trim() == button.tooltip),Is.True,"Public role control is in native semantics.");
+                }
+                if(fixture.Session.View.CanSwapSingleRole) {
+                    var swap=root.Q<Button>("swapRole"); scroll.ScrollTo(swap); yield return null; yield return null;
+                    Assert.That(swap.worldBound.yMax,Is.LessThanOrEqualTo(scroll.contentViewport.worldBound.yMax+1));
+                    Submit(swap); Assert.That(fixture.Session.View.WhiteCount,Is.EqualTo(1));
+                    yield return null; yield return null; Enlarge(root); yield return null;
+                }
+                scroll.ScrollTo(root.Q<Label>("roleLimit")); yield return null; yield return null;
+                AssertTextFits(root.Q<Label>("roleLimit"));
+                fixture.Capture("role-counts-"+language+"-"+example.Item1+"-"+example.Item2+"-large");
+                fixture.Dispose(); yield return null;
+            }
+        }
         [UnityTest] public IEnumerator LongKingsWordsFitBesideThePrivateScrollbarAndLongLeader()
         {
             foreach (var text in new[] { "Nuss-Nougat-Creme", "Rollkragenpullover", "Chocolate hazelnut spread" })

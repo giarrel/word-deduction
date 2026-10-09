@@ -91,7 +91,7 @@ namespace WordDeduction.Tests
                 Submit(root.Q<Button>("addPlayer")); yield return null;
             }
             Submit(root.Q<Button>("classicMode")); yield return null; yield return null;
-            foreach (var name in new[] { "german", "english", "addPlayer", "quickMode", "classicMode", "whitePreference", "playButton" })
+            foreach (var name in new[] { "german", "english", "addPlayer", "quickMode", "classicMode", "moreWhite", "playButton" })
             {
                 var bounds = root.Q<Button>(name).worldBound;
                 Assert.That(bounds.width, Is.GreaterThanOrEqualTo(48),name + " finger target width at 360dp");

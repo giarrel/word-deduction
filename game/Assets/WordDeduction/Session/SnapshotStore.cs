@@ -59,9 +59,11 @@ namespace WordDeduction
         private static SessionState ReadFile(string path)
         {
             var envelope = ReadEnvelope(path);
-            if (envelope == null || envelope.Version < 1 || envelope.Version > 5 || envelope.Payload == null || envelope.Checksum != Hash(envelope.Payload))
+            if (envelope == null || envelope.Version < 1 || envelope.Version > 6 || envelope.Payload == null || envelope.Checksum != Hash(envelope.Payload))
                 throw new InvalidDataException("Invalid saved session.");
             var state = JsonConvert.DeserializeObject<SessionState>(envelope.Payload);
+            var payload = Newtonsoft.Json.Linq.JObject.Parse(envelope.Payload);
+            if (envelope.Version < 6 && (payload.Property("QuickRoles") != null || payload.Property("ClassicRoles") != null || (payload["Match"] as Newtonsoft.Json.Linq.JObject)?.Property("RulesVersion") != null)) throw new InvalidDataException("Invalid legacy session.");
             if (envelope.Version == 1 && state?.Match != null) throw new InvalidDataException("Invalid legacy session.");
             if (envelope.Version < 5 && state != null && (state.Mode == GameMode.Kings || state.KingsUndercoverPreference.HasValue || state.Match?.Mode == GameMode.Kings || state.Match?.GoodKingId != null || state.Match?.LastChanceTarget != null)) throw new InvalidDataException("Invalid legacy session.");
             if (envelope.Version < 4 && state != null) Session.MigrateWordHistory(state);
@@ -72,14 +74,14 @@ namespace WordDeduction
         private static Envelope ReadEnvelope(string path)
         {
             var envelope = JsonConvert.DeserializeObject<Envelope>(File.ReadAllText(path));
-            if (envelope != null && envelope.Version > 5) throw new NewerVersionException();
+            if (envelope != null && envelope.Version > 6) throw new NewerVersionException();
             return envelope;
         }
         public void Write(SessionState state)
         {
             Directory.CreateDirectory(directory);
             var payload = JsonConvert.SerializeObject(state);
-            var bytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(new Envelope { Version = 5, Payload = payload, Checksum = Hash(payload) }));
+            var bytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(new Envelope { Version = 6, Payload = payload, Checksum = Hash(payload) }));
             var temporary = Pending;
             using (var stream = new FileStream(temporary, FileMode.Create, FileAccess.Write, FileShare.None))
             {
