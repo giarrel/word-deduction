@@ -40,7 +40,7 @@ static class QuickCases
             Check(session.SelectSuspect(people[0].Id).Success, "suspect can be corrected");
             Check(session.ConfirmSuspect(people[1].Id).Error == "InvalidAction", "stale confirmation cannot confirm another selection");
             Check(session.ConfirmSuspect(people[0].Id).Success, "corrected selection confirmed");
-            Check(session.Match.Result.Winner == Role.Civilian && session.Match.Result.Reason == Outcome.CaughtUndercover, "catching Undercover wins");
+            Check(session.Match.Result.Winner == Role.Civilian && session.Match.Result.Reason == Outcome.AllAdversariesEliminated, "catching the only adversary wins");
             Check(session.Match.Result.Roles.Count(r => r.Role == Role.Undercover) == 1, "full role reveal");
             Check(session.Match.Result.CivilianWord != session.Match.Result.UndercoverWord, "both words revealed");
             string oldId = session.Match.Id;
@@ -100,6 +100,7 @@ static class QuickCases
             foreach (var name in new[] { "Alex", "Alex", "Chris", "Dana" }) session.AddPlayer(name);
             session.SetMode(GameMode.Classic); session.RemovePlayer(session.View.Players[3].Id);
             var path = Path.Combine(directory,"session.json");
+            SavedSessionFixture.RewritePrimary(directory, payload => { payload.Remove("QuickRoles"); payload.Remove("ClassicRoles"); });
             var legacyEnvelope = Newtonsoft.Json.Linq.JObject.Parse(File.ReadAllText(path)); legacyEnvelope["Version"] = 1;
             var legacy = legacyEnvelope.ToString(); File.WriteAllText(path,legacy);
             var ids = session.View.Players.Select(p => p.Id).ToArray();

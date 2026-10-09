@@ -1,0 +1,4 @@
+PASS free counts allow an atomic pure White replacement at minimum size
+PASS free counts preferences survive modes shrink undo growth Auto and failed writes
+FAIL free counts reject invalid commands and malformed saved preferences: malformed preference cannot be trusted even with a valid checksum
+2/3 passed

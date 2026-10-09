@@ -1,0 +1,2 @@
+PASS sequential Quick failure and stale actions preserve confirmation and continuation
+1/1 passed

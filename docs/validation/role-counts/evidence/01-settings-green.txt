@@ -1,0 +1,2 @@
+PASS free counts allow an atomic pure White replacement at minimum size
+1/1 passed

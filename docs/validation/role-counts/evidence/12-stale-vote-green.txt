@@ -1,0 +1,2 @@
+PASS sequential vote commands reject a previous accusation and another match
+1/1 passed

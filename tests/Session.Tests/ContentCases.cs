@@ -132,6 +132,7 @@ static class ContentCases
     {
         var envelope=JObject.Parse(File.ReadAllText(path));
         var payload=JObject.Parse((string)envelope["Payload"]); edit(payload);
+        if (version < 6) { payload.Remove("QuickRoles"); payload.Remove("ClassicRoles"); (payload["Match"] as JObject)?.Remove("RulesVersion"); }
         string text=payload.ToString(Newtonsoft.Json.Formatting.None);
         envelope["Version"]=version; envelope["Payload"]=text;
         envelope["Checksum"]=Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(System.Text.Encoding.UTF8.GetBytes(text)));

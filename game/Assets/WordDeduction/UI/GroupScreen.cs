@@ -63,10 +63,12 @@ namespace WordDeduction.UI
             root.Q<Button>("quickMode").clicked += () => Apply(session.SetMode(GameMode.Quick));
             root.Q<Button>("classicMode").clicked += () => Apply(session.SetMode(GameMode.Classic));
             root.Q<Button>("kingsMode").clicked += () => Apply(session.SetMode(GameMode.Kings));
-            root.Q<Button>("lessUndercover").clicked += () => Apply(session.SetKingsUndercoverPreference(session.View.UndercoverCount - 1));
-            root.Q<Button>("moreUndercover").clicked += () => Apply(session.SetKingsUndercoverPreference(session.View.UndercoverCount + 1));
-            root.Q<Button>("automaticUndercover").clicked += () => Apply(session.SetKingsUndercoverPreference(null));
-            root.Q<Button>("whitePreference").clicked += () => Apply(session.SetWhitePreference(!session.View.WhitePreferred));
+            root.Q<Button>("lessUndercover").clicked += () => SetUndercoverCount(session.View.UndercoverCount - 1);
+            root.Q<Button>("moreUndercover").clicked += () => SetUndercoverCount(session.View.UndercoverCount + 1);
+            root.Q<Button>("lessWhite").clicked += () => Apply(session.SetRoleCounts(session.View.UndercoverCount, session.View.WhiteCount - 1));
+            root.Q<Button>("moreWhite").clicked += () => Apply(session.SetRoleCounts(session.View.UndercoverCount, session.View.WhiteCount + 1));
+            root.Q<Button>("swapRole").clicked += () => Apply(session.SetRoleCounts(session.View.WhiteCount, session.View.UndercoverCount));
+            root.Q<Button>("automaticUndercover").clicked += () => Apply(session.View.Mode == GameMode.Kings ? session.SetKingsUndercoverPreference(null) : session.SetRoleCounts(null,null));
             root.Q<Button>("undo").clicked += () => Apply(session.UndoRemove());
             root.Q<Button>("resetDamaged").clicked += () => Apply(session.StartFreshAfterDamage());
             root.Q<Button>("playButton").clicked += () => { var keyboard = nameInput.textEdition.touchScreenKeyboard; if (keyboard != null) keyboard.active = false; nameInput.Blur(); Apply(session.StartMatch()); };
@@ -136,6 +138,7 @@ namespace WordDeduction.UI
 #endif
         }
         string T(string key, params object[] args) => Copy.Get(session.View.Language, key, args);
+        void SetUndercoverCount(int count) => Apply(session.View.Mode == GameMode.Kings ? session.SetKingsUndercoverPreference(count) : session.SetRoleCounts(count,session.View.WhiteCount));
         void Add()
         {
             var result = session.AddPlayer(nameInput.value);
@@ -214,19 +217,24 @@ namespace WordDeduction.UI
             root.Q<Button>("german").EnableInClassList("selected",view.Language == Language.German);
             root.Q<Button>("english").EnableInClassList("selected",view.Language == Language.English);
             root.Q<Button>("german").tooltip = T("german"); root.Q<Button>("english").tooltip = T("english");
-            root.Q<Label>("modeDescription").text = view.Mode == GameMode.Kings ? T(view.ReadyToStart ? "kingsRoleMix" : "kingsDescription",view.CivilianCount,view.UndercoverCount) : view.Mode == GameMode.Classic && view.ReadyToStart ? T("roleMix",view.CivilianCount,view.UndercoverCount,view.WhiteCount) : T(view.Mode == GameMode.Quick ? "quickDescription" : "classicDescription");
-            root.Q<VisualElement>("kingsSettings").EnableInClassList("hidden",view.Mode != GameMode.Kings);
+            root.Q<Label>("modeDescription").text = view.Mode == GameMode.Kings ? T(view.ReadyToStart ? "kingsRoleMix" : "kingsDescription",view.CivilianCount,view.UndercoverCount) : view.ReadyToStart ? T("roleMix",view.CivilianCount,view.UndercoverCount,view.WhiteCount) : T(view.Mode == GameMode.Quick ? "quickDescription" : "classicDescription");
+            root.Q<VisualElement>("roleSettings").EnableInClassList("hidden",!view.ReadyToStart);
             root.Q<Label>("kingsUndercoverCount").text = T("kingsUndercoverCount",view.UndercoverCount);
             root.Q<Button>("lessUndercover").tooltip = T("lessUndercover");
             root.Q<Button>("moreUndercover").tooltip = T("moreUndercover");
-            root.Q<Button>("lessUndercover").SetEnabled(view.ReadyToStart && view.UndercoverCount > 1 && !view.StorageBlocked);
-            root.Q<Button>("moreUndercover").SetEnabled(view.ReadyToStart && view.UndercoverCount < view.KingsUndercoverLimit && !view.StorageBlocked);
-            var automatic = root.Q<Button>("automaticUndercover"); automatic.text = T("automaticUndercover"); automatic.tooltip = T("automaticUndercoverHint"); automatic.SetEnabled(view.KingsUndercoverPreference.HasValue && !view.StorageBlocked);
-            var adjustment = root.Q<Label>("kingsCountAdjustment"); adjustment.text = T("kingsCountAdjustment",view.UndercoverCount,view.KingsUndercoverPreference); adjustment.EnableInClassList("hidden",!view.KingsCountAdjusted);
-            var white = root.Q<Button>("whitePreference");
-            white.EnableInClassList("hidden",view.Mode != GameMode.Classic);
-            white.text = T(view.ActiveCount < 5 ? (view.WhitePreferred ? "whiteSavedUnavailable" : "whiteUnavailable") : view.WhitePreferred ? "whiteOn" : "whiteOff");
-            white.SetEnabled(view.ActiveCount >= 5 && !view.StorageBlocked);
+            root.Q<Button>("lessUndercover").SetEnabled(view.CanDecreaseUndercover && !view.StorageBlocked);
+            root.Q<Button>("moreUndercover").SetEnabled(view.CanIncreaseUndercover && !view.StorageBlocked);
+            root.Q<VisualElement>("whiteCountRow").EnableInClassList("hidden",view.Mode == GameMode.Kings);
+            root.Q<Label>("whiteCount").text = T("whiteCount",view.WhiteCount);
+            root.Q<Button>("lessWhite").tooltip = T("lessWhite"); root.Q<Button>("moreWhite").tooltip = T("moreWhite");
+            root.Q<Button>("lessWhite").SetEnabled(view.CanDecreaseWhite && !view.StorageBlocked);
+            root.Q<Button>("moreWhite").SetEnabled(view.CanIncreaseWhite && !view.StorageBlocked);
+            var swap = root.Q<Button>("swapRole"); swap.text = T(view.WhiteCount == 0 ? "swapToWhite" : "swapToUndercover"); swap.EnableInClassList("hidden",!view.CanSwapSingleRole); swap.SetEnabled(!view.StorageBlocked);
+            var automatic = root.Q<Button>("automaticUndercover"); automatic.text = T("automaticUndercover"); automatic.tooltip = T("automaticUndercoverHint"); automatic.SetEnabled(view.ManualRoleCounts && !view.StorageBlocked);
+            root.Q<Label>("roleLimit").text = !view.ReadyToStart ? T("countsNeedPlayers") : T(view.Mode == GameMode.Kings ? "kingsRoleLimit" : "roleLimit",view.AdversaryLimit);
+            var adjustment = root.Q<Label>("kingsCountAdjustment");
+            adjustment.text = view.Mode == GameMode.Kings ? T("kingsCountAdjustment",view.UndercoverCount,view.KingsUndercoverPreference) : T("roleCountAdjustment",view.DesiredUndercoverCount,view.DesiredWhiteCount);
+            adjustment.EnableInClassList("hidden",!view.RoleCountsAdjusted);
             root.Q<Button>("playButton").text = T("play");
             root.Q<Button>("playButton").SetEnabled(view.ReadyToStart && !view.StorageBlocked);
             root.Q<Label>("startHint").text = T(view.ReadyToStart ? "ready" : view.NeededPlayers == 1 ? "neededOne" : "needed",view.NeededPlayers);

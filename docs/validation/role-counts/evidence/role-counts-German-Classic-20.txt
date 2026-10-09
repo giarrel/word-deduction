@@ -1,0 +1,1 @@
+texture360x640; root=(x:0.00, y:0.00, width:360.00, height:616.00); modeFont=22.5; groupFont=27; settings=(x:22.00, y:438.00, width:306.00, height:84.00); players=(x:22.00, y:204.00, width:306.00, height:109.00); start=(x:22.00, y:526.00, width:316.00, height:58.00)

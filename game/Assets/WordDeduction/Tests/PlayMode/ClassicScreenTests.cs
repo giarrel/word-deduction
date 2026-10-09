@@ -14,6 +14,51 @@ namespace WordDeduction.Tests
     {
         readonly List<Fixture> live = new List<Fixture>();
         [TearDown] public void Cleanup() { foreach (var fixture in live) fixture.Dispose(); live.Clear(); }
+        [UnityTest] public IEnumerator BaseRoleControlsAllowAtomicSingleSlotReplacementInBothLanguages()
+        {
+            foreach (var language in new[] { Language.English, Language.German })
+            {
+                var fixture = new Fixture(language,3); live.Add(fixture); yield return null;
+                Assert.That(fixture.Root.Q<Button>("swapRole"), Is.Not.Null, "One-slot groups can replace Undercover with White directly.");
+                Submit(fixture.Root.Q<Button>("swapRole")); yield return null;
+                Assert.That(fixture.Session.View.WhiteCount, Is.EqualTo(1));
+                Assert.That(fixture.Session.View.UndercoverCount, Is.Zero);
+                Assert.That(fixture.Root.Q<Label>("roleLimit").text, Does.Contain("1"));
+                Assert.That(fixture.Root.Q<Button>("moreWhite").enabledSelf, Is.False);
+                Submit(fixture.Root.Q<Button>("automaticUndercover")); yield return null;
+                Assert.That(fixture.Session.View.WhiteCount, Is.Zero);
+                Assert.That(fixture.Session.View.ManualRoleCounts, Is.False);
+                fixture.Dispose();
+            }
+        }
+        [UnityTest] public IEnumerator QuickContinuesAfterACatchAndEachWhiteGetsASecretSafeJudgment()
+        {
+            foreach(var language in new[]{Language.English,Language.German})
+            {
+                var fixture=new Fixture(language,7); live.Add(fixture); yield return null;
+                Submit(fixture.Root.Q<Button>("moreWhite")); Submit(fixture.Root.Q<Button>("moreWhite"));
+                Submit(fixture.Root.Q<Button>("playButton")); ReadCards(fixture.Session);
+                fixture.Host.GetComponent<GroupScreen>().Initialize(fixture.Session); yield return null;
+                Submit(fixture.Root.Q<Button>("resumeMatch")); Submit(fixture.Root.Q<Button>("beginVote"));
+                var people=fixture.Session.Match.Participants;
+                Submit(fixture.Root.Q<Button>("suspect-"+people[0].Id)); Submit(fixture.Root.Q<Button>("confirmSuspect")); yield return null;
+                Assert.That(fixture.Root.Q<Label>("eliminatedRole").text,Is.EqualTo("Undercover"));
+                Assert.That(fixture.Root.Q<Button>("continueAccusations"),Is.Not.Null,"Quick continues directly, without a new clue round.");
+                Submit(fixture.Root.Q<Button>("continueAccusations"));
+                Assert.That(fixture.Root.Q<Button>("suspect-"+people[0].Id),Is.Null);
+                Submit(fixture.Root.Q<Button>("suspect-"+people[1].Id)); Submit(fixture.Root.Q<Button>("confirmSuspect"));
+                Assert.That(fixture.Root.Q<Label>("resultWordCivilian"),Is.Null);
+                Submit(fixture.Root.Q<Button>("whiteIncorrect"));
+                fixture.Session=Session.Open(fixture.DirectoryPath,Language.German,_=>0); fixture.Host.GetComponent<GroupScreen>().Initialize(fixture.Session); yield return null;
+                Submit(fixture.Root.Q<Button>("resumeMatch")); Submit(fixture.Root.Q<Button>("continueAccusations"));
+                Submit(fixture.Root.Q<Button>("suspect-"+people[2].Id)); Submit(fixture.Root.Q<Button>("confirmSuspect"));
+                Assert.That(fixture.Root.Q<Label>("resultWordCivilian"),Is.Null);
+                Submit(fixture.Root.Q<Button>("whiteCorrect")); yield return null;
+                Assert.That(fixture.Root.Q<Label>("resultReason").text,Does.Contain(language==Language.German ? "Alle Mr. Whites" : "All Mr. Whites"));
+                Assert.That(fixture.Session.Match.Result.WinningRoles,Is.EquivalentTo(new[]{Role.White}));
+                fixture.Dispose();
+            }
+        }
         [UnityTest] public IEnumerator ClassicCanStartFromTheSavedGroupInBothLanguages()
         {
             foreach(var language in new[]{Language.English,Language.German})
@@ -21,14 +66,14 @@ namespace WordDeduction.Tests
                 var fixture=new Fixture(language); live.Add(fixture); yield return null;
                 Submit(fixture.Root.Q<Button>("classicMode")); yield return null;
                 Assert.That(fixture.Root.Q<Button>("playButton").enabledSelf,Is.True,"Four or more people can start Classic.");
-                Assert.That(fixture.Root.Q<Button>("whitePreference"),Is.Not.Null);
-                Submit(fixture.Root.Q<Button>("whitePreference"));
-                Assert.That(fixture.Session.View.WhitePreferred,Is.True);
+                Assert.That(fixture.Root.Q<Button>("moreWhite"),Is.Not.Null);
+                Submit(fixture.Root.Q<Button>("moreWhite"));
+                Assert.That(fixture.Session.View.DesiredWhiteCount,Is.EqualTo(1));
                 var fifth=fixture.Session.View.Players[4].Id;
                 Submit(fixture.Root.Q<Button>("edit-"+fifth));
                 Submit(fixture.Root.Q<Button>("removePlayer"));
-                Assert.That(fixture.Root.Q<Button>("whitePreference").enabledSelf,Is.False);
-                Assert.That(fixture.Session.View.WhitePreferred,Is.True,"Saved preference survives falling to four people.");
+                Assert.That(fixture.Root.Q<Button>("moreWhite").enabledSelf,Is.False);
+                Assert.That(fixture.Session.View.DesiredWhiteCount,Is.EqualTo(1),"Saved preference survives falling to four people.");
                 Assert.That(fixture.Session.View.WhiteCount,Is.Zero);
                 Submit(fixture.Root.Q<Button>("undo"));
                 Assert.That(fixture.Session.View.WhiteCount,Is.EqualTo(1),"Returning fifth person restores effective White.");
@@ -43,7 +88,7 @@ namespace WordDeduction.Tests
             foreach(var language in new[]{Language.English,Language.German})
             {
                 var fixture=new Fixture(language); live.Add(fixture); yield return null;
-                Submit(fixture.Root.Q<Button>("classicMode")); Submit(fixture.Root.Q<Button>("whitePreference")); Submit(fixture.Root.Q<Button>("playButton")); yield return null;
+                Submit(fixture.Root.Q<Button>("classicMode")); Submit(fixture.Root.Q<Button>("moreWhite")); Submit(fixture.Root.Q<Button>("playButton")); yield return null;
                 for(int seat=0;seat<5;seat++)
                 {
                     var hold=fixture.Root.Q<VisualElement>("holdReveal"); Touch(hold,true);

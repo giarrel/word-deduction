@@ -23,10 +23,21 @@ namespace WordDeduction
         public GameMode Mode { get; internal set; }
         public bool WhitePreferred { get; internal set; }
         public int? KingsUndercoverPreference { get; internal set; }
+        public int? DesiredUndercoverCount { get; internal set; }
+        public int? DesiredWhiteCount { get; internal set; }
+        public bool ManualRoleCounts => Mode == GameMode.Kings ? KingsUndercoverPreference.HasValue : DesiredUndercoverCount.HasValue;
+        public int AdversaryLimit => RoleCounts.AdversaryLimit(ActiveCount);
         public int KingsUndercoverLimit => RoleCounts.KingsUndercoverLimit(ActiveCount);
-        public int UndercoverCount => Mode == GameMode.Kings ? Math.Max(1, Math.Min(KingsUndercoverPreference ?? RoleCounts.Undercover(Mode, ActiveCount), KingsUndercoverLimit)) : RoleCounts.Undercover(Mode, ActiveCount);
+        public int UndercoverCount => Mode == GameMode.Kings ? Math.Max(1, Math.Min(KingsUndercoverPreference ?? RoleCounts.Undercover(Mode, ActiveCount), KingsUndercoverLimit)) : EffectiveCounts.Undercover;
         public bool KingsCountAdjusted => Mode == GameMode.Kings && KingsUndercoverPreference.HasValue && KingsUndercoverPreference.Value != UndercoverCount;
-        public int WhiteCount => Mode == GameMode.Kings || WhitePreferred ? RoleCounts.WhiteLimit(Mode, ActiveCount) : 0;
+        public int WhiteCount => Mode == GameMode.Kings ? RoleCounts.WhiteLimit(Mode, ActiveCount) : EffectiveCounts.White;
+        RolePreference EffectiveCounts => RoleCounts.Effective(ActiveCount, DesiredUndercoverCount ?? RoleCounts.Undercover(Mode, ActiveCount), DesiredWhiteCount ?? (WhitePreferred ? RoleCounts.WhiteLimit(Mode, ActiveCount) : 0));
+        public bool RoleCountsAdjusted => Mode == GameMode.Kings ? KingsCountAdjusted : ManualRoleCounts && (UndercoverCount != DesiredUndercoverCount || WhiteCount != DesiredWhiteCount);
+        public bool CanDecreaseUndercover => ReadyToStart && UndercoverCount > (Mode == GameMode.Kings ? 1 : 0) && UndercoverCount + WhiteCount > 1;
+        public bool CanIncreaseUndercover => ReadyToStart && UndercoverCount + WhiteCount < AdversaryLimit;
+        public bool CanDecreaseWhite => Mode != GameMode.Kings && ReadyToStart && WhiteCount > 0 && UndercoverCount + WhiteCount > 1;
+        public bool CanIncreaseWhite => Mode != GameMode.Kings && ReadyToStart && UndercoverCount + WhiteCount < AdversaryLimit;
+        public bool CanSwapSingleRole => Mode != GameMode.Kings && ReadyToStart && AdversaryLimit == 1;
         public int CivilianCount => Math.Max(0,ActiveCount - UndercoverCount - WhiteCount);
         public bool CanUndo { get; internal set; }
         public int ActiveCount => Players.Count(p => p.Active);
@@ -48,7 +59,8 @@ namespace WordDeduction
         private SessionState state;
         private readonly Func<int, int> random;
         private Session(string directory, SessionState state, SnapshotStore store, Func<int, int> random) { this.directory = directory; this.state = state; this.store = store; this.random = random; }
-        public SessionView View => new SessionView { Language = state.Language, Mode = state.Mode, WhitePreferred = state.WhitePreferred, KingsUndercoverPreference = state.KingsUndercoverPreference, CanUndo = state.Removed != null, StorageNotice = store.Notice, StorageBlocked = store.Blocked,
+        RolePreference SelectedPreference => state.Mode == GameMode.Quick ? state.QuickRoles : state.Mode == GameMode.Classic ? state.ClassicRoles : null;
+        public SessionView View => new SessionView { Language = state.Language, Mode = state.Mode, WhitePreferred = state.WhitePreferred, KingsUndercoverPreference = state.KingsUndercoverPreference, DesiredUndercoverCount = SelectedPreference?.Undercover, DesiredWhiteCount = SelectedPreference?.White, CanUndo = state.Removed != null, StorageNotice = store.Notice, StorageBlocked = store.Blocked,
             Players = state.Players.Select(p => new PlayerView { Id = p.Id, Name = p.Name, DisplayName = p.Distinguished ? p.Name + " · " + p.Number : p.Name, Active = p.Active }).ToArray() };
         public static Session Open(string directory, Language initialLanguage, Func<int, int> random = null)
         {
@@ -110,6 +122,16 @@ namespace WordDeduction
         public CommandResult SetLanguage(Language language) => LiveMatch ? new CommandResult { Error = "MatchInProgress" } : Enum.IsDefined(typeof(Language), language) ? Change(next => next.Language = language) : new CommandResult { Error = "InvalidSetting" };
         public CommandResult SetMode(GameMode mode) => LiveMatch ? new CommandResult { Error = "MatchInProgress" } : Enum.IsDefined(typeof(GameMode), mode) ? Change(next => next.Mode = mode) : new CommandResult { Error = "InvalidSetting" };
         public CommandResult SetWhitePreference(bool enabled) => LiveMatch ? new CommandResult { Error = "MatchInProgress" } : Change(next => next.WhitePreferred = enabled);
+        public CommandResult SetRoleCounts(int? undercover, int? white)
+        {
+            if (LiveMatch) return new CommandResult { Error = "MatchInProgress" };
+            if (state.Mode == GameMode.Kings || undercover.HasValue != white.HasValue ||
+                (undercover.HasValue && !RoleCounts.HasGoodMajority(View.ActiveCount, undercover.Value, white.Value))) return new CommandResult { Error = "InvalidSetting" };
+            return Change(next => {
+                var preference = undercover.HasValue ? new RolePreference { Undercover = undercover.Value, White = white.Value } : null;
+                if (next.Mode == GameMode.Quick) next.QuickRoles = preference; else next.ClassicRoles = preference;
+            });
+        }
         public CommandResult SetKingsUndercoverPreference(int? count)
         {
             if (LiveMatch) return new CommandResult { Error = "MatchInProgress" };
@@ -162,6 +184,7 @@ namespace WordDeduction
             if (value == null || value.Players == null || value.Players.Count > 40 || value.Players.Count(p => p != null && p.Active) > 20 ||
                 !Enum.IsDefined(typeof(Language),value.Language) || !Enum.IsDefined(typeof(GameMode),value.Mode) || value.NextNumber < 1) return false;
             if (value.KingsUndercoverPreference.HasValue && (value.KingsUndercoverPreference < 1 || value.KingsUndercoverPreference > RoleCounts.KingsUndercoverLimit(20))) return false;
+            if (new[] { value.QuickRoles, value.ClassicRoles }.Any(p => p != null && !RoleCounts.HasGoodMajority(20, p.Undercover, p.White))) return false;
             var all = value.Removed == null ? value.Players.ToArray() : value.Players.Concat(new[] { value.Removed }).ToArray();
             if (all.Any(p => p == null || !Guid.TryParseExact(p.Id,"N",out _) || string.IsNullOrEmpty(p.Name) || NormalizeName(p.Name, existing: true) != p.Name || p.Number < 1 || p.Number >= value.NextNumber)) return false;
             if (all.Select(p=>p.Id).Distinct().Count() != all.Length || all.Select(p=>p.Number).Distinct().Count() != all.Length) return false;
@@ -181,9 +204,18 @@ namespace WordDeduction
         public GameMode Mode;
         public bool WhitePreferred;
         public int? KingsUndercoverPreference;
+        public RolePreference QuickRoles;
+        public RolePreference ClassicRoles;
         public PlayerState Removed;
         public int RemovedIndex;
         public int NextNumber = 1;
+    }
+    internal sealed class RolePreference
+    {
+        [JsonProperty(Required = Required.Always)]
+        public int Undercover;
+        [JsonProperty(Required = Required.Always)]
+        public int White;
     }
     internal sealed class PlayerState
     {

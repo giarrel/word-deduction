@@ -48,13 +48,15 @@ Button:disabled { opacity: 0.65; }
 .mode-picker { flex-direction: row; background-color: #eae5df; border-radius: 20px; padding: 4px; flex-shrink: 0; }
 .mode-button { flex-grow: 1; flex-basis: 0; border-radius: 16px; min-height: 48px; }
 .mode-button.selected { background-color: white; color: #5734a6; }
-.kings-settings { flex-shrink: 0; margin-bottom: 8px; }
+.role-settings { flex-shrink: 1; min-height: 84px; max-height: 136px; margin-bottom: 8px; }
+.white-count-row { margin-top: 4px; }
+.swap-role { color: #503093; white-space: normal; font-size: 13px; flex-shrink: 0; }
 .kings-count-row { flex-direction: row; align-items: center; background-color: var(--lilac); border-radius: 18px; }
-.count-step { min-width: 44px; min-height: 48px; font-size: 22px; color: #503093; }
+.count-step { min-width: 48px; min-height: 48px; font-size: 22px; color: #503093; }
 .count-label { flex-grow: 1; flex-shrink: 1; min-width: 0; white-space: normal; font-size: 13px; -unity-text-align: middle-center; color: #503093; }
 .count-auto { min-height: 48px; min-width: 52px; padding: 0 6px; font-size: 12px; color: #503093; }
 .count-adjustment { margin: 4px 4px 0; }
-.typing .kings-settings, .recovery .kings-settings { display: none; }
+.typing .role-settings, .recovery .role-settings { display: none; }
 .mode-description { font-size: 13px; color: var(--muted); white-space: normal; min-height: 38px; margin: 8px 4px 10px; -unity-text-align: upper-center; flex-shrink: 0; }
 .white-preference { background-color: var(--lilac); color: #503093; min-height: 48px; white-space: normal; margin-bottom: 10px; flex-shrink: 0; }
 .typing .white-preference { display: none; }
@@ -87,7 +89,7 @@ Button:disabled { opacity: 0.65; }
 .large-type .add-row { margin-bottom: 8px; }
 .large-type .mode-description { min-height: 0; }
 .large-type .mode-button { flex-basis: auto; padding: 0 4px; }
-.large-type .kings-settings { margin-bottom: 4px; }
+.large-type .role-settings { margin-bottom: 4px; }
 .large-type .start-hint { margin-top: 4px; }
 .large-type .screen { padding-bottom: 8px; }
 .large-type .empty-symbol { display: none; }
@@ -100,6 +102,7 @@ Button:disabled { opacity: 0.65; }
 .recovery .notice-panel { margin-top: 16px; }
 
 .ready .start-hint { display: none; }
+.ready .mode-description { display: none; }
 .compact .screen { padding-top: 12px; }
 .compact .mode-description { min-height: 0; margin: 6px 4px 8px; }
 .compact .edit-hint { margin-top: 5px; margin-bottom: 8px; }

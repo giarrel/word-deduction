@@ -1,0 +1,3 @@
+PASS sequential Quick requires every adversary without another clue round
+PASS sequential Quick mistakes and repeated ties award all adversary roles in the deal
+2/2 passed

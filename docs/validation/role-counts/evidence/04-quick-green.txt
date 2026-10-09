@@ -1,0 +1,2 @@
+PASS sequential Quick requires every adversary without another clue round
+1/1 passed
