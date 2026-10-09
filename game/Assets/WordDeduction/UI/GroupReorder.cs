@@ -2,6 +2,8 @@ using System;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
+using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.UIElements;
 
 namespace WordDeduction.UI
@@ -17,6 +19,10 @@ namespace WordDeduction.UI
         Vector2 start, position;
         float startScroll;
         bool moved;
+        TouchControl nativeTouch;
+        IInputStateChangeMonitor nativeMonitor;
+        int nativeTouchId;
+        bool nativeCanceled;
         VisualElement candidate;
         IVisualElementScheduledItem scrolling;
         public GroupReorder(ScrollView list, VisualElement row, string[] activeIds, Action<int> commit, Action<int> endContact)
@@ -45,6 +51,14 @@ namespace WordDeduction.UI
             if (pointer >= 0 || e.button != 0 || !target.enabledInHierarchy) return;
             pointer = e.pointerId; start = position = e.position; startScroll = list.scrollOffset.y;
             moved = false; destination = -1;
+            nativeCanceled = false;
+            var screen = Touchscreen.current;
+            int index = pointer - PointerId.touchPointerIdBase;
+            if (e.pointerType == UnityEngine.UIElements.PointerType.touch && screen != null && index >= 0 && index < screen.touches.Count)
+            {
+                nativeTouch = screen.touches[index]; nativeTouchId = nativeTouch.touchId.ReadValue();
+                nativeMonitor = InputState.AddChangeMonitor(nativeTouch.phase,ObserveNativeTouch);
+            }
             target.CapturePointer(pointer); e.StopPropagation();
             scrolling = target.schedule.Execute(AutoScroll).Every(16);
         }
@@ -82,25 +96,27 @@ namespace WordDeduction.UI
         {
             if (e.pointerId != pointer) return;
             position = e.position; Preview();
-            int drop = !WasCanceledTouch(e) && moved && list.contentViewport.worldBound.Contains(position) ? destination : -1;
+            bool canceled = nativeCanceled || (nativeTouch != null && nativeTouch.phase.ReadValue() == UnityEngine.InputSystem.TouchPhase.Canceled);
+            int drop = !canceled && moved && list.contentViewport.worldBound.Contains(position) ? destination : -1;
             endContact(e.pointerId);
             Cancel(); e.StopPropagation();
             if (drop >= 0) commit(drop);
         }
-        static bool WasCanceledTouch(PointerUpEvent e)
+        void ObserveNativeTouch(InputControl control, double time, InputEventPtr input, long monitorIndex)
         {
-            // InputForUI reports canceled native touches as PointerUp, not PointerCancel.
-            // Its touch pointer index is the Touchscreen slot, not the native touchId.
-            var screen = Touchscreen.current;
-            int index = e.pointerId - PointerId.touchPointerIdBase;
-            return e.pointerType == UnityEngine.UIElements.PointerType.touch && screen != null && index >= 0 && index < screen.touches.Count
-                && screen.touches[index].phase.ReadValue() == UnityEngine.InputSystem.TouchPhase.Canceled;
+            // InputForUI buffers a canceled touch as PointerUp. Observe each state write
+            // before the next native Begin can reuse this slot within the same update.
+            if (nativeTouch != null && nativeTouch.touchId.ReadValue() == nativeTouchId
+                && nativeTouch.phase.ReadValue() == UnityEngine.InputSystem.TouchPhase.Canceled)
+                nativeCanceled = true;
         }
         void CancelPointer(PointerCancelEvent e) { if (e.pointerId == pointer) { endContact(e.pointerId); Cancel(); } }
         void CaptureLost(PointerCaptureOutEvent e) { if (e.pointerId == pointer) Cancel(); }
         void Detached(DetachFromPanelEvent e) { Cancel(); }
         public void Cancel()
         {
+            if (nativeTouch != null && nativeMonitor != null) InputState.RemoveChangeMonitor(nativeTouch.phase,nativeMonitor);
+            nativeMonitor = null; nativeTouch = null;
             int previous = pointer; pointer = -1;
             scrolling?.Pause(); scrolling = null;
             row.style.translate = new Translate(0,0,0); row.RemoveFromClassList("reordering");

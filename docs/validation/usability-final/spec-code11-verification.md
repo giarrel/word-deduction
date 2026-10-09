@@ -1,0 +1,11 @@
+# Spec verification — code11 cancellation correction
+
+Read-only review of `bd7b618c957051d3ee61321a6ed3d275a5302a93..976c0fc49742898e41fa21d2392cd34fec6a73f8` in final-corrections, against Specs #17/#18.
+
+**One actionable finding: [P2] Preserve the canceled event's state before the touch slot is reused.** `GroupReorder.cs:96–101` reads the slot's *current* phase when the buffered PointerUp is dispatched. Spec #17 requires “invalid, stale or cancelled requests leave the prior state unchanged” (`group-usability.md:40`). The installed InputSystemProvider buffers callback events in `m_Events` (retained `InputSystemProvider.reference.cs.txt:423–425`) and dispatches them later in `Update` (140–160). Installed `Touchscreen.cs:828–857` explicitly immediately reuses ended/canceled slots when a new Begin arrives. Consequently, if Cancel and a new Begin are processed before the same UI dispatch, the canceled gesture's PointerUp can read the replacement touch's Began phase, pass this guard and commit the old preview. This is a source-supported ordering gap; this reviewer has not dynamically reproduced that batched sequence.
+
+Capture the terminal reason for the corresponding contact before its slot can be overwritten, preserving the existing exact-contact cleanup. Extend the public-provider regression with Cancel and a new Begin queued without an intervening yield; assert the canceled order remains durable and a later valid drag still works. This bounded follow-up was sent to the coordinator for the authorized test owner.
+
+The separate-frame cancellation fix otherwise addresses the observed native defect. Normal release/outside controls and the stored full rendered result **58/58**, zero failures/skips, were inspected. The end-contact operation remains limited to the ending pointer; secret-card concealment, other-held-finger guards and save schema are unchanged. No additional #18 mismatch was identified. Version 1.2.0/code11 is consistent across build settings and inspector defaults.
+
+Final native update, cancellation, performance, reduced-motion and privacy acceptance remain coordinator gates. No tests, Editor, ADB or repository changes were made by this reviewer. Only this external report was written.

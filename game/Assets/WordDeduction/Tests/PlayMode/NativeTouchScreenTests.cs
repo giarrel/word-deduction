@@ -90,5 +90,30 @@ namespace WordDeduction.Tests
             Assert.That(Session.Open(directory,Language.German).View.Players.Select(p => p.Id), Is.EqualTo(new[] { ids[1],ids[0],ids[2],ids[3],ids[4] }),
                 "A following deliberate native release must still commit exactly once.");
         }
+
+        [UnityTest]
+        public IEnumerator CancelAndNextBeginInOneInputUpdateKeepTheOrder()
+        {
+            Create(); yield return null; yield return null;
+            var ids = session.View.Players.Select(p => p.Id).ToArray();
+            var handle = root.Q<VisualElement>("reorder-" + ids[0]);
+            var start = handle.worldBound.center;
+            var destination = root.Q<VisualElement>("player-" + ids[1]).worldBound.center + new Vector2(0,10);
+            Touch(23,NativePhase.Began,start); yield return null; yield return null;
+            Touch(23,NativePhase.Moved,destination); yield return null; yield return null;
+            Assert.That(session.View.Players.Select(p => p.Id), Is.EqualTo(ids));
+            // Both events reach InputSystem before InputForUI dispatches its buffered release.
+            Touch(23,NativePhase.Canceled,destination);
+            Touch(24,NativePhase.Began,start);
+            yield return null; yield return null;
+            Assert.That(Session.Open(directory,Language.German).View.Players.Select(p => p.Id), Is.EqualTo(ids),
+                "Reusing a canceled touch slot in the same update cannot commit the canceled preview.");
+            Touch(24,NativePhase.Canceled,start); yield return null; yield return null;
+            Touch(25,NativePhase.Began,start); yield return null; yield return null;
+            Touch(25,NativePhase.Moved,destination); yield return null; yield return null;
+            Touch(25,NativePhase.Ended,destination); yield return null; yield return null;
+            Assert.That(Session.Open(directory,Language.German).View.Players.Select(p => p.Id), Is.EqualTo(new[] { ids[1],ids[0],ids[2],ids[3],ids[4] }),
+                "The cancellation latch must be cleared for a following deliberate drag.");
+        }
     }
 }

@@ -1,0 +1,204 @@
+{
+  "success": true,
+  "command": "command console",
+  "data": {
+    "command": "console",
+    "parameters": {
+      "level": "error",
+      "tail": "200"
+    },
+    "result": {
+      "entries": [
+        {
+          "seq": 3,
+          "timestampUtc": "2026-10-09T07:18:36.2604465Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 7,
+          "timestampUtc": "2026-10-09T07:19:16.5841009Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 21,
+          "timestampUtc": "2026-10-09T07:38:49.2492049Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 25,
+          "timestampUtc": "2026-10-09T07:39:18.3156581Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 33,
+          "timestampUtc": "2026-10-09T07:39:29.4260046Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 40,
+          "timestampUtc": "2026-10-09T08:01:26.7840969Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 44,
+          "timestampUtc": "2026-10-09T08:03:07.9124155Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 48,
+          "timestampUtc": "2026-10-09T08:03:59.0976514Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "Assets\\WordDeduction\\UI\\GroupReorder.cs(96,37): error CS0104: 'PointerType' is an ambiguous reference between 'UnityEngine.UIElements.PointerType' and 'UnityEngine.PointerType'",
+          "stackTrace": "",
+          "seeded": false
+        },
+        {
+          "seq": 49,
+          "timestampUtc": "2026-10-09T08:04:10.691122Z",
+          "level": "error",
+          "logType": "Error",
+          "message": "All compiler errors have to be fixed before you can enter playmode!",
+          "stackTrace": "UnityEditor.SceneView:ShowCompileErrorNotification ()\n",
+          "seeded": false
+        },
+        {
+          "seq": 52,
+          "timestampUtc": "2026-10-09T08:05:08.1953323Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 56,
+          "timestampUtc": "2026-10-09T08:07:28.0991027Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 60,
+          "timestampUtc": "2026-10-09T08:08:09.7020759Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 107,
+          "timestampUtc": "2026-10-09T08:20:30.2212853Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 112,
+          "timestampUtc": "2026-10-09T08:22:16.663587Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 117,
+          "timestampUtc": "2026-10-09T08:23:50.1627473Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 128,
+          "timestampUtc": "2026-10-09T08:30:09.8408415Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 132,
+          "timestampUtc": "2026-10-09T08:31:13.6645624Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        },
+        {
+          "seq": 136,
+          "timestampUtc": "2026-10-09T08:31:32.2578282Z",
+          "level": "error",
+          "logType": "Exception",
+          "message": "ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.\r\nParameter name: index",
+          "stackTrace": "System.Collections.Generic.List`1[T].get_Item (System.Int32 index) (at <d49d4cb128564ee1b54a84338c98d353>:0)\nUnityEditor.Search.SearchDatabase+<EnumerateAll>d__83.MoveNext () (at <6fdd759105e547aba25561001f1f3e60>:0)\nSystem.Linq.Enumerable.TryGetFirst[TSource] (System.Collections.Generic.IEnumerable`1[T] source, System.Boolean& found) (at <e1f614c5eede4689988594bcb9796955>:0)\nSystem.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) (at <e1f614c5eede4689988594bcb9796955>:0)\nUnityEditor.Search.SearchDatabase.GetDefaultSearchDatabase () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.Search.SearchInit.IndexationOnStartup () (at <6fdd759105e547aba25561001f1f3e60>:0)\nUnityEditor.EditorApplication.Internal_CallDelayFunctions () (at <04e249a5238343c6a036befedb61c13f>:0)\n",
+          "seeded": false
+        }
+      ],
+      "cursor": 178,
+      "session": "82b261d14e744d28b66cf43760391441",
+      "returned": 18,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 18,
+        "warn": 109,
+        "log": 51
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-09T08:36:19.7479031Z",
+        "ageMs": 246,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 1,
+        "consoleWarnings": 40,
+        "consoleLogs": 3,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}

@@ -1,0 +1,6 @@
+[DEBUG-native-cancel-11] down pointer=1 index=0 id=23
+[DEBUG-native-cancel-11] event phaseRead=False phase=None idRead=False id=0 own=23
+[DEBUG-native-cancel-11] event phaseRead=False phase=None idRead=False id=0 own=23
+[DEBUG-native-cancel-11] event phaseRead=False phase=None idRead=False id=0 own=23
+[DEBUG-native-cancel-11] up pointer=1 canceled=False phase=Began
+[DEBUG-native-cancel-11] down pointer=1 index=0 id=24
