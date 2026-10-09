@@ -27,7 +27,7 @@ The glossary now describes the current group and explicitly preserved earlier pa
 
 ## Release configuration and evidence boundary
 
-Version **1.2.0 / Android code10** is consistent in the build entry point, serialized PlayerSettings, inspector defaults and reproduction guide. PlayerSettings was changed through the existing Unity `AppBuild.Configure()` entry point; the enabled scene remains `Assets/WordDeduction/Scenes/App.unity`. Existing Unity 6000.3.25f1, Android ARM64/IL2CPP, API26–36, release minification and local debug signing identity are retained.
+Version **1.2.0 / Android code11** is consistent in the build entry point, serialized PlayerSettings, inspector defaults and reproduction guide. PlayerSettings was changed through the existing Unity `AppBuild.Configure()` entry point; the enabled scene remains `Assets/WordDeduction/Scenes/App.unity`. Existing Unity 6000.3.25f1, Android ARM64/IL2CPP, API26–36, release minification and local debug signing identity are retained.
 
 Both independent reviews were received before any release build. The granted Editor lease belongs only to this correction checkout. Raw import/test/build logs and generated font-cache copies are preserved under ignored `artifacts/usability-final`. Test-generated font data was saved and copied before clearing Inter/Emoji through Unity; no semantic font asset change is retained. No Console clearing, ADB operation, other Editor, installation, global setting, production signing key, issue closure or Store publication is part of this correction.
 
@@ -50,3 +50,32 @@ The implementer personally inspected [German Kings](evidence/code10/group-five-k
 [Code10 Console evidence](evidence/code10/console-errors.json) retains five UnityEditor.Search startup exceptions, all without app stack frames; [compilation status](evidence/code10/console-status.json) is clean. Two initial fixture-tool attempts failed (no scene object after tests; missing extension-method namespace in eval); corrected fixture setup/capture outputs are retained under raw artifacts, and these are not product failures. No Console history was cleared.
 
 The earlier source-equivalence JSON and independent correction-verification reports describe the code9 stage. Code10 production changes are limited to GroupScreen handle construction, its USS and localized hint copy; behavior, Session, Android plugins and gesture code remain unchanged. The build number advances to10 because9 was already installed. Final code10 package evidence follows after building the clean pinned source.
+
+## Code10 package and independent review evidence
+
+Both [Standards code10 verification](standards-code10-verification.md) and the separate [Spec code10 verification](spec-code10-verification.md) found no new findings in the presentation correction. Their scope predates the subsequently reproduced native cancellation defect below.
+
+Clean source `bd7b618c957051d3ee61321a6ed3d275a5302a93`, package-lock SHA256 `da98f245e8c511d47699dc883e521eff5176800341117fcfe8f77fe9dcfb342d`, produced:
+
+| Package | Bytes | SHA256 | Build | Inspection |
+| --- | ---: | --- | --- | --- |
+| code10 APK | 37,472,054 | `3a73e1c6816ab97aad7df07cd216083cf2b3f8141c409c7c12320ec8c3aaa180` | [270.37s](evidence/code10/apk-build-summary.json) | [14/14 commands](evidence/code10/apk-inspection.json) |
+| code10 AAB | 37,828,990 | `9ed3213acc2aff0dc9c674326540799820c29fd4882f3673f6fa71ba6416b617` | [269.67s](evidence/code10/aab-build-summary.json) | [44/44 commands, four packages](evidence/code10/aab-inspection.json) |
+
+Both have zero build errors and two retained warnings: missing RuntimePipelineConfig intentionally disables runtime Pipeline; the pre-existing MatchSurface.cs:89 `EventBase.PreventDefault` API is obsolete. The APK uses the existing Android Debug certificate (`4a0d4929acea4c086bc5534bf462eebcd9d866f31c1bced10b400412117be926`), v2 signature verified. These are locally signed release configurations, not owner-signed Store submissions.
+
+The APK's actual DEX retains the eight input classes and contains no debug/info/verbose input-log calls. Packaged manifest has no network permissions and excludes backup; boot.config has no player connection and debugger wait is0. [APK](evidence/code10/apk-managed-stripped.txt) and [AAB](evidence/code10/aab-managed-stripped.txt) stripped assembly lists contain no test, Pipeline, Analytics, Connect or Consent assembly.
+
+For code10, all six ARM64 libraries pass LOAD16K checks and have zero rounded-RELRO writable intersections. Scalar GNU_RELRO end residues remain nonzero: libc++12288, game4096, il2cpp8192, main8192, swappy4096, unity8192 bytes. These scalar failures remain explicit; static inspection and translated emulator execution do not prove physical ARM64/16KB-kernel behavior or Play acceptance. Both complete code9 and code10 pairs and raw inspection outputs are retained.
+
+## Native follow-up: operating-system cancellation
+
+After the successful code9→10 update, the coordinator isolated a real operating-system cancel defect. A combined cancel/outside trace first went red; then two separate `Down → Move → ACTION_CANCEL` sequences, with no Up, swapped Nora/Luca in saved state. The separately verified outside release preserved the original bytes. The first combined PowerShell batch had nonterminating assertions and is retained as failed evidence, never a pass. Original input logs, screenshots and both save generations are copied under ignored `artifacts/usability-final/code11/native-red`.
+
+The accepted regression seam is the rendered app fed by public `InputSystem.QueueStateEvent`/`Touchscreen` events through the installed InputForUI provider, then public `Session.Open` observation. It uses an actual screen panel: a RenderTexture fixture with directly pooled PointerCancel cannot reproduce this engine mapping. The [first red](evidence/code11/provider-red-attempt1.json) reproduced the saved-order symptom; the [diagnostic red](evidence/code11/provider-red-phase.json) proved `PointerUp=1`, `PointerCancel=0`, and the actual Touchscreen phase `Canceled` at release. Installed primary source `InputSystemProvider.OnClickPerformed` maps an unpressed action directly to ButtonReleased without checking cancel phase; its complete reference source is retained in raw evidence.
+
+The small production correction checks the released pointer's actual Touchscreen slot before committing a group drop. Canceled native touches use the existing cancellation and exact-contact cleanup. It does not clear every contact, modify the input package, change persistent data, add platform logs, or alter ordinary gesture paths. Pointer IDs use the provider's slot index, not the native touchId.
+
+The same test turned [green in0.38s](evidence/code11/provider-green-completed.json). It was extended with actual outside and following valid-release controls, [green in0.41s](evidence/code11/provider-controls-green.json), so suppressing every drop cannot satisfy it. The first fix import had a `PointerType` namespace ambiguity; qualifying the existing UIElements type repaired compilation, and the blocked test then completed. The original compiler/runner diagnostics remain in the Editor log rather than being removed. Full rendered regression and clean code11 artifacts follow.
+
+The final post-fix [full rendered run](evidence/code11/full-rendered-completed.json) completed **58/58 passed**, zero failures/skips/inconclusive, in205.04 seconds. It includes the actual-provider regression, ordinary group tests, captured release/cancel and other-held-finger privacy, content/layout, recovery and game-flow scenarios. No Session or Session-test source changed. Existing minimal test fixtures log missing-theme warnings; the production Panel asset is unchanged. [Final compilation status](evidence/code11/console-status.json) reports no compilation failure; [retained error history](evidence/code11/console-errors.json) includes the prior reproduced test failures, repaired compile error and recurring UnityEditor.Search exceptions. Successful checks do not erase this history. Test-generated Inter/Emoji assets were saved/copied and cleared through Unity; no semantic font diff remains. Independent code11 reviews and packaged/native evidence remain the next gates.

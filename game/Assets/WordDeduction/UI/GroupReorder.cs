@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 namespace WordDeduction.UI
@@ -81,10 +82,19 @@ namespace WordDeduction.UI
         {
             if (e.pointerId != pointer) return;
             position = e.position; Preview();
-            int drop = moved && list.contentViewport.worldBound.Contains(position) ? destination : -1;
+            int drop = !WasCanceledTouch(e) && moved && list.contentViewport.worldBound.Contains(position) ? destination : -1;
             endContact(e.pointerId);
             Cancel(); e.StopPropagation();
             if (drop >= 0) commit(drop);
+        }
+        static bool WasCanceledTouch(PointerUpEvent e)
+        {
+            // InputForUI reports canceled native touches as PointerUp, not PointerCancel.
+            // Its touch pointer index is the Touchscreen slot, not the native touchId.
+            var screen = Touchscreen.current;
+            int index = e.pointerId - PointerId.touchPointerIdBase;
+            return e.pointerType == UnityEngine.UIElements.PointerType.touch && screen != null && index >= 0 && index < screen.touches.Count
+                && screen.touches[index].phase.ReadValue() == UnityEngine.InputSystem.TouchPhase.Canceled;
         }
         void CancelPointer(PointerCancelEvent e) { if (e.pointerId == pointer) { endContact(e.pointerId); Cancel(); } }
         void CaptureLost(PointerCaptureOutEvent e) { if (e.pointerId == pointer) Cancel(); }

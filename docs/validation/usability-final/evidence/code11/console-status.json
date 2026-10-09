@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "command": "command console_status",
+  "data": {
+    "command": "console_status",
+    "parameters": {},
+    "result": {
+      "entries": [],
+      "cursor": 102,
+      "session": "82b261d14e744d28b66cf43760391441",
+      "returned": 0,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 12,
+        "warn": 63,
+        "log": 27
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-09T08:12:07.1043023Z",
+        "ageMs": 85,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 1,
+        "consoleWarnings": 40,
+        "consoleLogs": 3,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\final-corrections\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
