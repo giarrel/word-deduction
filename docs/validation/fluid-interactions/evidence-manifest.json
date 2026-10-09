@@ -1,0 +1,173 @@
+{
+  "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\motion\\artifacts\\fluid-interactions",
+  "sourceCommit": "e5a99857fb530294972ba854fd5fa01f62c34154",
+  "files": [
+    {
+      "path": "evidence/console-errors.json",
+      "bytes": 13092,
+      "sha256": "9456aa53302e5e769797ebaffb707217c484b557ca3a2872a174282ba3b0c756"
+    },
+    {
+      "path": "evidence/console-status.json",
+      "bytes": 940,
+      "sha256": "74ef70200cb7325b4649cc9c265d1745802008b96e4340efb89dc506a68d523d"
+    },
+    {
+      "path": "evidence/editor-before-stop.json",
+      "bytes": 382,
+      "sha256": "b165c0a6fb1fc8b9c6f3e7686088c6d10851bf22e8d2e9f34f83e7af1a58aefd"
+    },
+    {
+      "path": "evidence/editor-exit-request.json",
+      "bytes": 617,
+      "sha256": "7afedbfc353be62d816c39081b19244a06a747c0206d8671e23ecbca50f8709a"
+    },
+    {
+      "path": "evidence/editor-exited.txt",
+      "bytes": 89,
+      "sha256": "803ac7b9e7a6361ff3457e31b30c8e34e5f874cb9efb716f362202dc75a79ed1"
+    },
+    {
+      "path": "evidence/editor-pid.txt",
+      "bytes": 8,
+      "sha256": "e62b83bbe8be8a48e0d187ef72b260f88976713108f7f0c37a1108ac5e2193c0"
+    },
+    {
+      "path": "evidence/editor.log",
+      "bytes": 710618,
+      "sha256": "b438863a054e1807140f86d4ba24effae840a1abed44feae047de2750d8cebaa"
+    },
+    {
+      "path": "evidence/font-cleanup.json",
+      "bytes": 799,
+      "sha256": "f343f8cf3282c653f5fefcead3d32cc25f3f2c981f3d0fcc15bfb2061eb6a6eb"
+    },
+    {
+      "path": "evidence/integrated-rendered-dispatch.json",
+      "bytes": 986,
+      "sha256": "428bacbe6cc3d3eebe50e00bc8e4087c089ac69f3e8f5118f5abdfc4259d5959"
+    },
+    {
+      "path": "evidence/integrated-rendered-final-result.json",
+      "bytes": 16262,
+      "sha256": "31c9d7cc77d5eb1482c798e0b4f5c22d6f9b8c1ce6816d0884936773f07efe2f"
+    },
+    {
+      "path": "evidence/integrated-rendered-status-1.json",
+      "bytes": 413,
+      "sha256": "1c3ae349261e47259a22aeee7cf5bf5bbcb677ff800a80af7f2a0d9f8be53b8a"
+    },
+    {
+      "path": "evidence/integrated-rendered-status-2.json",
+      "bytes": 413,
+      "sha256": "1c3ae349261e47259a22aeee7cf5bf5bbcb677ff800a80af7f2a0d9f8be53b8a"
+    },
+    {
+      "path": "evidence/partial-return-green-dispatch.json",
+      "bytes": 1042,
+      "sha256": "1cf663d157536898b1f989ebce1cb0086092b69df539d7291cb200e515993f64"
+    },
+    {
+      "path": "evidence/partial-return-green-result.json",
+      "bytes": 893,
+      "sha256": "7158c2f1f6abab53509437e989d9e01bbde1f0df445d19a3463790b8da53a4da"
+    },
+    {
+      "path": "evidence/partial-return-red-dispatch-ready.json",
+      "bytes": 1042,
+      "sha256": "1cf663d157536898b1f989ebce1cb0086092b69df539d7291cb200e515993f64"
+    },
+    {
+      "path": "evidence/partial-return-red-dispatch.json",
+      "bytes": 447,
+      "sha256": "e60c6e002323addf09adacdb5ace6336c433cbac3b1ed9a6d86b90e1010c8273"
+    },
+    {
+      "path": "evidence/partial-return-red-result.json",
+      "bytes": 1549,
+      "sha256": "197f917770b2759011a34bf7222a1d06127fe949126fc0f3be3ac83bc94a3c60"
+    },
+    {
+      "path": "evidence/partial-return-refresh.json",
+      "bytes": 556,
+      "sha256": "f847e5739cb40c29a6b56e4effc429b813ddff99241455989dbf37dcf691d007"
+    },
+    {
+      "path": "evidence/refactor-after-dispatch.json",
+      "bytes": 938,
+      "sha256": "6579e948d2fe58159e7d9484900697722fd51702083df420e0ecacf957681e81"
+    },
+    {
+      "path": "evidence/refactor-after-result.json",
+      "bytes": 1976,
+      "sha256": "58de7ff8d4d081377402678b09196492379a1012f60a84844b7b1398913979fd"
+    },
+    {
+      "path": "evidence/refactor-before-dispatch.json",
+      "bytes": 938,
+      "sha256": "6579e948d2fe58159e7d9484900697722fd51702083df420e0ecacf957681e81"
+    },
+    {
+      "path": "evidence/refactor-before-result.json",
+      "bytes": 1976,
+      "sha256": "1b702e89902734c710ca96f29d4061d74de7ef5e9acad87c9cccd7d82fda0e21"
+    },
+    {
+      "path": "evidence/regrab-green-dispatch.json",
+      "bytes": 940,
+      "sha256": "d56c3e15dd6047ec3991ec3563de56a5e17ee0f32fd20abb0114cb8405ce227d"
+    },
+    {
+      "path": "evidence/regrab-green-result.json",
+      "bytes": 1173,
+      "sha256": "e57f127ba4eb923963fbc04c2f815df2bad7ff410f61edfaf44ba6278a5b3045"
+    },
+    {
+      "path": "evidence/regrab-red-dispatch.json",
+      "bytes": 1044,
+      "sha256": "90e74e0960264abd3d3de8eff5c6b19dca164c6bc08d4d3b1f064cab58ca1190"
+    },
+    {
+      "path": "evidence/regrab-red-result.json",
+      "bytes": 1556,
+      "sha256": "f043ec0c2df2ae363d5adf2ae60cf8691aaa1d98a7b75ef3306d1babc6b022a0"
+    },
+    {
+      "path": "evidence/reorder-reveal-green-dispatch.json",
+      "bytes": 940,
+      "sha256": "d56c3e15dd6047ec3991ec3563de56a5e17ee0f32fd20abb0114cb8405ce227d"
+    },
+    {
+      "path": "evidence/reorder-reveal-green-result.json",
+      "bytes": 1727,
+      "sha256": "1f3c7ce8238e86443f87abc906bde107a295d1758168a53e6d6716cc402e18a0"
+    },
+    {
+      "path": "evidence/reorder-reveal-red-captured-dispatch.json",
+      "bytes": 1046,
+      "sha256": "d013e0a3f99529e2286b9c72d658a1238f33e35107dcdde29333d544173794b7"
+    },
+    {
+      "path": "evidence/reorder-reveal-red-captured-result.json",
+      "bytes": 1541,
+      "sha256": "f5676d2584734f5fb9ff2b9b4fc2acefe8d78d1ac040b31d746ab6a2a6b5d175"
+    },
+    {
+      "path": "evidence/reorder-reveal-red-dispatch.json",
+      "bytes": 1046,
+      "sha256": "d013e0a3f99529e2286b9c72d658a1238f33e35107dcdde29333d544173794b7"
+    },
+    {
+      "path": "evidence/reorder-reveal-red-result.json",
+      "bytes": 1597,
+      "sha256": "82ec6c5b44c00447e92988d50b739c81d2d8229a798f33b641bc0dd940242190"
+    },
+    {
+      "path": "evidence/save-assets.json",
+      "bytes": 551,
+      "sha256": "3519a2161e2fdf060342babc0e9ae7ac88300e01f6aad413791fd263897aa386"
+    }
+  ],
+  "count": 33,
+  "bytes": 769137.0
+}

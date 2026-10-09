@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "command": "command console_status",
+  "data": {
+    "command": "console_status",
+    "parameters": {},
+    "result": {
+      "entries": [],
+      "cursor": 110,
+      "session": "6c213228e7224dc193c307464d6a1c92",
+      "returned": 0,
+      "dropped": false,
+      "reset": false,
+      "counts": {
+        "error": 10,
+        "warn": 70,
+        "log": 30
+      },
+      "groundTruth": {
+        "sampledUtc": "2026-10-09T07:01:49.2302492Z",
+        "ageMs": 116,
+        "compilationFailed": false,
+        "compiling": false,
+        "consoleErrors": 1,
+        "consoleWarnings": 40,
+        "consoleLogs": 3,
+        "seeded": true
+      }
+    },
+    "target": {
+      "host": "127.0.0.1",
+      "port": 7800,
+      "projectPath": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\usability-worktrees\\motion\\game"
+    }
+  },
+  "errors": [],
+  "warnings": []
+}
