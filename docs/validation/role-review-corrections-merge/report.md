@@ -1,0 +1,11 @@
+# Shared starter correction merge
+
+9 October 2026. The separate merger integrated `implement/role-review-corrections` handoff `ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218` into `integration/role-counts-v1.3` at `d7cc6a79516294f8d2c69d9364b134b1fa16f603`, without conflicts. Merge commit: **`b629bcfdd45cfb3715069401b665645334eb5291`**.
+
+The merged `game`, `tests`, `content`, `tools` and `third-party` tree identities exactly match reviewed/tested runtime source **`d3ad9d0ecd42f4bfb46e2e09f75f914e07a02e59`**. The handoff adds only the [correction report and evidence](../role-review-corrections/report.md). No implementation or tests were changed by the merger. The shared private starter operation preserves the existing Classic/Kings caller-specific transitions; both independent delta reviews had cleared this extraction.
+
+Recorded public Session runs passed **93/93 before and 93/93 after**, both exit 0; the after run took 299.56 seconds. The merger checked both exact source identifiers, all 93 PASS lines, raw log hashes and the recorded Newtonsoft dependency hash. These were evidence checks, not another test run.
+
+All four original captures (**16,370 bytes**) and their four canonical Git blobs (**16,164 bytes**) are independently preserved under `artifacts/role-review-corrections-merge/ec3c3d4ff206/`, in `raw/` and `canonical-git/`. [Inventory](preservation.json) records each size, SHA256 and canonical blob identity. Every copy was reverified after merging against its original representation and the merged Git blob. The raw/canonical differences are exclusively CRLF versus LF; recorded raw hashes are not applied to normalized Git text. [Original after log](../../../artifacts/role-review-corrections-merge/ec3c3d4ff206/raw/session-after.log) and [canonical after log](../../../artifacts/role-review-corrections-merge/ec3c3d4ff206/canonical-git/session-after.log) remain distinct.
+
+No Unity, ADB, build, push, tracker or cleanup operation was performed. The correction worktree and branch remain. Ticket #23's final rendered, packaged and native Android acceptance continues on the merged integration source; these Session results do not establish release readiness or physical-device behavior.

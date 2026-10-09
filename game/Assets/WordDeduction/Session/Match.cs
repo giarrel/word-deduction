@@ -184,9 +184,14 @@ namespace WordDeduction
         }
         void AdvanceKingsStarter(MatchState match)
         {
+            AdvanceRoundStarter(match);
+            match.RulesVersion = 6;
+        }
+        void AdvanceRoundStarter(MatchState match)
+        {
             var survivors = match.Participants.Where(p => !p.Eliminated).ToArray();
             match.StartingIndex = match.Participants.IndexOf(survivors[random(survivors.Length)]);
-            match.Round++; match.RulesVersion = 6;
+            match.Round++;
         }
         CommandResult Deal()
         {
@@ -329,9 +334,8 @@ namespace WordDeduction
         public CommandResult ContinueRound(string matchId, int expectedRound) => state.Match?.Id == matchId ? ContinueRound(expectedRound) : InvalidAction();
         void NextRound(MatchState match)
         {
-            var survivors = match.Participants.Where(p => !p.Eliminated).ToArray();
-            match.StartingIndex = match.Participants.IndexOf(survivors[random(survivors.Length)]);
-            match.Round++; match.Suspect = null; match.Runoff = false; match.Phase = MatchPhase.Clues;
+            AdvanceRoundStarter(match);
+            match.Suspect = null; match.Runoff = false; match.Phase = MatchPhase.Clues;
         }
         static bool ValidMatch(MatchState match)
         {
