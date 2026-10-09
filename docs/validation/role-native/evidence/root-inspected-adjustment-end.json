@@ -1,0 +1,21 @@
+{
+  "images": [
+    {
+      "file": "r13-large-adjustment-bottom-de.png",
+      "sha256": "2fb88d98371b6f93865bfbf81e76bc0c54866061e9be565b65c07129c508e255",
+      "bytes": 222295,
+      "inspectedBy": "Root",
+      "method": "Actual view_image pixels opened and inspected",
+      "observation": "Earlier scroll stops after 5 Undercover plus; does not yet show the final White line."
+    },
+    {
+      "file": "r13-final-adjustment-end-04.png",
+      "sha256": "d4d0a82554bde5ef7146d611dbd5386bbcc4447a7930b853692849856816354f",
+      "bytes": 218934,
+      "inspectedBy": "Root",
+      "method": "Actual view_image pixels opened and inspected",
+      "observation": "Final scroll shows stored 5 Undercover plus 4 Mr. White completely above Start."
+    }
+  ],
+  "count": 2
+}

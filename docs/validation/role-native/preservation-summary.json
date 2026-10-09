@@ -1,0 +1,9 @@
+{
+  "archive": "artifacts/role-native/code12",
+  "manifest": "artifacts/role-native/code12/preservation.json",
+  "manifestSha256": "ed794a7f3496f1589543ecff9567c34525b94812a5370b5ea5141a1ab59142fd",
+  "files": 1812,
+  "bytes": 60314159,
+  "pass": true,
+  "scope": "Byte-exact source and target verification before worktree cleanup. Later final review/cleanup reports are preserved separately."
+}

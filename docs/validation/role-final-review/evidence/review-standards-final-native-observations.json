@@ -1,0 +1,13 @@
+{
+  "scope": "Independent read-only Standards review of final native archive",
+  "utc": "2026-10-09T21:41:32.1279999Z",
+  "fileCount": 1812,
+  "bytes": 60314159.0,
+  "mismatches": [],
+  "finalAuditAssertions": 252,
+  "finalAuditReferencedFiles": 147,
+  "finalAuditReferencedHashMismatches": 0,
+  "matrixLinks": 142,
+  "matrixMissingTargets": 0,
+  "noDeviceOrEditorActions": true
+}

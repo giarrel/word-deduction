@@ -1,0 +1,224 @@
+{
+  "completedAtUtc": "2026-10-09T21:37:43.3059632Z",
+  "integrationHead": "3f5233e611d8f91d8728d9ae1722381b8ca32797",
+  "executed": false,
+  "worktrees": [
+    {
+      "path": "C:/Users/lucac/Documents/Codex/2026-10-06/sie/work/role-counts/implement-counts",
+      "head": "d34e48d171e4d24e85258ff3ea7dab467b079a22",
+      "branch": "implement/role-counts",
+      "clean": true,
+      "merged": true,
+      "reparsePoints": 0,
+      "artifactFilesVerified": 219
+    },
+    {
+      "path": "C:/Users/lucac/Documents/Codex/2026-10-06/sie/work/role-counts/implement-kings-starter",
+      "head": "e76c702648d4c7324041487e655e3e6e50f7bab5",
+      "branch": "implement/kings-starter",
+      "clean": true,
+      "merged": true,
+      "reparsePoints": 0,
+      "artifactFilesVerified": 243
+    },
+    {
+      "path": "C:/Users/lucac/Documents/Codex/2026-10-06/sie/work/role-counts/implement-review-corrections",
+      "head": "ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218",
+      "branch": "implement/role-review-corrections",
+      "clean": true,
+      "merged": true,
+      "reparsePoints": 0,
+      "artifactFilesVerified": 4
+    },
+    {
+      "path": "C:/Users/lucac/Documents/Codex/2026-10-06/sie/work/role-counts/implement-acceptance",
+      "head": "be88547f65dfa30c1abd4372b98185fcbad006e4",
+      "branch": "implement/role-acceptance",
+      "clean": true,
+      "merged": true,
+      "reparsePoints": 0,
+      "artifactFilesVerified": 184
+    }
+  ],
+  "additionalExistingCopies": [
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\group-usability\\screenshots\\editing-large-English.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-final-preservation\\25d3e9f9d806-20261009T093925Z\\worktree\\artifacts\\group-usability\\screenshots\\editing-large-English.png",
+      "bytes": 28526,
+      "sha256": "42b07d8e724a47893d586fa0e6cc207228d3e8281b7a70a1fea9a9fefbce014c"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-elimination\\result-English.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-final-preservation\\25d3e9f9d806-20261009T093925Z\\worktree\\artifacts\\kings-elimination\\result-English.png",
+      "bytes": 46612,
+      "sha256": "e02d772f6e84402b67fb7141ddecd0252f3c947fa5091843304b7e1c33959dc1"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-last-chance\\screenshots\\judgment-English-False.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-final-preservation\\25d3e9f9d806-20261009T093925Z\\worktree\\artifacts\\kings-last-chance\\screenshots\\judgment-English-False.png",
+      "bytes": 36358,
+      "sha256": "c9bd985e28e1b1a38bbe4c04995427c1f32db2e96229d98e921ba97f80f382e4"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-last-chance\\screenshots\\king-targets-German-False.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-final-preservation\\25d3e9f9d806-20261009T093925Z\\worktree\\artifacts\\kings-last-chance\\screenshots\\king-targets-German-False.png",
+      "bytes": 31096,
+      "sha256": "13a020e67c37884c4f39fca4d57136c9ff135d54aa294c7f93d0e9bafde88d40"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-last-chance\\screenshots\\large-judgment-English.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-worktree-retirement-20261009T090033Z\\group\\artifacts\\kings-last-chance\\screenshots\\large-judgment-English.png",
+      "bytes": 38414,
+      "sha256": "447b722fc41d13fd8d8fc538d76e36d95a207abf06a31ccdf667191df63df717"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-last-chance\\screenshots\\large-judgment-German.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-worktree-retirement-20261009T090033Z\\group\\artifacts\\kings-last-chance\\screenshots\\large-judgment-German.png",
+      "bytes": 39471,
+      "sha256": "448bef905fe33c3e2d36bf6d5742af0c7d887d12255fe03469751b0ed78e212f"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-last-chance\\screenshots\\large-result-English-Word.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-final-preservation\\25d3e9f9d806-20261009T093925Z\\worktree\\artifacts\\kings-last-chance\\screenshots\\large-result-English-Word.png",
+      "bytes": 39256,
+      "sha256": "ea5d13ed73a0696c78d41989ac73800191afb20e448fa4be96a3c4127e583dad"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-last-chance\\screenshots\\spoken-answer-English-False.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-final-preservation\\25d3e9f9d806-20261009T093925Z\\worktree\\artifacts\\kings-last-chance\\screenshots\\spoken-answer-English-False.png",
+      "bytes": 44057,
+      "sha256": "1242de2772ad31df7a9964a5d56b18871f1d16b7a36e5775ed2606c7ee3d9664"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-English-EvilKing-drag-start.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-English-EvilKing-drag-start.png",
+      "bytes": 42285,
+      "sha256": "b9b7286fa4e8d8c6899b51690d1c20cc94dce01e119f324e2230de84a6703404"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-English-EvilKing-hold-covered.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-worktree-retirement-20261009T090033Z\\motion\\artifacts\\kings-rules-cards\\screenshots\\max-list-English-EvilKing-hold-covered.png",
+      "bytes": 37706,
+      "sha256": "c165aef5cadb98dca7595234b1dad62b20fa50386c35aaa296c267b11e4d1f89"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-English-EvilKing-hold-start.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-English-EvilKing-hold-start.png",
+      "bytes": 42469,
+      "sha256": "a22d366430c84687f97a8959b432bff13f7f6fbcbe280d1771fe613f5240f181"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-English-GoodKing-drag-start.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-English-GoodKing-drag-start.png",
+      "bytes": 40873,
+      "sha256": "76e97737694b2a02c2f5a0e8f561959deb4c5cecb403105c8cfa1356890074de"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-English-GoodKing-hold-start.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-English-GoodKing-hold-start.png",
+      "bytes": 41062,
+      "sha256": "f9f25e04fd9fb912b56759ec61ff97758a7ef93ea0e9533ac9135faa4f938571"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-German-GoodKing-drag-last.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-German-GoodKing-drag-last.png",
+      "bytes": 46200,
+      "sha256": "def21053d79dd9faeb54304f00e56862cdc23cc46b8d54b01d4be56e11c5cf41"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-German-GoodKing-drag-start.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-German-GoodKing-drag-start.png",
+      "bytes": 44456,
+      "sha256": "9841e847faf95dcef06e690b27089e0a692ba2437fa1522ba559d53e45b64f15"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-German-GoodKing-hold-covered.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-German-GoodKing-hold-covered.png",
+      "bytes": 39349,
+      "sha256": "026f7a32bacadffb4c8397c7b65c3dabbacf898aa27bfb39f05ba2ec89f46f2f"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-German-GoodKing-hold-last.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-German-GoodKing-hold-last.png",
+      "bytes": 46398,
+      "sha256": "fc9a8b1bccd37acf495dec301c017934c1da95029c7dad7321ef958b3bcb27ae"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\max-list-German-GoodKing-hold-start.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\max-list-German-GoodKing-hold-start.png",
+      "bytes": 44645,
+      "sha256": "8761aa4b1234caa73e00449bb5d247b4701e547cb74fb5f0afd1ab1bc647baad"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\ordinary-English-civilian.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-acceptance-merge\\raw\\artifacts\\kings-rules-cards\\screenshots\\ordinary-English-civilian.png",
+      "bytes": 36842,
+      "sha256": "b2fea5887c4717d2c7b0106986556c0d937cffd75dfcea8b69446266dd6b044d"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\ordinary-German-civilian.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\ordinary-German-civilian.png",
+      "bytes": 40836,
+      "sha256": "8644f8704a1c6303e27266282b335a24732406544921699d10a82ec5621565de"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\ordinary-German-undercover.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\ordinary-German-undercover.png",
+      "bytes": 36874,
+      "sha256": "009a2dc306541724589327eceeba99fb1ff7db685426c3a63207fbd7e4ccc452"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts\\artifacts\\kings-rules-cards\\screenshots\\word-Nuss-Nougat-Creme-large.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-rules-cards-ticket15\\screenshots\\word-Nuss-Nougat-Creme-large.png",
+      "bytes": 49866,
+      "sha256": "82bd69e54fbadede3000c01140a3ff88e2186906f009ba5851f1aaa685efd1a1"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-last-chance\\screenshots\\king-targets-German-False.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-final-corrections-merge\\raw\\artifacts\\kings-last-chance\\screenshots\\king-targets-German-False.png",
+      "bytes": 31099,
+      "sha256": "f9a442e5df621b0bba16aa02fe57a1079e8b7ff850a6c8e8ae5623a84a25d031"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-last-chance\\screenshots\\large-choice-English-King-last.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\usability-final-preservation\\25d3e9f9d806-20261009T093925Z\\worktree\\artifacts\\kings-last-chance\\screenshots\\large-choice-English-King-last.png",
+      "bytes": 52322,
+      "sha256": "1ff4e6894e20d803d1488872606c112cea9aed062b177727bb7bb41d1685a614"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-last-chance\\screenshots\\large-judgment-English-last.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-final-corrections-merge\\raw\\artifacts\\kings-last-chance\\screenshots\\large-judgment-English-last.png",
+      "bytes": 45453,
+      "sha256": "5c02535bff01cdfc7bb9caaa2c9e2b27b0b5d4bb1bbe2754a3943c1684b0e479"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-last-chance\\screenshots\\large-last-target-German.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-final-corrections-merge\\raw\\artifacts\\kings-last-chance\\screenshots\\large-last-target-German.png",
+      "bytes": 52367,
+      "sha256": "6f6d747b5fbcde6d922240c4ce2ff60628692e6eb3382c1b7db7af00905df73c"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-last-chance\\screenshots\\large-result-German-Word.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-final-corrections-merge\\raw\\artifacts\\kings-last-chance\\screenshots\\large-result-German-Word.png",
+      "bytes": 44602,
+      "sha256": "0310763c0c53109e8280aaf1ecbdeb215ddffe7acaba3a9b710e3acfee353abf"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-rules-cards\\screenshots\\ordinary-English-civilian.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-final-corrections-merge\\raw\\artifacts\\kings-rules-cards\\screenshots\\ordinary-English-civilian.png",
+      "bytes": 36839,
+      "sha256": "36a5124fb0686f30a6d9cef6fc73f02a1a4d600544d618d54d83a67ad2abe212"
+    },
+    {
+      "source": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter\\artifacts\\kings-rules-cards\\screenshots\\ordinary-English-undercover.png",
+      "preserved": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\outputs\\word-deduction\\artifacts\\kings-final-corrections-merge\\raw\\artifacts\\kings-rules-cards\\screenshots\\ordinary-English-undercover.png",
+      "bytes": 32519,
+      "sha256": "57d5cf07985e5c37a10626aadb343c34bbdd2fff6b049485e35b0d117ced3d18"
+    }
+  ],
+  "editorChecks": [],
+  "removed": [],
+  "implementationBranchesRetained": true,
+  "forceUsed": false,
+  "note": "Original raw and additional PNG hashes freshly verified. Ignored regenerable Unity caches are disposable; no package or evidence is discarded."
+}

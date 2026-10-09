@@ -1,0 +1,27 @@
+{
+  "archive": "artifacts/role-final-review/final",
+  "files": [
+    {
+      "file": "review-standards-final-integration.md",
+      "bytes": 2750,
+      "sha256": "b3d84a215e4513570af30110dd41bbf7ec1118cd0cd4c7e15998112b1afe480f"
+    },
+    {
+      "file": "review-standards-final-observations.json",
+      "bytes": 1192,
+      "sha256": "94d914d2954158eb997e8e5ae30c82a48415ff488fe8b29e27ba2f80b29ab7bd"
+    },
+    {
+      "file": "review-standards-final-native-observations.json",
+      "bytes": 394,
+      "sha256": "d4203c724a17a398664e5a59b6511cd1c898f2a84a4c21b1706c129e69f311c1"
+    },
+    {
+      "file": "review-spec-final-integration.md",
+      "bytes": 2627,
+      "sha256": "a4796b59d03809647043eeedf6939f09b56cb3f354c4c46807b8e864b67b2d3b"
+    }
+  ],
+  "pass": true,
+  "scope": "Final independent review originals; separate from earlier interim reviews in native preservation. Readable Git text can normalize line endings."
+}

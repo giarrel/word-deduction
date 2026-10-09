@@ -1,0 +1,1756 @@
+{
+  "pass": true,
+  "scope": "N3 sequential Quick and only the Classic multiple-White part of N4",
+  "checks": {
+    "r13-mixed-select-wrong-00:session.json:checksum": true,
+    "r13-mixed-select-wrong-00:session.json:manifest": true,
+    "r13-mixed-select-wrong-00:session.previous.json:checksum": true,
+    "r13-mixed-select-wrong-00:session.previous.json:manifest": true,
+    "r13-mixed-select-wrong-00:nonempty_public_tree": true,
+    "r13-mixed-select-wrong-00:no_private_words": true,
+    "r13-mixed-uc-00:session.json:checksum": true,
+    "r13-mixed-uc-00:session.json:manifest": true,
+    "r13-mixed-uc-00:session.previous.json:checksum": true,
+    "r13-mixed-uc-00:session.previous.json:manifest": true,
+    "r13-mixed-uc-00:nonempty_public_tree": true,
+    "r13-mixed-uc-00:no_private_words": true,
+    "r13-mixed-uc-01:session.json:checksum": true,
+    "r13-mixed-uc-01:session.json:manifest": true,
+    "r13-mixed-uc-01:session.previous.json:checksum": true,
+    "r13-mixed-uc-01:session.previous.json:manifest": true,
+    "r13-mixed-uc-01:nonempty_public_tree": true,
+    "r13-mixed-uc-01:no_private_words": true,
+    "r13-mixed-uc-02:session.json:checksum": true,
+    "r13-mixed-uc-02:session.json:manifest": true,
+    "r13-mixed-uc-02:session.previous.json:checksum": true,
+    "r13-mixed-uc-02:session.previous.json:manifest": true,
+    "r13-mixed-uc-02:nonempty_public_tree": true,
+    "r13-mixed-uc-02:no_private_words": true,
+    "r13-mixed-whites-00:session.json:checksum": true,
+    "r13-mixed-whites-00:session.json:manifest": true,
+    "r13-mixed-whites-00:session.previous.json:checksum": true,
+    "r13-mixed-whites-00:session.previous.json:manifest": true,
+    "r13-mixed-whites-00:nonempty_public_tree": true,
+    "r13-mixed-whites-00:no_private_words": true,
+    "r13-mixed-whites-01:session.json:checksum": true,
+    "r13-mixed-whites-01:session.json:manifest": true,
+    "r13-mixed-whites-01:session.previous.json:checksum": true,
+    "r13-mixed-whites-01:session.previous.json:manifest": true,
+    "r13-mixed-whites-01:nonempty_public_tree": true,
+    "r13-mixed-whites-01:no_private_words": true,
+    "r13-mixed-whites-02:session.json:checksum": true,
+    "r13-mixed-whites-02:session.json:manifest": true,
+    "r13-mixed-whites-02:session.previous.json:checksum": true,
+    "r13-mixed-whites-02:session.previous.json:manifest": true,
+    "r13-mixed-whites-02:nonempty_public_tree": true,
+    "r13-mixed-whites-02:no_private_words": true,
+    "r13-mixed-whites-03:session.json:checksum": true,
+    "r13-mixed-whites-03:session.json:manifest": true,
+    "r13-mixed-whites-03:session.previous.json:checksum": true,
+    "r13-mixed-whites-03:session.previous.json:manifest": true,
+    "r13-mixed-whites-03:nonempty_public_tree": true,
+    "r13-mixed-whites-03:no_private_words": true,
+    "r13-mixed-whites-04:session.json:checksum": true,
+    "r13-mixed-whites-04:session.json:manifest": true,
+    "r13-mixed-whites-04:session.previous.json:checksum": true,
+    "r13-mixed-whites-04:session.previous.json:manifest": true,
+    "r13-mixed-whites-04:nonempty_public_tree": true,
+    "r13-mixed-whites-04:no_private_words": true,
+    "r13-mixed-whites-05:session.json:checksum": true,
+    "r13-mixed-whites-05:session.json:manifest": true,
+    "r13-mixed-whites-05:session.previous.json:checksum": true,
+    "r13-mixed-whites-05:session.previous.json:manifest": true,
+    "r13-mixed-whites-05:nonempty_public_tree": true,
+    "r13-mixed-whites-05:no_private_words": true,
+    "r13-mixed-whites-06:session.json:checksum": true,
+    "r13-mixed-whites-06:session.json:manifest": true,
+    "r13-mixed-whites-06:session.previous.json:checksum": true,
+    "r13-mixed-whites-06:session.previous.json:manifest": true,
+    "r13-mixed-whites-06:nonempty_public_tree": true,
+    "r13-mixed-whites-06:no_private_words": true,
+    "r13-mixed-reopened:session.json:checksum": true,
+    "r13-mixed-reopened:session.json:manifest": true,
+    "r13-mixed-reopened:session.previous.json:checksum": true,
+    "r13-mixed-reopened:session.previous.json:manifest": true,
+    "r13-mixed-win-00:session.json:checksum": true,
+    "r13-mixed-win-00:session.json:manifest": true,
+    "r13-mixed-win-00:session.previous.json:checksum": true,
+    "r13-mixed-win-00:session.previous.json:manifest": true,
+    "r13-mixed-win-00:nonempty_public_tree": true,
+    "r13-mixed-win-00:no_private_words": true,
+    "r13-mixed-win-01:session.json:checksum": true,
+    "r13-mixed-win-01:session.json:manifest": true,
+    "r13-mixed-win-01:session.previous.json:checksum": true,
+    "r13-mixed-win-01:session.previous.json:manifest": true,
+    "r13-mixed-good-00:session.json:checksum": true,
+    "r13-mixed-good-00:session.json:manifest": true,
+    "r13-mixed-good-00:session.previous.json:checksum": true,
+    "r13-mixed-good-00:session.previous.json:manifest": true,
+    "r13-mixed-good-00:nonempty_public_tree": true,
+    "r13-mixed-good-00:no_private_words": true,
+    "r13-mixed-good-01:session.json:checksum": true,
+    "r13-mixed-good-01:session.json:manifest": true,
+    "r13-mixed-good-01:session.previous.json:checksum": true,
+    "r13-mixed-good-01:session.previous.json:manifest": true,
+    "r13-mixed-bad-00:session.json:checksum": true,
+    "r13-mixed-bad-00:session.json:manifest": true,
+    "r13-mixed-bad-00:session.previous.json:checksum": true,
+    "r13-mixed-bad-00:session.previous.json:manifest": true,
+    "r13-mixed-bad-00:nonempty_public_tree": true,
+    "r13-mixed-bad-00:no_private_words": true,
+    "r13-mixed-bad-01:session.json:checksum": true,
+    "r13-mixed-bad-01:session.json:manifest": true,
+    "r13-mixed-bad-01:session.previous.json:checksum": true,
+    "r13-mixed-bad-01:session.previous.json:manifest": true,
+    "r13-mixed-bad-01:nonempty_public_tree": true,
+    "r13-mixed-bad-01:no_private_words": true,
+    "r13-mixed-bad-02:session.json:checksum": true,
+    "r13-mixed-bad-02:session.json:manifest": true,
+    "r13-mixed-bad-02:session.previous.json:checksum": true,
+    "r13-mixed-bad-02:session.previous.json:manifest": true,
+    "r13-mixed-bad-02:nonempty_public_tree": true,
+    "r13-mixed-bad-02:no_private_words": true,
+    "r13-mixed-bad-03:session.json:checksum": true,
+    "r13-mixed-bad-03:session.json:manifest": true,
+    "r13-mixed-bad-03:session.previous.json:checksum": true,
+    "r13-mixed-bad-03:session.previous.json:manifest": true,
+    "r13-classic-team-00:session.json:checksum": true,
+    "r13-classic-team-00:session.json:manifest": true,
+    "r13-classic-team-00:session.previous.json:checksum": true,
+    "r13-classic-team-00:session.previous.json:manifest": true,
+    "r13-classic-team-00:nonempty_public_tree": true,
+    "r13-classic-team-00:no_private_words": true,
+    "r13-classic-team-01:session.json:checksum": true,
+    "r13-classic-team-01:session.json:manifest": true,
+    "r13-classic-team-01:session.previous.json:checksum": true,
+    "r13-classic-team-01:session.previous.json:manifest": true,
+    "selection_can_change_before_confirmation": true,
+    "nonfinal_UC_notice_then_direct_vote": true,
+    "each_white_pending_before_terminal": true,
+    "pending_restart:session.json": true,
+    "pending_restart:session.previous.json": true,
+    "no_new_quick_round_or_starter": true,
+    "r13-mixed-win-01:expected_terminal": true,
+    "r13-mixed-good-01:expected_terminal": true,
+    "r13-mixed-bad-03:expected_terminal": true,
+    "r13-classic-team-01:expected_terminal": true,
+    "mixed_white_win_includes_previous_white_excludes_UC": true,
+    "all_adversaries_caught_after_final_wrong_white": true,
+    "civilian_mistake_after_prior_UC": true,
+    "classic_second_white_with_prior_white_out": true,
+    "r13-mixed-win-01:public_winner_explanation": true,
+    "r13-mixed-good-01:public_winner_explanation": true,
+    "r13-mixed-bad-03:public_winner_explanation": true,
+    "r13-classic-team-01:public_winner_explanation": true,
+    "r13-mixed-replay:guarded_replay": true,
+    "r13-mixed-good-replay-replay:guarded_replay": true,
+    "r13-mixed-bad-replay-replay:guarded_replay": true,
+    "r13-classic-team-replay-replay:guarded_replay": true
+  },
+  "checkpoints": [
+    {
+      "label": "r13-mixed-select-wrong-00",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Dario",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": false
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-select-wrong-00.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Confirm your suspect.",
+        "Dario",
+        "This reveals this person’s role. A Civilian ends the match for the adversaries. You can still change the selection.",
+        "Confirm & reveal role",
+        "Choose someone else"
+      ]
+    },
+    {
+      "label": "r13-mixed-uc-00",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": null,
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": false
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-uc-00.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "Who is your suspect?",
+        "Vote aloud or point at the same time. Select the person with the most votes.",
+        "More information. Scroll to continue reading.",
+        "Ada",
+        "Bea",
+        "Chris",
+        "Dario",
+        "Emil",
+        "Fiona",
+        "Greta",
+        "It's a tie — runoff"
+      ]
+    },
+    {
+      "label": "r13-mixed-uc-01",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Ada",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": false
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-uc-01.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Confirm your suspect.",
+        "Ada",
+        "This reveals this person’s role. A Civilian ends the match for the adversaries. You can still change the selection.",
+        "Confirm & reveal role",
+        "Choose someone else"
+      ]
+    },
+    {
+      "label": "r13-mixed-uc-02",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 4,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Ada",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-uc-02.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Role revealed.",
+        "Ada",
+        "Undercover",
+        "Caught. Their word stays secret. Choose your next suspect whenever your group is ready.",
+        "Choose the next suspect"
+      ]
+    },
+    {
+      "label": "r13-mixed-whites-00",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": null,
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-whites-00.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "Who is your suspect?",
+        "Vote aloud or point at the same time. Select the person with the most votes.",
+        "More information. Scroll to continue reading.",
+        "Bea",
+        "Chris",
+        "Dario",
+        "Emil",
+        "Fiona",
+        "Greta",
+        "It's a tie — runoff"
+      ]
+    },
+    {
+      "label": "r13-mixed-whites-01",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Bea",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-whites-01.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Confirm your suspect.",
+        "Bea",
+        "This reveals this person’s role. A Civilian ends the match for the adversaries. You can still change the selection.",
+        "Confirm & reveal role",
+        "Choose someone else"
+      ]
+    },
+    {
+      "label": "r13-mixed-whites-02",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 5,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Bea",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-whites-02.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Mr. White: one guess.",
+        "Bea",
+        "Say one guess for the Civilian word aloud. A correct guess wins for all Mr. Whites, including those already out.\n\nThe group judges the meaning. Keep the solution hidden until the final result.",
+        "Correct · White team wins",
+        "Incorrect"
+      ]
+    },
+    {
+      "label": "r13-mixed-whites-03",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 4,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Bea",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-whites-03.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Role revealed.",
+        "Bea",
+        "Mr. White",
+        "The guess was incorrect. This White is out. Choose the next suspect; keep the solution secret.",
+        "Choose the next suspect"
+      ]
+    },
+    {
+      "label": "r13-mixed-whites-04",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": null,
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-whites-04.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "Who is your suspect?",
+        "Vote aloud or point at the same time. Select the person with the most votes.",
+        "More information. Scroll to continue reading.",
+        "Chris",
+        "Dario",
+        "Emil",
+        "Fiona",
+        "Greta",
+        "It's a tie — runoff"
+      ]
+    },
+    {
+      "label": "r13-mixed-whites-05",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-whites-05.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Confirm your suspect.",
+        "Chris",
+        "This reveals this person’s role. A Civilian ends the match for the adversaries. You can still change the selection.",
+        "Confirm & reveal role",
+        "Choose someone else"
+      ]
+    },
+    {
+      "label": "r13-mixed-whites-06",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 5,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-whites-06.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Mr. White: one guess.",
+        "Chris",
+        "Say one guess for the Civilian word aloud. A correct guess wins for all Mr. Whites, including those already out.\n\nThe group judges the meaning. Keep the solution hidden until the final result.",
+        "Correct · White team wins",
+        "Incorrect"
+      ]
+    },
+    {
+      "label": "r13-mixed-reopened",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 5,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": null,
+      "publicLabels": []
+    },
+    {
+      "label": "r13-mixed-win-00",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 5,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-win-00.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Mr. White: one guess.",
+        "Chris",
+        "Say one guess for the Civilian word aloud. A correct guess wins for all Mr. Whites, including those already out.\n\nThe group judges the meaning. Keep the solution hidden until the final result.",
+        "Correct · White team wins",
+        "Incorrect"
+      ]
+    },
+    {
+      "label": "r13-mixed-win-01",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 3,
+      "outcome": 5,
+      "round": 1,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-win-01.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Mr. White wins!",
+        "The Civilian word was guessed correctly. All Mr. Whites win together, including those already out. Undercover does not share this win.",
+        "Civilian",
+        "Peach",
+        "Undercover",
+        "Apricot",
+        "EVERYONE'S ROLE",
+        "Ada",
+        "Undercover",
+        "Bea",
+        "Mr. White",
+        "Chris",
+        "Mr. White",
+        "Dario",
+        "Civilian",
+        "Emil",
+        "Civilian",
+        "Fiona",
+        "Civilian",
+        "Greta",
+        "Civilian",
+        "Next match",
+        "Edit group"
+      ]
+    },
+    {
+      "label": "r13-mixed-good-00",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 5,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-good-00.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Mr. White: one guess.",
+        "Chris",
+        "Say one guess for the Civilian word aloud. A correct guess wins for all Mr. Whites, including those already out.\n\nThe group judges the meaning. Keep the solution hidden until the final result.",
+        "Correct · White team wins",
+        "Incorrect"
+      ]
+    },
+    {
+      "label": "r13-mixed-good-01",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 3,
+      "outcome": 3,
+      "round": 1,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-good-01.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Civilians win!",
+        "Every adversary has been caught.",
+        "Civilian",
+        "Peach",
+        "Undercover",
+        "Apricot",
+        "EVERYONE'S ROLE",
+        "Ada",
+        "Undercover",
+        "Bea",
+        "Mr. White",
+        "Chris",
+        "Mr. White",
+        "Dario",
+        "Civilian",
+        "Emil",
+        "Civilian",
+        "Fiona",
+        "Civilian",
+        "Greta",
+        "Civilian",
+        "Next match",
+        "Edit group"
+      ]
+    },
+    {
+      "label": "r13-mixed-bad-00",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 4,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Ada",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-bad-00.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Role revealed.",
+        "Ada",
+        "Undercover",
+        "Caught. Their word stays secret. Choose your next suspect whenever your group is ready.",
+        "Choose the next suspect"
+      ]
+    },
+    {
+      "label": "r13-mixed-bad-01",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": null,
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-bad-01.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "Who is your suspect?",
+        "Vote aloud or point at the same time. Select the person with the most votes.",
+        "More information. Scroll to continue reading.",
+        "Bea",
+        "Chris",
+        "Dario",
+        "Emil",
+        "Fiona",
+        "Greta",
+        "It's a tie — runoff"
+      ]
+    },
+    {
+      "label": "r13-mixed-bad-02",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 2,
+      "outcome": null,
+      "round": 1,
+      "suspect": "Dario",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-bad-02.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Confirm your suspect.",
+        "Dario",
+        "This reveals this person’s role. A Civilian ends the match for the adversaries. You can still change the selection.",
+        "Confirm & reveal role",
+        "Choose someone else"
+      ]
+    },
+    {
+      "label": "r13-mixed-bad-03",
+      "version": 6,
+      "matchId": "4646b093f5734f30b34587cfceef094b",
+      "phase": 3,
+      "outcome": 1,
+      "round": 1,
+      "suspect": "Dario",
+      "participants": [
+        {
+          "Id": "21fcdfca6ec8468d975128d38804013b",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": true
+        },
+        {
+          "Id": "57c850685c164f2d903e866c4986ddc5",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "96c4c47cd69449b0b962d47ef4f655bd",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": false
+        },
+        {
+          "Id": "ed3c2a7e42644352ba7dc4a2f91cfbc7",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": true
+        },
+        {
+          "Id": "949a1be45d44425bb7528457aba27c65",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "99e5567e2c1448bdad08218e271424c5",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c1037a77b0bf4c7a99ec1e227c6bdcf2",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-mixed-bad-03.json",
+      "publicLabels": [
+        "Back",
+        "Quick",
+        "Help",
+        "More information. Scroll to continue reading.",
+        "Undercover & Mr. White win!",
+        "You accused a Civilian. All adversary roles in this match win, including caught teammates.",
+        "Civilian",
+        "Peach",
+        "Undercover",
+        "Apricot",
+        "EVERYONE'S ROLE",
+        "Ada",
+        "Undercover",
+        "Bea",
+        "Mr. White",
+        "Chris",
+        "Mr. White",
+        "Dario",
+        "Civilian",
+        "Emil",
+        "Civilian",
+        "Fiona",
+        "Civilian",
+        "Greta",
+        "Civilian",
+        "Next match",
+        "Edit group"
+      ]
+    },
+    {
+      "label": "r13-classic-team-00",
+      "version": 6,
+      "matchId": "c46afe394c61441eb8ce66ba99922850",
+      "phase": 5,
+      "outcome": null,
+      "round": 2,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "84d4fed0d8b34d2492345024431fef3c",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": false
+        },
+        {
+          "Id": "ec18ef4a3f524f72a011b09494a2469f",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "e4c58447591f4729964e100059515e06",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "bc7401ba3e38428089111711f402f81a",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "d8d61ef9399643a5b586029eb4579801",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c7ef0e4fa17a4ec399a995a52bf814d3",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "5c400c8de126458bb104c6f02d82b2cc",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-classic-team-00.json",
+      "publicLabels": [
+        "Zurück",
+        "Klassisch",
+        "Hilfe",
+        "Weitere Informationen. Zum Weiterlesen scrollen.",
+        "Mr. White: ein Versuch.",
+        "Chris",
+        "Rate einmal laut das Wort der Bürger. Ein richtiger Tipp gewinnt für alle Mr. Whites, auch bereits ausgeschiedene.\n\nDie Gruppe bewertet die Bedeutung. Verratet die Lösung erst beim Endergebnis.",
+        "Richtig · White-Team gewinnt",
+        "Falsch"
+      ]
+    },
+    {
+      "label": "r13-classic-team-01",
+      "version": 6,
+      "matchId": "c46afe394c61441eb8ce66ba99922850",
+      "phase": 3,
+      "outcome": 5,
+      "round": 2,
+      "suspect": "Chris",
+      "participants": [
+        {
+          "Id": "84d4fed0d8b34d2492345024431fef3c",
+          "DisplayName": "Ada",
+          "Role": 1,
+          "Eliminated": false
+        },
+        {
+          "Id": "ec18ef4a3f524f72a011b09494a2469f",
+          "DisplayName": "Bea",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "e4c58447591f4729964e100059515e06",
+          "DisplayName": "Chris",
+          "Role": 2,
+          "Eliminated": true
+        },
+        {
+          "Id": "bc7401ba3e38428089111711f402f81a",
+          "DisplayName": "Dario",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "d8d61ef9399643a5b586029eb4579801",
+          "DisplayName": "Emil",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "c7ef0e4fa17a4ec399a995a52bf814d3",
+          "DisplayName": "Fiona",
+          "Role": 0,
+          "Eliminated": false
+        },
+        {
+          "Id": "5c400c8de126458bb104c6f02d82b2cc",
+          "DisplayName": "Greta",
+          "Role": 0,
+          "Eliminated": false
+        }
+      ],
+      "tree": "r13-classic-team-01.json",
+      "publicLabels": [
+        "Zurück",
+        "Klassisch",
+        "Hilfe",
+        "Weitere Informationen. Zum Weiterlesen scrollen.",
+        "Mr. White gewinnt!",
+        "Das Bürgerwort wurde richtig erraten. Alle Mr. Whites gewinnen gemeinsam, auch bereits ausgeschiedene. Undercover gewinnt dabei nicht.",
+        "Bürger",
+        "Pfirsich",
+        "Undercover",
+        "Aprikose",
+        "ALLE ROLLEN",
+        "Ada",
+        "Undercover",
+        "Bea",
+        "Mr. White",
+        "Chris",
+        "Mr. White",
+        "Dario",
+        "Bürger",
+        "Emil",
+        "Bürger",
+        "Fiona",
+        "Bürger",
+        "Greta",
+        "Bürger",
+        "Nächste Partie",
+        "Gruppe bearbeiten"
+      ]
+    }
+  ],
+  "files": {
+    "r13-mixed-select-wrong-00-state/session.json": "eea4ee95fb0b4c284413c128bdc2e7aaa1b29e407cb14c5b6bde8e959608154d",
+    "r13-mixed-select-wrong-00-state/session.previous.json": "1bc9fa8c243ed8aa24beb04663d865ebbcbd325a4b4a8f2cc7e45be9f8f1f686",
+    "r13-mixed-select-wrong-00.json": "d5ad83ccddb2bc792f6fa49f94940ef72d097e981e8948c3658df4ac7fac7503",
+    "r13-mixed-uc-00-state/session.json": "1bc9fa8c243ed8aa24beb04663d865ebbcbd325a4b4a8f2cc7e45be9f8f1f686",
+    "r13-mixed-uc-00-state/session.previous.json": "eea4ee95fb0b4c284413c128bdc2e7aaa1b29e407cb14c5b6bde8e959608154d",
+    "r13-mixed-uc-00.json": "818758ab6ffe1bc692fa88ea679366e7f161e2124a8e895df43878ea3e21157a",
+    "r13-mixed-uc-01-state/session.json": "fab9020661335ff24c7e81265697d5c0db0d92ccbc25907c24cf69e7cf726c54",
+    "r13-mixed-uc-01-state/session.previous.json": "1bc9fa8c243ed8aa24beb04663d865ebbcbd325a4b4a8f2cc7e45be9f8f1f686",
+    "r13-mixed-uc-01.json": "9196a239ba0fa04ed9f232f9d02d31c2d8dc816004921e1d6637f797c6c2e55e",
+    "r13-mixed-uc-02-state/session.json": "a745421e088a95c7000b271adc11596684854493927d300bdeb0efbfd5a9cfb3",
+    "r13-mixed-uc-02-state/session.previous.json": "fab9020661335ff24c7e81265697d5c0db0d92ccbc25907c24cf69e7cf726c54",
+    "r13-mixed-uc-02.json": "3ff55afe00470dd918a2f4c9e47865fbecf0fc1c07eeac02004b0e161f8a3591",
+    "r13-mixed-whites-00-state/session.json": "346ab13159e328bcf107259c90b98b2383ca11961764ccebf2be6102a32d6f50",
+    "r13-mixed-whites-00-state/session.previous.json": "a745421e088a95c7000b271adc11596684854493927d300bdeb0efbfd5a9cfb3",
+    "r13-mixed-whites-00.json": "77bb6fa9ef03a3b835e2d9427de4afecdedf8712dbc1e81d4ee9e66c1459c9b0",
+    "r13-mixed-whites-01-state/session.json": "6990570393e9c7fb82861c4137ec45b48cc0d9ed0471627ef762d1291bf8ceb4",
+    "r13-mixed-whites-01-state/session.previous.json": "346ab13159e328bcf107259c90b98b2383ca11961764ccebf2be6102a32d6f50",
+    "r13-mixed-whites-01.json": "dea201799af5e23e96f5bedd1bd6a5b9315630a86eb9cc8a06f289cc53a7d026",
+    "r13-mixed-whites-02-state/session.json": "65d5edcc7724af9c8a32ce97c74b67316b7f230448da0b36084916e0893a2c03",
+    "r13-mixed-whites-02-state/session.previous.json": "6990570393e9c7fb82861c4137ec45b48cc0d9ed0471627ef762d1291bf8ceb4",
+    "r13-mixed-whites-02.json": "f26cf6cc2ff24f82a91cacbe059a96e122edc24f04304caf9ecbe45cb32de2d2",
+    "r13-mixed-whites-03-state/session.json": "1451cfdcffbfc5cc062ae6501db4a72fd463652aa8321c6323fd9d0c615dbd59",
+    "r13-mixed-whites-03-state/session.previous.json": "65d5edcc7724af9c8a32ce97c74b67316b7f230448da0b36084916e0893a2c03",
+    "r13-mixed-whites-03.json": "386ca254af7288b11ec2dcee414b0cbdbfe6d32b17c9eb93542d2cf8c3051c87",
+    "r13-mixed-whites-04-state/session.json": "40031651219e2b9d015556b7728539c622755b0ade3ffdd617f17637d43c5e4e",
+    "r13-mixed-whites-04-state/session.previous.json": "1451cfdcffbfc5cc062ae6501db4a72fd463652aa8321c6323fd9d0c615dbd59",
+    "r13-mixed-whites-04.json": "e415b594dd487d1e09ce4ad3ddc35fc6188de1705e196e698c8bfdf874afc1de",
+    "r13-mixed-whites-05-state/session.json": "0be1be220713da5c561f2023a79a93d332f90f3146a0155c642658c8cc538007",
+    "r13-mixed-whites-05-state/session.previous.json": "40031651219e2b9d015556b7728539c622755b0ade3ffdd617f17637d43c5e4e",
+    "r13-mixed-whites-05.json": "f536aa85226ce64545ed0c46af6ac18c1df42ffc5e81f096d5bac756951b2520",
+    "r13-mixed-whites-06-state/session.json": "ea5db45904fa3c541f88ac6bcfe04eed4689e4805f3c237ec9c7187a5dc87ddc",
+    "r13-mixed-whites-06-state/session.previous.json": "0be1be220713da5c561f2023a79a93d332f90f3146a0155c642658c8cc538007",
+    "r13-mixed-whites-06.json": "2da1e0316fb2c373a6c8507ff4d448c94cbf2c53b5d77a5fb4d37dade8f3e604",
+    "r13-mixed-reopened-state/session.json": "ea5db45904fa3c541f88ac6bcfe04eed4689e4805f3c237ec9c7187a5dc87ddc",
+    "r13-mixed-reopened-state/session.previous.json": "0be1be220713da5c561f2023a79a93d332f90f3146a0155c642658c8cc538007",
+    "r13-mixed-win-00-state/session.json": "ea5db45904fa3c541f88ac6bcfe04eed4689e4805f3c237ec9c7187a5dc87ddc",
+    "r13-mixed-win-00-state/session.previous.json": "0be1be220713da5c561f2023a79a93d332f90f3146a0155c642658c8cc538007",
+    "r13-mixed-win-00.json": "2da1e0316fb2c373a6c8507ff4d448c94cbf2c53b5d77a5fb4d37dade8f3e604",
+    "r13-mixed-win-01-state/session.json": "5e0dcffb316ae70bd1d395ca107b9c7be4a5fc01ab5c6f8b2aa868b6db00dfd1",
+    "r13-mixed-win-01-state/session.previous.json": "ea5db45904fa3c541f88ac6bcfe04eed4689e4805f3c237ec9c7187a5dc87ddc",
+    "r13-mixed-win-01.json": "c18ae5dbee6c58a55ec03065335fff4648eb9039383a84a3157508354db32def",
+    "r13-mixed-good-00-state/session.json": "ea5db45904fa3c541f88ac6bcfe04eed4689e4805f3c237ec9c7187a5dc87ddc",
+    "r13-mixed-good-00-state/session.previous.json": "0be1be220713da5c561f2023a79a93d332f90f3146a0155c642658c8cc538007",
+    "r13-mixed-good-00.json": "2da1e0316fb2c373a6c8507ff4d448c94cbf2c53b5d77a5fb4d37dade8f3e604",
+    "r13-mixed-good-01-state/session.json": "5ccc8e809544119018fafd060128784b951f922181e3517d9890fbc243c605e1",
+    "r13-mixed-good-01-state/session.previous.json": "ea5db45904fa3c541f88ac6bcfe04eed4689e4805f3c237ec9c7187a5dc87ddc",
+    "r13-mixed-good-01.json": "01e86f80c1f75bd0f5d4f2dc1ad1f1fc3cfdc7845e9cb7c1706ac549c2ccfa9f",
+    "r13-mixed-bad-00-state/session.json": "a745421e088a95c7000b271adc11596684854493927d300bdeb0efbfd5a9cfb3",
+    "r13-mixed-bad-00-state/session.previous.json": "fab9020661335ff24c7e81265697d5c0db0d92ccbc25907c24cf69e7cf726c54",
+    "r13-mixed-bad-00.json": "3ff55afe00470dd918a2f4c9e47865fbecf0fc1c07eeac02004b0e161f8a3591",
+    "r13-mixed-bad-01-state/session.json": "346ab13159e328bcf107259c90b98b2383ca11961764ccebf2be6102a32d6f50",
+    "r13-mixed-bad-01-state/session.previous.json": "a745421e088a95c7000b271adc11596684854493927d300bdeb0efbfd5a9cfb3",
+    "r13-mixed-bad-01.json": "77bb6fa9ef03a3b835e2d9427de4afecdedf8712dbc1e81d4ee9e66c1459c9b0",
+    "r13-mixed-bad-02-state/session.json": "da6cbafaed367d845690cfe799fc94a493489613877a0b44b7a268d53d73bcb3",
+    "r13-mixed-bad-02-state/session.previous.json": "346ab13159e328bcf107259c90b98b2383ca11961764ccebf2be6102a32d6f50",
+    "r13-mixed-bad-02.json": "d5ad83ccddb2bc792f6fa49f94940ef72d097e981e8948c3658df4ac7fac7503",
+    "r13-mixed-bad-03-state/session.json": "18aee88bd99340414dbb496492e2ad87565ee59b4fadb5c382b5fde3e7c8b665",
+    "r13-mixed-bad-03-state/session.previous.json": "da6cbafaed367d845690cfe799fc94a493489613877a0b44b7a268d53d73bcb3",
+    "r13-mixed-bad-03.json": "b8dd46419d286c84fb532237b26365bbc0f2fe4b724039dcea2c80c3fd80ad33",
+    "r13-classic-team-00-state/session.json": "b51206fbe737c292f598df2a54358c6e47147893f5048bdff4fe6d42b1b7e3fc",
+    "r13-classic-team-00-state/session.previous.json": "5c74115b32dba0fe86095337aac18aee39efbdd8e003370361675f6801cc7c26",
+    "r13-classic-team-00.json": "4bb179d8f610dc02772cf2766691527ac4317b2a17dd97ad629dee66cac1cf13",
+    "r13-classic-team-01-state/session.json": "7a92b686528d70ba8ed6b5474ea04d0711806d539afe867d50550f530a7d739c",
+    "r13-classic-team-01-state/session.previous.json": "b51206fbe737c292f598df2a54358c6e47147893f5048bdff4fe6d42b1b7e3fc",
+    "r13-classic-team-01.json": "29e4ce929880e78e521ae07846e42dd52f5ff5ce72e54a0555cbaa2f151b7c66"
+  },
+  "replays": [
+    {
+      "manifest": "r13-mixed-replay/manifest.json",
+      "sha256": "ea254df8997cff9ec566221a909492e9dcd6604a7aa698bc83115e7664f3ac1a",
+      "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\native-fixtures-generator\\release-b6e6a92\\fixtures\\mixed-quick-seven-en"
+    },
+    {
+      "manifest": "r13-mixed-good-replay-replay/manifest.json",
+      "sha256": "66b651d2b8517ee237853b6dc3ae8777131f006e2ac41a1dd385dfbbbce2e1bb",
+      "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\native\\r13-mixed-whites-06-state"
+    },
+    {
+      "manifest": "r13-mixed-bad-replay-replay/manifest.json",
+      "sha256": "da669c42c28b6af77059c60df5bad938d560c875f5ccda16d0d400c68e20fbe4",
+      "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\native\\r13-mixed-uc-02-state"
+    },
+    {
+      "manifest": "r13-classic-team-replay-replay/manifest.json",
+      "sha256": "45af2ad02152016f91ce8f8424bbdf184ddbabd97c93a28646e7caadfad48bb8",
+      "fixture": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\native-fixtures-generator\\release-b6e6a92\\fixtures\\classic-second-white-pending-de"
+    }
+  ],
+  "limits": [
+    "These are labelled fixture replays followed by native public actions, not a second actual update.",
+    "Classic prior Bea failure belongs to the replayed fixture; native actions resume Chris and judge correct.",
+    "N4 pure-White setup/card/rematch is separate and is not passed by this audit.",
+    "Winner interpretation uses persisted Outcome plus actual public result labels; no stored WinningRoles field is invented.",
+    "Image inspection provenance is separately recorded by Root in native/root-inspected-images.json."
+  ]
+}

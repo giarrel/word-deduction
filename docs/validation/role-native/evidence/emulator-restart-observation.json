@@ -1,0 +1,12 @@
+{
+  "observation": "After the previous emulator was authoritatively absent and the existing AVD was restarted without wipe, the primary generation matched the last checkpoint but Previous was empty.",
+  "cause": "Undetermined. No claim that Unity, this change, the VM stop or a particular storage fault caused the truncation.",
+  "command_evidence": "Normal-user process inventory found no emulator/qemu processes or listeners5582/5583; existing ADB5038 had no device. Fresh emulator launch recorded separately. Initial pre-boot read yielded No such file; after sys.boot_completed=1, remote su0 ls -l showed session.json11596 bytes and session.previous.json0 bytes, owner u0_a215 and mode600. The subsequent CheckpointRelease command returned exit0 and captured both byte streams. This prose is a transcription of tool output, not a newly captured raw remote-stat file.",
+  "before": "r13-kings-ending-08-state/manifest.json",
+  "after": "r13-after-emulator-boot-ready-state/manifest.json",
+  "unchangedPrimarySha256": "6a366085d91f4733d9cf0eab467bdf03263638816cc68cc4a337e41944512485",
+  "previousBeforeSha256": "23d66aed7ce2fc214421b7bc3bfc9042a3f553ac46fbc73c933f3f2bbe50f023",
+  "previousAfterSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "recovery": "Valid primary opened correctly. Native Undo subsequently wrote a valid pair; marked fixture replays preserved prior pairs. Final explicit original-pair restore verified both original hashes, owner, mode and SELinux context.",
+  "limits": "No SELinux metadata sample from the moment of the empty Previous was retained; the final restoration metadata is separate. The actual code11 upgrade and earlier controlled cold-reopen evidence preceded this incident and is not replaced by it."
+}

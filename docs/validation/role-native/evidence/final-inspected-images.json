@@ -1,0 +1,96 @@
+{
+  "agent": "finish_native_acceptance",
+  "utc": "2026-10-09T21:37:44.132125+00:00",
+  "method": "Each listed original PNG was actually opened through view_image in this agent turn. No screenshots are synthesized or edited.",
+  "images": [
+    {
+      "file": "r13-kings-five-ready.png",
+      "sha256": "2cad8acd90392aa4f37683835db96bb3a4ba9395ecf22d7a7bb8d43b289d30dc",
+      "observation": "DE150%, five-person Kings: one UC, dimmed bounds, Start pinned; explanation begins in scroll viewport."
+    },
+    {
+      "file": "r13-kings-five-scroll.png",
+      "sha256": "f4009399e723747f74fadcd1614ff7067202ec4c89144413b698cfaf9a48e676",
+      "observation": "DE150%, full fixed one-UC/one-White-King limit explanation reached by scrolling; Start remains available."
+    },
+    {
+      "file": "r13-kings-six-scroll.png",
+      "sha256": "3f912bef22d6634585e6d2d90ab8631d3afe288067d3d2529e1ebd036aca80d4",
+      "observation": "DE150%, six-person Kings with the same full limit explanation; player list separately scrolls."
+    },
+    {
+      "file": "r13-kings-long-table.png",
+      "sha256": "37348da8122fcf3783ef865e139f3702d9ed336510ec62c07b0508e39790fa31",
+      "observation": "DE150%, round2 long duplicate-name White starter wraps across lines with its distinguishing number; neutral ordinary consequence and Next visible."
+    },
+    {
+      "file": "r13-pure-white-valid-pull-held.png",
+      "sha256": "d0bb2910b8f111bf795e0b66f02e0f4002d2d0b023eb7ac2b123fb112c02e074",
+      "observation": "Actual held no-word White card, Ada; next handoff dimmed while held."
+    },
+    {
+      "file": "r13-pure-white-release-settled.png",
+      "sha256": "dd00a0ec8aa5dd3558989c5be12a4dbfe27fc07b1aa3da6c078712d1791d9b17",
+      "observation": "Settled release shows covered card; pass-on enabled."
+    },
+    {
+      "file": "r13-pure-finish-03.png",
+      "sha256": "41a36061a4e65ec3f432a53efdf8736ad3c507446e937163dab746d724295306",
+      "observation": "Pure White Quick Civilian result shows Civilian solution without an unused Undercover solution panel."
+    },
+    {
+      "file": "r13-pure-finish-04.png",
+      "sha256": "7a0b3892cf1bfa11906ffae683fd6c6fc960ccc572c9b0413a063eb947a6bf15",
+      "observation": "Rematch opens covered first card for same three-person group."
+    },
+    {
+      "file": "r13-large-adjusted-en.png",
+      "sha256": "c962a0f22f5127414a60d13c458214e035e613cd0b64b637e1b22d215521bd00",
+      "observation": "18-person EN adjusted White count3 and cap8 in scrolled role panel; saved-wish text is below this particular image viewport."
+    },
+    {
+      "file": "r13-large-adjustment-full-de.png",
+      "sha256": "b9aa35021104e2ebe80075b38ce7abf041a6f982c11c4440214f93c25b7968e6",
+      "observation": "DE150% intermediate scroll position: majority explanation and beginning of adjustment text; not a claim all text fits simultaneously."
+    },
+    {
+      "file": "r13-kings-ordinary-03.png",
+      "sha256": "77680ad437ec08e70ff2b1daed5eee90248c29d27627792b010cd7db5de118dc",
+      "observation": "EN ordinary elimination leads directly to round3/Dario starter and neutral Not a king consequence, with optional Next."
+    },
+    {
+      "file": "r13-kings-v5-second-resume-00.png",
+      "sha256": "2192092f739e3348c5ca79a72878ad2c986ba937cdce909133f43ad768d23875",
+      "observation": "Second V5 open still round1/Bea fallback; Ada neutral consequence and Next visible."
+    },
+    {
+      "file": "r13-large-adjustment-bottom-de.png",
+      "sha256": "2fb88d98371b6f93865bfbf81e76bc0c54866061e9be565b65c07129c508e255",
+      "observation": "DE150% later scroll position: smaller-group adjustment and saved UC wish visible; final White part is outside this snapshot and is present in native semantics."
+    },
+    {
+      "file": "r13-kings-long-scroll.png",
+      "sha256": "8b3a4e860e66309984b10492c337553124dbbb0c92918e551aa209cf678bb7f2",
+      "observation": "DE150% long name elimination choice reachable through scrolling, Next pinned."
+    },
+    {
+      "file": "r13-kings-long-next-observed.png",
+      "sha256": "54e397abe130e195f499047477eb68f9f219f131060a54660fd483c9c611ba33",
+      "observation": "DE150% one next-round action produces round3/Zoë public starter."
+    },
+    {
+      "file": "r13-rematch-home-resumed.png",
+      "sha256": "4c22061c287ac20b215f758c36fbfefe7e002649ce22f1ee05985f2ffd675f49",
+      "observation": "Return from actual Home shows safe resume gate without private card information."
+    },
+    {
+      "file": "r13-final-adjustment-end-04.png",
+      "sha256": "d4d0a82554bde5ef7146d611dbd5386bbcc4447a7930b853692849856816354f",
+      "observation": "Reviewer-requested final DE150% scroll position: complete saved wish 5 Undercover + 4 Mr. White is visibly readable above pinned Start. A further scroll leaves the position unchanged."
+    }
+  ],
+  "limits": [
+    "Scroll positions intentionally expose different portions; not every control/text is visible at once.",
+    "Green rectangle is Android accessibility focus. Static images do not prove frame pacing, touch feel, audible TalkBack or physical-device layout."
+  ]
+}

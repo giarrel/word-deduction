@@ -1,0 +1,59 @@
+# Role-count update: native Android acceptance
+
+Version **1.3.0 / code12**, specification [#11](../../specs/role-counts.md), acceptance ticket [#23](../../specs/role-tickets/23-role-acceptance.md). **Acceptance complete at the agreed automated, rendered and translated-emulator scope.** The [34-story matrix](acceptance-matrix.md) and [independent Standards/Spec review](../role-final-review/report.md) record the requirement-by-requirement result. The separate unresolved backup observation below remains a limitation, not a passed durability test.
+
+## Tested package and source
+
+The installed APK is the accepted `cc0ab333bdb130cda07e45ec64a7eab68887d8a0384a9325506827885011aedc`, built from **`b6e6a926bbcc58c7103d79a9f117cbd09e4269e3`**. The integration's production/test/content/tool trees are identical to this pin; later changes update documentation only. The rejected font-cache candidate was never installed. [Build, tests and package inspection](../role-release/report.md); [independent merge and preservation](../role-release-merge/report.md).
+
+The current evidence uses Android API36 on the owned `word_deduction_api36_16k` emulator, ADB server5038 / transport127.0.0.1:5583, with a nondebuggable ARM64 package running through the emulator's translation environment. It does not establish execution on a physical ARM64 phone. Root performed the actual update and N1/N3/Classic-White play; the delegated native validator completed the remaining device checks and released the exclusive device lease. Native semantic actions use the app's public accessibility tree; private card gestures use injected physical contacts. Captures use the owned emulator console without disabling the app's secure-window protection.
+
+## Completed actual update (N1)
+
+Before installation, Root played a real code11 Classic match through all five private cards and confirmed its White, leaving the spoken guess pending. This state was created in the old app through its UI, not imported from a fixture. The original idle group was separately backed up for eventual cleanup.
+
+The guarded `install -r` then updated that exact code11 APK to the accepted code12 APK. Both saved generations remained byte-identical before first launch, after launch and after Resume. Package UID10215, mode600 and SELinux context were preserved. Match identity, participant identities/order/roles, language, words and history were unchanged. [Actual update record](evidence/code11-to12-update-verified.json).
+
+Root answered the carried White guess **Incorrect**. The first new commit changed the envelope from V5 to V6 and continued into Classic clue round2 with four survivors and Luca as starter. The previous generation became the exact old primary. Force-stop, cold launch and Resume again left both generations byte-identical. [Transition audit](evidence/n1-upgrade-audit.json); [independent offline checksum/state audit](evidence/native-n1-offline-audit.json).
+
+The viewed [carried White judgment](screenshots/r13-resume-00.png) conceals the solution, and the [resumed next round](screenshots/r13-v6-resume-00.png) retains the saved starter. Initial blank captures/eight-framework-node trees are preserved startup transients, not claimed as loaded game UI. No fixture replay occurred until this actual update and first V6 continuation had passed.
+
+## Separate emulator-interruption observation
+
+The emulator process ended outside the scripted app-restart sequence before the last Kings boundary checks. After restarting that same AVD without a wipe, the validator found the current Primary byte-identical to the preceding Kings-five checkpoint, and the app loaded its complete current state. The remote Previous file existed with size zero, UID `u0_a215` and mode600; both subsequent reads returned exit0. The empty file is therefore not merely a failed host-side copy. Both observed files and the earlier complete Previous checkpoint are retained.
+
+The cause is unresolved. Neither a product fault nor a VM/filesystem cause has been established. This observation is **not** counted as successful preservation of both generations and does not replace the separate, already recorded byte-equal update and ordinary force-stop/reopen checks. The storage reader does not rewrite generations on open; the relevant writer is unchanged by this rules update. The [exact interruption record](evidence/emulator-restart-observation.json) and independent reviews retain this limitation; the final deliberate cleanup restored both original generations exactly.
+
+## Sequential Quick and Classic judgment (N3 / Classic part of N4)
+
+Subsequent rare states were deliberately replayed from checksum-valid fixtures or previously captured candidate checkpoints. Each replay preserved both current generations and verified the installed APK, file ownership and exact copied bytes. Replay establishes a known starting state; only the following native actions count as played behavior.
+
+- A selected Civilian was corrected before confirmation; Ada was then confirmed as Undercover. The [role notice](screenshots/r13-mixed-uc-02.png) reveals only that role and proceeds directly to another accusation in the same clue round.
+- Bea's first White guess was judged incorrect. Chris then received a separate [pending White attempt](screenshots/r13-mixed-whites-06.png), which survived cold restart with both generations unchanged. A correct answer produced the [whole-White-side result](screenshots/r13-mixed-win-01.png), including already eliminated Bea and excluding Undercover.
+- A separately replayed final-White pending state followed by Incorrect produced the [Civilian victory](screenshots/r13-mixed-good-01.png). Replaying the earlier Undercover hit and then confirming Dario as Civilian produced the [all-adversary victory](screenshots/r13-mixed-bad-03.png), including the previously caught Undercover.
+- The German Classic fixture began with one earlier White's failed guess in its recorded history and a second White pending. The actual native correct judgment produced the [whole-White-side Classic result](screenshots/r13-classic-team-01.png). The first guess is explicitly fixture history, not claimed as another Android-played action.
+
+The [offline N3/Classic audit](evidence/native-n3-n4-audit.json) verifies the saved transitions, result labels and absence of both solution words in every inspected pre-result native tree. The audit's individual assertions are evidence checks, not additional Session tests. [Root's actual image-inspection record](evidence/root-inspected-images.json) identifies the nine screenshots he opened; image existence alone is not visual inspection.
+
+## Counts, pure White, Kings and privacy (N2 / N4 / N5 / N6)
+
+The [operator report](native-operator-report.md) links every native sequence, capture and saved generation. The [252-assertion offline audit](evidence/native-final-offline-audit.json) checks those retained records; these are evidence assertions, not additional gameplay tests. Its earlier four failed comparisons used two wrong restart baselines; the [original audit](evidence/native-final-offline-audit-wrong-baselines.json) and original script remain preserved. The actual restart manifests identify the corrected baseline pairs.
+
+- **Counts and group changes:** Quick3 and Classic4 both switch their single adversary slot to pure White in one action and start successfully. Independent Quick5/4 and Classic3/1 preferences survive cold restart; Auto clears only the selected mode. Removing20→18 preserves wish5/4 and shows effective5/3; Undo→19 restores effective5/4. Native DE/EN copy and 150% scroll reachability were inspected. The [last explanation line](screenshots/r13-final-adjustment-end-04.png) is reachable above Start; both generations remain byte-identical across those scroll actions. Whole paragraphs and all controls are not claimed to fit simultaneously.
+- **Pure-White play/rematch:** a native Quick3 game traversed all three cards, one White judgment and the Civilian result, then [rematched with the same group and0UC/1White](screenshots/r13-pure-finish-04.png). Classic4 also started from its pure-White controls; its remaining endings are covered by the separate multiple-White native scenario and full automated suites.
+- **Kings:** [five/six-player bounds](screenshots/r13-kings-five-scroll.png) explain the fixed White King plus one Undercover. A labelled initial-table fixture starts with Ada; native Next shows Bea, a White, without eliminating anyone. Selection/cancel retains the starter; ordinary Ada elimination atomically advances to round3/Dario, stable across cold restart. Next is absent during pending selection, Last chance and Result. [DE long names at150%](screenshots/r13-kings-long-table.png) wrap within the scroll surface, and the Next action remains reachable. The authentic code11 V5 dead-starter fixture opens twice with unchanged files and the same living [Bea fallback](screenshots/r13-kings-v5-second-resume-00.png); the subsequent native Next writes V6, also stable across reopen. Full candidate/stale-command/failure invariants are established by Session/rendered tests, not inferred from screenshots.
+- **Privacy:** real pull/release, Home/return to the safe gate and covered Resume were exercised. Private words are absent from native public semantics. Two bounded current-process log samples contain none of the explicitly scanned private names/words or fatal/input diagnostics. No audible TalkBack or timing guarantee is claimed.
+
+## Final restoration and preservation
+
+After the final limited scroll probe, [the latest restoration](evidence/r13-final-scroll-restoration.json) verifies the original Primary `f146725f8d3e527fc5a71ef1ee4ac2eb80048c419a54a3dbf3822ea0f6fcf28b` and Previous `d47a4f6ae89377513a09dec09c9230f7498080e2b673be0e5596950f4f0e9467`, original UID10215/mode600/SELinux context, font1.0 and original animation/accessibility settings. This is an explicit validation reset after preserving played progress, not a claim that the tests never changed the group. The accepted code12 remains installed; the app is stopped and the device lease is released.
+
+The raw archive contains **1,812 files /60,314,159 bytes**, including fixture source provenance, observations, failed attempts and original scripts. Every source was rehashed after copying and every destination verified. The [preservation summary](preservation-summary.json) identifies the exact raw manifest; [selected evidence](selected-evidence.json) records the readable repository copies separately. Raw originals are unchanged by Git line-ending normalization. [Package identity and freshly verified hashes](delivery-manifest.json) identify the accepted APK/AAB and rejected first candidate.
+
+## Evidence limits
+
+The Session suite is **93/93**, reused through exact source equality with the post-correction run; the full rendered suite is a fresh **66/66** on the final combined build source. Native checks complement those tests and are not a full device/locale/count crossproduct. Small-screen rendering, native public semantics and inspected captures do not prove audible TalkBack, physical-phone feel, human-group balance or universal frame pacing. The preceding motion release retains its measured improvements and unresolved timing tails; this rules update introduces no new smoothness claim.
+
+The APK and AAB use the existing local debug certificate. Production signing and Store publication remain outside this specification. Original raw evidence, failed contacts/captures and fixture provenance are retained separately from readable Git copies; the preservation manifest identifies their exact bytes.
+
+The four isolated implementation worktrees were subsequently [removed after preservation](../role-cleanup/report.md); implementation branches and all accepted/rejected packages remain available.

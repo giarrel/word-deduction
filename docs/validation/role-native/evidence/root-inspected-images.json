@@ -1,0 +1,59 @@
+{
+  "scope": "Actual final code12 APK native screenshots inspected by coordinator. Additional captures require their own explicit inspection record.",
+  "images": [
+    {
+      "file": "r13-resume-00.png",
+      "sha256": "7c746aafeac2a1e926a68906ba55fd4c6e78e8f822ae7ac83a5d12d9d73f72af",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    },
+    {
+      "file": "r13-carried-judgment-00.png",
+      "sha256": "cd1f5164f41a75528907a7966d13515c9f32743fa06b9c8e7faec3cd6cc74104",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    },
+    {
+      "file": "r13-v6-resume-00.png",
+      "sha256": "cd1f5164f41a75528907a7966d13515c9f32743fa06b9c8e7faec3cd6cc74104",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    },
+    {
+      "file": "r13-mixed-uc-02.png",
+      "sha256": "31f93c445835abc116b6ed91e0f5b56663d4b61931e930ba2f354c9cbeb274d6",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    },
+    {
+      "file": "r13-mixed-whites-06.png",
+      "sha256": "8380991e751fc25cfd71d09cdfc738f7eadc38cd4fb1f4fa15e049e578b1386c",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    },
+    {
+      "file": "r13-mixed-win-01.png",
+      "sha256": "70c89138f9cb3324ee270a7ee1728468be68af5e190003c9d2fbec94b3a0a539",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    },
+    {
+      "file": "r13-mixed-good-01.png",
+      "sha256": "3c879a2b3dce4370e3481a1a8efa7e72af804c3ba69051e2ee78feb82de3f65d",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    },
+    {
+      "file": "r13-mixed-bad-03.png",
+      "sha256": "b3530ad27d480782f9f66e601a22e0863031623029473c0fdc15cf7ed3f7c136",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    },
+    {
+      "file": "r13-classic-team-01.png",
+      "sha256": "aedcee8183f690d88b20aa0d752b3cde446565039068e60d807aac2ca3dbed57",
+      "inspectedBy": "Root",
+      "observation": "Actually opened through view_image; readable normal-font native surface, no overlapping controls. Private words absent on pending/continuation surfaces; result words appear only at final result."
+    }
+  ]
+}

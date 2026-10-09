@@ -1,0 +1,45 @@
+{
+  "pass": true,
+  "utc": "2026-10-09T21:46:48.0725819Z",
+  "removed": [
+    {
+      "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-counts",
+      "absent": true
+    },
+    {
+      "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-kings-starter",
+      "absent": true
+    },
+    {
+      "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-review-corrections",
+      "absent": true
+    },
+    {
+      "path": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-acceptance",
+      "absent": true
+    }
+  ],
+  "branchesRetained": [
+    {
+      "branch": "implement/role-counts",
+      "head": "d34e48d171e4d24e85258ff3ea7dab467b079a22"
+    },
+    {
+      "branch": "implement/kings-starter",
+      "head": "e76c702648d4c7324041487e655e3e6e50f7bab5"
+    },
+    {
+      "branch": "implement/role-review-corrections",
+      "head": "ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218"
+    },
+    {
+      "branch": "implement/role-acceptance",
+      "head": "be88547f65dfa30c1abd4372b98185fcbad006e4"
+    }
+  ],
+  "worktreeRegistry": "worktree C:/Users/lucac/Documents/Codex/2026-10-06/sie/outputs/word-deduction\nHEAD 3f5233e611d8f91d8728d9ae1722381b8ca32797\nbranch refs/heads/integration/role-counts-v1.3\n",
+  "preRemovalProof": "cleanup-longpath-before.json",
+  "preservationPreflight": "cleanup-final-20261009T213743Z.json",
+  "gitForceUsed": false,
+  "nativeLongPathRemoval": true
+}

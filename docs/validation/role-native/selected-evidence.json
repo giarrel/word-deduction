@@ -1,0 +1,113 @@
+{
+  "files": [
+    {
+      "path": "docs/validation/role-native/evidence/native-final-offline-audit.json",
+      "source": "artifacts/role-native/code12/preparation/native-final-offline-audit.json",
+      "bytes": 33251,
+      "sha256": "a19eecdb1e8ddcb23bb8563a5fe87fd53f9aae027e919b03f2615230e59235e4"
+    },
+    {
+      "path": "docs/validation/role-native/evidence/native-final-offline-audit-wrong-baselines.json",
+      "source": "artifacts/role-native/code12/preparation/native-final-offline-audit-wrong-baselines.json",
+      "bytes": 31146,
+      "sha256": "57ab644bbd07fb10cf63fa433520e4bfb22cb5e299e37e21eb328fa8616f9683"
+    },
+    {
+      "path": "docs/validation/role-native/evidence/emulator-restart-observation.json",
+      "source": "artifacts/role-native/code12/native/emulator-restart-observation.json",
+      "bytes": 1784,
+      "sha256": "a5e2ef706c67c8dae58a218b9ad1a4cfa75df7a23bc29b1a4dd88603a48fb4ad"
+    },
+    {
+      "path": "docs/validation/role-native/evidence/r13-final-scroll-restoration.json",
+      "source": "artifacts/role-native/code12/native/r13-final-scroll-restoration.json",
+      "bytes": 1181,
+      "sha256": "7fc4c2efad612b36b8f453ae4776ed2ceaf75800bd60351bff93418d371ba306"
+    },
+    {
+      "path": "docs/validation/role-native/evidence/final-inspected-images.json",
+      "source": "artifacts/role-native/code12/native/final-inspected-images.json",
+      "bytes": 5206,
+      "sha256": "339a5d87c7f719f6b0bf963ff0d0309544a15991ef2cb7cbfa8bd91e2d471e6b"
+    },
+    {
+      "path": "docs/validation/role-native/evidence/root-inspected-large-text-addendum.json",
+      "source": "artifacts/role-native/code12/native/root-inspected-large-text-addendum.json",
+      "bytes": 1495,
+      "sha256": "1185f7bb6374add13a7f59d90842c4a66a285488c0c8281ee3c9214bc98681f6"
+    },
+    {
+      "path": "docs/validation/role-native/evidence/root-inspected-kings-setup.json",
+      "source": "artifacts/role-native/code12/native/root-inspected-kings-setup.json",
+      "bytes": 408,
+      "sha256": "e7b254726f44ed4fde5f7addb324c7b5726a4255cb5edcd6954d20ff020cb12f"
+    },
+    {
+      "path": "docs/validation/role-native/evidence/root-inspected-final-kings.json",
+      "source": "artifacts/role-native/code12/native/root-inspected-final-kings.json",
+      "bytes": 1815,
+      "sha256": "de4f47002b94256ed6fd82a64da515a1b262331f1be35c2c0e51f0fc3244d48b"
+    },
+    {
+      "path": "docs/validation/role-native/evidence/root-inspected-adjustment-end.json",
+      "source": "artifacts/role-native/code12/native/root-inspected-adjustment-end.json",
+      "bytes": 797,
+      "sha256": "896fc5d51aec62dd09c1f937cfdab41333fa83bfcd024f3b57a8deb6bac5e939"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-twenty-150-role-scroll.png",
+      "source": "artifacts/role-native/code12/native/r13-twenty-150-role-scroll.png",
+      "bytes": 220443,
+      "sha256": "87d128a212367f5443ac0dfab9820d32fc3366f75308758bbfd619d608211777"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-twenty-150-player-scroll.png",
+      "source": "artifacts/role-native/code12/native/r13-twenty-150-player-scroll.png",
+      "bytes": 207333,
+      "sha256": "3d1c42a11cbbbaccdc3375fbb1fb6efe9631abe040a8922eb17639d044aa2b90"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-large-undo-controls.png",
+      "source": "artifacts/role-native/code12/native/r13-large-undo-controls.png",
+      "bytes": 217556,
+      "sha256": "3129304c20faf4b759552bb1b08148015b9cede60f720e8dbd0d802cb747097f"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-kings-five-scroll.png",
+      "source": "artifacts/role-native/code12/native/r13-kings-five-scroll.png",
+      "bytes": 192258,
+      "sha256": "f4009399e723747f74fadcd1614ff7067202ec4c89144413b698cfaf9a48e676"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-kings-long-table.png",
+      "source": "artifacts/role-native/code12/native/r13-kings-long-table.png",
+      "bytes": 189839,
+      "sha256": "37348da8122fcf3783ef865e139f3702d9ed336510ec62c07b0508e39790fa31"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-kings-long-scroll.png",
+      "source": "artifacts/role-native/code12/native/r13-kings-long-scroll.png",
+      "bytes": 192310,
+      "sha256": "8b3a4e860e66309984b10492c337553124dbbb0c92918e551aa209cf678bb7f2"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-kings-v5-second-resume-00.png",
+      "source": "artifacts/role-native/code12/native/r13-kings-v5-second-resume-00.png",
+      "bytes": 150443,
+      "sha256": "2192092f739e3348c5ca79a72878ad2c986ba937cdce909133f43ad768d23875"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-final-adjustment-end-04.png",
+      "source": "artifacts/role-native/code12/native/r13-final-adjustment-end-04.png",
+      "bytes": 218934,
+      "sha256": "d4d0a82554bde5ef7146d611dbd5386bbcc4447a7930b853692849856816354f"
+    },
+    {
+      "path": "docs/validation/role-native/screenshots/r13-pure-finish-04.png",
+      "source": "artifacts/role-native/code12/native/r13-pure-finish-04.png",
+      "bytes": 134579,
+      "sha256": "7a0b3892cf1bfa11906ffae683fd6c6fc960ccc572c9b0413a063eb947a6bf15"
+    }
+  ],
+  "scope": "Exact bytes at copy time; Git may normalize readable text on commit. Raw originals remain in the archive."
+}

@@ -1,0 +1,30 @@
+{
+  "images": [
+    {
+      "file": "r13-twenty-150-role-scroll.png",
+      "sha256": "87d128a212367f5443ac0dfab9820d32fc3366f75308758bbfd619d608211777",
+      "bytes": 220443,
+      "inspectedBy": "Root",
+      "method": "Actual view_image output opened in conversation before compaction",
+      "observation": "German large group at 150% text, reachable scroll position. No claim that all controls fit simultaneously; green border is TalkBack focus."
+    },
+    {
+      "file": "r13-twenty-150-player-scroll.png",
+      "sha256": "3d1c42a11cbbbaccdc3375fbb1fb6efe9631abe040a8922eb17639d044aa2b90",
+      "bytes": 207333,
+      "inspectedBy": "Root",
+      "method": "Actual view_image output opened in conversation before compaction",
+      "observation": "German large group at 150% text, reachable scroll position. No claim that all controls fit simultaneously; green border is TalkBack focus."
+    },
+    {
+      "file": "r13-large-undo-controls.png",
+      "sha256": "3129304c20faf4b759552bb1b08148015b9cede60f720e8dbd0d802cb747097f",
+      "bytes": 217556,
+      "inspectedBy": "Root",
+      "method": "Actual view_image output opened in conversation before compaction",
+      "observation": "German large group at 150% text, reachable scroll position. No claim that all controls fit simultaneously; green border is TalkBack focus."
+    }
+  ],
+  "count": 3,
+  "scope": "Three additional actually viewed images; complements the separate nine-image record."
+}

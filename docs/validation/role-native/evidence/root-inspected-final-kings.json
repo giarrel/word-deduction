@@ -1,0 +1,37 @@
+{
+  "images": [
+    {
+      "file": "r13-kings-five-scroll.png",
+      "sha256": "f4009399e723747f74fadcd1614ff7067202ec4c89144413b698cfaf9a48e676",
+      "bytes": 192258,
+      "inspectedBy": "Root",
+      "method": "Actual view_image pixels opened and inspected",
+      "observation": "150% Kings boundaries/long-name scroll reachability or legacy public starter; viewport cropping from scrolling is not treated as simultaneous visibility."
+    },
+    {
+      "file": "r13-kings-long-scroll.png",
+      "sha256": "8b3a4e860e66309984b10492c337553124dbbb0c92918e551aa209cf678bb7f2",
+      "bytes": 192310,
+      "inspectedBy": "Root",
+      "method": "Actual view_image pixels opened and inspected",
+      "observation": "150% Kings boundaries/long-name scroll reachability or legacy public starter; viewport cropping from scrolling is not treated as simultaneous visibility."
+    },
+    {
+      "file": "r13-kings-v5-second-resume-00.png",
+      "sha256": "2192092f739e3348c5ca79a72878ad2c986ba937cdce909133f43ad768d23875",
+      "bytes": 150443,
+      "inspectedBy": "Root",
+      "method": "Actual view_image pixels opened and inspected",
+      "observation": "150% Kings boundaries/long-name scroll reachability or legacy public starter; viewport cropping from scrolling is not treated as simultaneous visibility."
+    },
+    {
+      "file": "r13-kings-long-table.png",
+      "sha256": "37348da8122fcf3783ef865e139f3702d9ed336510ec62c07b0508e39790fa31",
+      "bytes": 189839,
+      "inspectedBy": "Root",
+      "method": "Actual view_image pixels opened and inspected",
+      "observation": "150% Kings boundaries/long-name scroll reachability or legacy public starter; viewport cropping from scrolling is not treated as simultaneous visibility."
+    }
+  ],
+  "count": 4
+}

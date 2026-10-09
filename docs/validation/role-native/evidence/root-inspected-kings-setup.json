@@ -1,0 +1,8 @@
+{
+  "file": "r13-kings-ending-08.png",
+  "sha256": "c0871ceb6b02e647ff7fe7e578ba176d390f852d4c7fbd36b6447fc43043784e",
+  "bytes": 181280,
+  "inspectedBy": "Root",
+  "method": "Actual view_image output inspected",
+  "observation": "Five-player German Kings setup: disabled count controls, max-two explanation with fixed White King, and start button readable. Not claimed as the later 150% capture."
+}

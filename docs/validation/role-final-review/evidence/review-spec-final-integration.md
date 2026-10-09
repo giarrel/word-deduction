@@ -1,0 +1,13 @@
+# Spec
+
+**0 open Spec findings in the accepted implementation and emulator-validation scope.** Reviewed the 34 stories and ticket #23 against integration `3f5233e611d8f91d8728d9ae1722381b8ca32797`, build `b6e6a926bbcc58c7103d79a9f117cbd09e4269e3`, final native operator report and final acceptance matrix. This extends the retained source/build/description reviews; no additional missing behavior, incorrect implementation or scope expansion was identified.
+
+Independent checks confirm unchanged `game`, `tests`, `content`, `tools` and `third-party` trees from the build pin; all 48 matrix Session references match their exact positions/names in the 93-pass log, and all 25 referenced rendered methods passed in the actual 66-result output. Both durable APK/AAB sizes and SHA256 hashes match the accepted build records. Reused Session execution remains distinguished from the fresh rendered run.
+
+All 34 matrix rows trace requirements to evidence without presenting fixtures as played history or model assertions as Android tests. The genuine code11-to12 update, first V6 continuation, sequential Quick/White outcomes, independent settings, shrink/Undo, pure-White rematch, Kings transitions and authentic V5 migration are separately identified. I independently checked all 147 files referenced by the final 252-assertion native audit: no hash discrepancy. These assertions are evidence checks, not additional gameplay tests. The earlier wrong-baseline audit and unsuccessful native helper attempts remain preserved.
+
+I viewed the Kings five-person limit, ordinary-elimination starter, German long-name starter, successive adjustment captures and final scroll-end image. The last image resolves the earlier incomplete screenshot: the entire saved wish, 5 Undercover + 4 Mr. White, is reachable and legible. The latest restoration verifies both original generations, metadata, device preferences and stopped code12 app.
+
+The remotely confirmed empty Previous after the emulator disappeared/restarted is an unresolved persistence observation, explicitly disclosed with unknown cause. It is not a passed abrupt-VM-stop durability test. It does not contradict the separately evidenced actual update and controlled app-restart requirements; no causative app-write regression is established. No universal backup durability, physical-phone smoothness, audible TalkBack, statistical randomness or Store readiness is certified.
+
+Root owns the remaining durable-document link check, publication and tracker closure. This reviewer performed no device, Unity, test, product, tracker or Git mutation; only this external review was written.

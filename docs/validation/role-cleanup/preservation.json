@@ -1,0 +1,21 @@
+{
+  "archive": "artifacts/role-cleanup/final",
+  "files": [
+    {
+      "file": "cleanup-final-20261009T213743Z.json",
+      "sha256": "d0aed90743dcabf7194eb432c3f92d7e66b698c911d4412d1fc12398959fea3c",
+      "bytes": 17099
+    },
+    {
+      "file": "cleanup-longpath-before.json",
+      "sha256": "d3171e960735efb2b08ec83f3c534537fe11003dba079c37818fb8e4125f20fe",
+      "bytes": 1040
+    },
+    {
+      "file": "cleanup-completed.json",
+      "sha256": "ebf91a418c632591038554c6f9f198eb208e1f59f62292c2e627e17eb5ecc4a1",
+      "bytes": 1572
+    }
+  ],
+  "pass": true
+}

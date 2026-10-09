@@ -1,0 +1,30 @@
+{
+  "version": "1.3.0",
+  "versionCode": 12,
+  "packageName": "com.giarrel.worddeduction",
+  "buildSource": "b6e6a926bbcc58c7103d79a9f117cbd09e4269e3",
+  "branch": "integration/role-counts-v1.3",
+  "unity": "6000.3.25f1",
+  "architecture": "ARM64 IL2CPP",
+  "developmentBuild": false,
+  "minSdk": 26,
+  "targetSdk": 36,
+  "signing": "Existing local Android debug certificate; not a production-signed Store submission",
+  "certificateSha256": "4a0d4929acea4c086bc5534bf462eebcd9d866f31c1bced10b400412117be926",
+  "packages": [
+    {
+      "path": "artifacts/releases/1.3.0-code12/WordDeduction-1.3.0-code12.apk",
+      "sha256": "cc0ab333bdb130cda07e45ec64a7eab68887d8a0384a9325506827885011aedc",
+      "bytes": 37480110
+    },
+    {
+      "path": "artifacts/releases/1.3.0-code12/WordDeduction-1.3.0-code12.aab",
+      "sha256": "b302d3a9bc9628870ce953156c2990d6491d3e0ad1a063a942f970a84bca15a6",
+      "bytes": 37837035
+    }
+  ],
+  "nativeAcceptanceReport": "report.md",
+  "scope": "Package identity and freshly verified bytes. Native acceptance status is recorded separately in report.md.",
+  "rejectedCandidateSha256": "0220c9eefcc523754ded30423e3906d7a9f88730c340b6d237bbe5560cfaf684",
+  "rejectedCandidateInstalled": false
+}

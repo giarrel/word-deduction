@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-09T21:46:43.5000254Z",
+  "target": "C:\\Users\\lucac\\Documents\\Codex\\2026-10-06\\sie\\work\\role-counts\\implement-acceptance",
+  "targetContained": true,
+  "reparsePoints": 0,
+  "unityEditors": 0,
+  "targetEditorOpen": false,
+  "branches": [
+    {
+      "branch": "implement/role-counts",
+      "head": "d34e48d171e4d24e85258ff3ea7dab467b079a22"
+    },
+    {
+      "branch": "implement/kings-starter",
+      "head": "e76c702648d4c7324041487e655e3e6e50f7bab5"
+    },
+    {
+      "branch": "implement/role-review-corrections",
+      "head": "ec3c3d4ff2066b99ed3d97e6ae0c4ac474fe3218"
+    },
+    {
+      "branch": "implement/role-acceptance",
+      "head": "be88547f65dfa30c1abd4372b98185fcbad006e4"
+    }
+  ],
+  "priorVerifiedPreflight": "cleanup-final-20261009T213743Z.json",
+  "reason": "Git worktree remove unregistered all four worktrees but stopped deleting the final directory on Filename too long; use native PowerShell long-path handling for this exact already-verified remainder."
+}
