@@ -14,4 +14,4 @@
 
 ## Status
 
-Specification and tickets published. Implementation not yet validated. The installed code11 release does not yet contain these features.
+Ticket #21 is integrated at `a425f16e9981e328741968c74224bf458739f9c7`, with production/test trees identical to validated `30ec5b14fe1dafea7adb4ca81b349e047633d194` (87/87 Session; 64/64 rendered, zero skipped). [Merge and raw/canonical evidence preservation](../validation/role-counts-merge/report.md). Ticket #22 Kings starters and #23 final independent/native/release acceptance remain outstanding. The installed code11 release still does not contain these features.
