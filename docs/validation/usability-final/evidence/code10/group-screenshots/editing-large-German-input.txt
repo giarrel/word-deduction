@@ -1,0 +1,3 @@
+TextField | renameInput | unity-base-field,unity-base-field--no-label,unity-base-text-field,unity-text-field,name-input | (x:30.00, y:155.00, width:290.00, height:57.00) | bg=RGBA(0.000, 0.000, 0.000, 0.000) | display=Flex
+TextInput | unity-text-input | unity-base-text-field__input,unity-base-text-field__input--single-line,unity-base-field__input,unity-text-field__input | (x:30.00, y:155.00, width:290.00, height:57.00) | bg=RGBA(1.000, 1.000, 1.000, 1.000) | display=Flex
+TextElement |  | unity-text-element,unity-text-element__selectable,unity-text-element--inner-input-field-component | (x:45.00, y:168.00, width:585.00, height:31.00) | bg=RGBA(0.000, 0.000, 0.000, 0.000) | display=Flex

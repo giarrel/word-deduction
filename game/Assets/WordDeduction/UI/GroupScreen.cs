@@ -293,8 +293,13 @@ namespace WordDeduction.UI
             {
                 if (player.Active)
                 {
-                    var handle = new Label("≡") { name = "reorder-" + player.Id, tooltip = T("reorderPlayer",player.DisplayName) };
+                    var handle = new VisualElement { name = "reorder-" + player.Id, tooltip = T("reorderPlayer",player.DisplayName), focusable = false };
                     handle.AddToClassList("reorder-handle"); handle.SetEnabled(!session.View.StorageBlocked); row.Add(handle);
+                    for (int i = 0; i < 3; i++)
+                    {
+                        var bar = new VisualElement { pickingMode = PickingMode.Ignore };
+                        bar.AddToClassList("reorder-bar"); handle.Add(bar);
+                    }
                     var snapshot = session.View.Players;
                     var active = snapshot.Where(p => p.Active).Select(p => p.Id).ToArray();
                     var expected = snapshot.Select(p => p.Id).ToArray();

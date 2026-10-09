@@ -181,7 +181,7 @@ namespace WordDeduction.UI
             {"emptyHint", new[]{"Add your first player.","Ersten Namen eingeben."}},
             {"name", new[]{"Player name","Name eingeben"}},
             {"add", new[]{"Add player","Person hinzufügen"}},
-            {"editHint", new[]{"Drag ≡ to reorder. Edit to rename or remove.","Mit ≡ Reihenfolge ändern. Über Bearbeiten ändern oder entfernen."}},
+            {"editHint", new[]{"Drag a handle to change the order.","Am Griff ziehen, um zu sortieren."}},
             {"pause", new[]{"Pause","Pause"}}, {"join", new[]{"Join","Mitspielen"}},
             {"movePlayerUp", new[]{"Move up","Nach oben"}},
             {"movePlayerDown", new[]{"Move down","Nach unten"}},
